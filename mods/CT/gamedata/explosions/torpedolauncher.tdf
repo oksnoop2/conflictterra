@@ -1,0 +1,47 @@
+[PLACEHOLDER]
+{
+ [bubbles]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0.05;
+		sizeMod=1.0;
+		pos=0r20, 0r20, 0r20;
+		emitVector=0, 1, 0;
+		gravity=0, 0.2, 0;
+		colorMap=1 1 1 0.01 1 1 1 0.01 0 0 0 0.01;
+		Texture=bubble;
+		airdrag=0.6;
+		particleLife=60;
+		particleLifeSpread=40;
+		numParticles=20;
+		particleSpeed=4;
+		particleSpeedSpread=8;
+		particleSize=0.5;
+		particleSizeSpread=5;
+		emitRot=0;
+		emitRotSpread=180;
+		directional=0;
+		}
+	air=0;
+	water=1;
+	ground=0;
+	count=1;
+	}
+		[Sphere]
+	{
+	class=CSpherePartSpawner;
+	[properties]
+    {
+         ttl=20;
+         alpha=1;
+         expansionSpeed=2;
+         color=1,1,1;
+    }
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}

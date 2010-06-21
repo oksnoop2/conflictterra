@@ -1,0 +1,91 @@
+////////////////////////////////////////////////////////////////
+// Nanobomb
+////////////////////////////////////////////////////////////////
+
+[NANOBOMB] {
+	usedefaultexplosions=0;
+	
+	/*
+	[landdirt] {
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=5;
+			sizeMod=0.75;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.1, 0;
+			colorMap=0 0 0 0  0.5 0.4 0.3 1  0.6 0.4 0.2 0.75  0.5 0.4 0.3 0.5  0 0 0 0;
+			Texture=dirt;
+			airdrag=0.95;
+			particleLife=20;
+			particleLifeSpread=5;
+			numParticles=20;
+			particleSpeed=2;
+			particleSpeedSpread=12;
+			particleSize=4;
+			particleSizeSpread=4;
+			emitRot=85;
+			emitRotSpread=5;
+			directional=0;
+			alwaysVisible=0;
+		}
+		air=1;
+		ground=1;
+		count=1;
+	}
+	*/
+	
+	[sphere] {
+		class=CSpherePartSpawner;
+		[properties] {
+			expansionSpeed=15;
+			ttl=10;
+			alpha=0.5;
+			color=0,1,0.5;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+
+	[ring] {
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=8;
+			sizeMod=0.5;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.2, 0;
+			colorMap=0 1 0 0  0 1 0.75 1  0 0.75 0.5 1  0.75 1 0.75 1  0 0 0 0;
+			Texture=smokesmall;
+			airdrag=0.9;
+			particleLife=10;
+			particleLifeSpread=5;
+			numParticles=64;
+			particleSpeed=16;
+			particleSpeedSpread=1;
+			particleSize=4;
+			particleSizeSpread=4;
+			emitRot=90;
+			emitRotSpread=5;
+			directional=0;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+	
+	[groundflash]{
+		flashsize=100;
+		flashalpha=0.5;
+		circlegrowth=10;
+		circlealpha=1;
+		ttl=15;
+		color=0,1,0;
+		alwaysVisible=0;
+	}
+	
+}

@@ -1,0 +1,174 @@
+[BARNEY]
+{
+	[quadrant1] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0 i3, 0, 0i3;  
+		delay=0;				  
+		explosionGenerator=custom:BARNEY_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[quadrant2] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0 i3, 0, 0i-3;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:BARNEY_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[quadrant3] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0 i-3, 0, 0i-3;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:BARNEY_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[quadrant4] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0 i-3, 0, 0i3;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:BARNEY_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[n] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0 i3, 0, 0;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:BARNEY_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[e] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 0, i3;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:BARNEY_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[s] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 0, 0 i-3;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:BARNEY_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[w] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0 i-3, 0, 0;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:BARNEY_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+}
+[BARNEY_1]
+{
+	[dust] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=-100 r200, 0, -100 r200;  
+		delay=0;				  
+		explosionGenerator=custom:BARNEY_1_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}
+
+[BARNEY_1_1]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 1, 0;
+			emitVector=0, 1, 0;
+			gravity=0.01 r-0.02, 0.01 r-0.02, 0.01 r-0.01;
+			colorMap=1 1 1 0.01     1 1 1 0.01;
+			Texture=lightb;
+			airdrag=0.5;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=10;
+			particleSizeSpread=30;
+			emitRot=0;
+			emitRotSpread=0;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+	[groundflash]
+	{
+		flashsize=36;
+		flashalpha=0.3;
+		circlegrowth=0;
+		circlealpha=1;
+		ttl=3;
+		color=0.5,0.5,1;
+	}
+}

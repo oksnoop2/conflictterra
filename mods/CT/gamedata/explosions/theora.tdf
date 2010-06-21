@@ -1,0 +1,98 @@
+[THEORA]
+{
+	[NW] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=20 r40, i20, -20 r40;    
+		delay=0  i4;				  
+		explosionGenerator=custom:THEORA_PILLAR;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=150;
+	}
+}
+[THEORA_PILLAR]
+{
+	[rocks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.01 r-0.02, 0.001 r-0.002;
+			colorMap=  0 0 0  0.01   0.8 0.8 0.8 1       0.8 0.8 0.8 1      0.8 0.8 0.8 1       0.8 0.8 0.8 1      0.8 0.8 0.8 1      0.8 0.8 0.8 1       0 0 0 0.01;
+			Texture=smokesmall;
+			airdrag=0.97;
+			particleLife=200;
+			particleLifeSpread=200;
+			numParticles=1;
+			particleSpeed=5;
+			particleSpeedSpread=5;
+			particleSize=170;
+			particleSizeSpread=170;
+			emitRot=120;
+			emitRotSpread=10;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[TRANSTHEORA]
+{
+	[NW] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=20 r40, i20, -20 r40;    
+		delay=0  i4;				  
+		explosionGenerator=custom:TRANSTHEORA_PILLAR;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=150;
+	}
+}
+[TRANSTHEORA_PILLAR]
+{
+	[rocks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.01 r-0.02, 0.001 r-0.002;
+			colorMap=  0 0 0  0.01     1 0.6 0 1 	1 0.7 0.3 1 	1 0.7 0.5 1 	1 0.8 0.6 1     0.8 0.8 0.8 1       0 0 0 0.01;
+			Texture=smokesmall;
+			airdrag=0.97;
+			particleLife=200;
+			particleLifeSpread=200;
+			numParticles=1;
+			particleSpeed=5;
+			particleSpeedSpread=5;
+			particleSize=90;
+			particleSizeSpread=90;
+			emitRot=90;
+			emitRotSpread=10;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}

@@ -1,0 +1,50 @@
+[SOLANGE]
+{
+	[NW] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=20 r40, i20, -20 r40;    
+		delay=0  i4;				  
+		explosionGenerator=custom:SOLANGE_PILLAR;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=150;
+	}
+}
+[SOLANGE_PILLAR]
+{
+	[rocks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.01 r-0.02, 0.001 r-0.002;
+			colorMap= 0 0 0 0.01   0.9 0.9 0 0.5     0.9 0.9 0 0.5       0.8 0.8 0.1 0.5       0.7 0.7 0.2 0.5      0.5 0.35 0. 0.5   0.5 0.35 0. 0.5   0.5 0.35 0. 0.5    0.5 0.35 0. 0.5   0 0 0 0.01;
+			Texture=fireball;
+			airdrag=0.97;
+			particleLife=200;
+			particleLifeSpread=200;
+			numParticles=1;
+			particleSpeed=3;
+			particleSpeedSpread=3;
+			particleSize=90;
+			particleSizeSpread=90;
+			emitRot=90;
+			emitRotSpread=10;
+			directional=1;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}

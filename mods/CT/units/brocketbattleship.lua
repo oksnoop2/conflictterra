@@ -1,0 +1,186 @@
+	unitDef = {
+	  unitname            = [[brocketbattleship]],
+	  name                = [[Shima Class Battleclass]],
+	  description         = [[Rocket Battleship - Specialized navy vessel built to fire four missiles.]],
+	  acceleration        = 0.03,
+          activateWhenBuilt   = true,
+	  bmcode              = [[1]],
+	  brakeRate           = 0.1,
+	  buildCostEnergy     = 700,
+	  buildCostMetal      = 560,
+	  builder             = false,
+	  buildPic            = [[brocketbattleship.png]],
+	  buildTime           = 21,
+	  canAttack           = true,
+	  canGuard            = true,
+	  canMove             = true,
+	  canPatrol           = true,
+	  canstop             = [[1]],
+	  category            = [[SHIP]],
+	  corpse              = [[DEAD]],
+          reclaimable         = false,
+
+	
+	  defaultmissiontype  = [[Standby]],
+	  explodeAs           = [[BIG_UNITEX]],
+          floater             = true,
+	  footprintX          = 5,
+	  footprintZ          = 5,
+          collisionVolumeOffsets = [[0 -16 0]],
+          collisionVolumeScales  = [[74 74 240]],
+          collisionVolumeTest    = 1,
+          collisionVolumeType    = [[box]],
+	  idleAutoHeal        = 0,
+	  maneuverleashlength = [[640]],
+	  mass                = 350,
+	  maxDamage           = 4000,
+	  maxVelocity         = 1.8,
+	  minCloakDistance    = 75,
+	  movementClass       = [[BOAT4]],
+	  moveState           = 0,
+	  noAutoFire          = false,
+	  noChaseCategory     = [[TERRAFORM SATELLITE SUB]],
+	  objectName          = [[brocketbattleship.s3o]],
+	  seismicSignature    = 4,
+	  selfDestructAs      = [[BIG_UNITEX]],
+
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+	      [[custom:MISSILE_EXPLOSION]],
+	      [[custom:WEAPEXP_PUFF]],
+	    },
+	
+	  },
+
+	  side                = [[NKG]],
+	  sightDistance       = 750,
+	  smoothAnim          = true,
+	  steeringmode        = [[1]],
+	  TEDClass            = [[SHIP]],
+	  turnRate            = 193,
+	  workerTime          = 0,
+          waterline           = 5,
+          script              = [[brocketbattleship.lua]],
+	
+	  weapons             = {
+	
+	    {
+	      def                = [[Large]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
+	    },
+
+	    {
+	      def                = [[Large]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
+	    },
+
+	    {
+	      def                = [[Large]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
+	    },
+
+	    {
+	      def                = [[Large]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
+	    },
+	
+	  },
+	
+	
+	  weaponDefs          = {
+	
+	    Large = {
+	      name                    = [[Small Missile]],
+	      areaOfEffect            = 160,
+	      craterMult              = 0.25,
+	
+	      damage                  = {
+		Cruiser = 650,
+		Building = 650,
+		Mech = 650,
+		Tank = 650,
+		Aircraft = 650,
+		Ship = 650,
+		Sub = 45,
+	      },
+	
+	      model                   = [[bsmallmissile.s3o]],
+	      edgeEffectiveness       = 0.5,
+	      explosionGenerator      = [[custom:xamelimpact]],
+	      flightTime              = 4,
+	      interceptedByShieldType = 1,
+	      lineOfSight             = true,
+	      range                   = 800,
+	      reloadtime              = 6,
+	      smokeTrail              = true,
+	      soundHit                = [[argh/Argh_LargeExplosion]],
+	      soundStart              = [[nexuiz/rocket_fire]],
+	      tolerance               = 8000,
+	      trajectoryHeight        = 0.5,
+	      tracks                  = false,
+	      turret                  = true,
+	      weaponType              = [[MissileLauncher]],
+	      weaponVelocity          = 400,
+	      startVelocity           = 400,
+	      weaponAcceleration      = 70,
+	    },
+	
+	  },
+	
+	
+	  featureDefs         = {
+	
+	    DEAD  = {
+	      description      = [[Wreckage - Rocket Battleship]],
+	      blocking         = false,
+	      category         = [[corpses]],
+	      damage           = 160,
+	      energy           = 0,
+	      featureDead      = [[DEAD2]],
+	      featurereclamate = [[SMUDGE01]],
+	      footprintX       = 2,
+	      footprintZ       = 2,
+	      height           = [[4]],
+	      hitdensity       = [[100]],
+	      metal            = 15,
+	      object           = [[bgenericwreckage.s3o]],
+	      reclaimable      = true,
+	      reclaimTime      = 15,
+	      seqnamereclamate = [[TREE1RECLAMATE]],
+	      world            = [[All Worlds]],
+	    },
+	
+	
+	    DEAD2 = {
+	      description      = [[Debris - Rocket Battleship]],
+	      blocking         = false,
+	      category         = [[heaps]],
+	      damage           = 160,
+	      energy           = 0,
+	      featurereclamate = [[SMUDGE01]],
+	      footprintX       = 5,
+	      footprintZ       = 5,
+	      height           = [[4]],
+	      hitdensity       = [[100]],
+	      metal            = 15,
+	      object           = [[b5x5heap.s3o]],
+	      reclaimable      = true,
+	      reclaimTime      = 15,
+	      seqnamereclamate = [[TREE1RECLAMATE]],
+	      world            = [[All Worlds]],
+	    },
+	
+	  },
+	
+	}
+	
+	return lowerkeys({ brocketbattleship = unitDef })

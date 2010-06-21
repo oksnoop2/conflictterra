@@ -1,0 +1,29 @@
+[RED_STROBE] {
+	[red] {
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=0;
+			sizeMod=1;
+			pos=-0.02 r0.01, -0.02 r0.01, -0.02 r0.01;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=1 1 1 1  0 0 0 0.01;
+			Texture=redlight;
+			airdrag=1;
+			particleLife=10;
+			particleLifeSpread=2;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=4;
+			particleSizeSpread=1;
+			emitRot=0;
+			emitRotSpread=0;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}

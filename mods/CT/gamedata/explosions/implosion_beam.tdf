@@ -1,0 +1,26 @@
+[implosion_beam]
+{
+   [pop]
+   {
+   class=heatcloud;
+      
+      [properties]
+
+	{
+	alwaysVisible=1;
+	texture=pinknovaexplo;
+	heat = 10;
+	maxheat = 15;
+	heatFalloff = 0.5;
+	size = 128;
+	sizeGrowth = 1;
+	pos = r-2 r2, 5, r-2 r2;
+	speed=0, 1 0, 0;
+        }
+
+      air=1;
+      water=1;
+      ground=1;
+      count=1;
+   }
+}

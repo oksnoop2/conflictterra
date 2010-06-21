@@ -1,0 +1,78 @@
+[METEOR_TAG] {
+	usedefaultexplosions = 0;
+	[smoke]{
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=3;
+			sizeMod=1;
+			pos=0, 0, 0;
+			emitVector=dir;
+			gravity=0, 0, 0;
+			colorMap=0.02 0.01 0 0.01  0.2 0.1 0 0.1  0.2 0.1 0 0.2  0.2 0 0 0.2  0 0 0 0.2  0 0 0 0.01;
+			Texture=smokesmall;
+			airdrag=0.95;
+			particleLife=60;
+			particleLifeSpread=10;
+			numParticles=1;
+			particleSpeed=20;
+			particleSpeedSpread=8;
+			particleSize=24;
+			particleSizeSpread=16;
+			emitRot=0;
+			emitRotSpread=5;
+			directional=1;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+	
+	[fire]{
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=3;
+			sizeMod=1;
+			pos=0, 0, 0;
+			emitVector=dir;
+			gravity=0, 0, 0;
+			colorMap=0.01 0.01 0.01 0.01  0.1 0.1 0.1 0.1  0 0 0 0.01;
+			Texture=fireball;
+			airdrag=0.95;
+			particleLife=30;
+			particleLifeSpread=5;
+			numParticles=1;
+			particleSpeed=20;
+			particleSpeedSpread=8;
+			particleSize=32;
+			particleSizeSpread=16;
+			emitRot=0;
+			emitRotSpread=5;
+			directional=1;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+	
+	[pikes] {
+		class=explspike;
+		[properties] {
+			dir=-16 r32, -16 r32, -16 r32;
+			width=64;
+			length=1;
+			lengthGrowth=1;
+			alpha=1;
+			alphadecay=0.1;
+			color=1,0.5,0.125;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=4; 
+	}
+}

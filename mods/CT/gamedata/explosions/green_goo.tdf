@@ -1,0 +1,166 @@
+[green_goo]
+{
+   	[splashes]
+	{
+		class=CSimpleParticleSystem;
+		[properties] {
+			sizegrowth=-.1;
+			sizemod=1;
+			size=0.1;
+			pos=0, 1.0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			Texture=blooddropwhite;
+			colorMap=0.2 0.6 0 1   0.2 0.6 0 1   0 0 0 0;
+			airdrag=.96;
+			particleLife=12;
+			particleLifeSpread=8;
+			numParticles=5;
+			particleSpeed=1.5;
+			particleSpeedSpread=3;
+			particleSize=12;
+			particleSizeSpread=8;
+			emitRot=180;
+			emitRotSpread=80;
+			directional=1;
+		}
+		air=1;
+		ground=1;
+	}
+
+	[pop]
+	{
+		class=CSimpleParticleSystem;
+		[properties] {
+			sizegrowth=3;
+			sizemod=1;
+			size=0.2;
+			pos=0, 1.0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			Texture=bloodblastwhite;
+			colorMap=0.2 0.6 0 1   0.2 0.6 0 1   0 0 0 0;
+			airdrag=.9;
+			particleLife=16;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=12;
+			particleSizeSpread=8;
+			emitRot=45;
+			emitRotSpread=30;
+			directional=0;
+		}
+		air=1;
+		ground=1;
+	}
+	[groundflash]
+	{
+		flashSize = 96;   // flash size
+		flashAlpha = .3;    // initial alpha of the flash
+		circleGrowth = 0; // size increase/frame
+		circleAlpha = .4;   // initial alpha of the ring
+		ttl = 128;          // number of frames
+		color = 0.2, 0.6 ,0;    // color RGB
+	}
+}
+
+[large_green_goo]
+{
+   	[splashes]
+	{
+		class=CSimpleParticleSystem;
+		[properties] {
+			sizegrowth=-.1;
+			sizemod=1;
+			size=0.2;
+			pos=0, 1.0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			Texture=blooddropwhite;
+			colorMap=0.2 0.6 0 1   0.2 0.6 0 1   0 0 0 0;
+			airdrag=.96;
+			particleLife=30;
+			particleLifeSpread=20;
+			numParticles=12;
+			particleSpeed=2;
+			particleSpeedSpread=3;
+			particleSize=24;
+			particleSizeSpread=8;
+			emitRot=180;
+			emitRotSpread=80;
+			directional=1;
+		}
+		air=1;
+		ground=1;
+	}
+
+	[pop]
+	{
+		class=CSimpleParticleSystem;
+		[properties] {
+			sizegrowth=6;
+			sizemod=1;
+			size=0.2;
+			pos=0, 1.0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			Texture=bloodblastwhite;
+			colorMap=0.2 0.6 0 1   0.2 0.6 0 1   0 0 0 0;
+			airdrag=.9;
+			particleLife=32;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=12;
+			particleSizeSpread=8;
+			emitRot=45;
+			emitRotSpread=30;
+			directional=0;
+		}
+		air=1;
+		ground=1;
+	}
+	[groundflash]
+	{
+		flashSize = 180;   // flash size
+		flashAlpha = .3;    // initial alpha of the flash
+		circleGrowth = 0; // size increase/frame
+		circleAlpha = .4;   // initial alpha of the ring
+		ttl = 128;          // number of frames
+		color = 0.2, 0.6 ,0;    // color RGB
+	}
+}
+
+[small_green_goo]
+{
+   	[splashes]
+	{		class=CSimpleParticleSystem;
+		[properties] {
+			sizeGrowth=2;
+			sizeMod=1;
+			pos=0, 0, 0;
+			emitVector=dir;
+			gravity=0, 0, 0;
+			colorMap=0.2 0.6 0 1   0.2 0.6 0 1   0 0 0 0;
+			Texture=blooddropwhite;
+			airdrag=0.9;
+			particleLife=5;
+			particleLifeSpread=5;
+			numParticles=1;
+			particleSpeed=0.05;
+			particleSpeedSpread=0;
+			particleSize=4;
+			particleSizeSpread=4;
+			emitRot=0;
+			emitRotSpread=2;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}

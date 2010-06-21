@@ -1,0 +1,105 @@
+[WARMUZZLE]
+{
+   [BitmapMuzzleFlame]
+   {
+	class = CBitmapMuzzleFlame;
+      
+	[properties]
+      	{
+         	dir = dir;
+         	colorMap=1 1 0.5 0.01	1 0.7 0 0.01	0 0 0 0.01; 
+          	size=0.5;
+          	length=1;
+          	sizeGrowth=70;
+          	ttl=5;
+          	frontOffset=0.3;
+          	sideTexture=plasma2;
+          	frontTexture=plasma0029;
+      	}
+   water=1;
+   air=1;
+   underwater=1;
+   ground=1;
+   count=1;
+   }
+	[muzzlesmoke]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=dir;
+			gravity=0, 0.2, 0;
+			colorMap=0 0 0 0.01  0.5 0.5 0.5 0.5     0 0 0 0.01;
+			Texture=smokesmall;
+			airdrag=0.8;
+			particleLife=5;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=10 i-1;
+			particleSpeedSpread=1;
+			particleSize=7 i-0.4;
+			particleSizeSpread=1;
+			emitRot=0;
+			emitRotSpread=10;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=10;
+	}
+	[muzzleflash]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=dir;
+			gravity=0, 0, 0;
+			colorMap=1 0.7 0.2 0.01    1 0.7 0.2 0.01    0 0 0 0.01;
+			Texture=plasma;
+			airdrag=0.90;
+			particleLife=18;
+			particleLifeSpread=5;
+			numParticles=5;
+			particleSpeed=2;
+			particleSpeedSpread=4;
+			particleSize=1;
+			particleSizeSpread=0.3;
+			emitRot=0;
+			emitRotSpread=10;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+	   [BitmapMuzzleFlame2]
+   {
+	class = CBitmapMuzzleFlame;
+      
+	[properties]
+      	{
+         	dir = dir;
+         	colorMap=1 1 0 0.01	1 0.5 0 0.01	0 0 0 0.01; 
+          	size=20;
+          	length=0.1;
+          	sizeGrowth=1;
+          	ttl=3;
+          	frontOffset=-0.1;
+          	sideTexture=plasma2;
+          	frontTexture=flowerflash;
+      	}
+   water=1;
+   air=1;
+   underwater=1;
+   ground=1;
+   count=1;
+   }
+}

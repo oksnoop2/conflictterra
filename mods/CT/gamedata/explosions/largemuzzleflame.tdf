@@ -1,0 +1,43 @@
+[LARGE_MUZZLE_FLASH_FX]
+{
+	[MuzzleSmoke]
+	{
+		class = CSmokeProjectile2;
+		[properties]
+		{
+			ageSpeed=0.03125;
+			size = 8; 
+			sizeGrowth = 1; 
+			pos = 0, 0, 0; 
+			wantedPos = -8 r16, r8, -8 r16; 
+			speed = r-0.5 r0.5, ri-0.05 ri0.05, r-0.5 r0.5;
+			glowFalloff=8; 
+		}
+		water=1;
+		air=1;
+		underwater=1;
+		ground=1;
+		count=30; 
+	}
+	[MuzzleFlame]
+	{
+		class = CBitmapMuzzleFlame;
+		[properties]
+ 		{
+			dir = dir;
+			colorMap=0.9 0.8 0 0.01 0.9 0.9 0.9 0.01 0 0 0 0.01;
+ 			size=12;
+ 			length=32;
+ 			sizeGrowth=0.5;
+ 			ttl=4;
+ 			frontOffset=0.25;
+ 			sideTexture=muzzleside;
+ 			frontTexture=muzzlefront;
+		}
+		water=1;
+ 		air=1;
+		underwater=1;
+		ground=1;
+		count=1;
+	}
+}

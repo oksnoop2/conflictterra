@@ -1,0 +1,156 @@
+	unitDef = {
+	  unitname            = [[badvmechturret]],
+	  name                = [[Anti-Mech Missile Emplacement]],
+	  description         = [[Advanced Anti-Mech Turret - Powerful missile launcher designed to destroy mechs.]],
+	  acceleration        = 0,
+	  bmcode              = [[0]],
+	  brakeRate           = 0,
+	  buildCostEnergy     = 1750,
+	  buildCostMetal      = 1400,
+	  builder             = false,
+	  buildPic            = [[badvmechturret.png]],
+	  buildTime           = 90,
+	  canAttack           = true,
+	  canstop             = [[1]],
+	  category            = [[SINK]],
+	  corpse              = [[DEAD]],
+	  reclaimable         = false,
+
+	  damageModifier      = 0.2,	
+	  defaultmissiontype  = [[GUARD_NOMOVE]],
+	  explodeAs           = [[SMALL_BUILDINGEX]],
+          footprintx          = 5,
+	  footprintZ          = 5,
+	  idleAutoHeal        = 0,
+	  levelGround         = true,
+	  mass                = 250,
+	  maxDamage           = 10000,
+          maxSlope            = 18,
+	  maxVelocity         = 0,
+          maxWaterDepth       = 0,
+	  noAutoFire          = false,
+	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
+	  objectName          = [[badvmechturret.s3o]],
+	  seismicSignature    = 16,
+	  selfDestructAs      = [[SMALL_UNITEX]],
+	  side                = [[NKG]],
+	  sightDistance       = 750,
+	  smoothAnim          = true,
+	  stealth             = true,
+	  TEDClass            = [[FORT]],
+	  turnRate            = 0,
+	  yardMap             = [[ooooo ooooo ooooo ooooo ooooo]],
+          script              = [[badvmechturret.lua]],
+	
+	  weapons             = {
+	
+	    {
+	      def                = [[Large]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
+	    },
+
+	    {
+	      def                = [[Large]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
+	    },
+
+	    {
+	      def                = [[Large]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
+	    },
+
+	    {
+	      def                = [[Large]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
+	    },
+	
+	  },
+	
+	
+	  weaponDefs          = {
+	
+	    Large = {
+	      name                    = [[Large Missile]],
+	      areaOfEffect            = 96,
+	      collideFriendly         = false,
+	      craterMult              = 0.25,
+	
+	      damage                  = {
+		Cruiser = 50,
+		Building = 50,
+		Mech = 125,
+		Tank = 50,
+		Aircraft = 50,
+		Ship = 50,
+		Sub = 25,
+	      },
+	
+	      explosionGenerator      = [[custom:STARFIRE]],
+	      interceptedByShieldType = 1,
+	      lineOfSight             = true,
+	      model                   = [[blargemissile.s3o]],
+	      noSelfDamage            = true,
+	      range                   = 800,
+	      reloadtime              = 7.5,
+	      smokedelay              = [[0.1]],
+	      smokeTrail              = true,
+	      soundHit                = [[argh/Argh_LargeExplosion]],
+	      soundStart              = [[nexuiz/rocket_fire]],
+	      tolerance               = 9000,
+	      vlaunch                 = true,
+	      weaponAcceleration      = 230,
+	      weaponTimer             = 2,
+	      weaponType              = [[StarburstLauncher]],
+	      weaponVelocity          = 10000,
+	    },
+	
+	  },
+	
+	
+	  featureDefs         = {
+	
+	    DEAD  = {
+	      description      = [[Wreckage - Advanced Anti-Mech Turret]],
+	      blocking         = false,
+	      category         = [[corpses]],
+	      damage           = 160,
+	      energy           = 0,
+	      featureDead      = [[DEAD2]],
+	      featurereclamate = [[SMUDGE01]],
+	      footprintX       = 2,
+	      footprintZ       = 2,
+	      height           = [[4]],
+	      hitdensity       = [[100]],
+	      metal            = 15,
+	      object           = [[bgenericwreckage.s3o]],
+	      reclaimable      = true,
+	      reclaimTime      = 15,
+	      seqnamereclamate = [[TREE1RECLAMATE]],
+	      world            = [[All Worlds]],
+	    },
+	
+	
+	    DEAD2 = {
+	      description      = [[Debris - Advanced Anti-Mech Turret]],
+	      blocking         = false,
+	      category         = [[heaps]],
+	      damage           = 160,
+	      energy           = 0,
+	      featurereclamate = [[SMUDGE01]],
+	      footprintX       = 5,
+	      footprintZ       = 5,
+	      height           = [[4]],
+	      hitdensity       = [[100]],
+	      metal            = 15,
+	      object           = [[b5x5heap.s3o]],
+	      reclaimable      = true,
+	      reclaimTime      = 15,
+	      seqnamereclamate = [[TREE1RECLAMATE]],
+	      world            = [[All Worlds]],
+	    },
+	
+	  },
+	
+	}
+	
+	return lowerkeys({ badvmechturret = unitDef })

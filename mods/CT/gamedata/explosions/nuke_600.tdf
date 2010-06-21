@@ -1,0 +1,501 @@
+////////////////////////////////////////////////////////////////
+// Nuke 600
+// always visible
+////////////////////////////////////////////////////////////////
+
+[NUKE_600] {
+	usedefaultexplosions=0;
+	
+	[landcloud] {
+		class=CExpGenSpawner;
+		[properties]
+		{
+			dir=dir;
+			pos=0, 0, 0; 
+			delay=30;
+			explosionGenerator=custom:NUKE_600_LANDCLOUD; 
+		}
+		air=1;
+		ground=1;
+		count=1;
+	}
+	
+	[seacloud] {
+		class=CExpGenSpawner;
+		[properties]
+		{
+			dir=dir;
+			pos=0, 0, 0; 
+			delay=30;
+			explosionGenerator=custom:NUKE_600_SEACLOUD; 
+		}
+		water=1;
+		count=1;
+	}
+	
+	[landdirt] {
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=32;
+			sizeMod=0.75;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.025, 0;
+			colorMap=0 0 0 0  0.5 0.4 0.3 1  0.6 0.4 0.2 0.75  0.5 0.4 0.3 0.5  0 0 0 0;
+			Texture=dirt;
+			airdrag=0.95;
+			particleLife=120;
+			particleLifeSpread=20;
+			numParticles=64;
+			particleSpeed=2;
+			particleSpeedSpread=12;
+			particleSize=4;
+			particleSizeSpread=4;
+			emitRot=85;
+			emitRotSpread=5;
+			directional=0;
+			alwaysVisible=1;
+		}
+		air=1;
+		ground=1;
+		count=1;
+	}
+	
+	[watermist] {
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=8;
+			sizeMod=1;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, -0.05, 0;
+			colorMap=0 0 0 0  0.8 0.8 1 1  0.8 0.8 1 0.75  0.8 0.8 1 0.5  0 0 0 0;
+			Texture=smokesmall;
+			airdrag=0.99;
+			particleLife=80;
+			particleLifeSpread=20;
+			numParticles=64;
+			particleSpeed=12;
+			particleSpeedSpread=1;
+			particleSize=4;
+			particleSizeSpread=4;
+			emitRot=0;
+			emitRotSpread=90;
+			directional=0;
+			alwaysVisible=1;
+		}
+		water=1;
+		count=1;
+	}
+	
+	[pikes] {
+		class=explspike;
+		[properties] {
+			dir= -8 r16, -8 r16, -8 r16;
+			width=64;
+			length=1;
+			lengthGrowth=1;
+			alpha=1;
+			alphadecay=0.006;
+			color=1,0.5,0.1;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=32; 
+	}
+	
+	[sphere] {
+		class=CSpherePartSpawner;
+		[properties] {
+			expansionSpeed=15;
+			ttl=80;
+			alpha=0.5;
+			color=1,1,0.5;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+	
+	[groundflash]{
+		flashsize=1200;
+		flashalpha=0.5;
+		circlegrowth=10;
+		circlealpha=1;
+		ttl=60;
+		color=1,0.5,0;
+		alwaysVisible=1;
+	}
+}
+
+[NUKE_600_LANDCLOUD]{
+	usedefaultexplosions=0;
+	[pillar] {
+		class=CExpGenSpawner;
+		[properties]
+		{
+			dir=dir;
+			pos=0, i8, 0; 
+			delay=i1;
+			explosionGenerator=custom:NUKE_600_LANDCLOUD_PILLAR; 
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=128;
+	}
+	[cap] {
+		class=CExpGenSpawner;
+		[properties]
+		{
+			dir=dir;
+			pos=0, i8, 0; 
+			delay=i1;
+			explosionGenerator=custom:NUKE_600_LANDCLOUD_CAP; 
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=96;
+	}
+	[topcap] {
+		class=CExpGenSpawner;
+		[properties]
+		{
+			dir=dir;
+			pos=0, 768 i8, 0; 
+			delay=96 i1;
+			explosionGenerator=custom:NUKE_600_LANDCLOUD_TOPCAP; 
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=32;
+	}
+	[ring] {
+		class=CExpGenSpawner;
+		[properties]
+		{
+			dir=dir;
+			pos=0, 512, 0; 
+			delay=64;
+			explosionGenerator=custom:NUKE_600_LANDCLOUD_RING; 
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[NUKE_600_LANDCLOUD_PILLAR] {
+	[land]{
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=64;
+			sizeMod=0.75;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.05, 0;
+			colorMap=0 0 0 0  1 1 0.5 1  1 0.75 0.5 0.75  0.25 0.25 0.25 0.5  0 0 0 0;
+			Texture=smokesmall;
+			airdrag=0.97;
+			particleLife=240;
+			particleLifeSpread=40;
+			numParticles=1;
+			particleSpeed=1;
+			particleSpeedSpread=1;
+			particleSize=4;
+			particleSizeSpread=4;
+			emitRot=0;
+			emitRotSpread=90;
+			directional=0;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[NUKE_600_LANDCLOUD_CAP] {
+	[land]{
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=64;
+			sizeMod=0.75;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.05, 0;
+			colorMap=0 0 0 0  1 1 0 1  1 1 1 0.75  0.25 0.25 0.25 0.5  0 0 0 0;
+			Texture=fireball;
+			airdrag=0.97;
+			particleLife=30;
+			particleLifeSpread=20;
+			numParticles=4;
+			particleSpeed=4;
+			particleSpeedSpread=4;
+			particleSize=4;
+			particleSizeSpread=4;
+			emitRot=90;
+			emitRotSpread=5;
+			directional=0;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[NUKE_600_LANDCLOUD_TOPCAP] {
+	[land]{
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=64;
+			sizeMod=0.75;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.05, 0;
+			colorMap=0 0 0 0  1 1 0 1  1 1 1 0.75  0.25 0.25 0.25 0.5  0 0 0 0;
+			Texture=fireball;
+			airdrag=0.97;
+			particleLife=240;
+			particleLifeSpread=40;
+			numParticles=4;
+			particleSpeed=4;
+			particleSpeedSpread=4;
+			particleSize=4;
+			particleSizeSpread=4;
+			emitRot=90;
+			emitRotSpread=5;
+			directional=0;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[NUKE_600_LANDCLOUD_RING] {
+	[land]{
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=32;
+			sizeMod=0.5;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.05, 0;
+			colorMap=0 0 0 0  1 1 0.75 1  1 0.75 0.5 1  0.75 0.75 0.75 1  0 0 0 0;
+			Texture=smokesmall;
+			airdrag=0.97;
+			particleLife=240;
+			particleLifeSpread=40;
+			numParticles=128;
+			particleSpeed=16;
+			particleSpeedSpread=1;
+			particleSize=4;
+			particleSizeSpread=4;
+			emitRot=90;
+			emitRotSpread=5;
+			directional=0;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[NUKE_600_SEACLOUD]{
+	usedefaultexplosions=0;
+	[pillar] {
+		class=CExpGenSpawner;
+		[properties]
+		{
+			dir=dir;
+			pos=0, i8, 0; 
+			delay=i1;
+			explosionGenerator=custom:NUKE_600_SEACLOUD_PILLAR; 
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=128;
+	}
+	[cap] {
+		class=CExpGenSpawner;
+		[properties]
+		{
+			dir=dir;
+			pos=0, i8, 0; 
+			delay=i1;
+			explosionGenerator=custom:NUKE_600_SEACLOUD_CAP; 
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=96;
+	}
+	[topcap] {
+		class=CExpGenSpawner;
+		[properties]
+		{
+			dir=dir;
+			pos=0, 768 i8, 0; 
+			delay=96 i1;
+			explosionGenerator=custom:NUKE_600_SEACLOUD_TOPCAP; 
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=32;
+	}
+	[ring] {
+		class=CExpGenSpawner;
+		[properties]
+		{
+			dir=dir;
+			pos=0, 512, 0; 
+			delay=64;
+			explosionGenerator=custom:NUKE_600_SEACLOUD_RING; 
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[NUKE_600_SEACLOUD_PILLAR] {
+	[cloud]{
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=64;
+			sizeMod=0.75;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.05, 0;
+			colorMap=0 0 0 0  0.8 0.8 1 1  0.8 0.8 1 0.75  0.8 0.8 1 0.5  0 0 0 0;
+			Texture=smokesmall;
+			airdrag=0.97;
+			particleLife=240;
+			particleLifeSpread=40;
+			numParticles=1;
+			particleSpeed=1;
+			particleSpeedSpread=1;
+			particleSize=4;
+			particleSizeSpread=4;
+			emitRot=0;
+			emitRotSpread=90;
+			directional=0;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[NUKE_600_SEACLOUD_CAP] {
+	[cloud]{
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=64;
+			sizeMod=0.75;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.05, 0;
+			colorMap=0 0 0 0  0.8 0.8 1 1  0.8 0.8 1 0.75  0.8 0.8 1 0.5  0 0 0 0;
+			Texture=smokesmall;
+			airdrag=0.97;
+			particleLife=30;
+			particleLifeSpread=20;
+			numParticles=4;
+			particleSpeed=4;
+			particleSpeedSpread=4;
+			particleSize=4;
+			particleSizeSpread=4;
+			emitRot=90;
+			emitRotSpread=5;
+			directional=0;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[NUKE_600_SEACLOUD_TOPCAP] {
+	[cloud]{
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=64;
+			sizeMod=0.75;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.05, 0;
+			colorMap=0 0 0 0  0.8 0.8 1 1  0.8 0.8 1 0.75  0.8 0.8 1 0.5  0 0 0 0;
+			Texture=smokesmall;
+			airdrag=0.97;
+			particleLife=240;
+			particleLifeSpread=40;
+			numParticles=4;
+			particleSpeed=4;
+			particleSpeedSpread=4;
+			particleSize=4;
+			particleSizeSpread=4;
+			emitRot=90;
+			emitRotSpread=5;
+			directional=0;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[NUKE_600_SEACLOUD_RING] {
+	[cloud]{
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=32;
+			sizeMod=0.5;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.05, 0;
+			colorMap=0 0 0 0  0.8 0.8 1 1  0.8 0.8 1 0.75  0.8 0.8 1 0.5  0 0 0 0;
+			Texture=smokesmall;
+			airdrag=0.97;
+			particleLife=240;
+			particleLifeSpread=40;
+			numParticles=128;
+			particleSpeed=16;
+			particleSpeedSpread=1;
+			particleSize=4;
+			particleSizeSpread=4;
+			emitRot=90;
+			emitRotSpread=5;
+			directional=0;
+			alwaysVisible=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}

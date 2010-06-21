@@ -1,0 +1,294 @@
+[FIRE1]  //orange smoke and ugly flames (WIP)
+{
+	[flame]
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 1, 0;
+		delay=0 i20;
+		explosionGenerator=custom:FIRE1_BURN1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=5;
+	}
+		[smoke1]
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 1, 0;
+		delay=0 i1;
+		explosionGenerator=custom:FIRE1_SMOKE1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+			[groundflash]
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 1, 0;
+		delay=0 i1;
+		explosionGenerator=custom:FIRE1_BURNLIGHT;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+}
+
+[FIRE1_BURNLIGHT]
+{
+	usedefaultexplosions=0;
+	[GROUNDFLASH]
+	{
+		flashsize=20;
+		flashalpha=1;
+		circlegrowth=1;
+		circlealpha=1;
+		ttl=15;
+		color=1,0.45,0.7;
+	}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+}
+
+[FIRE1_SMOKE1]
+{
+		[fire]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0.05;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=0, 1, 0;
+		gravity=0, 0, 0.05;
+		colorMap=0 0 0 0.01    1 1 1 1    0.7 0.7  0.7 1     0.5 0.5 0.5 0.7      0 0 0 0.01;
+		Texture=orangesmoke;
+		airdrag=1;
+		particleLife=30;
+		particleLifeSpread=30;
+		numParticles=1;
+		particleSpeed=2;
+		particleSpeedSpread=0;
+		particleSize=9;
+		particleSizeSpread=11;
+		emitRot=0;
+		emitRotSpread=5;
+		directional=0;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}
+
+
+
+[FIRE1_BURN1]
+{
+	[flame1]
+	{
+		class=CExpGenSpawner;
+		[properties]
+		{
+			pos=0, 1, 0;
+			delay=0;
+			explosionGenerator=custom:FIRE1_BURN1_FLAME1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+	
+	
+	[flame2]
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+			pos=0, 1, 0;
+			delay=5;
+			explosionGenerator=custom:FIRE1_BURN1_FLAME2;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+	
+	
+	[flame3]
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+			pos=0, 1, 0;
+			delay=10;
+			explosionGenerator=custom:FIRE1_BURN1_FLAME3;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+	[flame4]
+	
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+			pos=0, 1, 0;
+			delay=15;
+			explosionGenerator=custom:FIRE1_BURN1_FLAME4;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[FIRE1_BURN1_FLAME1]
+{
+	[fire]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=0, 1, 0;
+		gravity=0, 0, 0;
+		colorMap=0 0 0 0.01  1 1 1 0.01  0 0 0 0.01;
+		Texture=fire1;
+		airdrag=0.95;
+		particleLife=15.3;
+		particleLifeSpread=0;
+		numParticles=1;
+		particleSpeed=0;
+		particleSpeedSpread=0;
+		particleSize=5.23;
+		particleSizeSpread=10.23;
+		emitRot=0;
+		emitRotSpread=1;
+		directional=0;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}
+
+
+[FIRE1_BURN1_FLAME2]
+{
+	[fire]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=0, 1, 0;
+		gravity=0, 0, 0;
+		colorMap=0 0 0 0.01  1 1 1 0.01  0 0 0 0.01;
+		Texture=fire2;
+		airdrag=0.95;
+		particleLife=15.3;
+		particleLifeSpread=0;
+		numParticles=1;
+		particleSpeed=0;
+		particleSpeedSpread=0;
+		particleSize=5.23;
+		particleSizeSpread=10.23;
+		emitRot=0;
+		emitRotSpread=1;
+		directional=0;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}
+ [FIRE1_BURN1_FLAME3]
+ {
+	[fire]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=0, 1, 0;
+		gravity=0, 0, 0;
+		colorMap=0 0 0 0.01  1 1 1 0.01  0 0 0 0.01;
+		Texture=fire3;
+		airdrag=0.95;
+		particleLife=15.3;
+		particleLifeSpread=0;
+		numParticles=1;
+		particleSpeed=0;
+		particleSpeedSpread=0;
+		particleSize=5.23;
+		particleSizeSpread=10.23;
+		emitRot=0;
+		emitRotSpread=1;
+		directional=0;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}
+ [FIRE1_BURN1_FLAME4]
+ {
+	[fire]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=0, 1, 0;
+		gravity=0, 0, 0;
+		colorMap=0 0 0 0.01  1 1 1 0.01  0 0 0 0.01;
+		Texture=fire4;
+		airdrag=0.95;
+		particleLife=15.3;
+		particleLifeSpread=0;
+		numParticles=1;
+		particleSpeed=0;
+		particleSpeedSpread=0;
+		particleSize=5.23;
+		particleSizeSpread=10.23;
+		emitRot=0;
+		emitRotSpread=1;
+		directional=0;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}

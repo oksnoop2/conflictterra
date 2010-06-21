@@ -1,0 +1,13 @@
+[MINESWEEP]
+{
+	usedefaultexplosions=0;
+	[GROUNDFLASH]
+	{
+		flashsize=256;
+		flashalpha=0.2;
+		circlegrowth=3.5;
+		circlealpha=0.2;
+		ttl=200;
+		color=0.2,0.9,0.2;
+	}
+}

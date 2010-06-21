@@ -1,0 +1,124 @@
+unitDef = {
+
+  unitname                      = [[kmechfactory]],
+  name                          = [[Combat Mech Factory]],
+  description                   = [[Produces combat and support mechs.]],
+  amphibious                    = false,
+  acceleration                  = 0,
+  bmcode                        = [[0]],
+  brakeRate                     = 0,
+  buildCostEnergy               = 500,
+  buildCostMetal                = 500,
+  builder                       = true,
+
+  buildoptions                  = {
+
+    [[kamphmech]],
+    [[kartillerybot]],
+
+    [[kjjantitank]],
+
+  },
+
+
+
+  buildPic                      = [[kmechfactory.png]],
+  buildTime                     = 45,
+  canMove                       = true,
+  canPatrol                     = true,
+  canstop                       = [[1]],
+  canBeAssisted                 = false,
+  category                      = [[SINK]],
+  collisionVolumeOffsets        = [[0 0 0]],
+  collisionVolumeScales         = [[128 64 96]],
+  collisionVolumeTest           = 1,
+  collisionVolumeType           = [[box]],
+  corpse                        = [[DEAD]],
+  reclaimable                   = false,
+
+  energyMake                    = 0.15,
+  energyUse                     = 0,
+  explodeAs                     = [[LARGE_BUILDINGEX]],
+  footprintX                    = 12,
+  footprintZ                    = 8,
+  idleAutoHeal                  = 0,
+  mass                          = 275,
+  maxDamage                     = 8500,
+  maxSlope                      = 15,
+  maxVelocity                   = 0,
+  maxWaterDepth                 = 0,
+  metalMake                     = 0.15,
+  minCloakDistance              = 150,
+  noAutoFire                    = false,
+  objectName                    = [[kmechfactory.s3o]],
+
+  seismicSignature              = 4,
+  selfDestructAs                = [[LARGE_BUILDINGEX]],
+  showNanoSpray                 = false,
+  side                          = [[NKG]],
+  sightDistance                 = 273,
+  smoothAnim                    = true,
+  sortbias                      = [[0]],
+  TEDClass                      = [[PLANT]],
+  turnRate                      = 0,
+  workerTime                    = 1,
+  yardMap                       = [[occcco occcco occcco occcco occcco occcco]],
+  script                        = [[kmechfactory.lua]],
+
+
+
+  featureDefs                   = {
+
+    DEAD  = {
+      description      = [[Wreckage - Combat Mech Factory]],
+      blocking         = true,
+      category         = [[corpses]],
+      damage           = 8000,
+      energy           = 0,
+      featureDead      = [[DEAD2]],
+      featurereclamate = [[SMUDGE01]],
+      footprintX       = 7,
+      footprintZ       = 6,
+      height           = [[40]],
+      hitdensity       = [[100]],
+      metal            = 275,
+      object           = [[bgenericwreckage.s3o]],
+      reclaimable      = true,
+      reclaimTime      = 275,
+
+      seqnamereclamate = [[TREE1RECLAMATE]],
+      world            = [[All Worlds]],
+    },
+
+
+    DEAD2 = {
+      description      = [[Debris - Combat Mech Factory]],
+      blocking         = false,
+
+      category         = [[heaps]],
+      damage           = 8000,
+      energy           = 0,
+      featurereclamate = [[SMUDGE01]],
+      footprintX       = 6,
+      footprintZ       = 6,
+      height           = [[4]],
+      hitdensity       = [[100]],
+      metal            = 275,
+      object           = [[b6x6heap.s3o]],
+      reclaimable      = true,
+      reclaimTime      = 275,
+      seqnamereclamate = [[TREE1RECLAMATE]],
+      world            = [[All Worlds]],
+
+    },
+
+
+  },
+
+
+
+}
+
+
+
+return lowerkeys({ kmechfactory = unitDef })

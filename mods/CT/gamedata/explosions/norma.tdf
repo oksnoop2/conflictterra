@@ -1,0 +1,128 @@
+[NORMA]
+{
+	[hai]
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 1, 0;
+		delay=0 i2;
+		explosionGenerator=custom:NORMA_FLAMES;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=20;
+	}
+}
+
+[NORMA_FLAMES]
+{
+		[fire]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=0, 1, 0;
+		gravity=0, 0, 0;
+		colorMap=1 1 0.3 0.4    1 0.3 0.15 1    0.8 0.27  0.13 1    0.4  0.13 0.07 0.6         0.1 0 0 0.2       0 0 0 0.01;
+		Texture=kTex1;
+		airdrag=1;
+		particleLife=15;
+		particleLifeSpread=15;
+		numParticles=1;
+		particleSpeed=1;
+		particleSpeedSpread=1;
+		particleSize=7;
+		particleSizeSpread=2;
+		emitRot=0;
+		emitRotSpread=0;
+		directional=0;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+		[orangeness]
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 10, 0;
+		delay=10;
+		explosionGenerator=custom:FIRE1_SMOKE1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}
+[NORMA_FLAMES_SMOKE]
+{
+		[fire]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=0, 1, 0;
+		gravity=0, 0, 0;
+		colorMap=0 0 0 0.01   0.1 0.1 0.1 0.7  0 0 0 0.1;
+		Texture=kTex1;
+		airdrag=1;
+		particleLife=30;
+		particleLifeSpread=15;
+		numParticles=1;
+		particleSpeed=1;
+		particleSpeedSpread=1;
+		particleSize=18;
+		particleSizeSpread=6;
+		emitRot=0;
+		emitRotSpread=0;
+		directional=0;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}
+[NORMA_FLAMES_ORANGE]
+{
+		[fire]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=0, 1, 0;
+		gravity=0, 0, 0;
+		colorMap=0 0 0 0.01   0.54 0.3 0.04 0.7   0.27 0.15 0.02 0.35    0 0 0 0.01;
+		Texture=kTex1;
+		airdrag=1;
+		particleLife=15;
+		particleLifeSpread=15;
+		numParticles=1;
+		particleSpeed=1;
+		particleSpeedSpread=1;
+		particleSize=12;
+		particleSizeSpread=5;
+		emitRot=0;
+		emitRotSpread=0;
+		directional=0;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}

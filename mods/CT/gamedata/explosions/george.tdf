@@ -1,0 +1,211 @@
+[GEORGE]
+{
+	[quadrant1] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0 i10, 0, 0i10;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:GEORGE_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[quadrant2] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0 i10, 0, 0i-10;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:GEORGE_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[quadrant3] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0 i-10, 0, 0i-10;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:GEORGE_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[quadrant4] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0 i-10, 0, 0i10;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:GEORGE_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[n] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0 i10, 0, 0;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:GEORGE_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[e] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 0, i10;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:GEORGE_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[s] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 0, 0 i-10;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:GEORGE_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+	[w] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0 i-10, 0, 0;  
+		delay=0  i0.20;				  
+		explosionGenerator=custom:GEORGE_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+}
+[GEORGE_1]
+{
+	[dust] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=-100 r200, 0, -100 r200;  
+		delay=0;				  
+		explosionGenerator=custom:GEORGE_1_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}
+
+[GEORGE_1_1]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=4 r 2;
+			sizeMod=1.0;
+			pos=0, 1, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=1 1 1 1  0 0 0 0.01;   //0.72 0.61 0.41 1  
+			Texture=dust;
+			airdrag=0.5;
+			particleLife=4;
+			particleLifeSpread=10;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=1;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=0;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+//		[dust] 
+//	{
+//	    class=CExpGenSpawner;
+//		[properties]
+//		{
+//		pos=0, 0,0;  
+//		delay=8;				  
+//		explosionGenerator=custom:GEORGE_1_1_1;
+//		}
+//	air=1;
+//	water=1;
+//	ground=1;
+//	count=1;
+//	}
+}
+[GEORGE_1_1_1]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.02;
+			sizeMod=1.0;
+			pos=0, 2, 0;
+			emitVector=-0, 1, 0;
+			gravity=0, 0.05, 0;
+			colorMap= 0.72 0.61 0.41 1      0 0 0 0.01;
+			Texture=smokesmall;
+			airdrag=1;
+			particleLife=10;
+			particleLifeSpread=20;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=5;
+			particleSizeSpread=10;
+			emitRot=0;
+			emitRotSpread=0;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}

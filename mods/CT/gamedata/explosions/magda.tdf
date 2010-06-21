@@ -1,0 +1,790 @@
+[MAGDA]
+{
+	[frame1] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=1;				  
+		explosionGenerator=custom:MAGDA_1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame2]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=2;				  
+		explosionGenerator=custom:MAGDA_2;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame3]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=3;				  
+		explosionGenerator=custom:MAGDA_3;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame4]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=4;				  
+		explosionGenerator=custom:MAGDA_4;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame5]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=5;				  
+		explosionGenerator=custom:MAGDA_5;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame6]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=6;				  
+		explosionGenerator=custom:MAGDA_6;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame7]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=7;				  
+		explosionGenerator=custom:MAGDA_7;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame8]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=8;				  
+		explosionGenerator=custom:MAGDA_8;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame9]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=9;				  
+		explosionGenerator=custom:MAGDA_9;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame10]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=10;				  
+		explosionGenerator=custom:MAGDA_10;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame11]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=11;				  
+		explosionGenerator=custom:MAGDA_11;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame12]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=12;				  
+		explosionGenerator=custom:MAGDA_12;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame15]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=15;				  
+		explosionGenerator=custom:MAGDA_15;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame17]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=17;				  
+		explosionGenerator=custom:MAGDA_17;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame18]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=18;				  
+		explosionGenerator=custom:MAGDA_18;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}
+
+[MAGDA_1]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0001;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_2]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0002;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_3]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0003;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_4]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0004;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_5]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0005;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_6]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0006;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_7]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0007;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_8]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0008;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_9]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0009;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_10]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0010;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_11]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0011;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_12]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0012;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_13]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0013;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_14]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0014;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_15]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0015;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_16]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0016;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_17]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0017;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[MAGDA_18]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.01       1 1 1 1      0 0 0 0.01;
+			Texture=explosion-01-0018;
+			airdrag=1;
+			particleLife=2;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=15;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}

@@ -1,0 +1,34 @@
+[trail_huge0]
+{
+	[fireball1]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0.2;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=0, 1, 0;
+		gravity=0, 0, 0;
+		colorMap=0.2 0.4 0.25 0.2    0.2 0.15 0.05 0.2    0 0 0 0.25     0 0 0 0.01;
+		Texture=fire2;
+		airdrag=0.945;
+		particleLife=20;
+		particleLifeSpread=50;
+		numParticles=1;
+		particleSpeed=0;
+		particleSpeedSpread=1.5;
+		particleSize=13;
+		particleSizeSpread=10;
+		emitRot=90;
+		emitRotSpread=0;
+		directional=0;
+		}
+	air=1;
+	water=1;
+	underwater=1;
+	ground=1;
+	useAirLos=1;
+	count=1;
+	}
+}

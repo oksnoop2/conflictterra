@@ -1,0 +1,92 @@
+[TORPEDO_HIT]{
+	usedefaultexplosions=0;
+	[mainhit] {
+		class=CExpGenSpawner;
+		[properties]
+		{
+			dir=dir;
+			pos=0, 15, 0; 
+			delay=0;
+			explosionGenerator=custom:TORPEDO_HIT_MAIN; 
+		}
+		water=1;
+		count=1;
+	}
+	
+	[watersphere] {
+		class=CSpherePartSpawner;
+		[properties] {
+			expansionSpeed=4;
+			ttl=8;
+			alpha=0.25;
+			color=0.8,0.8,1;
+			alwaysVisible=0;
+		}
+		water=1;
+		count=1;
+	}
+	
+	[droplets] {
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=0.5;
+			sizeMod=1.0;
+			pos=0, 15, 0;
+			emitVector=0, 1, 0;
+			gravity=0, -0.1, 0;
+			colorMap=0.75 0.75 1 1  0 0 0 0;
+			Texture=randdots;
+			airdrag=0.95;
+			particleLife=8;
+			particleLifeSpread=0;
+			numParticles=16;
+			particleSpeed=2;
+			particleSpeedSpread=4;
+			particleSize=12;
+			particleSizeSpread=8;
+			emitRot=85;
+			emitRotSpread=5;
+			directional=0;
+			alwaysVisible=0;
+		}
+		water=1;
+		count=1;
+	}
+	
+	[pikes] {
+		class=explspike;
+		[properties] {
+			dir= -4 r8, -4 r8, -4 r8;
+			width=8;
+			length=1;
+			alpha=1;
+			alphadecay=0.125;
+			color=1,0.5,0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=16; 
+	}
+}
+
+[TORPEDO_HIT_MAIN] {
+	[mainhit]{
+		class = CBitmapMuzzleFlame;  
+		[properties]{
+			dir = -0.1 r0.2, 1, -0.1 r0.2;
+			colorMap=0.45 0.45 0.5 0.5  0.045 0.045 0.05 0.05; 
+			size=9 r6;
+			length=36 r24;
+			sizeGrowth=1;
+			ttl=12;
+			frontOffset=0;
+			sideTexture=splashside;
+			frontTexture=splashbase;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=4;
+	}
+}

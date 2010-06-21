@@ -1,0 +1,104 @@
+[riot_shell_l]
+{
+	usedefaultexplosions=0;
+   [shell]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=dir;
+		gravity=0, -0.5, 0;
+		colorMap=0.75 0 0 1   0.75 0 0 1;
+		Texture=shell;
+		airdrag=0.97;
+		particleLife=15;
+		particleLifeSpread=0;
+		numParticles=1;
+		particleSpeed=3;
+		particleSpeedSpread=0;
+		particleSize=6.0;
+		particleSizeSpread=0;
+		emitRot=0;
+		emitRotSpread=10;
+		directional=1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	
+	}
+}
+
+[riot_shell_m]
+{
+	usedefaultexplosions=0;
+   [shell]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=dir;
+		gravity=0, -0.5, 0;
+		colorMap=0.75 0 0 1   0.75 0 0 1;
+		Texture=shell;
+		airdrag=0.97;
+		particleLife=30;
+		particleLifeSpread=0;
+		numParticles=1;
+		particleSpeed=3;
+		particleSpeedSpread=0;
+		particleSize=6.0;
+		particleSizeSpread=0;
+		emitRot=0;
+		emitRotSpread=10;
+		directional=1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	
+	}
+}
+
+[riot_shell_h]
+{
+	usedefaultexplosions=0;
+   [shell]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=dir;
+		gravity=0, -0.5, 0;
+		colorMap=0.75 0 0 1   0.75 0 0 1;
+		Texture=shell;
+		airdrag=0.97;
+		particleLife=60;
+		particleLifeSpread=0;
+		numParticles=1;
+		particleSpeed=2;
+		particleSpeedSpread=2;
+		particleSize=12.0;
+		particleSizeSpread=0;
+		emitRot=0;
+		emitRotSpread=20;
+		directional=1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	
+	}
+}

@@ -1,0 +1,149 @@
+[WEAPEXP_PUFF]
+{
+	[fire]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.7;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.05, 0;
+			colorMap=1 1 1 0.25   1 0.8 0.5 0.25   0.08 0.08 0.08 0.3    0 0 0 0.001;
+			Texture=orangesmoke3;
+			airdrag=0.93;
+			particleLife=20;
+			particleLifeSpread=40;
+			numParticles=9;
+			particleSpeed=0.5;
+			particleSpeedSpread=1.5;
+			particleSize=7;
+			particleSizeSpread=3;
+			emitRot=52;
+			emitRotSpread=38;
+			directional=0;
+		}
+		air=1;
+		water=0;
+		ground=1;
+		underwater=0;
+		count=1;
+	}
+
+
+	[sparks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, -0.4, 0;
+			colorMap=1 0.5 0 0.05   1 0.7 0.5 0.05   0 0 0 0.01;
+			Texture=plasma;
+			airdrag=0.97;
+			particleLife=15;
+			particleLifeSpread=0;
+			numParticles=5;
+			particleSpeed=6;
+			particleSpeedSpread=4;
+			particleSize=4;
+			particleSizeSpread=5;
+			emitRot=0;
+			emitRotSpread=80;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+		useAirLos=1;
+	}
+
+
+	[fire2] 
+	{
+		class=CExpGenSpawner;
+		[properties]
+		{
+			pos=0, 0, 0;
+			delay=5;
+			explosionGenerator=custom:puff_fire2;
+		}
+		air=1;
+		water=0;
+		ground=1;
+		underwater=0;
+		count=1;
+	}
+
+
+	[pikes]
+	{
+		class=explspike;
+		[properties]
+		{
+			dir=-5 r10,-5 r10,-5 r10;
+			width=3;
+			length=4.5;
+			alpha=1;
+			alphadecay=0.1;
+			color=1.0,0.9,0.6;
+
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=8; 
+	}
+
+
+	[groundflash]
+	{
+		flashsize=80;
+		flashalpha=0.35;
+		circlegrowth=0;
+		circlealpha=0;
+		ttl=50;
+		color=1,0.9,0.35;
+	}
+}
+
+[puff_fire2]
+{
+	[fire2]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.7;
+			sizeMod=0.985;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.05, 0;
+			//colorMap=0.1 0.1 0.1 0.03   0.1 0.09 0.07 0.03    0.07 0.07 0.07 0.03    0 0 0 0.001;
+			colorMap=0 0 0 0.0001   0 0 0 0.0001    0.1 0.1 0.1 0.1    0.1 0.1 0.1 0.2  0.05 0.05 0.05 0.2  0 0 0 0.001;
+			Texture=orangesmoke3;
+			//Texture=smoke04;
+			airdrag=0.96;
+			particleLife=15;
+			particleLifeSpread=35;
+			numParticles=4;
+			particleSpeed=0.6;
+			particleSpeedSpread=1;
+			particleSize=3;
+			particleSizeSpread=2;
+			emitRot=80;
+			emitRotSpread=10;
+			directional=0;
+		}
+		air=1;
+		water=0;
+		ground=1;
+		underwater=0;
+		count=1;
+	}
+}

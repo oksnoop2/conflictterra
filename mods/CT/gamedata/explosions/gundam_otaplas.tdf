@@ -1,0 +1,1724 @@
+[OTA_PLAS]
+{
+	[frame1] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 0, 0;  
+		delay=0;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame2]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 1, 0;  
+		delay=2;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL2;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame3]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 2, 0;  
+		delay=4;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL3;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame4]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 3, 0;  
+		delay=6;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL4;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame5]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 4, 0;  
+		delay=8;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL5;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame6]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=10;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL6;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame7]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 6, 0;  
+		delay=12;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL7;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame8]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 7, 0;  
+		delay=14;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL8;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame9]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 8, 0;  
+		delay=16;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL9;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame10]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 9, 0;  
+		delay=18;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL10;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame11]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 10, 0;  
+		delay=20;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL11;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame12]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 11, 0;  
+		delay=22;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL12;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame13]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 12, 0;  
+		delay=24;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL13;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame14]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 13, 0;  
+		delay=26;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL14;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame15]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 14, 0;  
+		delay=28;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL15;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame16]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 15, 0;  
+		delay=30;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL16;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame17]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 16, 0;  
+		delay=32;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL17;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame18]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 17, 0;  
+		delay=34;				  
+		explosionGenerator=custom:OTAPLAS_FIREBALL18;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[groundflash]
+	{
+		flashsize=40;
+		flashalpha=0.9;
+		circlegrowth=0;
+		circlealpha=1;
+		ttl=20;
+		color=1,0.7,0.7;
+	}
+	
+}
+
+[OTAPLAS_FIREBALL1]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=1 1 1 0.01  1 1 1 0.01 .5 .5 .5 0.01;
+			Texture=otaplas1;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL2]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas2;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.5;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL3]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas3;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL4]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas4;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL5]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas5;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL6]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas6;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL7]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas7;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL8]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas8;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL9]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas9;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL10]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas10;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL11]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas11;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL12]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas12;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL13]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas13;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL14]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas14;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL15]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas15;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL16]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas16;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL17]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas17;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OTAPLAS_FIREBALL18]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0 0 0 0.01;
+			Texture=otaplas18;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=35;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+///////////////////////////////////// MINI VERSION //////////////////////////////////////////
+//  exploding peewees to protect the arms way of life and humanity 
+//////////////////////////////// THE SAME THING BUT SMALLER /////////////////////////////////
+
+[MINIOTA_PLAS]   //efficient version of sue (use!)
+{
+	[frame1] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 0, 0;  
+		delay=0;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame2]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 1, 0;  
+		delay=2;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL2;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame3]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 2, 0;  
+		delay=4;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL3;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame4]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 3, 0;  
+		delay=6;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL4;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame5]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 4, 0;  
+		delay=8;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL5;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame6]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 5, 0;  
+		delay=10;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL6;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame7]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 6, 0;  
+		delay=12;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL7;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame8]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 7, 0;  
+		delay=14;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL8;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame9]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 8, 0;  
+		delay=16;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL9;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame10]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 9, 0;  
+		delay=18;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL10;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame11]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 10, 0;  
+		delay=20;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL11;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame12]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 11, 0;  
+		delay=22;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL12;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame13]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 12, 0;  
+		delay=24;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL13;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame14]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 13, 0;  
+		delay=26;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL14;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame15]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 14, 0;  
+		delay=28;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL15;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame16]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 15, 0;  
+		delay=30;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL16;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame17]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 16, 0;  
+		delay=32;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL17;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[frame18]
+		{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 17, 0;  
+		delay=34;				  
+		explosionGenerator=custom:MINIOTAPLAS_FIREBALL18;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[groundflash]
+	{
+		flashsize=40;
+		flashalpha=0.9;
+		circlegrowth=0;
+		circlealpha=1;
+		ttl=20;
+		color=1,0.7,0.7;
+	}
+	
+}
+
+[MINIOTAPLAS_FIREBALL1]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=1 1 1 0.01  1 1 1 0.01 .5 .5 .5 0.01;
+			Texture=otaplas1;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL2]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas2;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.5;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL3]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas3;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL4]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas4;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL5]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas5;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL6]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas6;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL7]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas7;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL8]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas8;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL9]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas9;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL10]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas10;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL11]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas11;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL12]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas12;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL13]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas13;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL14]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas14;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL15]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas15;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL16]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas16;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL17]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0.5 0.5 0.5 0.01;
+			Texture=otaplas17;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[MINIOTAPLAS_FIREBALL18]
+{	
+	[wezels]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.5 0.5 0.5 0.01  1 1 1 0.01  0 0 0 0.01;
+			Texture=otaplas18;
+			airdrag=1;
+			particleLife=6;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=.3;
+			particleSpeedSpread=0;
+			particleSize=25;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+

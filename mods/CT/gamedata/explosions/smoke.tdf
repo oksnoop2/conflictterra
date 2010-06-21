@@ -1,0 +1,50 @@
+[SMOKE]
+{
+	[smoke1]
+	{
+	class=smoke;
+	[properties]
+      		{
+         	color = 0.3;
+         	ageSpeed=0.05;
+
+         	startSize = 2;
+         	sizeExpansion = 0.5 r0.5;
+         	size = 2;
+         	sizeGrowth = 0.2;
+
+         	pos = 0.5 r-1, -20 r-10, 0.5 r-1;
+         	speed=0.4 r-0.8, 0.8 r0.8, 0.4 r-0.8;
+      		}
+	air=1;
+      	water=0;
+      	ground=0;
+      	count=1;
+	}
+
+}
+[SMOKE2]
+{
+	[smoke1]
+	{
+	class=smoke;
+	[properties]
+      		{
+         	color = 0.3;
+         	ageSpeed=0.05;
+
+         	startSize = 2;
+         	sizeExpansion = 0.5 r0.5;
+         	size = 2;
+         	sizeGrowth = 0.2;
+
+         	pos = 0.5 r-1, -20 r-10, 0.5 r-1;
+         	speed=0.4 r-0.8, 0.8 r0.8, 0.4 r-0.8;
+      		}
+	air=1;
+      	water=0;
+      	ground=0;
+      	count=1;
+	}
+
+}

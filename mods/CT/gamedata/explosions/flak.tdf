@@ -1,0 +1,89 @@
+[FLAK_HIT_16]{
+	[bursts] {
+		class=CExpGenSpawner;
+		[properties]{
+			pos=-8 r16, -8 r16, -8 r16;
+			delay=0;				
+			explosionGenerator=custom:FLAK_BURST_16;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+}
+
+[FLAK_BURST_16] {
+	[burst] {
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=4 r8;
+			sizeMod=0.5;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.75  0 0 0 0.75  0 0 0 0;
+			Texture=smokesmall;
+			airdrag=0.5;
+			particleLife=60;
+			particleLifeSpread=20;
+			numParticles=1;
+			particleSpeed=0.1;
+			particleSpeedSpread=0;
+			particleSize=1;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=0;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[FLAK_HIT_24]{
+	[bursts] {
+		class=CExpGenSpawner;
+		[properties]{
+			pos=-8 r16, -8 r16, -8 r16;
+			delay=0;				
+			explosionGenerator=custom:FLAK_BURST_24;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+}
+
+[FLAK_BURST_24] {
+	[burst] {
+		class=CSimpleParticleSystem;
+		[properties]{
+			sizeGrowth=6 r12;
+			sizeMod=0.5;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0.75  0 0 0 0.75  0 0 0 0;
+			Texture=smokesmall;
+			airdrag=0.5;
+			particleLife=60;
+			particleLifeSpread=20;
+			numParticles=1;
+			particleSpeed=0.1;
+			particleSpeedSpread=0;
+			particleSize=1;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=0;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}

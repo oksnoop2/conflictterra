@@ -1,0 +1,143 @@
+[BABETTE]   //sparkly! (for flak?)
+{
+		[pikes]
+	{
+		class=explspike;
+		[properties]
+		{
+			dir=-15 r30,-15 r30,-15 r30;
+			width=5;
+			length=15;
+			alpha=0.8;
+			alphadecay=0.2;
+			color=1.0,0.7,0.4;
+
+		}
+	air=1;
+	water=1;
+	ground=1;
+    count=15; 
+	}
+	[sparks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=0;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=0, 1, 0;
+		gravity=0, 0, 0;
+		colorMap=1 1 0 0.01   1 0.7 0.5 0.01   0 0 0 0.01;
+		Texture=plasma;
+		airdrag=0.97;
+		particleLife=15;
+		particleLifeSpread=0;
+		numParticles=20;
+		particleSpeed=15;
+		particleSpeedSpread=2;
+		particleSize=10;
+		particleSizeSpread=2.5;
+		emitRot=0;
+		emitRotSpread=30;
+		directional=1;
+		alwaysVisible=1;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=0;
+	}
+	[boom] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=-25 r50, 0 r50,  -25 r50;
+		delay=5 i1;				
+		explosionGenerator=custom:burst_babette;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=20;
+	}
+	[smoke] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=-25 r50, 0 r50,  -25 r50;
+		delay=5 i1;				
+		explosionGenerator=custom:smoke_babette;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=20;
+	}
+}
+[BURST_BABETTE]
+{
+ [pop]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=2;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=0, 1, 0;
+		gravity=0, 0, 0;
+		colorMap=1 1 1 1    1 1 1 1;
+		Texture=kburst;
+		airdrag=1;
+		particleLife=6;
+		particleLifeSpread=0;
+		numParticles=1;
+		particleSpeed=0.1;
+		particleSpeedSpread=0;
+		particleSize=2;
+		particleSizeSpread=0;
+		emitRot=0;
+		emitRotSpread=10;
+		directional=0;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}
+[SMOKE_BABETTE]
+{
+ [pop]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+		sizeGrowth=2;
+		sizeMod=1.0;
+		pos=0, 0, 0;
+		emitVector=0, 1, 0;
+		gravity=0, 0, 0;
+		colorMap=0.5 0.5 0.7 1    0 0 0 0.01;
+		Texture=smoke;
+		airdrag=1;
+		particleLife=24;
+		particleLifeSpread=0;
+		numParticles=1;
+		particleSpeed=0.1;
+		particleSpeedSpread=0;
+		particleSize=2;
+		particleSizeSpread=0;
+		emitRot=0;
+		emitRotSpread=10;
+		directional=0;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}

@@ -1,0 +1,29 @@
+[HEATRAY_CEG] {
+	[light] {
+		class=CSimpleGroundFlash;
+		[properties] {
+			texture=groundflash;
+			size=80;
+			sizeGrowth=0;
+			ttl=5;
+			colorMap=1 0.5 0 0.03  0 0 0 0.01;
+		}
+		air=1;
+		ground=1;
+		water=1;
+		count=1;
+	}
+}
+
+[HEATRAY_HIT] {
+	usedefaultexplosions=0;
+	[GROUNDFLASH] {
+		flashsize=10;
+		flashalpha=0.6;
+		circlegrowth=-0.15;
+		circlealpha=1;
+		ttl=40;
+		color=1, 0.5, 0;
+	}
+}
+
