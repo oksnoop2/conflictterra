@@ -22,7 +22,7 @@
 
 	
 	  defaultmissiontype  = [[VTOL_standby]],
-	  explodeAs           = [[GUNSHIPEX]],
+	  explodeAs           = [[SMALL_UNIT]],
           floater             = false,
           footprintx          = 2,
 	  footprintZ          = 2,
@@ -39,19 +39,7 @@
 	  noChaseCategory     = [[TERRAFORM SATELLITE FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[brocketplane.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[GUNSHIPEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:ffmuzzle]],
-	      [[custom:ffejector]],
-	      [[custom:ff_engine]],
-	      [[custom:FF_PUFF]],
-	      [[custom:ff_wingtips]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[SMALL_UNIT]],
 
 	  side                = [[NKG]],
 	  sightDistance       = 600,
@@ -126,7 +114,7 @@
 	      },
 	
 	      model                   = [[bsmallmissile.s3o]],
-	      explosionGenerator      = [[custom:FLASH2]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,

@@ -16,7 +16,7 @@
 	  reclaimable         = false,
 	
 	  damageModifier      = 0.25,
-	  explodeAs           = [[SMALL_BUILDINGEX]],
+	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 5,
 	  footprintZ          = 5,
 	  idleAutoHeal        = 0,
@@ -30,16 +30,7 @@
 	  noChaseCategory     = [[FIXEDWING LAND SINK SHIP SATELLITE SWIM GUNSHIP FLOAT SUB HOVER]],
 	  objectName          = [[badvairturret.s3o]],
 	  seismicSignature    = 16,
-	  selfDestructAs      = [[SMALL_BUILDINGEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:WARMUZZLE]],
-	      [[custom:emg_shells_l]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[SMALL_BUILDING]],
 
 	  sounds			= {
 	      select = {
@@ -109,7 +100,7 @@
 	      },
 	
 	      edgeEffectiveness       = 0.85,
-	      explosionGenerator      = [[custom:FLAK_HIT_24]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      minbarrelangle          = [[-24]],
 	      range                   = 900,

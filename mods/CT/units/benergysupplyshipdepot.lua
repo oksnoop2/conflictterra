@@ -17,7 +17,7 @@ unitDef = {
   corpse                        = [[DEAD]],
   reclaimable                   = false,
 
-  explodeAs                     = [[SMALL_BUILDINGEX]],
+  explodeAs                     = [[BIG_UNIT]],
   energyStorage                 = 1000,
   floater                       = false,
   footprintX                    = 6,
@@ -34,7 +34,7 @@ unitDef = {
   noAutoFire                    = false,
   objectName                    = [[benergysupplyship.s3o]],
   seismicSignature              = 4,
-  selfDestructAs                = [[SMALL_BUILDINGEX]],
+  selfDestructAs                = [[BIG_UNIT]],
   side                          = [[NKG]],
   sightDistance                 = 500,
 

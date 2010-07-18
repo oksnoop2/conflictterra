@@ -18,7 +18,7 @@ unitDef = {
   reclaimable                   = false,
 
   energyStorage                 = 500,
-  explodeAs                     = [[ESTOR_BUILDINGEX]],
+  explodeAs                     = [[MEDIUM_UNIT]],
   footprintX                    = 4,
   footprintZ                    = 4,
   idleAutoHeal                  = 0,
@@ -32,7 +32,7 @@ unitDef = {
   noAutoFire                    = false,
   objectName                    = [[benergytruck.s3o]],
   seismicSignature              = 4,
-  selfDestructAs                = [[ESTOR_BUILDINGEX]],
+  selfDestructAs                = [[MEDIUM_UNIT]],
   side                          = [[NKG]],
   sightDistance                 = 300,
   smoothAnim                    = true,

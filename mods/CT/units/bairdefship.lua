@@ -21,7 +21,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[GUARD_NOMOVE]],
-	  explodeAs           = [[ATOMIC_BLAST]],
+	  explodeAs           = [[LARGE_BUILDING]],
 	  floater             = true,
           footprintx          = 8,
 	  footprintZ          = 8,
@@ -36,7 +36,7 @@
 	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
 	  objectName          = [[bairdefship.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[ATOMIC_BLAST]],
+	  selfDestructAs      = [[LARGE_BUILDING]],
 	    
 	  sfxtypes            = {
 	
@@ -166,7 +166,7 @@
 	      },
 	
 	      edgeEffectiveness       = 0.85,
-	      explosionGenerator      = [[custom:FLAK_HIT_24]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      minbarrelangle          = [[-24]],
 	      range                   = 900,

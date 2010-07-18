@@ -21,7 +21,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[SMALL_UNIT]],
 	  footprintX          = 2,
 	  footprintZ          = 2,
 	  idleAutoHeal        = 0,
@@ -36,15 +36,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
 	  objectName          = [[bamphmech2.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:HOVERS_ON_GROUND]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[SMALL_UNIT]],
 
 	  side                = [[NKG]],
 	  sightDistance       = 600,
@@ -109,7 +101,7 @@
 	      },
 	
 	      model                   = [[bsmallmissile.s3o]],
-	      explosionGenerator      = [[custom:FLASH2]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
@@ -145,7 +137,7 @@
 		Sub = 400,
 	      },
 	
-	      explosionGenerator      = [[custom:TORPEDO_HIT]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      model                   = [[btorpedo.s3o]],

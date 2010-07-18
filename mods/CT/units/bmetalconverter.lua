@@ -28,7 +28,7 @@ unitDef = {
   energyMake                    = 0,
   metalMake                     = 0,
   metalUse                      = -1,
-  explodeAs                     = [[ESTOR_BUILDINGEX]],
+  explodeAs                     = [[MEDIUM_BUILDING]],
   footprintX                    = 5,
   footprintZ                    = 5,
   idleAutoHeal                  = 0,
@@ -43,7 +43,7 @@ unitDef = {
 
   onoffable                     = true,
   seismicSignature              = 0,
-  selfDestructAs                = [[ESTOR_BUILDINGEX]],
+  selfDestructAs                = [[MEDIUM_BUILDING]],
   side                          = [[NKG]],
   sightDistance                 = 250,
   smoothAnim                    = true,

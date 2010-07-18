@@ -20,7 +20,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[BIG_UNIT]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -36,16 +36,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
 	  objectName          = [[bheavymech.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:zeusmuzzle]],
-	      [[custom:zeusgroundflash]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[BIG_UNIT]],
 
 	  side                = [[NKG]],
 	  sightDistance       = 600,

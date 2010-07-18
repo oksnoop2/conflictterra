@@ -21,7 +21,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[GUARD_NOMOVE]],
-	  explodeAs           = [[ATOMIC_BLAST]],
+	  explodeAs           = [[LARGE_BUILDING]],
 	  floater             = true,
           footprintx          = 8,
 	  footprintZ          = 8,
@@ -36,7 +36,7 @@
 	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
 	  objectName          = [[blanddefship2.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[ATOMIC_BLAST]],
+	  selfDestructAs      = [[LARGE_BUILDING]],
 
 	  sfxtypes            = {
 	
@@ -136,7 +136,7 @@
 	      },
 	
 	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:TESS]],
+	      explosionGenerator      = [[custom:LRPC_Expl]],
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,
 	      range                   = 1000,

@@ -21,7 +21,7 @@
           reclaimable                   = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[SMALL_UNIT]],
 	  footprintX          = 2,
 	  footprintZ          = 2,
 	  highTrajectory      = 2,
@@ -39,7 +39,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
 	  objectName          = [[bartillery.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
+	  selfDestructAs      = [[SMALL_UNIT]],
 
 	  	    
 	  sfxtypes            = {
@@ -101,7 +101,7 @@
 	      },
 	
 	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:WEAPEXP_PUFF]],
+	      explosionGenerator      = [[custom:LRPC_Expl]],
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,
 	      range                   = 750,

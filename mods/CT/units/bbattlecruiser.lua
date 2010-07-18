@@ -32,7 +32,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[VTOL_standby]],
-	  explodeAs           = [[SMALL_BUILDING]],
+	  explodeAs           = [[LARGE_UNIT]],
 	  floater             = true,
           footprintx          = 7,
 	  footprintZ          = 7,
@@ -48,16 +48,7 @@
 	  objectName          = [[bbattlecruiser2.s3o]],
 	  scale               = [[1]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[SMALL_BUILDING]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:BEAMWEAPON_MUZZLE_RED]],
-	      [[custom:BEAMWEAPON_MUZZLE_ORANGE]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[LARGE_UNIT]],
 
 	  side                = [[NKG]],
 	  sightDistance       = 750,
@@ -128,7 +119,7 @@
 	
 	      duration                = 0.02,
 	      energypershot           = 0,
-	      explosionGenerator      = [[custom:GATORLASERFLASH]],
+	      explosionGenerator      = [[custom:MINI_NUCLEAR_Expl]],
 	      interceptedByShieldType = 1,
 	      heightMod               = 0.5,
 	      lineOfSight             = true,

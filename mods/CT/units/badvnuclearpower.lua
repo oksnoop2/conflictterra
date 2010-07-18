@@ -25,7 +25,7 @@ unitDef = {
   damageModifier                = 0.95,
   energyMake                    = 0,
   energyUse                     = -225,
-  explodeAs                     = [[BIG_ELECTRIC_EXPLOSION]],
+  explodeAs                     = [[VOLATILE_BUILDING]],
   footprintX                    = 5,
   footprintZ                    = 5,
   idleAutoHeal                  = 0,
@@ -40,7 +40,7 @@ unitDef = {
 
   onoffable                     = true,
   seismicSignature              = 4,
-  selfDestructAs                = [[BIG_ELECTRIC_EXPLOSION]],
+  selfDestructAs                = [[VOLATILE_BUILDING]],
   side                          = [[NKG]],
   sightDistance                 = 250,
   smoothAnim                    = true,

@@ -25,7 +25,7 @@
 	  reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[SMALL_UNITEX]],
+	  explodeAs           = [[BIG_UNIT]],
 	  footprintX          = 5,
 	  footprintZ          = 5,
 	  idleAutoHeal        = 0,
@@ -40,7 +40,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE HOVER]],
 	  objectName          = [[badvaasub.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[SMALL_UNITEX]],
+	  selfDestructAs      = [[BIG_UNIT]],
 
 	  sfxtypes            = {
 	
@@ -112,7 +112,7 @@
 	      },
 	
 	      edgeEffectiveness       = 0.85,
-	      explosionGenerator      = [[custom:FLAK_HIT_24]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      minbarrelangle          = [[-24]],
 	      range                   = 900,

@@ -16,7 +16,7 @@
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  explodeAs           = [[SMALL_BUILDINGEX]],
+	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 3,
 	  footprintZ          = 3,
 	  idleAutoHeal        = 0,
@@ -32,7 +32,7 @@
 	  objectName          = [[bshieldgen.s3o]],
 	  seismicSignature    = 4,
 	  pushResistant       = 1,
-	  selfDestructAs      = [[SMALL_BUILDINGEX]],
+	  selfDestructAs      = [[SMALL_BUILDING]],
 	  shootme             = [[1]],
 	  side                = [[NKG]],
 	  sightDistance       = 500,

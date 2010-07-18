@@ -34,7 +34,7 @@
           cruiseAlt           = 175,
 	
 	  defaultmissiontype  = [[VTOL_standby]],
-	  explodeAs           = [[GUNSHIPEX]],
+	  explodeAs           = [[BIG_UNIT]],
           floater             = true,
           footprintx          = 12,
 	  footprintZ          = 12,
@@ -51,7 +51,7 @@
 	  releaseHeld         = true,
           scale               = [[1]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[GUNSHIPEX]],
+	  selfDestructAs      = [[BIG_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,
@@ -118,7 +118,7 @@
 		Sub = 10,
 	      },
 	
-	      explosionGenerator      = [[custom:WEAPEXP_PUFF]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
@@ -156,7 +156,7 @@
 	
 	      model                   = [[bsmallmissile.s3o]],
 	      edgeEffectiveness       = 0.5,
-	      explosionGenerator      = [[custom:xamelimpact]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 4,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,

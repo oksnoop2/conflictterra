@@ -22,7 +22,7 @@
 	  reclaimable         = false,
 	
 	  defaultmissiontype  = [[VTOL_standby]],
-	  explodeAs           = [[GUNSHIPEX]],
+	  explodeAs           = [[SMALL_UNIT]],
           floater             = false,
           footprintx          = 2,
 	  footprintZ          = 2,
@@ -38,15 +38,7 @@
 	  noChaseCategory     = [[TERRAFORM LAND SINK SHIP SWIM FLOAT SUB HOVER]],
 	  objectName          = [[badvfighter.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[GUNSHIPEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:flash_teal7]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[SMALL_UNIT]],
 
 	  sounds			= {
 	      select = {
@@ -116,7 +108,7 @@
 	      },
 	
 	      edgeEffectiveness       = 1,
-	      explosionGenerator      = [[custom:BRAWLIMPACTS]],
+	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      pitchtolerance          = [[18000]],
@@ -155,7 +147,7 @@
 		Sub = 10,
 	      },
 	
-	      explosionGenerator      = [[custom:WEAPEXP_PUFF]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,

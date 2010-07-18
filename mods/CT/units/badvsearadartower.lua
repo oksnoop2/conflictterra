@@ -20,7 +20,7 @@ unitDef = {
   reclaimable                   = false,
 
   energyUse                     = 3,
-  explodeAs                     = [[SMALL_BUILDINGEX]],
+  explodeAs                     = [[SMALL_BUILDING]],
   footprintX                    = 4,
   footprintZ                    = 4,
   floater                       = true,
@@ -41,7 +41,7 @@ unitDef = {
   radarDistance                 = 3000,
   sonarDistance                 = 3000,
   seismicSignature              = 4,
-  selfDestructAs                = [[SMALL_BUILDINGEX]],
+  selfDestructAs                = [[SMALL_BUILDING]],
   side                          = [[NKG]],
   sightDistance                 = 400,
   smoothAnim                    = true,

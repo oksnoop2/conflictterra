@@ -21,7 +21,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[VTOL_standby]],
-	  explodeAs           = [[GUNSHIPEX]],
+	  explodeAs           = [[SMALL_UNIT]],
 	  floater             = false,
           footprintx          = 2,
 	  footprintZ          = 2,
@@ -38,19 +38,7 @@
 	  noChaseCategory     = [[TERRAFORM SATELLITE SUB]],
 	  objectName          = [[bfighter.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[GUNSHIPEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:ffmuzzle]],
-	      [[custom:ffejector]],
-	      [[custom:ff_engine]],
-	      [[custom:FF_PUFF]],
-	      [[custom:ff_wingtips]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[SMALL_UNIT]],
 
 	  sounds			= {
 	      select = {
@@ -126,7 +114,7 @@
 	      },
 	
 	      edgeEffectiveness       = 1,
-	      explosionGenerator      = [[custom:BRAWLIMPACTS]],
+	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      pitchtolerance          = [[18000]],

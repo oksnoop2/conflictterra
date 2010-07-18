@@ -19,7 +19,7 @@ unitDef = {
   reclaimable                   = false,
 
   energyUse                     = 0,
-  explodeAs                     = [[TINY_BUILDINGEX]],
+  explodeAs                     = [[MEDIUM_BUILDING]],
   extractsMetal                 = 0.001,
   floater                       = false,
   footprintX                    = 3,
@@ -37,7 +37,7 @@ unitDef = {
 
   onoffable                     = true,
   seismicSignature              = 4,
-  selfDestructAs                = [[TINY_BUILDINGEX]],
+  selfDestructAs                = [[MEDIUM_BUILDING]],
   side                          = [[NKG]],
   sightDistance                 = 250,
   smoothAnim                    = true,

@@ -12,6 +12,7 @@ __Balance__
 __Miscellaneous__
 - Finally adding sounds!
 - Finally adding CEG effects!
+- Finally adding explosions!
 - Fixed Gatling Turret's build pic.
 
 

@@ -25,7 +25,7 @@
 	  reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[SMALL_UNITEX]],
+	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -40,7 +40,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE HOVER]],
 	  objectName          = [[baasub.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[SMALL_UNITEX]],
+	  selfDestructAs      = [[MEDIUM_UNIT]],
 	  
 	  sfxtypes            = {
 	
@@ -104,7 +104,7 @@
 		Sub = 3.5,
 	      },
 	
-	      explosionGenerator      = [[custom:FLASH2]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 4,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,

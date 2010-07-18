@@ -19,7 +19,7 @@
 	
 	  damageModifier      = 0.25,
 	  defaultmissiontype  = [[GUARD_NOMOVE]],
-	  explodeAs           = [[CRAWL_BLASTSML]],
+	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 5,
 	  footprintZ          = 5,
 	  idleAutoHeal        = 0,
@@ -34,7 +34,7 @@
 	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
 	  objectName          = [[badvlandturret.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[CRAWL_BLASTSML]],
+	  selfDestructAs      = [[SMALL_BUILDING]],
 	  side                = [[NKG]],
 	  sightDistance       = 600,
 

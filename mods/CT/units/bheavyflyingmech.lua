@@ -26,7 +26,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[VTOL_standby]],
-	  explodeAs           = [[GUNSHIPEX]],
+	  explodeAs           = [[BIG_UNIT]],
 	  floater             = false,
           footprintx          = 4,
 	  footprintZ          = 4,
@@ -42,16 +42,7 @@
 	  objectName          = [[bheavyflyingmech.s3o]],
 	  scale               = [[1]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[GUNSHIPEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:brawlermuzzle]],
-	      [[custom:emg_shells_m]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[BIG_UNIT]],
 
 	  sounds			= {
 	      select = {

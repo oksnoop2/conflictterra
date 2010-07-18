@@ -25,7 +25,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[SMALL_UNITEX]],
+	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -40,7 +40,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE HOVER]],
 	  objectName          = [[bsubmarine.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[SMALL_UNITEX]],
+	  selfDestructAs      = [[MEDIUM_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 500,
 	  smoothAnim          = true,
@@ -90,7 +90,7 @@
 		Sub = 400,
 	      },
 	
-	      explosionGenerator      = [[custom:TORPEDO_HIT]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      model                   = [[btorpedo.s3o]],

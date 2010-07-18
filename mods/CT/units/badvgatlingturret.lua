@@ -16,7 +16,7 @@
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  explodeAs           = [[SMALL_BUILDINGEX]],
+	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 5,
 	  footprintZ          = 5,
 	  idleAutoHeal        = 0,
@@ -31,7 +31,7 @@
 	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
 	  objectName          = [[badvgatlingturret.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[SMALL_BUILDINGEX]],
+	  selfDestructAs      = [[SMALL_BUILDING]],
 	  side                = [[NKG]],
 	  sightDistance       = 500,
 
@@ -93,7 +93,7 @@
 		Sub = 50,
 	      },
 	
-	      explosionGenerator      = [[custom:EMG_HIT]],
+	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      range                   = 400,

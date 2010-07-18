@@ -21,7 +21,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[GUARD_NOMOVE]],
-	  explodeAs           = [[ATOMIC_BLAST]],
+	  explodeAs           = [[LARGE_BUILDING]],
 	  floater             = true,
           footprintx          = 10,
 	  footprintZ          = 10,
@@ -36,7 +36,7 @@
 	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
 	  objectName          = [[bnavydefship.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[ATOMIC_BLAST]],
+	  selfDestructAs      = [[LARGE_BUILDING]],
 	  side                = [[NKG]],
 	  sightDistance       = 500,
 
@@ -132,7 +132,7 @@
 		Sub = 400,
 	      },
 	
-	      explosionGenerator      = [[custom:TORPEDO_HIT]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      model                   = [[btorpedo.s3o]],

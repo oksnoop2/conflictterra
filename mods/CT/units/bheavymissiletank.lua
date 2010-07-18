@@ -20,7 +20,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[BIG_UNIT]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -38,7 +38,7 @@
 	  noChaseCategory     = [[TERRAFORM SATELLITE SUB]],
 	  objectName          = [[bheavymissiletank.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
+	  selfDestructAs      = [[BIG_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 800,
 	  smoothAnim          = true,
@@ -108,7 +108,7 @@
 	
 	      model                   = [[blargemissile.s3o]],
 	      edgeEffectiveness       = 0.5,
-	      explosionGenerator      = [[custom:xamelimpact]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 4,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
@@ -143,7 +143,7 @@
 	      },
 	
 	      model                   = [[bantimechmissile.s3o]],
-	      explosionGenerator      = [[custom:FLASH2]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,

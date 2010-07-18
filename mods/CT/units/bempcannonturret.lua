@@ -17,7 +17,7 @@
 	  reclaimable         = false,
 	
 	  defaultmissiontype  = [[GUARD_NOMOVE]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[BIG_UNIT]],
           footprintx          = 5,
 	  footprintZ          = 5,
 	  levelground         = false,
@@ -32,18 +32,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
 	  objectName          = [[bempcannonturret.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:RAIDMUZZLE]],
-	      [[custom:STOMPSHELLS]],
-	      [[custom:STOMPDUST]],
-	      [[custom:STOMPOLLUTE]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[BIG_UNIT]],
 
 	  side                = [[NKG]],
 	  sightDistance       = 750,
@@ -83,7 +72,7 @@
 	      },
 	
 	      duration                = 0.01,
-	      explosionGenerator      = [[custom:YELLOW_LIGHTNING_BOMB]],
+	      explosionGenerator      = [[custom:STUNNER_Expl]],
 	      heightMod               = 1,
 	      intensity               = 10,
 	      interceptedByShieldType = 2,

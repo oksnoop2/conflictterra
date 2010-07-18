@@ -22,7 +22,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[VTOL_standby]],
-	  explodeAs           = [[GUNSHIPEX]],
+	  explodeAs           = [[SMALL_UNIT]],
           floater             = false,
           footprintx          = 2,
 	  footprintZ          = 2,
@@ -38,15 +38,7 @@
 	  noChaseCategory     = [[TERRAFORM LAND SINK SHIP SWIM FLOAT SUB HOVER]],
 	  objectName          = [[blaserplane.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[GUNSHIPEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:flash_teal7]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[SMALL_UNIT]],
 
 	  sounds			= {
 	      select = {
@@ -105,7 +97,6 @@
 	    Laser = {
 	      name                    = [[Burst Laser]],
 	      areaOfEffect            = 8,
-	      cegTag                  = [[redlaser_ak]],
 	      coreThickness           = 0.5,
 	      collideFriendly         = false,
 	      craterMult              = 0.25,
@@ -122,7 +113,7 @@
 	
 	      duration                = 0.01,
 	      energypershot           = 0,
-	      explosionGenerator      = [[custom:GATORLASERFLASH]],
+	      explosionGenerator      = [[custom:megapartgun]],
 	      interceptedByShieldType = 1,
 	      heightMod               = 0.5,
 	      range                   = 1000,

@@ -46,7 +46,7 @@ unitDef = {
 
   energyMake                    = 0,
   energyUse                     = 0,
-  explodeAs                     = [[LARGE_BUILDINGEX]],
+  explodeAs                     = [[LARGE_BUILDING]],
   footprintX                    = 8,
   footprintZ                    = 8,
   idleAutoHeal    		= 0,
@@ -61,7 +61,7 @@ unitDef = {
   objectName                    = [[badvmechfactory.s3o]],
 
   seismicSignature              = 4,
-  selfDestructAs                = [[LARGE_BUILDINGEX]],
+  selfDestructAs                = [[LARGE_BUILDING]],
   showNanoSpray                 = false,
   side                          = [[NKG]],
   sightDistance                 = 250,

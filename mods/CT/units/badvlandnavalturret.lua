@@ -18,7 +18,7 @@
 	  reclaimable         = false,
 	
 	  defaultmissiontype  = [[GUARD_NOMOVE]],
-	  explodeAs           = [[SMALL_UNITEX]],
+	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -33,7 +33,7 @@
 	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
 	  objectName          = [[badvlandnavalturret.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[SMALL_UNITEX]],
+	  selfDestructAs      = [[SMALL_BUILDING]],
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	 
@@ -111,7 +111,7 @@
 	      },
 	
 	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:DEFAULT]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      range                   = 1200,
 	      reloadtime              = 3,

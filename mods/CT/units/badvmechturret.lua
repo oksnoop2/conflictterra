@@ -18,7 +18,7 @@
 
 	  damageModifier      = 0.2,	
 	  defaultmissiontype  = [[GUARD_NOMOVE]],
-	  explodeAs           = [[SMALL_BUILDINGEX]],
+	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 5,
 	  footprintZ          = 5,
 	  idleAutoHeal        = 0,
@@ -32,7 +32,7 @@
 	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
 	  objectName          = [[badvmechturret.s3o]],
 	  seismicSignature    = 16,
-	  selfDestructAs      = [[SMALL_UNITEX]],
+	  selfDestructAs      = [[SMALL_BUILDING]],
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 
@@ -96,7 +96,7 @@
 		Sub = 25,
 	      },
 	
-	      explosionGenerator      = [[custom:STARFIRE]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      model                   = [[blargemissile.s3o]],

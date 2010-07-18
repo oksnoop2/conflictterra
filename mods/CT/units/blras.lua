@@ -20,7 +20,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[BIG_UNIT]],
           floater             = true,
 	  footprintX          = 8,
 	  footprintZ          = 8,
@@ -42,7 +42,7 @@
 	  objectName          = [[blras.s3o]],
           radarDistance       = 2400,
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
+	  selfDestructAs      = [[BIG_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,
@@ -97,7 +97,7 @@
 	      },
 	
 	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:lrpc_expl]],
+	      explosionGenerator      = [[custom:LRPC_Expl]],
 	      holdtime                = [[1]],
 	      interceptedByShieldType = 1,
 	      range                   = 2400,

@@ -42,7 +42,7 @@ local bengineer1 = {
 
 	defaultmissiontype  = [[Standby]],
         energyMake          = 0.25,
-	explodeAs           = [[BIG_UNITEX]],
+	explodeAs           = [[SMALL_UNIT]],
         footprintx          = 2,
 	footprintZ          = 2,
 	idleAutoHeal        = 0,
@@ -60,7 +60,7 @@ local bengineer1 = {
 	objectName          = "bengineer1.s3o",
         onoffable           = false,
         seismicSignature    = 4,
-        selfDestructAs      = [[BIG_UNITEX]],
+        selfDestructAs      = [[SMALL_UNIT]],
         side                = [[NKG]],
         sightDistance       = 500,
 
@@ -86,7 +86,7 @@ local bengineer1 = {
 	turninplace         = 0,
 	turnInPlace         = 0,
 	turnRate            = 560,
-	showNanospray	    = 1,
+	showNanospray	    = 0,
 	workerTime          = 1,
 	script		    = "bengineer1.lua",
 

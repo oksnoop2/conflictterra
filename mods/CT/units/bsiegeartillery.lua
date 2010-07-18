@@ -20,7 +20,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 3,
 	  footprintZ          = 3,
 	  idleAutoHeal        = 0,
@@ -38,16 +38,7 @@
 	  noChaseCategory     = [[TERRAFORM SATELLITE SUB]],
 	  objectName          = [[bsiegeartillery.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:JANUSMUZZLE]],
-	      [[custom:JANUSBACK]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[MEDIUM_UNIT]],
 
 	  sounds			= {
 	      select = {
@@ -116,7 +107,7 @@
 	      dance                   = 20,
 	      wobble                  = 7000,
 	      edgeEffectiveness       = 0.5,
-	      explosionGenerator      = [[custom:MEDMISSILE_EXPLOSION]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 2.5,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,

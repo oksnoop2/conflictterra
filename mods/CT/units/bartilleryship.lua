@@ -21,7 +21,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[MEDIUM_UNIT]],
           floater             = true,
 	  footprintX          = 4,
 	  footprintZ          = 4,
@@ -43,7 +43,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE]],
 	  objectName          = [[bartilleryship.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
+	  selfDestructAs      = [[MEDIUM_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	    
@@ -95,7 +95,7 @@
 	      },
 	
 	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:WEAPEXP_PUFF]],
+	      explosionGenerator      = [[custom:LRPC_Expl]],
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,
 	      range                   = 750,

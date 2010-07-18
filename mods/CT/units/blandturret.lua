@@ -16,7 +16,7 @@
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  explodeAs           = [[SMALL_BUILDINGEX]],
+	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -31,7 +31,7 @@
 	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
 	  objectName          = [[blandturret.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[SMALL_BUILDINGEX]],
+	  selfDestructAs      = [[SMALL_BUILDING]],
 	  side                = [[NKG]],
 	  sightDistance       = 540,
 	  smoothAnim          = true,
@@ -97,7 +97,7 @@
 	      },
 	
 	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:DEFAULT]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      range                   = 750,
 	      reloadtime              = 3,

@@ -20,7 +20,7 @@
 	  reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[BIG_UNIT]],
           floater             = true,
 	  footprintX          = 7,
 	  footprintZ          = 7,
@@ -41,7 +41,7 @@
 	  noChaseCategory     = [[FIXEDWING SATELLITE GUNSHIP SUB]],
 	  objectName          = [[badvbattleship.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
+	  selfDestructAs      = [[BIG_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	    
@@ -149,7 +149,7 @@
 	      },
 	
 	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:PLASMA_HIT_96]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      minbarrelangle          = [[-25]],
 	      range                   = 1000,

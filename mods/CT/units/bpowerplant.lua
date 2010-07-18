@@ -26,7 +26,7 @@ unitDef = {
   damageModifier                = 0.25,
   energyUse                     = -5,
   energyMake                    = 0,
-  explodeAs                     = [[SMALL_BUILDINGEX]],
+  explodeAs                     = [[MEDIUM_BUILDING]],
   footprintX                    = 2,
   footprintZ                    = 4,
   idleAutoHeal                  = 0,
@@ -41,7 +41,7 @@ unitDef = {
 
   onoffable                     = true,
   seismicSignature              = 4,
-  selfDestructAs                = [[SMALL_BUILDINGEX]],
+  selfDestructAs                = [[MEDIUM_BUILDING]],
   side                          = [[NKG]],
   sightDistance                 = 250,
   smoothAnim                    = true,

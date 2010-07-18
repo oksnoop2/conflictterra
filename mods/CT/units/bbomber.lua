@@ -22,7 +22,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[VTOL_standby]],
-	  explodeAs           = [[GUNSHIPEX]],
+	  explodeAs           = [[SMALL_UNIT]],
           fireState           = 0,
           floater             = false,
           footprintx          = 4,
@@ -39,7 +39,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
 	  objectName          = [[bbomber.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[GUNSHIPEX]],
+	  selfDestructAs      = [[SMALL_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 500,
 	  smoothAnim          = true,
@@ -94,7 +94,7 @@
 	
 	      dropped                 = true,
 	      edgeEffectiveness       = 0.7,
-	      explosionGenerator      = [[custom:BigBulletImpact]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      manualBombSettings      = true,
 	      model                   = [[bbombs.s3o]],

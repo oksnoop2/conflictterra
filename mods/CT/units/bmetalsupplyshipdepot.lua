@@ -17,7 +17,7 @@ unitDef = {
   corpse                        = [[DEAD]],
   reclaimable                   = false,
 
-  explodeAs                     = [[SMALL_BUILDINGEX]],
+  explodeAs                     = [[BIG_UNIT]],
   floater                       = false,
   footprintX                    = 7,
   footprintZ                    = 7,
@@ -33,7 +33,7 @@ unitDef = {
   noAutoFire                    = false,
   objectName                    = [[bmetalsupplyship.s3o]],
   seismicSignature              = 4,
-  selfDestructAs                = [[SMALL_BUILDINGEX]],
+  selfDestructAs                = [[BIG_UNIT]],
   side                          = [[NKG]],
   sightDistance                 = 500,
   smoothAnim                    = true,

@@ -20,7 +20,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[SMALL_UNIT]],
 	  footprintX          = 2,
 	  footprintZ          = 2,
 	  idleAutoHeal        = 0,
@@ -39,16 +39,7 @@
 	  objectName          = [[bmissiletank.s3o]],
           pushResistant       = 1,
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:SLASHMUZZLE]],
-	      [[custom:SLASHREARMUZZLE]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[SMALL_UNIT]],
 
 	  sounds			= {
 	      select = {
@@ -108,7 +99,7 @@
 	      },
 	
 	      model                   = [[bantimechmissile.s3o]],
-	      explosionGenerator      = [[custom:FLASH2]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,

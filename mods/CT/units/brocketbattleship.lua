@@ -22,7 +22,7 @@
 
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[MEDIUM_UNIT]],
           floater             = true,
 	  footprintX          = 5,
 	  footprintZ          = 5,
@@ -42,16 +42,7 @@
 	  noChaseCategory     = [[TERRAFORM SATELLITE SUB]],
 	  objectName          = [[brocketbattleship.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:MISSILE_EXPLOSION]],
-	      [[custom:WEAPEXP_PUFF]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[MEDIUM_UNIT]],
 
 	  side                = [[NKG]],
 	  sightDistance       = 750,
@@ -115,7 +106,7 @@
 	
 	      model                   = [[bsmallmissile.s3o]],
 	      edgeEffectiveness       = 0.5,
-	      explosionGenerator      = [[custom:xamelimpact]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 4,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,

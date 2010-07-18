@@ -20,7 +20,7 @@
 	  reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[BIG_UNIT]],
           floater             = true,
 	  footprintX          = 5,
 	  footprintZ          = 5,
@@ -42,7 +42,7 @@
 	  objectName          = [[badvaaship.s3o]],
           radarDistance       = 1000,
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
+	  selfDestructAs      = [[BIG_UNIT]],
 	 
 	  sfxtypes            = {
 	
@@ -169,7 +169,7 @@
 	      },
 	
 	      edgeEffectiveness       = 0.85,
-	      explosionGenerator      = [[custom:FLAK_HIT_24]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      minbarrelangle          = [[-24]],
 	      range                   = 900,

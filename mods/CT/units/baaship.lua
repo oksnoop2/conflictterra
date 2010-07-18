@@ -20,7 +20,7 @@
 	  reclaimable         = false,
 
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[MEDIUM_UNIT]],
           floater             = true,
 	  footprintX          = 4,
 	  footprintZ          = 4,
@@ -41,7 +41,7 @@
 	  noChaseCategory     = [[TERRAFORM LAND SINK SHIP SATELLITE SWIM FLOAT SUB HOVER]],
 	  objectName          = [[baaship.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
+	  selfDestructAs      = [[MEDIUM_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	    
@@ -102,7 +102,7 @@
 		Sub = 3.5,
 	      },
 	
-	      explosionGenerator      = [[custom:FLASH2]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 4,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,

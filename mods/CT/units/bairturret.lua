@@ -17,7 +17,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[GUARD_NOMOVE]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -32,16 +32,7 @@
 	  noChaseCategory     = [[FIXEDWING LAND SINK SHIP SATELLITE SWIM GUNSHIP FLOAT SUB HOVER]],
 	  objectName          = [[bairturret.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:STORMMUZZLE]],
-	      [[custom:STORMBACK]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[SMALL_BUILDING]],
 
 	  sounds			= {
 	      select = {
@@ -102,7 +93,7 @@
 		Sub = 10,
 	      },
 	
-	      explosionGenerator      = [[custom:WEAPEXP_PUFF]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,

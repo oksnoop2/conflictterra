@@ -24,7 +24,7 @@
 	
 	  defaultmissiontype  = [[Standby]],
           energyUse           = 1.5,
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[SMALL_UNIT]],
 	  footprintX          = 2,
 	  footprintZ          = 2,
 	  idleAutoHeal        = 0,
@@ -45,7 +45,7 @@
           radarDistanceJam    = 500,
           sonarDistance       = 1000,
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
+	  selfDestructAs      = [[SMALL_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 500,
 

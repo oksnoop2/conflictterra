@@ -21,7 +21,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 5,
 	  footprintZ          = 5,
           collisionVolumeOffsets = [[0 -5 0]],
@@ -40,7 +40,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE]],
 	  objectName          = [[bbattleship.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
+	  selfDestructAs      = [[MEDIUM_UNIT]],
 
 	  sfxtypes            = {
 	
@@ -101,7 +101,7 @@
 	      },
 	
 	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:PLASMA_HIT_96]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      minbarrelangle          = [[-25]],
 	      range                   = 1000,

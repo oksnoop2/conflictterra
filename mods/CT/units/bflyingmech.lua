@@ -25,7 +25,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[VTOL_standby]],
-	  explodeAs           = [[GUNSHIPEX]],
+	  explodeAs           = [[MEDIUM_UNIT]],
 	  floater             = false,
           footprintx          = 3,
 	  footprintZ          = 3,
@@ -42,7 +42,7 @@
 	  objectName          = [[bflyingmech.s3o]],
 	  scale               = [[1]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[GUNSHIPEX]],
+	  selfDestructAs      = [[MEDIUM_UNIT]],
 
 	  sfxtypes            = {
 	
@@ -132,7 +132,7 @@
 		Sub = 1,
 	      },
 	
-	      explosionGenerator      = [[custom:EMG_HIT]],
+	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      range                   = 250,

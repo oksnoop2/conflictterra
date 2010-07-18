@@ -18,7 +18,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[GUARD_NOMOVE]],
-	  explodeAs           = [[SMALL_UNITEX]],
+	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 3,
 	  footprintZ          = 3,
 	  floater             = true,
@@ -34,7 +34,7 @@
 	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
 	  objectName          = [[btorpedoturret.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[SMALL_UNITEX]],
+	  selfDestructAs      = [[SMALL_BUILDING]],
 	  side                = [[NKG]],
 
 	  sounds			= {
@@ -90,7 +90,7 @@
 		Sub = 400,
 	      },
 	
-	      explosionGenerator      = [[custom:TORPEDO_HIT]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      model                   = [[btorpedo.s3o]],

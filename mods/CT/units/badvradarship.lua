@@ -21,7 +21,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[BIG_UNIT]],
           floater             = true,
 	  footprintX          = 5,
 	  footprintZ          = 5,
@@ -44,7 +44,7 @@
           radarDistance       = 2500,
           sonarDistance       = 2500,
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
+	  selfDestructAs      = [[BIG_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 400,
 	  smoothAnim          = true,

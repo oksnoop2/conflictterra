@@ -26,7 +26,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[ATOMIC_BLAST]],
+	  explodeAs           = [[LARGE_BUILDING]],
           footprintx          = 8,
 	  footprintZ          = 8,
 	  idleAutoHeal        = 0,
@@ -40,7 +40,7 @@
 	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
 	  objectName          = [[blanddefship2.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[ATOMIC_BLAST]],
+	  selfDestructAs      = [[LARGE_BUILDING]],
 
 	  side                = [[NKG]],
 

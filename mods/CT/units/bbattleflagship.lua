@@ -42,7 +42,7 @@
           energyMake          = 7.2,
 	  energyStorage       = 980,
 	  energyUse           = 0,
-	  explodeAs           = [[GUNSHIPEX]],
+	  explodeAs           = [[LARGE_UNIT]],
           floater             = true,
           footprintx          = 7,
 	  footprintZ          = 7,
@@ -60,7 +60,7 @@
 	  norestrict          = [[1]],
 	  objectName          = [[bbattleflagship.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[GUNSHIPEX]],
+	  selfDestructAs      = [[LARGE_UNIT]],
           showNanospray       = 0,
 	  showPlayerName      = true,
 	  side                = [[NKG]],
@@ -154,7 +154,7 @@
 	      },
 	
 	      energypershot           = 300,
-	      explosionGenerator      = [[custom:DGUNTRACE]],
+	      explosionGenerator      = [[custom:megapartgun]],
 	      interceptedByShieldType = 1,
 	      noExplode               = true,
 	      noSelfDamage            = true,
@@ -173,7 +173,6 @@
 	    Laser = {
 	      name                    = [[Burst Laser]],
 	      areaOfEffect            = 8,
-	      cegTag                  = [[redlaser_ak]],
 	      coreThickness           = 0.5,
 	      craterMult              = 0.25,
 	
@@ -189,7 +188,7 @@
 	
 	      duration                = 0.02,
 	      energypershot           = 0,
-	      explosionGenerator      = [[custom:GATORLASERFLASH]],
+	      explosionGenerator      = [[custom:megapartgun]],
 	      interceptedByShieldType = 1,
 	      heightMod               = 0.5,
 	      lineOfSight             = true,

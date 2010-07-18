@@ -20,7 +20,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[BIG_UNIT]],
 	  footprintX          = 5,
 	  footprintZ          = 5,
 	  idleAutoHeal        = 0,
@@ -37,15 +37,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE GUNSHIP SUB]],
 	  objectName          = [[bempcannon.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:LARGE_MUZZLE_FLASH_FX]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[BIG_UNIT]],
 
 	  sounds			= {
 	      select = {
@@ -100,7 +92,7 @@
 	      },
 	
 	      duration                = 0.01,
-	      explosionGenerator      = [[custom:YELLOW_LIGHTNING_BOMB]],
+	      explosionGenerator      = [[custom:MINI_NUCLEAR_Expl]],
 	      heightMod               = 1,
 	      intensity               = 10,
 	      interceptedByShieldType = 2,

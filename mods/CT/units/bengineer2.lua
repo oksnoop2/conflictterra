@@ -48,7 +48,7 @@ local bengineer2 = {
 
 	defaultmissiontype  = [[Standby]],
         energyMake          = 0.25,
-	explodeAs           = [[BIG_UNITEX]],
+	explodeAs           = [[SMALL_UNIT]],
         footprintx          = 3,
 	footprintZ          = 3,
 	idleAutoHeal        = 0,
@@ -66,7 +66,7 @@ local bengineer2 = {
 	objectName          = "bengineer2.s3o",
         onoffable           = false,
         seismicSignature    = 4,
-        selfDestructAs      = [[BIG_UNITEX]],
+        selfDestructAs      = [[SMALL_UNIT]],
         side                = [[NKG]],
         sightDistance       = 500,
 	smoothAnim          = true,

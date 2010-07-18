@@ -20,7 +20,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[ATOMIC_BLASTSML]],
+	  explodeAs           = [[BIG_UNIT]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -36,7 +36,7 @@
 	  noChaseCategory     = [[FIXEDWING SATELLITE SUB]],
 	  objectName          = [[bheavyassaultmech.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[ATOMIC_BLASTSML]],
+	  selfDestructAs      = [[BIG_UNIT]],
           selfDestructCountdown = 10,
 
 	  sfxtypes            = {
@@ -159,7 +159,7 @@
 	      },
 	
 	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:TESS]],
+	      explosionGenerator      = [[custom:LRPC_Expl]],
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,
 	      range                   = 1000,
@@ -188,7 +188,7 @@
 	      },
 	
 	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:DEFAULT]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      range                   = 340,
 	      reloadtime              = 3,

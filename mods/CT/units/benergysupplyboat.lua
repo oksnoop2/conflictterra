@@ -22,7 +22,7 @@
 	
 	  defaultmissiontype  = [[Standby]],
 	  energyStorage       = 750,
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[MEDIUM_UNIT]],
           floater             = true,
 	  footprintX          = 5,
 	  footprintZ          = 5,
@@ -39,7 +39,7 @@
 	  noChaseCategory     = [[TERRAFORM LAND SINK SHIP SATELLITE SWIM FLOAT SUB HOVER]],
 	  objectName          = [[benergysupplyboat.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
+	  selfDestructAs      = [[MEDIUM_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 400,
 	  smoothAnim          = true,

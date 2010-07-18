@@ -25,7 +25,7 @@ unitDef = {
   collisionVolumeType           = [[box]],
 
   energyUse                     = 0.8,
-  explodeAs                     = [[SMALL_BUILDINGEX]],
+  explodeAs                     = [[SMALL_BUILDING]],
   footprintX                    = 1,
   footprintZ                    = 1,
   idleAutoHeal                  = 0,
@@ -44,7 +44,7 @@ unitDef = {
   onoffable                     = true,
   radarDistance                 = 1500,
   seismicSignature              = 4,
-  selfDestructAs                = [[SMALL_BUILDINGEX]],
+  selfDestructAs                = [[SMALL_BUILDING]],
   side                          = [[NKG]],
   sightDistance                 = 400,
   smoothAnim                    = true,

@@ -23,7 +23,7 @@ local
 
     name      = 'TEST',
 
-    startunit = 'badvbomber',
+    startunit = 'bengineer1',
 
   },
 

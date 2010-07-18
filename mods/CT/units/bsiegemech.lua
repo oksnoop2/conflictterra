@@ -20,7 +20,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 3,
 	  footprintZ          = 3,
 	  highTrajectory      = 2,
@@ -119,7 +119,7 @@
 	      },
 	
 	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:WEAPEXP_PUFF]],
+	      explosionGenerator      = [[custom:LRPC_Expl]],
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,
 	      range                   = 750,
@@ -147,7 +147,7 @@
 		Sub = 1,
 	      },
 	
-	      explosionGenerator      = [[custom:EMG_HIT]],
+	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      range                   = 200,

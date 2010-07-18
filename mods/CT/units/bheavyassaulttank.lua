@@ -20,7 +20,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[BIG_UNIT]],
 	  footprintX          = 3,
 	  footprintZ          = 3,
 	  idleAutoHeal        = 0,
@@ -37,7 +37,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
 	  objectName          = [[bheavyassaulttank.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
+	  selfDestructAs      = [[BIG_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 480,
 	  sfxtypes            = {
@@ -104,7 +104,7 @@
 	      },
 	
 	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:DEFAULT]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      range                   = 480,
 	      reloadtime              = 4,

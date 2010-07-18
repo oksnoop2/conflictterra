@@ -21,7 +21,7 @@
 	  reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -37,16 +37,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
 	  objectName          = [[badvamphmech.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:HEAVYHOVERS_ON_GROUND]],
-	      [[custom:BEAMWEAPON_MUZZLE_ORANGE]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[MEDIUM_UNIT]],
 
 	  side                = [[NKG]],
 	  sightDistance       = 600,
@@ -85,7 +76,6 @@
 	    Laser = {
 	      name                    = [[Burst Laser]],
 	      areaOfEffect            = 8,
-	      cegTag                  = [[redlaser_ak]],
 	      coreThickness           = 0.5,
 	      craterMult              = 0.25,
 	
@@ -101,7 +91,7 @@
 	
 	      duration                = 0.02,
 	      energypershot           = 0,
-	      explosionGenerator      = [[custom:GATORLASERFLASH]],
+	      explosionGenerator      = [[custom:megapartgun]],
 	      interceptedByShieldType = 1,
 	      heightMod               = 0.5,
 	      lineOfSight             = true,

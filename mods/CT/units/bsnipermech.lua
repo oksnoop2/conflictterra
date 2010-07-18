@@ -20,7 +20,7 @@
           reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -37,16 +37,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE GUNSHIP SUB]],
 	  objectName          = [[bsnipermech.s3o]],
 	  seismicSignature    = 16,
-	  selfDestructAs      = [[BIG_UNITEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:WEAPEXP_PUFF]],
-	      [[custom:MISSILE_EXPLOSION]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[MEDIUM_UNIT]],
 
 	  sounds			= {
 	      select = {
@@ -100,7 +91,7 @@
 		Sub = 10,
 	      },
 	
-	      explosionGenerator      = [[custom:gauss_hit_m]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      range                   = 1000,

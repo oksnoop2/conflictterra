@@ -22,7 +22,7 @@ unitDef = {
   damageModifier                = 0.25,
   energyUse                     = -15,
   energyMake                    = 0,
-  explodeAs                     = [[SMALL_BUILDINGEX]],
+  explodeAs                     = [[SMALL_BUILDING]],
   footprintX                    = 3,
   footprintZ                    = 3,
   floater                       = true,
@@ -38,7 +38,7 @@ unitDef = {
 
   onoffable                     = true,
   seismicSignature              = 4,
-  selfDestructAs                = [[SMALL_BUILDINGEX]],
+  selfDestructAs                = [[SMALL_BUILDING]],
   side                          = [[NKG]],
   sightDistance                 = 250,
   smoothAnim                    = true,

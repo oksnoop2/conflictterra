@@ -17,7 +17,7 @@
 	  reclaimable                   = false,
 	
 	  defaultmissiontype  = [[GUARD_NOMOVE]],
-	  explodeAs           = [[BIG_UNITEX]],
+	  explodeAs           = [[SMALL_UNIT]],
           footprintx          = 2,
 	  footprintZ          = 2,
 	  levelground         = false,
@@ -32,7 +32,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
 	  objectName          = [[baatruckturret.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNITEX]],
+	  selfDestructAs      = [[SMALL_UNIT]],
 
 	  sfxtypes            = {
 	
@@ -90,7 +90,7 @@
 	      },
 	
 	      edgeEffectiveness       = 0.85,
-	      explosionGenerator      = [[custom:FLAK_HIT_24]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      minbarrelangle          = [[-24]],
 	      range                   = 900,

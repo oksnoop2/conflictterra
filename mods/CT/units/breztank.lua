@@ -30,7 +30,7 @@ local breztank = {
 
 	defaultmissiontype  = [[Standby]],
         energyMake          = 0,
-	explodeAs           = [[BIG_UNITEX]],
+	explodeAs           = [[SMALL_UNIT]],
         footprintx          = 2,
 	footprintZ          = 2,
 	idleAutoHeal        = 0,
@@ -47,7 +47,7 @@ local breztank = {
 	objectName          = "breztank.s3o",
         onoffable           = false,
         seismicSignature    = 4,
-        selfDestructAs      = [[BIG_UNITEX]],
+        selfDestructAs      = [[SMALL_UNIT]],
         side                = [[NKG]],
         sightDistance       = 400,
 	smoothAnim          = true,

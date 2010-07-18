@@ -22,7 +22,7 @@
 	  reclaimable         = false,
 	
 	  defaultmissiontype  = [[VTOL_standby]],
-	  explodeAs           = [[GUNSHIPEX]],
+	  explodeAs           = [[SMALL_UNIT]],
           fireState           = 1,
           floater             = false,
           footprintx          = 6,
@@ -39,16 +39,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
 	  objectName          = [[badvbomber.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[GUNSHIPEX]],
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-	      [[custom:brawlermuzzle]],
-	      [[custom:emg_shells_m]],
-	    },
-	
-	  },
+	  selfDestructAs      = [[SMALL_UNIT]],
 
 	  sounds			= {
 	      select = {
@@ -111,7 +102,7 @@
 	
 	      dropped                 = true,
 	      edgeEffectiveness       = 0.7,
-	      explosionGenerator      = [[custom:BigBulletImpact]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      manualBombSettings      = true,
 	      model                   = [[bbombs.s3o]],
@@ -143,7 +134,7 @@
 	
 	      canAttackGround         = false,
 	      edgeEffectiveness       = 1,
-	      explosionGenerator      = [[custom:BRAWLIMPACTS]],
+	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      pitchtolerance          = [[18000]],

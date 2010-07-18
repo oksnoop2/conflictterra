@@ -20,7 +20,7 @@
 	  reclaimable         = false,
 	
 	  defaultmissiontype  = [[Standby]],
-	  explodeAs           = [[SMALL_UNITEX]],
+	  explodeAs           = [[SMALL_UNIT]],
 	  footprintX          = 3,
 	  footprintZ          = 3,
 	  idleAutoHeal        = 0,
@@ -38,7 +38,7 @@
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
 	  objectName          = [[bdefensemech.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[SMALL_UNITEX]],
+	  selfDestructAs      = [[SMALL_UNIT]],
 
 	  sfxtypes            = {
 	
@@ -111,7 +111,7 @@
 		Sub = 30,
 	      },
 	
-	      explosionGenerator      = [[custom:EMG_HIT]],
+	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      range                   = 300,

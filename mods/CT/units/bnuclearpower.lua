@@ -25,7 +25,7 @@ unitDef = {
 
   energyMake                    = 0,
   energyUse                     = -45,
-  explodeAs                     = [[ATOMIC_BLAST]],
+  explodeAs                     = [[VOLATILE_BUILDING]],
   footprintX                    = 4,
   footprintZ                    = 4,
   idleAutoHeal                  = 0,
@@ -40,7 +40,7 @@ unitDef = {
 
   onoffable                     = true,
   seismicSignature              = 4,
-  selfDestructAs                = [[ATOMIC_BLAST]],
+  selfDestructAs                = [[VOLATILE_BUILDING]],
   side                          = [[NKG]],
   sightDistance                 = 250,
   smoothAnim                    = true,

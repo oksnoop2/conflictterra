@@ -26,7 +26,7 @@
 	
 	  defaultmissiontype  = [[VTOL_standby]],
           energyUse           = 1.5,
-	  explodeAs           = [[GUNSHIPEX]],
+	  explodeAs           = [[SMALL_UNIT]],
           floater             = false,
           footprintx          = 5,
 	  footprintZ          = 5,
@@ -43,7 +43,7 @@
           radarDistance       = 1000,
           scale               = [[1]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[GUNSHIPEX]],
+	  selfDestructAs      = [[SMALL_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 400,
 	  smoothAnim          = true,

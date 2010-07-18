@@ -35,7 +35,7 @@ unitDef = {
 
   energyMake                    = 0,
   energyUse                     = 0,
-  explodeAs                     = [[LARGE_BUILDINGEX]],
+  explodeAs                     = [[LARGE_BUILDING]],
   footprintX                    = 10,
   footprintZ                    = 10,
   idleAutoHeal                  = 0,
@@ -51,7 +51,7 @@ unitDef = {
   objectName                    = [[bexperimentalpad.s3o]],
 
   seismicSignature              = 4,
-  selfDestructAs                = [[LARGE_BUILDINGEX]],
+  selfDestructAs                = [[LARGE_BUILDING]],
   showNanoSpray                 = false,
   side                          = [[NKG]],
   sightDistance                 = 250,
