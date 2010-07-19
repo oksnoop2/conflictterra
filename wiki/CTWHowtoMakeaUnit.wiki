@@ -36,7 +36,11 @@ The second step is to physically manifest your unit concept in the way of modeli
 
 = Third Step:  Texture =
 
+See: http://springrts.com/phpbb/viewtopic.php?f=57&t=10612
+
 = Fourth Step:  Upspring =
+
+See: http://springrts.com/phpbb/viewtopic.php?f=14&t=13034
 
 = Fifth Step:  Unit Def =
 
