@@ -46,7 +46,7 @@
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
 	  TEDClass            = [[TANK]],
-	  transportCapacity   = 40,
+	  transportCapacity   = 30,
 	  transportMass       = 6050,
 	  transportSize       = 1000,
 	  turnInPlace         = 0,
