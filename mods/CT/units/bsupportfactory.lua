@@ -53,6 +53,16 @@ unitDef = {
   showNanoSpray                 = false,
   side                          = [[NKG]],
   sightDistance                 = 250,
+
+	  sounds			= {
+	      select = {
+		"argh/Argh_TankSound",
+		},
+	      ok = {
+		"argh/Argh_TankSound",
+		},
+	  },
+
   smoothAnim                    = true,
   TEDClass                      = [[PLANT]],
   turnRate                      = 0,
