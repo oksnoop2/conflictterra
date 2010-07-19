@@ -17,6 +17,7 @@ local bengineer1 = {
 		[[bmechfactory]],
 		[[btankfactory]],
 		[[bairport]],
+		[[bsupportfactory]],
 		[[bshipyard]],
 		[[bsubpens]],
 		[[bradartower]],

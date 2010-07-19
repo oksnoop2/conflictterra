@@ -25,7 +25,7 @@ function gadget:GetInfo()
 		date      = "3rd August 2007",
 		license   = "CC by-nc, version 3.0",
 		layer     = -5,
-		enabled   = true  --  loaded by default?
+		enabled   = false  --  loaded by default?
 	}
 end
 

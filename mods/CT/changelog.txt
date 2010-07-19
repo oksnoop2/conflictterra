@@ -9,6 +9,11 @@ __Balance__
 - Increased Battle Flagship's Disintegrator weapon range from 350 to 500.
 
 
+__New Units__
+- Added new unit:  Support Factory.  Builds auxiliary units.  Built by the Engineer.
+- Added new unit:  Hover Transport.  Tech level 1 hover transport built at the Support Factory.
+
+
 __Miscellaneous__
 - Finally adding sounds!
 - Finally adding CEG effects!

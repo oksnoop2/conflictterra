@@ -1,47 +1,33 @@
 unitDef = {
 
-  unitname                      = [[badvtankfactory]],
-  name                          = [[Advanced Tank Factory]],
-  description                   = [[Produces more advanced tanks and combat vehicles.]],
+  unitname                      = [[bsupportfactory]],
+  name                          = [[Support Factory]],
+  description                   = [[Support Factory - Builds auxiliary units, such as supply vehicles and a hover transport.]],
   amphibious                    = false,
   acceleration                  = 0,
+  activateWhenBuilt             = false,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 1000,
-  buildCostMetal                = 800,
+  buildCostEnergy               = 750,
+  buildCostMetal                = 600,
   builder                       = true,
 
   buildoptions                  = {
 
-	[[bengineer2]],
-	[[bheavyassaulttank]],
-	[[bheavymissiletank]],
-	[[bvhsa]],
-	[[bempcannon]],
-	[[baatruck]],
-	[[badvradartank]],
-	[[bassaulttank]],
-
-	[[bmissiletank]],
-
-	[[bartillery]],
-	[[bsiegeartillery]],
-	[[bradartank]],
-	[[breztank]],
+	[[bengineer1]],
+	[[bmetaltruck]],
+	[[benergytruck]],
+	[[bhovertransport]],
   },
 
 
 
-  buildPic                      = [[badvtankfactory.png]],
-  buildTime                     = 60,
+  buildPic                      = [[bsupportfactory.png]],
+  buildTime                     = 45,
   canMove                       = true,
   canPatrol                     = true,
   canstop                       = [[1]],
   canBeAssisted                 = false,
-  collisionVolumeOffsets        = [[0 8 0]],
-  collisionVolumeScales         = [[112 112 160]],
-  collisionVolumeTest           = 1,
-  collisionVolumeType           = [[box]],
   category                      = [[SINK]],
   corpse                        = [[DEAD]],
   reclaimable                   = false,
@@ -49,55 +35,46 @@ unitDef = {
   energyMake                    = 0,
   energyUse                     = 0,
   explodeAs                     = [[LARGE_BUILDING]],
-  footprintX                    = 7,
-  footprintZ                    = 10,
+  footprintX                    = 19,
+  footprintZ                    = 19,
   idleAutoHeal                  = 0,
   mass                          = 275,
-  maxDamage                     = 10000,
+  maxDamage                     = 8500,
   maxSlope                      = 15,
   maxVelocity                   = 0,
   maxWaterDepth                 = 0,
   metalMake                     = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
-  objectName                    = [[badvtankfactory.s3o]],
+  objectName                    = [[bsupportfactory.s3o]],
+
   seismicSignature              = 4,
   selfDestructAs                = [[LARGE_BUILDING]],
   showNanoSpray                 = false,
   side                          = [[NKG]],
   sightDistance                 = 250,
   smoothAnim                    = true,
-  sortbias                      = [[0]],
-
-	  sounds			= {
-	      select = {
-		"argh/Argh_TankSound",
-		},
-	      ok = {
-		"argh/Argh_TankSound",
-		},
-	  },
-
   TEDClass                      = [[PLANT]],
   turnRate                      = 0,
   workerTime                    = 1,
-  yardMap                       = [[ooooooo ooooooo ooooooo occccco occccco occccco occccco occccco occccco occccco]],
-  script                        = [[badvtankfactory.lua]],
+  yardMap                       = [[ccccccccccccccccccc ccccccccccccccccccc ccccccccccccccccccc cccccccccccccoooooc ccccooccoooccoooooc ccccoocooooocoooooc ccccccooooooocccccc ccoocooooooooocoocc coooooooooooooooooc ooooooocccccooooooo oooooocccccccoooooo coooocccccccccooooo ccoocccccccccccoooc ccocccccccccccccooc ccocccccccccccccooc ccocccccccccccccocc ccccccccccccccccccc ccccccccccccccccccc ccccccccccccccccccc]],
+  script                        = [[bsupportfactory.lua]],
+
 
 
 
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Advanced Terrestrial Tank Factory]],
+      description      = [[Wreckage - Supply Factory]],
       blocking         = true,
       category         = [[corpses]],
       damage           = 8000,
       energy           = 0,
       featureDead      = [[DEAD2]],
       featurereclamate = [[SMUDGE01]],
-      footprintX       = 2,
-      footprintZ       = 2,
+      footprintX       = 7,
+      footprintZ       = 6,
       height           = [[40]],
       hitdensity       = [[100]],
       metal            = 275,
@@ -111,19 +88,19 @@ unitDef = {
 
 
     DEAD2 = {
-      description      = [[Debris - Advanced Terrestrial Tank Factory]],
+      description      = [[Debris - Supply Factory]],
       blocking         = false,
 
       category         = [[heaps]],
       damage           = 8000,
       energy           = 0,
       featurereclamate = [[SMUDGE01]],
-      footprintX       = 7,
-      footprintZ       = 10,
+      footprintX       = 16,
+      footprintZ       = 16,
       height           = [[4]],
       hitdensity       = [[100]],
       metal            = 275,
-      object           = [[b7x10heap.s3o]],
+      object           = [[b16x16heap.s3o]],
       reclaimable      = true,
       reclaimTime      = 275,
       seqnamereclamate = [[TREE1RECLAMATE]],
@@ -140,4 +117,4 @@ unitDef = {
 
 
 
-return lowerkeys({ badvtankfactory = unitDef })
+return lowerkeys({ bsupportfactory = unitDef })
