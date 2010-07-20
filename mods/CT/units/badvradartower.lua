@@ -81,7 +81,7 @@ unitDef = {
       footprintZ       = 2,
       height           = [[40]],
       hitdensity       = [[100]],
-      metal            = 275,
+      metal            = 2250,
       object           = [[bgenericwreckage.s3o]],
       reclaimable      = true,
       reclaimTime      = 275,
@@ -96,7 +96,7 @@ unitDef = {
       blocking         = false,
 
       category         = [[heaps]],
-      damage           = 8000,
+      damage           = 1500,
       energy           = 0,
       featurereclamate = [[SMUDGE01]],
       footprintX       = 7,

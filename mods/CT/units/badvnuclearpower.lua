@@ -69,7 +69,7 @@ unitDef = {
       description      = [[Wreckage - Advanced Nuclear Power]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 8000,
+      damage           = 5625,
       energy           = 0,
       featureDead      = [[DEAD2]],
       featurereclamate = [[SMUDGE01]],
@@ -92,7 +92,7 @@ unitDef = {
       blocking         = false,
 
       category         = [[heaps]],
-      damage           = 8000,
+      damage           = 3750,
       energy           = 0,
       featurereclamate = [[SMUDGE01]],
       footprintX       = 5,

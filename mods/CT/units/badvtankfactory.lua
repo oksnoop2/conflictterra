@@ -92,7 +92,7 @@ unitDef = {
       description      = [[Wreckage - Advanced Terrestrial Tank Factory]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 8000,
+      damage           = 7500,
       energy           = 0,
       featureDead      = [[DEAD2]],
       featurereclamate = [[SMUDGE01]],
@@ -115,7 +115,7 @@ unitDef = {
       blocking         = false,
 
       category         = [[heaps]],
-      damage           = 8000,
+      damage           = 5000,
       energy           = 0,
       featurereclamate = [[SMUDGE01]],
       footprintX       = 7,

@@ -72,7 +72,7 @@ unitDef = {
       description      = [[Wreckage - Advanced Metal Converter]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 8000,
+      damage           = 1031,
       energy           = 0,
       featureDead      = [[DEAD2]],
       featurereclamate = [[SMUDGE01]],
@@ -95,7 +95,7 @@ unitDef = {
       blocking         = false,
 
       category         = [[heaps]],
-      damage           = 8000,
+      damage           = 687,
       energy           = 0,
       featurereclamate = [[SMUDGE01]],
       footprintX       = 5,

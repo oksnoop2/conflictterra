@@ -57,7 +57,7 @@ unitDef = {
       description      = [[Wreckage - Advanced Extractor]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 8000,
+      damage           = 4875,
       energy           = 0,
       featureDead      = [[DEAD2]],
       featurereclamate = [[SMUDGE01]],
@@ -80,7 +80,7 @@ unitDef = {
       blocking         = false,
 
       category         = [[heaps]],
-      damage           = 8000,
+      damage           = 3250,
       energy           = 0,
       featurereclamate = [[SMUDGE01]],
       footprintX       = 5,

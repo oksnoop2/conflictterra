@@ -72,7 +72,7 @@ unitDef = {
       description      = [[Wreckage - Advanced Jammer Tower]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 8000,
+      damage           = 2625,
       energy           = 0,
       featureDead      = [[DEAD2]],
       featurereclamate = [[SMUDGE01]],
@@ -95,7 +95,7 @@ unitDef = {
       blocking         = false,
 
       category         = [[heaps]],
-      damage           = 8000,
+      damage           = 1750,
       energy           = 0,
       featurereclamate = [[SMUDGE01]],
       footprintX       = 2,

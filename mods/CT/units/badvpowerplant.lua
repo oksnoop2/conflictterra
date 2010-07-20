@@ -71,7 +71,7 @@ unitDef = {
       description      = [[Wreckage - Advanced Power Plant]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 8000,
+      damage           = 2062,
       energy           = 0,
       featureDead      = [[DEAD2]],
       featurereclamate = [[SMUDGE01]],
@@ -94,7 +94,7 @@ unitDef = {
       blocking         = false,
 
       category         = [[heaps]],
-      damage           = 8000,
+      damage           = 1375,
       energy           = 0,
       featurereclamate = [[SMUDGE01]],
       footprintX       = 5,
