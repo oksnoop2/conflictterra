@@ -1,0 +1,39 @@
+= Introduction =
+
+This is a guide to the Mechs in Conflict Terra.
+
+-----------------------------
+
+=Hojo Combat Mech=
+
+http://media.moddb.com/images/games/1/13/12677/Hojo_Profile.png
+
+    The Hojo Combat Mech is the most basic Mech for the NKG.  Armed with a machine gun on each arm, it delivers short ranged but rapid fire damage.  Overall a very speedy Mech, the Hojo Combat Mech can be easily amassed into raiding parties to take out outlying enemy posts.
+-------------------------
+
+=Saiga Combat Support Mech=
+
+http://media.moddb.com/images/games/1/13/12677/Saiga_Profile.png
+
+    The Saiga Combat Support Mech is a specialized Mech in the NKG roster, designed to fulfill a role similar to that of a sniper.  With a long ranged, powerful shot (that of course comes with a long reload time), the Saiga Combat Support Mech can be frightening if used correctly.  It is also given a damage bonus to tanks, to counter their higher armor.
+--------------------
+
+=Fuma Aerial Combat Mech=
+
+http://media.moddb.com/images/games/1/13/12677/Fuma_Profile.png
+
+    The Fuma Aerial Combat Mech is, of course, an airborne unit, armed with six rapid fire cannons designed to attack the ground.  Intended to be a skirmisher, the Fuma Aerial Combat Mech is a very formidable foe, despite its low level of armor.
+-------------------
+
+=Ishida Combat Mech=
+
+http://media.moddb.com/images/games/1/13/12677/Ishida_Profile.png
+
+    The Ishida Combat Mech is a heavier, more siege-oriented Mech, armed with (obviously) a large back-mounted cannon, along with a machine gun on each arm.  Not as fast as the Hojo Combat Mech, but a lot hardier, this unit is meant to break a hole in early-game lines.
+-------------------
+
+=Ueda Combat Support Mech=
+
+http://media.moddb.com/images/games/1/13/12677/Ueda_Profile.png
+
+    The Ueda Combat Support Mech is a light Mech armed with anti-mech missiles, to destroy fellow Mechs on the field.  Not heavily armed or armored, the Ueda Combat Support Mech is meant to just destroy its target, and probably won't do much to anything else.
