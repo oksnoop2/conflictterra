@@ -1,18 +1,8 @@
-This a unit guide for Conflict Terra. 
+Air Unit Guide
 
 = Introduction =
 
-This will be a guide to the units in Conflict Terra.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
-
-
+This is a guide to the air units in Conflict Terra.
 
 ------------------
 
