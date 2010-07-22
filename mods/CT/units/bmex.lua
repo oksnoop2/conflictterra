@@ -40,6 +40,15 @@ unitDef = {
   selfDestructAs                = [[MEDIUM_BUILDING]],
   side                          = [[NKG]],
   sightDistance                 = 250,
+
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:digdig",
+	    },
+	
+	  },
+
   smoothAnim                    = true,
   TEDClass                      = [[METAL]],
   turnRate                      = 0,
