@@ -26,15 +26,6 @@ local morphDefs = {
     },
   },
 
-  bmex = {
-    {
-      into = 'badvmex',
-      metal = 400,
-      energy = 500,
-      time = 60,
-    },
-  },
-
   baatruck = {
     {
       into = 'baatruckturret',
