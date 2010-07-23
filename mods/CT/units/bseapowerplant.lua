@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bseapowerplant]],
   name                          = [[Floating Solar Plant]],
-  description                   = [[Sea Power Plant - Floating solar panels that provide a small but decent supply of power.  Adds +15 energy.]],
+  description                   = [[Floating solar panels that provide a small but decent supply of power.  Adds +15 energy.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,

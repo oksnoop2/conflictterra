@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bshieldgen]],
 	  name                = [[Shield Generator]],
-	  description         = [[Shield Generator - Very complex, specialized equipment is able to project an energy shield around a large radius.  Stops all weapons.]],
+	  description         = [[Very complex, specialized equipment is able to project an energy shield around a large radius.  Stops all weapons.]],
 	  acceleration        = 0,
 	  bmcode              = [[0]],
 	  brakeRate           = 0,

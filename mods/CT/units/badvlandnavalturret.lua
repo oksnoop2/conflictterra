@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvlandnavalturret]],
-	  name                = [[Anti-Naval Gun Emplacement]],
-	  description         = [[Advanced Anti-Naval Turret - Fires four powerful anti-ship shells.  Should be built near shore.]],
+	  name                = [[Advanced Anti-Naval Gun Emplacement]],
+	  description         = [[Fires four powerful anti-ship shells.  Should be built near shore.]],
 	  acceleration        = 0,
 	  activateWhenBuilt   = true,
 	  bmcode              = [[0]],

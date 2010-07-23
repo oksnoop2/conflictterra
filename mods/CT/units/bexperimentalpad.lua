@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bexperimentalpad]],
   name                          = [[Experimental Build Pad]],
-  description                   = [[Experimental Build Pad - Specialty building that only builds an experimental weapon. - Build Limit: 1]],
+  description                   = [[Specialty building that only builds an experimental weapon. - Build Limit: 1]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = false,

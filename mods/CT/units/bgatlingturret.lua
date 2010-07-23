@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bgatlingturret]],
 	  name                = [[Gatling Turret]],
-	  description         = [[Rapid Fire Turret - Rapid fire cannon designed to take out several weaker units.]],
+	  description         = [[Rapid fire cannon designed to take out several weaker units.]],
 	  acceleration        = 0,
 	  bmcode              = [[0]],
 	  brakeRate           = 0,

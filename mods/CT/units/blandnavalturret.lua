@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[blandnavalturret]],
 	  name                = [[Anti-Ship Turret]],
-	  description         = [[Anti-Naval Turret - Fires three shells that do much more damage to ships.  Should be built near shore.]],
+	  description         = [[Fires three shells that do much more damage to ships.  Should be built near shore.]],
 	  acceleration        = 0,
 	  activateWhenBuilt   = true,
 	  bmcode              = [[0]],

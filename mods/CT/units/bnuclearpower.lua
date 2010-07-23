@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bnuclearpower]],
   name                          = [[Medium Yield Power Plant]],
-  description                   = [[Nuclear Power - Compact nuclear reactor provides power but also explodes upon destruction.  Adds +45 energy.]],
+  description                   = [[Compact nuclear reactor provides power but also explodes upon destruction.  Adds +45 energy.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,

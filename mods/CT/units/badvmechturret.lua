@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvmechturret]],
-	  name                = [[Anti-Mech Missile Emplacement]],
-	  description         = [[Advanced Anti-Mech Turret - Powerful missile launcher designed to destroy mechs.]],
+	  name                = [[Advanced Anti-Mech Missile Emplacement]],
+	  description         = [[Powerful missile launcher designed to destroy mechs.]],
 	  acceleration        = 0,
 	  bmcode              = [[0]],
 	  brakeRate           = 0,

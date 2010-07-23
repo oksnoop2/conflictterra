@@ -1,8 +1,8 @@
 unitDef = {
 
   unitname                      = [[badvjammertower]],
-  name                          = [[Radar Jamming Tower]],
-  description                   = [[Advanced Jamming Tower - A more advanced radar jammer, this model is capable of somewhat farther range.]],
+  name                          = [[Advanced Radar Jamming Tower]],
+  description                   = [[A more advanced radar jammer, this model is capable of somewhat farther range.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,

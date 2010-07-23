@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bbattlebeacon]],
   name                          = [[Cruiser Beacon]],
-  description                   = [[Cruiser Beacon - Beacon used to call in cruisers. - Build Limit: 2]],
+  description                   = [[Beacon used to call in cruisers. - Build Limit: 2]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = false,

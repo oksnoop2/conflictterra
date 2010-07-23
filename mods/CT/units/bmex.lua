@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bmex]],
   name                          = [[Raw Material Extractor]],
-  description                   = [[Extractor - Extracts usable resources from the ground.  Must be built over a metal deposit.]],
+  description                   = [[Extracts usable resources from the ground.  Must be built over a metal deposit.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
   bmcode                        = [[0]],

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bmechturret]],
 	  name                = [[Anti-Mech Turret]],
-	  description         = [[Anti-Mech Turret - Hidden defensive structure that fires three anti-mech missiles.]],
+	  description         = [[Hidden defensive structure that fires three anti-mech missiles.]],
 	  acceleration        = 0,
 	  bmcode              = [[0]],
 	  brakeRate           = 0,

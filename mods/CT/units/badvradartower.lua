@@ -1,8 +1,8 @@
 unitDef = {
 
   unitname                      = [[badvradartower]],
-  name                          = [[Radar Tower]],
-  description                   = [[Advanced Radar Tower - A more permanent radar installation, this facility provides ample coverage.]],
+  name                          = [[Advanced Radar Tower]],
+  description                   = [[A more permanent radar installation, this facility provides ample coverage.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,

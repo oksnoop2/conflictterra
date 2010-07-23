@@ -1,5 +1,6 @@
 ver.08.2 -> ver.08.3
 __Bug Fixes__
+- Hierachy for the Engineer was fixed.  Nano point was a child of the base, and not the body.  Little effect in-game, but an improper setup none-the-less.
 
 
 __Balance__
@@ -10,6 +11,7 @@ __New Units__
 
 
 __Miscellaneous__
+- Removed redundancy in most building descriptions in the tooltip.
 
 
 ver.08.1 -> ver.08.2

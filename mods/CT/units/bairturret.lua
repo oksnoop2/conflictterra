@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bairturret]],
 	  name                = [[Anti-Air Turret]],
-	  description         = [[Anti-Air Turret - Anti-air missile firing turret.  Cheap and easy to build.]],
+	  description         = [[Anti-air missile firing turret.  Cheap and easy to build.]],
 	  acceleration        = 0,
 	  bmcode              = [[0]],
 	  brakeRate           = 0,

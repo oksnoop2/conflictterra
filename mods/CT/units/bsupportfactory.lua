@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bsupportfactory]],
   name                          = [[Support Factory]],
-  description                   = [[Support Factory - Builds auxiliary units, such as supply vehicles and a hover transport.]],
+  description                   = [[Builds auxiliary units, such as supply vehicles and a hover transport.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = false,

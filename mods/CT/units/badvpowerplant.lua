@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[badvpowerplant]],
   name                          = [[High Yield Power Plant]],
-  description                   = [[Advanced Power Plant - High-altitude wind-generators that are easy to install and provide varying levels of power.]],
+  description                   = [[High-altitude wind-generators that are easy to install and provide varying levels of power.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,

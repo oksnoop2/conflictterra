@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[btorpedoturret]],
 	  name                = [[Floating Torpedo Turret]],
-	  description         = [[Torpedo Turret - Fires two torpedoes at nearby naval vessels.]],
+	  description         = [[Fires two torpedoes at nearby naval vessels.]],
 	  acceleration        = 0,
 	  activateWhenBuilt   = true,
 	  bmcode              = [[0]],

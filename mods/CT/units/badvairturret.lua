@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvairturret]],
-	  name                = [[Anti-Air Gun Emplacement]],
-	  description         = [[Advanced Anti-Air Turret - Very powerful flak gun installation.  Tears through aircraft.]],
+	  name                = [[Advanced Anti-Air Gun Emplacement]],
+	  description         = [[Very powerful flak gun installation.  Tears through aircraft.]],
 	  activateWhenBuilt   = true,
 	  buildCostEnergy     = 1000,
 	  buildCostMetal      = 800,

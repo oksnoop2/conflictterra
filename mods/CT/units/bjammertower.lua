@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bjammertower]],
   name                          = [[Radar Jamming Outpost]],
-  description                   = [[Radar Jamming Outpost - Easy-to-install, but complex, radar jammer.  Has a small range.]],
+  description                   = [[Easy-to-install, but complex, radar jammer.  Has a small range.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,
