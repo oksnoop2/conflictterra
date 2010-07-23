@@ -1,7 +1,9 @@
 
 	local hull = piece "hull"
 	local bigcrane = piece "bigcrane"
+	local fxflare1 = piece "fxflare1"
 	local lilcrane = piece "lilcrane"
+	local fxflare2 = piece "fxflare2"
 	local nano = piece "nano"
 
 	local SIG_AIM = 2

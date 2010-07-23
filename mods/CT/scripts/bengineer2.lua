@@ -1,6 +1,8 @@
 local base = piece "base"
 local body = piece "crane"
 local nano = piece "nano"
+local fxflare1 = piece "fxflare1"
+local fxflare2 = piece "fxflare2"
 
 local SIG_AIM = 2
 local SIG_BUILD = 4
