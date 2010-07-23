@@ -1,0 +1,34 @@
+#summary Alternate Mech Unit guide
+
+= Introduction =
+
+This is a guide to the Combat Mechs available to the NKG in Conflict Terra. The NKG Mechs are overall designed to be lightly armored, fast, hard-hitting units that can dish out a lot of damage quickly, but can't take a whole lot themselves. Intended more for offensive situations than defensive ones, the Mech units have a fun line-up.
+
+
+= Tech Level 1 Line-up =
+
+== Hojo Combat Mech ==
+
+||Basic Mech||Light, fast, rapid fire SM.  Built for skirmishing over holding the line.||
+
+||HP||500||
+||Armor Class||Mech||
+||Speed||4||
+
+=== Weapon Info ===
+
+||*Rapid Fire Cannon*||
+||Range||300||
+||Fire Rate||0.2||
+
+Damage Chart
+
+||Cruiser||15||
+||Building||15||
+||Mech||15||
+||Tank||15||
+||Aircraft||15||
+||Ship||15||
+||Sub||1||
+
+----
