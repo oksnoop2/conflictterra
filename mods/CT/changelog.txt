@@ -12,6 +12,7 @@ __New Units__
 
 __Miscellaneous__
 - Removed redundancy in most building descriptions in the tooltip.
+- Added more sounds.
 
 
 ver.08.1 -> ver.08.2
