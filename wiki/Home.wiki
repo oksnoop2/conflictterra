@@ -1,14 +1,13 @@
 #summary Home Wiki for Conflict Terra
-#labels Featured
+#labels Featured,Home
 
-= Introduction =
+= Table of Contents =
 
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * Unit Guide
+    * [http://code.google.com/p/conflictterra/wiki/MechUnitGuide Mech Guide]
+    * [http://code.google.com/p/conflictterra/wiki/AircraftUnitGuide Aircraft Guide]
+  * The Conflict Terra Way
+    * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit How to Make a Unit]
+  * Development Hub
+    * [http://code.google.com/p/conflictterra/wiki/SpaceRocks Space Rocks]
+    * [http://code.google.com/p/conflictterra/wiki/UIPlans UI Plans]
