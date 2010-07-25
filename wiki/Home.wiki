@@ -11,3 +11,8 @@
   * Development Hub
     * [http://code.google.com/p/conflictterra/wiki/SpaceRocks Space Rocks]
     * [http://code.google.com/p/conflictterra/wiki/UIPlans UI Plans]
+
+= Links =
+
+  * [http://www.moddb.com/games/conflict-terra ModDB]
+  * [http://springrts.com/phpbb/viewforum.php?f=63 SpringRTS Forums]
