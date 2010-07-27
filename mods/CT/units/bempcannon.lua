@@ -62,58 +62,6 @@
 	  workerTime          = 0,
 	  unitRestricted      = 10,
           script              = [[bempcannon.lua]],
-
-	  weapons             = {
-	
-	    {
-	      def                = [[Stun]],
-	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
-	    },
-	
-	  },
-	
-	
-	  weaponDefs          = {
-	
-	    Stun = {
-	      name                    = [[Electromagnetic Beam]],
-	      areaOfEffect            = 32,
-	      collideFriendly         = false,
-	      craterMult              = 0.25,
-	
-	      damage                  = {
-		Cruiser = 500,
-		Building = 500,
-		Mech = 500,
-		Tank = 500,
-		Aircraft = 500,
-		Ship = 500,
-		Sub = 500,
-	      },
-	
-	      duration                = 0.01,
-	      explosionGenerator      = [[custom:MINI_NUCLEAR_Expl]],
-	      heightMod               = 1,
-	      intensity               = 10,
-	      interceptedByShieldType = 2,
-	      lineOfSight             = true,
-	      minIntensity            = 1,
-	      paralyzer               = true,
-	      paralyzeTime            = 4,
-	      range                   = 1000,
-	      reloadtime              = 10,
-	      rgbColor                = [[1 1 0]],
-	      soundHit                = [[OTAunit/Lashit]],
-	      soundStart              = [[hackshot]],
-	      soundTrigger            = true,
-	      thickness               = 1,
-	      tolerance               = 6000,
-	      turret                  = true,
-	      weaponType              = [[LightingCannon]],
-	      weaponVelocity          = 1000,
-	    },
-	
-	  },
 	
 	
 	  featureDefs         = {
