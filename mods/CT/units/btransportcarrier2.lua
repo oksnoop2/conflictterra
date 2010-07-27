@@ -56,6 +56,16 @@
 	  sightDistance       = 750,
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
+
+	  sounds			= {
+	      select = {
+		"ct/cruiserengine",
+		},
+	      ok = {
+		"ct/cruiserengine",
+		},
+	  },
+
 	  TEDClass            = [[VTOL]],
 	  transportCapacity   = 40,
 	  transportMass       = 6050,

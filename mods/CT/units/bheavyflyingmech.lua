@@ -103,7 +103,6 @@
 	      range                   = 600,
 	      reloadtime              = 10,
 	      rgbColor                = [[1 0 0]],
-	      soundHit                = [[OTAunit/XPLOLRG1]],
 	      soundStart              = [[argh/Argh_PlasmaBreach]],
 	      targetMoveError         = 0.3,
 	      thickness               = 10,

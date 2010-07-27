@@ -51,6 +51,15 @@
 	
 	  },
 
+	  sounds			= {
+	      select = {
+		"ct/sonarbing",
+		},
+	      ok = {
+		"ct/sonarbing",
+		},
+	  },
+
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,

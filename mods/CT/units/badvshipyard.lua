@@ -66,6 +66,16 @@ unitDef = {
   showNanoSpray                 = false,
   side                          = [[NKG]],
   sightDistance                 = 250,
+
+	  sounds			= {
+	      select = {
+		"ct/shipbell",
+		},
+	      ok = {
+		"ct/shipbell",
+		},
+	  },
+
   smoothAnim                    = true,
   TEDClass                      = [[PLANT]],
   turnRate                      = 0,

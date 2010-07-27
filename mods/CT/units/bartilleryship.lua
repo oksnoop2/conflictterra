@@ -55,6 +55,15 @@
 	    },
 	
 	  },
+
+	  sounds			= {
+	      select = {
+		"ct/shipbell",
+		},
+	      ok = {
+		"ct/shipbell",
+		},
+	  },
 	  
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],

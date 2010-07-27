@@ -59,6 +59,16 @@ local bseaengineer2 = {
         sightDistance       = 500,
 	smoothAnim          = true,
 	steeringmode        = [[1]],
+
+	  sounds			= {
+	      select = {
+		"ct/shipbell",
+		},
+	      ok = {
+		"ct/shipbell",
+		},
+	  },
+
 	TEDClass            = [[SHIP]],
         terraformSpeed      = 600,
 	reclaimSpeed        = 300,

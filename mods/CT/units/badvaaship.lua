@@ -53,6 +53,15 @@
 	
 	  },
 
+	  sounds			= {
+	      select = {
+		"ct/shipbell",
+		},
+	      ok = {
+		"ct/shipbell",
+		},
+	  },
+
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,

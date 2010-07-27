@@ -45,6 +45,16 @@
 	  sightDistance       = 500,
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
+
+	  sounds			= {
+	      select = {
+		"ct/sonarbing",
+		},
+	      ok = {
+		"ct/sonarbing",
+		},
+	  },
+
 	  TEDClass            = [[WATER]],
 	  turnRate            = 225,
           waterline           = 45,

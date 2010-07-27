@@ -48,6 +48,16 @@
 	  sightDistance       = 750,
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
+
+	  sounds			= {
+	      select = {
+		"ct/shipbell",
+		},
+	      ok = {
+		"ct/shipbell",
+		},
+	  },
+
 	  TEDClass            = [[SHIP]],
 	  turnRate            = 193,
 	  workerTime          = 0,

@@ -34,6 +34,16 @@
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],
 
+	  sounds			= {
+	      select = {
+		"evolutionRTS/turretselect",
+		},
+
+	      ok = {
+		"evolutionRTS/turretselect",
+		},
+	  },
+
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,
@@ -83,8 +93,8 @@
 	      range                   = 1000,
 	      reloadtime              = 10,
 	      rgbColor                = [[1 1 0]],
-	      soundHit                = [[OTAunit/Lashit]],
-	      soundStart              = [[hackshot]],
+	      soundHit                = [[ct/empfire]],
+	      soundStart              = [[ct/empfire]],
 	      soundTrigger            = true,
 	      thickness               = 1,
 	      tolerance               = 6000,

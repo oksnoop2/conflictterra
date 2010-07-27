@@ -59,6 +59,16 @@ unitDef = {
   side                          = [[NKG]],
   sightDistance                 = 250,
   smoothAnim                    = true,
+
+	  sounds			= {
+	      select = {
+		"ct/sonarbing",
+		},
+	      ok = {
+		"ct/sonarbing",
+		},
+	  },
+
   TEDClass                      = [[PLANT]],
   turnRate                      = 0,
   

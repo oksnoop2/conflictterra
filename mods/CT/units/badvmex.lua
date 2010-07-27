@@ -41,6 +41,16 @@ unitDef = {
   side                          = [[NKG]],
   sightDistance                 = 250,
   smoothAnim                    = true,
+
+	  sounds			= {
+	      select = {
+		"ct/mexthump",
+		},
+	      ok = {
+		"ct/mexthump",
+		},
+	  },
+
   TEDClass                      = [[METAL]],
   turnRate                      = 0,
 

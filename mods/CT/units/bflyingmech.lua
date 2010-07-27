@@ -140,7 +140,7 @@
 	      rgbColor                = [[1 0.95 0.4]],
 	      seperation              = 2,
               size                    = 0.75,
-	      soundStart              = [[ct/machine_gun]],
+	      soundStart              = [[ct/single_machine_gun]],
 	      soundTrigger            = true,
 	      soundStartVolume        = 0.5,
 	      stages                  = 50,

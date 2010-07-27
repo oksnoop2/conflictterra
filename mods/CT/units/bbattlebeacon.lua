@@ -59,6 +59,16 @@ unitDef = {
   side                          = [[NKG]],
   sightDistance                 = 250,
   smoothAnim                    = true,
+
+	  sounds			= {
+	      select = {
+		"ct/cruiserengine",
+		},
+	      ok = {
+		"ct/cruiserengine",
+		},
+  },
+
   TEDClass                      = [[PLANT]],
   turnRate                      = 0,
   workerTime                    = 1,

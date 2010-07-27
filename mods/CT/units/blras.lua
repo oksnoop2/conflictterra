@@ -63,6 +63,15 @@
 	
 	  },
 
+	  sounds			= {
+	      select = {
+		"ct/shipbell",
+		},
+	      ok = {
+		"ct/shipbell",
+		},
+	  },
+
 
 
 	  weapons             = {

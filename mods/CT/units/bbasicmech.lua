@@ -105,7 +105,7 @@
 	      rgbColor                = [[1 0.95 0.4]],
 	      separation              = 2,
               size                    = 1.25,
-	      soundStart              = [[ct/bmachinegunfire]],
+	      soundStart              = [[ct/machine_gun]],
 	      soundStartVolume        = 0.5,
 	      soundTrigger            = true,
 	      stages                  = 50,

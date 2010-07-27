@@ -42,6 +42,16 @@
 	  selfDestructAs      = [[MEDIUM_UNIT]],
 	  side                = [[NKG]],
 	  sightDistance       = 400,
+
+	  sounds			= {
+	      select = {
+		"ct/shipbell",
+		},
+	      ok = {
+		"ct/shipbell",
+		},
+	  },
+
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
 	  TEDClass            = [[SHIP]],

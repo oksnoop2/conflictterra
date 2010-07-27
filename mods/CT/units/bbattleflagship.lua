@@ -65,6 +65,16 @@
 	  showPlayerName      = true,
 	  side                = [[NKG]],
 	  sightDistance       = 750,
+
+	  sounds			= {
+	      select = {
+		"ct/cruiserengine",
+		},
+	      ok = {
+		"ct/cruiserengine",
+		},
+	  },
+
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
 	  TEDClass            = [[VTOL]],
@@ -160,8 +170,7 @@
 	      noSelfDamage            = true,
 	      range                   = 500,
 	      reloadtime              = 1,
-	      soundHit                = [[OTAunit/XPLOMAS2]],
-	      soundStart              = [[OTAunit/DISIGUN1]],
+	      soundStart              = [[ct/dgunfire]],
 	      soundTrigger            = true,
 	      tolerance               = 10000,
 	      turret                  = true,

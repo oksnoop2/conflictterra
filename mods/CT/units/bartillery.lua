@@ -53,10 +53,10 @@
 
 	  sounds			= {
 	      select = {
-		"argh/Argh_TankSound",
+		"ct/hoverengine",
 		},
 	      ok = {
-		"argh/Argh_TankSound",
+		"ct/hoverengine",
 		},
 	  },
 

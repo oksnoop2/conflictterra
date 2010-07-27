@@ -54,6 +54,16 @@
 	  sightDistance       = 750,
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
+
+	  sounds			= {
+	      select = {
+		"ct/cruiserengine",
+		},
+	      ok = {
+		"ct/cruiserengine",
+		},
+	  },
+
 	  TEDClass            = [[VTOL]],
 	  turnRate            = 297,
 	  upright             = true,
@@ -103,7 +113,6 @@
 	    Laser = {
 	      name                    = [[Burst Laser]],
 	      areaOfEffect            = 8,
-	      cegTag                  = [[redlaser_ak]],
 	      coreThickness           = 0.5,
 	      craterMult              = 0.25,
 	

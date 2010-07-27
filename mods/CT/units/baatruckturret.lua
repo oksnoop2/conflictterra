@@ -43,6 +43,16 @@
 	
 	  },
 
+	  sounds			= {
+	      select = {
+		"evolutionRTS/turretselect",
+		},
+
+	      ok = {
+		"evolutionRTS/turretselect",
+		},
+	  },
+
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,

@@ -49,6 +49,15 @@ unitDef = {
 	
 	  },
 
+	  sounds			= {
+	      select = {
+		"ct/mexthump",
+		},
+	      ok = {
+		"ct/mexthump",
+		},
+	  },
+
   smoothAnim                    = true,
   TEDClass                      = [[METAL]],
   turnRate                      = 0,

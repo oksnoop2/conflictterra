@@ -43,6 +43,19 @@
 	  sightDistance       = 600,
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
+
+
+
+	  sounds			= {
+	      select = {
+		"ct/hoverengine",
+		},
+	      ok = {
+		"ct/hoverengine",
+		},
+	  },
+	 
+
 	  TEDClass            = [[TANK]],
 	  turninplace         = 0,
 	  turnRate            = 410,

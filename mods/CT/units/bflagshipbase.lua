@@ -61,6 +61,17 @@ unitDef = {
   sightDistance                 = 500,
   smoothAnim                    = true,
   sortbias                      = [[0]],
+
+	  sounds			= {
+	      select = {
+		"evolutionRTS/turretselect",
+		},
+
+	      ok = {
+		"evolutionRTS/turretselect",
+		},
+	  },
+
   TEDClass                      = [[PLANT]],
   turnRate                      = 0,
   workerTime                    = 1,
