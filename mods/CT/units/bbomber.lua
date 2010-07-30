@@ -102,7 +102,6 @@
 	      range                   = 500,
 	      reloadtime              = 10,
 	      soundHit                = [[ct/shot3]],
-	      soundStart              = [[OTAunit/BOMBREL]],
 	      sprayangle              = 64000,
 	      startvelocity           = 200,
 	      weaponType              = [[AircraftBomb]],
