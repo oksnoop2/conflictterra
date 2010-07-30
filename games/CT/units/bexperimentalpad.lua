@@ -66,6 +66,14 @@ unitDef = {
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:factorysparks",
+	    },
+	
+	  },
+
   TEDClass                      = [[PLANT]],
   turnRate                      = 0,
   workerTime                    = 1,

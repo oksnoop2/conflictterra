@@ -30,6 +30,18 @@ local pad = piece "pad"
 local SIG_OPEN = 1
 local SIG_CLOSE = 2
 
+local factorysparks = SFX.CEG
+
+local function sparks()
+	while true do
+		EmitSfx(blflare, factorysparks)
+		EmitSfx(brflare, factorysparks)
+		EmitSfx(flflare, factorysparks)
+		EmitSfx(frflare, factorysparks)
+		Sleep(1)
+	end
+end
+
 local function create_animation()
 	Turn(flarm1, z_axis, -1.55, 1)
 	Turn(flarm2, x_axis, -1.55, 1)
@@ -201,6 +213,7 @@ end
 
 function script.StartBuilding()
 	StartThread(build_open)
+	StartThread(sparks)
 end
 
 function script.Deactivate()

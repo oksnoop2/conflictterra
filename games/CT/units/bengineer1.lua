@@ -74,6 +74,14 @@ local bengineer1 = {
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:buildersparks",
+	    },
+	
+	  },
+
 	smoothAnim          = true,
 	steeringmode        = [[1]],
 	TEDClass            = [[TANK]],

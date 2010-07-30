@@ -7,12 +7,22 @@
 	local SIG_AIM = 2
 	local SIG_BUILD = 4
 
+	local buildersparks = SFX.CEG
+
+	local function sparks()
+		while true do
+			EmitSfx(nano, buildersparks)
+			Sleep(1)
+		end
+	end
+
 	function script.Create(unitID)
 	end
 
 	function script.StartBuilding(heading, pitch)
 		Signal(SIG_BUILD)
 		SetSignalMask(SIG_BUILD)
+		StartThread(sparks)
 		SetUnitValue(COB.INBUILDSTANCE, 1)
 		return 1
 	end

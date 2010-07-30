@@ -5,6 +5,15 @@ local nano = piece "nano"
 local SIG_AIM = 2
 local SIG_BUILD = 4
 
+local buildersparks = SFX.CEG
+
+local function sparks()
+	while true do
+		EmitSfx(nano, buildersparks)
+		Sleep(1)
+	end
+end
+
 function script.Create(unitID)
 end
 
@@ -13,6 +22,7 @@ function script.StartBuilding(heading, pitch)
 	SetSignalMask(SIG_BUILD)
         Turn(body, y_axis, heading, math.rad(90))
         WaitForTurn(body, y_axis)
+	StartThread(sparks)
 	SetUnitValue(COB.INBUILDSTANCE, 1)
 	return 1
 end

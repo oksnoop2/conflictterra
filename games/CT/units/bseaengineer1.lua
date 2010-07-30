@@ -68,6 +68,14 @@ local bseaengineer1 = {
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:buildersparks",
+	    },
+	
+	  },
+
 	TEDClass            = [[SHIP]],
         terraformSpeed      = 600,
 	reclaimSpeed        = 300,

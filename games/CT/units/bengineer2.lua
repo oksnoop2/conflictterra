@@ -80,6 +80,14 @@ local bengineer2 = {
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:buildersparks",
+	    },
+	
+	  },
+
 	steeringmode        = [[1]],
 	TEDClass            = [[TANK]],
         terraformSpeed      = 300,

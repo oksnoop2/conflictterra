@@ -9,6 +9,16 @@
 	local SIG_AIM = 2
 	local SIG_BUILD = 4
 
+	local buildersparks = SFX.CEG
+
+	local function sparks()
+		while true do
+			EmitSfx(fxflare1, buildersparks)
+			EmitSfx(fxflare2, buildersparks)
+			Sleep(1)
+		end
+	end
+
 	function script.Create(unitID)
 	end
 
@@ -19,6 +29,7 @@
 		Turn(lilcrane, y_axis, heading, math.rad(90))
     		WaitForTurn(bigcrane, y_axis)
 		WaitForTurn(lilcrane, y_axis)
+		StartThread(sparks)
 		SetUnitValue(COB.INBUILDSTANCE, 1)
 		return 1
 	end
