@@ -92,7 +92,6 @@
 	    Cannon = {
 	      name                    = [[Heavy Naval Artillery Cannon]],
 	      areaOfEffect            = 192,
-	      cegTag                  = [[vulcanfx]],
 	      craterMult              = 0.25,
 	
 	      damage                  = {
