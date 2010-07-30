@@ -1,6 +1,7 @@
 local building = piece "building"
 local digger = piece "digger"
 
+local digdig = SFX.CEG
 
 local function digger_animation()
   SetSignalMask(1)
@@ -9,12 +10,14 @@ local function digger_animation()
     WaitForMove (digger, y_axis)
     Sleep(300)
     Move (digger, y_axis, -20, 200)
+    EmitSfx(digger, digdig)
     WaitForMove (digger, y_axis)
     Sleep(300)
     Move (digger, y_axis, -10, 10)
     WaitForMove (digger, y_axis)
     Sleep(300)
     Move (digger, y_axis, -40, 200)
+    EmitSfx(digger, digdig)
     WaitForMove (digger, y_axis)
     Sleep(300)
   end

@@ -51,6 +51,14 @@ unitDef = {
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:digdig",
+	    },
+	
+	  },
+
   TEDClass                      = [[METAL]],
   turnRate                      = 0,
 
