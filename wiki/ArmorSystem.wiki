@@ -1,0 +1,69 @@
+#summary This is a brief guide to how the Armor System for Conflict Terra works.
+#labels Phase-Design,ArmorSystem
+
+= Summary =
+
+Conflict Terra utilizes a simple Armor System to give a more dynamic spin on combat.  The Armor System is simple in that each weapon in the game has the potential to deal different damage to each armor type in the game.  This differs from the somewhat more traditional armor systems found in RTS, where weapons or attacks gain a multiplier bonus against armors that they are strong against.
+
+Our system is born almost entirely out of a desire for simplicity and, to be blunt, a lack of knowhow as to how to implement a more complicated Armor System, such as can be found in other Spring games like Gundam RTS and Evolution RTS.
+
+= Armor Classes =
+
+There are 7 Armor Classes.  Each unit can only belong to one Armor Class.  Sometimes if a unit can morph, it will morph into a unit with a different Armor Class.  We strive to make identification intuitive, but here is a chart to lay everything out for you.  You can also view the [http://code.google.com/p/conflictterra/source/browse/games/CT/gamedata/armordefs.lua armordefs.lua] to identify the Armor Classes.
+
+||*Cruiser*||*Building*||*Mech*||*Tank*||*Aircraft*||*Ship*||*Sub*||
+||Flagship||Flagship Base||Engineer||Metal Supply Truck||Flying Mech||Sea Engineer||Submarine||
+||Battle Flagship||Metal Extractor||Defense Mech||energy Supply Truck||Heavy Flying Mech||Metal Supply Boat||AA Submarine||
+||Battlecruiser||Power Plant||Basic Mech||Assault Tank||Fighter||Energy Supply Boat||Advanced Submarine||
+||Transport Carrier||Nuclear Power||Sniper Mech||Missile Tank||Bomber||Battleship||Advanced AA Submarine||
+||Metal Supply Cruiser||Metal Converter||Siege Mech||Artillery||War Plane||Rocket Battleship|| ||
+||Energy Supply Cruiser||Sea Metal Extractor||Missile Mech||Siege Artillery||Radar Plane|| Artillery Ship|| ||
+|| ||Sea Power Plant||Advanced Engineer||Radar Tank||Advanced Fighter||AA Ship|| ||
+|| ||Radar Tower||Heavy Mech||Resurrection Team||Advanced Bomber||Radar Ship|| ||
+|| ||Jammer Tower||Heavy Siege Mech||Hover Transport||Advanced War Plane||Advanced Sea Engineer|| ||
+|| ||Land Turret||Heavy Missile Mech||Heavy Assault Tank||Advanced Radar Plane||Advanced Battleship|| ||
+|| ||Air Turret||Hover Mech||Very Heavy Siege Artillery||Laser Plane||Advanced Rocket Battleship|| ||
+|| ||Land Naval Turret||Advanced Hover Mech||Advanced Radar Tank||Long Range Artillery Ship|| || ||
+|| ||Gatling Turret||Heavy Assault Mech||Heavy Missile Tank||Advanced AA Ship|| || ||
+|| ||Mech Turret||EMP Cannon||Advanced Radar Ship|| || || ||
+|| ||Sea Radar Tower||EMP Cannon Turret|| || || || ||
+|| ||Torpedo Turret||AA Truck|| || || || ||
+|| ||Advanced Metal Extractor||AA Truck Turret|| || || || ||
+|| ||Advanced Power Plant|| || || || || ||
+|| ||Advanced Nuclear Power|| || || || || ||
+|| ||Advanced Metal Converter|| || || || || ||
+|| ||Advanced Radar Tower|| || || || || ||
+|| ||Advanced Jammer Tower|| || || || || ||
+|| ||Advanced Land Turret|| || || || || ||
+|| ||Advanced Air Turret|| || || || || ||
+|| ||Advanced Land Naval Turret|| || || || || ||
+|| ||Advanced Gatling Turret|| || || || || ||
+|| ||Advanced Mech Turret|| || || || || ||
+|| ||Advanced Sea Radar Tower|| || || || || ||
+|| ||Advanced Torpedo Turret|| || || || || ||
+|| ||Shield Generator|| || || || || ||
+|| ||Mech Factory|| || || || || ||
+|| ||Advanced Mech Factory|| || || || || ||
+|| ||Tank Factory|| || || || || ||
+|| ||Metal Supply Truck Depot|| || || || || ||
+|| ||Energy Supply Truck Depot|| || || || || ||
+|| ||Advanced Tank Factory|| || || || || ||
+|| ||Support Factory|| || || || || ||
+|| ||Airport|| || || || || ||
+|| ||Advanced Airport|| || || || || ||
+|| ||Shipyard|| || || || || ||
+|| ||Advanced Shipyard|| || || || || ||
+|| ||Subpens|| || || || || ||
+|| ||Advanced Subpens|| || || || || ||
+|| ||Cruiser Beacon|| || || || || ||
+|| ||Metal Supply Cruiser Depot|| || || || || ||
+|| ||Energy Supply Cruiser Depot|| || || || || ||
+|| ||Experimental Build Pad|| || || || || ||
+|| ||Land Defense Ship|| || || || || ||
+|| ||Land Defense Ship (Mobile Form)|| || || || || ||
+|| ||Air Defense Ship|| || || || || ||
+|| ||Air Defense Ship (Mobile Form)|| || || || || ||
+|| ||Naval Defense Ship|| || || || || ||
+|| ||Naval Defense Ship (Mobile Form)|| || || || || ||
+
+
