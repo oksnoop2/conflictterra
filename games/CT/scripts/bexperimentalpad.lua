@@ -29,10 +29,12 @@ local pad = piece "pad"
 
 local SIG_OPEN = 1
 local SIG_CLOSE = 2
+local SIG_SPARK = 4
 
 local factorysparks = SFX.CEG
 
 local function sparks()
+	SetSignalMask(SIG_SPARK)
 	while true do
 		EmitSfx(blflare, factorysparks)
 		EmitSfx(brflare, factorysparks)
@@ -225,6 +227,7 @@ end
 
 function script.StopBuilding()
 	StartThread(build_close)
+	Signal(SIG_SPARK)
 end
 
 function script.Killed(recentDamage, maxHealth)
