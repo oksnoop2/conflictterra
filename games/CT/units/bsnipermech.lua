@@ -63,7 +63,7 @@
 	
 	    {
 	      def                = [[Sniper]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
+	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],

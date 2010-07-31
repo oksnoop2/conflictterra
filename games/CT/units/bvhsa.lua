@@ -90,8 +90,8 @@
 
 	    {
 	      def                = [[Cannon]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      badTargetCategory  = [[GUNSHIP]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	    },
 	
 	  },

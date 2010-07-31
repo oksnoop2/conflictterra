@@ -91,51 +91,48 @@
 	
 	    {
 	      def                = [[Cannon]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	    },
 
 	    {
 	      def                = [[Cannon]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	    },
 
 	    {
 	      def                = [[Cannon]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+
+	    {
+	      def                = [[Cannon]],
+	      badTargetCategory  = [[GUNSHIP]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	    },
 
 	    {
 	      def                = [[Cannon]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
-	    },
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 
 	    {
 	      def                = [[Cannon]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
-	    },
-
-	    {
-	      def                = [[Cannon]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
-	    },
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	
 	  },
 	
