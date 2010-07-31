@@ -1,3 +1,16 @@
+ver.08.3 -> ver.08.4
+__Bug Fixes__
+- Assault Tank, Heavy Assault Tank, Heavy Assault Mech, Heavy Siege Mech, Sniper Mech, and Very Heavy Siege Artillery can still attack gunships, but can no longer attack fighters.
+- Battlecruiser's weapons now have the proper impact CEG, megapartgun.
+- Fixed Experimental Build Pad's sparks so that they deactivate when the building does.
+
+__Balance__
+
+
+__Miscellaneous__
+- The T1 Mex and T2 Mex can now be reclaimable, to aid in upgrading.
+- Fixed misaligned muzzle flare for the Siege Mech.
+
 ver.08.2 -> ver.08.3
 __Bug Fixes__
 - Hierachy for the Engineer was fixed.  Nano point was a child of the base, and not the body.  Little effect in-game, but an improper setup none-the-less.
@@ -5,10 +18,6 @@ __Bug Fixes__
 
 __Balance__
 - Decreased Rocket Battleship's missile damage from 650 to 150 for every armor class.
-
-
-__New Units__
-
 
 __Miscellaneous__
 - Removed redundancy in most building descriptions in the tooltip.

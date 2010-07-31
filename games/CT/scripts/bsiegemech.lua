@@ -37,6 +37,9 @@
         local orc_machinegun_muzzle = SFX.CEG + 1
 	
 	function script.Create()
+	Turn( flare1, x_axis, -90, 2 )
+	Turn( flare2, x_axis, 90, 2 )
+	Turn( flare3, x_axis, 90, 2 )
 	       
 	end
 

@@ -17,8 +17,6 @@ local armorDefs = {
     "bmetalconverter",
     "bseamex",
     "bseapowerplant",
-    "bseametalstorage",
-    "bseaenergystorage",
     "bradartower",
     "bjammertower",
     "blandturret",
