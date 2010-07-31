@@ -1,3 +1,7 @@
+ver.09 -> ver.09.1
+- Added different icon sizes.
+- Added springignore.txt.
+
 ver.08.4 -> ver.09
 Primed for Beta.
 
