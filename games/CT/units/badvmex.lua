@@ -16,7 +16,7 @@ unitDef = {
   canattack                     = [[false]],
   category                      = [[SINK]],
   corpse                        = [[DEAD]],
-  reclaimable                   = false,
+  reclaimable                   = true,
 
   energyUse                     = 25,
   explodeAs                     = [[MEDIUM_BUILDING]],
