@@ -3,6 +3,8 @@
 
 = Table of Contents =
 
+  * Game Guide
+    * [http://code.google.com/p/conflictterra/wiki/ArmorSystem?ts=1280542250&updated=ArmorSystem Armor System]
   * Unit Guide
     * [http://code.google.com/p/conflictterra/wiki/MechUnitGuide Mech Guide]
     * [http://code.google.com/p/conflictterra/wiki/AircraftUnitGuide Aircraft Guide]
