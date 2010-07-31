@@ -128,7 +128,7 @@
 	
 	      duration                = 0.02,
 	      energypershot           = 0,
-	      explosionGenerator      = [[custom:MINI_NUCLEAR_Expl]],
+	      explosionGenerator      = [[custom:megapartgun]],
 	      interceptedByShieldType = 1,
 	      heightMod               = 0.5,
 	      lineOfSight             = true,
