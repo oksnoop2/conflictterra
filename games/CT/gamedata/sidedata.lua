@@ -12,21 +12,6 @@ local
 
   },
 
-  [2] = {
-
-    name      = 'PN',
-
-    startunit = 'kcommander',
-
-  },
-  [3] = {
-
-    name      = 'TEST',
-
-    startunit = 'breztank',
-
-  },
-
 
 }
 
