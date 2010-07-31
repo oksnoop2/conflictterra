@@ -1,3 +1,6 @@
+ver.08.4 -> ver.09
+Primed for Beta.
+
 ver.08.3 -> ver.08.4
 __Bug Fixes__
 - Assault Tank, Heavy Assault Tank, Heavy Assault Mech, Heavy Siege Mech, Sniper Mech, and Very Heavy Siege Artillery can still attack gunships, but can no longer attack fighters.
