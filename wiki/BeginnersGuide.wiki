@@ -42,3 +42,9 @@ At the moment Conflict Terra may not seem very different from the usual game on 
   Our approach doesn't come without side effects though.  By not allowing workers to assist others, a handful of handy gadgets become unavailable to us, and it means that workers cannot leave a building project and then return to it.  These limitations are frustrating but issues we'll have to deal with unless someone steps forward with a roundabout solution.
 
   == Armor ==
+
+    Conflict Terra's combat relies heavily on counter-based combat.  This means that some units are made to specifically counter certain other units.  A great example is that the [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Kuma_Type_Tank Kuma Type Tank] deals a little bit more than double damage to Mechs than it does to all other units.
+
+    The Armor Classes, and which units are in which class, are detailed on this page:  [http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor System].
+
+    As for the attack values of the units, documentation of that will come later.  At the moment, the tooltip descriptions for each unit should indicate what kind of unit it is designed to counter.
