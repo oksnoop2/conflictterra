@@ -339,7 +339,7 @@
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bexperimentalpad.png||Specialty building that only builds an experimental weapon.||
     ||Build Limit:  1||
     ||Build List||
-      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Izanaga_Assault_Mech Izanagi Assault Mech]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Izanagi_Assault_Mech Izanagi Assault Mech]||
 
 
 == Support ==
