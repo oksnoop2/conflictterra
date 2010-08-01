@@ -297,7 +297,7 @@
     ||Advanced Naval Battleship Factory||Tech Level 2||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Engineer_Support_Mech Advanced Engineer Support Mech], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval__Engineer_Support_Ship Advanced Naval Engineer Support Ship]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvshipyard.png||Produces more advanced battleships and other sea-faring vessels.||
     ||Build List||
-      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Engineer_Support_Mech Advanced Naval Engineer Support Ship]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Engineer_Support_Ship Advanced Naval Engineer Support Ship]||
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Mori_Class_Battleship Mori Class Battleship]||
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Sasaki_Class_Battleship Sasaki Class Battleship]||
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Minamoto_Class_Battleship Minamoto Class Battleship]||
@@ -315,7 +315,7 @@
     ||Advanced Submarine Pens||Tech Level 2||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Engineer_Support_Mech Advanced Engineer Support Mech], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval__Engineer_Support_Ship Advanced Naval Engineer Support Ship]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvsubpens.png||Produces more advanced submarines and hover mechs.||
     ||Build List||
-      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Engineer_Support_Mech Advanced Naval Engineer Support Ship]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Engineer_Support_Ship Advanced Naval Engineer Support Ship]||
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yagyu_Hover_Combat_Mech Yagyu Hover Combat Mech]||
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Osui_Class_Submarine Osui Class Submarine]||
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Okaze_Class_Submarine Okaze Class Submarine]||
