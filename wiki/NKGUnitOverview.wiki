@@ -2,7 +2,7 @@
 #labels Phase-Design,UnitGuide
 
 = Table of Contents =
-  *[http://code.google.com/p/conflictterra/w/edit.do#Economic_Buildings Economic Buildings]
+  *[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Economic_Buildings Economic Buildings]
   *[Defensive Buildings]
   *[Factories]
   *[Support]
@@ -237,6 +237,91 @@
       ||Suida Class Submarine||
       ||Kazeda Class Submarine||
 
+  === Advanced Combat Mech Factory ===
+    ||Advanced Combat Mech Factory||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvmechfactory.png||Produces more advanced combat and support mechs.||
+    ||Build List||
+      ||Advanced Engineer Support Mech||
+      ||Honda Combat Mech||
+      ||Shimazu Combat Mech||
+      ||Shibata Combat Support Mech||
+      ||Hattori Aerial Combat Mech||
+      ||Hojo Combat Mech||
+      ||Saiga Combat Support Mech||
+      ||Fuma Aerial Combat Mech||
+      ||Ueda Combat Support Mech||
+      ||Ishida Combat Mech||
+
+  === Advanced Tank Factory ===
+    ||Advanced Tank Factory||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvtankfactory.png||Produces tanks and combat vehicles.||
+    ||Morphs into:  Advanced Tank Factory||
+    ||Build List||
+      ||Engineer Support Mech||
+      ||Oukami Type Tank||
+      ||Kuma Type Tank||
+      ||Uma Type Tank||
+      ||Tatakau Type Tank||
+      ||Ureme Type Radar Tank||
+      ||Resurrection Team||
+
+  === Advanced Combat Airbase ===
+    ||Advanced Combat Airbase||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvairbase.png||Produces warplanes and support aircraft, and can repair and refuel aircraft.||
+    ||Morphs into:  Advanced Combat Airbase||
+    ||Build List||
+      ||Tori Type Fighter||
+      ||Ure Type Bomber||
+      ||Washi Type Warplane||
+      ||Kangae Type Radar Plane||
+
+  === Advanced Naval Battleship Factory ===
+    ||Advanced Naval Battleship Factory||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvshipyard.png||Produces battleships and other sea-faring vessels.||
+    ||Morphs into:  Advanced Naval Battleship Factory||
+    ||Build List||
+      ||Naval Engineer Support Ship||
+      ||Douda Class Supply Ship||
+      ||Hida Class Supply Ship||
+      ||Ii Class Battleship||
+      ||Shima Class Battleship||
+      ||Akechi Class Battleship||
+      ||Imagawa Class Battleship||
+      ||Shiru Class Radar Ship||
+
+
+  === Advanced Submarine Pens ===
+    ||Advanced Submarine Pens||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvsubpens.png||Produces submarines and hover mechs.||
+    ||Morphs into:  Advanced Submarine Pens||
+    ||Build List||
+      ||Naval Engineer Support Ship||
+      ||Azai Hover Combat Mech||
+      ||Suida Class Submarine||
+      ||Kazeda Class Submarine||
+
+  === Cruiser Beacon ===
+    ||Cruiser Beacon||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbeacon.png||Produces battleships and other sea-faring vessels.||
+    ||Morphs into:  Advanced Naval Battleship Factory||
+    ||Build List||
+      ||Naval Engineer Support Ship||
+      ||Douda Class Supply Ship||
+      ||Hida Class Supply Ship||
+      ||Ii Class Battleship||
+      ||Shima Class Battleship||
+      ||Akechi Class Battleship||
+      ||Imagawa Class Battleship||
+      ||Shiru Class Radar Ship||
+
+
+  === Experimental Build Pad ===
+    ||Experimental Build Pad||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bexperimentalpad.png||Produces submarines and hover mechs.||
+    ||Morphs into:  Advanced Submarine Pens||
+    ||Build List||
+      ||Naval Engineer Support Ship||
+
 
 
 
@@ -425,8 +510,6 @@ Adv. Submarine	Osui Class Submarine
 ----
 Adv. Anti-Air Submarine	Okaze Class Submarine
 ----
-
-
 
 
 
