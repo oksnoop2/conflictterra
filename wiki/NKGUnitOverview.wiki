@@ -5,13 +5,13 @@
   * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Economic_Buildings Economic Buildings]
   * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Defensive_Buildings Defensive Buildings]
   * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Factories Factories]
-  * [Support]
-  * [Cruisers]
-  * [Mechs]
-  * [Tanks]
-  * [Aircraft]
-  * [Ships]
-  * [Submarines]
+  * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Support Support]
+  * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Cruisers Cruisers]
+  * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Mechs Mechs]
+  * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tanks Tanks]
+  * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Aircraft Aircraft]
+  * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ships Ships]
+  * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Submarines Submarines]
 
 
 == Economic Buildings ==
@@ -167,6 +167,15 @@
 
 
 == Factories ==
+
+  === Mobile Headquarters ===
+    ||Temporary Base||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bflagshipbase.png||Docked Oda Class Cruiser.  Acts as a mobile base, providing defence and unit production.||
+    ||Build Limit:  1||Morphs into:  Oda Class Cruiser||
+    ||Build List||
+      ||Engineer Support Mech||
+      ||Taira Defense Mech||
+      ||Resurrection Team||
 
   === Combat Mech Factory ===
     ||Combat Mech Factory||Tech Level 1||
@@ -415,128 +424,257 @@
 
 == Cruisers ==
 
-----
-Flagship	Oda Class Cruiser
-----
-Mobile Headquarters	Temporary Base
-----
-Battle Flagship	Owari Class Cruiser
-----
-Battle Cruiser	Uesugi Class Cruiser
-----
-Transport Carrier	Maeda Class Cruiser
-----
-Metal Supply Cruiser	Takeda Class Supply Cruiser
-----
-Metal Supply Cruiser Depot	Takeda Class Supply Cruiser Depot
-----
-Power Supply Cruiser	Denda Class Supply Cruiser
-----
-Power Supply Cruiser Depot	Denda Class Supply Cruiser Depot
-----
+  === Oda Class Cruiser ===
+    ||Flagship||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bflagship2.png||Centerpiece of NKG fleet.  Able to unload and become a Mobile Headquarters.  Can also upgrade once into a Battle Flagship.  Fires powerful missiles.||
+    ||Build Limit:  1||Morphs into:  Mobile Headquarters, Owari Class Cruiser||
+
+  === Owari Class Cruiser ===
+    ||Battle Flagship||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbattleflagship.png||Upgraded Flagship outfitted primarily for battle.  Can fire a very powerful beam.||
+    ||Build Limit:  1||
+
+  === Uesugi Class Cruiser ===
+    ||Battle Cruiser||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbattlecruiser2.png||Pride of the NKG, the battle cruiser is able to punch through even the hardiest of lines.||
+    ||Build Limit:  8||
+
+  === Maeda Class Cruiser ===
+    ||Transport Carrier||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/btransportcarrier2.png||Transport aircraft used to ferry units through the air.  Lightly armed with missiles.||
+
+  === Takeda Class Supply Cruiser ===
+    ||Metal Supply Cruiser||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmetalsupplyship.png||Supply cruiser that provides 50 metal storage.  Can morph into an immobile depot that provides more metal storage.||
+    ||Morphs into:  Takeda Class Supply Cruiser Depot||
+
+  === Takeda Class Supply Cruiser Depot ===
+    ||Metal Supply Cruiser Depot||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmetalsupplyshipdepot.png||Immobile metal storage with a capacity of 1000.  Can morph into a mobile cruiser form with 50 metal storage.||
+    ||Morphs into:  Takeda Class Supply Cruiser||
+
+  === Denda Class Supply Cruiser ===
+    ||Power Supply Cruiser||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/benergysupplyship.png||Supply cruiser that provides 50 energy storage.  Can morph into an immobile depot that provides more energy storage.||
+    ||Morphs into:  Denda Class Supply Cruiser Depot||
+
+  === Denda Class Supply Cruiser Depot ===
+    ||Power Supply Cruiser Depot||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/benergysupplyshipdepot.png||Immobile energy storage with a capacity of 1000.  Can morph into a mobile cruiser form with 50 energy storage.||
+    ||Morphs into:  Denda Class Supply Cruiser||
+
 
 == Mechs ==
 
-----
-Base Defense Mech	Taira Defense Mech
-----
-Basic Mech	Hojo Combat Mech
-----
-Sniper Mech	Saiga Combat Support Mech
-----
-Flying Mech	Fuma Aerial Combat Mech
-----
-Missile Mech	Ueda Combat Support Mech
-----
-Siege Mech	Ishida Combat Mech
-----
-Heavy Mech	Honda Combat Mech
-----
-Heavy Siege Mech	Shimazu Combat Mech
-----
-Heavy Missile Mech	Shibata Combat Support Mech
-----
-Flying Heavy Mech	Hattori Aerial Combat Mech
-----
-Heavy Assault Mech	Izanagi Assault Mech
-----
-Hover Mech	Azai Hover Combat Mech
-----
-Advanced Hover Mech	Yagyu Hover Combat Mech
-----
+  === Taira Defense Mech ===
+    ||Base Defense Mech||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bdefensemech.png||Weak, first generation SM packed inside Flagships for early defense deployment.||
+    ||Build Limit:  10||
+
+  === Hojo Combat Mech ===
+    ||Basic Mech||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbasicmech.png||Light, fast, rapid fire SM.  Built for skirmishing over holding the line.||
+
+  === Saiga Combat Support Mech ===
+    ||Sniper Mech||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsnipermech.png||Specialized SM designed to take out tanks from a distance.||
+
+  === Fuma Aerial Combat Mech ===
+    ||Flying Mech||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bflyingmech.png||Airborne "mech" designed to harass enemy lines.  Fires multiple rapid cannons.||
+
+  === Ueda Combat Support Mech ===
+    ||Missile Mech||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmissilemech.png||Light SM built to combat other mechs.  Fires two anti-mech missiles.||
+
+  === Ishida Combat Mech ===
+    ||Siege Mech||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsiegemech.png||Medium SM designed to take out enemy bases.  Armed with a heavy gun and two rapid fire cannons.||
+
+  === Azai Hover Combat Mech ===
+    ||Hover Mech||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bamphmech.png||Hover-equipped "mech" that is able to instantly move between land and sea.  Armed with both missiles and torpedoes.||
+
+  === Honda Combat Mech ===
+    ||Heavy Mech||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavymech.png||Hardy SM armed with a powerful beam weapon.||
+    ||Build Limit:  10||
+
+  === Shimazu Combat Mech ===
+    ||Heavy Siege Mech||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavysiegemech.png||Slow, heavily armed SM sporting two long ranged cannons.||
+    ||Build Limit:  15||
+
+  === Shibata Combat Support Mech ===
+    ||Heavy Missile Mech||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavymissilemech.png||Heavy SM armed to the teeth with anti-mech missiles.||
+    ||Build Limit:  10||
+
+  === Hattori Aerial Combat Mech ===
+    ||Heavy Flying Mech||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavyflyingmech.png||Stronger model of the airborne "mech."  Fires a powerful beam.||
+    ||Build Limit:  10||
+
+  === Yagyu Hover Combat Mech ===
+    ||Advanced Hover Mech||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvamphmech.png||Newer hovercraft "mech" armed with powerful beam weapons.||
+    ||Build Limit:  10||
+
+  === Izanagi Assault Mech ===
+    ||Heavy Assault Mech||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavyassaultmech.png||Prototype SM designed to push SM technology to its limit.  Armed with powerful artillery and heavy cannons.||
+    ||Build Limit:  3||
+
 
 == Tanks ==
 
-----
-Assault Tank	Oukami Type Tank
-----
-Anti-Mech Tank	Kuma Type Tank
-----
-Artillery	Uma Type Tank
-----
-Siege Artillery	Tatakau Type Tank
-----
-Radar Tank	Ureme Type Radar Tank
-----
-Heavy Assault Tank	Ogami Type Tank
-----
-Heavy Anti-mech Tank	Okuma Type Tank
-----
-Very Heavy Siege Artillery	Sekai Type Tank
-----
-EMP Cannon Tank	Kizetsu Type Tank
-----
-EMP Cannon Turret Mode	Kizetsu Type EMP Cannon Turret
-----
-Anti-Air Truck	Taka Type Armored Truck
-----
-Anti-Air Truck Turret Mode	Taka Type Anti-Air Turret
-----
-Adv. Radar Tank	Ome Type Radar Tank
-----
+  === Oukami Type Tank ===
+    ||Assault Tank||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bassaulttank.png||Inexpensive basic tank.  Fires light shells.||
+
+  === Kuma Type Tank ===
+    ||Anti-Mech Tank||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmissiletank.png||Fires two anti-mech missiles.||
+
+  === Uma Type Tank ===
+    ||Artillery||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bartillery.png||Light mobile artillery.  Stronger against buildings than units.||
+
+  === Tatakau Type Tank ===
+    ||Siege Artillery||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsiegeartillery.png||Medium mobile artillery.  Fires inaccurate missiles.||
+
+  === Ureme Type Radar Tank ===
+    ||Radar Tank||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bradartank.png||Light mobile radar and sonar unit.  Also jams radar.||
+
+  === Ogami Type Tank ===
+    ||Heavy Assault Tank||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavyassaulttank.png||Heavier battle tank.  Fires heavier shells.||
+    ||Build Limit:  20||
+
+  === Okuma Type Tank ===
+    ||Heavy Anti-Mech Tank||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavymissiletank.png||Hardy tank that shoots multiple anti-mech missiles.||
+    ||Build Limit:  10||
+
+  === Sekai Type Tank ===
+    ||Very Heavy Siege Artillery||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bvhsa.png||Heavily armored, long range artillery.  Has secondary gun.  Must turn to aim.||
+    ||Build Limit:  5||
+
+  === Kizetsu Type Tank ===
+    ||EMP Cannon Tank||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bempcannon.png||Tank armed with a long range, very slow firing EMP beam that can pierce shields.  Must transform into Turret Mode to fire.||
+    ||Build Limit:  10||Morphs into:  Kizetsu Type EMP Cannon Turret||
+
+  === Kizetsu Type EMP Cannon Turret ===
+    ||EMP Cannon Turret Mode||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bempcannonturret.png||Immobile EMP beam turret.  Can penetrate shields.  Can morph back into EMP Cannon Tank.||
+    ||Build Limit:  10||Morphs into:  Kizetsu Type Tank||
+
+  === Taka Type Armored Truck ===
+    ||Anti-Air Truck||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/baatruck.png||Light truck armed with an anti-air missile.  Can morph into a more powerful anti-air turret.||
+    ||Build Limit:  20||Morphs into:  Taka Type Anti-Air Turret||
+
+  === Taka Type Anti-Air Turret ===
+    ||Anti-Air Truck Turret Mode||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/baatruckturret.png||Immobile flak turret.  Can morph back into Anti-Air Truck.||
+    ||Build Limit:  20||Morphs into:  Taka Type Armored Truck||
+
+  === Ome Type Radar Tank ===
+    ||Advanced Radar Tank||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvradartank.png||More effective mobile radar and sonar unit.  Also jams radar.||
+    ||Build Limit:  10||
+
 
 == Aircraft ==
 
-----
-Fighter	Tori Type Fighter
-----
-Bomber	Ure Type Bomber
-----
-Rocket Warplane	Washi Type Warplane
-----
-Radar Plane	Kangae Type Radar Plane
-----
-Adv. Fighter	Otorii Type Fighter
-----
-Adv. Bomber	Otoko Type Bomber
-----
-Adv. Rocket Warplane	Daishi Type Warplane
-----
-Adv. Radar Plane	Obou Type Radar Plane
-----
-Laser Fighter	Suzaku Type Fighter
-----
+  === Tori Type Fighter ===
+    ||Fighter||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bfighter.png||Fast, light fighter armed with four air cannons.||
 
+  === Ure Type Bomber ===
+    ||Bomber||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbomber.png||Light bomber able to drop small payloads.||
+
+  === Washi Type Warplane ===
+    ||Rocket Warplane||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/brocketplane.png||Versatile anti-land aircraft.  Fires four anti-tank missiles.||
+
+  === Kangae Type Radar Plane ===
+    ||Radar Plane||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bradarplane.png||High flying plane equipped with far reaching radar.||
+
+  === Otorii Type Fighter ===
+    ||Advanced Fighter||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvfighter.png||Powerful anti-aircraft fighter armed with two air cannons and two missiles.||
+    ||Build Limit:  20||
+
+  === Otoko Type Bomber ===
+    ||Advanced Bomber||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvbomber.png||Heavy bomber capable of dropping more bombs.  Also armed with a small anti-air turret.||
+    ||Build Limit:  20||
+
+  === Daishi Type Warplane ===
+    ||Advanced Rocket Warplane||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvrocketplane.png||Powerful anti-land aircraft that fires a barrage of missiles.||
+    ||Build Limit:  10||
+
+  === Obou Type Radar Plane ===
+    ||Advanced Radar Plane||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvradarplane.png||New radar plane with long ranged radar.||
+    ||Build Limit:  20||
+
+  === Suzaku Type Fighter ===
+    ||Laser Fighter||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/blaserplane.png||Top-of-the-line fighter armed with new beam weaponry.||
+    ||Build Limit:  20||
 
 
 == Ships ==
 
-----
-Naval Engineer	Naval Engineer Support Ship
-----
-Metal Supply Ship	Douda Class Supply Ship
-----
-Energy Supply Ship	Hida Class Supply Ship
-----
-Battleship	Ii Class Battleship
-----
-Rocket Battleship	Shima Class Battleship
-----
-Artillery Ship	Akechi Class Battleship
-----
-Anti-Air Ship	Imagawa Class Battleship
-----
-Radar Ship	Shiru Class Radar Ship
+  === Naval Engineer Support Ship ===
+    ||Naval Engineer Support Ship||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bseaengineer1.png||Seaworthy construction vessel.  Can build floating economy buildings, factories, and defences.||
+    ||Build List||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Raw_Material_Extractor_Sea_Platform Raw Material Extractor Sea Platform]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Floating_Solar_Plant Floating Solar Plant]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Submarine_Pens Submarine Pens]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Floating_Radar_Outpost Floating Radar Outpost]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Floating_Torpedo_Turret Floating Torpedo Turret]||
+
+  === Douda Class Supply Ship ===
+    ||Metal Supply Ship||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmetalsupplyboat.png||Seaworthy metal storage.  Stores 750 metal.||
+
+  === Hida Class Supply Ship ===
+    ||Energy Supply Ship||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/benergysupplyboat.png||Seaworthy energy storage.  Stores 750 energy.||
+
+  === Ii Class Battleship ===
+    ||Battleship||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbattleship.png||Standard naval battleship of the NKG fleet.  Armed with two naval cannons.||
+
+  === Shima Class Battleship ===
+    ||Rocket Battleship||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/brocketbattleship.png||Specialized navy vessel built to fire four missiles.||
+
+  === Akechi Class Battleship ===
+    ||Artillery Ship||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bartilleryship.png||Battleship armed with a single, large gun.  Does more damage to buildings.||
+
+  === Imagawa Class Battleship ===
+    ||Anti-Air Ship||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/baaship.png||Battleship designed to only shoot down enemy aircraft.  Armed with two anti-air missile launchers.||
+
+  === Shiru Class Radar Ship ===
+    ||Radar Ship||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bradarship.png||Seaworthy radar and sonar unit.||
+
+
 ----
 Advanced Naval Engineer	Advanced Naval Engineer Support Ship
 ----
@@ -562,8 +700,6 @@ Adv. Submarine	Osui Class Submarine
 ----
 Adv. Anti-Air Submarine	Okaze Class Submarine
 ----
-
-
 
 
 
