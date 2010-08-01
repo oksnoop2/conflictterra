@@ -13,7 +13,7 @@ There are 7 Armor Classes.  Each unit can only belong to one Armor Class.  Somet
 
 ||*Cruiser*||*Building*||*Mech*||*Tank*||*Aircraft*||*Ship*||*Sub*||
 ||Flagship||Flagship Base||Engineer||Metal Supply Truck||Flying Mech||Sea Engineer||Submarine||
-||Battle Flagship||Metal Extractor||Defense Mech||energy Supply Truck||Heavy Flying Mech||Metal Supply Boat||AA Submarine||
+||Battle Flagship||Metal Extractor||Defense Mech||Energy Supply Truck||Heavy Flying Mech||Metal Supply Boat||AA Submarine||
 ||Battlecruiser||Power Plant||Basic Mech||Assault Tank||Fighter||Energy Supply Boat||Advanced Submarine||
 ||Transport Carrier||Nuclear Power||Sniper Mech||Missile Tank||Bomber||Battleship||Advanced AA Submarine||
 ||Metal Supply Cruiser||Metal Converter||Siege Mech||Artillery||War Plane||Rocket Battleship|| ||
@@ -23,12 +23,12 @@ There are 7 Armor Classes.  Each unit can only belong to one Armor Class.  Somet
 || ||Jammer Tower||Heavy Siege Mech||Hover Transport||Advanced War Plane||Advanced Sea Engineer|| ||
 || ||Land Turret||Heavy Missile Mech||Heavy Assault Tank||Advanced Radar Plane||Advanced Battleship|| ||
 || ||Air Turret||Hover Mech||Very Heavy Siege Artillery||Laser Plane||Advanced Rocket Battleship|| ||
-|| ||Land Naval Turret||Advanced Hover Mech||Advanced Radar Tank||Long Range Artillery Ship|| || ||
-|| ||Gatling Turret||Heavy Assault Mech||Heavy Missile Tank||Advanced AA Ship|| || ||
-|| ||Mech Turret||EMP Cannon||Advanced Radar Ship|| || || ||
-|| ||Sea Radar Tower||EMP Cannon Turret|| || || || ||
-|| ||Torpedo Turret||AA Truck|| || || || ||
-|| ||Advanced Metal Extractor||AA Truck Turret|| || || || ||
+|| ||Land Naval Turret||Advanced Hover Mech||Advanced Radar Tank|| ||Long Range Artillery Ship|| ||
+|| ||Gatling Turret||Heavy Assault Mech||Heavy Missile Tank|| ||Advanced AA Ship|| ||
+|| ||Mech Turret|| ||EMP Cannon|| ||Advanced Radar Ship|| ||
+|| ||Sea Radar Tower|| ||EMP Cannon Turret|| || || ||
+|| ||Torpedo Turret|| ||AA Truck|| || || ||
+|| ||Advanced Metal Extractor|| ||AA Truck Turret|| || || ||
 || ||Advanced Power Plant|| || || || || ||
 || ||Advanced Nuclear Power|| || || || || ||
 || ||Advanced Metal Converter|| || || || || ||
@@ -65,5 +65,3 @@ There are 7 Armor Classes.  Each unit can only belong to one Armor Class.  Somet
 || ||Air Defense Ship (Mobile Form)|| || || || || ||
 || ||Naval Defense Ship|| || || || || ||
 || ||Naval Defense Ship (Mobile Form)|| || || || || ||
-
-
