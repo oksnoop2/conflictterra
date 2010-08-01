@@ -1,7 +1,18 @@
 #summary A basic guide to the units for the NKG.
 #labels Phase-Design,UnitGuide
 
-= Introduction =
+= Table of Contents =
+  *[http://code.google.com/p/conflictterra/w/edit.do#Economic_Buildings Economic Buildings]
+  *[Defensive Buildings]
+  *[Factories]
+  *[Support]
+  *[Cruisers]
+  *[Mechs]
+  *[Tanks]
+  *[Aircraft]
+  *[Ships]
+  *[Submarines]
+
 
 == Economic Buildings ==
 
@@ -48,80 +59,195 @@
 
 == Defensive Buildings ==
 
-----
-Radar Tower	Radar Outpost
-----
-Jammer Tower	Radar Jamming Outpost
-----
-Anti-Land	Terrestrial Turret
-----
-Anti-Air	Anti-Air Turret
-----
-Anti-Naval	Anti-Ship Turret
-----
-Rapid Fire	Gatling Turret
-----
-Anti-Mech	Anti-Mech Turret
-----
-Sea Radar Tower	Floating Radar Tower
-----
-Torpedo Turret	Floating Torpedo Turret
-----
-Adv. Radar Tower	Radar Tower
-----
-Adv. Jammer Tower	Radar Jamming Tower
-----
-Adv. Anti-Land	Terrestrial Gun Emplacement
-----
-Adv. Anti-Air	Anti-Air Gun Emplacement
-----
-Adv. Anti-Naval	Anti-Ship Gun Emplacement
-----
-Adv. Rapid Fire	Gatling Gun Emplacement
-----
-Adv. Anti-Mech	Anti-Mech Missile Emplacement
-----
-Shield Generator	Shield Generator
-----
-Adv. Sea Radar Tower	Advanced Floating Radar Tower
-----
-Adv. Torpedo Emplacement	Advanced Floating Torpedo Emplacement
-----
-Anti-Land Defense Ship	Yamada Class Battery
-----
-Anti-Land Defense Ship (Mobile Form)	Yamada Class Battery (Mobile Form)
-----
-Anti-Air Defense Ship	Sanada Class Battery
-----
-Anti-Air Defense Ship (Mobile Form)	Sanada Class Battery (Mobile Form)
-----
-Anti-Navy Defense Ship	Yoshida Class Battery
-----
-Anti-Navy Defense Ship (Mobile Form)	Yoshida Class Battery (Mobile Form)
-----
+  === Radar Outpost ===
+    ||Radar Outpost||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bradartower.png||Temporary radar installation.  Provides a steady, but close-reaching, range of radar.||
+
+  === Radar Jamming Outpost ===
+    ||Radar Jamming Outpost||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bjammertower.png||Easy-to-install, but complex, radar jammer.  Has a small range.||
+
+  === Anti-Land Turret ===
+    ||Anti-Land Turret||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/blandturret.png||Cheap, mildly effective turret designed to counter terrestrial units.  Fires two cannons.||
+
+  === Anti-Air Turret ===
+    ||Anti-Air Turret||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bairturret.png||Anti-air missile firing turret.  Cheap and easy to build.||
+
+  === Anti-Ship Turret ===
+    ||Anti-Ship Turret||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/blandnavalturret.png||Fires three shells that do much more damage to ships.  Should be built near shore.||
+
+  === Gatling Turret ===
+    ||Gatling Turret||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bgatlingturret.png||Rapid fire cannon designed to take out several weaker units.||
+
+  === Anti-Mech Turret ===
+    ||Anti-Mech Turret||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmechturret.png||Hidden defensive structure that fires three anti-mech missiles.||
+
+  === Floating Radar Outpost ===
+    ||Floating Radar Outpost||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsearadartower.png||Temporary floating radar and sonar installation.||
+
+  === Floating Torpedo Turret ===
+    ||Floating Torpedo Turret||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/btorpedoturret.png||Fires two torpedoes at nearby naval vessels.||
+
+  === Advanced Radar Tower ===
+    ||Advanced Radar Tower||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvradartower.png||A more permanent radar installation, this facility provides ample coverage.||
+
+  === Advanced Radar Jamming Tower ===
+    ||Advanced Radar Jamming Tower||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvjammertower.png||A more advanced radar jammer, this model is capable of somewhat farther range.||
+
+  === Advanced Anti-Land Gun Emplacement ===
+    ||Advanced Anti-Land Gun Emplacement||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvlandturret.png||A powerful beam weapon emplacement.||
+
+  === Advanced Anti-Air Gun Emplacement ===
+    ||Advanced Anti-Air Gun Emplacement||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvairturret.png||Very powerful flak gun installation.  Tears through aircraft.||
+
+  === Advanced Anti-Naval Gun Emplacement ===
+    ||Advanced Anti-Naval Gun Emplacement||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvlandnavalturret.png||Fires four powerful anti-ship shells.  Should be built near shore.||
+
+  === Advanced Gatling Gun Emplacement ===
+    ||Advanced Gatling Gun Emplacement||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvgatlingturret.png||Stronger rapid fire cannon designed to take out several units.||
+
+  === Advanced Anti-Mech Missile Emplacement ===
+    ||Advanced Anti-Mech Missile Emplacement||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvmechturret.png||Powerful missile launcher designed to destroy mechs.||
+
+  === Shield Generator ===
+    ||Shield Generator||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bshieldgen.png||Very complex, specialized equipment is able to project an energy shield around a large radius.  Stops all weapons.||
+
+  === Advanced Floating Radar Tower ===
+    ||Advanced Floating Radar Tower||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvsearadartower.png||A floating long-range radar and sonar installation.||
+
+  === Advanced Torpedo Emplacement ===
+    ||Advanced Torpedo Emplacement||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvtorpedoturret.png||Floating torpedo platform that fires at nearby ships.||
+
+  === Yamada Class Battery ===
+    ||Anti-Land Defense Ship||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/blanddefship2.png||Very powerful anti-land ship.  Immobile.  Can transform into a mobile, but unarmed, form.||
+    ||Build Limit:  5||Morphs into:  Yamada Class Battery (Mobile Form)||
+
+  === Yamada Class Battery (Mobile Form) ===
+    ||Anti-Land Defense Ship (Mobile Form)||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/blanddefship2.png||Mobile Form of a land defense ship.  Unarmed.||
+    ||Build Limit:  5||Morphs into:  Yamada Class Battery||
+
+  === Sanada Class Battery ===
+    ||Anti-Air Defense Ship||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bairdefship.png||Very powerful anti-air ship.  Immobile.  Can transform into a mobile, but unarmed, form.||
+    ||Build Limit:  5||Morphs into:  Sanada Class Battery (Mobile Form)||
+
+  === Sanada Class Battery (Mobile Form) ===
+    ||Anti-Air Defense Ship (Mobile Form)||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bairdefship.png||Mobile Form of a air defense ship.  Unarmed.||
+    ||Build Limit:  5||Morphs into:  Sanada Class Battery||
+
+  === Yoshida Class Battery ===
+    ||Anti-Navy Defense Ship||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bnavydefship.png||Very powerful anti-navy ship.  Immobile.  Can transform into a mobile, but unarmed, form.||
+    ||Build Limit:  5||Morphs into:  Yoshida Class Battery (Mobile Form)||
+
+  === Yoshida Class Battery (Mobile Form) ===
+    ||Anti-Navy Defense Ship (Mobile Form)||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bnavydefship.png||Mobile Form of a navy defense ship.  Unarmed.||
+    ||Build Limit:  5||Morphs into:  Yoshida Class Battery||
+
 
 == Factories ==
 
-----
-Mech Factory	Mech Factory
+  === Combat Mech Factory ===
+    ||Combat Mech Factory||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmechfactory.png||Produces combat and support mechs.||
+    ||Morphs into:  Advanced Combat Mech Factory||
+    ||Build List||
+      ||Engineer Support Mech||
+      ||Hojo Combat Mech||
+      ||Saiga Combat Support Mech||
+      ||Fuma Aerial Combat Mech||
+      ||Ueda Combat Support Mech||
+      ||Ishida Combat Mech||
+
+  === Tank Factory ===
+    ||Tank Factory||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/btankfactory.png||Produces tanks and combat vehicles.||
+    ||Morphs into:  Advanced Tank Factory||
+    ||Build List||
+      ||Engineer Support Mech||
+      ||Oukami Type Tank||
+      ||Kuma Type Tank||
+      ||Uma Type Tank||
+      ||Tatakau Type Tank||
+      ||Ureme Type Radar Tank||
+      ||Resurrection Team||
+
+  === Combat Airbase ===
+    ||Combat Airbase||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bairbase.png||Produces warplanes and support aircraft, and can repair and refuel aircraft.||
+    ||Morphs into:  Advanced Combat Airbase||
+    ||Build List||
+      ||Tori Type Fighter||
+      ||Ure Type Bomber||
+      ||Washi Type Warplane||
+      ||Kangae Type Radar Plane||
+
+  === Support Factory ===
+    ||Support Factory||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsupportfactory.png||Builds auxiliary units, such as supply vehicles and a hover transport.||
+    ||Build List||
+      ||Engineer Support Mech||
+      ||Tetsuda Type Supply Truck||
+      ||Raida Type Supply Truck||
+      ||Saito Type Hover Transport||
+
+  === Naval Battleship Factory ===
+    ||Naval Battleship Factory||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bshipyard.png||Produces battleships and other sea-faring vessels.||
+    ||Morphs into:  Advanced Naval Battleship Factory||
+    ||Build List||
+      ||Naval Engineer Support Ship||
+      ||Douda Class Supply Ship||
+      ||Hida Class Supply Ship||
+      ||Ii Class Battleship||
+      ||Shima Class Battleship||
+      ||Akechi Class Battleship||
+      ||Imagawa Class Battleship||
+      ||Shiru Class Radar Ship||
+
+
+  === Submarine Pens ===
+    ||Submarine Pens||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsubpens.png||Produces submarines and hover mechs.||
+    ||Morphs into:  Advanced Submarine Pens||
+    ||Build List||
+      ||Naval Engineer Support Ship||
+      ||Azai Hover Combat Mech||
+      ||Suida Class Submarine||
+      ||Kazeda Class Submarine||
+
+
+
+
 ----
 Advanced Mech Factory	Advanced Mech Factory
 ----
-Tank Factory	Terrestrial Tank Factory
-----
 Advanced Tank Factory	Advanced Terrestrial Tank Factory
-----
-Airport	Airport
 ----
 Advanced Airport	Advanced Airport
 ----
-Supply Factory	Supply Factory
-----
-Shipyard	Naval Battleship Factory
-----
 Advanced Shipyard	Advanced Naval Battleship Factory
-----
-Sub Pens	Sub Pens
 ----
 Advanced Sub Pens	Advanced Sub Pens
 ----
@@ -299,8 +425,6 @@ Adv. Submarine	Osui Class Submarine
 ----
 Adv. Anti-Air Submarine	Okaze Class Submarine
 ----
-
-
 
 
 
