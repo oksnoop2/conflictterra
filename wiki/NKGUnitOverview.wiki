@@ -1,0 +1,320 @@
+#summary A basic guide to the units for the NKG.
+#labels Phase-Design,UnitGuide
+
+= Introduction =
+
+== Economic Buildings ==
+
+  === Raw Material Extractor ===
+    ||Raw Material Extractor||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmex.png||Extracts usable resources from the ground.  Must be built over a metal deposit.||
+
+  === Low Yield Power Plant ===
+    ||Low Yield Power Plant||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bpowerplant.png||Uses heat from the sun to run a generator.  Adds +5 energy.||
+
+  === Medium Yield Power Plant ===
+    ||Medium Yield Power Plant||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bnuclearpower.png||Compact nuclear reactor provides power but also explodes upon destruction.  Adds +45 energy.||
+
+  === Material Refinery ===
+    ||Material Refinery||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmetalconverter.png||Uses power to convert waste metal back into usable resources.  Uses 60 energy to make 1 metal.||
+
+  === Raw Material Extractor Sea Platform ===
+    ||Raw Material Extractor Sea Platform||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bseamex.png||Floating extractor of usable resources from the seafloor.  Must be built over a metal deposit.||	
+
+  === Floating Solar Plant ===
+    ||Floating Solar Plant||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bseapowerplant.png||Floating solar panels that provide a small but decent supply of power.  Adds +15 energy.||
+
+  === Advanced Raw Material Extractor ===
+    ||Advanced Raw Material Extractor||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvmex.png||Higher yield resource extractor that requires power to run.  Must be built over a metal deposit.||
+
+  === High Yield Power Plant ===
+    ||High Yield Power Plant||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvpowerplant.png||Easy to install power station capable of giving a sizeable boost to energy.  Adds +50 energy.||
+
+  === Very High Yield Power Plant ===
+    ||Very High Yield Power Plant||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvnuclearpower.png||Very advanced reactor that has a large explosion on destruction.  Adds +225 energy.||
+
+  === Advanced Material Refinery ===
+    ||Advanced Material Refinery||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvmetalconverter.png||A more efficient facility to use power to make more usable resources.  Uses 600 energy to make 10 metal.||
+
+
+== Defensive Buildings ==
+
+----
+Radar Tower	Radar Outpost
+----
+Jammer Tower	Radar Jamming Outpost
+----
+Anti-Land	Terrestrial Turret
+----
+Anti-Air	Anti-Air Turret
+----
+Anti-Naval	Anti-Ship Turret
+----
+Rapid Fire	Gatling Turret
+----
+Anti-Mech	Anti-Mech Turret
+----
+Sea Radar Tower	Floating Radar Tower
+----
+Torpedo Turret	Floating Torpedo Turret
+----
+Adv. Radar Tower	Radar Tower
+----
+Adv. Jammer Tower	Radar Jamming Tower
+----
+Adv. Anti-Land	Terrestrial Gun Emplacement
+----
+Adv. Anti-Air	Anti-Air Gun Emplacement
+----
+Adv. Anti-Naval	Anti-Ship Gun Emplacement
+----
+Adv. Rapid Fire	Gatling Gun Emplacement
+----
+Adv. Anti-Mech	Anti-Mech Missile Emplacement
+----
+Shield Generator	Shield Generator
+----
+Adv. Sea Radar Tower	Advanced Floating Radar Tower
+----
+Adv. Torpedo Emplacement	Advanced Floating Torpedo Emplacement
+----
+Anti-Land Defense Ship	Yamada Class Battery
+----
+Anti-Land Defense Ship (Mobile Form)	Yamada Class Battery (Mobile Form)
+----
+Anti-Air Defense Ship	Sanada Class Battery
+----
+Anti-Air Defense Ship (Mobile Form)	Sanada Class Battery (Mobile Form)
+----
+Anti-Navy Defense Ship	Yoshida Class Battery
+----
+Anti-Navy Defense Ship (Mobile Form)	Yoshida Class Battery (Mobile Form)
+----
+
+== Factories ==
+
+----
+Mech Factory	Mech Factory
+----
+Advanced Mech Factory	Advanced Mech Factory
+----
+Tank Factory	Terrestrial Tank Factory
+----
+Advanced Tank Factory	Advanced Terrestrial Tank Factory
+----
+Airport	Airport
+----
+Advanced Airport	Advanced Airport
+----
+Supply Factory	Supply Factory
+----
+Shipyard	Naval Battleship Factory
+----
+Advanced Shipyard	Advanced Naval Battleship Factory
+----
+Sub Pens	Sub Pens
+----
+Advanced Sub Pens	Advanced Sub Pens
+----
+Cruiser Beacon	Cruiser Beacon
+----
+Experimental Build Pad	Experimental Build Pad
+----
+
+== Support ==
+
+----
+Engineer	Engineer Support Mech
+----
+Metal Supply Truck	Tetsuda Type Supply Truck
+----
+Metal Supply Truck Depot	Tetsuda Type Supply Truck Depot
+----
+Power Supply Truck	Raida Type Supply Truck
+----
+Power Supply Truck Depot	Raida Type Supply Truck Depot
+----
+Hover Transport	Saito Type Hover Transport
+----
+Resurrection Tank	Resurrection Team
+----
+Advanced Engineer	Advanced Engineer Support Mech
+----
+
+== Cruisers ==
+
+----
+Flagship	Oda Class Cruiser
+----
+Mobile Headquarters	Temporary Base
+----
+Battle Flagship	Owari Class Cruiser
+----
+Battle Cruiser	Uesugi Class Cruiser
+----
+Transport Carrier	Maeda Class Cruiser
+----
+Metal Supply Cruiser	Takeda Class Supply Cruiser
+----
+Metal Supply Cruiser Depot	Takeda Class Supply Cruiser Depot
+----
+Power Supply Cruiser	Denda Class Supply Cruiser
+----
+Power Supply Cruiser Depot	Denda Class Supply Cruiser Depot
+----
+
+== Mechs ==
+
+----
+Base Defense Mech	Taira Defense Mech
+----
+Basic Mech	Hojo Combat Mech
+----
+Sniper Mech	Saiga Combat Support Mech
+----
+Flying Mech	Fuma Aerial Combat Mech
+----
+Missile Mech	Ueda Combat Support Mech
+----
+Siege Mech	Ishida Combat Mech
+----
+Heavy Mech	Honda Combat Mech
+----
+Heavy Siege Mech	Shimazu Combat Mech
+----
+Heavy Missile Mech	Shibata Combat Support Mech
+----
+Flying Heavy Mech	Hattori Aerial Combat Mech
+----
+Heavy Assault Mech	Izanagi Assault Mech
+----
+Hover Mech	Azai Hover Combat Mech
+----
+Advanced Hover Mech	Yagyu Hover Combat Mech
+----
+
+== Tanks ==
+
+----
+Assault Tank	Oukami Type Tank
+----
+Anti-Mech Tank	Kuma Type Tank
+----
+Artillery	Uma Type Tank
+----
+Siege Artillery	Tatakau Type Tank
+----
+Radar Tank	Ureme Type Radar Tank
+----
+Heavy Assault Tank	Ogami Type Tank
+----
+Heavy Anti-mech Tank	Okuma Type Tank
+----
+Very Heavy Siege Artillery	Sekai Type Tank
+----
+EMP Cannon Tank	Kizetsu Type Tank
+----
+EMP Cannon Turret Mode	Kizetsu Type EMP Cannon Turret
+----
+Anti-Air Truck	Taka Type Armored Truck
+----
+Anti-Air Truck Turret Mode	Taka Type Anti-Air Turret
+----
+Adv. Radar Tank	Ome Type Radar Tank
+----
+
+== Aircraft ==
+
+----
+Fighter	Tori Type Fighter
+----
+Bomber	Ure Type Bomber
+----
+Rocket Warplane	Washi Type Warplane
+----
+Radar Plane	Kangae Type Radar Plane
+----
+Adv. Fighter	Otorii Type Fighter
+----
+Adv. Bomber	Otoko Type Bomber
+----
+Adv. Rocket Warplane	Daishi Type Warplane
+----
+Adv. Radar Plane	Obou Type Radar Plane
+----
+Laser Fighter	Suzaku Type Fighter
+----
+
+
+
+== Ships ==
+
+----
+Naval Engineer	Naval Engineer Support Ship
+----
+Metal Supply Ship	Douda Class Supply Ship
+----
+Energy Supply Ship	Hida Class Supply Ship
+----
+Battleship	Ii Class Battleship
+----
+Rocket Battleship	Shima Class Battleship
+----
+Artillery Ship	Akechi Class Battleship
+----
+Anti-Air Ship	Imagawa Class Battleship
+----
+Radar Ship	Shiru Class Radar Ship
+----
+Advanced Naval Engineer	Advanced Naval Engineer Support Ship
+----
+Adv. Battleship	Mori Class Battleship
+----
+Adv. Rocket Battleship	Sasaki Class Battleship
+----
+Long Range Artillery Ship	Minamoto Class Battleship
+----
+Adv. Anti-Air Ship	Kato Class Battleship
+----
+Adv. Radar Ship	Wakaru Class Radar Ship
+----
+
+== Submarines ==
+
+----
+Submarine	Suida Class Submarine
+----
+Anti-Air Submarine	Kazeda Class Submarine
+----
+Adv. Submarine	Osui Class Submarine
+----
+Adv. Anti-Air Submarine	Okaze Class Submarine
+----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
