@@ -187,7 +187,7 @@
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Saiga_Combat_Support_Mech Saiga Combat Support Mech]||
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Fuma_Aerial_Combat_Mech Fuma Aerial Combat Mech]||
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ueda_Combat_Support_Mech Ueda Combat Support Mech]||
-      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ishida_Combat_Mech Ishida Combat Mech] Ishida Combat Mech||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ishida_Combat_Mech Ishida Combat Mech]||
 
   === Tank Factory ===
     ||Tank Factory||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Engineer_Support_Mech Engineer Support Mech]||
@@ -259,7 +259,7 @@
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Saiga_Combat_Support_Mech Saiga Combat Support Mech]||
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Fuma_Aerial_Combat_Mech Fuma Aerial Combat Mech]||
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ueda_Combat_Support_Mech Ueda Combat Support Mech]||
-      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ishida_Combat_Mech Ishida Combat Mech] Ishida Combat Mech||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ishida_Combat_Mech Ishida Combat Mech]||
 
   === Advanced Tank Factory ===
     ||Advanced Tank Factory||Tech Level 2||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Engineer_Support_Mech Advanced Engineer Support Mech]||
@@ -414,7 +414,7 @@
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/benergysupplyboat.png||Seaworthy energy storage.  Stores 750 energy.||
 
   === Advanced Engineer Support Mech ===
-    ||Advanced Engineer Support Mech||Tech Level 2||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Mech_Factory Advanced Combat Mech Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Tank_Factory Advanced Tank Factory], ]||
+    ||Advanced Engineer Support Mech||Tech Level 2||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Mech_Factory Advanced Combat Mech Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Tank_Factory Advanced Tank Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bengineer2.png||Newer model of the Engineer Support Mech, capable of constructing more complex buildings.  Unarmed.||
     ||Build List||
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Raw_Material_Extractor Advanced Raw Material Extractor]||
