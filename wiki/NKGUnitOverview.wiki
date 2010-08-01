@@ -2,16 +2,16 @@
 #labels Phase-Design,UnitGuide
 
 = Table of Contents =
-  *[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Economic_Buildings Economic Buildings]
-  *[Defensive Buildings]
-  *[Factories]
-  *[Support]
-  *[Cruisers]
-  *[Mechs]
-  *[Tanks]
-  *[Aircraft]
-  *[Ships]
-  *[Submarines]
+  * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Economic_Buildings Economic Buildings]
+  * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Defensive_Buildings Defensive Buildings]
+  * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Factories Factories]
+  * [Support]
+  * [Cruisers]
+  * [Mechs]
+  * [Tanks]
+  * [Aircraft]
+  * [Ships]
+  * [Submarines]
 
 
 == Economic Buildings ==
@@ -138,32 +138,32 @@
   === Yamada Class Battery ===
     ||Anti-Land Defense Ship||Tech Level 2||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/blanddefship2.png||Very powerful anti-land ship.  Immobile.  Can transform into a mobile, but unarmed, form.||
-    ||Build Limit:  5||Morphs into:  Yamada Class Battery (Mobile Form)||
+    ||Build Limit:  5||Morphs into:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yamada_Class_Battery_(Mobile_Form) Yamada Class Battery (Mobile Form)]||
 
   === Yamada Class Battery (Mobile Form) ===
     ||Anti-Land Defense Ship (Mobile Form)||Tech Level 2||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/blanddefship2.png||Mobile Form of a land defense ship.  Unarmed.||
-    ||Build Limit:  5||Morphs into:  Yamada Class Battery||
+    ||Build Limit:  5||Morphs into:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yamada_Class_Battery Yamada Class Battery]||
 
   === Sanada Class Battery ===
     ||Anti-Air Defense Ship||Tech Level 2||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bairdefship.png||Very powerful anti-air ship.  Immobile.  Can transform into a mobile, but unarmed, form.||
-    ||Build Limit:  5||Morphs into:  Sanada Class Battery (Mobile Form)||
+    ||Build Limit:  5||Morphs into:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Sanada_Class_Battery_(Mobile_Form) Sanada Class Battery (Mobile Form)]||
 
   === Sanada Class Battery (Mobile Form) ===
     ||Anti-Air Defense Ship (Mobile Form)||Tech Level 2||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bairdefship.png||Mobile Form of a air defense ship.  Unarmed.||
-    ||Build Limit:  5||Morphs into:  Sanada Class Battery||
+    ||Build Limit:  5||Morphs into:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Sanada_Class_Battery Sanada Class Battery]||
 
   === Yoshida Class Battery ===
     ||Anti-Navy Defense Ship||Tech Level 2||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bnavydefship.png||Very powerful anti-navy ship.  Immobile.  Can transform into a mobile, but unarmed, form.||
-    ||Build Limit:  5||Morphs into:  Yoshida Class Battery (Mobile Form)||
+    ||Build Limit:  5||Morphs into:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yoshida_Class_Battery_(Mobile_Form) Yoshida Class Battery (Mobile Form)]||
 
   === Yoshida Class Battery (Mobile Form) ===
     ||Anti-Navy Defense Ship (Mobile Form)||Tech Level 2||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bnavydefship.png||Mobile Form of a navy defense ship.  Unarmed.||
-    ||Build Limit:  5||Morphs into:  Yoshida Class Battery||
+    ||Build Limit:  5||Morphs into:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yoshida_Class_Battery Yoshida Class Battery]||
 
 
 == Factories ==
@@ -254,10 +254,15 @@
 
   === Advanced Tank Factory ===
     ||Advanced Tank Factory||Tech Level 2||
-    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvtankfactory.png||Produces tanks and combat vehicles.||
-    ||Morphs into:  Advanced Tank Factory||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvtankfactory.png||Produces more advanced tanks and combat vehicles.||
     ||Build List||
-      ||Engineer Support Mech||
+      ||Advanced Engineer Support Mech||
+      ||Ogami Type Tank||
+      ||Okuma Type Tank||
+      ||Sekai Type Tank||
+      ||Kizetsu Type Tank||
+      ||Taka Type Armored Truck||
+      ||Ome Type Radar Tank||
       ||Oukami Type Tank||
       ||Kuma Type Tank||
       ||Uma Type Tank||
@@ -267,9 +272,13 @@
 
   === Advanced Combat Airbase ===
     ||Advanced Combat Airbase||Tech Level 2||
-    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvairbase.png||Produces warplanes and support aircraft, and can repair and refuel aircraft.||
-    ||Morphs into:  Advanced Combat Airbase||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvairbase.png||Produces more advanced warplanes and support aircraft.  Also can repair and refuel aircraft.||
     ||Build List||
+      ||Otorii Type Fighter||
+      ||Otoko Type Bomber||
+      ||Daishi Type Warplane||
+      ||Obou Type Radar Plane||
+      ||Suzaku Type Fighter||
       ||Tori Type Fighter||
       ||Ure Type Bomber||
       ||Washi Type Warplane||
@@ -277,10 +286,14 @@
 
   === Advanced Naval Battleship Factory ===
     ||Advanced Naval Battleship Factory||Tech Level 2||
-    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvshipyard.png||Produces battleships and other sea-faring vessels.||
-    ||Morphs into:  Advanced Naval Battleship Factory||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvshipyard.png||Produces more advanced battleships and other sea-faring vessels.||
     ||Build List||
-      ||Naval Engineer Support Ship||
+      ||Advanced Naval Engineer Support Ship||
+      ||Mori Class Battleship||
+      ||Sasaki Class Battleship||
+      ||Minamoto Class Battleship||
+      ||Kato Class Battleship||
+      ||Wakaru Class Radar Ship||
       ||Douda Class Supply Ship||
       ||Hida Class Supply Ship||
       ||Ii Class Battleship||
@@ -289,77 +302,116 @@
       ||Imagawa Class Battleship||
       ||Shiru Class Radar Ship||
 
-
   === Advanced Submarine Pens ===
     ||Advanced Submarine Pens||Tech Level 2||
-    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvsubpens.png||Produces submarines and hover mechs.||
-    ||Morphs into:  Advanced Submarine Pens||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvsubpens.png||Produces more advanced submarines and hover mechs.||
     ||Build List||
-      ||Naval Engineer Support Ship||
+      ||Advanced Naval Engineer Support Ship||
+      ||Yagyu Hover Combat Mech||
+      ||Osui Class Submarine||
+      ||Okaze Class Submarine||
       ||Azai Hover Combat Mech||
       ||Suida Class Submarine||
       ||Kazeda Class Submarine||
 
   === Cruiser Beacon ===
     ||Cruiser Beacon||Tech Level 2||
-    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbeacon.png||Produces battleships and other sea-faring vessels.||
-    ||Morphs into:  Advanced Naval Battleship Factory||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbeacon.png||Beacon used to call in cruisers.||
+    ||Build Limit:  2||
     ||Build List||
-      ||Naval Engineer Support Ship||
-      ||Douda Class Supply Ship||
-      ||Hida Class Supply Ship||
-      ||Ii Class Battleship||
-      ||Shima Class Battleship||
-      ||Akechi Class Battleship||
-      ||Imagawa Class Battleship||
-      ||Shiru Class Radar Ship||
-
+      ||Oda Class Cruiser||
+      ||Uesugi Class Cruiser||
+      ||Maeda Class Cruiser||
+      ||Takeda Class Supply Cruiser||
+      ||Denda Class Supply Cruiser||
 
   === Experimental Build Pad ===
     ||Experimental Build Pad||Tech Level 2||
-    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bexperimentalpad.png||Produces submarines and hover mechs.||
-    ||Morphs into:  Advanced Submarine Pens||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bexperimentalpad.png||Specialty building that only builds an experimental weapon.||
+    ||Build Limit:  1||
     ||Build List||
-      ||Naval Engineer Support Ship||
+      ||Izanagi Assault Mech||
 
-
-
-
-----
-Advanced Mech Factory	Advanced Mech Factory
-----
-Advanced Tank Factory	Advanced Terrestrial Tank Factory
-----
-Advanced Airport	Advanced Airport
-----
-Advanced Shipyard	Advanced Naval Battleship Factory
-----
-Advanced Sub Pens	Advanced Sub Pens
-----
-Cruiser Beacon	Cruiser Beacon
-----
-Experimental Build Pad	Experimental Build Pad
-----
 
 == Support ==
 
-----
-Engineer	Engineer Support Mech
-----
-Metal Supply Truck	Tetsuda Type Supply Truck
-----
-Metal Supply Truck Depot	Tetsuda Type Supply Truck Depot
-----
-Power Supply Truck	Raida Type Supply Truck
-----
-Power Supply Truck Depot	Raida Type Supply Truck Depot
-----
-Hover Transport	Saito Type Hover Transport
-----
-Resurrection Tank	Resurrection Team
-----
-Advanced Engineer	Advanced Engineer Support Mech
-----
+  === Engineer Support Mech ===
+    ||Engineer Support Mech||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bengineer1.png||Utilitarian vehicle designed to construct buildings and gun emplacements.  Unarmed.||
+    ||Build List||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Raw_Material_Extractor Raw Material Extractor]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Low_Yield_Power_Plant Low Yield Power Plant]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Medium_Yield_Power_Plant Medium Yield Power Plant]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Material_Refinery Material Refinery]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Mech_Factory Combat Mech Factory]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tank_Factory Tank Factory]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Airbase Combat Airbase]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Support_Factory Support Factory]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Submarine_Pens Submarine Pens]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Radar_Outpost Radar Outpost]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Radar_Jamming_Outpost Radar Jamming Outpost]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Anti-Land_Turret Anti-Land Turret]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Anti-Air_Turret Anti-Air Turret]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Anti-Ship_Turret Anti-Ship Turret]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Gatling_Turret Gatling Turret]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Anti-Mech_Turret Anti-Mech Turret]||
+
+  === Tetsuda Type Supply Truck ===
+    ||Metal Supply Truck||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmetaltruck.png||Supply truck that provides 25 metal storage.  Can morph into an immobile depot that provides more metal storage.||
+    ||Morphs into:  Tetsuda Type Supply Truck Depot||
+
+  === Tetsuda Type Supply Truck Depot ===
+    ||Metal Supply Truck Depot||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmetaltruckdepot.png||Immobile metal storage with a capacity of 500.  Can morph into a truck form with 25 metal storage.||
+    ||Morphs into:  Tetsuda Type Supply Truck||
+
+  === Raida Type Supply Truck ===
+    ||Power Supply Truck||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/benergytruck.png||Supply truck that provides 25 energy storage.  Can morph into an immobile depot that provides more energy storage.||
+    ||Morphs into:  Raida Type Supply Truck Depot||
+
+  === Raida Type Supply Truck Depot ===
+    ||Power Supply Truck Depot||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/benergytruckdepot.png||Immobile energy storage with a capacity of 500.  Can morph into a truck form with 25 energy storage.||
+    ||Morphs into:  Raida Type Supply Truck||
+
+  === Saito Type Hover Transport ===
+    ||Hover Transport||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bhovertransport.png||Transport hovercraft that is unarmed and can carry a small battalion of armed forces.||
+
+  === Resurrection Team ===
+    ||Resurrection Tank||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/breztank.png||Mobile resurrection unit.  Unarmed.||
+
+  === Advanced Engineer Support Mech ===
+    ||Advanced Engineer Support Mech||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bengineer2.png||Newer model of the Engineer Support Mech, capable of constructing more complex buildings.  Unarmed.||
+    ||Build List||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Raw_Material_Extractor Advanced Raw Material Extractor]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#High_Yield_Power_Plant High Yield Power Plant]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Very_High_Yield_Power_Plant Very High Yield Power Plant]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Material_Refinery Advanced Material Refinery]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Mech_Factory Advanced Combat Mech Factory]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Tank_Factory Advanced Tank Factory]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Airbase Advanced Combat Airbase]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Battleship_Factory Advanced Naval Battleship Factory]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Submarine_Pens Advanced Submarine Pens]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Cruiser_Beacon Cruiser Beacon]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Experimental_Build_Pad Experimental Build Pad]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Radar_Tower Advanced Radar Tower]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Radar_Jamming_Tower Advanced Radar Jamming Tower]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Anti-Land_Gun_Emplacement Advanced Anti-Land Gun Emplacement]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Anti-Air_Gun_Emplacement Advanced Anti-Air Gun Emplacement]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Anti-Naval_Gun_Emplacement Advanced Anti-Naval Gun Emplacement]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Gatling_Gun_Emplacement Advanced Gatling Gun Emplacement]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Anti-Mech_Missile_Emplacement Advanced Anti-Mech Missile Emplacement]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yamada_Class_Battery Yamada Class Battery]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Sanada_Class_Battery Sanada Class Battery]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yoshida_Class_Battery Yoshida Class Battery]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Shield_Generator Shield Generator]||
+
 
 == Cruisers ==
 
@@ -510,8 +562,6 @@ Adv. Submarine	Osui Class Submarine
 ----
 Adv. Anti-Air Submarine	Okaze Class Submarine
 ----
-
-
 
 
 
