@@ -12,56 +12,56 @@ Our system is born almost entirely out of a desire for simplicity and, to be blu
 There are 7 Armor Classes.  Each unit can only belong to one Armor Class.  Sometimes if a unit can morph, it will morph into a unit with a different Armor Class.  We strive to make identification intuitive, but here is a chart to lay everything out for you.  You can also view the [http://code.google.com/p/conflictterra/source/browse/games/CT/gamedata/armordefs.lua armordefs.lua] to identify the Armor Classes.
 
 ||*Cruiser*||*Building*||*Mech*||*Tank*||*Aircraft*||*Ship*||*Sub*||
-||Flagship||Flagship Base||Engineer||Metal Supply Truck||Flying Mech||Sea Engineer||Submarine||
-||Battle Flagship||Metal Extractor||Defense Mech||Energy Supply Truck||Heavy Flying Mech||Metal Supply Boat||AA Submarine||
-||Battlecruiser||Power Plant||Basic Mech||Assault Tank||Fighter||Energy Supply Boat||Advanced Submarine||
-||Transport Carrier||Nuclear Power||Sniper Mech||Missile Tank||Bomber||Battleship||Advanced AA Submarine||
-||Metal Supply Cruiser||Metal Converter||Siege Mech||Artillery||War Plane||Rocket Battleship|| ||
-||Energy Supply Cruiser||Sea Metal Extractor||Missile Mech||Siege Artillery||Radar Plane|| Artillery Ship|| ||
-|| ||Sea Power Plant||Advanced Engineer||Radar Tank||Advanced Fighter||AA Ship|| ||
-|| ||Radar Tower||Heavy Mech||Resurrection Team||Advanced Bomber||Radar Ship|| ||
-|| ||Jammer Tower||Heavy Siege Mech||Hover Transport||Advanced War Plane||Advanced Sea Engineer|| ||
-|| ||Land Turret||Heavy Missile Mech||Heavy Assault Tank||Advanced Radar Plane||Advanced Battleship|| ||
-|| ||Air Turret||Hover Mech||Very Heavy Siege Artillery||Laser Plane||Advanced Rocket Battleship|| ||
-|| ||Land Naval Turret||Advanced Hover Mech||Advanced Radar Tank|| ||Long Range Artillery Ship|| ||
-|| ||Gatling Turret||Heavy Assault Mech||Heavy Missile Tank|| ||Advanced AA Ship|| ||
-|| ||Mech Turret|| ||EMP Cannon|| ||Advanced Radar Ship|| ||
-|| ||Sea Radar Tower|| ||EMP Cannon Turret|| || || ||
-|| ||Torpedo Turret|| ||AA Truck|| || || ||
-|| ||Advanced Metal Extractor|| ||AA Truck Turret|| || || ||
-|| ||Advanced Power Plant|| || || || || ||
-|| ||Advanced Nuclear Power|| || || || || ||
-|| ||Advanced Metal Converter|| || || || || ||
-|| ||Advanced Radar Tower|| || || || || ||
-|| ||Advanced Jammer Tower|| || || || || ||
-|| ||Advanced Land Turret|| || || || || ||
-|| ||Advanced Air Turret|| || || || || ||
-|| ||Advanced Land Naval Turret|| || || || || ||
-|| ||Advanced Gatling Turret|| || || || || ||
-|| ||Advanced Mech Turret|| || || || || ||
-|| ||Advanced Sea Radar Tower|| || || || || ||
-|| ||Advanced Torpedo Turret|| || || || || ||
-|| ||Shield Generator|| || || || || ||
-|| ||Mech Factory|| || || || || ||
-|| ||Advanced Mech Factory|| || || || || ||
-|| ||Tank Factory|| || || || || ||
-|| ||Metal Supply Truck Depot|| || || || || ||
-|| ||Energy Supply Truck Depot|| || || || || ||
-|| ||Advanced Tank Factory|| || || || || ||
-|| ||Support Factory|| || || || || ||
-|| ||Airport|| || || || || ||
-|| ||Advanced Airport|| || || || || ||
-|| ||Shipyard|| || || || || ||
-|| ||Advanced Shipyard|| || || || || ||
-|| ||Subpens|| || || || || ||
-|| ||Advanced Subpens|| || || || || ||
-|| ||Cruiser Beacon|| || || || || ||
-|| ||Metal Supply Cruiser Depot|| || || || || ||
-|| ||Energy Supply Cruiser Depot|| || || || || ||
-|| ||Experimental Build Pad|| || || || || ||
-|| ||Land Defense Ship|| || || || || ||
-|| ||Land Defense Ship (Mobile Form)|| || || || || ||
-|| ||Air Defense Ship|| || || || || ||
-|| ||Air Defense Ship (Mobile Form)|| || || || || ||
-|| ||Naval Defense Ship|| || || || || ||
-|| ||Naval Defense Ship (Mobile Form)|| || || || || ||
+||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Oda_Class_Cruiser Oda Class Cruiser]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Mobile_Headquarters Mobile Headquarters]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Engineer_Support_Mech Engineer Support Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tetsuda_Type_Supply_Truck Tetsuda Type Supply Truck]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Fuma_Aerial_Combat_Mech Fuma Aerial Combat Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Engineer_Support_Ship Naval Engineer Support Ship]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Suida_Class_Submarine Submarine]||
+||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Owari_Class_Cruiser Owari Class Cruiser]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Raw_Material_Extractor Raw Material Extractor]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Taira_Defense_Mech Taira Defense Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Raida_Type_Supply_Truck Raida Type Supply Truck]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Hattori_Aerial_Combat_Mech Hattori Aerial Combat Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Douda_Class_Supply_Ship Douda Class Supply Ship]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Kazeda_Class_Submarine Kazeda Class Submarine]||
+||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Uesugi_Class_Cruiser Uesugi Class Cruiser]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Low_Yield_Power_Plant Low Yield Power Plant]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Hojo_Combat_Mech Hojo Combat Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Oukami_Type_Tank Oukami Type Tank]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tori_Type_Fighter Tori Type Fighter]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Hida_Class_Supply_Ship Hida Class Supply Ship]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Osui_Class_Submarine Osui Class Submarine]||
+||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Maeda_Class_Cruiser Maeda Class Cruiser]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Medium_Yield_Power_Plant Medium Yield Power Plant]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Saiga_Combat_Support_Mech Saiga Combat Support Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Kuma_Type_Tank Kuma Type Tank]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ure_Type_Bomber Ure Type Bomber]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ii_Class_Battleship Ii Class Battleship]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Okaze_Class_Submarine Okaze Class Submarine]||
+||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Takeda_Class_Supply_Cruiser Takeda Class Supply Cruiser]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Material_Refinery Material Refinery]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ishida_Combat_Mech Ishida Combat Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Uma_Type_Tank Uma Type Tank]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Washi_Type_Warplane Washi Type Warplane]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Shima_Class_Battleship Shima Class Battleship]|| ||
+||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Denda_Class_Supply_Cruiser Denda Class Supply Cruiser]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Raw_Material_Extractor_Sea_Platform Raw Material Extractor Sea Platform]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ueda_Combat_Support_Mech Ueda Combat Support Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tatakau_Type_Tank Tatakau Type Tank]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Kangae_Type_Radar_Plane Kangae Type Radar Plane]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Akechi_Class_Battleship Akechi Class Battleship]|| ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Floating_Solar_Plant Floating Solar Plant]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Engineer_Support_Mech Advanced Engineer Support Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ureme_Type_Radar_Tank Ureme Type Radar Tank]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Otorii_Type_Fighter Otorii Type Fighter]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Imagawa_Class_Battleship Imagawa Class Battleship]|| ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Radar_Outpost Radar Outpost]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Honda_Combat_Mech Honda Combat Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Resurrection_Team Resurrection Team]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Otoko_Type_Bomber Otoko Type Bomber]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Shiru_Class_Radar_Ship Shiru Class Radar Ship]|| ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Radar_Jamming_Outpost Radar Jamming Outpost]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Shimazu_Combat_Mech Shimazu Combat Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Saito_Type_Hover_Transport Saito Type Hover Transport]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Daishi_Type_Warplane Daishi Type Warplane]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Engineer_Support_Ship Advanced Naval Engineer Support Ship]|| ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Anti-Land_Turret Anti-Land Turret]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Shibata_Combat_Support_Mech Shibata Combat Support Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ogami_Type_Tank Ogami Type Tank]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Obou_Type_Radar_Plane Obou Type Radar Plane]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Mori_Class_Battleship Mori Class Battleship]|| ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Anti-Air_Turret Anti-Air Turret]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Azai_Hover_Combat_Mech Azai Hover Combat Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Sekai_Type_Tank Sekai Type Tank]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Suzaku_Type_Fighter Suzaku Type Fighter]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Sasaki_Class_Battleship Sasaki Class Battleship]|| ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Anti-Ship_Turret Anti-Ship Turret]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yagyu_Hover_Combat_Mech Yagyu Hover Combat Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Ome_Type_Radar_Tank Ome Type Radar Tank]|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Minamoto_Class_Battleship Minamoto Class Battleship]|| ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Gatling_Turret Gatling Turret]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Izanagi_Assault_Mech Izanagi Assault Mech]||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Okuma_Type_Tank Okuma Type Tank]|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Kato_Class_Battleship Kato Class Battleship]|| ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Anti-Mech_Turret Anti-Mech Turret]|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Kizetsu_Type_Tank Kizetsu Type Tank]|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Wakaru_Class_Radar_Ship Wakaru Class Radar Ship]|| ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Floating_Radar_Outpost Floating Radar Outpost]|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Kizetsu_Type_EMP_Cannon_Turret Kizetsu Type EMP Cannon Turret]|| || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Floating_Torpedo_Turret Floating Torpedo Turret]|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Taka_Type_Armored_Truck Taka Type Armored Truck]|| || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Raw_Material_Extractor Advanced Raw Material Extractor]|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Taka_Type_Anti-Air_Turret Taka Type Anti-Air Turret]|| || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#High_Yield_Power_Plant High Yield Power Plant]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Very_High_Yield_Power_Plant Very High Yield Power Plant]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Material_Refinery Advanced Material Refinery]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Radar_Tower Advanced Radar Tower]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Radar_Jamming_Tower Advanced Radar Jamming Tower]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Anti-Land_Gun_Emplacement Advanced Anti-Land Gun Emplacement]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Anti-Air_Gun_Emplacement Advanced Anti-Air Gun Emplacement]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Anti-Naval_Gun_Emplacement Advanced Anti-Naval Gun Emplacement]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Gatling_Gun_Emplacement Advanced Gatling Gun Emplacement]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Anti-Mech_Missile_Emplacement Anti-Mech Missile Emplacement]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Floating_Radar_Tower Advanced Floating Radar Tower]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Torpedo_Emplacement Advanced Torpedo Emplacement]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Shield_Generator Shield Generator]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Mech_Factory Combat Mech Factory]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Mech_Factory Advanced Combat Mech Factory]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tank_Factory Tank Factory]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tetsuda_Type_Supply_Truck_Depot Tetsuda Type Supply Truck Depot]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Raida_Type_Supply_Truck_Depot Raida Type Supply Truck Depot]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Tank_Factory Advanced Tank Factory]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Support_Factory Support Factory]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Airbase Combat Airbase]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Airbase Advanced Combat Airbase]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Battleship_Factory Advanced Naval Battleship Factory]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Submarine_Pens Submarine Pens]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Submarine_Pens Advanced Submarine Pens]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Cruiser_Beacon Cruiser Beacon]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Takeda_Class_Supply_Cruiser_Depot Takeda Class Supply Cruiser Depot]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Denda_Class_Supply_Cruiser_Depot Denda Class Supply Cruiser Depot]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Experimental_Build_Pad Experimental Build Pad]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yamada_Class_Battery Yamada Class Battery]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yamada_Class_Battery_(Mobile_Form) Yamada Class Battery (Mobile Form)]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Sanada_Class_Battery Sanada Class Battery]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Sanada_Class_Battery_(Mobile_Form) Sanada Class Battery (Mobile Form)]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yoshida_Class_Battery Yoshida Class Battery]|| || || || || ||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yoshida_Class_Battery_(Mobile_Form) Yoshida Class Battery (Mobile Form)]|| || || || || ||
