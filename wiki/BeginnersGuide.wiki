@@ -9,7 +9,7 @@ At the moment Conflict Terra may not seem very different from the usual game on 
 
 ----
 
-  * == Storage ==
+  == Storage ==
 
   New players most likely notice early on that there are no resource storage buildings that they can make with their Engineer Support Mech.  That's right, there are no typical resource storage buildings for the NKG.  But, there are three main options for resource storage that the player can utilize to help them play.  The three groups of storage units are:
 
@@ -40,3 +40,5 @@ At the moment Conflict Terra may not seem very different from the usual game on 
   All workers in Conflict Terra have a Worker Time of 1, while all units have Build Times in the amount of seconds the developers would like the task to be completed.  This simplistic approach is very similar to the system found in, for example, Starcraft, a respected RTS.
 
   Our approach doesn't come without side effects though.  By not allowing workers to assist others, a handful of handy gadgets become unavailable to us, and it means that workers cannot leave a building project and then return to it.  These limitations are frustrating but issues we'll have to deal with unless someone steps forward with a roundabout solution.
+
+  == Armor ==
