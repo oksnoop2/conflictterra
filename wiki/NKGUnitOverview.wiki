@@ -674,40 +674,60 @@
     ||Radar Ship||Tech Level 1||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bradarship.png||Seaworthy radar and sonar unit.||
 
+  === Advanced Naval Engineer Support Ship ===
+    ||Advanced Naval Engineer Support Ship||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bseaengineer2.png||Larger seaworthy construction vessel with more advanced build options.||
+    ||Build List||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Raw_Material_Extractor_Sea_Platform Raw Material Extractor Sea Platform]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Floating_Solar_Plant Floating Solar Plant]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Battleship_Factory Advanced Naval Battleship Factory]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Submarine_Pens Advanced Submarine Pens]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Floating_Radar_Tower Advanced Floating Radar Tower]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Torpedo_Emplacement Advanced Torpedo Emplacement]||
+      ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yoshida_Class_Battery Yoshida Class Battery]||
 
-----
-Advanced Naval Engineer	Advanced Naval Engineer Support Ship
-----
-Adv. Battleship	Mori Class Battleship
-----
-Adv. Rocket Battleship	Sasaki Class Battleship
-----
-Long Range Artillery Ship	Minamoto Class Battleship
-----
-Adv. Anti-Air Ship	Kato Class Battleship
-----
-Adv. Radar Ship	Wakaru Class Radar Ship
-----
+  === Mori Class Battleship ===
+    ||Advanced Battleship||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvbattleship.png||State-of-the-art battleship armed with four powerful naval cannons.||
+    ||Build Limit:  5||
+
+  === Sasaki Class Battleship ===
+    ||Advanced Rocket Battleship||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvrocketbattleship.png||Naval vessel that attacks with three missile barrages.||
+    ||Build Limit:  5||
+
+  === Minamoto Class Battleship ===
+    ||Long Range Artillery Ship||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/blras.png||Very long range ship armed with a very powerful cannon.  Does more damage to buildings.||
+    ||Build Limit:  2||
+
+  === Kato Class Battleship ===
+    ||Advanced Anti-Air Ship||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvaaship.png||Fearsome anti-aircraft battleship armed with twelve flak guns.||
+    ||Build Limit:  5||
+
+  === Wakaru Class Radar Ship ===
+    ||Advanced Radar Ship||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvradarship.png||Advanced radar and sonar equipped vessel.||
+    ||Build Limit:  10||
+
 
 == Submarines ==
 
-----
-Submarine	Suida Class Submarine
-----
-Anti-Air Submarine	Kazeda Class Submarine
-----
-Adv. Submarine	Osui Class Submarine
-----
-Adv. Anti-Air Submarine	Okaze Class Submarine
-----
+  === Suida Class Submarine ===
+    ||Submarine||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsubmarine.png||Stealthy submersible.  Fires two torpedoes.||
 
+  === Kazeda Class Submarine ===
+    ||Anti-Air Submarine||Tech Level 1||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/baasub.png||Covert vessel designed to surface and fire three anti-air missiles.||
 
+  === Osui Class Submarine ===
+    ||Advanced Submarine||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvsubmarine.png||Advanced submarine that fires four torpedoes.||
+    ||Build Limit:  10||
 
-
-
-
-
-
-
-
-
+  === Okaze Class Submarine ===
+    ||Advanced Anti-Air Submarine||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvaasub.png||Brand new submarine armed with two flak turrets.  Surfaces to attack.||
+    ||Build Limit:  5||
