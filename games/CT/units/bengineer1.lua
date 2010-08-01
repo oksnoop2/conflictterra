@@ -30,7 +30,7 @@ local bengineer1 = {
 	},
 
 	buildTime           = 15,
-        canAssist           = true,
+        canAssist           = false,
 	canFight            = false,
         canGuard            = true,
 	canMove		    = true,

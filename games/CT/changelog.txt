@@ -1,3 +1,6 @@
+ver.09.1 -> ver.09.2
+- Quickfix:  Major gameplay bug was fixed.  T1 Engineer could assist!
+
 ver.09 -> ver.09.1
 - Added different icon sizes.
 - Added springignore.txt.
