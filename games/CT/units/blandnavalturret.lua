@@ -95,13 +95,13 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 100,
-		Building = 100,
-		Mech = 100,
-		Tank = 100,
-		Aircraft = 100,
+		Cruiser = 5,
+		Building = 5,
+		Mech = 5,
+		Tank = 5,
+		Aircraft = 5,
 		Ship = 300,
-		Sub = 10,
+		Sub = 5,
 	      },
 	
 	      model                   = [[bshell.s3o]],
