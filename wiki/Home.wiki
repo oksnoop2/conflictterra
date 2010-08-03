@@ -16,6 +16,11 @@
     * [http://code.google.com/p/conflictterra/wiki/SpaceRocks Space Rocks]
     * [http://code.google.com/p/conflictterra/wiki/UIPlans UI Plans]
 
+= Downloads =
+  * [http://conflictterra.googlecode.com/files/ct_100.sd7 Latest Version]
+  * Archive
+    * [http://conflictterra.googlecode.com/files/ct_100.sd7 Conflict Terra Version 1.00]
+
 = Links =
 
   * [http://www.moddb.com/games/conflict-terra ModDB]
