@@ -1,6 +1,6 @@
 local breztank = {
 	name                = [[Resurrection Team]],
-	description         = [[Resurrection Tank - Mobile resurrection unit.  Unarmed.]],
+	description         = [[Mobile resurrection unit.  Unarmed.]],
         acceleration        = 0.04,
         brakerate           = 0.02,
         buildpic            = [[breztank.png]],

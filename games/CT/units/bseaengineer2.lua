@@ -1,6 +1,6 @@
 local bseaengineer2 = {
 	name                = [[Advanced Naval Engineer Support Ship]],
-	description         = [[Advanced Naval Engineer - Larger seaworthy construction vessel with more advanced build options.]],
+	description         = [[Larger seaworthy construction vessel with more advanced build options.]],
         acceleration        = 0.05,
 	bmcode              = [[1]],
         brakerate           = 0.5,

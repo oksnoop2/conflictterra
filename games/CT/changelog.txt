@@ -1,3 +1,8 @@
+ver.09.2 -> ver.1.00!
+__Balance__
+- Reduced non-ship damage dealt by the T1 and T2 Anti-Ship Turret from 100 to 5.
+- Reduced large missile attack's range from 800 to 600 for the Heavy Missile Tank.
+
 ver.09.1 -> ver.09.2
 - Quickfix:  Major gameplay bug was fixed.  T1 Engineer could assist!
 

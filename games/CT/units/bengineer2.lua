@@ -1,6 +1,6 @@
 local bengineer2 = {
 	name                = [[Advanced Engineer Support Mech]],
-	description         = [[Advanced Engineer - Newer model of the Engineer Support Mech, capable of constructing more complex buildings.  Unarmed.]],
+	description         = [[Newer model of the Engineer Support Mech, capable of constructing more complex buildings.  Unarmed.]],
         acceleration        = 0.06,
         brakerate           = 1.5,
         buildpic            = [[bengineer2.png]],

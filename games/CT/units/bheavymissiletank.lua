@@ -112,7 +112,7 @@
 	      flightTime              = 4,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
-	      range                   = 800,
+	      range                   = 600,
 	      reloadtime              = 6,
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],

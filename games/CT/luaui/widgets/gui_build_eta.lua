@@ -1,3 +1,4 @@
+-- $Id: gui_build_eta.lua 3171 2008-11-06 09:06:29Z det $
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --
@@ -172,9 +173,12 @@ function widgetHandler:UnitTaken(unitID, unitDefID, unitTeam, newTeam)
   etaTable[unitID] = nil
 end
 
+local terraunitDefID = UnitDefNames["terraunit"].id
 
 function widget:UnitFinished(unitID, unitDefID, unitTeam)
-  etaTable[unitID] = nil
+	if unitDefID ~= terraunitDefID then
+		etaTable[unitID] = nil
+	end
 end
 
 
