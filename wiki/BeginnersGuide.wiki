@@ -24,10 +24,7 @@ At the moment Conflict Terra may not seem very different from the usual game on 
 
   == Assisting Builders ==
 
-  Worker units having the ability to not only assist fellow workers, but also factories producing units, is a unique feature of the Spring Engine.  However, Conflict Terra does not support this feature.  In Conflict Terra:
-
-  * Worker units cannot assist other worker units.
-  * Worker units cannot assist factories producing more units.
+  In Conflict Terra, a single worker is bound to each project.  This means that workers will not assist other workers when building buildings, or factories when they are producing units.
 
   Why is this the case?  We decided on this for a handful of reasons.  One of the reasons we went with this approach, and the reason perhaps most beneficial for you, the player, is that now the Build Time displayed in the Tooltip is a representation of the number of seconds it takes to complete the task.
 
