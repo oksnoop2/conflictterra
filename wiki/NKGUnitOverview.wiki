@@ -402,15 +402,15 @@
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bhovertransport.png||Transport hovercraft that is unarmed and can carry a small battalion of armed forces.||
 
   === Resurrection Team ===
-    ||Resurrection Tank||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Support_Factory Support Factory]||
+    ||Resurrection Tank||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Mobile_Headquarters Mobile Headquarters], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tank_Factory Tank Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Tank_Factory Advanced Tank Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/breztank.png||Mobile resurrection unit.  Unarmed.||
 
   === Douda Class Supply Ship ===
-    ||Metal Supply Ship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory]||
+    ||Metal Supply Ship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Battleship_Factory Advanced Naval Battleship Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmetalsupplyboat.png||Seaworthy metal storage.  Stores 750 metal.||
 
   === Hida Class Supply Ship ===
-    ||Energy Supply Ship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory]||
+    ||Energy Supply Ship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Battleship_Factory Advanced Naval Battleship Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/benergysupplyboat.png||Seaworthy energy storage.  Stores 750 energy.||
 
   === Advanced Engineer Support Mech ===
@@ -452,15 +452,15 @@
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Torpedo_Emplacement Advanced Torpedo Emplacement]||
       ||[http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Yoshida_Class_Battery Yoshida Class Battery]||
 
-  === Denda Class Supply Cruiser Depot ===
-    ||Power Supply Cruiser Depot||Tech Level 2||
-    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/benergysupplyshipdepot.png||Immobile energy storage with a capacity of 1000.  Can morph into a mobile cruiser form with 50 energy storage.||
-    ||Morphs into:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Denda_Class_Supply_Cruiser Denda Class Supply Cruiser]||
-
   === Takeda Class Supply Cruiser Depot ===
     ||Metal Supply Cruiser Depot||Tech Level 2||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmetalsupplyshipdepot.png||Immobile metal storage with a capacity of 1000.  Can morph into a mobile cruiser form with 50 metal storage.||
     ||Morphs into:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Takeda_Class_Supply_Cruiser Takeda Class Supply Cruiser]||
+
+  === Denda Class Supply Cruiser Depot ===
+    ||Power Supply Cruiser Depot||Tech Level 2||
+    ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/benergysupplyshipdepot.png||Immobile energy storage with a capacity of 1000.  Can morph into a mobile cruiser form with 50 energy storage.||
+    ||Morphs into:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Denda_Class_Supply_Cruiser Denda Class Supply Cruiser]||
 
 
 == Cruisers ==
@@ -503,27 +503,27 @@
     ||Build Limit:  10||
 
   === Hojo Combat Mech ===
-    ||Basic Mech||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Mech_Factory Combat Mech Factory]||
+    ||Basic Mech||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Mech_Factory Combat Mech Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Mech_Factory Advanced Combat Mech Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbasicmech.png||Light, fast, rapid fire SM.  Built for skirmishing over holding the line.||
 
   === Saiga Combat Support Mech ===
-    ||Sniper Mech||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Mech_Factory Combat Mech Factory]||
+    ||Sniper Mech||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Mech_Factory Combat Mech Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Mech_Factory Advanced Combat Mech Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsnipermech.png||Specialized SM designed to take out tanks from a distance.||
 
   === Fuma Aerial Combat Mech ===
-    ||Flying Mech||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Mech_Factory Combat Mech Factory]||
+    ||Flying Mech||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Mech_Factory Combat Mech Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Mech_Factory Advanced Combat Mech Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bflyingmech.png||Airborne "mech" designed to harass enemy lines.  Fires multiple rapid cannons.||
 
   === Ueda Combat Support Mech ===
-    ||Missile Mech||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Mech_Factory Combat Mech Factory]||
+    ||Missile Mech||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Mech_Factory Combat Mech Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Mech_Factory Advanced Combat Mech Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmissilemech.png||Light SM built to combat other mechs.  Fires two anti-mech missiles.||
 
   === Ishida Combat Mech ===
-    ||Siege Mech||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Mech_Factory Combat Mech Factory]||
+    ||Siege Mech||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Mech_Factory Combat Mech Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Mech_Factory Advanced Combat Mech Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsiegemech.png||Medium SM designed to take out enemy bases.  Armed with a heavy gun and two rapid fire cannons.||
 
   === Azai Hover Combat Mech ===
-    ||Hover Mech||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Submarine_Pens Submarine Pens]||
+    ||Hover Mech||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Submarine_Pens Submarine Pens], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Submarine_Pens Advanced Submarine Pens]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bamphmech.png||Hover-equipped "mech" that is able to instantly move between land and sea.  Armed with both missiles and torpedoes.||
 
   === Honda Combat Mech ===
@@ -560,23 +560,23 @@
 == Tanks ==
 
   === Oukami Type Tank ===
-    ||Assault Tank||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tank_Factory Tank Factory]||
+    ||Assault Tank||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tank_Factory Tank Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Tank_Factory Advanced Tank Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bassaulttank.png||Inexpensive basic tank.  Fires light shells.||
 
   === Kuma Type Tank ===
-    ||Anti-Mech Tank||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tank_Factory Tank Factory]||
+    ||Anti-Mech Tank||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tank_Factory Tank Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Tank_Factory Advanced Tank Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmissiletank.png||Fires two anti-mech missiles.||
 
   === Uma Type Tank ===
-    ||Artillery||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tank_Factory Tank Factory]||
+    ||Artillery||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tank_Factory Tank Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Tank_Factory Advanced Tank Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bartillery.png||Light mobile artillery.  Stronger against buildings than units.||
 
   === Tatakau Type Tank ===
-    ||Siege Artillery||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tank_Factory Tank Factory]||
+    ||Siege Artillery||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tank_Factory Tank Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Tank_Factory Advanced Tank Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsiegeartillery.png||Medium mobile artillery.  Fires inaccurate missiles.||
 
   === Ureme Type Radar Tank ===
-    ||Radar Tank||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tank_Factory Tank Factory]||
+    ||Radar Tank||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Tank_Factory Tank Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Tank_Factory Advanced Tank Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bradartank.png||Light mobile radar and sonar unit.  Also jams radar.||
 
   === Ogami Type Tank ===
@@ -623,19 +623,19 @@
 == Aircraft ==
 
   === Tori Type Fighter ===
-    ||Fighter||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Airbase Combat Airbase]||
+    ||Fighter||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Airbase Combat Airbase], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Airbase Advanced Combat Airbase]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bfighter.png||Fast, light fighter armed with four air cannons.||
 
   === Ure Type Bomber ===
-    ||Bomber||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Airbase Combat Airbase]||
+    ||Bomber||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Airbase Combat Airbase], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Airbase Advanced Combat Airbase]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbomber.png||Light bomber able to drop small payloads.||
 
   === Washi Type Warplane ===
-    ||Rocket Warplane||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Airbase Combat Airbase]||
+    ||Rocket Warplane||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Airbase Combat Airbase], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Airbase Advanced Combat Airbase]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/brocketplane.png||Versatile anti-land aircraft.  Fires four anti-tank missiles.||
 
   === Kangae Type Radar Plane ===
-    ||Radar Plane||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Airbase Combat Airbase]||
+    ||Radar Plane||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Combat_Airbase Combat Airbase], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Combat_Airbase Advanced Combat Airbase]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bradarplane.png||High flying plane equipped with far reaching radar.||
 
   === Otorii Type Fighter ===
@@ -667,23 +667,23 @@
 == Ships ==
 
   === Ii Class Battleship ===
-    ||Battleship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory]||
+    ||Battleship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Battleship_Factory Advanced Naval Battleship Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbattleship.png||Standard naval battleship of the NKG fleet.  Armed with two naval cannons.||
 
   === Shima Class Battleship ===
-    ||Rocket Battleship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory]||
+    ||Rocket Battleship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Battleship_Factory Advanced Naval Battleship Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/brocketbattleship.png||Specialized navy vessel built to fire four missiles.||
 
   === Akechi Class Battleship ===
-    ||Artillery Ship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory]||
+    ||Artillery Ship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Battleship_Factory Advanced Naval Battleship Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bartilleryship.png||Battleship armed with a single, large gun.  Does more damage to buildings.||
 
   === Imagawa Class Battleship ===
-    ||Anti-Air Ship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory]||
+    ||Anti-Air Ship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Battleship_Factory Advanced Naval Battleship Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/baaship.png||Battleship designed to only shoot down enemy aircraft.  Armed with two anti-air missile launchers.||
 
   === Shiru Class Radar Ship ===
-    ||Radar Ship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory]||
+    ||Radar Ship||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Naval_Battleship_Factory Naval Battleship Factory], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Battleship_Factory Advanced Naval Battleship Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bradarship.png||Seaworthy radar and sonar unit.||
 
   === Mori Class Battleship ===
@@ -697,7 +697,7 @@
     ||Build Limit:  5||
 
   === Minamoto Class Battleship ===
-    ||Long Range Artillery Ship||Tech Level 2||
+    ||Long Range Artillery Ship||Tech Level 2||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Naval_Battleship_Factory Advanced Naval Battleship Factory]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/blras.png||Very long range ship armed with a very powerful cannon.  Does more damage to buildings.||
     ||Build Limit:  2||
 
@@ -715,11 +715,11 @@
 == Submarines ==
 
   === Suida Class Submarine ===
-    ||Submarine||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Submarine_Pens Submarine Pens]||
+    ||Submarine||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Submarine_Pens Submarine Pens], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Submarine_Pens Advanced Submarine Pens]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsubmarine.png||Stealthy submersible.  Fires two torpedoes.||
 
   === Kazeda Class Submarine ===
-    ||Anti-Air Submarine||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Submarine_Pens Submarine Pens]||
+    ||Anti-Air Submarine||Tech Level 1||Built by:  [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Submarine_Pens Submarine Pens], [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview#Advanced_Submarine_Pens Advanced Submarine Pens]||
     ||http://conflictterra.googlecode.com/svn/games/CT/unitpics/baasub.png||Covert vessel designed to surface and fire three anti-air missiles.||
 
   === Osui Class Submarine ===
