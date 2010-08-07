@@ -2,6 +2,8 @@ ver.1.00 -> ver.1.01
 __Balance__
 - Increased Artillery's damage against buildings from 280 to 500, and it's non-building damage from 190 to 200.
 - Increased Siege Artillery's damage against buildings from 100 to 200.
+- Decreased Sniper Mech's damage against tanks from 2400 to 1400.
+- Increased Sniper Mech's metal cost from 600 to 800, and the energy cost from 750 to 1000.
 
 __Bug Fixes__
 
