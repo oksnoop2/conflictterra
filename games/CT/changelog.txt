@@ -1,3 +1,15 @@
+ver.1.00 -> ver.1.01
+__Balance__
+- Increased Artillery's damage against buildings from 280 to 500, and it's non-building damage from 190 to 200.
+- Increased Siege Artillery's damage against buildings from 100 to 200.
+
+__Bug Fixes__
+
+__New Units__
+
+__Misc__
+- Added XTA's Outline Widget.
+
 ver.09.2 -> ver.1.00!
 __Balance__
 - Reduced non-ship damage dealt by the T1 and T2 Anti-Ship Turret from 100 to 5.
