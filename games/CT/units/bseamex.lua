@@ -1,8 +1,8 @@
 unitDef = {
 
   unitname                      = [[bseamex]],
-  name                          = [[Raw Material Extractor Sea Platform]],
-  description                   = [[Floating extractor of usable resources from the seafloor.  Must be built over a metal deposit.]],
+  name                          = [[Raw Metal Extractor Sea Platform]],
+  description                   = [[Floating extractor of usable metal resources from below the seafloor.  Must be built over a metal deposit.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
   bmcode                        = [[0]],

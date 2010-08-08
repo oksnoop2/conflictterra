@@ -1,7 +1,7 @@
 unitDef = {
 
   unitname                      = [[badvshipyard]],
-  name                          = [[Advanced Naval Battleship Factory]],
+  name                          = [[Advanced Naval Factory]],
   description                   = [[Produces more advanced battleships and other sea-faring vessels.]],
   acceleration                  = 0,
   bmcode                        = [[0]],

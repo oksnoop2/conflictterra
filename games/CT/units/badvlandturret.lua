@@ -1,6 +1,6 @@
 	unitDef = {
 	  unitname            = [[badvlandturret]],
-	  name                = [[Advanced Anti-Land Gun Emplacement]],
+	  name                = [[High-Power Beam Turret]],
 	  description         = [[A powerful beam weapon emplacement.]],
 	  acceleration        = 0,
 	  bmcode              = [[0]],

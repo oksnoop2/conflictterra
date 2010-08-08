@@ -1,6 +1,6 @@
 	unitDef = {
 	  unitname            = [[badvtorpedoturret]],
-	  name                = [[Advanced Torpedo Emplacement]],
+	  name                = [[Advanced Floating Torpedo Turret]],
 	  description         = [[Floating torpedo platform that fires at nearby ships.]],
 	  acceleration        = 0,
 	  activateWhenBuilt   = true,

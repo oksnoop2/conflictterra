@@ -1,7 +1,7 @@
 unitDef = {
 
   unitname                      = [[badvradartower]],
-  name                          = [[Advanced Radar Tower]],
+  name                          = [[Long Range Radar Tower]],
   description                   = [[A more permanent radar installation, this facility provides ample coverage.]],
   amphibious                    = false,
   acceleration                  = 0,

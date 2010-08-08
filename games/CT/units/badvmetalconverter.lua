@@ -1,8 +1,8 @@
 unitDef = {
 
   unitname                      = [[badvmetalconverter]],
-  name                          = [[Advanced Material Refinery]],
-  description                   = [[A more efficient facility to use power to make more usable resources.  Uses 600 energy to make 10 metal.]],
+  name                          = [[Advanced Waste Metal Refinery]],
+  description                   = [[A more efficient facility to use power to recycle more usable resources.  Uses 600 energy to make 10 metal.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,

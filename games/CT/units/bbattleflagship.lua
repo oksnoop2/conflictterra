@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bbattleflagship]],
 	  name                = [[Owari Class Cruiser]],
-	  description         = [[Battle Flagship - Upgraded Flagship outfitted primarily for battle.  Can fire a very powerful beam. - Build Limit: 1]],
+	  description         = [[Battle Flagship - Upgraded Flagship armed for battle.  Can fire a very powerful beam. - Build Limit: 1]],
 	  acceleration        = 0.16,
 	  activateWhenBuilt   = true,
           airStrafe           = 0,

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bdefensemech]],
 	  name                = [[Taira Defense Mech]],
-	  description         = [[Base Defense Mech - Weak, first generation SM packed inside Flagships for early defense deployment. - Build Limit: 10]],
+	  description         = [[Light Defense Mech - Weak, first generation SM packed inside Oda Class Cruisers for early defensive deployment. - Build Limit: 10]],
 	  acceleration        = 0.04,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.02,

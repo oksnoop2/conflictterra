@@ -1,8 +1,8 @@
 unitDef = {
 
   unitname                      = [[bmetalconverter]],
-  name                          = [[Material Refinery]],
-  description                   = [[Uses power to convert waste metal back into usable resources.  Uses 60 energy to make 1 metal.]],
+  name                          = [[Waste Metal Refinery]],
+  description                   = [[Uses power to recycle waste metal back into usable resources.  Uses 60 energy to make 1 metal.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,

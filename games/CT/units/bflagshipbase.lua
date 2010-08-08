@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bflagshipbase]],
   name                          = [[Mobile Headquarters]],
-  description                   = [[Temporary Base - Docked Oda Class Cruiser.  Acts as a mobile base, providing defence and unit production. - Build Limit: 1]],
+  description                   = [[Docked Oda Class Cruiser.  Acts as a temporary base, providing defence and unit production. - Build Limit: 1]],
   amphibious                    = false,
   acceleration                  = 0,
   bmcode                        = [[0]],

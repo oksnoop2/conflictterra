@@ -1,7 +1,7 @@
 unitDef = {
 
   unitname                      = [[badvsearadartower]],
-  name                          = [[Advanced Floating Radar Tower]],
+  name                          = [[Long Range Floating Radar Tower]],
   description                   = [[A floating long-range radar and sonar installation.]],
   amphibious                    = false,
   acceleration                  = 0,

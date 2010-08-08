@@ -1,8 +1,8 @@
 unitDef = {
 
   unitname                      = [[badvmex]],
-  name                          = [[Advanced Raw Material Extractor]],
-  description                   = [[Higher yield resource extractor that requires power to run.  Must be built over a metal desposit.]],
+  name                          = [[Advanced Raw Metal Extractor]],
+  description                   = [[Higher yield metal resource extractor that requires power to run.  Must be built over a metal desposit.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
   bmcode                        = [[0]],

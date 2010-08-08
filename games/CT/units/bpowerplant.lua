@@ -1,7 +1,7 @@
 unitDef = {
 
   unitname                      = [[bpowerplant]],
-  name                          = [[Low Yield Power Plant]],
+  name                          = [[Stirling Power Generator]],
   description                   = [[Uses heat from the sun to run a generator.  Adds +5 energy.]],
   amphibious                    = false,
   acceleration                  = 0,

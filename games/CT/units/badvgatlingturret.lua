@@ -1,6 +1,6 @@
 	unitDef = {
 	  unitname            = [[badvgatlingturret]],
-	  name                = [[Advanced Gatling Gun Emplacement]],
+	  name                = [[Dual Gatling Turret]],
 	  description         = [[Stronger rapid fire cannon designed to take out several units.]],
 	  acceleration        = 0,
 	  bmcode              = [[0]],

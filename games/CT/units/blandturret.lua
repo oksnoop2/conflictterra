@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[blandturret]],
-	  name                = [[Anti-Land Turret]],
-	  description         = [[Cheap, mildly effective turret designed to counter terrestrial units.  Fires two cannons.]],
+	  name                = [[Dual Cannon Turret]],
+	  description         = [[Cheap, mildly effective turret that fires on terrestrial units.  Fires two cannons.]],
 	  acceleration        = 0,
 	  bmcode              = [[0]],
 	  brakeRate           = 0,
