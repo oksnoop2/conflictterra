@@ -27,7 +27,7 @@
 	  leaveTracks         = true,
 	  maneuverleashlength = [[640]],
 	  mass                = 60,
-	  maxDamage           = 1250,
+	  maxDamage           = 1000,
 	  maxSlope            = 18,
 	  maxVelocity         = 1.5,
 	  maxWaterDepth       = 22,

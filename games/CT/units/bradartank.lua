@@ -30,7 +30,7 @@
 	  idleAutoHeal        = 0,
 	  maneuverleashlength = [[640]],
 	  mass                = 50,
-	  maxDamage           = 1150,
+	  maxDamage           = 800,
 	  maxSlope            = 18,
 	  maxVelocity         = 1.75,
 	  maxWaterDepth       = 22,

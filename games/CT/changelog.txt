@@ -7,6 +7,13 @@ __Balance__
 - Increased build distance for Engineer Support Mech and Advanced Engineer Support Mech from 180 to 220.
 - Added Hover Assault Mech build option to Combat Mech Factory, Advanced Combat Mech Factory, Naval Factory, and Advanced Naval Factory.
 - Added Advanced Hover Assault mech build option to Advanced Combat Mech Factory and Advanced Naval Factory.
+- Reduced Dual Cannon Turret's range from 750 to 600.
+- Reduced Light Tank's HP from 1500 to 1150.
+- Reduced Anti-Mech Tank's HP from 1250 to 1000.
+- Reduced Artillery Hover Truck's HP from 1000 to 900.
+- Reduced Missile Artillery's HP from 1100 to 1000.
+- Reduced Radar Hover Tank's HP from 1150 to 800.
+- Reduced Resurrection Team's HP from 1000 to 750.
 
 __Bug Fixes__
 
