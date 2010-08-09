@@ -4,6 +4,9 @@ __Balance__
 - Increased Siege Artillery's damage against buildings from 100 to 200.
 - Decreased Sniper Mech's damage against tanks from 2400 to 1400.
 - Increased Sniper Mech's metal cost from 600 to 800, and the energy cost from 750 to 1000.
+- Increased build distance for Engineer Support Mech and Advanced Engineer Support Mech from 180 to 220.
+- Added Hover Assault Mech build option to Combat Mech Factory, Advanced Combat Mech Factory, Naval Factory, and Advanced Naval Factory.
+- Added Advanced Hover Assault mech build option to Advanced Combat Mech Factory and Advanced Naval Factory.
 
 __Bug Fixes__
 

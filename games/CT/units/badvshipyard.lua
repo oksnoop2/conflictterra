@@ -13,6 +13,7 @@ unitDef = {
   buildoptions                  = {
 
     [[bseaengineer2]],
+    [[badvamphmech]],
     [[badvbattleship]],
     [[badvrocketbattleship]],
     [[blras]],
@@ -20,6 +21,7 @@ unitDef = {
     [[badvradarship]],
     [[bmetalsupplyboat]],
     [[benergysupplyboat]],
+    [[bamphmech]],
     [[bbattleship]],
 
     [[brocketbattleship]],

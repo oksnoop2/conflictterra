@@ -22,6 +22,7 @@ unitDef = {
     [[bmissilemech]],
     [[bsiegemech]],
 
+    [[bamphmech]],
   },
 
 

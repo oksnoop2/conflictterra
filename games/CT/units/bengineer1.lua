@@ -6,7 +6,7 @@ local bengineer1 = {
         buildpic            = [[bengineer1.png]],
 	buildCostEnergy     = 140,
 	buildCostMetal      = 112,
-        buildDistance       = 180,
+        buildDistance       = 220,
         builder             = true,
 
 	buildoptions		= {
