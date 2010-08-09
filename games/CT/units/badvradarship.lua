@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvradarship]],
 	  name                = [[Wakaru Class Radar Ship]],
-	  description         = [[Advanced Radar Ship - Advanced radar and sonar equipped vessel. - Build Limit: 10]],
+	  description         = [[Long Range Radar Ship - Advanced radar and sonar equipped vessel. - Build Limit: 10]],
 	  acceleration        = 0.05,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.06,

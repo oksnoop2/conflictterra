@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[baaship]],
 	  name                = [[Imagawa Class Battleclass]],
-	  description         = [[Anti-Air Ship - Battleship designed to only shoot down enemy aircraft.  Armed with two anti-air missile launchers.]],
+	  description         = [[Anti-Air Battleship - Battleship designed to only shoot down enemy aircraft.  Armed with two anti-air missile launchers.]],
 	  acceleration        = 0.05,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.06,

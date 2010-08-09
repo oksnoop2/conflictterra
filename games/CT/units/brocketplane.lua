@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[brocketplane]],
 	  name                = [[Washi Type Warplane]],
-	  description         = [[Rocket Warplane - Versatile anti-land aircraft.  Fires four anti-tank missiles.]],
+	  description         = [[Rocket Warplane - Versatile anti-land aircraft.  Fires four anti-tank missiles that do little damage to buildings.]],
           amphibious          = false,
 	  buildCostEnergy     = 150,
 	  buildCostMetal      = 120,

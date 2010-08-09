@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[blanddefship]],
 	  name                = [[Yamada Class Battery]],
-	  description         = [[Anti-Land Defense Ship - Very powerful anti-land ship.  Immobile.  Can transform into a mobile, but unarmed, form. - Build Limit: 5]],
+	  description         = [[Very powerful anti-land battery.  Immobile.  Can transform into a mobile, but unarmed, form. - Build Limit: 5]],
 	  acceleration        = 0,
 	  bmcode              = [[0]],
 	  brakeRate           = 0,

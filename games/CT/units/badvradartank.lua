@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvradartank]],
 	  name                = [[Ome Type Radar Tank]],
-	  description         = [[Advanced Radar Tank - More effective mobile radar and sonar unit.  Also jams radar. - Build Limit: 10]],
+	  description         = [[Long Range Radar Hover Tank - More effective mobile radar and sonar unit.  Also jams radar. - Build Limit: 10]],
 	  acceleration        = 0.04,
           activateWhenBuilt   = true,
 	  bmcode              = [[1]],

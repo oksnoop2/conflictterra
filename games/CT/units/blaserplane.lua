@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[blaserplane]],
 	  name                = [[Suzaku Type Fighter]],
-	  description         = [[Laser Fighter - Top-of-the-line fighter armed with new beam weaponry. - Build Limit: 20]],
+	  description         = [[High-Tech Fighter - Top-of-the-line fighter armed with new beam weaponry. - Build Limit: 20]],
           amphibious          = false,
 	  buildCostEnergy     = 300,
 	  buildCostMetal      = 240,

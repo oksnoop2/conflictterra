@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvamphmech]],
 	  name                = [[Yagyu Hover Combat Mech]],
-	  description         = [[Advanced Hover Mech - Newer hovercraft "mech" armed with powerful beam weapons. - Build Limit: 10]],
+	  description         = [[High-Tech Hover Assault Mech - Newer hovercraft "mech" armed with powerful beam weapons. - Build Limit: 10]],
 	  acceleration        = 0.07,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.08,

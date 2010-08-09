@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[brocketbattleship]],
 	  name                = [[Shima Class Battleclass]],
-	  description         = [[Rocket Battleship - Specialized navy vessel built to fire four missiles.]],
+	  description         = [[Missile Battleship - Specialized navy vessel built to fire four missiles.]],
 	  acceleration        = 0.03,
           activateWhenBuilt   = true,
 	  bmcode              = [[1]],

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[blanddefmobileship]],
 	  name                = [[Yamada Class Battery (Mobile Form)]],
-	  description         = [[Anti-Land Defense Ship (Mobile Form) - Mobile Form of a land defense ship.  Unarmed.]],
+	  description         = [[Mobile Form of an anti-land battery.  Unarmed.  Can transform into an immobile, armed form.]],
 	  acceleration        = 0.04,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.02,

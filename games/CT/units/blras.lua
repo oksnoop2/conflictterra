@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[blras]],
 	  name                = [[Minamoto Class Battleship]],
-	  description         = [[Long Range Artillery Ship - Very long range ship armed with a very powerful cannon.  Does more damage to buildings. - Build Limit: 2]],
+	  description         = [[Long Range Artillery Battleship - Very long range ship armed with a very powerful cannon.  Does more damage to buildings. - Build Limit: 2]],
 	  acceleration        = 0.03,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.03,

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bfighter]],
 	  name                = [[Tori Type Fighter]],
-	  description         = [[Fighter - Fast, light fighter armed with four air cannons.]],
+	  description         = [[Light Fighter - Fast, light fighter armed with four air cannons.]],
           amphibious          = false,
 	  buildCostEnergy     = 150,
 	  buildCostMetal      = 120,

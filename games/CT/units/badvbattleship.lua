@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvbattleship]],
 	  name                = [[Mori Class Battleship]],
-	  description         = [[Advanced Battleship - State-of-the-art battleship armed with four powerful naval cannons. - Build Limit: 5]],
+	  description         = [[Heavy Battleship - State-of-the-art battleship armed with four powerful naval cannons. - Build Limit: 5]],
 	  acceleration        = 0.03,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.03,

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bsiegeartillery]],
 	  name                = [[Tatakau Type Tank]],
-	  description         = [[Siege Artillery - Medium mobile artillery.  Fires inaccurate missiles.]],
+	  description         = [[Missile Artillery - Medium mobile artillery.  Fires inaccurate missiles.]],
 	  acceleration        = 0.04,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.2,

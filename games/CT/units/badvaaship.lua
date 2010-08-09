@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvaaship]],
 	  name                = [[Kato Class Battleclass]],
-	  description         = [[Advanced Anti-Air Ship - Fearsome anti-aircraft battleship armed with twelve flak guns. - Build Limit: 5]],
+	  description         = [[Advanced Anti-Air Battleship - Fearsome anti-aircraft battleship armed with twelve flak guns. - Build Limit: 5]],
 	  acceleration        = 0.04,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.06,

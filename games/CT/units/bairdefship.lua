@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bairdefship]],
 	  name                = [[Sanada Class Battery]],
-	  description         = [[Anti-Air Defense Ship - Very powerful anti-air ship.  Immobile.  Can transform into a mobile, but unarmed, form. - Build Limit: 5]],
+	  description         = [[Very powerful anti-air battery.  Immobile.  Can transform into a mobile, but unarmed, form. - Build Limit: 5]],
 	  acceleration        = 0,
 	  bmcode              = [[0]],
 	  brakeRate           = 0,

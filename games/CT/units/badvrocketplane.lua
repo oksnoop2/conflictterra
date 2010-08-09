@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvrocketplane]],
 	  name                = [[Daishi Type Warplane]],
-	  description         = [[Advanced Rocket Warplane - Powerful anti-land aircraft that fires a barrage of missiles. - Build Limit: 10]],
+	  description         = [[Advanced Rocket Warplane - Powerful anti-land aircraft that fires a barrage of missiles that do little damage to buildings. - Build Limit: 10]],
           amphibious          = false,
 	  buildCostEnergy     = 300,
 	  buildCostMetal      = 240,

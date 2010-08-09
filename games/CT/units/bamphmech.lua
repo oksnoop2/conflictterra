@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bamphmech]],
 	  name                = [[Ukita Hover Combat Mech]],
-	  description         = [[Hover Mech - Hover-equipped "mech" that is able to instantly move between land and sea.  Armed with both missiles and torpedoes.]],
+	  description         = [[Hover Assault Mech - Hover-equipped "mech" that is able to instantly move between land and sea.  Armed with both missiles and torpedoes.]],
 	  acceleration        = 0.08,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.11,

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bheavymech]],
 	  name                = [[Honda Combat Mech]],
-	  description         = [[Heavy Mech - Hardy SM armed with a powerful beam weapon. - Build Limit: 10]],
+	  description         = [[Assault Mech - Hardy SM armed with a powerful beam weapon. - Build Limit: 10]],
 	  acceleration        = 0.12,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.25,

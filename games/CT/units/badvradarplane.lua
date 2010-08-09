@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvradarplane]],
 	  name                = [[Obou Type Radar Plane]],
-	  description         = [[Advanced Radar Plane - New radar plane with long ranged radar. - Build Limit: 20]],
+	  description         = [[Long Range Radar Plane - New radar plane with long ranged radar. - Build Limit: 20]],
           altfromsealevel     = [[1]],
           amphibious          = false,
 	  buildCostEnergy     = 500,

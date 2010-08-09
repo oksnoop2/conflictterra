@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bbattleship]],
 	  name                = [[Ii Class Battleship]],
-	  description         = [[Battleship - Standard naval battleship of the NKG fleet.  Armed with two naval cannons.]],
+	  description         = [[Light Battleship - Standard naval battleship of the NKG fleet.  Armed with two naval cannons.]],
 	  acceleration        = 0.04,
           activateWhenBuilt   = true,
 	  bmcode              = [[1]],

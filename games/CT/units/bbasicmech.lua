@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bbasicmech]],
 	  name                = [[Hojo Combat Mech]],
-	  description         = [[Basic Mech - Light, fast, rapid fire SM.  Built for skirmishing over holding the line.]],
+	  description         = [[Skirmish Mech - Light, fast, rapid fire SM.  Built for skirmishing as opposed to holding the line.]],
 	  acceleration        = 0.36,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.2,

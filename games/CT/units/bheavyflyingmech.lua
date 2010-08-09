@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bheavyflyingmech]],
 	  name                = [[Hattori Aerial Combat Mech]],
-	  description         = [[Heavy Flying Mech - Stronger model of the airborne "mech."  Fires a powerful beam. - Build Limit: 10]],
+	  description         = [[Aerial Assault Mech - Stronger model of the airborne "mech."  Fires a powerful beam. - Build Limit: 10]],
 	  acceleration        = 0.24,
 	  amphibious          = false,
 	  bankscale           = [[1]],

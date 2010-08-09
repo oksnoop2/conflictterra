@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvrocketbattleship]],
 	  name                = [[Sasaki Class Battleship]],
-	  description         = [[Advanced Rocket Battleship - Naval vessel that attacks with three missile barrages. - Build Limit: 5]],
+	  description         = [[Barrage Battleship - Naval vessel that attacks with three missile barrages. - Build Limit: 5]],
 	  acceleration        = 0.03,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.03,

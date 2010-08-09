@@ -1,6 +1,6 @@
 local bengineer1 = {
 	name                = [[Engineer Support Mech]],
-	description         = [[Utilitarian vehicle designed to construct buildings and gun emplacements.  Unarmed.]],
+	description         = [[Utilitarian vehicle designed to construct buildings and defensive structures.  Unarmed.]],
         acceleration        = 0.06,
         brakerate           = 1.5,
         buildpic            = [[bengineer1.png]],

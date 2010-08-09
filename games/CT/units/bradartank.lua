@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bradartank]],
 	  name                = [[Ureme Type Radar Tank]],
-	  description         = [[Radar Tank - Light mobile radar and sonar unit.  Also jams radar.]],
+	  description         = [[Radar Hover Tank - Light mobile radar and sonar unit.  Also jams radar.]],
 	  acceleration        = 0.04,
           activateWhenBuilt   = true,
 	  bmcode              = [[1]],

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bnavydefmobileship]],
 	  name                = [[Yoshida Class Battery (Mobile Form)]],
-	  description         = [[Anti-Navy Defense Ship (Mobile Form) - Mobile Form of a navy defense ship.  Unarmed.]],
+	  description         = [[Mobile Form of an anti-ship battery.  Unarmed.  Can transform into an immobile but armed form.]],
 	  acceleration        = 0.04,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.02,

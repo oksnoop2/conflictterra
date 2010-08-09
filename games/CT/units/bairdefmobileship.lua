@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bairdefmobileship]],
 	  name                = [[Sanada Class Battery (Mobile Form)]],
-	  description         = [[Anti-Air Defense Ship (Mobile Form) - Mobile Form of a air defense ship.  Unarmed.]],
+	  description         = [[Mobile Form of an anti-air battery.  Unarmed.  Can transform into an immobile but armed form.]],
 	  acceleration        = 0.04,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.02,

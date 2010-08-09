@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bsnipermech]],
 	  name                = [[Saiga Combat Support Mech]],
-	  description         = [[Sniper Mech - Specialized SM designed to take out tanks from a distance.]],
+	  description         = [[Sniper Mech - Specialized long range SM that does heavy damage to tanks.]],
 	  acceleration        = 0.12,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.19,

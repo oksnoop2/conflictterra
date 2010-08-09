@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bheavyassaulttank]],
 	  name                = [[Ogami Type Tank]],
-	  description         = [[Heavy Assault Tank - Heavier battle tank.  Fires heavier shells. - Build Limit: 20]],
+	  description         = [[Heavy Tank - Hardier battle tank.  Fires heavier shells. - Build Limit: 20]],
 	  acceleration        = 0.03,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.07,

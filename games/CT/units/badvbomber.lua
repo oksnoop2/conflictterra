@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvbomber]],
 	  name                = [[Otoko Type Bomber]],
-	  description         = [[Advanced Bomber - Heavy bomber capable of dropping more bombs.  Also armed with a small anti-air turret. -  Build Limit: 20]],
+	  description         = [[Heavy Bomber - Heavy bomber capable of dropping more bombs.  Also armed with a small anti-air turret. -  Build Limit: 20]],
           amphibious          = false,
 	  buildCostEnergy     = 350,
 	  buildCostMetal      = 280,

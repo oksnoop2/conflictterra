@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[btransportcarrier2]],
 	  name                = [[Maeda Class Cruiser]],
-	  description         = [[Transport Carrier - Transport aircraft used to ferry units through the air.  Lightly armed with missiles.]],
+	  description         = [[Transport Cruiser - Transport aircraft used to ferry units through the air.  Lightly armed with missiles.]],
 	  acceleration        = 0.16,
 	  airStrafe           = 0,
           amphibious          = false,

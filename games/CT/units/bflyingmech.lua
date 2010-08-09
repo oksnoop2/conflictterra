@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bflyingmech]],
 	  name                = [[Fuma Aerial Combat Mech]],
-	  description         = [[Flying Mech - Airborne "mech" designed to harass enemy lines.  Fires multiple rapid cannons.]],
+	  description         = [[Aerial Raider Mech - Airborne "mech" designed to harass enemy lines and outposts.  Fires multiple rapid cannons.]],
 	  acceleration        = 0.154,
 	  amphibious          = false,
 	  bankscale           = [[1]],
