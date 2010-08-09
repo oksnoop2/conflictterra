@@ -4,7 +4,7 @@ require "attackerbehaviour"
 require "unitMorphBehaviour"
 
 behaviours = {
-bflagship = {
+bflagship2 = {
 unitMorphBehaviour,
 },
 }

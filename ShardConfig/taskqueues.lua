@@ -25,22 +25,7 @@ taskqueues = {
 		"breztank",
 	},
 	beningeer1 = {
-		(function()
-			local r = math.random(0,2)
-			if r == 0 then
-				return "bairport"
-			elseif r == 1 then
-				return "bmechfactory"
-			else
-				return "btankfactory"
-			else
-				return "bsupportfactory"
-			else
-				return "bsubpens"
-			else
-				return "bshipyard"
-			end
-		end),
+		
 
 		"bpowerplant",
 		"bpowerplant",
