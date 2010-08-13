@@ -99,7 +99,7 @@
 	      thickness               = 1,
 	      tolerance               = 6000,
 	      turret                  = true,
-	      weaponType              = [[LightingCannon]],
+	      weaponType              = [[LightningCannon]],
 	      weaponVelocity          = 1000,
 	    },
 	
