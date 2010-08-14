@@ -15,7 +15,6 @@ unitDef = {
   buildoptions                  = {
 
 	[[bengineer1]],
-	[[bdefensemech]],
 	[[breztank]],
   },
 
