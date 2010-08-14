@@ -24,6 +24,7 @@ unitDef = {
 	[[bsnipermech]],
 
 	[[bflyingmech]],
+        [[bantitankmech]],
 	[[bmissilemech]],
 	[[bsiegemech]],
 

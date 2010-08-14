@@ -3,27 +3,23 @@
 	--pieces
 	local waist = piece "waist"
 
-	local baclthigh = piece "baclthigh"
-	local baclshin = piece "baclshin"
-	local baclfoot = piece "baclfoot"
+	local baclthigh = piece "lbthigh"
+	local baclshin = piece "lbshin"
 
-	local bacrthigh = piece "bacrthigh"
-	local bacrshin = piece "bacrshin"
-	local bacrfoot = piece "bacrfoot"
+	local bacrthigh = piece "rbthigh"
+	local bacrshin = piece "rbshin"
 
 	local body = piece "body"
-	local lgun = piece "lgun"
+	local lgun = piece "larm"
 	local flare1 = piece "flare1"
-	local rgun = piece "rgun"
+	local rgun = piece "rarm"
 	local flare2 = piece "flare2"
 
-	local forlthigh = piece "forlthigh"
-	local forlshin = piece "forlshin"
-	local forlfoot = piece "forlfoot"
+	local forlthigh = piece "lfthigh"
+	local forlshin = piece "lfshin"
 
-	local forrthigh = piece "forrthigh"
-	local forrshin = piece "forrshin"
-	local forrfoot = piece "forrfoot"
+	local forrthigh = piece "rfthigh"
+	local forrshin = piece "rfshin"
 
 
 	--signals
@@ -31,8 +27,8 @@
 	local SIG_AIM_SEC = 2
 	local walk_go = 4
 	local walk_stop = 8
-        local orc_machinegun_flash_big = SFX.CEG
-        local orc_machinegun_muzzle_big = SFX.CEG + 1
+        local orc_machinegun_flash = SFX.CEG
+        local orc_machinegun_muzzle = SFX.CEG + 1
 	
 	function script.Create()
 	       
@@ -153,14 +149,14 @@
 
 	
 	function script.FireWeapon1()
-	EmitSfx(flare1, orc_machinegun_flash_big)
-	EmitSfx(flare1, orc_machinegun_muzzle_big)
+	EmitSfx(flare1, orc_machinegun_flash)
+	EmitSfx(flare1, orc_machinegun_muzzle)
 	       Sleep(30)
 	end
 
 	function script.FireWeapon2()
-	EmitSfx(flare2, orc_machinegun_flash_big)
-	EmitSfx(flare2, orc_machinegun_muzzle_big)
+	EmitSfx(flare2, orc_machinegun_flash)
+	EmitSfx(flare2, orc_machinegun_muzzle)
 	       Sleep(30)
 	end
 
