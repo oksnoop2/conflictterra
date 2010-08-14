@@ -72,6 +72,7 @@ local armorDefs = {
     "bsnipermech",
     "bsiegemech",
     "bmissilemech",
+    "bantitankmech",
     "bengineer2",
     "bheavymech",
     "bheavysiegemech",
