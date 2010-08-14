@@ -8,8 +8,8 @@ unitDef = {
   activateWhenBuilt             = true,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 400,
-  buildCostMetal                = 320,
+  buildCostEnergy               = 800,
+  buildCostMetal                = 640,
   builder                       = false,
 
   buildPic                      = [[badvpowerplant.png]],
