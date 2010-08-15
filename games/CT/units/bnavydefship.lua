@@ -64,42 +64,42 @@
 
 	    {
 	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM LAND SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
 	    },
 
 	    {
 	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM LAND SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
 	    },
 
 	    {
 	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM LAND SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
 	    },
 
 	    {
 	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM LAND SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
 	    },
 
 	    {
 	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM LAND SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
 	    },
 
 	    {
 	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM LAND SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
 	    },
 
 	    {
 	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM LAND SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
 	    },
 
 	    {
 	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM LAND SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
 	    },
 
 

@@ -66,7 +66,7 @@
 	      def                = [[Torpedo]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 45,
-	      onlyTargetCategory = [[SWIM LAND SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
 	    },
 	
 	
@@ -74,7 +74,7 @@
 	      def                = [[Torpedo]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 45,
-	      onlyTargetCategory = [[SWIM LAND SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
 	    },
 	
 	  },
