@@ -183,6 +183,7 @@
 	      name                    = [[Burst Laser]],
 	      areaOfEffect            = 8,
 	      coreThickness           = 0.5,
+	      collideFriendly         = false,
 	      craterMult              = 0.25,
 	
 	      damage                  = {
