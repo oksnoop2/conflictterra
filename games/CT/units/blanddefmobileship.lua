@@ -59,7 +59,7 @@
 	  TEDClass            = [[TANK]],
 	  turnRate            = 231,
 	  workerTime          = 0,
-	  unitRestricted      = 5,
+	  unitRestricted      = 2,
           script              = [[blanddefmobileship.lua]],
 	
 	

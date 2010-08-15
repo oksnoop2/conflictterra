@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bnavydefship]],
 	  name                = [[Yoshida Class Battery]],
-	  description         = [[Very powerful anti-ship battery.  Immobile.  Can transform into a mobile, but unarmed, form. - Build Limit: 5]],
+	  description         = [[Very powerful anti-ship battery.  Immobile.  Can transform into a mobile, but unarmed, form. - Build Limit: 2]],
 	  acceleration        = 0,
 	  bmcode              = [[0]],
 	  brakeRate           = 0,
@@ -56,7 +56,7 @@
 	  workerTime          = 0,
 	  waterline           = 15,
 	  yardMap             = [[oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo]],
-	  unitRestricted      = 5,
+	  unitRestricted      = 2,
           script              = [[bnavydefship.lua]],
 	
 	  weapons             = {
