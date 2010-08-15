@@ -32,7 +32,7 @@
 	  maxVelocity         = 2.5,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[TANK3]],
+	  movementClass       = [[LightTANK]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],

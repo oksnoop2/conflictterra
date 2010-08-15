@@ -31,7 +31,7 @@
 	  maxVelocity         = 3,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[KBOT4]],
+	  movementClass       = [[HeavyMech]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM SATELLITE SUB]],
 	  objectName          = [[bheavymissilemech.s3o]],

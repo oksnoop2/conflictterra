@@ -31,7 +31,7 @@
 	  maxSlope            = 36,
 	  maxVelocity         = 1.75,
 	  minCloakDistance    = 75,
-	  movementClass       = [[HOVER3]],
+	  movementClass       = [[LightHOVER]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
 	  objectName          = [[bamphmech2.s3o]],

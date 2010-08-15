@@ -35,7 +35,7 @@
 	  maxVelocity         = 1,
 	  minWaterDepth       = 22,
 	  minCloakDistance    = 150,
-	  movementClass       = [[BOAT6]],
+	  movementClass       = [[HeavySHIP]],
 	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
 	  objectName          = [[bnavydefship.s3o]],
 	  seismicSignature    = 4,

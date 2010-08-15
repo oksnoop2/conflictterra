@@ -32,7 +32,7 @@
 	  maxVelocity         = 1,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[KBOT4]],
+	  movementClass       = [[HeavyMech]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],

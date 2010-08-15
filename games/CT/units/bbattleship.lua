@@ -35,7 +35,7 @@
 	  maxVelocity         = 2,
 	  minCloakDistance    = 75,
 	  minWaterDepth       = 10,
-	  movementClass       = [[BOAT4]],
+	  movementClass       = [[MedSHIP]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE]],
 	  objectName          = [[bbattleship.s3o]],

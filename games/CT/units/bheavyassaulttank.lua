@@ -32,7 +32,7 @@
 	  maxVelocity         = 1.5,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[TANK4]],
+	  movementClass       = [[MedTANK]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
 	  objectName          = [[bheavyassaulttank.s3o]],

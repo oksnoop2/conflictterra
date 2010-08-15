@@ -32,7 +32,7 @@
 	  maxVelocity         = 1.5,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[TANK4]],
+	  movementClass       = [[HeavyTANK]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM SATELLITE SUB]],

@@ -31,7 +31,7 @@
 	  maxVelocity         = 4,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[KBOT2]],
+	  movementClass       = [[LightMech]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
 	  objectName          = [[bbasicmech.s3o]],

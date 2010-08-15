@@ -36,7 +36,7 @@
 	  maxDamage           = 4000,
 	  maxVelocity         = 1.8,
 	  minCloakDistance    = 75,
-	  movementClass       = [[BOAT4]],
+	  movementClass       = [[MedSHIP]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM SATELLITE SUB]],

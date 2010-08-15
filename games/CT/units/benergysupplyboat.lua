@@ -33,7 +33,7 @@
 	  maxVelocity         = 2.5,
 	  minCloakDistance    = 75,
 	  minWaterDepth       = 5,
-	  movementClass       = [[BOAT3]],
+	  movementClass       = [[LightSHIP]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM LAND SINK SHIP SATELLITE SWIM FLOAT SUB HOVER]],

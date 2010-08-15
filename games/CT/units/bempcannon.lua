@@ -32,7 +32,7 @@
 	  maxVelocity         = 1.5,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[TANK4]],
+	  movementClass       = [[HeavyTANK]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE GUNSHIP SUB]],
 	  objectName          = [[bempcannon.s3o]],

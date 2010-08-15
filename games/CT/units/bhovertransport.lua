@@ -33,7 +33,7 @@
 	  maxSlope            = 27,
 	  maxVelocity         = 2,
 	  maxWaterDepth       = 22,
-	  movementClass       = [[HOVER3]],
+	  movementClass       = [[HeavyHOVER]],
 	  minCloakDistance    = 75,
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE GUNSHIP SUB]],
 	  objectName          = [[bhovertransport.s3o]],

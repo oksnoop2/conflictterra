@@ -37,7 +37,7 @@
 	  maxVelocity         = 1.8,
 	  minCloakDistance    = 75,
 	  minWaterDepth       = 10,
-	  movementClass       = [[BOAT4]],
+	  movementClass       = [[LightSHIP]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE]],

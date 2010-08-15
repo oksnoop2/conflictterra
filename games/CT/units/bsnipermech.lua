@@ -31,7 +31,7 @@
 	  maxVelocity         = 2.5,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 150,
-	  movementClass       = [[KBOT2]],
+	  movementClass       = [[MedMech]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE GUNSHIP SUB]],

@@ -41,7 +41,7 @@
           metalMake           = 0,
 	  metalStorage        = 0,
 	  minCloakDistance    = 75,
-	  movementClass       = [[TANK3]],
+	  movementClass       = [[MedTANK]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM SATELLITE FIXEDWING GUNSHIP HOVER SHIP SWIM SUB LAND FLOAT SINK]],

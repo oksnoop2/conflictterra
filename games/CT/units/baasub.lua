@@ -35,7 +35,7 @@
 	  maxVelocity         = 2,
 	  minCloakDistance    = 75,
 	  minWaterDepth       = 45,
-	  movementClass       = [[UBOAT3]],
+	  movementClass       = [[SubBOAT]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE HOVER]],
 	  objectName          = [[baasub.s3o]],

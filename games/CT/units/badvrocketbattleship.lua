@@ -35,7 +35,7 @@
 	  maxVelocity         = 1.5,
 	  minCloakDistance    = 75,
 	  minWaterDepth       = 15,
-	  movementClass       = [[BOAT6]],
+	  movementClass       = [[HeavySHIP]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[FIXEDWING SATELLITE GUNSHIP SUB]],

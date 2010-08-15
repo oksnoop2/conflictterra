@@ -32,7 +32,7 @@
 	  maxVelocity         = 1.75,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[HOVER3]],
+	  movementClass       = [[MedHOVER]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
 	  objectName          = [[badvamphmech.s3o]],
