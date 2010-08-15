@@ -18,7 +18,7 @@
 	
 	local function RestoreAfterDelay(unitID)
 		Sleep(2500)
-        	Turn(gun, x_axis, 0, math.rad(50))
+        	Turn(gun, x_axis, 0, math.rad(160))
 		StopSpin(barrel, z_axis, 5)
 	end
 
@@ -29,8 +29,8 @@
 	function script.AimWeapon1( heading, pitch )
 		Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(turret, y_axis, heading, math.rad(90))
-        	Turn(gun, x_axis, -pitch, math.rad(50))
+        	Turn(turret, y_axis, heading, math.rad(300))
+        	Turn(gun, x_axis, -pitch, math.rad(160))
 		Spin(barrel, z_axis, 5)
         	WaitForTurn(turret, y_axis)
         	WaitForTurn(gun, x_axis)

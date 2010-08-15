@@ -19,7 +19,7 @@
 	
 	local function RestoreAfterDelay(unitID)
 		Sleep(2500)
-        	Turn(barrel, x_axis, 0, math.rad(50))
+        	Turn(barrel, x_axis, 0, math.rad(150))
 	end
 
 	function script.QueryWeapon1() return flare1 end
@@ -37,8 +37,8 @@
 	function script.AimWeapon1( heading, pitch )
 		Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(turret, y_axis, heading, math.rad(90))
-        	Turn(barrel, x_axis, -pitch, math.rad(50))
+        	Turn(turret, y_axis, heading, math.rad(200))
+        	Turn(barrel, x_axis, -pitch, math.rad(150))
         	WaitForTurn(turret, y_axis)
         	WaitForTurn(barrel, x_axis)
 		StartThread(RestoreAfterDelay)
@@ -48,8 +48,8 @@
 	function script.AimWeapon2( heading, pitch )
 		Signal(SIG_AIM_SEC)
 		SetSignalMask(SIG_AIM_SEC)
-        	Turn(turret, y_axis, heading, math.rad(90))
-        	Turn(barrel, x_axis, -pitch, math.rad(50))
+        	Turn(turret, y_axis, heading, math.rad(200))
+        	Turn(barrel, x_axis, -pitch, math.rad(150))
         	WaitForTurn(turret, y_axis)
         	WaitForTurn(barrel, x_axis)
 		StartThread(RestoreAfterDelay)
@@ -59,8 +59,8 @@
 	function script.AimWeapon3( heading, pitch )
 		Signal(SIG_AIM_THIR)
 		SetSignalMask(SIG_AIM_THIR)
-        	Turn(turret, y_axis, heading, math.rad(90))
-        	Turn(barrel, x_axis, -pitch, math.rad(50))
+        	Turn(turret, y_axis, heading, math.rad(200))
+        	Turn(barrel, x_axis, -pitch, math.rad(150))
         	WaitForTurn(turret, y_axis)
         	WaitForTurn(barrel, x_axis)
 		StartThread(RestoreAfterDelay)

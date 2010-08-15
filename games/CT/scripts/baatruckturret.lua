@@ -23,7 +23,7 @@
 	
 	local function RestoreAfterDelay(unitID)
 		Sleep(2500)
-		Turn(barrel, x_axis, 0, math.rad(90))
+		Turn(barrel, x_axis, 0, math.rad(200))
 	end
 
 	function script.QueryWeapon1() return flare1 end
@@ -37,8 +37,8 @@
 	function script.AimWeapon1( heading, pitch )
 		Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(flakturret, y_axis, (0 - heading), math.rad(90))
-        	Turn(barrel, x_axis, -pitch, math.rad(50))
+        	Turn(flakturret, y_axis, (0 - heading), math.rad(200))
+        	Turn(barrel, x_axis, -pitch, math.rad(150))
         	WaitForTurn(flakturret, y_axis)
         	WaitForTurn(barrel, x_axis)
 		StartThread(RestoreAfterDelay)
@@ -48,8 +48,8 @@
 	function script.AimWeapon2( heading, pitch )
 		Signal(SIG_AIM_SEC)
 		SetSignalMask(SIG_AIM_SEC)
-        	Turn(flakturret, y_axis, (0 - heading), math.rad(90))
-        	Turn(barrel, x_axis, -pitch, math.rad(50))
+        	Turn(flakturret, y_axis, (0 - heading), math.rad(200))
+        	Turn(barrel, x_axis, -pitch, math.rad(150))
         	WaitForTurn(flakturret, y_axis)
         	WaitForTurn(barrel, x_axis)
 		StartThread(RestoreAfterDelay)

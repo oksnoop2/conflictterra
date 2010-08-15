@@ -88,8 +88,8 @@
 	
 	local function RestoreAfterDelay(unitID)
 		Sleep(2500)
-		Turn(body, y_axis, 0, math.rad(90))
-        	Turn(barrel, x_axis, 0, math.rad(50))
+		Turn(body, y_axis, 0, math.rad(150))
+        	Turn(barrel, x_axis, 0, math.rad(100))
 	end
 
 	function script.QueryWeapon1() return flare1 end
@@ -101,8 +101,8 @@
 	function script.AimWeapon1( heading, pitch )
 		Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(body, y_axis, heading, math.rad(90))
-        	Turn(barrel, x_axis, -pitch, math.rad(50))
+        	Turn(body, y_axis, heading, math.rad(150))
+        	Turn(barrel, x_axis, -pitch, math.rad(100))
         	WaitForTurn(body, y_axis)
         	WaitForTurn(barrel, x_axis)
 		StartThread(RestoreAfterDelay)

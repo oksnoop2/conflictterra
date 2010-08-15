@@ -30,8 +30,8 @@
 	
 	local function RestoreAfterDelay(unitID)
 		Sleep(2500)
-        	Turn(leftgun, x_axis, 0, math.rad(50))
-        	Turn(rightgun, x_axis, 0, math.rad(50))
+        	Turn(leftgun, x_axis, 0, math.rad(150))
+        	Turn(rightgun, x_axis, 0, math.rad(150))
 	end
 
 	function script.QueryWeapon1() return flare1 end
@@ -61,7 +61,7 @@
 	function script.AimWeapon1( heading, pitch )
                 Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(leftgun, x_axis, -pitch, math.rad(50))
+        	Turn(leftgun, x_axis, -pitch, math.rad(150))
         	WaitForTurn(leftgun, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
@@ -70,7 +70,7 @@
 	function script.AimWeapon2( heading, pitch )
 		Signal(SIG_AIM_SEC)
 		SetSignalMask(SIG_AIM_SEC)
-        	Turn(leftgun, x_axis, -pitch, math.rad(50))
+        	Turn(leftgun, x_axis, -pitch, math.rad(150))
         	WaitForTurn(leftgun, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
@@ -79,7 +79,7 @@
 	function script.AimWeapon3( heading, pitch )
 		Signal(SIG_AIM_THIR)
 		SetSignalMask(SIG_AIM_THIR)
-        	Turn(leftgun, x_axis, -pitch, math.rad(50))
+        	Turn(leftgun, x_axis, -pitch, math.rad(150))
         	WaitForTurn(leftgun, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
@@ -88,7 +88,7 @@
 	function script.AimWeapon4( heading, pitch )
 		Signal(SIG_AIM_FOUR)
 		SetSignalMask(SIG_AIM_FOUR)
-        	Turn(rightgun, x_axis, -pitch, math.rad(50))
+        	Turn(rightgun, x_axis, -pitch, math.rad(150))
         	WaitForTurn(rightgun, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
@@ -97,7 +97,7 @@
 	function script.AimWeapon5( heading, pitch )
 		Signal(SIG_AIM_FIVE)
 		SetSignalMask(SIG_AIM_FIVE)
-        	Turn(rightgun, x_axis, -pitch, math.rad(50))
+        	Turn(rightgun, x_axis, -pitch, math.rad(150))
         	WaitForTurn(rightgun, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
@@ -106,7 +106,7 @@
 	function script.AimWeapon6( heading, pitch )
 		Signal(SIG_AIM_SIX)
 		SetSignalMask(SIG_AIM_SIX)
-        	Turn(rightgun, x_axis, -pitch, math.rad(50))
+        	Turn(rightgun, x_axis, -pitch, math.rad(150))
         	WaitForTurn(rightgun, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
