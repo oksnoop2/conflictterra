@@ -62,6 +62,7 @@
 	  
 	  side                = [[NKG]],
 	  sightDistance       = 750,
+          sonarDistance       = 500,
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
 	  TEDClass            = [[WATER]],

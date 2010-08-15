@@ -40,6 +40,7 @@
 
 	  side                = [[NKG]],
 	  sightDistance       = 600,
+          sonarDistance       = 600,
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
 

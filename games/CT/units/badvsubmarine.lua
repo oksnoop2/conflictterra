@@ -55,6 +55,7 @@
 		},
 	  },
 
+          sonarDistance       = 500,
 	  TEDClass            = [[WATER]],
 	  turnRate            = 225,
           waterline           = 45,
