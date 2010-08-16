@@ -1,0 +1,33 @@
+[ct_pine1]
+	{
+	world=All Worlds;
+	description=Rock;
+	category=arm_corpses;
+	object=ct_pine1.s3o;
+	footprintx=3;
+	footprintz=3;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=500;
+	damage=10000; 
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_pinecluster1]
+	{
+	world=All Worlds;
+	description=Rock;
+	category=arm_corpses;
+	object=ct_pinecluster1.s3o;
+	footprintx=3;
+	footprintz=3;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=500;
+	damage=10000; 
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
