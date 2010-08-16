@@ -18,9 +18,11 @@
     * [http://code.google.com/p/conflictterra/wiki/UIPlans UI Plans]
 
 = Downloads =
-  * [http://conflictterra.googlecode.com/files/ct_100.sd7 Latest Version]
+  * [http://conflictterra.googlecode.com/files/conflictterra_101.sd7 Latest Version]
   * Archive
+    * [http://conflictterra.googlecode.com/files/conflictterra_101.sd7 Conflict Terra Version 1.01]
     * [http://conflictterra.googlecode.com/files/ct_100.sd7 Conflict Terra Version 1.00]
+
 
 = Links =
 
