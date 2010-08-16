@@ -1,0 +1,50 @@
+[ct_rock1]
+	{
+	world=All Worlds;
+	description=Rock;
+	category=arm_corpses;
+	object=ctrock1.s3o;
+	footprintx=7;
+	footprintz=7;
+	height=80;
+	blocking=1;
+	hitdensity=1000;
+	metal=500;
+	damage=10000; 
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_rock2]
+	{
+	world=All Worlds;
+	description=Rock;
+	category=arm_corpses;
+	object=ct_rock2.s3o;
+	footprintx=7;
+	footprintz=7;
+	height=95;
+	blocking=1;
+	hitdensity=1000;
+	metal=500;
+	damage=10000; 
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_rockcluster2]
+	{
+	world=All Worlds;
+	description=Rock;
+	category=arm_corpses;
+	object=ct_rockcluster2.s3o;
+	footprintx=10;
+	footprintz=10;
+	height=95;
+	blocking=1;
+	hitdensity=1000;
+	metal=500;
+	damage=10000; 
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
