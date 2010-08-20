@@ -1,14 +1,14 @@
 	unitDef = {
 	  unitname            = [[bheavymech]],
-	  name                = [[Honda Combat Mech]],
-	  description         = [[Assault Mech - Hardy SM armed with a powerful beam weapon. - Build Limit: 10]],
+	  name                = [[Honda Combat Mech MkII]],
+	  description         = [[Assault Mech - High powered SM armed with dual cannons and powerful beam weapons. - Build Limit: 10]],
 	  acceleration        = 0.12,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.25,
 	  buildCostEnergy     = 3500,
 	  buildCostMetal      = 2800,
 	  builder             = false,
-	  buildPic            = [[bheavymech.png]],
+	  buildPic            = [[bassaultmech.png]],
 	  buildTime           = 33,
 	  canAttack           = true,
 	  canGuard            = true,
@@ -28,13 +28,13 @@
 	  mass                = 175,
 	  maxDamage           = 1250,
 	  maxSlope            = 36,
-	  maxVelocity         = 3,
+	  maxVelocity         = 5,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
 	  movementClass       = [[MedMech]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
-	  objectName          = [[bheavymech.s3o]],
+	  objectName          = [[bassaultmech.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],
 
@@ -52,13 +52,22 @@
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:orc_machinegun_flash_big",
+		"custom:orc_machinegun_muzzle_big",
+	    },
+	
+	  },
+
 	  TEDClass            = [[KBOT]],
 	  turninplace         = 0,
 	  turnRate            = 1056,
 	  upright             = true,
 	  workerTime          = 0,
 	  unitRestricted      = 10,
-          script              = [[bheavymech.lua]],
+          script              = [[bassaultmech.lua]],
 	
 	  weapons             = {
 	
@@ -68,6 +77,30 @@
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER]],
+	    },
+
+	    {
+	      def                = [[Laser]],
+	      badTargetCategory  = [[GUNSHIP]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
+	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER]],
+	    },
+
+	    {
+	      def                = [[Cannon]],
+	      badTargetCategory  = [[GUNSHIP]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	    },
+
+	    {
+	      def                = [[Cannon]],
+	      badTargetCategory  = [[GUNSHIP]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	    },
 	
 	  },
@@ -97,11 +130,11 @@
 	      explosionGenerator      = [[custom:megapartgun]],
 	      interceptedByShieldType = 1,
 	      largeBeamLaser          = true,
-	      laserFlareSize          = 5,
+	      laserFlareSize          = 2,
 	      lineOfSight             = true,
 	      minIntensity            = 1,
 	      range                   = 600,
-	      reloadtime              = 10,
+	      reloadtime              = 6,
 	      rgbColor                = [[1 0 0]],
 	      soundStart              = [[argh/Argh_PlasmaBreach]],
 	      targetMoveError         = 0.3,
@@ -111,6 +144,34 @@
 	      turret                  = true,
 	      weaponType              = [[BeamLaser]],
 	      weaponVelocity          = 1400,
+	    },
+
+	    Cannon = {
+	      name                    = [[Light Cannon]],
+	      areaOfEffect            = 32,
+	      craterMult              = 0.25,
+	      accuracy                = 200,
+	
+	      damage                  = {
+		Cruiser = 100,
+		Building = 100,
+		Mech = 100,
+		Tank = 100,
+		Aircraft = 100,
+		Ship = 100,
+		Sub = 5.25,
+	      },
+	
+	      model                   = [[bshell.s3o]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      interceptedByShieldType = 1,
+	      range                   = 600,
+	      reloadtime              = 1.5,
+	      soundHit                = [[argh/Argh_MedExplosion]],
+	      soundStart              = [[argh/Argh_heavy_machinegun]],
+	      turret                  = true,
+	      weaponType              = [[Cannon]],
+	      weaponVelocity          = 750,
 	    },
 	
 	  },
