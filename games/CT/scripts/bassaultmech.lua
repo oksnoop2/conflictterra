@@ -49,9 +49,11 @@
 	local SIG_AIM_4 = 16
 	local walk_go = 32
 	local walk_stop = 64
+	local jumpjet_SIG = 128
 
         local orc_machinegun_flash_big = SFX.CEG
         local orc_machinegun_muzzle_big = SFX.CEG + 1
+	local jumpjetsfx = SFX.CEG + 2
 	
 	function script.Create()
 		Turn(llaser, x_axis, -0.5, 100)
@@ -136,6 +138,17 @@
 	        Turn( rarm, x_axis, 0, 1.5 )
 
 	end
+
+	local function jumpjetaction()
+		SetSignalMask(jumpjet_SIG)
+		while (true) do
+			EmitSfx(boosterflare1, jumpjetsfx)
+			EmitSfx(boosterflare2, jumpjetsfx)
+			EmitSfx(boosterflare3, jumpjetsfx)
+			EmitSfx(boosterflare4, jumpjetsfx)
+			Sleep(1)
+		end
+	end
 	
 	function script.StartMoving()
 	        StartThread(walk)
@@ -143,6 +156,42 @@
 	
 	function script.StopMoving()
 	        StartThread(stop_walk)
+	end
+
+	function script.BeginJump()
+		StartThread(jumpjetaction)
+		Turn(leftfoot, x_axis, 1, 2)
+		Turn(rightfoot, x_axis, 1, 2)
+
+		Turn(leftthigh, x_axis, 1, 2)
+
+		Turn(larm, x_axis, 1, 2)
+		Turn(rarm, x_axis, 1, 2)
+
+		Turn(lgun, x_axis, -1, 2)
+		Turn(rgun, x_axis, -1, 2)
+	end
+
+	function script.Jumping()
+
+	end
+
+	function script.HalfJump()
+
+	end
+
+	function script.EndJump()
+		Signal(jumpjet_SIG)
+		Turn(leftfoot, x_axis, 0, 2)
+		Turn(rightfoot, x_axis, 0, 2)
+
+		Turn(leftthigh, x_axis, 0, 2)
+
+		Turn(larm, x_axis, 0, 2)
+		Turn(rarm, x_axis, 0, 2)
+
+		Turn(lgun, x_axis, 0, 2)
+		Turn(rgun, x_axis, 0, 2)
 	end
 	
 	local function RestoreAfterDelay(unitID)
