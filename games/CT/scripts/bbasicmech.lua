@@ -122,6 +122,18 @@
 	function script.StopMoving()
 	        StartThread(stop_walk)
 	end
+
+	function script.BeginJump()
+	end
+
+	function script.Jumping()
+	end
+
+	function script.HalfJump()
+	end
+
+	function script.EndJump()
+	end
 	
 	local function RestoreAfterDelay(unitID)
 		Sleep(2500)
