@@ -36,24 +36,10 @@ jumpCategory = {
 jumpClassGroups = {
 
 	baseclass = { 
-	"noruas",
-	"corpyro",
-	"corfast",
-	"corsktl",
 	"bbasicmech",
-	"corcan",
-	"chicken_leaper",
-	"corsumo",
-	-- "pizzathehut",--bad unit left for testing purposes
 	},
 
-	-- iammissingstuff = {--bad category
-	-- "puffthemagic",--bad unit left for testing purposes
-	-- },
-	
-	-- idontexist = {--nonexistant category
-	-- "chillichilli",--bad unit left for testing purposes
-	-- },
+
 }
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -65,22 +51,10 @@ jumpClassGroups = {
 --		reload
 ------------------------------------------------------------------------------------------------------------------------------------------------	
 overCategory = {
- noruas = {
-    reload = 0,  },
 	
  bbasicmech = {
-    height = 150, speed = 4,  reload = 20,  aaShootMe = false,  },
-	
- corcan = {
-    speed = 4,},
-	
- chicken_leaper = {
-    range = 600, reload = 1, },
-	
- corsumo = {
-    delay = 30, height = 100, range = 300, reload = 13, cobscript = false, rotateMidAir = false},
-	-- corpyro = {
-		-- range = 400, height = 200, speed = 6,  reload = 10, },	
+    height = 150, speed = 4,  reload = 1,  aaShootMe = false,  },
+		
 }
 ------------------------------------------------------------------------------------------------------------------------------------------------
 -- this is just an error checking block, not our configuration area
