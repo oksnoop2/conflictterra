@@ -58,7 +58,7 @@ local bengineer1 = {
 	minCloakDistance    = 75,
 	movementClass       = [[Engineer]],
         noChaseCategory     = [[TERRAFORM SATELLITE FIXEDWING GUNSHIP HOVER SHIP SWIM SUB LAND FLOAT SINK]],
-	objectName          = "bengineer1.s3o",
+	objectName          = "bengineermkii.s3o",
         onoffable           = false,
         seismicSignature    = 4,
         selfDestructAs      = [[SMALL_UNIT]],
@@ -97,7 +97,7 @@ local bengineer1 = {
 	turnRate            = 560,
 	showNanospray	    = 0,
 	workerTime          = 1,
-	script		    = "bengineer1.lua",
+	script		    = "bengineermkii.lua",
 
 	  featureDefs         = {
 	
