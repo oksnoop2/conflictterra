@@ -23,7 +23,6 @@
 	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 3,
 	  footprintZ          = 3,
-	  highTrajectory      = 2,
 	  idleAutoHeal        = 0,
 	  maneuverleashlength = [[640]],
 	  mass                = 65,
