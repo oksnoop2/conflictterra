@@ -72,16 +72,19 @@
 
 	    {
 	      def                = [[Laser]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT HOVER]],
 	    },
 
 	    {
 	      def                = [[Laser]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT HOVER]],
 	    },
 
 	    {
 	      def                = [[Artillery]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 100,
 	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
@@ -89,6 +92,7 @@
 
 	    {
 	      def                = [[Artillery]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[1 0 0]],
 	      maxAngleDif        = 100,
 	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
@@ -96,6 +100,7 @@
 
 	    {
 	      def                = [[Artillery]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 -1]],
 	      maxAngleDif        = 100,
 	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
@@ -103,6 +108,7 @@
 
 	    {
 	      def                = [[Artillery]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[-1 0 0]],
 	      maxAngleDif        = 100,
 	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],

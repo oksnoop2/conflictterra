@@ -62,7 +62,7 @@
 	
 	    {
 	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
@@ -70,7 +70,7 @@
 
 	    {
 	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],

@@ -98,6 +98,7 @@
 
 	    {
 	      def                = [[Ground]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 90,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
@@ -113,6 +114,7 @@
 
 	    {
 	      def                = [[Ground]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 90,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],

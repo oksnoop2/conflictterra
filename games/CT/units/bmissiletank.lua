@@ -70,11 +70,13 @@
 	
 	    {
 	      def                = [[Anti_Mech]],
+	      badTargetCategory  = [[SINK FLOAT GUNSHIP]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
 	    },
 
 	    {
 	      def                = [[Anti_Mech]],
+	      badTargetCategory  = [[SINK FLOAT GUNSHIP]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
 	    },
 	

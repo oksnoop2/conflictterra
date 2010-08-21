@@ -59,22 +59,22 @@
 	
 	    {
 	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB FLOAT SHIP]],
 	    },
 
 	    {
 	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB FLOAT SHIP]],
 	    },
 
 	    {
 	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB FLOAT SHIP]],
 	    },
 
 	    {
 	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB FLOAT SHIP]],
 	    },
 	
 	  },

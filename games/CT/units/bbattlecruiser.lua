@@ -75,7 +75,7 @@
 	
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
 	      mainDir            = [[0 1 0]],
 	      maxAngleDif        = 200,
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
@@ -83,7 +83,7 @@
 
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
 	      mainDir            = [[1 0 0]],
 	      maxAngleDif        = 200,
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
@@ -91,7 +91,7 @@
 
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
 	      mainDir            = [[0 -1 0]],
 	      maxAngleDif        = 200,
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
@@ -99,7 +99,7 @@
 
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
 	      mainDir            = [[-1 0 0]],
 	      maxAngleDif        = 200,
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],

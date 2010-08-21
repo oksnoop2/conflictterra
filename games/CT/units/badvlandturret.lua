@@ -59,6 +59,7 @@
 	
 	    {
 	      def                = [[Laser]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT HOVER]],
 	    },
 	

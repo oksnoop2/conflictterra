@@ -90,7 +90,7 @@
 
 	    {
 	      def                = [[Cannon]],
-	      badTargetCategory  = [[GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	    },
 	

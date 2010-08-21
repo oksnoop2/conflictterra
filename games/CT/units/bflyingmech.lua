@@ -77,36 +77,36 @@
 	
 	    {
 	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	    },
 
 	    {
 	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	    },
 	    {
 	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
-	    },
-
-	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	    },
 
 	    {
 	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	    },
 
 	    {
 	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
+	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	    },
+
+	    {
+	      def                = [[Machine_Gun]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	    },
 	

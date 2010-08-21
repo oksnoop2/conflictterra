@@ -68,6 +68,7 @@
 	
 	    {
 	      def                = [[Large]],
+	      badTargetCategory  = [[SINK FLOAT GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
@@ -75,6 +76,7 @@
 
 	    {
 	      def                = [[Large]],
+	      badTargetCategory  = [[SINK FLOAT GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
@@ -82,6 +84,7 @@
 
 	    {
 	      def                = [[Large]],
+	      badTargetCategory  = [[SINK FLOAT GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
@@ -89,6 +92,7 @@
 
 	    {
 	      def                = [[Large]],
+	      badTargetCategory  = [[SINK FLOAT GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],

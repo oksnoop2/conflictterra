@@ -63,6 +63,7 @@
 	
 	    {
 	      def                = [[Anti_Mech]],
+	      badTargetCategory  = [[SINK FLOAT GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
@@ -70,6 +71,7 @@
 
 	    {
 	      def                = [[Anti_Mech]],
+	      badTargetCategory  = [[SINK FLOAT GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],

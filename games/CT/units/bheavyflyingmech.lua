@@ -67,7 +67,7 @@
 	
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
 	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER]],
 	    },
 	

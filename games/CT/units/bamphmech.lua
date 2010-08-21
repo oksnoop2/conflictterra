@@ -63,32 +63,32 @@
 	
 	    {
 	      def                = [[Launcher]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
 	    {
 	      def                = [[Launcher]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
 	    {
 	      def                = [[Torpedo]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 45,
-	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB FLOAT SHIP]],
 	    },
 
 	    {
 	      def                = [[Torpedo]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 45,
-	      onlyTargetCategory = [[SWIM SUB SINK FLOAT SHIP]],
+	      onlyTargetCategory = [[SWIM SUB FLOAT SHIP]],
 	    },
 	
 	  },

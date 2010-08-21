@@ -90,6 +90,7 @@
 
 	    {
 	      def                = [[Ground]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
@@ -102,6 +103,7 @@
 
 	    {
 	      def                = [[Ground]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 	

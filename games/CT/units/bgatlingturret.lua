@@ -65,6 +65,7 @@
 	
 	    {
 	      def                = [[Machine_Gun]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 	

@@ -39,7 +39,6 @@
 	  turnRate            = 0,
 	  workerTime          = 0,
 	  yardMap             = [[oooo oooo oooo oooo]],
-	  
 
 	  sfxtypes            = {
 	
@@ -60,7 +59,6 @@
 		},
 	  },
 
-          
 
 	  script              = [[blandturret.lua]],
 	
@@ -68,11 +66,13 @@
 	
 	    {
 	      def                = [[Cannon]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
 	    {
 	      def                = [[Cannon]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 	
