@@ -8,8 +8,8 @@ unitDef = {
   activateWhenBuilt             = false,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 750,
-  buildCostMetal                = 600,
+  buildCostEnergy               = 250,
+  buildCostMetal                = 200,
   builder                       = true,
 
   buildoptions                  = {
@@ -23,7 +23,7 @@ unitDef = {
 
 
   buildPic                      = [[bsupportfactory.png]],
-  buildTime                     = 45,
+  buildTime                     = 25,
   canMove                       = true,
   canPatrol                     = true,
   canstop                       = [[1]],
