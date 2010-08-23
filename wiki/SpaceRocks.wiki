@@ -40,7 +40,7 @@ Very little has been discussed concerning this aspect of the mechanic, but it sh
 
    If a builder building this building isn't desirable, a possible option would be to utilize the morph function so that a special unit morphs into the extractor described above.
 
-=== Current SpaceRock Code ===
+= Current SpaceRock Code =
 -----------------------------------------------
 {{{
 function gadget:GetInfo()
