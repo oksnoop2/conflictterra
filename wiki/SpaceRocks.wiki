@@ -39,3 +39,68 @@ Very little has been discussed concerning this aspect of the mechanic, but it sh
    This method would not be very hard to implement.  The basic idea is that builders will have the option to build a building near the meteorite, which will then absorb the meteorite.  In essence it would emulate a metal extractor from the standard TA economy, but instead of drawing from the metal map, it would absorb the meteorite.  They could also of course absorb  other features near the building.
 
    If a builder building this building isn't desirable, a possible option would be to utilize the morph function so that a special unit morphs into the extractor described above.
+
+=== Current Spacerock Code ===
+__________________________________________________________________________________________
+
+function gadget:GetInfo()
+  return {
+    name      = "Space Rock",
+    desc      = "Spawns rocks from space.",
+    author    = "oksnoop2",
+    date      = "4/24/2010",
+    license   = "GNU GPL, v2 or later",
+    layer     = 0,
+    enabled   = true,  --  loaded by default?
+  }
+end
+
+
+if not gadgetHandler:IsSyncedCode() then
+  return false -- no unsynced code
+end
+
+
+----- Settings -----------------------------------------------------------------
+
+local meteorDefName  = "f1" -- meteor unit name, use a unit with a death explosion
+local meteorInterval = 1 -- time between the arrival of meteors, in seconds
+local fallGravity = 1
+local meteorSpawnHeight = 5000
+local burnEffect1 = "smallburn" -- CEG used for the meteor trail, needs to be visible out of los
+local burnEffect2 = "medburn"
+
+----------------------------------------------------------------------------------
+
+
+local meteors = {} -- meteor set
+
+function gadget:GameFrame(frame)
+
+  if frame % (30 * meteorInterval) == 0 then 
+    -- pick a random location as the meteor spawn point
+    local meteorSpawnX = math.random(Game.mapSizeX)
+    local meteorSpawnZ = math.random(Game.mapSizeZ)
+    local meteorSpawnY = Spring.GetGroundHeight(meteorSpawnX, meteorSpawnZ) + meteorSpawnHeight
+    
+    -- create the meteor
+    local meteorID = Spring.CreateUnit(meteorDefName, meteorSpawnX, meteorSpawnY, meteorSpawnZ, "n", Spring.GetGaiaTeamID()) -- will ignore Y and spawn at ground level
+    meteors[meteorID] = true -- put it in the meteor set
+    
+    Spring.MoveCtrl.Enable(meteorID) -- tell spring we'll take care of moving the meteor
+    Spring.MoveCtrl.SetPosition(meteorID, meteorSpawnX, meteorSpawnY, meteorSpawnZ) -- this time the height will be set correctly
+    Spring.MoveCtrl.SetGravity(meteorID, fallGravity) -- make gravity affect the meteor
+  end
+  
+  for meteorID in pairs(meteors) do  -- loop through every meteor in the meteor set
+    local x, y, z = Spring.GetUnitPosition(meteorID)
+    local h = Spring.GetGroundHeight(x, z)
+    if y < h then -- if the meteor below ground level
+      Spring.DestroyUnit(meteorID) -- make it explode
+      meteors[meteorID] = nil -- remove it from the meteor set
+    else -- above ground, show the meteor trail
+      Spring.SpawnCEG(burnEffect1, x, y + 30, z)
+      Spring.SpawnCEG(burnEffect2, x, y, z)
+    end
+  end
+end
