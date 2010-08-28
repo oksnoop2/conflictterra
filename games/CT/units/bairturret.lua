@@ -112,7 +112,7 @@
 	      weaponAcceleration      = 550,
 	      weaponTimer             = 5,
 	      weaponType              = [[MissileLauncher]],
-	      weaponVelocity          = 750,
+	      weaponVelocity          = 900,
 	    },
 	
 	  },
