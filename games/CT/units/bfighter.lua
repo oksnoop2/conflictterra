@@ -104,11 +104,11 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 30,
+		Cruiser = 10,
 		Building = 10,
 		Mech = 10,
 		Tank = 10,
-		Aircraft = 30,
+		Aircraft = 20,
 		Ship = 10,
 		Sub = 0.3,
 	      },
@@ -119,7 +119,7 @@
 	      lineOfSight             = true,
 	      pitchtolerance          = [[18000]],
 	      range                   = 700,
-	      reloadtime              = 0.2,
+	      reloadtime              = 0.5,
 	      rgbColor                = [[1 0.95 0.5]],
 	      separation              = 2,
 	      size                    = 1,
