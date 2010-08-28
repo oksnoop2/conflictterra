@@ -18,7 +18,7 @@
 	  category            = [[FIXEDWING]],
           collide             = false,
 	  corpse              = [[DEAD]],
-          cruiseAlt           = 300,
+          cruiseAlt           = 400,
 	  reclaimable         = false,
 	
 	  defaultmissiontype  = [[VTOL_standby]],
