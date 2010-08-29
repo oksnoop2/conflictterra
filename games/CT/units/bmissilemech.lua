@@ -28,7 +28,7 @@
 	  mass                = 45,
 	  maxDamage           = 600,
 	  maxSlope            = 36,
-	  maxVelocity         = 2.5,
+	  maxVelocity         = 3.5,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
 	  movementClass       = [[LightMech]],
