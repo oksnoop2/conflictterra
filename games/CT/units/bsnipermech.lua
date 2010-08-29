@@ -28,7 +28,7 @@
 	  mass                = 375,
 	  maxDamage           = 625,
 	  maxSlope            = 36,
-	  maxVelocity         = 2.5,
+	  maxVelocity         = 3.5,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 150,
 	  movementClass       = [[MedMech]],
