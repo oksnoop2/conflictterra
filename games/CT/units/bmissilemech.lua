@@ -105,7 +105,7 @@
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      range                   = 600,
-	      reloadtime              = 2,
+	      reloadtime              = 1,
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[nexuiz/rocket_fire]],
