@@ -110,7 +110,7 @@
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,
 	      range                   = 800,
-	      reloadtime              = 7.5,
+	      reloadtime              = 4.5,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_Whamsound]],
 	      turret                  = true,
