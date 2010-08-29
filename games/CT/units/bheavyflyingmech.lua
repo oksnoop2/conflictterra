@@ -102,7 +102,7 @@
 	      lineOfSight             = true,
 	      minIntensity            = 1,
 	      range                   = 600,
-	      reloadtime              = 10,
+	      reloadtime              = 6,
 	      rgbColor                = [[1 0 0]],
 	      soundStart              = [[argh/Argh_PlasmaBreach]],
 	      targetMoveError         = 0.3,
