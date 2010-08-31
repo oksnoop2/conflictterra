@@ -54,10 +54,10 @@ jumpClassGroups = {
 overCategory = {
 	
  bbasicmech = {
-    height = 150, speed = 4,  reload = 1,  aaShootMe = false,  },
+    height = 150, speed = 8,  reload = 5,  aaShootMe = false,  },
 
  bheavymech = {
-    height = 150, speed = 4,  reload = 1,  aaShootMe = false,  },
+    range = 750,  height = 200, speed = 12,  reload = 5,  aaShootMe = false,  },
 		
 }
 ------------------------------------------------------------------------------------------------------------------------------------------------
