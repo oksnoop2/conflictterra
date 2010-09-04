@@ -1,0 +1,40 @@
+#This page will explain CEGs and how to use them.
+
+= CEGs =
+
+The unit script lists the cegs it uses. As seen here:
+http://code.google.com/p/conflictterra/ ... icmech.lua
+
+Code:
+sfxtypes            = {
+        
+            explosiongenerators = {
+                "custom:orc_machinegun_flash",
+                "custom:orc_machinegun_muzzle",
+                "custom:buildersparks",
+            },
+        
+          },
+
+
+As you can see the buildersparks are third on the list. I'm pointing that out because the order matters. 
+
+Next we look at the script here:
+http://code.google.com/p/conflictterra/ ... icmech.lua
+
+Code:
+        --signals
+        local SIG_AIM = 1
+        local SIG_AIM_SEC = 2
+        local walk_go = 4
+        local walk_stop = 8
+        local jumpjet_SIG = 16
+        local orc_machinegun_flash = SFX.CEG
+        local orc_machinegun_muzzle = SFX.CEG + 1
+        local jumpjetsfx = SFX.CEG + 2
+
+
+Here we can see that local jumpjetsfx = SFX.CEG + 2. The significance of this is important. If you look up at the unitdef you see that the builderspark is third in the list. So it get's the designation SFX.CEG + 2. Kind of silly because it's third in the list but just remember that the SFX.CEG + # is always one behind it's number on the list in the unitdef.
+
+So that is how the jumpjetsfx is call the buildspark CEG located here: 
+http://code.google.com/p/conflictterra/ ... sparks.tdf
