@@ -24,15 +24,39 @@ The economy revolves around gathering two resources:  metal and energy.
 
 *Metal* is gathered by building Raw Metal Extractors over metal deposits present in the map.  When you select the Raw Metal Extractor to be built, the map will change to show where metal is present.  Ground where there is no metal will be black, while metal will glow green.  This is a core feature of the Spring Engine, so you will see this in several other Spring Games.
 
-The other way to obtain metal is through the Waste Metal Refinery.  This building essentially turns your energy into metal, but at a very poor exchange rate.  They should only really be used if you have a great surplus of energy, but little metal.  The rate for the Waste Metal Refinery is *60 energy to make 1 metal.*
-
 *Energy* is gathered in a more broad way.  There are a handful of buildings in the game that create energy simply by existing.  This is a list of buildings early in the game that create energy:
   * Sterling Power Generator
   * Nuclear Power Plant
 The Sterling Power Generator only adds an additional *5 energy* to your income, but it is cheap and builds quickly.  You should build them early to bolster your economy, before you attempt to build the Nuclear Power Plant, which is much more expensive and takes longer to build, but adds a much larger *45 energy* to your income.  Trying to build the Nuclear Power Plant right off the bat will likely result in your economy stalling.
 
-The same goes for the High-Tech Power Plant and Advanced Nuclear Power Plant for the Tech Level 2 economy buildings.  Details for the Tech Level 2 economy are farther down.
-
-  * == Factories ==
-
   * == Storage on Wheels ==
+Building several economy buildings, such as Raw Metal Extractors and Sterling Power Generators, is important but not the only part of building a strong economy.  The other part is building appropriate storage units.
+
+The Tetsuda Type Supply Truck and the Raida Type Supply Truck are built at the Support Factory.  These two units provide *25 storage* to metal and energy, respectively.  That isn't a lot of storage by a long shot, however, and so both of them have the option to morph into a stationary storage unit.  While in this deployed form, they each provide *500 storage* to metal and energy, respectively.  They have the ability to morph back into their mobile forms, and so strategic placement of your storage capacity is both easy and changeable.
+
+  * == Taking to the Field ==
+
+Creating military units is just as important as setting up a sufficient economy, and with those you can both defend against and attack your enemies.  Conflict Terra groups its military units into 6 important groups.  These are:
+  * Mechs
+  * Tanks
+  * Aircraft
+  * Ships
+  * Submarines
+  * Cruisers
+This is important because these are the 6 armor groups, explained [http://code.google.com/p/conflictterra/wiki/ArmorSystem here].  Some units deal especially high damage to special groups, such as the Kuma Type Anti-Mech Tank.  Remembering these strengths and weaknesses will be crucial to you winning, and losing, against others.
+
+While there are of course differences between all of the units, in general these apply:
+  * Mechs have less HP, shoot and move faster, and deal more damage than tanks.  They are also generally more expensive and take more time to build than tanks.  Some even have special abilities.
+  * Tanks have more HP, shoot and move more slowly, and deal less damage thank mechs.  They also are generally cheaper and build more quickly than mechs.
+Picking what kind of units you want to build first is an important decision, and trying to cover all of your bases will be crucial to your success.
+
+  * == Teching Up ==
+
+All of the initial factories except for the Support Factory have the ability to morph into a Tech Level 2 version of that factory.  These Tech Level 2 factories have the ability to build all of the previously available units, but also are able to build new, stronger units.
+
+One of these new units is the Advanced Engineer Support Mech, which is able to build Tech Level 2 buildings.  Most of these are simply more effective versions of their Tech Level 1 counterparts, but a few new structures are available.  Some examples are:
+  * Shield Generator
+  * Cruiser Beacon
+  * Experimental Build Pad
+
+It should be noted that the Tech Level 2 factories do not build the older units any faster than the Tech Level 1 factories.
