@@ -1,0 +1,38 @@
+#summary Starting guide for Conflict Terra
+
+= Starter's Guide =
+
+This guide is intended to help players get a handle on what they should be doing early in the game.  Some basic build suggestions will be listed, with some functionality explained.
+
+  * == Your Flagship ==
+
+Your Oda Class Cruiser is your Flagship, or Commander for those coming from a Total Annihilation background.  While the game won't end if it is killed under normal circumstances, the Flagship can be powerful early on and critical to starting the building of your base.  The Flagship is unique though in that it does not directly build anything.  The Flagship must morph into the Mobile Headquarters in order to build any units.  
+
+It should be noted that the Flagship can also morph into the Owari Class Cruiser, or Battle Flagship.  The Battle Flagship is a one-way morph, in that you cannot return to the normal Flagship, and therefore you cannot morph into the Mobile Headquarters.  The Battle Flagship is a powerful cruiser, armed with several lasers and one powerful laser that can destroy any unit in one hit.  The cost to morph into this unit is very high, however, so it should only be done later in the game when your economy can support it.
+
+  * == The Mobile Headquarters ==
+
+The Mobile Headquarters is an armed factory, able to fire cannons at ground units and flak at air units.  Engineer Support Mechs can be built at the Mobile Headquarters.  They are your most basic builders, able to build economic buildings, factories, radar stations and defensive turrets.  The Mobile Headquarters can also build Resurrection Teams, which are special units that can repair and resurrect fallen units.
+
+It should be noted that the land flattens underneath the Mobile Headquarters whenever the Flagship morphs into it.  Remember this when picking a position!  If your units are not able to exit the factory because it's dug into a hill, use the Engineer Support Mech's *Restore* function to return the land to its original topography!
+
+The Mobile Headquarters can morph back into the Flagship at any time, so use that to your advantage, either to go on the offensive outside your opponents base, or retreat when the going gets tough.
+
+  * == Early Economy Suggestions ==
+
+The economy revolves around gathering two resources:  metal and energy.  
+
+*Metal* is gathered by building Raw Metal Extractors over metal deposits present in the map.  When you select the Raw Metal Extractor to be built, the map will change to show where metal is present.  Ground where there is no metal will be black, while metal will glow green.  This is a core feature of the Spring Engine, so you will see this in several other Spring Games.
+
+The other way to obtain metal is through the Waste Metal Refinery.  This building essentially turns your energy into metal, but at a very poor exchange rate.  They should only really be used if you have a great surplus of energy, but little metal.  The rate for the Waste Metal Refinery is *60 energy to make 1 metal.*
+
+*Energy* is gathered in a more broad way.  There are a handful of buildings in the game that create energy simply by existing.  This is a list of buildings early in the game that create energy:
+  * Sterling Power Generator
+  * Nuclear Power Plant
+The Sterling Power Generator only adds an additional *5 energy* to your income, but it is cheap and builds quickly.  You should build them early to bolster your economy, before you attempt to build the Nuclear Power Plant, which is much more expensive and takes longer to build, but adds a much larger *45 energy* to your income.  Trying to build the Nuclear Power Plant right off the bat will likely result in your economy stalling.
+
+The same goes for the High-Tech Power Plant and Advanced Nuclear Power Plant for the Tech Level 2 economy buildings.  Details for the Tech Level 2 economy are farther down.
+
+  * == Factories ==
+
+  * == Storage on Wheels ==
