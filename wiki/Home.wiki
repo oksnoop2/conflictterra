@@ -4,7 +4,7 @@
 = Table of Contents =
 
   * Game Guide
-    * [http://code.google.com/p/conflictterra/wiki/BeginnersGuide Beginners Guide]
+    * [http://code.google.com/p/conflictterra/wiki/StartersGuide Starter's Guide]
     * [http://code.google.com/p/conflictterra/wiki/ArmorSystem?ts=1280542250&updated=ArmorSystem Armor System]
   * Unit Guide
     * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview NKG Unit Guide]
