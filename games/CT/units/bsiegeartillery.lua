@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bsiegeartillery]],
-	  name                = [[Tatakau Type Tank]],
-	  description         = [[Missile Artillery - Medium mobile artillery.  Fires inaccurate missiles.]],
+	  name                = [[Tatakau Type AA Tank]],
+	  description         = [[Moblie AA - mobile AA tank.  Fires homing missiles.]],
 	  acceleration        = 0.04,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.2,
@@ -67,18 +67,18 @@
 	  weapons             = {
 	
 	    {
-	      def                = [[Rocket]],
-	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
+	      def                = [[AA]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 
 	    {
-	      def                = [[Rocket]],
-	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
+	      def                = [[AA]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 
 	    {
-	      def                = [[Rocket]],
-	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
+	      def                = [[AA]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 	
 	  },
@@ -86,46 +86,48 @@
 	
 	  weaponDefs          = {
 	
-	    Rocket = {
-	      name                    = [[Missile Barrage]],
+	    AA         = {
+	      name                    = [[Homing AA Missile]],
 	      areaOfEffect            = 48,
-	      burst                   = 3,
-	      burstrate               = 0.08,
+	      avoidFriendly           = true,
+	      canattackground         = false,
+	      cylinderTargetting      = 1,
 	      craterMult              = 0.25,
 	
 	      damage                  = {
 		Cruiser = 150,
-		Building = 200,
-		Mech = 150,
-		Tank = 150,
+		Building = 20,
+		Mech = 20,
+		Tank = 20,
 		Aircraft = 150,
-		Ship = 150,
-		Sub = 5,
+		Ship = 20,
+		Sub = 10,
 	      },
 	
-	      model                   = [[bsmallmissile.s3o]],
-	      dance                   = 20,
-	      wobble                  = 5000,
-	      edgeEffectiveness       = 0.5,
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
-	      flightTime              = 2.5,
+	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
-	      range                   = 440,
-	      reloadtime              = 10,
+	      model                   = [[baamissile.s3o]],
+	      range                   = 530,
+	      reloadtime              = 4.5,
+	      smokedelay              = [[0.1]],
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
-	      soundStart              = [[nexuiz/rocket_fire]],
-	      tolerance               = 500,
-	      trajectoryHeight        = 1,
+	      soundStart              = [[evolutionRTS/aircraft_missile_01]],
+	      startVelocity           = 200,
+	      tolerance               = 22000,
+	      tracks                  = true,
 	      turret                  = true,
+	      turnRate                = 30000,
+	      weaponAcceleration      = 550,
+	      weaponTimer             = 5,
 	      weaponType              = [[MissileLauncher]],
-	      weaponVelocity          = 250,
-	      startVelocity           = 100,
-	      weaponAcceleration      = 100,
+	      weaponVelocity          = 900,
 	    },
 	
 	  },
+	
 	
 	
 	  featureDefs         = {
