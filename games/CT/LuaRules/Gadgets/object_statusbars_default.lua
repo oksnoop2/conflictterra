@@ -104,10 +104,10 @@ else
 			Echo("[object_statusbars_default] feature status-bar drawing " .. drawStatusString)
 		end
 
-		local function ___UnitCreated(_asa_, unitID)   SetUnitLuaDraw(unitID, true)   end
-		local function ___UnitDestroyed(_asa_, unitID)   SetUnitLuaDraw(unitID, false)   end
-		local function ___FeatureCreated(_asa_, featureID)   SetFeatureLuaDraw(featureID, true)   end
-		local function ___FeatureDestroyed(_asa_, featureID)   SetFeatureLuaDraw(featureID, false)   end
+		local function ___UnitCreated(--[[_asa_, ]]unitID)   SetUnitLuaDraw(unitID, true)   end
+		local function ___UnitDestroyed(--[[_asa_, ]]unitID)   SetUnitLuaDraw(unitID, false)   end
+		local function ___FeatureCreated(--[[_asa_, ]]featureID)   SetFeatureLuaDraw(featureID, true)   end
+		local function ___FeatureDestroyed(--[[_asa_, ]]featureID)   SetFeatureLuaDraw(featureID, false)   end
 
 
 		local function ___DrawUnitStatusBars(unitID)
@@ -168,8 +168,8 @@ else
 			local bEnd = (buildProg and ((buildProg * 0.8) * 10.0)) or 0.0
 			local sEnd = (stockPileBuildPercent and ((stockPileBuildPercent * 0.8) * 10.0)) or 0.0
 
-			glColor(1.0, 1.0, 1.0)
-			glRect(6.0, -2.0, 8.0, eEnd - 2.0)
+			--glColor(1.0, 1.0, 1.0)
+			--glRect(6.0, -2.0, 8.0, eEnd - 2.0)
 
 			if (beingBuilt) then
 				glColor(1.0, 0.0, 0.0)
@@ -242,12 +242,12 @@ else
 			callinHandlers["FeatureDestroyed"] = ___FeatureDestroyed
 
 			-- listen to "/luarules show*"
-			gadgetHandler:AddChatAction("showhealthbars", ___ToggleDrawUnitStatusBars, "toggle whether unit status-bars are drawn")
+			--[[gadgetHandler:AddChatAction("showhealthbars", ___ToggleDrawUnitStatusBars, "toggle whether unit status-bars are drawn")
 			gadgetHandler:AddChatAction("showrezbars", ___ToggleDrawFeatureStatusBars, "toggle whether feature status-bars are drawn")
 
 			for funcName, func in pairs(callinHandlers) do
 				gadgetHandler:AddSyncAction(funcName, func, "")
-			end
+			end--]]
 
 			Spring.SendCommands({"showhealthbars 0", "showrezbars 0"})
 		end
@@ -262,7 +262,7 @@ else
 		end
 
 
-		--[[
+		
 		-- less efficient than the AddSyncAction route
 		function gadget:RecvFromSynced(callinName, objectID)
 			local handler = callinHandlers[callinName]
@@ -309,23 +309,25 @@ else
 			glPushMatrix()
 				if (drawUnitStatusBars) then
 					for unitID, _ in pairs(drawnUnitIDs) do
-						local px, py, pz = GetUnitPosition(unitID)
-						local vx, vy, vz = GetUnitVelocity(unitID)
-						local dx, dy, dz = ((px - cx) * (px - cx)), ((py - cy) * (py - cy)), ((pz - cz) * (pz - cz))
+						if unitID then
+							local px, py, pz = GetUnitPosition(unitID)
+							local vx, vy, vz = GetUnitVelocity(unitID)
+							local dx, dy, dz = ((px - cx) * (px - cx)), ((py - cy) * (py - cy)), ((pz - cz) * (pz - cz))
 
-						if ((dx + dy + dz) < (drawDistSq * 500)) then
-							-- note: better add a GetUnitDrawPosition callout
-							local t = GetFrameTimeOffset()
-							local h = GetUnitHeight(unitID) + 5.0
+							if ((dx + dy + dz) < (drawDistSq * 500)) then
+								-- note: better add a GetUnitDrawPosition callout
+								local t = GetFrameTimeOffset()
+								local h = GetUnitHeight(unitID) + 5.0
 
-							glPushMatrix()
-								glTranslate(px + vx * t, py + h + vy * t, pz + vz * t)
-								glBillboard()
-								___DrawUnitStatusBars(unitID)
-							glPopMatrix()
+								glPushMatrix()
+									glTranslate(px + vx * t, py + h + vy * t, pz + vz * t)
+									glBillboard()
+									___DrawUnitStatusBars(unitID)
+								glPopMatrix()
+							end
+
+							drawnUnitIDs[unitID] = nil
 						end
-
-						drawnUnitIDs[unitID] = nil
 					end
 				end
 
