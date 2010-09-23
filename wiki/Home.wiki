@@ -28,6 +28,7 @@
 
 = Links =
 
+  * [https://sites.google.com/site/conflictterra/ Conflict Terra Homepage]
   * [http://www.moddb.com/games/conflict-terra ModDB]
   * [http://springrts.com/phpbb/viewforum.php?f=63 SpringRTS Forums]
 
