@@ -17,7 +17,6 @@ unitDef = {
 	[[bengineer1]],
 	[[bmetaltruck]],
 	[[benergytruck]],
-	[[bhovertransport]],
   },
 
 

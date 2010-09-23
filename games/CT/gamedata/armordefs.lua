@@ -91,7 +91,6 @@ local armorDefs = {
     "bsiegeartillery",
     "bradartank",
     "breztank",
-    "bhovertransport",
     "bheavyassaulttank",
     "bvhsa",
     "badvradartank",
