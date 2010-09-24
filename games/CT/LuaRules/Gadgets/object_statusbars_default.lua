@@ -225,7 +225,7 @@ else
 				date    = "August 2, 2010",
 				license = "GPL v2",
 				layer   = -99999999, -- other gadgets could block the Draw* callins
-				enabled = true,
+				enabled = fasle,
 			}
 		end
 
