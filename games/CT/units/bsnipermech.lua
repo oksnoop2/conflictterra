@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bsnipermech]],
 	  name                = [[Saiga Combat Support Mech]],
-	  description         = [[Sniper Mech - Specialized long range SM that does heavy damage to tanks.]],
+	  description         = [[Sniper Mech - Stealthy long range SM that does heavy damage to tanks.]],
 	  acceleration        = 0.12,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.19,
@@ -52,6 +52,7 @@
 	  sightDistance       = 750,
 	  smoothAnim          = true,
 	  steeringmode        = [[2]],
+	  stealth             = true,
 	  TEDClass            = [[KBOT]],
 	  turninplace         = 0,
 	  turnRate            = 1338,
