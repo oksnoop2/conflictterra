@@ -71,6 +71,15 @@ unitDef = {
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:orc_machinegun_flash",
+		"custom:orc_machinegun_muzzle",
+	    },
+	
+	  },
+
   TEDClass                      = [[PLANT]],
   turnRate                      = 0,
   workerTime                    = 1,
