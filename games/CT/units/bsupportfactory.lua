@@ -34,8 +34,8 @@ unitDef = {
   energyMake                    = 0,
   energyUse                     = 0,
   explodeAs                     = [[LARGE_BUILDING]],
-  footprintX                    = 19,
-  footprintZ                    = 19,
+  footprintX                    = 8,
+  footprintZ                    = 8,
   idleAutoHeal                  = 0,
   mass                          = 275,
   maxDamage                     = 8500,
@@ -66,7 +66,7 @@ unitDef = {
   TEDClass                      = [[PLANT]],
   turnRate                      = 0,
   workerTime                    = 1,
-  yardMap                       = [[ccccccccccccccccccc ccccccccccccccccccc ccccccccccccccccccc cccccccccccccoooooc ccccooccoooccoooooc ccccoocooooocoooooc ccccccooooooocccccc ccoocooooooooocoocc coooooooooooooooooc ooooooocccccooooooo oooooocccccccoooooo coooocccccccccooooo ccoocccccccccccoooc ccocccccccccccccooc ccocccccccccccccooc ccocccccccccccccocc ccccccccccccccccccc ccccccccccccccccccc ccccccccccccccccccc]],
+  yardMap                       = [[cccccooo cooooooo cooooooo oooccooo ooccccoo ooccccoo ooccccoo cccccccc ]],
   script                        = [[bsupportfactory.lua]],
 
 
