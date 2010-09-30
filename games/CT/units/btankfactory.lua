@@ -19,7 +19,7 @@ unitDef = {
 	[[bmissiletank]],
 
 	[[bartillery]],
-	[[bsiegeartillery]],
+	[[baabuggy]],
 	[[bradartank]],
 
 	[[breztank]],
