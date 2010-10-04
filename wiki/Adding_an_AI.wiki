@@ -1,0 +1,12 @@
+This Page will explain how to add an AI controlled team inside spring lobby.
+
+= The Process =
+
+<a href="http://img440.imageshack.us/i/step1n.png/" target="_blank"><img src="http://img440.imageshack.us/img440/7382/step1n.th.png" border="0"/></a>
+
+
+<a href="http://img844.imageshack.us/i/step2e.png/" target="_blank"><img src="http://img844.imageshack.us/img844/3608/step2e.th.png" border="0"/></a>
+
+
+<a href="http://img203.imageshack.us/i/step3s.png/" target="_blank"><img src="http://img203.imageshack.us/img203/5043/step3s.th.png" border="0"/></a>
+
