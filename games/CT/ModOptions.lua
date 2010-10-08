@@ -28,18 +28,40 @@
 local opts= {
 	{
 		key="comm",
-		name="Commander Unit",
+		name="Choose start unit.",
 		desc="Choose the unit every player starts with",
 		type="list",
 		def="standard",
 		items = {
 			{ key = "standard", name = "Flagship", desc = "Start with the flagship."  },
-			{ key = "base", name = "Flagship Base", desc = "Start with the flagship base." },
+			{ key = "base", name = "Moblie HQ", desc = "Start with the Mobile HQ." },
 			{ key = "bengineer2", name = "Advanced Engineer", desc = "Start with the advanced engineer." }
 			
 		},
 	},
+    
+{
+    key    = 'ctmode',
+    name   = 'Game Mode',
+    desc   = 'Change the game mode.',
+    type   = 'list',
+    section= 'modifiers',    
+    def    = 'normal',
+    items  = {
+      { 
+        key  = 'normal',
+        name = 'Normal',
+        desc = 'Normal game mode',
+      },
 
+      {
+    key  = 'gather',
+    name = 'Collect Meteors',
+    desc = 'Collect Meteors for metal.',
+      },
+    },
+
+   }
 }
 
 return opts
