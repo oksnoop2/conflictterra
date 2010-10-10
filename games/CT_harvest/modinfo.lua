@@ -1,7 +1,7 @@
 local modinfo = {
 	name = "Conflict Terra",
 	shortname = "ct",
-	version = "$VERSION",
+	version = "Harvest",
 	game = "Conflict Terra",
 	shortgame = "ct",
 	description = "Conflict Terra",
