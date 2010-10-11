@@ -40,7 +40,7 @@ local opts= {
 		},
 	},
     
-{
+--{
     key    = 'ctmode',
     name   = 'Game Mode',
     desc   = 'Change the game mode.',
