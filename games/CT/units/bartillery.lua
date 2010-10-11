@@ -61,7 +61,7 @@
 	  },
 
 	  side                = [[NKG]],
-	  sightDistance       = 750,
+	  sightDistance       = 1500,
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
 	  TEDClass            = [[TANK]],
@@ -122,7 +122,7 @@
 	      description      = [[Wreckage - Artillery]],
 	      blocking         = false,
 	      category         = [[corpses]],
-	      damage           = 750,
+	      damage           = 1500,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
 	      featurereclamate = [[SMUDGE01]],
