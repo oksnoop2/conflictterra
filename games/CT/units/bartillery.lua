@@ -104,7 +104,7 @@
 	      explosionGenerator      = [[custom:LRPC_Expl]],
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,
-	      range                   = 750,
+	      range                   = 1500,
 	      reloadtime              = 7.5,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_Whamsound]],
