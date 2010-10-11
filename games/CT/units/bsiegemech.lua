@@ -107,7 +107,7 @@
 	
 	      damage                  = {
 		Cruiser = 190,
-		Building = 400,
+		Building = 600,
 		Mech = 190,
 		Tank = 190,
 		Aircraft = 190,
