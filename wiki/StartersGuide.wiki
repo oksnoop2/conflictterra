@@ -4,6 +4,13 @@
 
 This guide is intended to help players get a handle on what they should be doing early in the game.  Some basic build suggestions will be listed, with some functionality explained.
 
+  * [http://code.google.com/p/conflictterra/wiki/StartersGuide#Your_Flagship Your Flagship]
+  * [http://code.google.com/p/conflictterra/wiki/StartersGuide#The_Mobile_Headquarters The Mobile Headquarters]
+  * [http://code.google.com/p/conflictterra/wiki/StartersGuide#Early_Economy_Suggestions Early Economy Suggestions]
+  * [http://code.google.com/p/conflictterra/wiki/StartersGuide#Storage_on_Wheels Storage on Wheels]
+  * [http://code.google.com/p/conflictterra/wiki/StartersGuide#Taking_to_the_Field Taking to the Field]
+  * [http://code.google.com/p/conflictterra/wiki/StartersGuide#Teching_Up Teching Up]
+
   * == Your Flagship ==
 
 Your Oda Class Cruiser is your Flagship, or Commander for those coming from a Total Annihilation background.  While the game won't end if it is killed under normal circumstances, the Flagship can be powerful early on and critical to starting the building of your base.  The Flagship is unique though in that it does not directly build anything.  The Flagship must morph into the Mobile Headquarters in order to build any units.
