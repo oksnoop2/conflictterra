@@ -1,8 +1,8 @@
 #summary This Page will explain how to add an AI controlled team inside spring lobby.
 
 = Table of Contents =
-  * [http://code.google.com/p/conflictterra/w/edit.do#The_Process The Process]
-  * [http://code.google.com/p/conflictterra/w/edit.do#What_AI_Should_I_Pick? What AI Should I Pick?]
+  * [http://code.google.com/p/conflictterra/wiki/Adding_an_AI#The_Process The Process]
+  * [http://code.google.com/p/conflictterra/wiki/Adding_an_AI#What_AI_Should_I_Pick? What AI Should I Pick?]
 
 = The Process =
 
