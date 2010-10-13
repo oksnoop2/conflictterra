@@ -61,7 +61,7 @@
 	  },
 
 	  side                = [[NKG]],
-	  sightDistance       = 1500,
+	  sightDistance       = 1000,
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
 	  TEDClass            = [[TANK]],
@@ -104,7 +104,7 @@
 	      explosionGenerator      = [[custom:LRPC_Expl]],
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,
-	      range                   = 1500,
+	      range                   = 1000,
 	      reloadtime              = 7.5,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_Whamsound]],
