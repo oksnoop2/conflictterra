@@ -80,6 +80,7 @@ local armorDefs = {
     "bamphmech",
     "badvamphmech",
     "bheavyassaultmech",
+	"bminer",
   },
 
   Tank = {

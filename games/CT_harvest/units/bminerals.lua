@@ -1,39 +1,39 @@
 unitDef = {
 
-  unitname                      = [[bmex]],
-  name                          = [[Raw Metal Extractor]],
-  description                   = [[Extracts usable metal resources from below the ground.  Must be built over a metal deposit.]],
+  unitname                      = [[bminerals]],
+  name                          = [[Minerals]],
+  description                   = [[we require more minerals!! hey, this is one.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 75,
-  buildCostMetal                = 60,
+  buildCostEnergy               = 1,
+  buildCostMetal                = 1,
   builder                       = false,
 
   buildPic                      = [[bmex.png]],
-  buildTime                     = 25,
+  buildTime                     = 1,
   canattack                     = [[false]],
-  category                      = [[SINK]],
-  corpse                        = [[DEAD]],
+  category                      = [[MINERALS]],
+--  corpse                        = [[DEAD]],
   reclaimable                   = true,
-
+  repairable			= false,
   energyUse                     = 0,
   explodeAs                     = [[MEDIUM_BUILDING]],
-  extractsMetal                 = 0.001,
+  extractsMetal                 = 0.000,
   floater                       = false,
   footprintX                    = 3,
   footprintZ                    = 3,
   idleAutoHeal                  = 0,
   levelGround                   = false,
   mass                          = 37.5,
-  maxDamage                     = 2500,
+  maxDamage                     = 500,
   maxSlope                      = 255,
   maxVelocity                   = 0,
   maxWaterDepth                 = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
-  objectName                    = [[bmex.s3o]],
+  objectName                    = [[ctrock1.s3o]]--[[bmeteor.s3o]]--[[brock_3.s3o]]--[[bmex.s3o]],
 
   onoffable                     = true,
   seismicSignature              = 4,
@@ -65,17 +65,17 @@ unitDef = {
   waterline                     = 1,
   workerTime                    = 0,
   yardMap                       = [[ooooooooo]],
-  script                        = [[bmex.lua]],
+  script                        = [[bminerals.lua]],
 
 
 
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Extractor]],
-      blocking         = true,
-      category         = [[corpses]],
-      damage           = 3375,
+      description      = [[this mineral is mined out.]],
+      blocking         = false,
+      category         = [[heaps]],
+      damage           = 10,
       energy           = 0,
       featureDead      = [[DEAD2]],
       featurereclamate = [[SMUDGE01]],
@@ -84,7 +84,7 @@ unitDef = {
       height           = [[40]],
       hitdensity       = [[100]],
       metal            = 30,
-      object           = [[bgenericwreckage.s3o]],
+      object           = [[b3x3heap.s3o]],
       reclaimable      = true,
       reclaimTime      = 275,
 
@@ -94,7 +94,7 @@ unitDef = {
 
 
     DEAD2 = {
-      description      = [[Debris - Extractor]],
+      description      = [[this mined mineral is totally crushed dude!]],
       blocking         = false,
 
       category         = [[heaps]],
@@ -123,4 +123,4 @@ unitDef = {
 
 
 
-return lowerkeys({ bmex = unitDef })
+return lowerkeys({ bminerals = unitDef })

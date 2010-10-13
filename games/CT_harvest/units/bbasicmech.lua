@@ -33,7 +33,7 @@
 	  minCloakDistance    = 75,
 	  movementClass       = [[LightMech]],
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
+	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB MINERALS]],
 	  objectName          = [[bbasicmech.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[MEDIUM_UNIT]],
@@ -63,7 +63,7 @@
 	
 	    {
 	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[SINK FLOAT]],
+	      badTargetCategory  = [[SINK FLOAT MINERALS]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
@@ -71,7 +71,7 @@
 
 	    {
 	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[SINK FLOAT]],
+	      badTargetCategory  = [[SINK FLOAT MINERALS]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
