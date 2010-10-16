@@ -34,6 +34,8 @@ The first step of creation for every unit, whether developers realize it or not,
 
 The second step is to physically manifest your unit concept in the way of modeling it in a 3D modeling program.  There are a ton of options out there, but the free program Wings3D is the program used to model everything seen in Conflict Terra.  Wings3D is free, very intuitive, and whereas maybe not the most powerful software out there, it is a great place to begin.
 
+See: http://code.google.com/p/conflictterra/wiki/Simple_Tank_Wings3d
+
 = Third Step:  Texture =
 
 See: http://springrts.com/phpbb/viewtopic.php?f=57&t=10612
