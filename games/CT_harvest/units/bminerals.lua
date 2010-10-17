@@ -33,7 +33,7 @@ unitDef = {
   maxWaterDepth                 = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
-  objectName                    = [[ctrock1.s3o]]--[[bmeteor.s3o]]--[[brock_3.s3o]]--[[bmex.s3o]],
+  objectName                    = [[bmeteor_impactbig.s3o]]--[[ctrock1.s3o]]--[[bmeteor.s3o]]--[[brock_3.s3o]]--[[bmex.s3o]],
 
   onoffable                     = true,
   seismicSignature              = 4,
