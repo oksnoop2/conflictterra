@@ -89,7 +89,7 @@
 	      name                    = [[Homing AA Missile]],
 	      areaOfEffect            = 48,
 	      avoidFriendly           = true,
-	      canattackground         = true,
+	      canattackground         = false,
 	      cylinderTargetting      = 1,
 	      collideFriendly         = false,
 	      craterMult              = 0.25,

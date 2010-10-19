@@ -85,7 +85,7 @@
 	      name                    = [[Flak Cannon]],
 	      areaOfEffect            = 64,
 	      burnblow                = true,
-	      canattackground         = true,
+	      canattackground         = false,
 	      color                   = 1,
 	      craterMult              = 0.25,
 	
