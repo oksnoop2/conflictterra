@@ -62,6 +62,24 @@ local morphDefs = {
     },
   },
 
+  bsupplydepot = {
+    {
+      into = 'bsupplydepotmobile',
+      metal = 0,
+      energy = 0,
+      time = 4,
+    },
+  },
+
+  bsupplydepotmobile = {
+    {
+      into = 'bsupplydepot',
+      metal = 0,
+      energy = 0,
+      time = 4,
+    },
+  },
+
   bmetaltruck = {
     {
       into = 'bmetaltruckdepot',

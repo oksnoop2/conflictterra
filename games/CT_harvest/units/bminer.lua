@@ -10,6 +10,7 @@ local bminer = {
         builder             = true,
 
         buildoptions            = {
+		[[bsupplydepot]],
                 [[bmex]],
                 [[bpowerplant]],
                 [[bnuclearpower]],

@@ -19,7 +19,7 @@ local debug = false
 -----config-----
 local miner_name = "bminer";			--the unit used for mining
 local ressource_name = "bminerals"		--the stuff that gets mined
-local dropoff_name = {"bmetaltruckdepot", "bflagshipbase"}	--where the miners bring the ressources to
+local dropoff_name = {"bsupplydepot", "bflagshipbase"}	--where the miners bring the ressources to
 local dropoff_distance = 75 --how near do miners have to get to a dropoff to drop their cargo? --for bflagshipbase 300 works good
 ----------------
 function gadget:UnitFinished(unitID, unitDefID, teamID)

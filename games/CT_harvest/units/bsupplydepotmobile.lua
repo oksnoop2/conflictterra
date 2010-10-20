@@ -14,7 +14,10 @@
 	  builder             = false,
 	  reclaimable         = false,
 
-
+  collisionVolumeOffsets = [[0 0 0]],
+  collisionVolumeScales  = [[96 96 160]],
+  collisionVolumeTest    = 1,
+  collisionVolumeType    = [[box]],
 
 	  buildPic            = [[bsupplydepotmobile.png]],
 	  buildTime           = 60,
@@ -38,8 +41,8 @@
 	  energyUse           = 0,
 	  explodeAs           = [[BIG_UNIT]],
           floater             = true,
-          footprintx          = 5,
-	  footprintZ          = 5,
+          footprintx          = 10,
+	  footprintZ          = 10,
 	  hoverAttack         = true,
 	  idleAutoHeal        = 0,
 	  maneuverleashlength = [[1280]],
@@ -47,7 +50,7 @@
 	  maxDamage           = 4000,
 	  maxVelocity         = 1.5,
           metalMake           = 0,
-	  metalStorage        = 50,
+	  metalStorage        = 0,
 	  minCloakDistance    = 100,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[TERRAFORM SATELLITE FIXEDWING GUNSHIP HOVER SHIP SWIM SUB LAND FLOAT SINK]],

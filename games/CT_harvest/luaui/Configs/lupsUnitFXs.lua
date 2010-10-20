@@ -31,6 +31,15 @@ effectUnitDefs = {
 		{class='AirJet',	options={color={0,0,0.75,0},	width =  15, length=35, piece="fxflare5", onActive=true}},
 	},
 
+	bsupplydepotmobile = {
+		{class='AirJet',	options={color={0,0,0.75,0},	emitVector    = {0,1,0},	width =  15, length=35, piece="fxflare1", onActive=true}},
+		{class='AirJet',	options={color={0,0,0.75,0},	emitVector    = {0,1,0},	width =  15, length=35, piece="fxflare2", onActive=true}},
+		{class='AirJet',	options={color={0,0,0.75,0},	emitVector    = {0,1,0},	width =  15, length=35, piece="fxflare3", onActive=true}},
+		{class='AirJet',	options={color={0,0,0.75,0},	emitVector    = {0,1,0},	width =  15, length=35, piece="fxflare4", onActive=true}},
+		{class='AirJet',	options={color={0,0,0.75,0},	emitVector    = {0,1,0},	width =  15, length=35, piece="fxflare5", onActive=true}},
+		{class='AirJet',	options={color={0,0,0.75,0},	emitVector    = {0,1,0},	width =  15, length=35, piece="fxflare6", onActive=true}},
+	},
+
 	bmetalsupplyship = {
 		{class='AirJet',	options={color={0,0,0.75,0},	width =  15, length=35, piece="fxflare", onActive=true}},
 	},

@@ -15,11 +15,17 @@ unitDef = {
   buildTime                     = 40,
   category                      = [[SINK]],
   corpse                        = [[DEAD]],
+
+  collisionVolumeOffsets = [[0 0 0]],
+  collisionVolumeScales  = [[96 96 160]],
+  collisionVolumeTest    = 1,
+  collisionVolumeType    = [[box]],
+
   reclaimable                   = false,
 
   explodeAs                     = [[MEDIUM_UNIT]],
-  footprintX                    = 3,
-  footprintZ                    = 5,
+  footprintX                    = 6,
+  footprintZ                    = 10,
   idleAutoHeal                  = 0,
   levelGround                   = false,
   mass                          = 200,
