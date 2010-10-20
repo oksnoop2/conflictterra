@@ -16,10 +16,10 @@ unitDef = {
   canattack                     = [[false]],
   category                      = [[MINERALS]],
 --  corpse                        = [[DEAD]],
-  reclaimable                   = true,
+  reclaimable                   = false,
   repairable			= false,
   energyUse                     = 0,
-  explodeAs                     = [[MEDIUM_BUILDING]],
+  explodeAs                     = [[ROCK_MINEDOUT]],
   extractsMetal                 = 0.000,
   floater                       = false,
   footprintX                    = 3,
@@ -37,7 +37,7 @@ unitDef = {
 
   onoffable                     = true,
   seismicSignature              = 4,
-  selfDestructAs                = [[MEDIUM_BUILDING]],
+  selfDestructAs                = [[ROCK_MINEDOUT]],
   side                          = [[NKG]],
   sightDistance                 = 250,
 
