@@ -1,4 +1,4 @@
-#This page will explain CEGs and how to use them.
+#summary This page will explain CEGs and how to use them.
 
 = CEGs =
 
