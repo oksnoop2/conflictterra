@@ -178,6 +178,32 @@ BIG_UNIT = {
 	      },
   },
 
+--just an explosion that does no damage so miners do not get killed ;)
+ROCK_MINEDOUT = {
+
+   name="mined out rock",
+   rendertype=4,
+   ballistic=1,
+   turret=1,
+   impulseFactor      = 0,
+   range=480,
+   reloadtime=3.6,
+   weaponvelocity=250,
+   areaofeffect=95,
+   soundstart="golgotha/old_generic.wav",
+   soundhit="golgotha/old_generic.wav",
+   explosiongenerator="custom:SMALL_UNIT_Expl",
+	      damage                  = {
+		Cruiser = 1,
+		Building = 1,
+		Mech = 1,
+		Tank = 1,
+		Aircraft = 1,
+		Ship = 1,
+		Sub = 1,
+	      },
+  },
+
 
 }
 
