@@ -20,11 +20,13 @@ local nano = piece "nano"
 
 local SIG_AIM = 2
 local SIG_BUILD = 4
+local emit_sparks = false	--currently emiting sparks?
+local move_arms = false		--currently moving arms?
 
 local buildersparks = SFX.CEG
 
 local function sparks()
-	while true do
+	while emit_sparks do
 		EmitSfx(flare1, buildersparks)
 		EmitSfx(flare2, buildersparks)
 		Sleep(1)
@@ -32,7 +34,9 @@ local function sparks()
 end
 
 local function arms()
-	while true do
+	emit_sparks = true --if arms are moving, emit sparks as well
+	move_arms = true
+	while move_arms do
 		Turn(luparm, x_axis, 0, 2)
 		Turn(lforarm, x_axis, 0, 2)
 		Turn(lhand, x_axis, 0, 2)
@@ -81,6 +85,8 @@ local function armsdone()
 	Turn(rforarm, x_axis, 1.5, 100)
 	Turn(lhand, x_axis, 0.75, 100)
 	Turn(rhand, x_axis, 0.75, 100)
+	emit_sparks = false
+	move_arms = false
 end
 
 function script.Create(unitID)
@@ -100,8 +106,8 @@ function script.StartBuilding(heading, pitch)
 	Turn (mask, x_axis, 0, 2)
         WaitForTurn(body, y_axis)
 	WaitForTurn(mask, x_axis)
-	StartThread(sparks)
 	StartThread(arms)
+	StartThread(sparks)
 	SetUnitValue(COB.INBUILDSTANCE, 1)
 	return 1
 end
