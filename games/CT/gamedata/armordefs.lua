@@ -5,12 +5,14 @@ local armorDefs = {
     "bbattleflagship",
     "bbattlecruiser",
     "btransportcarrier2",
+    "bsupplydepotmobile",
     "bmetalsupplyship",
     "benergysupplyship",
   },
 
   Building  =  {
     "bflagshipbase",
+    "bsupplydepot",
     "bmex",
     "bpowerplant",
     "bnuclearpower",
