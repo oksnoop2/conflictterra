@@ -4,10 +4,20 @@
 
 This will show you how to update Conflict Terra using Rapid.
 
+---------------------------------------------------------------------------------------------------
 
-= Details =
+http://img535.imageshack.us/img535/5024/screenshot010u.png
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+First go to the download page.
+
+http://img98.imageshack.us/img98/8476/screenshot011q.png
+
+Then download spring.zip.
+
+http://img833.imageshack.us/img833/7532/screenshot012s.png
+
+Open the zip.
+
+http://img258.imageshack.us/img258/3055/screenshot013w.png
+
+Place files in the spring folder in program files.
