@@ -1,10 +1,9 @@
-
-
 = Introduction =
 
 This will show you how to update Conflict Terra using Rapid.
 
----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+http://conflictterra.googlecode.com/files/Spring.zip
 
 http://img535.imageshack.us/img535/5024/screenshot010u.png
 
