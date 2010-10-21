@@ -13,9 +13,12 @@ end
 
 if (gadgetHandler:IsSyncedCode()) then
 
-local miners = {} --  [unitID] alive: true oder false   cargo: wieviel er trägt  last_mined_id: an welcher ressource zuletzt gesammelt wurde status: was er gerade macht: "loading" "unloading" "mining" "to_res" "to_hq"
+local miners = {} --  [unitID] alive: true oder false   cargo: wieviel er trägt  last_mined_id: an welcher ressource zuletzt gesammelt wurde status: was er gerade macht: 
 local dropoffs = {} --[unitID]
 local debug = false
+--"mining" "goto_res" "goto_dropoff"
+
+
 -----config-----
 local miner_name = "bminer";			--the unit used for mining
 local ressource_name = "bminerals"		--the stuff that gets mined
@@ -33,19 +36,32 @@ function gadget:UnitDestroyed(unitID, unitDefID, teamID, attackerID)
 	--remove destroyed dropoffs:
 	if is_dropoff (unitID) then remove_dropoff (unitID) end
 	--wenn etwas geerntet wurde:
-	if (is_ressource_type (unitDefID) and is_miner (attackerID)) then Spring.Echo ("ressource mined out") end
+	if (is_ressource_type (unitDefID) and is_miner (attackerID)) then 
+		--make miners that just wanted to return to _this_ mineral go to a different mineral
+		for i in pairs(miners) do
+			if (miners[i].last_mined_id == unitID) then
+				miners[i].last_mined_id = nil
+				if (miners[i].status == "goto_res") then
+					Spring.GiveOrderToUnit(i, CMD.FIRE_STATE , { 2 }, {}) 
+					Spring.GiveOrderToUnit(i, CMD.AREA_ATTACK  , { x, y, z,50000  }, {}) 
+				end
+			end
+		end
+		Spring.Echo ("ressource mined out")	
+	end
 	--if (is_miner(attackerID)) then Spring.Echo ("miner mined") end
 	if (is_ressource_type (unitDefID) and is_miner(attackerID)) then
 		--fill the cargo bay of the miner, alot of options here....:
 		miners[attackerID].cargo = miners[attackerID].cargo + 25
 		Spring.DestroyUnit (unitID,true) 		--destroy the mined mineral as workaround to get rid of the wreck
 		--send full miners to dropoff:
-		if (miners[attackerID].cargo > 25) then 
+		if (miners[attackerID].cargo > 25) then
 			local x, y, z = Spring.GetUnitPosition(attackerID)
 			local tx, ty, tz = nearest_dropoff_position_from_miner (attackerID)
 			if (tx ~= nil) then
-				Spring.GiveOrderToUnit(attackerID, CMD.MOVE_STATE, { 2 }, {})
+				--Spring.GiveOrderToUnit(attackerID, CMD.MOVE_STATE, { 2 }, {})
 				Spring.GiveOrderToUnit(attackerID, CMD.MOVE , {tx, ty, tz  }, {})
+				miners[attackerID].status = "goto_dropoff"
 				if (debug) then Spring.Echo ("returning to base with cargo:" .. miners[attackerID].cargo) end
 			end
 		end		
@@ -57,6 +73,7 @@ function gadget:UnitDamaged (unitID, unitDefID, unitTeam, damage, paralyzer, wea
 if (is_ressource_type (unitDefID) and is_miner(attackerID)) then
 		--fill the cargo bay of the miner, alot of options here....:
 		miners[attackerID].cargo = miners[attackerID].cargo + math.ceil(damage)
+		miners[attackerID].status = "mining"
 		if (unitID ~=nil) then miners[attackerID].last_mined_id = unitID end
 		--send full miners to dropoff:
 		if (miners[attackerID].cargo > 25) then 
@@ -64,8 +81,9 @@ if (is_ressource_type (unitDefID) and is_miner(attackerID)) then
 			local tx, ty, tz = nearest_dropoff_position_from_miner (attackerID)
 			if (tx ~= nil) then
 				Spring.GiveOrderToUnit(attackerID, CMD.FIRE_STATE , { 0 }, {}) 
-				Spring.GiveOrderToUnit(attackerID, CMD.MOVE_STATE, { 0 }, {})
+				--Spring.GiveOrderToUnit(attackerID, CMD.MOVE_STATE, { 0 }, {})
 				Spring.GiveOrderToUnit(attackerID, CMD.MOVE , {tx, ty, tz  }, {})
+				miners[attackerID].status = "goto_dropoff"
 				if (debug) then Spring.Echo ("returning to base with cargo:" .. miners[attackerID].cargo) end
 			end
 		end		
@@ -86,15 +104,17 @@ if (frameNum % 8 ~=0) then return end
 			if (Spring.ValidUnitID  (miners[i].last_mined_id)) then
 				if (debug) then Spring.Echo ("miner " .. i .. " returns to mineral") end
 				--Spring.SetUnitTarget (i, miners[i].last_mined_id) --return to the mineral last mined from
-				Spring.GiveOrderToUnit(i, CMD.MOVE_STATE, { 1 }, {})
+				--Spring.GiveOrderToUnit(i, CMD.MOVE_STATE, { 1 }, {})
 				Spring.GiveOrderToUnit(i, CMD.FIRE_STATE , { 1 }, {}) 
 				Spring.GiveOrderToUnit(i, CMD.ATTACK  , { miners[i].last_mined_id  }, {}) 
+				miners[i].status = "goto_res"
 			else
 				--search for new minerals
 				local x, y, z = Spring.GetUnitPosition(i)
-				Spring.GiveOrderToUnit(i, CMD.MOVE_STATE, { 2 }, {})
+				--Spring.GiveOrderToUnit(i, CMD.MOVE_STATE, { 2 }, {})
 				Spring.GiveOrderToUnit(i, CMD.FIRE_STATE , { 2 }, {}) 
 				Spring.GiveOrderToUnit(i, CMD.AREA_ATTACK  , { x, y, z,50000  }, {}) 
+				miners[i].status = "goto_res"
 				if (debug) then Spring.Echo ("miner " .. i .. " moving out.") end
 			end
 		end
@@ -228,6 +248,17 @@ local minerteam = Spring.GetUnitAllyTeam (miner_unitID)
 			end
 		end
 	return false
+end
+
+--idle miners will go search for minerals if set to "roam"
+function gadget:UnitIdle(unitID, unitDefID, teamID) 
+	if (is_miner (unitID)) then
+		if (Spring.GetUnitStates (unitID, "movestate") == 2) then
+			Spring.GiveOrderToUnit(unitID, CMD.FIRE_STATE , { 2 }, {})
+			Spring.GiveOrderToUnit(unitID, CMD.AREA_ATTACK  , { x, y, z,50000  }, {})
+			miners[unitID].status = "goto_res"
+		end
+	end
 end
 
 --------------------------------------------------------
