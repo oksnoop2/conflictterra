@@ -1,4 +1,4 @@
-#How_to_update_Conflict_Terra_using_Rapid
+
 
 = Introduction =
 
@@ -8,16 +8,24 @@ This will show you how to update Conflict Terra using Rapid.
 
 http://img535.imageshack.us/img535/5024/screenshot010u.png
 
-First go to the download page.
+=First go to the download page.=
 
 http://img98.imageshack.us/img98/8476/screenshot011q.png
 
-Then download spring.zip.
+=Then download spring.zip.=
 
 http://img833.imageshack.us/img833/7532/screenshot012s.png
 
-Open the zip.
+=Open the zip.=
 
 http://img258.imageshack.us/img258/3055/screenshot013w.png
 
-Place files in the spring folder in program files.
+=Place files in the spring folder in program files.=
+
+http://img510.imageshack.us/img510/4549/screenshot014f.png
+
+=Run Rapid.bat=
+
+http://img694.imageshack.us/img694/5640/screenshot015x.png
+
+=If you see a progress bar in cmd you are on your way to having the latest version of Conflict Terra.=
