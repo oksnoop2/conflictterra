@@ -67,6 +67,7 @@ local armorDefs = {
 
   Mech  =  {
     "bengineer1",
+    "bminer",
     "bdefensemech",
     "bbasicmech",
     "bsnipermech",

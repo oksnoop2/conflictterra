@@ -30,12 +30,27 @@ end
 if (not gadgetHandler:IsSyncedCode()) then
 	return false
 end
-
+local ressource_name = "bminerals"
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
 local modOptions = Spring.GetModOptions()
 
+--local function SpawnRessources ()
+	
+--end
+
+local function SpawnRessourceField (x,z,  number, spread)
+	for i = 0, number, 1 do
+		local sx = x+math.random (-spread,spread)
+		local sz = z+math.random (-spread,spread)
+		local sh = Spring.GetGroundHeight(sx, sz)
+		local res = Spring.CreateUnit(ressource_name, sx, sh, sz, math.random(0,3), Spring.GetGaiaTeamID())
+		Spring.GiveOrderToUnit(res, CMD.ONOFF, { 0 }, {} )
+--		Spring.SetUnitNeutral (res, true)
+		Spring.SetUnitAlwaysVisible(res, true)
+		end
+end
 
 local function GetStartUnit(teamID)
 	-- get the team startup info
@@ -87,7 +102,7 @@ local function SpawnStartUnit(teamID)
 		-- remove the pre-existing storage
 		--   must be done after the start unit is spawned,
 		--   otherwise the starting resources are lost!
-		Spring.SetTeamResource(teamID, "ms", tonumber(m))
+		Spring.SetTeamResource(teamID, "ms", 99999999999999999999999)
 		Spring.SetTeamResource(teamID, "m", 0)
 		Spring.AddTeamResource(teamID, "m", tonumber(m))
 	end
@@ -114,6 +129,15 @@ function gadget:GameStart()
 			end
 		end
 	end
+	--SpawnRessources()  HACK: should be done by the map
+	
+	SpawnRessourceField (2500,1500, 12, 300)
+	SpawnRessourceField (5200,2000, 12, 300)
+	SpawnRessourceField (3000,6000, 12, 300)
+	SpawnRessourceField (5500,6000, 12, 300)
+	SpawnRessourceField (3100,4600, 5, 100)
+	SpawnRessourceField (4500,3200, 5, 100)
+	
 	if getfenv(0).AllowUnsafeChanges then
 		getfenv(0).AllowUnsafeChanges("Any string to turn it off")
 	end
