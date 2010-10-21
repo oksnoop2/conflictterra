@@ -1,0 +1,13 @@
+#How_to_update_Conflict_Terra_using_Rapid
+
+= Introduction =
+
+This will show you how to update Conflict Terra using Rapid.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
