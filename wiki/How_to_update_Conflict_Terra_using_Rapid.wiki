@@ -3,7 +3,7 @@
 This will show you how to update Conflict Terra using Rapid.
 
 --------------------------------------------------------------------------------------------------
-http://conflictterra.googlecode.com/files/Spring.zip
+
 
 http://img535.imageshack.us/img535/5024/screenshot010u.png
 
@@ -11,7 +11,7 @@ http://img535.imageshack.us/img535/5024/screenshot010u.png
 
 http://img98.imageshack.us/img98/8476/screenshot011q.png
 
-=Then download spring.zip.=
+=Then download [http://conflictterra.googlecode.com/files/Spring.zip spring.zip].=
 
 http://img833.imageshack.us/img833/7532/screenshot012s.png
 
