@@ -1,5 +1,9 @@
 #summary Useful tidbits about Conflict Terra, for development purposes.
 
+= Table of Contents =
+  * [http://code.google.com/p/conflictterra/wiki/Useful_Dev_Information#Conflict_Terra's_Categories Conflict Terra's Categories]
+  * [http://code.google.com/p/conflictterra/wiki/Useful_Dev_Information#Rough_Scale Rough Scale]
+
 = Conflict Terra's Categories =
 
 ||MINERALS||Special category for Mining to work.||
