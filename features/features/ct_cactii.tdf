@@ -9,7 +9,7 @@
 	height=60;
 	blocking=1;
 	hitdensity=1000;
-	metal=500;
+	energy=20;
 	damage=1000; 
         upright=true;
 	featurereclamate=smudge01;
