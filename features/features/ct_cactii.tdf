@@ -1,0 +1,16 @@
+[ct_cactus1]
+	{
+	world=All Worlds;
+	description=Rock;
+	category=arm_corpses;
+	object=ct_cactus.s3o;
+	footprintx=2;
+	footprintz=2;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=500;
+	damage=1000; 
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
