@@ -11,6 +11,7 @@
 	hitdensity=1000;
 	metal=500;
 	damage=10000; 
+        upright=true;
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;
 	}
@@ -28,6 +29,7 @@
 	hitdensity=1000;
 	metal=500;
 	damage=10000; 
+        upright=true;
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;
 	}
