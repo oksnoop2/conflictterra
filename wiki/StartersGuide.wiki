@@ -1,5 +1,7 @@
 #summary Starting guide for Conflict Terra
 
+*Caution:  This Starter's Guide is currently a little out of date, due to the shift in how Conflict Terra's economy works.  Once the new system is sufficiently setup, the Starter's Guide will be updated.*
+
 = Starter's Guide =
 
 This guide is intended to help players get a handle on what they should be doing early in the game.  Some basic build suggestions will be listed, with some functionality explained.
