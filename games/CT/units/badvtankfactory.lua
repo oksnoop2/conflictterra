@@ -20,6 +20,7 @@ unitDef = {
 	[[bempcannon]],
 	[[baatruck]],
 	[[badvradartank]],
+	[[bminer]],
 	[[bassaulttank]],
 
 	[[bmissiletank]],

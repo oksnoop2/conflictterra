@@ -1,20 +1,18 @@
 local bminer = {
-        name                = [[Miner]],
-        description         = [[Base Construction and Mining Vehicle]],
+        name                = [[Engineer Support Mech]],
+        description         = [[Utilitarian vehicle able to build structures and mine meteorites for metal.  Unarmed.]],
         acceleration        = 0.06,
         brakerate           = 1.5,
         buildpic            = [[bengineermkii.png]],
-        buildCostEnergy     = 100,
-        buildCostMetal      = 100,
+        buildCostEnergy     = 140,
+        buildCostMetal      = 112,
         buildDistance       = 220,
         builder             = true,
 
         buildoptions            = {
 		[[bsupplydepot]],
-                [[bmex]],
                 [[bpowerplant]],
                 [[bnuclearpower]],
-                [[bmetalconverter]],
                 [[bmechfactory]],
                 [[btankfactory]],
                 [[bairport]],
@@ -115,10 +113,11 @@ local bminer = {
           weaponDefs          = {
         
             Rock_Drill = {
-              name                    = [[Rock_Drill]],
+              name                    = [[Rock Drill]],
               areaOfEffect            = 8,
               craterMult              = 0.25,
               accuracy                = 200,
+	      collideFriendly         = true,
         
               damage                  = {
                 Cruiser = 15,

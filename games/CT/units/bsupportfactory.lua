@@ -14,9 +14,8 @@ unitDef = {
 
   buildoptions                  = {
 
-	[[bengineer1]],
+	[[bminer]],
 	[[breztank]],
-	[[bmetaltruck]],
 	[[benergytruck]],
   },
 

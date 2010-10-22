@@ -19,6 +19,7 @@ unitDef = {
 	[[bheavymissilemech]],
 	[[bheavyflyingmech]],
         [[badvamphmech]],
+	[[bminer]],
 	[[bbasicmech]],
 
 	[[bsnipermech]],

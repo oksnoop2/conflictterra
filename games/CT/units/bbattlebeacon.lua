@@ -17,7 +17,6 @@ unitDef = {
 	[[bflagship2]],
 	[[bbattlecruiser]],
 	[[btransportcarrier2]],
-	[[bmetalsupplyship]],
 	[[benergysupplyship]],
   },
 

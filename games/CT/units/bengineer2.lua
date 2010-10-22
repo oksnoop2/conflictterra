@@ -10,10 +10,8 @@ local bengineer2 = {
         builder             = true,
 
 	buildoptions		= {
-                [[badvmex]],
                 [[badvpowerplant]],
 		[[badvnuclearpower]],
-		[[badvmetalconverter]],
 		[[badvmechfactory]],
 		[[badvtankfactory]],
 		[[badvairport]],

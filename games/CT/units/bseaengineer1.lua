@@ -10,7 +10,6 @@ local bseaengineer1 = {
         builder             = true,
 
 	buildoptions		= {
-                [[bseamex]],
 		[[bseapowerplant]],
 		[[bshipyard]],
 		[[bsubpens]],
