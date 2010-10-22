@@ -1,0 +1,35 @@
+[ct_hoodoo1]
+	{
+	world=All Worlds;
+	description=Hoodoo;
+	category=arm_corpses;
+	object=ct_hoodoo.s3o;
+	footprintx=2;
+	footprintz=2;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=100;
+	damage=1000; 
+        upright=true;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_hoodoo_cluster1]
+	{
+	world=All Worlds;
+	description=Hoodoos;
+	category=arm_corpses;
+	object=ct_hoodoo_cluster.s3o;
+	footprintx=2;
+	footprintz=2;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=300;
+	damage=1000; 
+        upright=true;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
