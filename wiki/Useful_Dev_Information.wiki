@@ -2,6 +2,7 @@
 
 = Conflict Terra's Categories =
 
+||MINERALS||Special category for Mining to work.||
 ||LAND||Normal land units.  Mobile!||
 ||SINK||Normal buildings.||
 ||HOVER||Hover units.||
@@ -10,7 +11,6 @@
 ||SHIP||All of the naval units.  Mobile!||
 ||FLOAT||Floating buildings.||
 ||SUB||Submarines||
-||MINERALS||Special category for Mining to work.||
 
 = Rough Scale =
 
