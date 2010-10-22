@@ -1,6 +1,22 @@
 #summary The Conflict Terra Way:  How to Make a Unit
 #labels Phase-Implementation
 
+= Table of Contents =
+
+  * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit#Introduction Introduction]
+  * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit#Where_to_Start Where to Start]
+    * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit#3D_Model_File 3D Model File]
+    * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit#Texture_File Texture File]
+    * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit#Unit_Definition Unit Definition]
+    * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit#Animation_Script Animation Script]
+  * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit#First_Step:__Concept First Step: Concept]
+  * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit#Second_Step:__Model Second Step: Model]
+  * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit#Third_Step:__Texture Third Step: Texture]
+  * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit#Fourth_Step:__Upspring Fourth Step: Upspring]
+  * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit#Fifth_Step:__Unit_Def Fifth Step: Unit Def]
+  * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit#Sixth_Step:__Animation_Script Sixth Step: Animation Script]
+  * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit#Seventh_Step:__Test Seventh Step: Test]
+
 = Introduction =
 
 The Conflict Terra Way:  How to Make a Unit.  A tutorial explaining the basics to making a unit in the Spring RTS engine that details the methods used by the Conflict Terra Development Team.  While not explaining every facet of the process, or all of the valid paths to reaching the end, it is a strong sentiment in the two-man Development Team, and elsewhere in the community, that there is poor documentation on how to do things in the engine, so this is an attempt to lay out the basics in laymen's terms.
