@@ -1,8 +1,8 @@
 unitDef = {
 
   unitname                      = [[bsupplydepot]],
-  name                          = [[Supply Depot]],
-  description                   = [[Resource Drop off]],
+  name                          = [[Resource Drop Zone]],
+  description                   = [[Drop-off point for mined metal from meteorites.  Can morph to a mobile form to deploy elsewhere.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
   bmcode                        = [[0]],
@@ -12,14 +12,14 @@ unitDef = {
   builder                       = false,
 
   buildPic                      = [[bsupplydepot.png]],
-  buildTime                     = 40,
+  buildTime                     = 25,
   category                      = [[SINK]],
   corpse                        = [[DEAD]],
 
-  collisionVolumeOffsets = [[0 0 0]],
-  collisionVolumeScales  = [[96 96 160]],
-  collisionVolumeTest    = 1,
-  collisionVolumeType    = [[box]],
+  collisionVolumeOffsets        = [[0 0 0]],
+  collisionVolumeScales         = [[96 96 160]],
+  collisionVolumeTest           = 1,
+  collisionVolumeType           = [[box]],
 
   reclaimable                   = false,
 
@@ -28,7 +28,7 @@ unitDef = {
   footprintZ                    = 10,
   idleAutoHeal                  = 0,
   levelGround                   = false,
-  mass                          = 200,
+  mass                          = 2000,
   maxDamage                     = 1150,
   maxSlope                      = 18,
   maxVelocity                   = 0,
@@ -56,7 +56,7 @@ unitDef = {
   TEDClass                      = [[ENERGY]],
   turnRate                      = 0,
   workerTime                    = 0,
-  yardMap                       = [[oooo oooo oooo oooo]],
+  yardMap                       = [[cooooc cooooc cooooc cooooc cooooc cooooc cooooc cooooc cooooc cooooc]],
   script                        = [[bsupplydepot.lua]],
 
 
@@ -64,7 +64,7 @@ unitDef = {
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Metal Supply Truck Depot]],
+      description      = [[Wreckage - Supply Depot]],
       blocking         = true,
       category         = [[corpses]],
       damage           = 862,
@@ -86,7 +86,7 @@ unitDef = {
 
 
     DEAD2 = {
-      description      = [[Debris - Metal Supply Truck Depot]],
+      description      = [[Debris - Supply Depot]],
       blocking         = false,
 
       category         = [[heaps]],
