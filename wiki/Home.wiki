@@ -19,6 +19,7 @@
     * [http://code.google.com/p/conflictterra/wiki/OriginalNKGCarriers Carriers]
     * [http://code.google.com/p/conflictterra/wiki/UIPlans UI Plans]
     * [http://code.google.com/p/conflictterra/wiki/CEG_Explantion CEG Explanation]
+    * [http://code.google.com/p/conflictterra/wiki/Useful_Dev_Information Useful Development Information]
 
 = Downloads =
 
