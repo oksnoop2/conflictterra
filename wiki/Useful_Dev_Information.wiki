@@ -1,0 +1,19 @@
+#summary Useful tidbits about Conflict Terra, for development purposes.
+
+= Conflict Terra's Categories =
+
+||LAND||Normal land units.  Mobile!||
+||SINK||Normal buildings.||
+||HOVER||Hover units.||
+||FIXEDWING||Normal aircraft that are constantly moving.||
+||GUNSHIP||Aircraft that hover.  Cruisers, and the flying mechs.||
+||SHIP||All of the naval units.  Mobile!||
+||FLOAT||Floating buildings.||
+||SUB||Submarines||
+||MINERALS||Special category for Mining to work.||
+
+= Rough Scale =
+
+For Conflict Terra, we've trained to maintain a relative scale between units.  Things are not exactly to scale, simply because units such as the Flagship would have to be quite massive.  In general, the mechs are intended to be a little smaller than the sort of usual mech scale (such as the scale in Gundam.)  The Hojo Combat Mech is somewhere in the 25 foot range.  Here is an image of the rough scale.
+
+http://img84.imageshack.us/img84/8090/hojocomparison.png
