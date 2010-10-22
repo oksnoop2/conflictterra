@@ -1,7 +1,7 @@
 [ct_pine1]
 	{
 	world=All Worlds;
-	description=Rock;
+	description=Pine Tree;
 	category=arm_corpses;
 	object=ct_pine1.s3o;
 	footprintx=3;
@@ -18,7 +18,7 @@
 [ct_pinecluster1]
 	{
 	world=All Worlds;
-	description=Rock;
+	description=Pine Trees;
 	category=arm_corpses;
 	object=ct_pinecluster1.s3o;
 	footprintx=3;

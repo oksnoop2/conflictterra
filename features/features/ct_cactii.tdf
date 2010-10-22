@@ -1,7 +1,7 @@
 [ct_cactus1]
 	{
 	world=All Worlds;
-	description=Rock;
+	description=Cactus;
 	category=arm_corpses;
 	object=ct_cactus.s3o;
 	footprintx=2;
