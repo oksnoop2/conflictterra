@@ -6,6 +6,7 @@
 ||LAND||Normal land units.  Mobile!||
 ||SINK||Normal buildings.||
 ||HOVER||Hover units.||
+||SWIM||True amphibious units, that travel on the seafloor.  Currently non exist.||
 ||FIXEDWING||Normal aircraft that are constantly moving.||
 ||GUNSHIP||Aircraft that hover.  Cruisers, and the flying mechs.||
 ||SHIP||All of the naval units.  Mobile!||
