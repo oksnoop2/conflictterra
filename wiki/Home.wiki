@@ -6,7 +6,8 @@
   * Game Guide
     * [http://code.google.com/p/conflictterra/wiki/StartersGuide Starter's Guide]
     * [http://code.google.com/p/conflictterra/wiki/ArmorSystem?ts=1280542250&updated=ArmorSystem Armor System]
-    * [http://code.google.com/p/conflictterra/wiki/Adding_an_AI Adding an AI]
+    * [http://code.google.com/p/conflictterra/wiki/Adding_an_AI How to Add an AI]
+    * [http://code.google.com/p/conflictterra/wiki/How_to_update_Conflict_Terra_using_Rapid How to Update Conflict Terra Using Rapid]
   * Unit Guide
     * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview NKG Unit Guide]
     * [http://code.google.com/p/conflictterra/wiki/MechUnitGuide Mech Guide]
@@ -26,6 +27,7 @@
   * [http://conflictterra.googlecode.com/files/ct-1.02.sdz Conflict Terra Version 1.02]
   * [http://conflictterra.googlecode.com/files/Eurekav2.sd7 Eureka Version 2]
   * [http://conflictterra.googlecode.com/files/Fishbone_Ridgev2.sd7 Fishbone Ridge Version 2]
+  * [http://conflictterra.googlecode.com/files/Spring.zip Rapid Files]
 
 
 = Links =
