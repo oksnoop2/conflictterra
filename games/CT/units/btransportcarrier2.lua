@@ -46,7 +46,7 @@
 	  maxVelocity         = 8,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS SUB]],
 	  objectName          = [[btransportcarrier2.s3o]],
 	  releaseHeld         = true,
           scale               = [[1]],

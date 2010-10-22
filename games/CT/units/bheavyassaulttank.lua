@@ -34,7 +34,7 @@
 	  minCloakDistance    = 75,
 	  movementClass       = [[MedTANK]],
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[bheavyassaulttank.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],

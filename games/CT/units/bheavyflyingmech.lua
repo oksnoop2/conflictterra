@@ -38,7 +38,7 @@
 	  maxVelocity         = 4,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING SUB]],
 	  objectName          = [[bheavyflyingmech.s3o]],
 	  scale               = [[1]],
 	  seismicSignature    = 0,

@@ -35,7 +35,7 @@
 	  movementClass       = [[LightTANK]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[baatruck.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_UNIT]],

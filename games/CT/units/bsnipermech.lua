@@ -34,7 +34,7 @@
 	  movementClass       = [[MedMech]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[bsnipermech.s3o]],
 	  seismicSignature    = 16,
 	  selfDestructAs      = [[MEDIUM_UNIT]],

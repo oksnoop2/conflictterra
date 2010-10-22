@@ -33,7 +33,7 @@
 	  minCloakDistance    = 75,
 	  movementClass       = [[LightMech]],
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[bbasicmech.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[MEDIUM_UNIT]],

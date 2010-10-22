@@ -38,7 +38,7 @@
 	  minCloakDistance    = 75,
 	  moverate1           = [[3]],
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM SATELLITE SUB]],
+	  noChaseCategory     = [[MINERALS SUB]],
 	  objectName          = [[bflyingmech.s3o]],
 	  scale               = [[1]],
 	  seismicSignature    = 0,

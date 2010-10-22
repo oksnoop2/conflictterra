@@ -38,7 +38,7 @@
 	  movementClass       = [[MedSHIP]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM LAND SINK SHIP SATELLITE SWIM FLOAT SUB HOVER]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[badvaaship.s3o]],
           radarDistance       = 1000,
 	  seismicSignature    = 4,

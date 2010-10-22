@@ -35,7 +35,7 @@
 	  maxVelocity         = 10,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM SATELLITE SUB]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[bfighter.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[SMALL_UNIT]],

@@ -35,7 +35,7 @@
 	  movementClass       = [[LightTANK]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[bassaulttank.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_UNIT]],

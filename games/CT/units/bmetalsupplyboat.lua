@@ -36,7 +36,7 @@
 	  movementClass       = [[LightSHIP]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM LAND SINK SHIP SATELLITE SWIM FLOAT SUB HOVER]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
 	  objectName          = [[bmetalsupplyboat.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[MEDIUM_UNIT]],

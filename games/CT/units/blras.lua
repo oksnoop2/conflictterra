@@ -38,7 +38,7 @@
 	  movementClass       = [[HeavySHIP]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[FIXEDWING SATELLITE GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[blras.s3o]],
           radarDistance       = 2400,
 	  seismicSignature    = 4,

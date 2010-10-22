@@ -35,7 +35,7 @@
 	  maxDamage           = 550,
 	  maxVelocity         = 11,
 	  minCloakDistance    = 75,
-	  noChaseCategory     = [[TERRAFORM LAND SINK SHIP SWIM FLOAT SUB HOVER]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[blaserplane.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[SMALL_UNIT]],

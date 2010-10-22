@@ -29,7 +29,7 @@
           maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[bempcannonturret.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],

@@ -29,7 +29,7 @@
 	  maxVelocity         = 0,
           maxWaterDepth       = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[badvmechturret.s3o]],
 	  seismicSignature    = 16,
 	  selfDestructAs      = [[SMALL_BUILDING]],

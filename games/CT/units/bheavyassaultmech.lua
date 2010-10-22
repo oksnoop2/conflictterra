@@ -33,7 +33,7 @@
 	  minCloakDistance    = 75,
 	  movementClass       = [[HeavyMech]],
 	  noAutoFire          = false,
-	  noChaseCategory     = [[FIXEDWING SATELLITE SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[bheavyassaultmech.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],

@@ -35,7 +35,7 @@
 	  movementClass       = [[HeavyMech]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[bheavysiegemech.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],

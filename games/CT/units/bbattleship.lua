@@ -37,7 +37,7 @@
 	  minWaterDepth       = 10,
 	  movementClass       = [[MedSHIP]],
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[bbattleship.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[MEDIUM_UNIT]],

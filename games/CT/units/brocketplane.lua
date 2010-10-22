@@ -36,7 +36,7 @@
 	  maxVelocity         = 7,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM SATELLITE FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[brocketplane.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[SMALL_UNIT]],

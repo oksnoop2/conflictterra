@@ -31,7 +31,7 @@
           minWaterDepth       = 0,
 	  minCloakDistance    = 150,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP]],
 	  objectName          = [[badvtorpedoturret.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_BUILDING]],

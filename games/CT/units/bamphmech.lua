@@ -33,7 +33,7 @@
 	  minCloakDistance    = 75,
 	  movementClass       = [[LightHOVER]],
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP]],
 	  objectName          = [[bamphmech2.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_UNIT]],

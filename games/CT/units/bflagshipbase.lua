@@ -51,6 +51,7 @@ unitDef = {
   metalStorage                  = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
+  noChaseCategory               = [[MINERALS SUB]],
   objectName                    = [[bflagshipbase.s3o]],
   radarDistance                 = 1000,
   seismicSignature              = 4,

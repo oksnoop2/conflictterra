@@ -38,7 +38,7 @@
 	  movementClass       = [[HeavySHIP]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[FIXEDWING SATELLITE GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[badvrocketbattleship.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],

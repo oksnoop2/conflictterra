@@ -38,7 +38,7 @@
 	  movementClass       = [[LightHOVER]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM SATELLITE FIXEDWING GUNSHIP HOVER SHIP SWIM SUB LAND FLOAT SINK]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
 	  objectName          = [[bradartank.s3o]],
           onoffable           = true,
           radarDistance       = 1000,

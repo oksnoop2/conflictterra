@@ -44,7 +44,7 @@
 	  maxVelocity         = 3,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
+	  noChaseCategory     = [[MINERALS SUB]],
 	  objectName          = [[bbattlecruiser2.s3o]],
 	  scale               = [[1]],
 	  seismicSignature    = 0,

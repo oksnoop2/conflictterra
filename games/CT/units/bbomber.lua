@@ -36,7 +36,7 @@
 	  maxVelocity         = 9,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[bbomber.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[SMALL_UNIT]],

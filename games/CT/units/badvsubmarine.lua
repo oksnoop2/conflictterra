@@ -37,7 +37,7 @@
 	  minWaterDepth       = 45,
 	  movementClass       = [[SubBOAT]],
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE HOVER]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP]],
 	  objectName          = [[badvsubmarine.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[MEDIUM_UNIT]],

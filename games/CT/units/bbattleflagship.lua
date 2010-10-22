@@ -56,7 +56,7 @@
 	  metalStorage        = 0,
 	  minCloakDistance    = 100,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM SATELLITE FIXEDWING GUNSHIP HOVER SHIP SWIM SUB LAND FLOAT SINK]],
+	  noChaseCategory     = [[MINERALS SUB]],
 	  norestrict          = [[1]],
 	  objectName          = [[bbattleflagship.s3o]],
 	  seismicSignature    = 0,

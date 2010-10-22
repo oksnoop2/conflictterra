@@ -29,7 +29,7 @@
           maxWaterDepth       = 0,
 	  minCloakDistance    = 150,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[FIXEDWING LAND SINK SHIP SATELLITE SWIM GUNSHIP FLOAT SUB HOVER]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[bairturret.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_BUILDING]],

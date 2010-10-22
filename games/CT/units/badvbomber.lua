@@ -36,7 +36,7 @@
 	  maxVelocity         = 5,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB]],
+	  noChaseCategory     = [[MINERALS SUB]],
 	  objectName          = [[badvbomber.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[SMALL_UNIT]],

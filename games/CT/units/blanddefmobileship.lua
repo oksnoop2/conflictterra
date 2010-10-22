@@ -37,7 +37,7 @@
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 150,
 	  movementClass       = [[HeavyHOVER]],
-	  noChaseCategory     = [[FIXEDWING LAND SHIP SATELLITE SWIM GUNSHIP SUB HOVER]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
 	  objectName          = [[blanddefship2.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[LARGE_BUILDING]],

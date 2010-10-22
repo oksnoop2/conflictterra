@@ -39,7 +39,7 @@
 	  movementClass       = [[MedSHIP]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[TERRAFORM LAND SINK SHIP SATELLITE SWIM FLOAT SUB HOVER]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
 	  objectName          = [[badvradarship.s3o]],
           radarDistance       = 2500,
           sonarDistance       = 2500,
