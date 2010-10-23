@@ -15,6 +15,7 @@
   * The Conflict Terra Way
     * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit How to Make a Unit]
     * [http://code.google.com/p/conflictterra/wiki/Simple_Tank_Wings3d How to Model a Tank]
+    * [http://code.google.com/p/conflictterra/wiki/Animation_Tutorial Animation Tutorial]
   * Development Hub
     * [http://code.google.com/p/conflictterra/wiki/SpaceRocks Space Rocks]
     * [http://code.google.com/p/conflictterra/wiki/OriginalNKGCarriers Carriers]
