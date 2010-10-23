@@ -1,0 +1,130 @@
+#summary An attempt at a layman's tutorial to unit animation through Lua.
+
+= Introduction =
+
+I'm going to start by providing an example from Conflict Terra; the animation script for the Oukami Type Tank.  This animation script proved to be the godfather script for all of the units in Conflict Terra; it was the first unit to be properly animated.  The script is very simple, and only deals with a single weapons turret, but is a great starting place.
+
+{{{
+        -- by KR
+        
+        --pieces
+        local body = piece "body"
+        local turret = piece "turret"
+        local barrel = piece "barrel"
+        local flare = piece "flare"
+
+
+        --signals
+        local SIG_AIM = 2
+        local orc_machinegun_flash = SFX.CEG
+        local orc_machinegun_muzzle = SFX.CEG + 1
+        
+        function script.Create()
+               
+        end
+        
+        local function RestoreAfterDelay(unitID)
+                Sleep(2500)
+                Turn(turret, y_axis, 0, math.rad(90))
+                Turn(barrel, x_axis, 0, math.rad(50))
+        end
+
+
+        function script.QueryWeapon1() return flare end
+        
+        function script.AimFromWeapon1() return turret end
+        
+        function script.AimWeapon1( heading, pitch )
+                Signal(SIG_AIM)
+                SetSignalMask(SIG_AIM)
+                Turn(turret, y_axis, heading, math.rad(90))
+                Turn(barrel, x_axis, -pitch, math.rad(50))
+                WaitForTurn(turret, y_axis)
+                WaitForTurn(barrel, x_axis)
+                StartThread(RestoreAfterDelay)
+                return true
+        end
+        
+        function script.FireWeapon1()
+        EmitSfx(flare, orc_machinegun_flash)
+        EmitSfx(flare, orc_machinegun_muzzle)          
+        Sleep(30)
+        end
+        
+        function script.Killed(recentDamage, maxHealth)
+                Sleep(30)
+        end
+}}}
+
+= Links =
+While I'll try to explain things in a simple way, it could still definitely help to see a more technical explanation of why this stuff works the way it does.  The following are great links that can provide a ton of help.
+  * [http://springrts.com/wiki/Animation-LuaCallins Lua Callins]
+  * [http://springrts.com/wiki/Animation-LuaCallouts Lua Callouts]
+
+= First Thing's First =
+You're going to want to identify all of the pieces for your model.  *What are pieces?*  They're the different parts of your model that you cut up in Wings3D or Blender, and labeled and placed axis' to in Upspring.  For our tank, we have:
+
+{{{
+        local body = piece "body"
+        local turret = piece "turret"
+        local barrel = piece "barrel"
+        local flare = piece "flare"
+}}}
+
+This is what each part of each line means:
+||local body||For the rest of the script, the word "body" indicates the piece labeled.||
+||piece "body"||The name of the piece, as labeled by you in Upspring.||
+
+The same goes for the turret, barrel, and flare.  It should be noted that the local and piece do not have to be the same word.  However, for simplicity's sake, it's advisable to keep them the same.  Sometimes, it may be easier to use different words though.  That's up to you.
+
+You need to label the pieces for every piece *used in the script.*  It is advisable to label all of the pieces in the model though, so if you work with it later, you're easily able to tell what you have to work with.
+
+= Ready?  Aim!  Fire! =
+You probably want your units shooting as quickly as possible, and getting your units to fire their weapons happens in the animation script.  There are 5 important parts that must work together to allow your weapon to fire.  I'll go over them:
+
+  * == Query Weapon ==
+{{{
+        function script.QueryWeapon1() return flare end
+}}}
+  This line identifies from which point the projectile will spawn and begin it's trajectory.  It can be any piece in your model, but the projectile will spawn from the axis point assigned to it.  It's advisable to have this piece be simply a point, and to have it be placed at the end of your weapon's barrel.  For our tank, this point is called the flare.
+
+  If your unit has multiple weapons, this must be done for each weapon.  You would simply repeat the line, changing QueryWeapon1() to QueryWeapon2() and so on.  For example:
+
+{{{
+        function script.QueryWeapon1() return flare1 end
+
+        function script.QueryWeapon2() return flare2 end
+
+        function script.QueryWeapon3() return flare3 end
+}}}
+
+  * == Aim From Weapon ==
+{{{
+        function script.AimFromWeapon1() return turret end
+}}}
+  This line indicates from which point the weapon will aim.  This can be a little tricky if your unit does not use a simple turret setup, but you can be in the ballpark and still have your unit fire, although possibly inefficiently.  
+
+  Any easy way to think of which piece to identify here is to ask "What has to turn so that the weapon will aim at it's target?  For a typical tank, that would be the "turret" on the Y axis.
+
+  Much like Query Weapon, this must be done for each weapon on the unit.  But because of the nature of this, the actual piece identified may be the same.  For example, if a tank had a turret, and two gun barrels protruding from it, it would look like this:
+
+{{{
+        function script.AimFromWeapon1() return turret end
+
+        function script.AimFromWeapon2() return turret end
+}}}
+
+== Aim Weapon ==
+{{{
+        function script.AimWeapon1( heading, pitch )
+                Signal(SIG_AIM)
+                SetSignalMask(SIG_AIM)
+                Turn(turret, y_axis, heading, math.rad(90))
+                Turn(barrel, x_axis, -pitch, math.rad(50))
+                WaitForTurn(turret, y_axis)
+                WaitForTurn(barrel, x_axis)
+                StartThread(RestoreAfterDelay)
+                return true
+        end
+}}}
+  This is where the actual movements involved in aiming take place.  This is arguably the most important part of getting your weapon to fire, and a lot is going on.  I'll try my best to break it down.
