@@ -1,5 +1,14 @@
 #summary An attempt at a layman's tutorial to unit animation through Lua.
 
+= Table of Contents =
+  * [http://code.google.com/p/conflictterra/wiki/Animation_Tutorial#Introduction Introduction]
+  * [http://code.google.com/p/conflictterra/wiki/Animation_Tutorial#Links Links]
+  * [http://code.google.com/p/conflictterra/wiki/Animation_Tutorial#First_Thing's_First First Thing's First]
+  * [http://code.google.com/p/conflictterra/wiki/Animation_Tutorial#Ready?__Aim!__Fire! Ready?  Aim!  Fire!]
+    * [http://code.google.com/p/conflictterra/wiki/Animation_Tutorial#Query_Weapon Query Weapon]
+    * [http://code.google.com/p/conflictterra/wiki/Animation_Tutorial#Aim_From_Weapon Aim From Weapon]
+    * [http://code.google.com/p/conflictterra/wiki/Animation_Tutorial#Aim_Weapon Aim Weapon]
+
 = Introduction =
 
 I'm going to start by providing an example from Conflict Terra; the animation script for the Oukami Type Tank.  This animation script proved to be the godfather script for all of the units in Conflict Terra; it was the first unit to be properly animated.  The script is very simple, and only deals with a single weapons turret, but is a great starting place.
@@ -114,7 +123,7 @@ You probably want your units shooting as quickly as possible, and getting your u
         function script.AimFromWeapon2() return turret end
 }}}
 
-== Aim Weapon ==
+  * == Aim Weapon ==
 {{{
         function script.AimWeapon1( heading, pitch )
                 Signal(SIG_AIM)
