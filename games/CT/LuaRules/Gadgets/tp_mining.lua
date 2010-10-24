@@ -78,8 +78,8 @@ function gadget:GameFrame(frameNum)
 	_G.dropoffs = dropoffs
 if (frameNum % 8 ~=0) then return end
 	for i in pairs(miners) do
-		if (miners[i].cargo > 0 and is_miner_at_dropoff (i)) then	--drop the cargo			
-			local minerteam = Spring.GetUnitAllyTeam  (i)
+		if (miners[i].cargo > 0 and is_miner_at_dropoff (i)) then	--drop the cargo
+			local minerteam = Spring.GetUnitTeam (i)
 			Spring.AddTeamResource (minerteam, "metal", miners[i].cargo)
 			miners[i].cargo = 0 
 			--back to mining: ***this needs work!
@@ -219,9 +219,9 @@ function remove_dropoff (unitID)
 end
 
 function is_miner_at_dropoff (miner_unitID)
-local minerteam = Spring.GetUnitAllyTeam (miner_unitID)
+local minerteam = Spring.GetUnitTeam (miner_unitID)
 	for i in pairs (dropoffs) do
-		local dropoffteam = Spring.GetUnitAllyTeam (i)
+		local dropoffteam = Spring.GetUnitTeam (i)
 		if (minerteam == dropoffteam) then
 			local d = Spring.GetUnitRadius (i) + dropoff_distance
 			if Spring.GetUnitSeparation (miner_unitID, i) < d then return true end
