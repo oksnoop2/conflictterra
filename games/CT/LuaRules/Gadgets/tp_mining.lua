@@ -20,7 +20,7 @@ local debug = false
 local miner_name = "bminer";			--the unit used for mining
 local ressource_name = "bminerals"		--the stuff that gets mined
 local dropoff_name = {"bsupplydepot", "bflagshipbase"}	--where the miners bring the ressources to
-local dropoff_distance = 30 --how near do miners have to get to a dropoff to drop their cargo? --for bflagshipbase 300 works good
+local dropoff_distance = 45 --how near do miners have to get to a dropoff to drop their cargo? (this value is added to unitRadius)
 ----------------
 function gadget:UnitFinished(unitID, unitDefID, teamID)
 	if (is_miner_type (unitDefID) == true) then add_miner (unitID) end
@@ -38,7 +38,7 @@ function gadget:UnitDestroyed(unitID, unitDefID, teamID, attackerID)
 	if (is_ressource_type (unitDefID) and is_miner(attackerID)) then
 		--fill the cargo bay of the miner, alot of options here....:
 		miners[attackerID].cargo = miners[attackerID].cargo + 25
-		Spring.DestroyUnit (unitID,true) 		--destroy the mined mineral as workaround to get rid of the wreck
+--		Spring.DestroyUnit (unitID,true) 		--destroy the mined mineral as workaround to get rid of the wreck
 		--send full miners to dropoff:
 		if (miners[attackerID].cargo > 25) then 
 			local x, y, z = Spring.GetUnitPosition(attackerID)
