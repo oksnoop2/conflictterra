@@ -1,8 +1,8 @@
 unitDef = {
 
-  unitname                      = [[bminerals]],
-  name                          = [[Meteorite]],
-  description                   = [[Meteorite]],
+  unitname                      = [[bmeteor]],
+  name                          = [[Meteor]],
+  description                   = [[Meteor]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
   bmcode                        = [[0]],
@@ -33,7 +33,7 @@ unitDef = {
   maxWaterDepth                 = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
-  objectName                    = [[bmeteor_impact.s3o]],
+  objectName                    = [[bmeteor.s3o]],
 
   onoffable                     = true,
   seismicSignature              = 4,
@@ -41,30 +41,13 @@ unitDef = {
   side                          = [[NKG]],
   sightDistance                 = 250,
 
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-		"custom:digdig",
-	    },
-	
-	  },
-
-	  sounds			= {
-	      select = {
-		"ct/mexthump",
-		},
-	      ok = {
-		"ct/mexthump",
-		},
-	  },
-
   smoothAnim                    = true,
   TEDClass                      = [[METAL]],
   turnRate                      = 0,
 
   waterline                     = 1,
   workerTime                    = 0,
-  yardMap                       = [[ooooooooo]],
+  yardMap                       = [[o]],
   script                        = [[bmeteor.lua]],
 
 
@@ -72,7 +55,7 @@ unitDef = {
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[this mineral is mined out.]],
+      description      = [[Meteor]],
       blocking         = false,
       category         = [[heaps]],
       damage           = 10,
@@ -94,7 +77,7 @@ unitDef = {
 
 
     DEAD2 = {
-      description      = [[this mined mineral is totally crushed dude!]],
+      description      = [[Meteor]],
       blocking         = false,
 
       category         = [[heaps]],
@@ -123,4 +106,4 @@ unitDef = {
 
 
 
-return lowerkeys({ bminerals = unitDef })
+return lowerkeys({ bmeteor = unitDef })

@@ -1,8 +1,8 @@
 unitDef = {
 
-  unitname                      = [[bminerals]],
-  name                          = [[Meteorite]],
-  description                   = [[Meteorite]],
+  unitname                      = [[bmeteor_big]],
+  name                          = [[Big Meteor]],
+  description                   = [[Big Meteor]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
   bmcode                        = [[0]],
@@ -15,15 +15,16 @@ unitDef = {
   buildTime                     = 1,
   canattack                     = [[false]],
   category                      = [[MINERALS]],
---  corpse                        = [[DEAD]],
+  corpse                        = [[DEAD]],
+
   reclaimable                   = false,
   repairable			= false,
   energyUse                     = 0,
   explodeAs                     = [[ROCK_MINEDOUT]],
   extractsMetal                 = 0.000,
   floater                       = false,
-  footprintX                    = 1,
-  footprintZ                    = 1,
+  footprintX                    = 9,
+  footprintZ                    = 9,
   idleAutoHeal                  = 0,
   levelGround                   = false,
   mass                          = 37.5,
@@ -33,7 +34,7 @@ unitDef = {
   maxWaterDepth                 = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
-  objectName                    = [[bmeteor_impact.s3o]],
+  objectName                    = [[bmeteor_big.s3o]],
 
   onoffable                     = true,
   seismicSignature              = 4,
@@ -41,30 +42,13 @@ unitDef = {
   side                          = [[NKG]],
   sightDistance                 = 250,
 
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-		"custom:digdig",
-	    },
-	
-	  },
-
-	  sounds			= {
-	      select = {
-		"ct/mexthump",
-		},
-	      ok = {
-		"ct/mexthump",
-		},
-	  },
-
   smoothAnim                    = true,
   TEDClass                      = [[METAL]],
   turnRate                      = 0,
 
   waterline                     = 1,
   workerTime                    = 0,
-  yardMap                       = [[ooooooooo]],
+  yardMap                       = [[ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo]],
   script                        = [[bmeteor.lua]],
 
 
@@ -123,4 +107,4 @@ unitDef = {
 
 
 
-return lowerkeys({ bminerals = unitDef })
+return lowerkeys({ bmeteor_big = unitDef })

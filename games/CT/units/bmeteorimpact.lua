@@ -1,6 +1,6 @@
 unitDef = {
 
-  unitname                      = [[bminerals]],
+  unitname                      = [[bmeteorimpact]],
   name                          = [[Meteorite]],
   description                   = [[Meteorite]],
   acceleration                  = 0,
@@ -41,30 +41,13 @@ unitDef = {
   side                          = [[NKG]],
   sightDistance                 = 250,
 
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-		"custom:digdig",
-	    },
-	
-	  },
-
-	  sounds			= {
-	      select = {
-		"ct/mexthump",
-		},
-	      ok = {
-		"ct/mexthump",
-		},
-	  },
-
   smoothAnim                    = true,
   TEDClass                      = [[METAL]],
   turnRate                      = 0,
 
   waterline                     = 1,
   workerTime                    = 0,
-  yardMap                       = [[ooooooooo]],
+  yardMap                       = [[o]],
   script                        = [[bmeteor.lua]],
 
 
@@ -123,4 +106,4 @@ unitDef = {
 
 
 
-return lowerkeys({ bminerals = unitDef })
+return lowerkeys({ bmeteorimpact = unitDef })
