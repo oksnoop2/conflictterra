@@ -44,7 +44,7 @@ function gadget:UnitDestroyed(unitID, unitDefID, teamID, attackerID)
 			local x, y, z = Spring.GetUnitPosition(attackerID)
 			local tx, ty, tz = nearest_dropoff_position_from_miner (attackerID)
 			if (tx ~= nil) then
-				Spring.GiveOrderToUnit(attackerID, CMD.MOVE_STATE, { 2 }, {})
+--				Spring.GiveOrderToUnit(attackerID, CMD.MOVE_STATE, { 2 }, {})
 				Spring.GiveOrderToUnit(attackerID, CMD.MOVE , {tx, ty, tz  }, {})
 				if (debug) then Spring.Echo ("returning to base with cargo:" .. miners[attackerID].cargo) end
 			end
@@ -64,7 +64,7 @@ if (is_ressource_type (unitDefID) and is_miner(attackerID)) then
 			local tx, ty, tz = nearest_dropoff_position_from_miner (attackerID)
 			if (tx ~= nil) then
 				Spring.GiveOrderToUnit(attackerID, CMD.FIRE_STATE , { 0 }, {}) 
-				Spring.GiveOrderToUnit(attackerID, CMD.MOVE_STATE, { 0 }, {})
+--				Spring.GiveOrderToUnit(attackerID, CMD.MOVE_STATE, { 0 }, {})
 				Spring.GiveOrderToUnit(attackerID, CMD.MOVE , {tx, ty, tz  }, {})
 				if (debug) then Spring.Echo ("returning to base with cargo:" .. miners[attackerID].cargo) end
 			end
@@ -86,13 +86,13 @@ if (frameNum % 8 ~=0) then return end
 			if (Spring.ValidUnitID  (miners[i].last_mined_id)) then
 				if (debug) then Spring.Echo ("miner " .. i .. " returns to mineral") end
 				--Spring.SetUnitTarget (i, miners[i].last_mined_id) --return to the mineral last mined from
-				Spring.GiveOrderToUnit(i, CMD.MOVE_STATE, { 1 }, {})
+--				Spring.GiveOrderToUnit(i, CMD.MOVE_STATE, { 1 }, {})
 				Spring.GiveOrderToUnit(i, CMD.FIRE_STATE , { 1 }, {}) 
 				Spring.GiveOrderToUnit(i, CMD.ATTACK  , { miners[i].last_mined_id  }, {}) 
 			else
 				--search for new minerals
 				local x, y, z = Spring.GetUnitPosition(i)
-				Spring.GiveOrderToUnit(i, CMD.MOVE_STATE, { 2 }, {})
+--				Spring.GiveOrderToUnit(i, CMD.MOVE_STATE, { 2 }, {})
 				Spring.GiveOrderToUnit(i, CMD.FIRE_STATE , { 2 }, {}) 
 				Spring.GiveOrderToUnit(i, CMD.AREA_ATTACK  , { x, y, z,50000  }, {}) 
 				if (debug) then Spring.Echo ("miner " .. i .. " moving out.") end
