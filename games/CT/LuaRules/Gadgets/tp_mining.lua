@@ -230,6 +230,18 @@ local minerteam = Spring.GetUnitTeam (miner_unitID)
 	return false
 end
 
+--idle miners will go search for minerals if set to "roam"
+function gadget:UnitIdle(unitID, unitDefID, teamID) 
+	if (is_miner (unitID)) then
+		if (Spring.GetUnitStates (unitID, "movestate") == 2) then
+			Spring.GiveOrderToUnit(unitID, CMD.FIRE_STATE , { 2 }, {})
+			Spring.GiveOrderToUnit(unitID, CMD.AREA_ATTACK  , { x, y, z,50000  }, {})
+			miners[unitID].status = "goto_res"
+		end
+	end
+end
+
+
 --------------------------------------------------------
 --Border between SYNC and UNSYNC
 --when i wear my frilly dress im a real touhou
