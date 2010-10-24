@@ -172,11 +172,11 @@ end
 
 
 function nearest_dropoff_position_from_miner (minerID)
-	local minerteam = Spring.GetUnitAllyTeam (minerID)		
+	local minerteam = Spring.GetUnitTeam (minerID)		
 	local nearest_distance = 9999999999
 	local nearest_dropoffID = nil
 	for i in pairs (dropoffs) do
-		local dropoffteam = Spring.GetUnitAllyTeam (i)	
+		local dropoffteam = Spring.GetUnitTeam (i)	
 		if (minerteam == dropoffteam) then 
 			local d = Spring.GetUnitSeparation (minerID, i)
 			if (d < nearest_distance) then
