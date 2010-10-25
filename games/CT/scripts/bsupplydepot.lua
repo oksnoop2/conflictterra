@@ -29,7 +29,6 @@
 
 	function script.Activate()
 		StartThread(doors_open)
-		Sleep(30)
 	end
 
 
