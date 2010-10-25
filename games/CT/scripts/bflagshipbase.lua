@@ -55,12 +55,19 @@
 
 	function script.Create(unitID)
 		StartThread(radar_spin)
+		StartThread(doors_open)
 	end
 
 	function radar_spin()
 		Spin (radar, y_axis, 2)
         	Spin (ldish, x_axis, 2)
         	Spin (rdish, x_axis, -2)
+	end
+
+	function doors_open()
+		Sleep (1200)
+		Turn (leftdoor, z_axis, -1.75, 1)
+        	Turn (rightdoor, z_axis, 1.75, 1)
 	end
 
 	local function RestoreAfterDelay(unitID)
