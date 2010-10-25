@@ -22,8 +22,8 @@ unitDef = {
   explodeAs                     = [[ROCK_MINEDOUT]],
   extractsMetal                 = 0.000,
   floater                       = false,
-  footprintX                    = 1,
-  footprintZ                    = 1,
+  footprintX                    = 3,
+  footprintZ                    = 3,
   idleAutoHeal                  = 0,
   levelGround                   = false,
   mass                          = 37.5,
@@ -47,7 +47,7 @@ unitDef = {
 
   waterline                     = 1,
   workerTime                    = 0,
-  yardMap                       = [[o]],
+  yardMap                       = [[ooo ooo ooo]],
   script                        = [[bmeteor.lua]],
 
 
