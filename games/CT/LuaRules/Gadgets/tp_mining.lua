@@ -18,9 +18,9 @@ local dropoffs = {} --[unitID]
 local debug = false
 -----config-----
 local miner_name = "bminer";			--the unit used for mining
-local ressource_name = "bminerals"		--the stuff that gets mined
+local ressource_name = {"bminerals","bmeteorimpact","bmeteorimpact_big"}		--the stuff that gets mined
 local dropoff_name = {"bsupplydepot", "bflagshipbase"}	--where the miners bring the ressources to
-local dropoff_distance = 45 --how near do miners have to get to a dropoff to drop their cargo? (this value is added to unitRadius)
+local dropoff_distance = 100 --how near do miners have to get to a dropoff to drop their cargo? (this value is added to unitRadius)
 ----------------
 function gadget:UnitFinished(unitID, unitDefID, teamID)
 	if (is_miner_type (unitDefID) == true) then add_miner (unitID) end
@@ -157,7 +157,10 @@ function is_ressource_type (unitDefID)
 	if (unitDefID == nil) then return false end
 	local unitDef = UnitDefs[unitDefID]
 	if (unitDef == nil) then return false end
-	if (unitDef.name == ressource_name) then return true end
+    for schluessel, wert in pairs(ressource_name) do                            
+		if (wert == unitDef.name) then return true end
+	end	
+	--if (unitDef.name == ressource_name) then return true end
 	return false
 end
 
