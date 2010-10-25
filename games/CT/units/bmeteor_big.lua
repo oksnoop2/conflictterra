@@ -50,8 +50,10 @@ unitDef = {
   workerTime                    = 0,
   yardMap                       = [[ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo]],
   script                        = [[bmeteor.lua]],
-
-
+  customParams = {
+  	impactunitname="bmeteorimpact_big",		--used by spacerocks: what the unit will be replaced with on impact
+	lolfactor=100,							--how funny this is
+	},
 
   featureDefs                   = {
 
