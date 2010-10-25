@@ -40,27 +40,7 @@ local opts= {
 		},
 	},
     
---{
-    key    = 'ctmode',
-    name   = 'Game Mode',
-    desc   = 'Change the game mode.',
-    type   = 'list', 
-    def    = 'normal',
-    items  = {
-      { 
-        key  = 'normal',
-        name = 'Normal',
-        desc = 'Normal game mode',
-      },
 
-      {
-    key  = 'gather',
-    name = 'Collect Meteors',
-    desc = 'Collect Meteors for metal.',
-      },
-    },
-
-   }
 }
 
 return opts
