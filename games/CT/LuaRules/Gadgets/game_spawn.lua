@@ -131,12 +131,12 @@ function gadget:GameStart()
 	end
 	--SpawnRessources()  HACK: should be done by the map
 	
-	SpawnRessourceField (2500,1500, 12, 300)
-	SpawnRessourceField (5200,2000, 12, 300)
-	SpawnRessourceField (3000,6000, 12, 300)
-	SpawnRessourceField (5500,6000, 12, 300)
-	SpawnRessourceField (3100,4600, 5, 100)
-	SpawnRessourceField (4500,3200, 5, 100)
+--	SpawnRessourceField (2500,1500, 12, 300)
+--	SpawnRessourceField (5200,2000, 12, 300)
+--	SpawnRessourceField (3000,6000, 12, 300)
+--	SpawnRessourceField (5500,6000, 12, 300)
+--	SpawnRessourceField (3100,4600, 5, 100)
+--	SpawnRessourceField (4500,3200, 5, 100)
 	
 	if getfenv(0).AllowUnsafeChanges then
 		getfenv(0).AllowUnsafeChanges("Any string to turn it off")
