@@ -11,7 +11,7 @@ The idea behind Space Rocks is that instead of sending builders out into the wor
 
 == How is it Implemented? ==
 
-The current build of Conflict Terra does *not* have the mechanic present, because it is dormant in development.  A .lua Gadget in the LuaRules/Gadgets folder is where the mechanic will be put when/if it is completed.
+The current build of Conflict Terra does have the mechanic present, and it is playble but still in development. A .lua Gadget in the LuaRules/Gadgets folder is where the magic happens.
 
 = Where We Stand Now =
 
