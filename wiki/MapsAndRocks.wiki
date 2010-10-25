@@ -36,3 +36,10 @@ Delete all the SpawnRessource function calls and add your own or just change the
 The coordinates are the same as the ones you see ingame in the tooltip.
 
 of course if you feel experienced with Lua you can also make complex stuff and write your own functions.
+
+
+==Map Options==
+maps can also have options to change all kind of things<br>
+For example change the waterlevel or different weather.<br>
+Here is a map that adds a custom "rocklayout" list parameter and spawns resources depending on the chosen preset.<br>
+http://www.file-upload.net/download-2919791/Frak2B.sd7.html<br>
