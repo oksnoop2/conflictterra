@@ -1,0 +1,38 @@
+#summary how to spawn starting minerals on the map via map lua
+#labels Phase-Deploy,Phase-Design,maps,rocks,lua
+
+= Introduction =
+The unitname of the startressource is: bminerals<br>
+After balance, testing etc. is done it should not be changed anymore.<br>
+This page explains how to add start minerals to your map.
+
+= Details =
+
+my ugly example map that spawns rock in some predfined positions:<br>
+http://www.file-upload.net/download-2917432/frak2B.sd7.html<br>
+basically look at *LuaRules\Gadgets\tp_ressourcespawner.lua* and scroll down to
+*GameStart()*<br>
+There you find this:<br>
+SpawnRessourceField (3900,1900, 3, 300)<br>
+SpawnRessourceField (2250,2300, 2, 300)<br>
+SpawnRessource (1800,2500)<br>
+SpawnRessource (2500,2700)<br>
+SpawnRessource (3650,1400)<br>
+SpawnRessource (4360,1600)<br>
+SpawnRessourceField (770,3630, 2, 250)<br>
+SpawnRessourceField (5150,480, 2, 250)<br><br>
+
+
+*SpawnRessource (x,y)* <br>
+spawns a single bminerals at x:y coordinates
+
+*SpawnRessourceField (x,y, n, spread)*<br>
+spawns n minerals at x:y coordinates spread over an area.
+spread=how far away from x:y rocks are spawned (randomly)
+
+http://h-1.abload.de/img/spawnressourcefieldun06.png
+
+Delete all the SpawnRessource function calls and add your own or just change the numbers.
+The coordinates are the same as the ones you see ingame in the tooltip.
+
+of course if you feel experienced with Lua you can also make complex stuff and write your own functions.
