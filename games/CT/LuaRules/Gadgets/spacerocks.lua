@@ -21,13 +21,13 @@ end
 ----- Settings -----------------------------------------------------------------
 local meteorDefName  = {"bmeteor_big", "bmeteor"} --meteor unit name in flight, use a unit with a death explosion
 --local crashedMeteorDefname ="bminerals"  --the unit that should remain after the meteor has crashed into the ground
-local meteorInterval = 120 	-- time between the arrival of meteor storms, in seconds
+local meteorInterval = 120--2000 	-- time between the arrival of meteor storms, in seconds
 local meteorNumber = 5		--how many meteors per meteor storm
 local meteorSpread = 300	--how far apart meteors drop (this defines the maximum possible distance)
 local fallGravity = 1
 local meteorSpawnHeight = 5000
 local min_distance_to_units = 100	--how far away from player units a meteor must impact to leave a rock (as not to block units or factories)
-local burnEffect1 = "buildersparks" -- CEG used for the meteor trail, needs to be visible out of los
+local burnEffect1 = "firetrail" -- CEG used for the meteor trail, needs to be visible out of los
 local burnEffect2 = "buildersparks"
 
 ----------------------------------------------------------------------------------
@@ -56,8 +56,10 @@ local function Impact (meteorID)
 end
 
 function gadget:GameFrame(frame)
-
-	if frame % (30 * meteorInterval) == 0 then 
+--Spring.SpawnCEG(burnEffect2, 10,300 , 10)
+--Spring.SpawnCEG(burnEffect1, 50,300 , 10,0,1,0,5)
+if (frame % 90 == 0) then Spring.SpawnCEG(burnEffect1, 100,300,10) end
+	if frame > 1 and frame % (30 * meteorInterval) == 0 then 
 		-- pick a random location for the meteor storm
 		local meteorSpawnX = math.random(Game.mapSizeX)
 		local meteorSpawnZ = math.random(Game.mapSizeZ)
@@ -84,7 +86,7 @@ function gadget:GameFrame(frame)
 		Impact (meteorID)
     else -- above ground, show the meteor trail
       Spring.SpawnCEG(burnEffect1, x, y + 30, z)
-      Spring.SpawnCEG(burnEffect2, x, y, z)
+--      Spring.SpawnCEG(burnEffect2, x, y, z)
     end
   end
 end
