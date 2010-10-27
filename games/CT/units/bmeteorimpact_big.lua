@@ -11,6 +11,7 @@ unitDef = {
   buildCostMetal                = 1,
   builder                       = false,
 
+  iconType           		  = "resource",
   buildPic                      = [[bmex.png]],
   buildTime                     = 1,
   canattack                     = [[false]],

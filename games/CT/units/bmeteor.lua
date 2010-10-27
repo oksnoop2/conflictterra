@@ -9,8 +9,8 @@ unitDef = {
   brakeRate                     = 0,
   buildCostEnergy               = 1,
   buildCostMetal                = 1,
+  iconType           		  = "meteor",
   builder                       = false,
-
   buildPic                      = [[bmex.png]],
   buildTime                     = 1,
   canattack                     = [[false]],
