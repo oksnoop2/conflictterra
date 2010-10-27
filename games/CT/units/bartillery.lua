@@ -61,7 +61,7 @@
 	  },
 
 	  side                = [[NKG]],
-	  sightDistance       = 1250,
+	  sightDistance       = 750,
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
 	  TEDClass            = [[TANK]],
