@@ -81,7 +81,7 @@ local bminer = {
         
           },
 
-        smoothAnim          = true,
+        smoothAnim          = false,--true,
         steeringmode        = [[1]],
         TEDClass            = [[TANK]],
         terraformSpeed      = 300,
