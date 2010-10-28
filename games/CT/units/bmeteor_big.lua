@@ -21,7 +21,7 @@ unitDef = {
   reclaimable                   = false,
   repairable			= false,
   energyUse                     = 0,
-  explodeAs                     = [[ROCK_MINEDOUT_BIG]],
+  explodeAs                     = [[ROCK_IMPACT_BIG]],
   extractsMetal                 = 0.000,
   floater                       = false,
   footprintX                    = 9,
@@ -39,7 +39,7 @@ unitDef = {
 
   onoffable                     = true,
   seismicSignature              = 4,
-  selfDestructAs                = [[ROCK_MINEDOUT_BIG]],
+  selfDestructAs                = [[ROCK_IMPACTT_BIG]],
   side                          = [[NKG]],
   sightDistance                 = 250,
 

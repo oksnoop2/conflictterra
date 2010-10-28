@@ -178,7 +178,7 @@ BIG_UNIT = {
 	      },
   },
 
-  ROCK_MINEDOUT_SMALL = {
+  ROCK_IMPACT_SMALL = {
 
    name="Small Unit",
    craterMult=2000,
@@ -205,7 +205,7 @@ BIG_UNIT = {
 	      },
   },
 
-ROCK_MINEDOUT_BIG = {
+ROCK_IMPACT_BIG = {
 
    name="Large building",
    rendertype=4,
