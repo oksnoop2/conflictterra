@@ -181,6 +181,7 @@ BIG_UNIT = {
   ROCK_MINEDOUT_SMALL = {
 
    name="Small Unit",
+   craterMult=2000,
    rendertype=4,
    ballistic=1,
    turret=1,
@@ -208,6 +209,7 @@ ROCK_MINEDOUT_BIG = {
 
    name="Large building",
    rendertype=4,
+   craterMult=4000,
    ballistic=1,
    turret=1,
    impulseFactor      = 0,
