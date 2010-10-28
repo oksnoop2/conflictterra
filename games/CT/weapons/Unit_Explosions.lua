@@ -178,7 +178,57 @@ BIG_UNIT = {
 	      },
   },
 
+  ROCK_MINEDOUT_SMALL = {
 
+   name="Small Unit",
+   rendertype=4,
+   ballistic=1,
+   turret=1,
+   impulseFactor      = 0,
+   range=480,
+   reloadtime=3.6,
+   weaponvelocity=250,
+   areaofeffect=75,
+   soundstart="golgotha/old_generic.wav",
+   soundhit="golgotha/old_generic.wav",
+
+   explosiongenerator="custom:SMALL_UNIT_Expl",
+	      damage                  = {
+		Cruiser = 50,
+		Building = 50,
+		Mech = 50,
+		Tank = 50,
+		Aircraft = 50,
+		Ship = 50,
+		Sub = 50,
+	      },
+  },
+
+ROCK_MINEDOUT_BIG = {
+
+   name="Large building",
+   rendertype=4,
+   ballistic=1,
+   turret=1,
+   impulseFactor      = 0,
+   range=480,
+   reloadtime=3.6,
+   weaponvelocity=250,
+   areaofeffect=400,
+   soundstart="golgotha/generic.wav",
+   soundhit="golgotha/generic.wav",
+   explosiongenerator="custom:FACTORY_EXPLOSION",
+	      damage                  = {
+		Cruiser = 200,
+		Building = 200,
+		Mech = 200,
+		Tank = 200,
+		Aircraft = 200,
+		Ship = 200,
+		Sub = 200,
+	      },
+  },
+  
 }
 
 return lowerkeys(unitDeaths)
