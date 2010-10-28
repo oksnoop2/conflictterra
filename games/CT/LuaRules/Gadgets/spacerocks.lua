@@ -49,10 +49,10 @@ local function Impact (meteorID)
 			local remains = Spring.CreateUnit (remains_name, x,y,z, math.random(0,3), Spring.GetGaiaTeamID())  --leave a crashed meteor thing at the impact site
 			Spring.SetUnitAlwaysVisible(remains, true)
 			Spring.GiveOrderToUnit(remains, CMD.ONOFF, { 0 }, {} )
-		end	
-		meteors[meteorID] = nil -- remove meteor from the meteor set
-		Spring.DestroyUnit(meteorID) -- make meteor explode
+		end			
 	end
+	meteors[meteorID] = nil -- remove meteor from the meteor set
+	Spring.DestroyUnit(meteorID) -- make meteor explode
 end
 
 function gadget:GameFrame(frame)
