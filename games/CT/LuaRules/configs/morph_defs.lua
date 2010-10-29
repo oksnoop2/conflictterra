@@ -152,6 +152,24 @@ local morphDefs = {
     },
   },
 
+  bmechcruiser = {
+    {
+      into = 'bmechcruiserfactory',
+      metal = 0,
+      energy = 0,
+      time = 5,
+    },
+  },
+
+  bmechcruiserfactory = {
+    {
+      into = 'bmechcruiser',
+      metal = 0,
+      energy = 0,
+      time = 5,
+    },
+  },
+
   bmechfactory = {
     {
       into = 'badvmechfactory',

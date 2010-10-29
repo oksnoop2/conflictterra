@@ -8,6 +8,7 @@ local armorDefs = {
     "bsupplydepotmobile",
     "bmetalsupplyship",
     "benergysupplyship",
+    "bmechcruiser",
   },
 
   Building  =  {
@@ -42,6 +43,7 @@ local armorDefs = {
     "badvsearadartower",
     "badvtorpedoturret",
     "bshieldgen",
+    "bmechcruiserfactory",
     "bmechfactory",
     "badvmechfactory",
     "btankfactory",
