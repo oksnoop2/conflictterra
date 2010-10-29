@@ -13,7 +13,7 @@ return {
         size               = 80,
         sizeexpansion      = 10,
         slowdown           = .1,
-        speed              = [[0.0025 r-0.6, 1 r1.0, 0.0025 r-0.6]],
+        speed              = [[0.0025 r, 1 r1.0, 0.0025 r]],
 		alwaysVisible = 1,
 	  },
     },

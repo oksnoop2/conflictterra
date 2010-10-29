@@ -21,6 +21,7 @@ local miner_name = "bminer";			--the unit used for mining
 local ressource_name = {"bminerals","bmeteorimpact","bmeteorimpact_big"}		--the stuff that gets mined
 local dropoff_name = {"bsupplydepot", "bflagshipbase"}	--where the miners bring the ressources to
 local dropoff_distance = 100 --how near do miners have to get to a dropoff to drop their cargo? (this value is added to unitRadius)
+local maxcargo = 25			--how much a miner can carry before having to return to a drop off
 ----------------
 function gadget:UnitFinished(unitID, unitDefID, teamID)
 	if (is_miner_type (unitDefID) == true) then add_miner (unitID) end
@@ -56,10 +57,10 @@ end
 function gadget:UnitDamaged (unitID, unitDefID, unitTeam, damage, paralyzer, weaponID, attackerID, attackerDefID, attackerTeam) 
 if (is_ressource_type (unitDefID) and is_miner(attackerID)) then
 		--fill the cargo bay of the miner, alot of options here....:
-		miners[attackerID].cargo = miners[attackerID].cargo + math.ceil(damage)
+		if (miners[attackerID].cargo < maxcargo) then miners[attackerID].cargo = miners[attackerID].cargo + math.ceil(damage) end
 		if (unitID ~=nil) then miners[attackerID].last_mined_id = unitID end
 		--send full miners to dropoff:
-		if (miners[attackerID].cargo > 25) then 
+		if (miners[attackerID].cargo >= maxcargo) then 
 			local x, y, z = Spring.GetUnitPosition(attackerID)
 			local tx, ty, tz = nearest_dropoff_position_from_miner (attackerID)
 			if (tx ~= nil) then
@@ -87,7 +88,7 @@ if (frameNum % 8 ~=0) then return end
 				if (debug) then Spring.Echo ("miner " .. i .. " returns to mineral") end
 				--Spring.SetUnitTarget (i, miners[i].last_mined_id) --return to the mineral last mined from
 --				Spring.GiveOrderToUnit(i, CMD.MOVE_STATE, { 1 }, {})
-				Spring.GiveOrderToUnit(i, CMD.FIRE_STATE , { 1 }, {}) 
+				Spring.GiveOrderToUnit(i, CMD.FIRE_STATE , { 2 }, {}) 
 				Spring.GiveOrderToUnit(i, CMD.ATTACK  , { miners[i].last_mined_id  }, {}) 
 			else
 				--search for new minerals
@@ -236,9 +237,11 @@ end
 --idle miners will go search for minerals if set to "roam"
 function gadget:UnitIdle(unitID, unitDefID, teamID) 
 	if (is_miner (unitID)) then
-		if (Spring.GetUnitStates (unitID, "movestate") == 2) then
+		local movestate = Spring.GetUnitStates (unitID, "movestate")
+		if (movestate == 2 or movestate == 1) then --roam or manoever
 			Spring.GiveOrderToUnit(unitID, CMD.FIRE_STATE , { 2 }, {})
 			Spring.GiveOrderToUnit(unitID, CMD.AREA_ATTACK  , { x, y, z,50000  }, {})
+			miners[unitID].last_mined_id = nil
 			miners[unitID].status = "goto_res"
 		end
 	end
@@ -301,6 +304,12 @@ function gadget:DrawWorldPreUnit()
 						--gl.DrawGroundCircle (x,y,z, 30, 3)
 						gl.Color(1, 1, 0, 1)
 						gl.DrawGroundCircle (x,y,z, SYNCED.miners[i].cargo, 3)  --growing triangle shows cargo status
+						--mark last_mined minerals
+						if (Spring.ValidUnitID  (SYNCED.miners[i].last_mined_id)) then
+							local x,y,z=Spring.GetUnitPosition (SYNCED.miners[i].last_mined_id)
+							gl.Color(0, 0.8, 0, 1)
+							gl.DrawGroundCircle (x,y,z, 30, 15)  --growing triangle shows cargo status							
+						end
 					end
 				end
 			end
