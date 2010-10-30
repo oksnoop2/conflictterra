@@ -35,32 +35,12 @@ local opts= {
 		items = {
 			{ key = "standard", name = "Flagship", desc = "Start with the flagship."  },
 			{ key = "base", name = "Moblie HQ", desc = "Start with the Mobile HQ." },
-			{ key = "bengineer2", name = "Advanced Engineer", desc = "Start with the advanced engineer." }
+			{ key = "bengineer2", name = "Advanced Engineer", desc = "Start with the advanced engineer." },
 			
 		},
 	},
     
---{
-    key    = 'ctmode',
-    name   = 'Game Mode',
-    desc   = 'Change the game mode.',
-    type   = 'list', 
-    def    = 'normal',
-    items  = {
-      { 
-        key  = 'normal',
-        name = 'Normal',
-        desc = 'Normal game mode',
-      },
 
-      {
-    key  = 'gather',
-    name = 'Collect Meteors',
-    desc = 'Collect Meteors for metal.',
-      },
-    },
-
-   }
 }
 
 return opts
