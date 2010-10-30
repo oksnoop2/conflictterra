@@ -18,6 +18,7 @@ unitDef = {
   category                      = [[MINERALS]],
 --  corpse                        = [[DEAD]],
   reclaimable                   = false,
+  resurrectable			  = false,
   repairable			= false,
   energyUse                     = 0,
   explodeAs                     = [[ROCK_MINEDOUT]],
@@ -50,7 +51,9 @@ unitDef = {
   workerTime                    = 0,
   yardMap                       = [[ooo ooo ooo]],
   script                        = [[bmeteor.lua]],
-
+  customParams = {
+ 	is_mineable=1,		--used by minig: if the unit is a mineable resource
+	},
 
 
   featureDefs                   = {
