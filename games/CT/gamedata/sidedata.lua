@@ -6,9 +6,9 @@ local
 
   [1] = {
 
-    name      = 'PN',
+    name      = 'NKG',
 
-    startunit = 'kaircon',
+    startunit = 'bflagship2',
 
   },
 
