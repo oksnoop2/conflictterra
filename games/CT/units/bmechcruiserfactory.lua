@@ -1,8 +1,8 @@
 unitDef = {
 
   unitname                      = [[bmechcruiserfactory]],
-  name                          = [[Mech Cruiser Factory]],
-  description                   = [[Produces combat and support mechs.  Can morph back into the Mech Cruiser.]],
+  name                          = [[Saito Class Cruiser Mech Factory]],
+  description                   = [[Produces combat and support mechs.  Can morph back into the Saito Class Cruiser Cruiser.]],
   amphibious                    = false,
   acceleration                  = 0,
   bmcode                        = [[0]],

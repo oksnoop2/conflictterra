@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bmechcruiser]],
-	  name                = [[Mech Cruiser]],
-	  description         = [[Cruiser that is able to contruct Combat Mechs.  Must deploy into the Mech Cruiser Factory in order to build mechs.]],
+	  name                = [[Saito Class Cruiser]],
+	  description         = [[Cruiser that is able to contruct Combat Mechs.  Must deploy into the Saito Class Cruiser Mech Factory in order to build mechs.]],
 	  acceleration        = 0.15,
 	  activateWhenBuilt   = true,
           airStrafe           = 0,
