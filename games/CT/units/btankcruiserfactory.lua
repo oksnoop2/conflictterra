@@ -1,8 +1,8 @@
 unitDef = {
 
-  unitname                      = [[bmechcruiserfactory]],
-  name                          = [[Saito Class Cruiser Mech Factory]],
-  description                   = [[Produces combat and support mechs.  Can morph back into the Saito Class Cruiser.]],
+  unitname                      = [[btankcruiserfactory]],
+  name                          = [[Takeda Class Cruiser Tank Factory]],
+  description                   = [[Produces tanks.  Can morph back into the Takeda Class Cruiser.]],
   amphibious                    = false,
   acceleration                  = 0,
   bmcode                        = [[0]],
@@ -13,22 +13,21 @@ unitDef = {
 
   buildoptions                  = {
 
-    [[bminer]],
-    [[bbasicmech]],
+	[[bminer]],
+	[[bassaulttank]],
 
-    [[bsnipermech]],
+	[[bmissiletank]],
 
-    [[bflyingmech]],
-    [[bmissilemech]],
-    [[bantitankmech]],
-    [[bsiegemech]],
+	[[bartillery]],
+	[[baabuggy]],
+	[[bradartank]],
 
-    [[bamphmech]],
+	[[breztank]],
   },
 
 
 
-  buildPic                      = [[bmechcruiserfactory.png]],
+  buildPic                      = [[btankcruiserfactory.png]],
   buildTime                     = 45,
   canMove                       = true,
   canPatrol                     = true,
@@ -56,7 +55,7 @@ unitDef = {
   metalMake                     = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
-  objectName                    = [[bmechcruiserfactory.s3o]],
+  objectName                    = [[btankcruiser.s3o]],
 
   seismicSignature              = 4,
   selfDestructAs                = [[LARGE_BUILDING]],
@@ -79,7 +78,7 @@ unitDef = {
   turnRate                      = 0,
   workerTime                    = 1,
   yardMap                       = [[oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc ccccccccccccccc]],
-  script                        = [[bmechcruiserfactory.lua]],
+  script                        = [[btankcruiserfactory.lua]],
 
 
 
@@ -137,4 +136,4 @@ unitDef = {
 
 
 
-return lowerkeys({ bmechcruiserfactory = unitDef })
+return lowerkeys({ btankcruiserfactory = unitDef })

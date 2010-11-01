@@ -170,6 +170,24 @@ local morphDefs = {
     },
   },
 
+  btankcruiser = {
+    {
+      into = 'btankcruiserfactory',
+      metal = 0,
+      energy = 0,
+      time = 5,
+    },
+  },
+
+  btankcruiserfactory = {
+    {
+      into = 'btankcruiser',
+      metal = 0,
+      energy = 0,
+      time = 5,
+    },
+  },
+
   bmechfactory = {
     {
       into = 'badvmechfactory',
