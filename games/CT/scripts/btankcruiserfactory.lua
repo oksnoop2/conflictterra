@@ -46,7 +46,7 @@
 	function script.StartBuilding()
 		Show( leftarm )
 		Show( rightarm )
-		Move( pad, z_axis, 100, 20 )
+		Move( pad, z_axis, 80, 20 )
 	end
 
 	function script.StopBuilding()
