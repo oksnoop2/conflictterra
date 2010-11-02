@@ -43,6 +43,7 @@ unitDef = {
   footprintX                    = 11,
   footprintZ                    = 16,
   idleAutoHeal                  = 0,
+  isAirBase                     = true,
   mass                          = 275,
   maxDamage                     = 8500,
   maxSlope                      = 15,

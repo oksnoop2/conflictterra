@@ -59,6 +59,10 @@
 		Show( platform )
 	end
 
+	function script.QueryLandingPads()
+		return { rpad }
+	end
+
 	function script.Killed(recentDamage, maxHealth)
 		return 0
 	end
