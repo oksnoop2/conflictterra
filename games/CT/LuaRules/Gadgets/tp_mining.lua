@@ -112,13 +112,13 @@ function make_miner_table()
 end
 
 function make_resource_name_table ()
-Spring.Echo ("tp_mining.lua: looking for mineable unitdefs")
+if (debug) then Spring.Echo ("tp_mining.lua: looking for mineable unitdefs") end
 	for id,unitDef in pairs(UnitDefs) do
 		local cp = UnitDefs[id].customParams
 		if (cp) then
 			if (cp.is_mineable) then
 				local resname = unitDef.name
-				Spring.Echo ("tp_mining.lua: found mineable resource:" .. resname)
+				if (debug) then Spring.Echo ("tp_mining.lua: found mineable resource:" .. resname) end
 				table.insert (resource_name, resname)
 			end
 		end
@@ -229,7 +229,7 @@ end
 --idle miners will go search for minerals if set to "roam"
 function gadget:UnitIdle(unitID, unitDefID, teamID) 
 	if (is_miner (unitID)) then
-		Spring.Echo ("idle miner" .. unitID)
+		if (debug) then Spring.Echo ("idle miner" .. unitID) end
 --		if (miners[unitID].cargo > 0) then return_to_dropoff (unitID) end
 		local movestate = Spring.GetUnitStates (unitID, "movestate")
 		if (movestate ~=0) then --roam or manoever
