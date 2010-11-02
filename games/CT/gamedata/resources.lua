@@ -33,7 +33,9 @@
 				muzzleside			= 'muzzlefront.tga',
 				muzzlefront			= 'muzzleside.tga',
 				largebeam			= 'largelaserfalloff.tga',
-				tpsmoke 			= 'tpsmoke.png'
+				tpsmoke 			= 'tpsmoke.png',
+				tpsmoke2			= 'tpsmoke2.png',
+				tpdollar			= 'tpdollar.png',
 			},
 		}
 	}
