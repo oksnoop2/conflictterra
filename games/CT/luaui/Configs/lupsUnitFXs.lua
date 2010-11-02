@@ -71,6 +71,12 @@ effectUnitDefs = {
 		{class='AirJet',	options={color={0,0,0.75,0},	width =  15, length=45, piece="fxflare4", onActive=true}},
 	},
 
+	baircruiser = {
+		{class='AirJet',	options={color={0,0,0.75,0},	width =  15, length=45, piece="fxflare1", onActive=true}},
+		{class='AirJet',	options={color={0,0,0.75,0},	width =  15, length=45, piece="fxflare2", onActive=true}},
+		{class='AirJet',	options={color={0,0,0.75,0},	width =  15, length=45, piece="fxflare3", onActive=true}},
+	},
+
 	
 
 	bflyingmech = {
