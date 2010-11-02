@@ -1,4 +1,4 @@
-#summary how to spawn starting minerals on the map via map lua
+#summary How to spawn starting minerals on the map via map lua
 #labels Phase-Deploy,Phase-Design,maps,rocks,lua
 
 = Introduction =
@@ -8,38 +8,39 @@ This page explains how to add start minerals to your map.
 
 = Details =
 
-my ugly example map that spawns rock in some predfined positions:<br>
-http://www.file-upload.net/download-2917432/frak2B.sd7.html<br>
-basically look at *LuaRules\Gadgets\tp_ressourcespawner.lua* and scroll down to
+[http://www.file-upload.net/download-2917432/frak2B.sd7.html Knorke's map] that spawns rock in some predefined positions:<br>
+
+Basically look at *LuaRules\Gadgets\tp_ressourcespawner.lua* and scroll down to
 *GameStart()*<br>
 There you find this:<br>
-SpawnRessourceField (3900,1900, 3, 300)<br>
-SpawnRessourceField (2250,2300, 2, 300)<br>
-SpawnRessource (1800,2500)<br>
-SpawnRessource (2500,2700)<br>
-SpawnRessource (3650,1400)<br>
-SpawnRessource (4360,1600)<br>
-SpawnRessourceField (770,3630, 2, 250)<br>
-SpawnRessourceField (5150,480, 2, 250)<br><br>
+{{{
+SpawnRessourceField (3900,1900, 3, 300)
+SpawnRessourceField (2250,2300, 2, 300)
+SpawnRessource (1800,2500)
+SpawnRessource (2500,2700)
+SpawnRessource (3650,1400)
+SpawnRessource (4360,1600)
+SpawnRessourceField (770,3630, 2, 250)
+SpawnRessourceField (5150,480, 2, 250)
+}}}
 
 
 *SpawnRessource (x,y)* <br>
-spawns a single bminerals at x:y coordinates
+Spawns a single bminerals at x:y coordinates
 
 *SpawnRessourceField (x,y, n, spread)*<br>
-spawns n minerals at x:y coordinates spread over an area.
-spread=how far away from x:y rocks are spawned (randomly)
+Spawns n minerals at x:y coordinates spread over an area.
+Spread = how far away from x:y rocks are spawned (randomly)
 
 http://h-1.abload.de/img/spawnressourcefieldun06.png
 
 Delete all the SpawnRessource function calls and add your own or just change the numbers.
 The coordinates are the same as the ones you see ingame in the tooltip.
 
-of course if you feel experienced with Lua you can also make complex stuff and write your own functions.
+Of course if you feel experienced with Lua you can also make complex stuff and write your own functions.
 
 
 ==Map Options==
-maps can also have options to change all kind of things<br>
+Maps can also have options to change all kind of things<br>
 For example change the waterlevel or different weather.<br>
-Here is a map that adds a custom "rocklayout" list parameter and spawns resources depending on the chosen preset.<br>
-http://www.file-upload.net/download-2919791/Frak2B.sd7.html<br>
+Here is a [http://www.file-upload.net/download-2919791/Frak2B.sd7.html map] that adds a custom "rocklayout" list parameter and spawns resources depending on the chosen preset.<br>
