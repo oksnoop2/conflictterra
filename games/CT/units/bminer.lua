@@ -17,6 +17,7 @@ local bminer = {
                 [[btankfactory]],
                 [[bairport]],
                 [[bsupportfactory]],
+		[[bbeacon]],
                 [[bshipyard]],
                 [[bsubpens]],
                 [[bradartower]],
