@@ -14,8 +14,12 @@ unitDef = {
 
   buildoptions                  = {
 
+	[[bengineer1]],
 	[[bminer]],
 	[[breztank]],
+	[[bmechcruiser]],
+	[[btankcruiser]],
+	[[baircruiser]],
   },
 
 
