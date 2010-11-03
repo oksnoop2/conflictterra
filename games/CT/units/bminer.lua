@@ -121,7 +121,7 @@ local bminer = {
               areaOfEffect            = 8,
               craterMult              = 0.25,
               accuracy                = 200,
-	      collideFriendly         = true,
+	      collideFriendly         = false,
         
               damage                  = {
                 Cruiser = 1,
@@ -151,8 +151,7 @@ local bminer = {
               weaponType              = [[Cannon]],
               weaponVelocity          = 750,
               targetBorder=1,
-			  avoidFriendly=0,
-			  collisionFriendly=0,
+              avoidFriendly=0,
 			},
         
           },
