@@ -1,14 +1,14 @@
 unitDef = {
 
-  unitname                      = [[bbattlebeacon]],
-  name                          = [[Cruiser Beacon]],
-  description                   = [[Beacon used to call in cruisers. - Build Limit: 2]],
+  unitname                      = [[badvbeacon]],
+  name                          = [[Advanced Cruiser Beacon]],
+  description                   = [[Beacon used to call in more advanced Cruisers.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = false,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 1500,
+  buildCostEnergy               = 1600,
   buildCostMetal                = 1200,
   builder                       = true,
 
@@ -22,7 +22,7 @@ unitDef = {
 
 
 
-  buildPic                      = [[bbeacon.png]],
+  buildPic                      = [[badvbeacon.png]],
   buildTime                     = 120,
   canMove                       = true,
   canPatrol                     = true,
@@ -50,7 +50,7 @@ unitDef = {
   metalMake                     = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
-  objectName                    = [[bbeacon.s3o]],
+  objectName                    = [[badvbeacon.s3o]],
 
   seismicSignature              = 4,
   selfDestructAs                = [[LARGE_BUILDING]],
@@ -72,8 +72,7 @@ unitDef = {
   turnRate                      = 0,
   workerTime                    = 1,
   yardMap                       = [[ccccccoooocccccc cccccoccccoccccc ccccoccccccocccc cccoccccccccoccc ccoccccccccccocc coccccccccccccoc occcccccccccccco occcccccccccccco occcccccccccccco occcccccccccccco coccccccccccccoc ccoccccccccccocc cccoccccccccoccc ccccoccccccocccc cccccoccccoccccc ccccccoooocccccc]],
-  unitRestricted                = 2,
-  script                        = [[bbeacon.lua]],
+  script                        = [[badvbeacon.lua]],
 
 
 
@@ -132,4 +131,4 @@ unitDef = {
 
 
 
-return lowerkeys({ bbattlebeacon = unitDef })
+return lowerkeys({ badvbeacon = unitDef })

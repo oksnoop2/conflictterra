@@ -17,7 +17,7 @@ local bengineer2 = {
 		[[badvairport]],
 		[[badvshipyard]],
 		[[badvsubpens]],
-                [[bbattlebeacon]],
+                [[badvbeacon]],
 		[[bexperimentalpad]],
 		[[badvradartower]],
 		[[badvjammertower]],

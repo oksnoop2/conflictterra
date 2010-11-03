@@ -61,7 +61,7 @@ local armorDefs = {
     "badvshipyard",
     "bsubpens",
     "badvsubpens",
-    "bbattlebeacon",
+    "badvbeacon",
     "bmetalsupplyshipdepot",
     "benergysupplyshipdepot",
     "bexperimentalpad",

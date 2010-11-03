@@ -16,6 +16,9 @@ unitDef = {
 
 	[[bminer]],
 	[[breztank]],
+	[[bmechcruiser]],
+	[[btankcruiser]],
+	[[baircruiser]],
   },
 
 
@@ -84,7 +87,6 @@ unitDef = {
   TEDClass                      = [[PLANT]],
   turnRate                      = 0,
   workerTime                    = 1,
-  unitRestricted                = 1,
   yardMap                       = [[cccccccccccccccooooooo cccccccccccccccooooooo cccccccccccccccooooooo oocccccccooccccooooooo oocccccccooccccooooooo oocccccccooccccooooooo oocccccccooccccooooooo oocccccccoocccccoooooc oocccccccoocccccoooooc oocccccccoocccccoooooc oocccccccoocccccoooooc oocccccccoocccccoooooc oocccccccooccccccooocc oocccccccooccccccooocc oocccccccooccccccooocc oocccccccooccccccooocc oocccccccooccooccooocc oocccccccooccoocccoccc oocccccccoocccccccoccc ccccccccccccccccccoccc cccccccccccccccccccccc cccccccccccccccccccccc]],
   script                        = [[bflagshipbase2.lua]],
 

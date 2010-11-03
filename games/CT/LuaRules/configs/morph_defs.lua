@@ -233,6 +233,15 @@ local morphDefs = {
     },
   },
 
+  bbeacon = {
+    {
+      into = 'badvbeacon',
+      metal = 1200,
+      energy = 1600,
+      time = 60,
+    },
+  },
+
   bshipyard = {
     {
       into = 'badvshipyard',
