@@ -21,6 +21,7 @@
     * [http://code.google.com/p/conflictterra/wiki/OriginalNKGCarriers Carriers]
     * [http://code.google.com/p/conflictterra/wiki/UIPlans UI Plans]
     * [http://code.google.com/p/conflictterra/wiki/CEG_Explantion CEG Explanation]
+    * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks How to Add Starting Rocks to a Map]
     * [http://code.google.com/p/conflictterra/wiki/Useful_Dev_Information Useful Development Information]
     * [http://code.google.com/p/conflictterra/wiki/CT_Legacy Conflict Terra Legacy]
 
