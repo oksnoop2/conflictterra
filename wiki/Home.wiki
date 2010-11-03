@@ -28,8 +28,8 @@
 = Downloads =
 
   * [http://conflictterra.googlecode.com/files/ct-1.02.sdz Conflict Terra Version 1.02]
-  * [http://conflictterra.googlecode.com/files/Eurekav2.sd7 Eureka Version 2]
-  * [http://conflictterra.googlecode.com/files/Fishbone_Ridgev2.sd7 Fishbone Ridge Version 2]
+  * [http://conflictterra.googlecode.com/files/CT_Eurekav4.sd7 Eureka Version 4]
+  * [http://conflictterra.googlecode.com/files/CT_Fishbone_Ridgev4.sd7 Fishbone Ridge Version 4]
   * [http://conflictterra.googlecode.com/files/Spring.zip Rapid Files]
 
 
