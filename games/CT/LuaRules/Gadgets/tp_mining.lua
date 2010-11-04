@@ -270,7 +270,7 @@ function gadget:UnitIdle(unitID, unitDefID, teamID)
 	if (is_miner (unitID)) then
 		local unitstates = Spring.GetUnitStates (unitID)
 		local movestate = unitstates["movestate"]
-		Spring.Echo ("miner " .. unitID .. " movestate=" .. movestate)
+		if (debug) then Spring.Echo ("miner " .. unitID .. " movestate=" .. movestate) end
 		if (movestate ==0) then return end
 		if (debug) then Spring.Echo ("idle miner" .. unitID) end
 --		if (miners[unitID].cargo > 0) then return_to_dropoff (unitID) end
