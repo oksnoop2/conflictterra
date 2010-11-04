@@ -13,8 +13,10 @@ end
 
 if (gadgetHandler:IsSyncedCode()) then
 
-local miners = {} --  [unitID] alive: true oder false   cargo: wieviel er trägt  last_mined_id: an welcher resource zuletzt gesammelt wurde status: was er gerade macht: "loading" "unloading" "mining" "to_res" "to_hq"
-local dropoffs = {} --[unitID]
+local currentframe = 0	--what frame the game is currently in (orly)
+local miners = {} 		-- [unitID] alive: true/false   cargo: metal being carried  last_mined_id: which resourceunit was last mined from status: what miner is doing: "search" "loading" "unloading" "mining" "to_res" "to_hq" <-only "search" is really used to controll things, the others are just for displaying
+local dropoffs = {} 	-- [unitID]
+local resources = {} 	-- [unitID] frame_last_mined
 local debug = false
 -----config-----
 local miner_name = "bminer";			--the unit used for mining
@@ -54,9 +56,14 @@ function gadget:UnitDamaged (unitID, unitDefID, unitTeam, damage, paralyzer, wea
 if (is_resource_type (unitDefID) and is_miner(attackerID)) then
 		--fill the cargo bay of the miner, alot of options here....:
 		if (miners[attackerID].cargo < maxcargo) then miners[attackerID].cargo = miners[attackerID].cargo + math.ceil(damage) end
-		if (unitID ~=nil) then miners[attackerID].last_mined_id = unitID end
+		if (unitID ~=nil) then 
+			miners[attackerID].last_mined_id = unitID 
+			resources[unitID] = {} --*** -> add_resource und so...
+			resources[unitID].frame_last_mined = currentframe
+		end
+		
 		--send full miners to dropoff:
-		if (miners[attackerID].cargo >= maxcargo) then return_to_dropoff (attackerID) end		
+		if (miners[attackerID].cargo >= maxcargo) then return_to_dropoff (attackerID) end
 	end
 end
 
@@ -64,6 +71,7 @@ end
 function gadget:GameFrame(frameNum) 
 	_G.miners = miners
 	_G.dropoffs = dropoffs	
+	currentframe=frameNum
 	if (frameNum % 8 ~=0) then return end
 	for i in pairs(miners) do
 		if (frameNum % 64 == 0 and miners[i].status == "search") then
@@ -73,7 +81,7 @@ function gadget:GameFrame(frameNum)
 		if (miners[i].cargo > 0 and is_miner_at_dropoff (i)) then	--drop the cargo
 			local minerteam = Spring.GetUnitTeam (i)
 			Spring.AddTeamResource (minerteam, "metal", miners[i].cargo)
-			miners[i].cargo = 0 			
+			miners[i].cargo = 0
 			local x,y,z=Spring.GetUnitPosition (i)
 			if (x and y and z) then Spring.SpawnCEG(resreturneffect, x, y, z) end
 			return_to_mine (i)
@@ -170,7 +178,7 @@ end
 
 
 function nearest_dropoff_position_from_miner (minerID)
-	local minerteam = Spring.GetUnitTeam (minerID)		
+	local minerteam = Spring.GetUnitTeam (minerID)
 	local nearest_distance = 9999999999
 	local nearest_dropoffID = nil
 	for i in pairs (dropoffs) do
@@ -190,6 +198,29 @@ function nearest_dropoff_position_from_miner (minerID)
 	end
 end
 
+
+ --( number x, number z, number radius [,number teamID] )
+--*** nicht wirklich das nächste mineral sondern erstmal nur das nächstbeste  
+function nearest_resID_from_miner (minerID)
+	local nearest_resID = nil
+	local nearest_res_distance = 9999999999
+	local nearest_unmined_res = nil
+	local nearest_unmined_res_distance = 9999999999
+	local x,y,z = Spring.GetUnitPosition(minerID)
+	res=Spring.GetUnitsInCylinder (x,z, 5000, Spring.GetGaiaTeamID())
+	if (res == nil) then return nil end	--no near units at all :/
+	for i in pairs (res) do
+		if (is_resource_type (Spring.GetUnitDefID(res[i])) == true) then			
+			local d = Spring.GetUnitSeparation (minerID, res[i])
+			if (d < nearest_res_distance) then
+				nearest_res_distance = d
+				nearest_resID = res[i]
+			end
+		end		 
+	end
+	if (nearest_resID~=nil) then return nearest_resID else return nil end
+end
+
 function add_miner (unitID)
 	miners [unitID] = {}
 	miners [unitID].alive = true
@@ -206,6 +237,9 @@ end
 
 function remove_miner (unitID)
 	if (debug) then Spring.Echo ("removing miner id=" .. unitID) end
+--	if (Spring.ValidUnitID  (miners[unitID].last_mined_id)) then 
+--		if (resources [miners[unitID].last_mined_id] ~= nil) then resources [miners[unitID].last_mined_id].mined_by=nil end
+--	end
 	miners [unitID].alive=false
 	miners [unitID] = nil	
 end
@@ -228,12 +262,18 @@ local minerteam = Spring.GetUnitTeam (miner_unitID)
 	return false
 end
 
---idle miners will go search for minerals if set to "roam"
-function gadget:UnitIdle(unitID, unitDefID, teamID) 
+
+
+-----MINER AI-----
+--idle miners will go search for minerals if set not set to "hold pos"
+function gadget:UnitIdle(unitID, unitDefID, teamID)
 	if (is_miner (unitID)) then
+		local unitstates = Spring.GetUnitStates (unitID)
+		local movestate = unitstates["movestate"]
+		Spring.Echo ("miner " .. unitID .. " movestate=" .. movestate)
+		if (movestate ==0) then return end
 		if (debug) then Spring.Echo ("idle miner" .. unitID) end
 --		if (miners[unitID].cargo > 0) then return_to_dropoff (unitID) end
-		local movestate = Spring.GetUnitStates (unitID, "movestate")
 		if (movestate ~=0) then --roam or manoever
 			--search_res(unitID)
 			miners[unitID].status = "search"
@@ -241,8 +281,6 @@ function gadget:UnitIdle(unitID, unitDefID, teamID)
 	end
 end
 
-
------MINER AI-----
 function return_to_mine (unitID)
 	if (Spring.ValidUnitID  (miners[unitID].last_mined_id)) then
 		if (debug) then Spring.Echo ("miner " .. i .. " returns to mineral") end
@@ -259,10 +297,13 @@ end
 
 function search_res (unitID)
 	local x, y, z = Spring.GetUnitPosition(unitID)
-	Spring.GiveOrderToUnit(unitID, CMD.FIRE_STATE , { 2 }, {})
-	Spring.GiveOrderToUnit(unitID, CMD.AREA_ATTACK  , { x, y, z,50000  }, {})
-	miners[unitID].last_mined_id = nil
-	miners[unitID].status = "send to search"
+	--Spring.GiveOrderToUnit(unitID, CMD.FIRE_STATE , { 2 }, {})
+	--Spring.GiveOrderToUnit(unitID, CMD.AREA_ATTACK  , { x, y, z,50000  }, {})
+	--miners[unitID].last_mined_id = nil
+	--miners[unitID].status = "send to search"
+	local res = nearest_resID_from_miner (unitID)
+	if (res) then Spring.GiveOrderToUnit(unitID, CMD.ATTACK  , { res }, {}) end
+	miners[unitID].status = "search finished"
 end
 
 function return_to_dropoff (unitID)
