@@ -40,8 +40,9 @@ function gadget:GameFrame(frameNum)
 	for i in pairs(replis) do
 		replis[i].lifetime =replis[i].lifetime+1
 		if (replis[i].power < 100) then replis[i].power =replis[i].power+10 end
-		Spring.Echo ("repli .." .. " power" .. replis[i].power)
+		--Spring.Echo ("repli .." .. " power" .. replis[i].power)
 		if (replis[i].power > 99) then procreate (i) end
+		if (replis[i].lifetime > 5 ) then Spring.AddUnitDamage (i, 50) end
 	end
 end
 
@@ -52,7 +53,7 @@ function procreate (unitID)
 	local nr = Spring.CreateUnit (repli_name, x+75,y,z, math.random(0,3), pcTeam)  --spawn a new repli
 	Spring.SpawnCEG(reproduce_effect, x+75, y, z)
 	Spring.GiveOrderToUnit (nr, CMD.GUARD, { unitID },            { "shift" })
-end 
+end
 		
 
 function make_repli_table()
