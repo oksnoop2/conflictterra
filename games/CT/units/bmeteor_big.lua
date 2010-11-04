@@ -16,7 +16,6 @@ unitDef = {
   buildTime                     = 1,
   canattack                     = [[false]],
   category                      = [[MINERALS]],
-  corpse                        = [[DEAD]],
 
   reclaimable                   = false,
   repairable			= false,
@@ -55,56 +54,6 @@ unitDef = {
   	impactunitname="bmeteorimpact_big",		--used by spacerocks: what the unit will be replaced with on impact
 	lolfactor=100,							--how funny this is
 	},
-
-  featureDefs                   = {
-
-    DEAD  = {
-      description      = [[this mineral is mined out.]],
-      blocking         = false,
-      category         = [[heaps]],
-      damage           = 10,
-      energy           = 0,
-      featureDead      = [[DEAD2]],
-      featurereclamate = [[SMUDGE01]],
-      footprintX       = 2,
-      footprintZ       = 2,
-      height           = [[40]],
-      hitdensity       = [[100]],
-      metal            = 30,
-      object           = [[b3x3heap.s3o]],
-      reclaimable      = true,
-      reclaimTime      = 275,
-
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
-    },
-
-
-    DEAD2 = {
-      description      = [[this mined mineral is totally crushed dude!]],
-      blocking         = false,
-
-      category         = [[heaps]],
-      damage           = 2250,
-      energy           = 0,
-      featurereclamate = [[SMUDGE01]],
-      footprintX       = 3,
-      footprintZ       = 3,
-      height           = [[4]],
-      hitdensity       = [[100]],
-      metal            = 15,
-      object           = [[b3x3heap.s3o]],
-      reclaimable      = true,
-      reclaimTime      = 275,
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
-
-    },
-
-
-  },
-
-
 
 }
 
