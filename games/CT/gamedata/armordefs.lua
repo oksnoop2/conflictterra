@@ -71,6 +71,7 @@ local armorDefs = {
     "bairdefmobileship",
     "bnavydefship",
     "bnavydefmobileship",
+	"bbeacon",
   },
 
   Mech  =  {
@@ -89,6 +90,7 @@ local armorDefs = {
     "bamphmech",
     "badvamphmech",
     "bheavyassaultmech",
+    "kdrone",
   },
 
   Tank = {
