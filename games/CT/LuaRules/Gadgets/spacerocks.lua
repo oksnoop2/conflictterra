@@ -55,6 +55,24 @@ local function Impact (meteorID)
 	Spring.DestroyUnit(meteorID) -- make meteor explode
 end
 
+
+local function MeteorStorm (stormX,stormY, a, n)
+	for i = 0, meteorNumber, 1 do
+		--pick a spawn point for the meteor, randomly spread near the meteor storms location
+		local mh = Spring.GetGroundHeight(stormX, stormY) + meteorSpawnHeight+math.random (0,i*500)
+		local mx =stormX+math.random(-a/2,a/2)
+		local mz =stormY+math.random(-a/2,a/2)
+		local meteortype =  math.random(table.getn(meteorDefName))	--select a random type of meteor
+		local meteorID = Spring.CreateUnit(meteorDefName[meteortype], mx, mh, mz, "n", Spring.GetGaiaTeamID()) -- will ignore Y and spawn at ground level
+		meteors[meteorID] = true -- put it in the meteor set
+		Spring.SetUnitAlwaysVisible(meteorID, true)
+		Spring.MoveCtrl.Enable(meteorID) -- tell spring we'll take care of moving the meteor
+		Spring.MoveCtrl.SetPosition (meteorID,mx,mh,mz)
+		Spring.MoveCtrl.SetGravity(meteorID, fallGravity*math.random(1,1.5)) -- make gravity affect the meteor
+		Spring.MoveCtrl.SetRotationVelocity (meteorID, math.random (-0.2,0.2),math.random (-0.2,0.2),math.random (-0.05,0.05))   --spinning and tumbling!
+	end
+end
+
 function gadget:GameFrame(frame)
 --Spring.SpawnCEG(burnEffect2, 10,300 , 10)
 --Spring.SpawnCEG(burnEffect1, 50,300 , 10,0,1,0,5)
@@ -64,20 +82,7 @@ function gadget:GameFrame(frame)
 		local meteorSpawnX = math.random(Game.mapSizeX)
 		local meteorSpawnZ = math.random(Game.mapSizeZ)
 		Spring.Echo ("Incoming Meteor Storm! Coordinates: [" .. meteorSpawnX .. " : " .. meteorSpawnZ .."]")
-		for i = 0, meteorNumber, 1 do
-			--pick a spawn point for the meteor, randomly spread near the meteor storms location
-			local mh = Spring.GetGroundHeight(meteorSpawnX, meteorSpawnZ) + meteorSpawnHeight+math.random (0,i*500)
-			local mx =meteorSpawnX+math.random(-meteorSpread/2,meteorSpread/2)
-			local mz =meteorSpawnZ+math.random(-meteorSpread/2,meteorSpread/2)
-			local meteortype =  math.random(table.getn(meteorDefName))	--select a random type of meteor
-			local meteorID = Spring.CreateUnit(meteorDefName[meteortype], mx, mh, mz, "n", Spring.GetGaiaTeamID()) -- will ignore Y and spawn at ground level
-			meteors[meteorID] = true -- put it in the meteor set
-			Spring.SetUnitAlwaysVisible(meteorID, true)
-			Spring.MoveCtrl.Enable(meteorID) -- tell spring we'll take care of moving the meteor
-			Spring.MoveCtrl.SetPosition (meteorID,mx,mh,mz)
-			Spring.MoveCtrl.SetGravity(meteorID, fallGravity*math.random(1,1.5)) -- make gravity affect the meteor			
-			Spring.MoveCtrl.SetRotationVelocity (meteorID, math.random (-0.05,0.05),math.random (-0.05,0.05),math.random (-0.05,0.05))   --spinning and tumbling!
-		end
+		MeteorStorm (meteorSpawnX, meteorSpawnZ, meteorSpread, meteorNumber)
 	end
   for meteorID in pairs(meteors) do  -- loop through every meteor in the meteor set
     local x, y, z = Spring.GetUnitPosition(meteorID)
@@ -89,4 +94,12 @@ function gadget:GameFrame(frame)
 --      Spring.SpawnCEG(burnEffect2, x, y, z)
     end
   end
+end
+
+--for testing: if cheating is enabled you can summon meteor storms by selfdestructing bmex
+function gadget:UnitDestroyed(unitID, unitDefID, teamID, attackerID)
+if (Spring.IsCheatingEnabled()==true and string.find (UnitDefs[unitDefID].name, "bmex") ~= nil) then 
+	local x, y, z = Spring.GetUnitPosition(unitID)
+	MeteorStorm (x, z, meteorSpread, meteorNumber) 
+	end
 end
