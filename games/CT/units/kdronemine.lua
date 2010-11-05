@@ -1,17 +1,17 @@
-local kdrone = {
+local kdronemine = {
 	name                = [[Replicator]],
 	description         = [[The Replicator will replicate.]],
         acceleration        = 0.06,
         brakerate           = 1.5,
-        buildpic            = [[kdrone.png]],
+        buildpic            = [[kdronemine.png]],
 	buildCostEnergy     = 0,
 	buildCostMetal      = 100,
         buildDistance       = 220,
         builder             = true,
 
 	buildoptions		= {
-                [[kdrone]],
- 		[[kdronemine]],
+                [[kdronemine]],
+
                
 	},
 
@@ -20,7 +20,7 @@ local kdrone = {
 		CanAttack =1,
 	CanCapture =1,
         canGuard            = true,
-	canMove		    = true,
+	canMove		    = false,
 	canPatrol           = true,
         canReclaim          = true,
 	canstop             = [[1]],
@@ -46,13 +46,13 @@ local kdrone = {
 	minCloakDistance    = 75,
 	movementClass       = [[Engineer]],
         noChaseCategory     = [[MINERALS]],
-	objectName          = "kdrone.s3o",
+	objectName          = "kdronemine.s3o",
         onoffable           = false,
         seismicSignature    = 4,
         selfDestructAs      = [[SMALL_UNIT]],
         side                = [[NKG]],
         sightDistance       = 500,
-
+ExtractsMetal=0.003,
 	  sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",
@@ -136,7 +136,7 @@ local kdrone = {
 	showNanospray	    = 1,
 	Resurrectspeed      =100,
 	workerTime          = 1,
-	script		    = "kdrone.lua",
+	script		    = "kdronemine.lua",
 
 	  featureDefs         = {
 	
@@ -185,4 +185,4 @@ local kdrone = {
 	}
 
 
-return lowerkeys({ ["kdrone"] = kdrone })
+return lowerkeys({ ["kdronemine"] = kdronemine })

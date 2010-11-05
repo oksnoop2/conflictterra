@@ -231,6 +231,32 @@ ROCK_IMPACT_BIG = {
 	      },
   },
   
+  LIGHT_MINE = {
+
+   name="Small Unit",
+   craterMult=2000,
+   rendertype=4,
+   ballistic=1,
+   turret=1,
+   impulseFactor      = 0,
+   range=480,
+   reloadtime=3.6,
+   weaponvelocity=250,
+   areaofeffect=75,
+   soundstart="golgotha/old_generic.wav",
+   soundhit="golgotha/old_generic.wav",
+
+   explosiongenerator="custom:SMALL_UNIT_Expl",
+	      damage                  = {
+		Cruiser = 100,
+		Building = 100,
+		Mech = 100,
+		Tank = 100,
+		Aircraft = 100,
+		Ship = 100,
+		Sub = 100,
+	      },
+  },
 }
 
 return lowerkeys(unitDeaths)
