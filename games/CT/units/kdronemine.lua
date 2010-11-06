@@ -84,9 +84,8 @@ ExtractsMetal=0.003,
 	  weaponDefs             = {
 	
 	    Laser = {
-	      name                    = [[Burst Laser]],
+	      name                    = [[Mine]],
 	      areaOfEffect            = 8,
-	      coreThickness           = 0.5,
 	      collideFriendly         = false,
 	      craterMult              = 0.25,
 	
@@ -100,22 +99,7 @@ ExtractsMetal=0.003,
 		Sub = 10,
 	      },
 	
-	      duration                = 0.02,
-	      energypershot           = 0,
-	      explosionGenerator      = [[custom:megapartgun]],
-	      interceptedByShieldType = 1,
-	      heightMod               = 0.5,
-	      lineOfSight             = true,
-	      range                   = 1000,
-	      reloadtime              = 0.5,
-	      rgbColor                = [[1 0 0]],
-	      soundStart              = [[ct/pew1]],
-	      targetMoveError         = 0.15,
-	      thickness               = 3.76646385884692,
-	      tolerance               = 10000,
-	      turret                  = true,
-	      weaponType              = [[LaserCannon]],
-	      weaponVelocity          = 1500,
+	      
 	    },
 	
 	  },
