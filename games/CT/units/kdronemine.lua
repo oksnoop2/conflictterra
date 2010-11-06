@@ -7,7 +7,7 @@ local kdronemine = {
 	buildCostEnergy     = 0,
 	buildCostMetal      = 100,
         buildDistance       = 220,
-        builder             = true,
+        builder             = 1,
 
 	buildoptions		= {
                 [[kdronemine]],
@@ -52,7 +52,8 @@ local kdronemine = {
         selfDestructAs      = [[SMALL_UNIT]],
         side                = [[NKG]],
         sightDistance       = 500,
-ExtractsMetal=0.003,
+	Kamikaze=1;
+	KamikazeDistance=50;
 	  sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",
@@ -73,7 +74,7 @@ ExtractsMetal=0.003,
 	  weapons             = {
 	
 	    {
-	      def                = [[Laser]],
+	      def                = [[Mine]],
 	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
 	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER]],
 	    },
@@ -83,7 +84,7 @@ ExtractsMetal=0.003,
 	
 	  weaponDefs             = {
 	
-	    Laser = {
+	    Mine = {
 	      name                    = [[Mine]],
 	      areaOfEffect            = 8,
 	      collideFriendly         = false,
