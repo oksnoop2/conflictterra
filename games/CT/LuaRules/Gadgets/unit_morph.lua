@@ -19,14 +19,75 @@ function gadget:GetInfo()
     author    = "trepan (improved by jK, Licho, aegis, CarRepairer)",
     date      = "Jan, 2008",
     license   = "GNU GPL, v2 or later",
-    layer     = 0,
+    layer     = -1,
     enabled   = true
   }
 end
-local echo  = Spring.Echo
+
 -- Changes for "The Cursed"
---              CarRepairer: may add a customized texture in the morphdefs, otherwise uses original behavior (unit buildicon and the word Morph).
---              aZaremoth: may add a customized text in the morphdefs
+--    CarRepairer: may add a customized texture in the morphdefs, otherwise uses original behavior (unit buildicon and the word Morph). Break changes made in CA.
+--    aZaremoth: may add a customized text in the morphdefs
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--
+-- Interface with other gadgets:
+--
+--
+-- During Initialize() this morph gadget creates a global table, GG.MorphInfo, from which you can read:
+--
+-- GG.MorphInfo[unitDefId] -- nil if for units that can't morph, otherwise a table, of key=destinationUnitDefId, value=morphCmdId
+--
+-- GG.MorphInfo["MAX_MORPH"] -- the number of morph handled
+--
+-- GG.MorphInfo["CMD_MORPH_BASE_ID"] -- The CMD ID of the generic morph command
+-- GG.MorphInfo["CMD_MORPH_BASE_ID"]+1 -- The CMD ID of the first specific morph command
+-- GG.MorphInfo["CMD_MORPH_BASE_ID"]+GG.MorphInfo["MAX_MORPH"] -- The CMD ID of the last specific morph command
+--
+-- GG.MorphInfo["CMD_MORPH_STOP_BASE_ID"] -- The CMD ID of the generic morph stop command
+-- GG.MorphInfo["CMD_MORPH_STOP_BASE_ID"]+1 -- The CMD ID of the first specific morph stop command
+-- GG.MorphInfo["CMD_MORPH_STOP_BASE_ID"]+GG.MorphInfo["MAX_MORPH"] -- The CMD ID of the last specific morph stop command
+--
+-- Thus other gadgets can know which morphing commands are available
+-- Then they can simply issue:
+--    Spring.GiveOrderToUnit(u,genericMorphCmdID,{},{})
+-- or Spring.GiveOrderToUnit(u,genericMorphCmdID,{targetUnitDefId},{})
+-- or Spring.GiveOrderToUnit(u,specificMorphCmdID,{},{})
+--
+-- where:
+-- genericMorphCmdID is the same unique value, no matter what is the source unit or target unit
+-- specificMorphCmdID is a different value for each source<->target morphing pair
+--
+
+--[[ Sample codes that could be used in other gadgets:
+
+  -- Morph unit u
+  Spring.GiveOrderToUnit(u,31210,{},{})
+
+  -- Morph unit u into a supertank:
+  local otherDefId=UnitDefNames["supertank"].id
+  Spring.GiveOrderToUnit(u,31210,{otherDefId},{})
+
+  -- In place of writing 31210 you could use a morphCmdID that you'd read with:
+  local morphCmdID=(GG.MorphInfo or {})["CMD_MORPH_BASE_ID"]
+  if not morphCmdID then
+    Spring.Echo("Error! Can't find Morph Cmd ID!"")
+    return
+  end
+
+  -- Print all the morphing possibilities:
+  for src,morph in pairs(GG.MorphInfo) do
+    if type(src)=="number" then
+      local txt=UnitDefs[src].name.." may morph into "
+      for dst,cmd in pairs(morph) do
+        txt=txt..UnitDefs[src].name.." with CMD "..cmd
+      end
+      Spring.Echo(txt)
+    end
+  end
+
+]]--
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -67,9 +128,9 @@ local function GetTechLevel(UnitDefID)
     if     (cats["LEVEL1"]) then return 1
     elseif (cats["LEVEL2"]) then return 2
     elseif (cats["LEVEL3"]) then return 3
-      elseif (cats["level1"]) then return 1
-      elseif (cats["level2"]) then return 2
-      elseif (cats["level3"]) then return 3
+    elseif (cats["level1"]) then return 1
+    elseif (cats["level2"]) then return 2
+    elseif (cats["level3"]) then return 3
     end
   end
   return 0
@@ -86,7 +147,6 @@ local function isFinished(UnitID)
 end
 
 local function HeadingToFacing(heading)
-        --return math.floor((-heading - 24576) / 16384) % 4
         return math.floor((heading + 8192) / 16384) % 4
 end
 
@@ -120,6 +180,7 @@ local hostName = nil -- planetwars hostname
 local PWUnits = {} -- planetwars units
 local morphUnits = {} --// make it global in Initialize()
 local reqDefIDs  = {} --// all possible unitDefID's, which are used as a requirement for a morph
+local morphToStart = {} -- morphes to start next frame
 
 --// per team techlevel and owned MorphReq. units table
 local teamTechLevel = {}
@@ -202,13 +263,21 @@ local function BuildMorphDef(udSrc, morphData)
     end
     newData.require = require
 
-
+    MAX_MORPH = MAX_MORPH + 1 -- CMD_MORPH is the "generic" morph command. "Specific" morph command start at CMD_MORPH+1
     newData.cmd     = CMD_MORPH      + MAX_MORPH
     newData.stopCmd = CMD_MORPH_STOP + MAX_MORPH
-    MAX_MORPH = MAX_MORPH + 1
 
-        newData.texture = morphData.texture
-        newData.text = morphData.text
+    if (type(GG.MorphInfo)~="table") then
+        GG.MorphInfo = {["CMD_MORPH_BASE_ID"]=CMD_MORPH,["CMD_MORPH_STOP_BASE_ID"]=CMD_MORPH_STOP}
+    end
+    if (type(GG.MorphInfo[udSrc.id])~="table") then
+        GG.MorphInfo[udSrc.id]={}
+    end
+    GG.MorphInfo[udSrc.id][udDst.id]=newData.cmd
+    GG.MorphInfo["MAX_MORPH"] = MAX_MORPH
+
+    newData.texture = morphData.texture
+    newData.text = morphData.text
     return newData
   end
 end
@@ -251,16 +320,15 @@ local function GetMorphToolTip(unitID, unitDefID, teamID, morphDef, teamTech, un
   local ud = UnitDefs[morphDef.into]
   local tt = ''
   if (morphDef.text ~= nil) then
-        tt = tt .. WhiteStr  .. morphDef.text .. '\n'
+    tt = tt .. WhiteStr  .. morphDef.text .. '\n'
   else
-        --tt = tt .. WhiteStr  .. 'Morph into a ' .. ud.humanName .. '\n'
-        tt = tt .. 'Morph into a ' .. ud.humanName .. '\n'
+    tt = tt .. 'Morph into a ' .. ud.humanName .. '\n'
   end
   if (morphDef.time > 0) then
-        tt = tt .. GreenStr  .. 'time: '   .. morphDef.time     .. '\n'
-  end  
+    tt = tt .. GreenStr  .. 'time: '   .. morphDef.time     .. '\n'
+  end
   if (morphDef.metal > 0) then
-        tt = tt .. CyanStr   .. 'metal: '  .. morphDef.metal    .. '\n'
+    tt = tt .. CyanStr   .. 'metal: '  .. morphDef.metal    .. '\n'
   end
   if (morphDef.energy > 0) then
     tt = tt .. YellowStr .. 'energy: ' .. morphDef.energy   .. '\n'
@@ -308,15 +376,15 @@ local function AddMorphCmdDesc(unitID, unitDefID, teamID, morphDef, teamTech)
   local unitRank = GetUnitRank(unitID)
   local teamOwnsReqUnit = UnitReqCheck(teamID,morphDef.require)
   morphCmdDesc.tooltip = GetMorphToolTip(unitID, unitDefID, teamID, morphDef, teamTech, unitXP, unitRank, teamOwnsReqUnit)
- 
+
   if morphDef.texture then
-        morphCmdDesc.texture = "LuaRules/Images/Morph/".. morphDef.texture
-        morphCmdDesc.name = ''
+    morphCmdDesc.texture = "LuaRules/Images/Morph/".. morphDef.texture
+    morphCmdDesc.name = ''
   else
-        morphCmdDesc.texture = "#" .. morphDef.into   --//only works with a patched layout.lua or the TweakedLayout widget!
+    morphCmdDesc.texture = "#" .. morphDef.into   --//only works with a patched layout.lua or the TweakedLayout widget!
   end
- 
- 
+
+
   morphCmdDesc.disabled= (morphDef.tech > teamTech)or(morphDef.rank > unitRank)or(morphDef.xp > unitXP)or(not teamOwnsReqUnit)
 
   morphCmdDesc.id = morphDef.cmd
@@ -335,9 +403,9 @@ end
 
 
 local function AddExtraUnitMorph(unitID, unitDef, teamID, morphDef)  -- adds extra unit morph (planetwars morphing)
-        morphDef = BuildMorphDef(unitDef, morphDef)
-        extraUnitMorphDefs[unitID] = morphDef
-        AddMorphCmdDesc(unitID, unitDef.id, teamID, morphDef, 0)
+    morphDef = BuildMorphDef(unitDef, morphDef)
+    extraUnitMorphDefs[unitID] = morphDef
+    AddMorphCmdDesc(unitID, unitDef.id, teamID, morphDef, 0)
 end
 
 
@@ -404,7 +472,6 @@ local function StopMorph(unitID, morphData)
   local scale = morphData.progress * stopPenalty
   local unitDefID = Spring.GetUnitDefID(unitID)
 
-
   Spring.SetUnitResourcing(unitID,"e", UnitDefs[unitDefID].energyMake)
   Spring.GiveOrderToUnit(unitID, CMD.ONOFF, { 1 }, { "alt" })
   local usedMetal  = morphData.def.metal  * scale
@@ -419,7 +486,6 @@ local function StopMorph(unitID, morphData)
     Spring.EditUnitCmdDesc(unitID, cmdDescID, {id=morphData.def.cmd, name=morphCmdDesc.name})
   end
 end
-
 
 
 local function FinishMorph(unitID, morphData)
@@ -439,34 +505,41 @@ local function FinishMorph(unitID, morphData)
   end
 
   local newUnit
-  local face = HeadingToFacing(h)
 
   if udDst.isBuilding or udDst.isFactory then
   --if udDst.isBuilding then
- 
-        local x = math.floor(px/16)*16
-        local y = py
-        local z = math.floor(pz/16)*16
-       
-        local xsize = udDst.xsize
-        local zsize =(udDst.zsize or udDst.ysize)      
-        if ((face == 1) or(face == 3)) then
-          xsize, zsize = zsize, xsize
-        end    
-        if xsize/4 ~= math.floor(xsize/4) then
-          x = x+8
-        end
-        if zsize/4 ~= math.floor(zsize/4) then
-          z = z+8
-        end    
-        newUnit = Spring.CreateUnit(defName, x, y, z, face, unitTeam)
-        Spring.SetUnitPosition(newUnit, x, y, z)
+
+    local x = math.floor(px/16)*16
+    local y = py
+    local z = math.floor(pz/16)*16
+    local face = HeadingToFacing(h)
+    local xsize = udDst.xsize
+    local zsize =(udDst.zsize or udDst.ysize)
+    if ((face == 1) or(face == 3)) then
+      xsize, zsize = zsize, xsize
+    end
+    if xsize/4 ~= math.floor(xsize/4) then
+      x = x+8
+    end
+    if zsize/4 ~= math.floor(zsize/4) then
+      z = z+8
+    end
+    newUnit = Spring.CreateUnit(defName, x, y, z, face, unitTeam, isBeingBuilt)
+  if not newUnit then
+    StopMorph(unitID, morphData)
+    return
+  end
+    Spring.SetUnitPosition(newUnit, x, y, z)
   else
-        newUnit = Spring.CreateUnit(defName, px, py, pz, face, unitTeam)
-        --Spring.SetUnitRotation(newUnit, 0, -h * math.pi / 32768, 0)
-        Spring.SetUnitPosition(newUnit, px, py, pz)
-  end  
- 
+    newUnit = Spring.CreateUnit(defName, px, py, pz, HeadingToFacing(h), unitTeam, isBeingBuilt)
+  if not newUnit then
+    StopMorph(unitID, morphData)
+    return
+  end
+    Spring.SetUnitRotation(newUnit, 0, -h * math.pi / 32768, 0)
+    Spring.SetUnitPosition(newUnit, px, py, pz)
+  end
+
   if (extraUnitMorphDefs[unitID] ~= nil) then
     -- nothing here for now
   end
@@ -474,15 +547,15 @@ local function FinishMorph(unitID, morphData)
     -- send planetwars deployment message
     PWUnit = PWUnits[unitID]
     PWUnit.currentDef=udDst
-        local data = PWUnit.owner..","..defName..","..math.floor(px)..","..math.floor(pz)..",".."S" -- todo determine and apply smart orientation of the structure
-        Spring.SendCommands("w "..hostName.." pwmorph:"..data)
-        extraUnitMorphDefs[unitID] = nil
-        GG.PlanetWars.units[unitID] = nil
-        GG.PlanetWars.units[newUnit] = PWUnit
-        SendToUnsynced('PWCreate', unitTeam, newUnit)
+    local data = PWUnit.owner..","..defName..","..math.floor(px)..","..math.floor(pz)..",".."S" -- todo determine and apply smart orientation of the structure
+    Spring.SendCommands("w "..hostName.." pwmorph:"..data)
+    extraUnitMorphDefs[unitID] = nil
+    GG.PlanetWars.units[unitID] = nil
+    GG.PlanetWars.units[newUnit] = PWUnit
+    SendToUnsynced('PWCreate', unitTeam, newUnit)
   elseif (not morphData.def.facing) then  -- set rotation only if unit is not planetwars and facing is not true
     --Spring.Echo(morphData.def.facing)
-    --Spring.SetUnitRotation(newUnit, 0, -h * math.pi / 32768, 0)
+    Spring.SetUnitRotation(newUnit, 0, -h * math.pi / 32768, 0)
   end
 
 
@@ -528,18 +601,25 @@ local function FinishMorph(unitID, morphData)
   ReAssignAssists(newUnit,unitID)
 
   --// copy health
-  local oldHealth,oldMaxHealth,_,_,buildProgress = Spring.GetUnitHealth(unitID)
+  -- old health is declared above
   local _,newMaxHealth         = Spring.GetUnitHealth(newUnit)
   local newHealth = (oldHealth / oldMaxHealth) * newMaxHealth
+  local hpercent = newHealth/newMaxHealth
   if newHealth<=1 then newHealth = 1 end
+
+  -- prevent conflict with rezz gadget
+  if hpercent > 0.045 and hpercent < 0.055 then
+    newHealth = newMaxHealth * 0.056 + 1
+  end
+
   Spring.SetUnitHealth(newUnit, {health = newHealth, build = buildProgress})
- 
+
   --// copy shield power
   local enabled,oldShieldState = Spring.GetUnitShieldState(unitID)
   if oldShieldState and Spring.GetUnitShieldState(newUnit) then
     Spring.SetUnitShieldState(newUnit, enabled,oldShieldState)
   end
-       
+
   local lineage = Spring.GetUnitLineage(unitID)
   Spring.SetUnitLineage(newUnit,lineage,true)
 
@@ -553,9 +633,8 @@ end
 
 
 local function UpdateMorph(unitID, morphData)
-  if not isFinished(unitID) then return true end
   if Spring.GetUnitTransporter(unitID) then return true end
-       
+
   if (Spring.UseUnitResource(unitID, morphData.def.resTable)) then
     morphData.progress = morphData.progress + morphData.increment
   end
@@ -578,14 +657,14 @@ function gadget:Initialize()
     GetUnitRank = GG.rankHandler.GetUnitRank
     RankToXp    = GG.rankHandler.RankToXp
   end
- 
+
   -- self linking for planetwars
   GG['morphHandler'] = {}
   GG['morphHandler'].AddExtraUnitMorph = AddExtraUnitMorph
 
   hostName = GG.PlanetWars and GG.PlanetWars.options.hostname or nil
   PWUnits = GG.PlanetWars and GG.PlanetWars.units or {}
- 
+
   if (type(GG.UnitRanked)~="table") then GG.UnitRanked = {} end
   table.insert(GG.UnitRanked, UnitRanked)
 
@@ -604,7 +683,6 @@ function gadget:Initialize()
     gadgetHandler:RegisterCMDID(CMD_MORPH+number)
     gadgetHandler:RegisterCMDID(CMD_MORPH_STOP+number)
   end
-
 
 
   --// check existing ReqUnits+TechLevel
@@ -808,7 +886,6 @@ function RemoveFactory(unitID, unitDefID, teamID)
       teamTechLevel[teamID] = level
     end
 
-
   end
 end
 
@@ -834,6 +911,13 @@ end
 
 
 function gadget:GameFrame(n)
+
+  -- start pending morphs
+  for unitid, data in pairs(morphToStart) do
+    StartMorph(unitid, unpack(data))
+  end
+  morphToStart = {}
+
   if ((n+24)%150<1) then
     local unitCount = #XpMorphUnits
     local i = 1
@@ -889,22 +973,46 @@ end
 function gadget:AllowCommand(unitID, unitDefID, teamID, cmdID, cmdParams, cmdOptions)
   local morphData = morphUnits[unitID]
   if (morphData) then
-    if (cmdID==morphData.def.stopCmd)or(cmdID == CMD.STOP) then
-          if not Spring.GetUnitTransporter(unitID) then
+    if (cmdID==morphData.def.stopCmd)or(cmdID==CMD.STOP)or(cmdID==CMD_MORPH_STOP) then
+      if not Spring.GetUnitTransporter(unitID) then
         StopMorph(unitID, morphData)
         morphUnits[unitID] = nil
         return false
-          end
+      end
     elseif (cmdID == CMD.ONOFF) then
       return false
-        elseif cmdID == CMD.SELFD then
-          StopMorph(unitID, morphData)
+    elseif cmdID == CMD.SELFD then
+      StopMorph(unitID, morphData)
       morphUnits[unitID] = nil
     --else --// disallow ANY command to units in morph
     --  return false
     end
-  elseif (cmdID >= CMD_MORPH and cmdID < CMD_MORPH+MAX_MORPH) then
-    local morphDef = (morphDefs[unitDefID] or {})[cmdID] or extraUnitMorphDefs[unitID]
+  elseif (cmdID >= CMD_MORPH and cmdID <= CMD_MORPH+MAX_MORPH) then
+    local morphDef = nil
+    if cmdID==CMD_MORPH then
+      if type(GG.MorphInfo[unitDefID])~="table" then
+        --Spring.Echo('Morph gadget: AllowCommand generic morph on non morphable unit')
+        return false
+      elseif #cmdParams==0 then
+        --Spring.Echo('Morph gadget: AllowCommand generic morph, default target')
+        --return true
+        for _,md in pairs(morphDefs[unitDefID]) do
+          morphDef=md
+          break
+        end
+      elseif GG.MorphInfo[unitDefID][cmdParams[1]] then
+        --Spring.Echo('Morph gadget: AllowCommand generic morph, target valid')
+        --return true
+        morphDef=(morphDefs[unitDefID] or {})[GG.MorphInfo[unitDefID][cmdParams[1]]]
+      else
+        --Spring.Echo('Morph gadget: AllowCommand generic morph, invalid target')
+        return false
+      end
+      --Spring.Echo('Morph gadget: AllowCommand morph cannot be here!')
+    elseif (cmdID > CMD_MORPH and cmdID <= CMD_MORPH+MAX_MORPH) then
+      --Spring.Echo('Morph gadget: AllowCommand specific morph')
+      morphDef = (morphDefs[unitDefID] or {})[cmdID] or extraUnitMorphDefs[unitID]
+    end
     if ((morphDef)and
         (morphDef.tech<=teamTechLevel[teamID])and
         (morphDef.rank<=GetUnitRank(unitID))and
@@ -914,7 +1022,9 @@ function gadget:AllowCommand(unitID, unitDefID, teamID, cmdID, cmdParams, cmdOpt
       if (isFactory(unitDefID)) then
         --// the factory cai is broken and doesn't call CommandFallback(),
         --// so we have to start the morph here
-        StartMorph(unitID, unitDefID, teamID, morphDef)
+        -- dont start directly to break recursion
+        --StartMorph(unitID, unitDefID, teamID, morphDef)
+        morphToStart[unitID] = {unitDefID, teamID, morphDef}
         return false
       else
         return true
@@ -928,16 +1038,37 @@ end
 
 
 function gadget:CommandFallback(unitID, unitDefID, teamID, cmdID, cmdParams, cmdOptions)
-  if (cmdID < CMD_MORPH or cmdID >= CMD_MORPH+MAX_MORPH) then
+  if (cmdID < CMD_MORPH or cmdID > CMD_MORPH+MAX_MORPH) then
     return false  --// command was not used
   end
-  local morphDef = (morphDefs[unitDefID] or {})[cmdID] or extraUnitMorphDefs[unitID]
+  local morphDef = nil
+  if cmdID == CMD_MORPH then
+    if type(GG.MorphInfo[unitDefID])~="table" then
+      --Spring.Echo('Morph gadget: CommandFallback generic morph on non morphable unit')
+      return true,true
+    end
+    if cmdParams[1] then
+      --Spring.Echo('Morph gadget: CommandFallback generic morph with target provided')
+      morphDef=(morphDefs[unitDefID] or {})[GG.MorphInfo[unitDefID][cmdParams[1]]]
+    else
+      --Spring.Echo('Morph gadget: CommandFallback generic morph, default target')
+      for _,md in pairs(morphDefs[unitDefID]) do
+        morphDef=md
+        break
+      end
+    end
+  else
+    --Spring.Echo('Morph gadget: CommandFallback specific morph')
+    morphDef = (morphDefs[unitDefID] or {})[cmdID] or extraUnitMorphDefs[unitID]
+  end
   if (not morphDef) then
     return true, true  --// command was used, remove it
   end
   local morphData = morphUnits[unitID]
   if (not morphData) then
-    StartMorph(unitID, unitDefID, teamID, morphDef)
+    -- dont start directly to break recursion
+    --StartMorph(unitID, unitDefID, teamID, morphDef)
+    morphToStart[unitID] = {unitDefID, teamID, morphDef}
     return true, true
   end
   return true, false  --// command was used, do not remove it
@@ -1241,30 +1372,51 @@ function gadget:DrawWorld()
   glBlending(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)
 end
 
-function string:split(delimiter)
-	local result = { }
-	local from  = 1
-	local delim_from, delim_to = string.find( self, delimiter, from  )
-	while delim_from do
-		table.insert( result, string.sub( self, from , delim_from-1 ) )
-		from  = delim_to + 1
-		delim_from, delim_to = string.find( self, delimiter, from  )
-	end
-	table.insert( result, string.sub( self, from  ) )
-	return result
+local function split(msg,sep)
+  local s=sep or '|'
+  local t={}
+  for e in string.gmatch(msg..s,'([^%'..s..']+)%'..s) do
+    table.insert(t,e)
+  end
+  return t
 end
 
+
+-- Exemple of AI messages:
+-- "aiShortName|morph|762" -- morph the unit of unitId 762
+-- "aiShortName|morph|861|12" -- morph the unit of unitId 861 into an unit of unitDefId 12
+--
+-- Does not work because apparently Spring.GiveOrderToUnit from unsynced gadgets are ignored.
+--
 function gadget:AICallIn(data)
- 	Spring.SendMessage(data)
-	message = string.split(data,"|")
-	if message[1] == "Shard" then
-		if message[2] == "morph" then
-			unitid = message[3]
-	Spring.GiveOrderToUnit(unitID,CMD_MORPH)
-		end
-	end
+  if type(data)=="string" then
+    local message = split(data)
+    if message[1] == "Shard" or true then-- Because other AI shall be allowed to send such morph command without having to pretend to be Shard
+      if message[2] == "morph" and message[3] then
+        local unitID = tonumber(message[3])
+        if unitID and Spring.ValidUnitID(unitID) then
+          if message[4] then
+            local destDefId=tonumber(message[4])
+            --Spring.Echo("Morph AICallIn: Morphing Unit["..unitID.."] into "..UnitDefs[destDefId].name)
+            Spring.GiveOrderToUnit(unitID,CMD_MORPH,{destDefId},{})
+          else
+            --Spring.Echo("Morph AICallIn: Morphing Unit["..unitID.."] to auto")
+            Spring.GiveOrderToUnit(unitID,CMD_MORPH,{},{})
+          end
+        else
+          Spring.Echo("Not a valid unitID in AICallIn morph request: \""..data.."\"")
+        end
+      end
+    end
+  end
 end
 
+-- Just something to test the above AICallIn
+--function gadget:KeyPress(key)
+--  if key==32 then--space key
+--    gadget:AICallIn("asn|morph|762")
+--  end
+--end
 
 --------------------------------------------------------------------------------
 --  UNSYNCED
@@ -1273,4 +1425,3 @@ end
 --------------------------------------------------------------------------------
 --  COMMON
 --------------------------------------------------------------------------------
-
