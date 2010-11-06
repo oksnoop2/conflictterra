@@ -4,7 +4,7 @@ function gadget:GetInfo()
   return {
     name      = "Space Rock",
     desc      = "Spawns rocks from space.",
-    author    = "oksnoop2 modded by knorke",
+    author    = "oksnoop2 heavily modded by knorke yo!",
     date      = "4/24/2010",
     license   = "GNU GPL, v2 or later",
     layer     = 0,
@@ -29,7 +29,7 @@ local meteorSpawnHeight = 5000
 local min_distance_to_units = 100	--how far away from player units a meteor must impact to leave a rock (as not to block units or factories)
 local burnEffect1 = "firetrail2" -- CEG used for the meteor trail, needs to be visible out of los
 local burnEffect2 = "buildersparks"
-
+local slidespeed = 30
 ----------------------------------------------------------------------------------
 local meteors = {} -- meteor set
 
@@ -38,12 +38,20 @@ local function Impact (meteorID)
 	local x, y, z = Spring.GetUnitPosition(meteorID)
 	local h = Spring.GetGroundHeight(x, z)
 	local cp = UnitDefs[Spring.GetUnitDefID(meteorID)].customParams
---	if (cp) then Spring.Echo ("has custom para") else Spring.Echo ("has NO custom para") end
+	
+	--slide down slopes
+	local gnx,gny,gnz = Spring.GetGroundNormal (x,z)
+	local mx = x+(gnx*slidespeed)
+	local mz = z+(gnz*slidespeed)
+	Spring.MoveCtrl.SetPosition (meteorID, mx, h,mz)	
+	if (math.abs (x-mx) > 3 or math.abs (z-mz) > 3) then return end --danger: depending on terrain and too high slidespeed, unit might jump between two positions and never come to rest
+	
+	--	if (cp) then Spring.Echo ("has custom para") else Spring.Echo ("has NO custom para") end
 	if (h > 0 and nearunits==nil and cp) then	--only leave a rock if the meteor landed on land and not too near units. otherwise just explode (so it does not block factories etc)	
 --		Spring.Echo ("yo")
 --		Spring.Echo (cp)
-		for i,v in ipairs(cp) do Spring.Echo(i .. "="..v) end
-		local remains_name = UnitDefs[Spring.GetUnitDefID(meteorID)].customParams.impactunitname
+		--for i,v in ipairs(cp) do Spring.Echo(i .. "="..v) end
+		local remains_name = UnitDefs[Spring.GetUnitDefID(meteorID)].customParams.impactunitname		
 		if (remains_name ~= nil) then
 --			Spring.Echo ("exploding into" .. remains_name)
 			local remains = Spring.CreateUnit (remains_name, x,y,z, math.random(0,3), Spring.GetGaiaTeamID())  --leave a crashed meteor thing at the impact site
@@ -57,7 +65,7 @@ end
 
 
 local function MeteorStorm (stormX,stormY, a, n)
-	for i = 0, meteorNumber, 1 do
+	for i = 1, n, 1 do
 		--pick a spawn point for the meteor, randomly spread near the meteor storms location
 		local mh = Spring.GetGroundHeight(stormX, stormY) + meteorSpawnHeight+math.random (0,i*500)
 		local mx =stormX+math.random(-a/2,a/2)
@@ -87,7 +95,8 @@ function gadget:GameFrame(frame)
   for meteorID in pairs(meteors) do  -- loop through every meteor in the meteor set
     local x, y, z = Spring.GetUnitPosition(meteorID)
     local h = Spring.GetGroundHeight(x, z)
-    if y < h then -- if the meteor below ground level
+    if y < h+15 then -- if the meteor below ground level
+		Spring.MoveCtrl.SetGravity(meteorID, 0)
 		Impact (meteorID)
     else -- above ground, show the meteor trail
       Spring.SpawnCEG(burnEffect1, x+math.random(-20,20), y, z+math.random(-20,20))
@@ -100,6 +109,6 @@ end
 function gadget:UnitDestroyed(unitID, unitDefID, teamID, attackerID)
 if (Spring.IsCheatingEnabled()==true and string.find (UnitDefs[unitDefID].name, "bmex") ~= nil) then 
 	local x, y, z = Spring.GetUnitPosition(unitID)
-	MeteorStorm (x, z, meteorSpread, meteorNumber) 
+	MeteorStorm (x, z, meteorSpread, 6)
 	end
 end
