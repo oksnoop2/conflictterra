@@ -14,14 +14,14 @@ local icontypes = {
     radiusadjust=1,
   },
   resource = {
-		bitmap		=	"icons/star.tga",
-		size			=	3,
-		radiusadjust = 1,
+		bitmap		=	"icons/trinver.tga",
+		size			=	0.9,
+		radiusadjust = 0.6,
 		distance	=	0.8,
 	},
   meteor = {
 	bitmap		=	"icons/crosscircle.tga",
-	size			=	3,
+	size			=	1,
 	radiusadjust = 1,
 	distance	=	100,
   },
