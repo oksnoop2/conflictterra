@@ -118,7 +118,14 @@
 	                crushstrength = 500,
 	                subMarine = 1,
 	        },
-	
+ 		
+		kdrone = {
+	                footprintx = 3,
+	                footprintz = 3,
+	                maxwaterdepth = 99999999,
+	                maxslope = 99999999,
+	                crushstrength = 50,
+	        },	
 	}
 	
 	--------------------------------------------------------------------------------
