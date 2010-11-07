@@ -13,7 +13,7 @@ return {
       water              = true,
       alwaysVisible = 0,
 	  properties = {
-        alwaysVisible = 1,
+        alwaysVisible = 0,
 		airdrag            = 0.9,
         colormap           = [[0.0 0.8 0.0 0.8    0.2 0.8 0.02 0.6    0.4 0.8 0.4 0.4     0.8 0.8 0.8 0.1]],
         directional        = false,

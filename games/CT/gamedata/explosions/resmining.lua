@@ -13,7 +13,7 @@ return {
       water              = true,
       alwaysVisible = 0,
 	  properties = {
-        alwaysVisible = 1,
+        alwaysVisible = 0,
 		airdrag            = 0.9,
         colormap           = [[0.4 0.3 0.2 0.8    0.2 0.15 0.1 0.8    0.2 0.15 0.1 0.7     0.2 0.15 0.1 0.7]],
         directional        = false,
@@ -36,7 +36,7 @@ return {
     },
     ["groundflash"] = {
     
-	alwaysVisible=1,
+	alwaysVisible=0,
       flashSize = 80,
       flashAlpha = 0.95,
       circleGrowth = 0.8,
