@@ -1,59 +1,55 @@
 local kdrone = {
 	name                = [[Replicator]],
 	description         = [[The Replicator will replicate.]],
-        acceleration        = 0.06,
-        brakerate           = 1.5,
-        buildpic            = [[kdrone.png]],
+    acceleration        = 0.06,
+    brakerate           = 1.5,
+    buildpic            = [[kdrone.png]],
 	buildCostEnergy     = 0,
 	buildCostMetal      = 100,
-        buildDistance       = 220,
-        builder             = true,
-
+    buildDistance       = 150,
+    builder             = true,
 	buildoptions		= {
-                [[kdrone]],
+        [[kdrone]],
  		[[kdronemine]],
                
 	},
 
 	buildTime           = 15,
-        canAssist           = true,
-		CanAttack =1,
-	CanCapture =1,
-        canGuard            = true,
-	canMove		    = true,
+    canAssist           = true,
+	CanAttack 			=1,
+	CanCapture			=1,
+    canGuard            = true,
+	canMove		  	    = true,
 	canPatrol           = true,
-        canReclaim          = true,
+    canReclaim          = true,
 	canstop             = [[1]],
 	category            = [[LAND]],
-        corpse              = [[DEAD]],
-        reclaimable         = false,
-
-	defaultmissiontype  = [[Standby]],
-        energyMake          = 10,
-
+    corpse              = [[DEAD]],
+    reclaimable         = false,
+    defaultmissiontype  = [[Standby]],
+    energyMake          = 1,
 	explodeAs           = [[SMALL_UNIT]],
-        footprintx          = 2,
+    footprintx          = 2,
 	footprintZ          = 2,
-	idleAutoHeal        = 0,
+	idleAutoHeal        = 1,
 	leaveTracks         = false,
 	maneuverleashlength = [[640]],
-	mass                = 70,
-	maxDamage           = 350,
-        maxSlope            = 300,
-	maxVelocity         = 2,
-        maxWaterDepth       = 10000,
-        metalMake           = 10,
+	mass                = 80,
+	maxDamage           = 100,
+    maxSlope            = 300,
+	maxVelocity         = 4,
+    maxWaterDepth       = 10000,
+    metalMake           = 1,
 	minCloakDistance    = 75,
 	movementClass       = [[Engineer]],
-        noChaseCategory     = [[MINERALS]],
+    noChaseCategory     = [[MINERALS]],
 	objectName          = "kdrone.s3o",
-        onoffable           = false,
-        seismicSignature    = 4,
-        selfDestructAs      = [[SMALL_UNIT]],
-        side                = [[NKG]],
-        sightDistance       = 500,
-
-	  sounds			= {
+    onoffable           = false,
+    seismicSignature    = 4,
+    selfDestructAs      = [[SMALL_UNIT]],
+    side                = [[Replicator]],
+    sightDistance       = 400,
+	sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",
 		},
@@ -62,7 +58,7 @@ local kdrone = {
 		},
 	  },
 
-	  sfxtypes            = {
+	sfxtypes            = {
 	
 	    explosiongenerators = {
 		"custom:buildersparks",
@@ -70,7 +66,7 @@ local kdrone = {
 	
 	  },
 
-	  weapons             = {
+	weapons             = {
 	
 	    {
 	      def                = [[Laser]],
@@ -81,7 +77,7 @@ local kdrone = {
 	  },
 	
 	
-	  weaponDefs             = {
+	weaponDefs             = {
 	
 	    Laser = {
 	      name                    = [[Burst Laser]],
@@ -91,13 +87,13 @@ local kdrone = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 160,
-		Building = 160,
-		Mech = 160,
-		Tank = 160,
-		Aircraft = 160,
-		Ship = 160,
-		Sub = 10,
+		Cruiser = 50,
+		Building = 50,
+		Mech = 50,
+		Tank = 50,
+		Aircraft = 50,
+		Ship = 50,
+		Sub = 50,
 	      },
 	
 	      duration                = 0.02,
@@ -108,10 +104,10 @@ local kdrone = {
 	      lineOfSight             = true,
 	      range                   = 1000,
 	      reloadtime              = 0.5,
-	      rgbColor                = [[1 0 0]],
+	      rgbColor                = [[0 1 0]],
 	      soundStart              = [[ct/pew1]],
 	      targetMoveError         = 0.15,
-	      thickness               = 3.76646385884692,
+	      thickness               = 1,
 	      tolerance               = 10000,
 	      turret                  = true,
 	      weaponType              = [[LaserCannon]],
@@ -122,8 +118,7 @@ local kdrone = {
 	  
 	smoothAnim          = true,
 	steeringmode        = [[1]],
-	TEDClass            = [[TANK]],
-        terraformSpeed      = 300,
+    terraformSpeed      = 300,
 	reclaimSpeed        = 300,
 	trackOffset         = 12,
 	trackStrength       = 5,
@@ -138,7 +133,7 @@ local kdrone = {
 	workerTime          = 1,
 	script		    = "kdrone.lua",
 
-	  featureDefs         = {
+	featureDefs         = {
 	
 	    DEAD  = {
 	      description      = [[Wreckage - Replicator]],
@@ -152,7 +147,7 @@ local kdrone = {
 	      footprintZ       = 3,
 	      height           = [[20]],
 	      hitdensity       = [[100]],
-	      metal            = 56,
+	      metal            = 50,
 	      object           = [[bgenericwreckage.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 70,
@@ -172,7 +167,7 @@ local kdrone = {
 	      footprintZ       = 2,
 	      height           = [[4]],
 	      hitdensity       = [[100]],
-	      metal            = 28,
+	      metal            = 25,
 	      object           = [[b2x2heap.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 70,

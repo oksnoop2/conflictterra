@@ -1,60 +1,56 @@
 local kdronemine = {
 	name                = [[Replicator]],
 	description         = [[The Replicator will replicate.]],
-        acceleration        = 0.06,
-        brakerate           = 1.5,
-        buildpic            = [[kdronemine.png]],
+    acceleration        = 0.06,
+    brakerate           = 1.5,
+    buildpic            = [[kdronemine.png]],
 	buildCostEnergy     = 0,
 	buildCostMetal      = 100,
-        buildDistance       = 220,
-        builder             = 1,
-
+    buildDistance       = 220,
+    builder             = 1,
 	buildoptions		= {
                 [[kdronemine]],
 
                
 	},
-
 	buildTime           = 15,
-        canAssist           = true,
-		CanAttack =1,
+    canAssist           = true,
+	CanAttack =1,
 	CanCapture =1,
-        canGuard            = true,
+    canGuard            = true,
 	canMove		    = false,
 	canPatrol           = true,
-        canReclaim          = true,
+    canReclaim          = true,
 	canstop             = [[1]],
 	category            = [[LAND]],
-        corpse              = [[DEAD]],
-        reclaimable         = false,
-
+    corpse              = [[DEAD]],
+    reclaimable         = false,
 	defaultmissiontype  = [[Standby]],
-        energyMake          = 10,
-
+    energyMake          = 10,
 	explodeAs           = [[SMALL_UNIT]],
-        footprintx          = 2,
+    footprintx          = 2,
 	footprintZ          = 2,
 	idleAutoHeal        = 0,
 	leaveTracks         = false,
 	maneuverleashlength = [[640]],
 	mass                = 70,
 	maxDamage           = 350,
-        maxSlope            = 300,
+    maxSlope            = 300,
 	maxVelocity         = 2,
-        maxWaterDepth       = 10000,
-        metalMake           = 10,
+    maxWaterDepth       = 10000,
+    metalMake           = 10,
 	minCloakDistance    = 75,
 	movementClass       = [[Engineer]],
-        noChaseCategory     = [[MINERALS]],
+    noChaseCategory     = [[MINERALS]],
 	objectName          = "kdronemine.s3o",
-        onoffable           = false,
-        seismicSignature    = 4,
-        selfDestructAs      = [[SMALL_UNIT]],
-        side                = [[NKG]],
-        sightDistance       = 500,
+    onoffable           = false,
+    seismicSignature    = 4,
+    selfDestructAs      = [[SMALL_UNIT]],
+    side                = [[NKG]],
+    sightDistance       = 500,
 	Kamikaze=1;
 	KamikazeDistance=50;
-	  sounds			= {
+	sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",
 		},
@@ -63,7 +59,7 @@ local kdronemine = {
 		},
 	  },
 
-	  sfxtypes            = {
+	sfxtypes            = {
 	
 	    explosiongenerators = {
 		"custom:buildersparks",
@@ -71,7 +67,7 @@ local kdronemine = {
 	
 	  },
 
-	  weapons             = {
+	weapons             = {
 	
 	    {
 	      def                = [[Mine]],
@@ -82,7 +78,7 @@ local kdronemine = {
 	  },
 	
 	
-	  weaponDefs             = {
+	weaponDefs             = {
 	
 	    Mine = {
 	      name                    = [[Mine]],
@@ -91,13 +87,13 @@ local kdronemine = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 160,
-		Building = 160,
-		Mech = 160,
-		Tank = 160,
-		Aircraft = 160,
-		Ship = 160,
-		Sub = 10,
+		Cruiser = 100,
+		Building = 100,
+		Mech = 100,
+		Tank = 100,
+		Aircraft = 100,
+		Ship = 100,
+		Sub = 100,
 	      },
 	
 	      
@@ -108,7 +104,7 @@ local kdronemine = {
 	smoothAnim          = true,
 	steeringmode        = [[1]],
 	TEDClass            = [[TANK]],
-        terraformSpeed      = 300,
+    terraformSpeed      = 300,
 	reclaimSpeed        = 300,
 	trackOffset         = 12,
 	trackStrength       = 5,
@@ -123,7 +119,7 @@ local kdronemine = {
 	workerTime          = 1,
 	script		    = "kdronemine.lua",
 
-	  featureDefs         = {
+	featureDefs         = {
 	
 	    DEAD  = {
 	      description      = [[Wreckage - Replicator]],
@@ -137,7 +133,7 @@ local kdronemine = {
 	      footprintZ       = 3,
 	      height           = [[20]],
 	      hitdensity       = [[100]],
-	      metal            = 56,
+	      metal            = 50,
 	      object           = [[bgenericwreckage.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 70,
@@ -157,7 +153,7 @@ local kdronemine = {
 	      footprintZ       = 2,
 	      height           = [[4]],
 	      hitdensity       = [[100]],
-	      metal            = 28,
+	      metal            = 25,
 	      object           = [[b2x2heap.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 70,
