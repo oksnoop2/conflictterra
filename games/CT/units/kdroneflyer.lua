@@ -1,17 +1,21 @@
-local kdrone = {
-	name                = [[Replicator]],
-	description         = [[The Replicator will replicate.]],
-    acceleration        = 0.06,
-    brakerate           = 1.5,
-    buildpic            = [[kdrone.png]],
+	unitDef = {
+	  unitname            = [[kdroneflyer]],
+	  name                = [[Flying Replicator]],
+	  description         = [[Replicator that flys.]],
+	  acceleration        = 0.154,
+	  amphibious          = false,
+	  bankscale           = [[1]],
+	  bmcode              = [[1]],
+	  brakeRate           = 3.75,
 	buildCostEnergy     = 0,
 	buildCostMetal      = 100,
     buildDistance       = 150,
     builder             = true,
-	buildoptions		= {
+		buildoptions		= {
         [[kdrone]],
  		[[kdronemine]],
 		[[kdronefactory]],
+		[[kdroneflyer]],
                
 	},
 
@@ -24,33 +28,40 @@ local kdrone = {
 	canPatrol           = true,
     canReclaim          = true,
 	canstop             = [[1]],
-	category            = [[LAND]],
-    corpse              = [[DEAD]],
-    reclaimable         = false,
-    defaultmissiontype  = [[Standby]],
-    energyMake          = 1,
-	explodeAs           = [[SMALL_UNIT]],
-    footprintx          = 2,
-	footprintZ          = 2,
-	idleAutoHeal        = 1,
-	leaveTracks         = false,
-	maneuverleashlength = [[640]],
-	mass                = 80,
-	maxDamage           = 100,
-    maxSlope            = 99999999,
-	maxVelocity         = 4,
-    maxWaterDepth       = 10000,
-    metalMake           = 1,
-	minCloakDistance    = 75,
-	movementClass       = [[kdrone]],
-    noChaseCategory     = [[MINERALS]],
-	objectName          = "kdrone.s3o",
-    onoffable           = false,
-    seismicSignature    = 4,
-    selfDestructAs      = [[SMALL_UNIT]],
-    side                = [[Replicator]],
-    sightDistance       = 400,
-	sounds			= {
+	  category            = [[GUNSHIP]],
+	  collide             = false,
+	  corpse              = [[DEAD]],
+      cruiseAlt           = 50,
+      reclaimable         = false,
+	  defaultmissiontype  = [[VTOL_standby]],
+	  explodeAs           = [[MEDIUM_UNIT]],
+	  floater             = false,
+      footprintx          = 3,
+	  footprintZ          = 3,
+      hoverAttack         = true,
+	  idleAutoHeal        = 0,
+	  maneuverleashlength = [[1280]],
+	  mass                = 125,
+	  maxDamage           = 575,
+	  maxVelocity         = 5,
+	  minCloakDistance    = 75,
+	  moverate1           = [[3]],
+	  noAutoFire          = false,
+	  noChaseCategory     = [[MINERALS SUB]],
+	  objectName          = [[kdroneflyer.s3o]],
+	  scale               = [[1]],
+	  seismicSignature    = 0,
+	  selfDestructAs      = [[MEDIUM_UNIT]],
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:orc_machinegun_flash",
+		"custom:orc_machinegun_muzzle",
+	    },
+	
+	  },
+
+	  sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",
 		},
@@ -59,15 +70,16 @@ local kdrone = {
 		},
 	  },
 
-	sfxtypes            = {
+	  side                = [[Replicator]],
+	  sightDistance       = 500,
+	  smoothAnim          = true,
+	  steeringmode        = [[1]],
+	  TEDClass            = [[VTOL]],
+	  turnRate            = 693,
+	  workerTime          = 0,
+          script              = [[kdroneflyer.lua]],
 	
-	    explosiongenerators = {
-		"custom:buildersparks",
-	    },
-	
-	  },
-
-	weapons             = {
+	  weapons             = {
 	
 	    {
 	      def                = [[Laser]],
@@ -115,69 +127,52 @@ local kdrone = {
 	    },
 	
 	  },
-	  
-	smoothAnim          = true,
-	steeringmode        = [[1]],
-    terraformSpeed      = 300,
-	reclaimSpeed        = 300,
-	trackOffset         = 12,
-	trackStrength       = 5,
-	trackStretch        = 1,
-	trackType           = [[StdTank]],
-	trackWidth          = 15,
-	turninplace         = 0,
-	turnInPlace         = 0,
-	turnRate            = 560,
-	showNanospray	    = 1,
-	Resurrectspeed      =100,
-	workerTime          = 1,
-	script		    = "kdrone.lua",
-
-	featureDefs         = {
+	
+	
+	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Replicator]],
-	      blocking         = true,
+	      description      = [[Wreckage - Flying Replicator]],
+	      blocking         = false,
 	      category         = [[corpses]],
-	      damage           = 262,
+	      damage           = 431,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
 	      featurereclamate = [[SMUDGE01]],
-	      footprintX       = 3,
-	      footprintZ       = 3,
-	      height           = [[20]],
+	      footprintX       = 2,
+	      footprintZ       = 2,
+	      height           = [[4]],
 	      hitdensity       = [[100]],
-	      metal            = 50,
+	      metal            = 325,
 	      object           = [[bgenericwreckage.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 70,
+	      reclaimTime      = 15,
 	      seqnamereclamate = [[TREE1RECLAMATE]],
 	      world            = [[All Worlds]],
 	    },
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Replicator]],
+	      description      = [[Wreckage - Flying Replicator]],
 	      blocking         = false,
 	      category         = [[heaps]],
-	      damage           = 175,
+	      damage           = 287,
 	      energy           = 0,
 	      featurereclamate = [[SMUDGE01]],
-	      footprintX       = 2,
-	      footprintZ       = 2,
+	      footprintX       = 3,
+	      footprintZ       = 3,
 	      height           = [[4]],
 	      hitdensity       = [[100]],
-	      metal            = 25,
-	      object           = [[b2x2heap.s3o]],
+	      metal            = 162,
+	      object           = [[b3x3heap.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 70,
+	      reclaimTime      = 15,
 	      seqnamereclamate = [[TREE1RECLAMATE]],
 	      world            = [[All Worlds]],
 	    },
-
-  	  },
-
+	
+	  },
+	
 	}
-
-
-return lowerkeys({ ["kdrone"] = kdrone })
+	
+	return lowerkeys({ kdroneflyer = unitDef })

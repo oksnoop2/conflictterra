@@ -145,6 +145,13 @@ effectUnitDefs = {
 	},
 
 
+	kdroneflyer = {
+		{class='AirJet',	options={color={0,0.75,0,0},	width =  4, length=35, piece="fxflare2", onActive=true}},
+		{class='AirJet',	options={color={0,0.75,0,0},	width =  4, length=35, piece="fxflare3", onActive=true}},
+		{class='AirJet',	options={color={0,0.75,0,0},	width =  4, length=35, piece="fxflare4", onActive=true}},
+		{class='AirJet',	options={color={0,0.75,0,0},	width =  4, length=35, piece="fxflare5", onActive=true}},
+		{class='AirJet',	options={color={0,0.75,0,0},	width =  4, length=35, piece="fxflare6", onActive=true}},
+	},
 	
 
 
