@@ -14,8 +14,7 @@ local resource_name = {}
 local myTeam = nil
 local myMinerCount = 0
 
-function gadget:Initialize()
-	make_resource_name_table ()
+function gadget:Initialize()	
 for _,t in ipairs(Spring.GetTeamList()) do
         local _,_,_,ai,side = Spring.GetTeamInfo(t)
         if Spring.GetTeamLuaAI(t) == gadget:GetInfo().name then
@@ -25,7 +24,13 @@ for _,t in ipairs(Spring.GetTeamList()) do
 			myTeam = t
 		end
     end
+if (myTeam == nil) then 
+	Spring.Echo ("KTAI: not used, bye bye.")
+	gadgetHandler:RemoveGadget() 
+	return
+end
 Spring.Echo ("KTAI: Hello again! I am on Team: " .. myTeam)
+make_resource_name_table ()
 end
 
 function gadget:GameStart()
@@ -127,20 +132,17 @@ function gadget:GameFrame(frame)
 end
 
 	
-function gadget:UnitIdle(unitID, unitDefID, teamID)
-	
-	
-	
-	if (teamID ~= myTeam) then return end
-	local unitDef = UnitDefs[unitDefID]
-	Spring.Echo ("unit idle:" .. unitID .. "   " .. unitDef.name)
-	if (unitDef.name == "bflagship2") then
-		local resid, tx, ty,tz,d = nearest_res_from_unit (unitID)	
-		if (d < 500) then
-		Spring.GiveOrderToUnit(unitID,31210,{UnitDefNames["bflagshipbase2"].id},{})	-- morphen		
-		end
-	end	
-end
+--function gadget:UnitIdle(unitID, unitDefID, teamID)
+--	if (teamID ~= myTeam) then return end
+--	local unitDef = UnitDefs[unitDefID]
+--	Spring.Echo ("unit idle:" .. unitID .. "   " .. unitDef.name)
+--	if (unitDef.name == "bflagship2") then
+--		local resid, tx, ty,tz,d = nearest_res_from_unit (unitID)	
+--		if (d < 500) then
+--		Spring.GiveOrderToUnit(unitID,31210,{UnitDefNames["bflagshipbase2"].id},{})	-- morphen		
+--		end
+--	end	
+--end
 
 --return: resid, resx, resy, resz, distance
 function nearest_res_from_unit (uID)
