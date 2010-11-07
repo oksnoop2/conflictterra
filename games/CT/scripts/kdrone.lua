@@ -77,17 +77,17 @@ end
 	        SetSignalMask( walk_go )
                 Sleep(30)
 	        while ( true ) do
-	                Turn( forrthigh, x_axis, 0, 0.5 )
-	                Turn( baclthigh, x_axis, 0, 0.5 )
+	                Turn( forrthigh, x_axis, 0, 2 )
+	                Turn( baclthigh, x_axis, 0, 2 )
 
-	                Turn( forrshin, x_axis, 0.5, 0.5 )
-	                Turn( baclshin, x_axis, -0.5, 0.5 )
+	                Turn( forrshin, x_axis, 0.5, 2 )
+	                Turn( baclshin, x_axis, -0.5, 2 )
 
-   	                Turn( forlthigh, x_axis, -0.5, 0.5 )
-        	        Turn( bacrthigh, x_axis, 0.5, 0.5 )
+   	                Turn( forlthigh, x_axis, -0.5, 2 )
+        	        Turn( bacrthigh, x_axis, 0.5, 2 )
 
-   	                Turn( forlshin, x_axis, 0, 0.5 )
-        	        Turn( bacrshin, x_axis, 0, 0.5 )
+   	                Turn( forlshin, x_axis, 0, 2 )
+        	        Turn( bacrshin, x_axis, 0, 2 )
 
 	                WaitForTurn( bacrthigh, x_axis )
 	                WaitForTurn( forlthigh, x_axis )
@@ -100,17 +100,17 @@ end
    	                WaitForTurn( baclshin, x_axis )
 	                Sleep(30)
 	               
-	                Turn( bacrthigh, x_axis, 0, 0.5 )
-	                Turn( forlthigh, x_axis, 0, 0.5 )
+	                Turn( bacrthigh, x_axis, 0, 2 )
+	                Turn( forlthigh, x_axis, 0, 2 )
 
-   	                Turn( forlshin, x_axis, 0.5, 0.5 )
-        	        Turn( bacrshin, x_axis, -0.5, 0.5 )
+   	                Turn( forlshin, x_axis, 0.5, 2 )
+        	        Turn( bacrshin, x_axis, -0.5, 2 )
 
-	                Turn( forrthigh, x_axis, -0.5, 0.5 )
-	                Turn( baclthigh, x_axis, 0.5, 0.5 )
+	                Turn( forrthigh, x_axis, -0.5, 2 )
+	                Turn( baclthigh, x_axis, 0.5, 2 )
 
-	                Turn( forrshin, x_axis, 0, 0.5 )
-	                Turn( baclshin, x_axis, 0, 0.5 )
+	                Turn( forrshin, x_axis, 0, 2 )
+	                Turn( baclshin, x_axis, 0, 2 )
 
 	                WaitForTurn( bacrthigh, x_axis )
 	                WaitForTurn( forlthigh, x_axis )
@@ -127,17 +127,17 @@ end
 	
 	local function StopWalk()
 	        Signal( walk_go )
-		Turn( forrthigh, x_axis, 0, 0.5 )
-		Turn( baclthigh, x_axis, 0, 0.5 )
+		Turn( forrthigh, x_axis, 0, 2 )
+		Turn( baclthigh, x_axis, 0, 2 )
 	       
-	        Turn( forlthigh, x_axis, 0, 0.5 )
-	        Turn( bacrthigh, x_axis, 0, 0.5 )
+	        Turn( forlthigh, x_axis, 0, 2 )
+	        Turn( bacrthigh, x_axis, 0, 2 )
 
-		Turn( forrshin, x_axis, 0, 0.5 )
-		Turn( baclshin, x_axis, 0, 0.5 )
+		Turn( forrshin, x_axis, 0, 2 )
+		Turn( baclshin, x_axis, 0, 2 )
 	       
-	        Turn( forlshin, x_axis, 0, 0.5 )
-	        Turn( bacrshin, x_axis, 0, 0.5 )
+	        Turn( forlshin, x_axis, 0, 2 )
+	        Turn( bacrshin, x_axis, 0, 2 )
 	end
 	
 	function script.StartMoving()
