@@ -18,6 +18,7 @@ unitDef = {
 
     [[brocketplane]],
 
+    [[blaserplane]],
     [[bradarplane]],
   },
 
@@ -45,7 +46,7 @@ unitDef = {
   idleAutoHeal                  = 0,
   isAirBase                     = true,
   mass                          = 275,
-  maxDamage                     = 8500,
+  maxDamage                     = 4500,
   maxSlope                      = 15,
   maxVelocity                   = 0,
   maxWaterDepth                 = 0,

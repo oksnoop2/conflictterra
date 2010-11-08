@@ -40,7 +40,7 @@
 	  idleAutoHeal        = 0,
 	  maneuverleashlength = [[500]],
 	  mass                = 2500,
-	  maxDamage           = 8500,
+	  maxDamage           = 4500,
 	  maxVelocity         = 3,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,

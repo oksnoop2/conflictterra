@@ -1,12 +1,12 @@
 	unitDef = {
 	  unitname            = [[blaserplane]],
 	  name                = [[Suzaku Type Fighter]],
-	  description         = [[High-Tech Fighter - Top-of-the-line fighter armed with new beam weaponry that cuts through cruisers. - Build Limit: 20]],
+	  description         = [[High-Tech Fighter - New fighter model armed with  beam weaponry that cuts through cruisers.]],
           amphibious          = false,
-	  buildCostEnergy     = 300,
-	  buildCostMetal      = 240,
+	  buildCostEnergy     = 200,
+	  buildCostMetal      = 160,
 	  buildPic            = [[blaserplane.png]],
-	  buildTime           = 24,
+	  buildTime           = 18,
 	  canAttack           = true,
           canDropFlare        = false,
           canFly              = true,
@@ -32,7 +32,7 @@
 	  maneuverleashlength = [[1280]],
 	  mass                = 150,
           maxAcc              = 0.5,
-	  maxDamage           = 550,
+	  maxDamage           = 450,
 	  maxVelocity         = 11,
 	  minCloakDistance    = 75,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
@@ -55,7 +55,6 @@
 	  smoothAnim          = true,
           speedToFront        = 0.5,
 	  TEDClass            = [[VTOL]],
-	  unitRestricted      = 20,
           script              = [[blaserplane.lua]],
 	
 	  weapons             = {
@@ -102,12 +101,12 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 160,
-		Building = 80,
-		Mech = 80,
-		Tank = 80,
-		Aircraft = 80,
-		Ship = 80,
+		Cruiser = 50,
+		Building = 10,
+		Mech = 10,
+		Tank = 10,
+		Aircraft = 10,
+		Ship = 10,
 		Sub = 10,
 	      },
 	
