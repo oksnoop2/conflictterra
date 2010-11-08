@@ -13,13 +13,13 @@ local
   },
 
 
-  [2] = {
+  --[2] = {
 
-    name      = 'Drones',
+    --name      = 'Drones',
 
-    startunit = 'kdrone',
+   -- startunit = 'kdrone',
 
-  },
+ -- },
 
 
 }
