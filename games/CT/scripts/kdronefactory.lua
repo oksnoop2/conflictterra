@@ -1,6 +1,10 @@
-local building = piece "building"
+local factory = piece "factory"
 local flare1 = piece "flare1"
-local flare1 = piece "flare1"
+local flare2 = piece "flare2"
+local flare3 = piece "flare3"
+local flare4 = piece "flare4"
+local flare5 = piece "flare5"
+local flare6 = piece "flare6"
 
 function script.Create(unitID)
 end

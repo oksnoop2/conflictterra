@@ -14,6 +14,7 @@ unitDef = {
 
     [[kdrone]],
   },
+  
   buildPic                      = [[kdronefactory.png]],
   buildTime                     = 45,
   canMove                       = true,
@@ -42,6 +43,7 @@ unitDef = {
   minCloakDistance              = 150,
   noAutoFire                    = false,
   objectName                    = [[kdronefactory.s3o]],
+  
   seismicSignature              = 4,
   selfDestructAs                = [[LARGE_BUILDING]],
   showNanoSpray                 = false,

@@ -13,6 +13,15 @@ local
   },
 
 
+  [2] = {
+
+    name      = 'Drones',
+
+    startunit = 'kdrone',
+
+  },
+
+
 }
 
 return sideData
