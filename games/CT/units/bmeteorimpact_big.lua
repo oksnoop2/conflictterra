@@ -40,7 +40,7 @@ unitDef = {
   seismicSignature              = 4,
   selfDestructAs                = [[ROCK_MINEDOUT]],
   side                          = [[NKG]],
-  sightDistance                 = 250,
+  sightDistance                 = 0,
 
   smoothAnim                    = true,
   TEDClass                      = [[METAL]],

@@ -32,6 +32,7 @@ unitDef = {
   maxVelocity                   = 0,
   maxWaterDepth                 = 0,
   minCloakDistance              = 150,
+  decloakDistance			  = 0,
   noAutoFire                    = false,
   objectName                    = [[bmeteor_impact.s3o]],
 
@@ -39,7 +40,7 @@ unitDef = {
   seismicSignature              = 4,
   selfDestructAs                = [[ROCK_MINEDOUT]],
   side                          = [[NKG]],
-  sightDistance                 = 250,
+  sightDistance                 = 0,
 
 	  sfxtypes            = {
 	
