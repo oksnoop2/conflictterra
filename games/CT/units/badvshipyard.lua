@@ -19,7 +19,6 @@ unitDef = {
     [[blras]],
     [[badvaaship]],
     [[badvradarship]],
-    [[bmetalsupplyboat]],
     [[benergysupplyboat]],
     [[bamphmech]],
     [[bbattleship]],

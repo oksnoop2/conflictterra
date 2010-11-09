@@ -52,6 +52,15 @@
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:orc_machinegun_flash",
+		"custom:orc_machinegun_muzzle",
+	    },
+	
+	  },
+
 	  steeringmode        = [[1]],
 	  TEDClass            = [[TANK]],
 	  trackOffset         = 8,

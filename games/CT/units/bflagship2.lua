@@ -76,6 +76,15 @@
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:orc_machinegun_flash",
+		"custom:orc_machinegun_muzzle",
+	    },
+	
+	  },
+
 	  TEDClass            = [[VTOL]],
 	  turnRate            = 300,
 	  workerTime          = 12,

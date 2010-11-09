@@ -6,6 +6,8 @@
 
 	--signals
 	local SIG_AIM = 2
+        local orc_machinegun_flash = SFX.CEG
+        local orc_machinegun_muzzle = SFX.CEG + 1
 	
 	function script.Create()
 	       
@@ -30,6 +32,8 @@
 	end
 	
 	function script.FireWeapon1()
+		EmitSfx(flare1, orc_machinegun_flash)
+		EmitSfx(flare1, orc_machinegun_muzzle)	
 	       Sleep(30)
 	end	
 	

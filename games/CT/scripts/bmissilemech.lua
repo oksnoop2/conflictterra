@@ -25,6 +25,8 @@
 	local SIG_AIM_SEC = 2
 	local walk_go = 4
 	local walk_stop = 8
+        local orc_machinegun_flash = SFX.CEG
+        local orc_machinegun_muzzle = SFX.CEG + 1
 	
 	function script.Create()
 	       
@@ -128,10 +130,14 @@
 	end
 	
 	function script.FireWeapon1()
+		EmitSfx(flare1, orc_machinegun_flash)
+		EmitSfx(flare1, orc_machinegun_muzzle)	
                Sleep(30)
 	end
 
 	function script.FireWeapon2()
+		EmitSfx(flare2, orc_machinegun_flash)
+		EmitSfx(flare2, orc_machinegun_muzzle)	
 	       Sleep(30)
 	end
 	

@@ -57,6 +57,15 @@
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:orc_machinegun_flash",
+		"custom:orc_machinegun_muzzle",
+	    },
+	
+	  },
+
           speedToFront        = 0,
           stages              = [[50]],
 	  TEDClass            = [[VTOL]],

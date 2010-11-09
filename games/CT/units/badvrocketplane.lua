@@ -50,6 +50,15 @@
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:orc_machinegun_flash",
+		"custom:orc_machinegun_muzzle",
+	    },
+	
+	  },
+
 	  side                = [[NKG]],
 	  sightDistance       = 440,
           size                = [[1]],

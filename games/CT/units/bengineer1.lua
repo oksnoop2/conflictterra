@@ -13,8 +13,6 @@ local bengineer1 = {
                 [[bmex]],
                 [[bpowerplant]],
 		[[bnuclearpower]],
-		[[bmetalconverter]],
-		[[bmechfactory]],
 		[[btankfactory]],
 		[[bairport]],
 		[[bsupportfactory]],

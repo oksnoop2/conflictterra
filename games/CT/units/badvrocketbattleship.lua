@@ -56,6 +56,15 @@
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:orc_machinegun_flash",
+		"custom:orc_machinegun_muzzle",
+	    },
+	
+	  },
+
 	  TEDClass            = [[SHIP]],
 	  turnRate            = 90,
 	  workerTime          = 0,

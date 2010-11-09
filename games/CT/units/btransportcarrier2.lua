@@ -66,6 +66,15 @@
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:orc_machinegun_flash",
+		"custom:orc_machinegun_muzzle",
+	    },
+	
+	  },
+
 	  TEDClass            = [[VTOL]],
 	  transportCapacity   = 40,
 	  transportMass       = 6050,

@@ -31,6 +31,8 @@
 	local SIG_AIM_SEV = 64
 	local SIG_AIM_EIG = 128
 	local SIG_AIM_NIN = 256
+        local orc_machinegun_flash = SFX.CEG
+        local orc_machinegun_muzzle = SFX.CEG + 1
 	
 	function script.Create()
 	       
@@ -182,38 +184,56 @@
 	end
 	
 	function script.FireWeapon1()
+		EmitSfx(flare1, orc_machinegun_flash)
+		EmitSfx(flare1, orc_machinegun_muzzle)
 	       Sleep(30)
 	end
 
 	function script.FireWeapon2()
+		EmitSfx(flare2, orc_machinegun_flash)
+		EmitSfx(flare2, orc_machinegun_muzzle)
 	       Sleep(30)
 	end
 
 	function script.FireWeapon3()
+		EmitSfx(flare3, orc_machinegun_flash)
+		EmitSfx(flare3, orc_machinegun_muzzle)
 	       Sleep(30)
 	end
 
 	function script.FireWeapon4()
+		EmitSfx(flare4, orc_machinegun_flash)
+		EmitSfx(flare4, orc_machinegun_muzzle)
 	       Sleep(30)
 	end
 
 	function script.FireWeapon5()
+		EmitSfx(flare5, orc_machinegun_flash)
+		EmitSfx(flare5, orc_machinegun_muzzle)
 	       Sleep(30)
 	end
 
 	function script.FireWeapon6()
+		EmitSfx(flare6, orc_machinegun_flash)
+		EmitSfx(flare6, orc_machinegun_muzzle)
 	       Sleep(30)
 	end
 
 	function script.FireWeapon7()
+		EmitSfx(flare7, orc_machinegun_flash)
+		EmitSfx(flare7, orc_machinegun_muzzle)
 	       Sleep(30)
 	end
 
 	function script.FireWeapon8()
+		EmitSfx(flare8, orc_machinegun_flash)
+		EmitSfx(flare8, orc_machinegun_muzzle)
 	       Sleep(30)
 	end
 
 	function script.FireWeapon9()
+		EmitSfx(flare9, orc_machinegun_flash)
+		EmitSfx(flare9, orc_machinegun_muzzle)
 	       Sleep(30)
 	end
 	
