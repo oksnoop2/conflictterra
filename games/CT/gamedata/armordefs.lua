@@ -11,6 +11,9 @@ local armorDefs = {
     "bmechcruiser",
     "btankcruiser",
     "baircruiser",
+    "badvmechcruiser",
+    "badvtankcruiser",
+    "badvaircruiser",
   },
 
   Building  =  {
@@ -45,9 +48,13 @@ local armorDefs = {
     "badvsearadartower",
     "badvtorpedoturret",
     "bshieldgen",
+    "bbeacon",
     "bmechcruiserfactory",
     "btankcruiserfactory",
     "baircruiserfactory",
+    "badvmechcruiserfactory",
+    "badvtankcruiserfactory",
+    "badvaircruiserfactory",
     "bmechfactory",
     "badvmechfactory",
     "btankfactory",
@@ -71,7 +78,6 @@ local armorDefs = {
     "bairdefmobileship",
     "bnavydefship",
     "bnavydefmobileship",
-	"bbeacon",
   },
 
   Mech  =  {

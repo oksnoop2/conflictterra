@@ -1,42 +1,48 @@
 unitDef = {
 
-  unitname                      = [[bmechfactory]],
-  name                          = [[Combat Mech Factory]],
-  description                   = [[Produces combat and support mechs.]],
+  unitname                      = [[badvmechcruiserfactory]],
+  name                          = [[Matsudaira Class Cruiser Mech Factory]],
+  description                   = [[Produces more advanced combat and support mechs.  Can morph back into the Matsudaira Class Cruiser.]],
   amphibious                    = false,
   acceleration                  = 0,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 500,
-  buildCostMetal                = 400,
+  buildCostEnergy               = 1000,
+  buildCostMetal                = 800,
   builder                       = true,
 
   buildoptions                  = {
 
-    [[bminer]],
-    [[bbasicmech]],
+	[[bengineer2]],
+	[[bheavymech]],
+	[[bheavysiegemech]],
+	[[bheavymissilemech]],
+	[[bheavyflyingmech]],
+        [[badvamphmech]],
+	[[bminer]],
+	[[bbasicmech]],
 
-    [[bsnipermech]],
+	[[bsnipermech]],
 
-    [[bflyingmech]],
-    [[bmissilemech]],
-    [[bantitankmech]],
-    [[bsiegemech]],
+	[[bflyingmech]],
+        [[bantitankmech]],
+	[[bmissilemech]],
+	[[bsiegemech]],
 
-    [[bamphmech]],
+        [[bamphmech]],
   },
 
 
 
-  buildPic                      = [[bmechfactory.png]],
-  buildTime                     = 45,
+  buildPic                      = [[badvmechcruiserfactory.png]],
+  buildTime                     = 60,
   canMove                       = true,
   canPatrol                     = true,
   canstop                       = [[1]],
   canBeAssisted                 = false,
   category                      = [[SINK]],
   collisionVolumeOffsets        = [[0 0 0]],
-  collisionVolumeScales         = [[96 64 96]],
+  collisionVolumeScales         = [[320 200 320]],
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
   corpse                        = [[DEAD]],
@@ -45,8 +51,8 @@ unitDef = {
   energyMake                    = 0,
   energyUse                     = 0,
   explodeAs                     = [[LARGE_BUILDING]],
-  footprintX                    = 6,
-  footprintZ                    = 6,
+  footprintX                    = 20,
+  footprintZ                    = 20,
   idleAutoHeal                  = 0,
   mass                          = 275,
   maxDamage                     = 8500,
@@ -56,7 +62,7 @@ unitDef = {
   metalMake                     = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
-  objectName                    = [[bmechfactory.s3o]],
+  objectName                    = [[badvmechcruiserfactory.s3o]],
 
   seismicSignature              = 4,
   selfDestructAs                = [[LARGE_BUILDING]],
@@ -78,8 +84,9 @@ unitDef = {
   TEDClass                      = [[PLANT]],
   turnRate                      = 0,
   workerTime                    = 1,
-  yardMap                       = [[occcco occcco occcco occcco occcco occcco]],
-  script                        = [[bmechfactory.lua]],
+  yardMap                       = [[
+oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc]],
+  script                        = [[badvmechcruiserfactory.lua]],
 
 
 
@@ -137,4 +144,4 @@ unitDef = {
 
 
 
-return lowerkeys({ bmechfactory = unitDef })
+return lowerkeys({ badvmechcruiserfactory = unitDef })

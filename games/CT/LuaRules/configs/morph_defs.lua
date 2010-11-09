@@ -80,24 +80,6 @@ local morphDefs = {
     },
   },
 
-  bmetaltruck = {
-    {
-      into = 'bmetaltruckdepot',
-      metal = 0,
-      energy = 0,
-      time = 2,
-    },
-  },
-
-  bmetaltruckdepot = {
-    {
-      into = 'bmetaltruck',
-      metal = 0,
-      energy = 0,
-      time = 2,
-    },
-  },
-
   benergytruck = {
     {
       into = 'benergytruckdepot',
@@ -113,24 +95,6 @@ local morphDefs = {
       metal = 0,
       energy = 0,
       time = 2,
-    },
-  },
-
-  bmetalsupplyship = {
-    {
-      into = 'bmetalsupplyshipdepot',
-      metal = 0,
-      energy = 0,
-      time = 4,
-    },
-  },
-
-  bmetalsupplyshipdepot = {
-    {
-      into = 'bmetalsupplyship',
-      metal = 0,
-      energy = 0,
-      time = 4,
     },
   },
 
@@ -159,6 +123,12 @@ local morphDefs = {
       energy = 0,
       time = 5,
     },
+    {
+      into = 'badvmechcruiser',
+      metal = 800,
+      energy = 1000,
+      time = 60,
+    },
   },
 
   bmechcruiserfactory = {
@@ -167,6 +137,12 @@ local morphDefs = {
       metal = 0,
       energy = 0,
       time = 5,
+    },
+    {
+      into = 'badvmechcruiserfactory',
+      metal = 800,
+      energy = 1000,
+      time = 60,
     },
   },
 
@@ -206,12 +182,21 @@ local morphDefs = {
     },
   },
 
-  bmechfactory = {
+  badvmechcruiser = {
     {
-      into = 'badvmechfactory',
-      metal = 800,
-      energy = 1000,
-      time = 60,
+      into = 'badvmechcruiserfactory',
+      metal = 0,
+      energy = 0,
+      time = 5,
+    },
+  },
+
+  badvmechcruiserfactory = {
+    {
+      into = 'badvmechcruiser',
+      metal = 0,
+      energy = 0,
+      time = 5,
     },
   },
 

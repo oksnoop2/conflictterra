@@ -15,6 +15,7 @@ unitDef = {
   buildoptions                  = {
 
 	[[bflagship2]],
+	[[badvmechcruiser]],
 	[[bbattlecruiser]],
 	[[btransportcarrier2]],
 	[[benergysupplyship]],
