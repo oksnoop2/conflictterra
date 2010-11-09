@@ -1,6 +1,6 @@
-= NO AI CURRENTLY WORKS FOR CONFLICT TERRA =
-
 #summary This Page will explain how to add an AI controlled team inside spring lobby.
+
+= NO AI CURRENTLY WORKS FOR CONFLICT TERRA =
 
 = Table of Contents =
   * [http://code.google.com/p/conflictterra/wiki/Adding_an_AI#The_Process The Process]
