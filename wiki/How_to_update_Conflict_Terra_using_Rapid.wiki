@@ -1,3 +1,5 @@
+#summary How to Update Conflict Terra using Rapid
+
 = Introduction =
 
 This will show you how to update Conflict Terra using Rapid.
