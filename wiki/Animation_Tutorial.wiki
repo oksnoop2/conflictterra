@@ -84,14 +84,14 @@ This is what each part of each line means:
 ||local body||For the rest of the script, the word "body" indicates the piece labeled.||
 ||piece "body"||The name of the piece, as labeled by you in Upspring.||
 
-The same goes for the turret, barrel, and flare.  It should be noted that the local and piece do not have to be the same word.  However, for simplicity's sake, it's advisable to keep them the same. If it is too much of a hassle to rename the pieces in UpSpring/Blender/Wings3d, then you can replace 'piece "body"' with the object's body piece name. 
+The same goes for the turret, barrel, and flare.  It should be noted that the local and piece do not have to be the same word.  However, for simplicity's sake, it's advisable to keep them the same. If it is too much of a hassle to rename the pieces in UpSpring, Blender, or Wings3d, then you can replace 'piece "body"' with the object's body piece name. 
 
 You need to label the pieces for every piece *used in the script.*  It is advisable to label all of the pieces in the model though, so if you work with it later, you're easily able to tell what you have to work with.
 
 Keep in mind that the more pieces an object has, the more effect it will have on the game's frame rate, especially in later stages of the game. Number of pieces affect slowdown much more than polygon counts.
 
 = Ready?  Aim!  Fire! =
-Robots are useless and boring if they can't fire lasers from their eyes and great big plasma balls from their arse. Getting your units to fire their weapons happens in the animation script.  There are 5 important parts that must work together to allow your weapon to fire:
+Robots are useless and boring if they can't fire any of their weapons!  Getting your units to fire their weapons happens in the animation script.  There are 5 important parts that must work together to allow your weapon to fire:
 
   * == Query Weapon ==
 {{{
@@ -138,44 +138,46 @@ Robots are useless and boring if they can't fire lasers from their eyes and grea
 }}}
   This is where the actual movements involved in aiming take place.  This is arguably the most important part of getting your weapon to fire, and a lot is going on.
 
+    * === Signal ===
 {{{
 Signal(SIG_AIM)
 }}}
- -- stops any previous thread that has "SetSignalMask(SIG_AIM)" in it.
+  Stops any previous thread that has "SetSignalMask(SIG_AIM)" in it.
 
+    * === Set Signal Mask ===
 {{{
 SetSignalMask(SIG_AIM)
 }}}
- -- sets the thread to be stoppable when Signal(SIG_AIM) is called.
+  Sets the thread to be stoppable when Signal(SIG_AIM) is called.
 
+    * === Motions ===
 {{{
 Turn(turret, y_axis, heading, math.rad(90))
-}}}
- -- turns the piece turret along the y axis (like a spinning top: turns left and right) to direction heading (the direction of the enemy unit) at a speed of 90 radians per time unit (frames???, milliseconds???)
-
-{{{
 Turn(barrel, x_axis, -pitch, math.rad(50))
 }}}
- -- turns the piece barrel along the x axis (like a ferris wheel: up and down) to direction -pitch (direction of the enemy unit but it's negative because of geometric implementation) at a speed of 50 radians per time unit.
+  Turns the piece turret along the y axis (like a spinning top: turns left and right) to direction heading (the direction of the enemy unit) at a speed of 90 radians per time unit (frames???, milliseconds???)
 
+  Turns the piece barrel along the x axis (like a ferris wheel: up and down) to direction -pitch (direction of the enemy unit but it's negative because of geometric implementation) at a speed of 50 radians per time unit.
+
+    * === Waiting for Motions ===
 {{{
 WaitForTurn(turret, y_axis)
-}}}
- -- don't go on to the next step until turret has finished rotating along y axis
-
-{{{
 WaitForTurn(barrel, x_axis)
 }}}
- -- don't go on to the next step until barrel has finished rotating along x axis
+  Don't go on to the next step until turret has finished rotating along y axis
 
+  Don't go on to the next step until barrel has finished rotating along x axis
+
+    * === Restore After Delay ===
 {{{
 StartThread(RestoreAfterDelay)
 }}}
- -- start the "RestoreAfterDelay" which moves the pieces back to original spots after a certain amount of time
+  Start the "RestoreAfterDelay" which moves the pieces back to original spots after a certain amount of time
 
+    * === Return ===
 {{{
 return true
 }}}
- -- lets engine know it's aiming???
+ Lets engine know it's aiming???
 
 Depending on your model, you can have the turret and barrel be the same, in which case just replace all instances of "barrel" with "turret". 
