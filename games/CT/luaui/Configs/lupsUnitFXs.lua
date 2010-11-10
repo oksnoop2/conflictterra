@@ -40,10 +40,6 @@ effectUnitDefs = {
 		{class='AirJet',	options={color={0,0,0.75,0},	emitVector    = {0,1,0},	width =  15, length=35, piece="fxflare6", onActive=true}},
 	},
 
-	bmetalsupplyship = {
-		{class='AirJet',	options={color={0,0,0.75,0},	width =  15, length=35, piece="fxflare", onActive=true}},
-	},
-
 	benergysupplyship = {
 		{class='AirJet',	options={color={0,0,0.75,0},	width =  15, length=35, piece="fxflare1", onActive=true}},
 		{class='AirJet',	options={color={0,0,0.75,0},	width =  15, length=35, piece="fxflare2", onActive=true}},
@@ -80,6 +76,13 @@ effectUnitDefs = {
 	badvmechcruiser = {
 		{class='AirJet',	options={color={0,0,0.75,0},	width =  25, length=75, piece="fxflare1", onActive=true}},
 		{class='AirJet',	options={color={0,0,0.75,0},	width =  25, length=75, piece="fxflare2", onActive=true}},
+	},
+
+	badvtankcruiser = {
+		{class='AirJet',	options={color={0,0,0.75,0},	width =  35, length=75, piece="fxflare1", onActive=true}},
+		{class='AirJet',	options={color={0,0,0.75,0},	width =  35, length=75, piece="fxflare2", onActive=true}},
+		{class='AirJet',	options={color={0,0,0.75,0},	width =  25, length=55, piece="fxflare3", onActive=true}},
+		{class='AirJet',	options={color={0,0,0.75,0},	width =  25, length=55, piece="fxflare4", onActive=true}},
 	},
 
 	

@@ -6,7 +6,6 @@ local armorDefs = {
     "bbattlecruiser",
     "btransportcarrier2",
     "bsupplydepotmobile",
-    "bmetalsupplyship",
     "benergysupplyship",
     "bmechcruiser",
     "btankcruiser",
@@ -22,7 +21,6 @@ local armorDefs = {
     "bmex",
     "bpowerplant",
     "bnuclearpower",
-    "bmetalconverter",
     "bseamex",
     "bseapowerplant",
     "bradartower",
@@ -37,7 +35,6 @@ local armorDefs = {
     "badvmex",
     "badvpowerplant",
     "badvnuclearpower",
-    "badvmetalconverter",
     "badvradartower",
     "badvjammertower",
     "badvlandturret",
@@ -55,12 +52,7 @@ local armorDefs = {
     "badvmechcruiserfactory",
     "badvtankcruiserfactory",
     "badvaircruiserfactory",
-    "bmechfactory",
-    "badvmechfactory",
-    "btankfactory",
-    "bmetaltruckdepot",
     "benergytruckdepot",
-    "badvtankfactory",
     "bsupportfactory",
     "bairport",
     "badvairport",
@@ -69,7 +61,6 @@ local armorDefs = {
     "bsubpens",
     "badvsubpens",
     "badvbeacon",
-    "bmetalsupplyshipdepot",
     "benergysupplyshipdepot",
     "bexperimentalpad",
     "blanddefship",
@@ -83,7 +74,6 @@ local armorDefs = {
   Mech  =  {
     "bengineer1",
     "bminer",
-    "bdefensemech",
     "bbasicmech",
     "bsnipermech",
     "bsiegemech",
@@ -100,7 +90,6 @@ local armorDefs = {
   },
 
   Tank = {
-    "bmetaltruck",
     "benergytruck",
     "bassaulttank",
     "bmissiletank",
@@ -134,7 +123,6 @@ local armorDefs = {
 
   Ship = {
     "bseaengineer1",
-    "bmetalsupplyboat",
     "benergysupplyboat",
     "bbattleship",
     "brocketbattleship",

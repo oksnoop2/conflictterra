@@ -1,18 +1,25 @@
 unitDef = {
 
-  unitname                      = [[btankfactory]],
-  name                          = [[Tank Factory]],
-  description                   = [[Produces tanks and combat vehicles.]],
+  unitname                      = [[badvtankcruiserfactory]],
+  name                          = [[Okubo Class Cruiser Tank Factory]],
+  description                   = [[Produces more advanced tanks.  Can morph back into the Okubo Class Cruiser.]],
   amphibious                    = false,
   acceleration                  = 0,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 500,
-  buildCostMetal                = 400,
+  buildCostEnergy               = 1000,
+  buildCostMetal                = 800,
   builder                       = true,
 
   buildoptions                  = {
 
+	[[bengineer2]],
+	[[bheavyassaulttank]],
+	[[bheavymissiletank]],
+	[[bvhsa]],
+	[[bempcannon]],
+	[[baatruck]],
+	[[badvradartank]],
 	[[bminer]],
 	[[bassaulttank]],
 
@@ -21,21 +28,20 @@ unitDef = {
 	[[bartillery]],
 	[[baabuggy]],
 	[[bradartank]],
-
 	[[breztank]],
   },
 
 
 
-  buildPic                      = [[btankfactory.png]],
-  buildTime                     = 45,
+  buildPic                      = [[badvtankcruiserfactory.png]],
+  buildTime                     = 60,
   canMove                       = true,
   canPatrol                     = true,
   canstop                       = [[1]],
   canBeAssisted                 = false,
   category                      = [[SINK]],
   collisionVolumeOffsets        = [[0 0 0]],
-  collisionVolumeScales         = [[112 80 112]],
+  collisionVolumeScales         = [[192 200 368]],
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
   corpse                        = [[DEAD]],
@@ -44,8 +50,8 @@ unitDef = {
   energyMake                    = 0,
   energyUse                     = 0,
   explodeAs                     = [[LARGE_BUILDING]],
-  footprintX                    = 7,
-  footprintZ                    = 7,
+  footprintX                    = 12,
+  footprintZ                    = 23,
   idleAutoHeal                  = 0,
   mass                          = 275,
   maxDamage                     = 8500,
@@ -55,37 +61,37 @@ unitDef = {
   metalMake                     = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
-  objectName                    = [[btankfactory.s3o]],
+  objectName                    = [[badvtankcruiser.s3o]],
 
   seismicSignature              = 4,
   selfDestructAs                = [[LARGE_BUILDING]],
   showNanoSpray                 = false,
   side                          = [[NKG]],
   sightDistance                 = 250,
-  smoothAnim                    = true,
-  sortbias                      = [[0]],
 
 	  sounds			= {
 	      select = {
-		"argh/Argh_TankSound",
+		"golgotha/vehicle_done_44khz",
 		},
 	      ok = {
-		"argh/Argh_TankSound",
+		"golgotha/vehicle_done_44khz",
 		},
 	  },
 
+  smoothAnim                    = true,
+  sortbias                      = [[0]],
   TEDClass                      = [[PLANT]],
   turnRate                      = 0,
   workerTime                    = 1,
-  yardMap                       = [[ooooooo ooooooo occccco occccco occccco occccco occccco]],
-  script                        = [[btankfactory.lua]],
+  yardMap                       = [[cccccccccccc ccccoooocccc cooooooooooc cooooooooooc oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo cccccccccccc cccccccccccc cccccccccccc cccccccccccc cccccccccccc cccccccccccc cccccccccccc]],
+  script                        = [[badvtankcruiserfactory.lua]],
 
 
 
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Terrestrial Tank Factory]],
+      description      = [[Wreckage - Combat Mech Factory]],
       blocking         = true,
       category         = [[corpses]],
       damage           = 6375,
@@ -99,7 +105,7 @@ unitDef = {
       metal            = 200,
       object           = [[bgenericwreckage.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,
+      reclaimTime      = 6375,
 
       seqnamereclamate = [[TREE1RECLAMATE]],
       world            = [[All Worlds]],
@@ -107,19 +113,19 @@ unitDef = {
 
 
     DEAD2 = {
-      description      = [[Debris - Terrestrial Tank Factory]],
+      description      = [[Debris - Combat Mech Factory]],
       blocking         = false,
 
       category         = [[heaps]],
       damage           = 4250,
       energy           = 0,
       featurereclamate = [[SMUDGE01]],
-      footprintX       = 7,
-      footprintZ       = 7,
+      footprintX       = 6,
+      footprintZ       = 6,
       height           = [[4]],
       hitdensity       = [[100]],
       metal            = 100,
-      object           = [[b7x7heap.s3o]],
+      object           = [[b6x6heap.s3o]],
       reclaimable      = true,
       reclaimTime      = 275,
       seqnamereclamate = [[TREE1RECLAMATE]],
@@ -136,4 +142,4 @@ unitDef = {
 
 
 
-return lowerkeys({ btankfactory = unitDef })
+return lowerkeys({ badvtankcruiserfactory = unitDef })

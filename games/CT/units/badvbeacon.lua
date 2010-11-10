@@ -16,6 +16,8 @@ unitDef = {
 
 	[[bflagship2]],
 	[[badvmechcruiser]],
+	[[badvtankcruiser]],
+	[[badvaircruiser]],
 	[[bbattlecruiser]],
 	[[btransportcarrier2]],
 	[[benergysupplyship]],

@@ -153,6 +153,12 @@ local morphDefs = {
       energy = 0,
       time = 5,
     },
+    {
+      into = 'badvtankcruiser',
+      metal = 800,
+      energy = 1000,
+      time = 60,
+    },
   },
 
   btankcruiserfactory = {
@@ -161,6 +167,12 @@ local morphDefs = {
       metal = 0,
       energy = 0,
       time = 5,
+    },
+    {
+      into = 'badvtankcruiserfactory',
+      metal = 800,
+      energy = 1000,
+      time = 60,
     },
   },
 
@@ -200,12 +212,21 @@ local morphDefs = {
     },
   },
 
-  btankfactory = {
+  badvtankcruiser = {
     {
-      into = 'badvtankfactory',
-      metal = 800,
-      energy = 1000,
-      time = 60,
+      into = 'badvtankcruiserfactory',
+      metal = 0,
+      energy = 0,
+      time = 5,
+    },
+  },
+
+  badvtankcruiserfactory = {
+    {
+      into = 'badvtankcruiser',
+      metal = 0,
+      energy = 0,
+      time = 5,
     },
   },
 
