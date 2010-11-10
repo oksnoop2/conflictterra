@@ -90,26 +90,26 @@
 	end
 	
 	function script.FireWeapon1()
-		EmitSfx(flare1, orc_machinegun_flash)
-		EmitSfx(flare1, orc_machinegun_muzzle)	
-	       Sleep(30)
-        end
-
-	function script.FireWeapon2()
-		EmitSfx(flare2, orc_machinegun_flash)
-		EmitSfx(flare2, orc_machinegun_muzzle)	
-	       Sleep(30)
-        end
-
-	function script.FireWeapon3()
 		EmitSfx(flare3, orc_machinegun_flash)
 		EmitSfx(flare3, orc_machinegun_muzzle)	
 	       Sleep(30)
         end
 
-	function script.FireWeapon4()
+	function script.FireWeapon2()
 		EmitSfx(flare4, orc_machinegun_flash)
 		EmitSfx(flare4, orc_machinegun_muzzle)	
+	       Sleep(30)
+        end
+
+	function script.FireWeapon3()
+		EmitSfx(flare, orc_machinegun_flash)
+		EmitSfx(flare, orc_machinegun_muzzle)	
+	       Sleep(30)
+        end
+
+	function script.FireWeapon4()
+		EmitSfx(flare2, orc_machinegun_flash)
+		EmitSfx(flare2, orc_machinegun_muzzle)	
 	       Sleep(30)
         end
 
