@@ -12,17 +12,19 @@
     * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview NKG Unit Guide]
     * [http://code.google.com/p/conflictterra/wiki/MechUnitGuide Mech Guide]
     * [http://code.google.com/p/conflictterra/wiki/AircraftUnitGuide Aircraft Guide]
+  * Conflict Terra's Maps
+    * [http://code.google.com/p/conflictterra/wiki/MapInfo Map Information]
+    * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks How to Add Starting Rocks to a Map]
+    * [http://code.google.com/p/conflictterra/wiki/Conflict_Terra_Map_Making How to Make a Map in the Style of Conflict Terra's Maps]
   * The Conflict Terra Way
     * [http://code.google.com/p/conflictterra/wiki/CTWHowtoMakeaUnit How to Make a Unit]
     * [http://code.google.com/p/conflictterra/wiki/Simple_Tank_Wings3d How to Model a Tank]
     * [http://code.google.com/p/conflictterra/wiki/Animation_Tutorial Animation Tutorial]
-    * [http://code.google.com/p/conflictterra/wiki/Conflict_Terra_Map_Making How to Make a Map in the Style of Conflict Terra's Maps]
   * Development Hub
     * [http://code.google.com/p/conflictterra/wiki/SpaceRocks Space Rocks]
     * [http://code.google.com/p/conflictterra/wiki/OriginalNKGCarriers Carriers]
     * [http://code.google.com/p/conflictterra/wiki/UIPlans UI Plans]
     * [http://code.google.com/p/conflictterra/wiki/CEG_Explantion CEG Explanation]
-    * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks How to Add Starting Rocks to a Map]
     * [http://code.google.com/p/conflictterra/wiki/Useful_Dev_Information Useful Development Information]
     * [http://code.google.com/p/conflictterra/wiki/CT_Legacy Conflict Terra Legacy]
 
