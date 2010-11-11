@@ -1,9 +1,9 @@
 #summary Information about Maps.
 
 = Table of Contents =
-  * Conflict Terra Map Policy
-  * Links
-  * "Official" Conflict Terra Maps
+  * [http://code.google.com/p/conflictterra/wiki/MapInfo#Conflict_Terra_Map_Policy Conflict Terra Map Policy]
+  * [http://code.google.com/p/conflictterra/wiki/MapInfo#Links Links]
+  * [http://code.google.com/p/conflictterra/wiki/MapInfo#"Official"_Conflict_Terra_Maps "Official" Conflict Terra Maps]
 
 = Conflict Terra Map Policy =
 
@@ -13,8 +13,10 @@ We decided that our policy towards community maps for the game is that if you pu
 
 = Links =
 
-  * [http://code.google.com/p/conflictterra/wiki/Conflict_Terra_Map_Making How to Make a Map in the Style of Conflict Terra's Maps]
+Here are some links to some guides to help you make your own Conflict Terra map, if you'd wish to do so.
+
   * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks How to Add Starting Rocks to a Map]
+  * [http://code.google.com/p/conflictterra/wiki/Conflict_Terra_Map_Making How to Make a Map in the Style of Conflict Terra's Maps]
 
 = "Official" Conflict Terra Maps =
 
