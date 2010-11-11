@@ -46,3 +46,8 @@ http://img100.imageshack.us/img100/474/screenshot042.png
 http://img600.imageshack.us/img600/1774/screenshot043.png
 
 =Then open up the texture map.=
+
+
+
+-----------------------------------------------------------------------------------------
+These are merely guidelines though. The more important part of making a map for conflict terra is to include [http://code.google.com/p/conflictterra/wiki/MapsAndRocks lua] for spawning the starting rocks.
