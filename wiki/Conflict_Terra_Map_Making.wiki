@@ -1,4 +1,5 @@
 #summary How to Make Maps in the Style of Conflict Terra's Maps
+#labels Phase-Tutorial
 
 http://img576.imageshack.us/img576/9696/screenshot032w.png
 
