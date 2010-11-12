@@ -1,5 +1,4 @@
-#labels Phase-Implementation
-
+#labels Phase-Tutorial
 =A no text explanation on how to make a tank in Wings3d =
 
 <a href="http://img219.imageshack.us/i/screenshot010to.png/" target="_blank"><img src="http://img219.imageshack.us/img219/1181/screenshot010to.th.png" border="0"/></a>
