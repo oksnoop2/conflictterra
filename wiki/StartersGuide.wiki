@@ -1,4 +1,5 @@
 #summary Starting guide for Conflict Terra
+#labels Phase-Guide
 
 *Caution:  This Starter's Guide is currently a little out of date, due to the shift in how Conflict Terra's economy works.  Once the new system is sufficiently setup, the Starter's Guide will be updated.*
 
