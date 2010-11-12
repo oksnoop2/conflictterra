@@ -26,6 +26,11 @@ Open up the CT_Testgebiet_res.lua file<br>
 NOTE: rename it to fit your own map name!<br>
 ie MyCoolMap_res.lua
 
+It is adviced to this map as an example instead of Eureka or Fishbone Ridge.<br>
+They both do work but there are some problems with their Lua.<br>
+For example their Lua directly spawns the rocks via Spring.CreateUnit ("bminerals")<br>
+Of course this causes problems if the mod does not have such a unit.
+
 
 Scroll down to<br><br>
 
@@ -64,3 +69,6 @@ Or example you could return different rock layouts (res tables) based on a choic
 
 This will be explained in depth later, if you are somewhat familiar with Lua you can probally figure it out. <br>
 If you have a special idea/trouble with your map you can also ask me (knorke)<br>
+
+= Plans =
+Allowing mappers to define the interval etc. of meteor storms on their map.
