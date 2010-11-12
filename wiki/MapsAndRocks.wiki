@@ -1,6 +1,8 @@
 #summary How to Spawn Starting Minerals on the Map via Map Lua
 #labels Phase-Deploy,Phase-Design,maps,rocks,lua
 
+= Outdated Material, Will Be Updated =
+
 = Introduction =
 The unitname of the startressource is: bminerals
 After balance, testing etc. is done it should not be changed anymore.
