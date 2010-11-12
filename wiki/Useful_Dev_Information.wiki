@@ -1,4 +1,5 @@
 #summary Useful tidbits about Conflict Terra, for development purposes.
+#labels Phase-Information
 
 = Table of Contents =
   * [http://code.google.com/p/conflictterra/wiki/Useful_Dev_Information#Conflict_Terra's_Categories Conflict Terra's Categories]
