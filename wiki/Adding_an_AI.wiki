@@ -1,4 +1,5 @@
 #summary This Page will explain how to add an AI controlled team inside spring lobby.
+#labels Phase-Guide
 
 = NO AI CURRENTLY WORKS FOR CONFLICT TERRA =
 
