@@ -1,48 +1,66 @@
 #summary How to Spawn Starting Minerals on the Map via Map Lua
 #labels Phase-Tutorial,Maps
 
-= Outdated Material, Will Be Updated =
-
 = Introduction =
-The unitname of the startressource is: bminerals
-After balance, testing etc. is done it should not be changed anymore.
-This page explains how to add start minerals to your map.
+This page explains how to add start minerals to your map.<br>
+Mappers can define where they want to place mineable resources on the map with a simple (ololol) config file.
+This is preferable for mappers who want not to rely on a <not yet added> function that will automagically place rocks at gamestart.
+For a TA map, you would not want your metal or geo spots placed by some script either, would you?
+
+The unitname of the startressource is: bminerals<br>
+After balance, testing etc. is done it should not be changed anymore.<br>
+At the moment it is worth 500 metal and a worker can carry 25 metal.<br>
+
+= Technical Details =
+There is a gadget: tp_resourcespawner.lua
+It looks for a map confile filed with the name of:<br>
+MAPNAME_res.lua<br>
+This map file returns a table of rock positions, the gadget reads these positions and then places them.<br>
+This is different to the old way, where the map would try to spawn the rocks itself, causing problems if the mod did no have a "bminerals" unit etc.
+
 
 = Details =
-
-[http://code.google.com/p/conflictterra/source/browse/map%20resources/LuaRules/Gadgets/tp_ressources.lua The gadget that spawns starting minerals for a map.]
-
-Scroll down to
-*GameStart()*
-There you find this:
-{{{
-SpawnRessourceField (3900,1900, 3, 300)
-SpawnRessourceField (2250,2300, 2, 300)
-SpawnRessource (1800,2500)
-SpawnRessource (2500,2700)
-SpawnRessource (3650,1400)
-SpawnRessource (4360,1600)
-SpawnRessourceField (770,3630, 2, 250)
-SpawnRessourceField (5150,480, 2, 250)
-}}}
+A map with a rock layout file:<br>
+http://www.file-upload.net/download-2966227/CT_Testgebiet.sd7.html
+Open up the CT_Testgebiet_res.lua file<br>
+NOTE: rename it to fit your own map name!<br>
+ie MyCoolMap_res.lua
 
 
-*SpawnRessource (x,y)*
-Spawns a single bminerals at x:y coordinates
+Scroll down to<br><br>
 
-*SpawnRessourceField (x,y, n, spread)*
-Spawns n minerals at x:y coordinates spread over an area.
-Spread = how far away from x:y rocks are spawned (randomly)
+---coordinates go in between here---<br>
+SpawnResource (1722 , 3361)   -- left start field<br>
+SpawnResource (1574 , 3318)   -- <br>
+SpawnResource (1880 , 3412)   -- <br>
+SpawnResource (1373 , 3272)   -- <br>
+SpawnResource (2042 , 3482)   -- <br>
+...<br>
+...<br>
+---coordinates go in between here---<br><br>
 
-http://h-1.abload.de/img/spawnressourcefieldun06.png
+file: http://code.google.com/p/conflictterra/source/browse/games/CT/luaui/widgets/tp_coordinate_help.lua?spec=svn686&r=686<br>
 
-Delete all the SpawnRessource function calls and add your own or just change the numbers.
-The coordinates are the same as the ones you see ingame in the tooltip.
+Change the numbers to where you want rocks to appear at gamestart.<br>
+The coordinates are the same as displayed in Spring's ingame tooltip.<br>
+Do not touch the other stuff in the file unless you know what you are doing.<br>
+In this case experiments are encouraged :) <br>
+Eitherwise please note that a faulty _res.lua file will not stop your map from loading but no rocks will be spawned or errors might appear in the console.
+(lol why is that text cursive Oo)
 
-Of course if you feel experienced with Lua you can also make complex stuff and write your own functions.
+= coordinate helper widget =
+Press F11 and enable it.<br>
+Every time you put down a marker it will log its position in infolog.txt and also
+in MAPNAME_coordinates.txt<br>
+You can then copy the coordinates into your maps config file.<br>
+NOTE: if you enter a text for the marker it will also be logged.<br>
+It is probally a good idea to "name" your rocks so you do not get confused.<br>
+ie like you see in the example abouve.<br>
 
+==Map Options & advanced stuff==
+Maps are not limited to return a static rocklayout.<br>
+You could put in conditions, etc. and place more rocks based on player number or scan your heightmap for hills higher than X and only put rocks there.<br>
+Or example you could return different rock layouts (res tables) based on a choice made from mapoptions. Or add more rocks if player number > 2.<br>
 
-==Map Options==
-Maps can also have options to change all kind of things
-For example change the waterlevel or different weather.
-Here is an [http://code.google.com/p/conflictterra/source/browse/map+resources/MapOptions.lua example] that adds a custom "rocklayout" list parameter and spawns resources depending on the chosen preset.
+This will be explained in depth later, if you are somewhat familiar with Lua you can probally figure it out. <br>
+If you have a special idea/trouble with your map you can also ask me (knorke)<br>
