@@ -1,5 +1,5 @@
 #summary This is a brief guide to how the Armor System for Conflict Terra works.
-#labels Phase-Design,ArmorSystem
+#labels Phase-Guide
 
 = Table of Contents =
   * [http://code.google.com/p/conflictterra/wiki/ArmorSystem#Summary Summary]
