@@ -1,5 +1,5 @@
 #summary A hub for the design and implementation of the units we call Carriers.
-#labels Phase-Implementation,Carriers
+#labels Phase-Information
 
 = Introduction =
 
