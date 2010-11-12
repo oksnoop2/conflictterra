@@ -12,7 +12,6 @@ local bengineer2 = {
 	buildoptions		= {
                 [[badvpowerplant]],
 		[[badvnuclearpower]],
-		[[badvairport]],
 		[[badvshipyard]],
 		[[badvsubpens]],
                 [[badvbeacon]],

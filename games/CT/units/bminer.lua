@@ -13,7 +13,6 @@ local bminer = {
 		[[bsupplydepot]],
                 [[bpowerplant]],
                 [[bnuclearpower]],
-                [[bairport]],
                 [[bsupportfactory]],
 		[[bbeacon]],
                 [[bshipyard]],

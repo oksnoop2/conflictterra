@@ -183,6 +183,12 @@ local morphDefs = {
       energy = 0,
       time = 5,
     },
+    {
+      into = 'badvaircruiser',
+      metal = 800,
+      energy = 1000,
+      time = 60,
+    },
   },
 
   baircruiserfactory = {
@@ -191,6 +197,12 @@ local morphDefs = {
       metal = 0,
       energy = 0,
       time = 5,
+    },
+    {
+      into = 'badvaircruiserfactory',
+      metal = 800,
+      energy = 1000,
+      time = 60,
     },
   },
 
@@ -230,12 +242,21 @@ local morphDefs = {
     },
   },
 
-  bairport = {
+  badvaircruiser = {
     {
-      into = 'badvairport',
-      metal = 800,
-      energy = 1000,
-      time = 60,
+      into = 'badvaircruiserfactory',
+      metal = 0,
+      energy = 0,
+      time = 5,
+    },
+  },
+
+  badvaircruiserfactory = {
+    {
+      into = 'badvaircruiser',
+      metal = 0,
+      energy = 0,
+      time = 5,
     },
   },
 
