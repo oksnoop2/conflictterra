@@ -1,4 +1,5 @@
 #summary How to Update Conflict Terra using Rapid
+#labels Phase-Guide
 
 = Introduction =
 
