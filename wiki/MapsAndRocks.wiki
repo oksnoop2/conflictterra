@@ -1,5 +1,5 @@
 #summary How to Spawn Starting Minerals on the Map via Map Lua
-#labels Phase-Deploy,Phase-Design,maps,rocks,lua
+#labels Phase-Tutorial,Maps
 
 = Outdated Material, Will Be Updated =
 
