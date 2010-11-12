@@ -1,5 +1,5 @@
 #summary A hub for the design and implementation of the potential UI for Conflict Terra
-#labels Phase-Design,UI
+#labels Phase-Information
 
 = Main Goals =
 
