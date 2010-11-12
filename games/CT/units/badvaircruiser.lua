@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvaircruiser]],
-	  name                = [[Heike Class Cruiser]],
-	  description         = [[Cruiser that is able to contruct aircraft.  Must deploy into the Heike Class Cruiser Airport in order to build aircraft.]],
+	  name                = [[Taira Class Cruiser]],
+	  description         = [[Cruiser that is able to contruct aircraft.  Must deploy into the Taira Class Cruiser Airport in order to build aircraft.]],
 	  acceleration        = 0.15,
 	  activateWhenBuilt   = true,
           airStrafe           = 0,

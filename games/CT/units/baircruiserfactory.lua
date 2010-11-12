@@ -1,8 +1,8 @@
 unitDef = {
 
   unitname                      = [[baircruiserfactory]],
-  name                          = [[Taira Class Cruiser Airport]],
-  description                   = [[Produces aircraft.  Can morph back into the Taira Class Cruiser.]],
+  name                          = [[Heike Class Cruiser Airport]],
+  description                   = [[Produces aircraft.  Can morph back into the Heike Class Cruiser.]],
   amphibious                    = false,
   acceleration                  = 0,
   bmcode                        = [[0]],

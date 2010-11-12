@@ -48,7 +48,7 @@
 	  maneuverleashlength = [[1280]],
 	  mass                = 2000,
 	  maxDamage           = 1150,
-	  maxVelocity         = 1.5,
+	  maxVelocity         = 3,
           metalMake           = 0,
 	  metalStorage        = 0,
 	  minCloakDistance    = 100,

@@ -54,8 +54,6 @@ local armorDefs = {
     "badvaircruiserfactory",
     "benergytruckdepot",
     "bsupportfactory",
-    "bairport",
-    "badvairport",
     "bshipyard",
     "badvshipyard",
     "bsubpens",

@@ -1,8 +1,8 @@
 unitDef = {
 
   unitname                      = [[badvaircruiserfactory]],
-  name                          = [[Heike Class Cruiser Airport]],
-  description                   = [[Produces more advanced aircraft.  Can morph back into the Heike Class Cruiser.]],
+  name                          = [[Taira Class Cruiser Airport]],
+  description                   = [[Produces more advanced aircraft.  Can morph back into the Taira Class Cruiser.]],
   amphibious                    = false,
   acceleration                  = 0,
   bmcode                        = [[0]],
