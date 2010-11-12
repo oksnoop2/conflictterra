@@ -1,5 +1,5 @@
 #summary A hub for the design and implementation of the gameplay mechanic we call Space Rocks.
-#labels Phase-Design,Gadget,SpaceRocks
+#labels Phase-Information
 
 = What is Space Rocks? =
 
