@@ -1,4 +1,5 @@
 #summary Dedicated Page for Conflict Terra Legacy
+#labels Phase-Information
 
 = Introduction =
 
