@@ -1,5 +1,5 @@
 #summary The Conflict Terra Way:  How to Make a Unit
-#labels Phase-Implementation
+#labels Phase-Tutorial
 
 = Table of Contents =
 
