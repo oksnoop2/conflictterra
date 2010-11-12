@@ -1,4 +1,5 @@
 #summary This page will explain CEGs and how to use them.
+#labels Phase-Tutorial
 
 = CEGs =
 
