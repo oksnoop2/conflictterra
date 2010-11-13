@@ -14,8 +14,11 @@ if not gadgetHandler:IsSyncedCode() then
   return false -- no unsynced code
 end
 
-local resource_name = "bminerals"			--starting resource to be found on the map
-local mapconfig_fn = Game.mapName .. "_res.lua"
+---config---
+local resource_name = "bminerals"					--starting resource to be found on the map
+local mapconfig_fn = Game.mapName .. "_res.lua"		--name of map config files
+local metalmapstep = 50							--step size in "mapunits" (tooltip coordinates) when scanning map to place resources on metalspots
+------------
 
 if (VFS.FileExists(mapconfig_fn)) then 
 	Spring.Echo ("tp_resourcespawner: found" .. mapconfig_fn .." in mod root folder or map")
@@ -49,8 +52,29 @@ local function SpawnResource (sx,sz)
 	--Spring.SetUnitHealth (res,200) --does nothing?
 end
 
+--replace with something better
+local function PutResoucesOnMetal ()
+	Spring.Echo ("tp_resourcespawner: placing resources by metal map")
+	local mmrescounter = 0
+	Spring.Echo ("tp_resourcespawner: placing resources by metal map")
+	for mx = 1, Game.mapSizeX, metalmapstep do
+		for mz = 1, Game.mapSizeZ, metalmapstep do
+		local _, metal = Spring.GetGroundInfo(mx, mz)
+			if (metal > 0) then
+				SpawnResource (mx, mz)
+				mmrescounter = mmrescounter + 1
+			end
+		end
+	end
+	Spring.Echo ("tp_resourcespawner: placed " .. mmrescounter .. " resources by metal map")
+end
+
 local function PutResourcesOnMap ()
-	if (gamesettings == nil) then Spring.Echo ("tp_resourcespawner: gamesettings==nil, doing nothing") return end
+	if (gamesettings == nil) then 
+		Spring.Echo ("tp_resourcespawner: gamesettings==nil") 
+		PutResoucesOnMetal ()
+		return 
+	end
 	Spring.Echo ("tp_resourcespawner: ----PutResourcesOnMap ()----")
 	if (gamesettings.res) then
 		for resID in pairs(gamesettings.res) do
@@ -59,6 +83,8 @@ local function PutResourcesOnMap ()
 		end
 	end
 end
+
+
 
 function gadget:GameStart()
 	Spring.Echo ("tp_resourcespawner: Hey I am the resource spawn gadget")
