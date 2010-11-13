@@ -5,7 +5,7 @@
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#Conflict_Terra_Map_Policy Conflict Terra Map Policy]
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#Links Links]
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#"Official"_Conflict_Terra_Maps "Official" Conflict Terra Maps]
-  * [http://code.google.com/p/conflictterra/wiki/MapInfo#Non-CT Maps with defined resource placement]
+  * [http://code.google.com/p/conflictterra/wiki/MapInfo#Non-CT_Maps_with_defined_resource_placement Non-CT Maps with defined resource placement]
 
 = Conflict Terra Map Policy =
 
