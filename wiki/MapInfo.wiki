@@ -5,6 +5,7 @@
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#Conflict_Terra_Map_Policy Conflict Terra Map Policy]
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#Links Links]
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#"Official"_Conflict_Terra_Maps "Official" Conflict Terra Maps]
+  * [http://code.google.com/p/conflictterra/wiki/MapInfo#Non-CT Maps with defined resource placement]
 
 = Conflict Terra Map Policy =
 
@@ -44,3 +45,10 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
 
 ||http://img337.imageshack.us/img337/9398/fishbonemap.png||http://img813.imageshack.us/img813/8660/fishbonebase.png||
 ||http://img838.imageshack.us/img838/205/fishbonehojo.png||http://img109.imageshack.us/img109/6388/fishboneview.png||
+
+== Non-CT Maps with defined resource placement ==
+Beside placing resources via the metal map, Conflict Terra also contains config files
+for more detailed placement of resouces.<br>
+So far such configs exist for the following map:<br>
+- Victoria Crater<br>
+- MoonQ20x<br>
