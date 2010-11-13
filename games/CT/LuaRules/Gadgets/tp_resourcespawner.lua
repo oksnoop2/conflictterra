@@ -15,7 +15,24 @@ if not gadgetHandler:IsSyncedCode() then
 end
 
 local resource_name = "bminerals"			--starting resource to be found on the map
-gamesettings = VFS.Include(Game.mapName .. "_res.lua")
+local mapconfig_fn = Game.mapName .. "_res.lua"
+
+if (VFS.FileExists(mapconfig_fn)) then 
+	Spring.Echo ("tp_resourcespawner: found" .. mapconfig_fn .." in mod root folder or map")
+	gamesettings = VFS.Include(mapconfig_fn)
+else
+	if (VFS.FileExists("mapconfigs\\" .. mapconfig_fn)) then 
+		Spring.Echo ("tp_resourcespawner: found " .. mapconfig_fn .. " in mod mapconfigs folder")
+		gamesettings = VFS.Include("mapconfigs\\" .. mapconfig_fn)
+	else
+		Spring.Echo ("tp_resourcespawner: " .. mapconfig_fn .. " not found at all")
+	end
+end
+
+--if (gamesettings == nil) then
+--Spring.Echo ("tp_resourcespawner: no config in map found, looking in mod folder")
+--	gamesettings = VFS.Include("mapconfigs\\" .. Game.mapName .. "_res.lua")
+--end
 
 local function SpawnResource (sx,sz)
 	if (sx == nil or sz == nil) then
