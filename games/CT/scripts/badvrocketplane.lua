@@ -32,8 +32,8 @@
 	end
 	
 	function script.FireWeapon1()
-		EmitSfx(flare1, orc_machinegun_flash)
-		EmitSfx(flare1, orc_machinegun_muzzle)	
+		EmitSfx(flare, orc_machinegun_flash)
+		EmitSfx(flare, orc_machinegun_muzzle)	
 	       Sleep(30)
 	end	
 	
