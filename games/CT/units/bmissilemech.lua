@@ -21,8 +21,8 @@
 	
 	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[SMALL_UNIT]],
-	  footprintX          = 4,
-	  footprintZ          = 4,
+	  footprintX          = 3,
+	  footprintZ          = 3,
 	  idleAutoHeal        = 0,
 	  maneuverleashlength = [[640]],
 	  mass                = 45,
