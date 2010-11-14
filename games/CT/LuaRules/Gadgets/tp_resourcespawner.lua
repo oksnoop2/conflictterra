@@ -54,10 +54,20 @@ end
 
 --replace with something better
 local function PutResoucesOnMetal ()	
-	local mmrescounter = 0
-	Spring.Echo ("tp_resourcespawner: placing resources by metal map")
+local mspots = 0
+
 	for mx = 1, Game.mapSizeX, metalmapstep do
 		for mz = 1, Game.mapSizeZ, metalmapstep do
+			local _, metal = Spring.GetGroundInfo(mx, mz)
+			if (metal > 0) then mspots = mspots + 1 end		
+		end
+	end
+	
+	local mmrescounter = 0
+	Spring.Echo ("tp_resourcespawner: placing resources by metal map")
+	if (mspots > 200) then metalmapstep = 750 end
+	for mx = metalmapstep, Game.mapSizeX-metalmapstep, metalmapstep do
+		for mz = metalmapstep, Game.mapSizeZ-metalmapstep, metalmapstep do
 		local _, metal = Spring.GetGroundInfo(mx, mz)
 			if (metal > 0) then
 				SpawnResource (mx, mz)
@@ -70,9 +80,8 @@ end
 
 local function PutResourcesOnMap ()
 	if (gamesettings == nil) then 
---  disabled because it only works on metalmaps with spots, otherwise it fills the whole map
---		Spring.Echo ("tp_resourcespawner: gamesettings==nil") 
---		PutResoucesOnMetal ()
+		Spring.Echo ("tp_resourcespawner: gamesettings==nil") 
+		PutResoucesOnMetal ()
 		return 
 	end
 	Spring.Echo ("tp_resourcespawner: ----PutResourcesOnMap ()----")
