@@ -27,7 +27,10 @@ local maxcargo = 25			--how much a miner can carry before having to return to a 
 local resreturneffect = "resdropoff"	--ceg effect played at miners location when a miner returns its cargo
 ----------------
 function gadget:UnitFinished(unitID, unitDefID, teamID)
-	if (is_miner_type (unitDefID) == true) then add_miner (unitID) end
+	if (is_miner_type (unitDefID) == true) then 
+		Spring.GiveOrderToUnit(unitID, CMD.FIRE_STATE , { 0 }, {}) --hold fire
+		add_miner (unitID) 
+	end
 	if (is_dropoff_type (unitDefID) == true) then add_dropoff (unitID) end
 end
 
@@ -285,8 +288,8 @@ function return_to_mine (unitID)
 	if (Spring.ValidUnitID  (miners[unitID].last_mined_id)) then
 		if (debug) then Spring.Echo ("miner " .. i .. " returns to mineral") end
 		--Spring.SetUnitTarget (unitID, miners[i].last_mined_id) --return to the mineral last mined from
-		Spring.GiveOrderToUnit(unitID, CMD.MOVE_STATE, { 2 }, {})
-		Spring.GiveOrderToUnit(unitID, CMD.FIRE_STATE , { 2 }, {}) 
+		--Spring.GiveOrderToUnit(unitID, CMD.MOVE_STATE, { 2 }, {})
+		--Spring.GiveOrderToUnit(unitID, CMD.FIRE_STATE , { 2 }, {}) 
 		Spring.GiveOrderToUnit(unitID, CMD.ATTACK  , { miners[unitID].last_mined_id  }, {}) 
 		miners[unitID].status = "to_res"
 	else
