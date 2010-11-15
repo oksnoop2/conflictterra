@@ -83,13 +83,13 @@
 	      collideFriendly         = true,
 	
 	      damage                  = {
-		Cruiser = 100,
+		Cruiser = 10,
 		Building = 200,
-		Mech = 100,
-		Tank = 100,
-		Aircraft = 100,
+		Mech = 10,
+		Tank = 10,
+		Aircraft = 10,
 		Ship = 200,
-		Sub = 100,
+		Sub = 10,
 	      },
 	
 	      dropped                 = true,
