@@ -86,8 +86,7 @@ function gadget:GameFrame(frameNum)
 			Spring.AddTeamResource (minerteam, "metal", miners[i].cargo)			
 			local x,y,z=Spring.GetUnitPosition (i)
 			if (x and y and z) then 
-				for i = 1, miners[i].cargo/5 , 1 do
-					Spring.Echo ("returned" .. i)
+				for i = 1, miners[i].cargo/5 , 1 do					
 					Spring.SpawnCEG(resreturneffect, x, y, z) 
 				end
 			end
