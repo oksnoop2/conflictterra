@@ -44,7 +44,7 @@ Rapid is explained [http://code.google.com/p/conflictterra/wiki/How_to_update_Co
 
 If you wish to poke around some of the other projects for the Spring Engine, you could try the Zero K Lobby.  You can download the latest version there.
 
-Updating Conflict Terra through the Zero K Lobby is explained here.
+Updating Conflict Terra through the Zero K Lobby is explained [http://code.google.com/p/conflictterra/wiki/How_to_Update_Conflict_Terra_using_zk here].
 
 == A Map to Play On ==
 
