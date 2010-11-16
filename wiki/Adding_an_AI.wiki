@@ -24,4 +24,5 @@ At the moment, three AI work well enough with Conflict Terra to be playable agai
   A very aggressive AI that is difficult to play against, this would provide more of a challenge.  This AI also comes packaged with the Spring installer.
   * *Shard*
   Being developed by AF, Shard is an easy to configure AI.  We provide [http://code.google.com/p/conflictterra/source/browse/#svn/AIconfigs/shard/ct configuration] files, but you can write your own and try to make a more challenging AI!
-  
+
+*NullAI 0.1* is another potential option.  NullAI does absolutely nothing, and can be useful for trying out the game with absolutely no fear of being destroyed.
