@@ -21,7 +21,7 @@ local debug = false
 -----config-----
 local miner_name = "bminer";			--the unit used for mining
 local resource_name = {}--{"bminerals","bmeteorimpact","bmeteorimpact_big"}		--the stuff that gets mined
-local dropoff_name = {"bsupplydepot", "bflagshipbase2", "bflagshipbase_ai"}	--where the miners bring the resources to
+local dropoff_name = {"bsupplydepot", "bflagshipbase2", "bflagshipbaseai"}	--where the miners bring the resources to
 local dropoff_distance = 100 --how near do miners have to get to a dropoff to drop their cargo? (this value is added to unitRadius)
 local maxcargo = 25			--how much a miner can carry before having to return to a drop off
 local resreturneffect = "resdropoff_singleparticle"	--ceg effect played at miners location when a miner returns its cargo
