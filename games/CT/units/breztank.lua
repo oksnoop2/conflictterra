@@ -1,9 +1,9 @@
 local breztank = {
-	name                = [[Resurrection Team]],
-	description         = [[Resurrection Hover Tank - Mobile resurrection unit.  Unarmed.]],
+	name                = [[Resurrection Truck]],
+	description         = [[Mobile resurrection unit.  Unarmed.]],
         acceleration        = 0.04,
         brakerate           = 0.02,
-        buildpic            = [[breztank.png]],
+        buildpic            = [[bmetaltruck.png]],
 	buildCostEnergy     = 150,
 	buildCostMetal      = 120,
         buildDistance       = 180,
@@ -22,8 +22,7 @@ local breztank = {
 	canFight            = false,
 	canResurrect        = true,
 	canstop             = [[1]],
-	canHover            = true,
-	category            = [[HOVER]],
+	category            = [[LAND]],
         corpse              = [[DEAD]],
         reclaimable         = false,
 
@@ -37,14 +36,14 @@ local breztank = {
 	maneuverleashlength = [[640]],
 	mass                = 50,
 	maxDamage           = 750,
-        maxSlope            = 27,
-	maxVelocity         = 1.75,
+        maxSlope            = 18,
+	maxVelocity         = 2,
         maxWaterDepth       = 22,
         metalMake           = 0,
 	minCloakDistance    = 75,
-	movementClass       = [[LightHOVER]],
+	movementClass       = [[LightTANK]],
         noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
-	objectName          = "breztank.s3o",
+	objectName          = "bmetaltruck.s3o",
         onoffable           = false,
         seismicSignature    = 4,
         selfDestructAs      = [[SMALL_UNIT]],
@@ -54,10 +53,10 @@ local breztank = {
 
 	  sounds			= {
 	      select = {
-		"ct/hoverengine",
+		"argh/Argh_TankSound",
 		},
 	      ok = {
-		"ct/hoverengine",
+		"argh/Argh_TankSound",
 		},
 	  },
 
@@ -71,11 +70,16 @@ local breztank = {
 
 	steeringmode        = [[1]],
 	TEDClass            = [[TANK]],
+	trackOffset         = 3,
+	trackStrength       = 6,
+	trackStretch        = 1,
+	trackType           = [[StdTank]],
+	trackWidth          = 24,
         terraformSpeed      = 300,
 	resurrectSpeed      = 0.75,
 	turninplace         = 0,
 	turnInPlace         = 0,
-	turnRate            = 560,
+	turnRate            = 550,
 	showNanospray	    = 0,
 	workerTime          = 1,
 	script		    = "breztank.lua",
@@ -83,7 +87,7 @@ local breztank = {
 	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Resurrection Tank]],
+	      description      = [[Wreckage - Resurrection Truck]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 750,
@@ -104,7 +108,7 @@ local breztank = {
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Resurrection Tank]],
+	      description      = [[Debris - Resurrection Truck]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 500,
