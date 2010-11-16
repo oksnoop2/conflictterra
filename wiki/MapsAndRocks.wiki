@@ -28,6 +28,11 @@ This is different to the old way, where the map would try to spawn the rocks its
 
 
 = Details =
+Here are some example configs:<br>
+http://code.google.com/p/conflictterra/source/browse/#svn/games/CT/mapconfigs
+
+The Lua is the same for configs that are included in the map.<br>
+
 A map with a rock layout file:<br>
 http://www.file-upload.net/download-2966227/CT_Testgebiet.sd7.html<br>
 Open up the CT_Testgebiet_res.lua file<br>
@@ -52,7 +57,6 @@ SpawnResource (2042 , 3482)   -- <br>
 ...<br>
 ---coordinates go in between here---<br><br>
 
-[http://code.google.com/p/conflictterra/source/browse/games/CT/luaui/widgets/tp_coordinate_help.lua?spec=svn686&r=686 Coordinate Helper Widget]<br>
 
 Change the numbers to where you want rocks to appear at gamestart.<br>
 The coordinates are the same as displayed in Spring's ingame tooltip.<br>
@@ -61,6 +65,8 @@ In this case experiments are encouraged :) <br>
 Eitherwise please note that a faulty res.lua file will not stop your map from loading but no rocks will be spawned or errors might appear in the console.
 
 = Coordinate Helper Widget =
+[http://code.google.com/p/conflictterra/source/browse/games/CT/luaui/widgets/tp_coordinate_help.lua?spec=svn686&r=686 Coordinate Helper Widget]<br>
+
 Press F11 and enable it.<br>
 Every time you put down a marker it will log its position in infolog.txt and also
 in MAPNAME_coordinates.txt<br>
