@@ -1,9 +1,10 @@
 #summary Home Wiki for Conflict Terra
-#labels Featured,Home
+#labels Phase-Information
 
 = Table of Contents =
 
   * Game Guide
+    * [http://code.google.com/p/conflictterra/wiki/Welcome Welcome]
     * [http://code.google.com/p/conflictterra/wiki/StartersGuide Starter's Guide]
     * [http://code.google.com/p/conflictterra/wiki/ArmorSystem?ts=1280542250&updated=ArmorSystem Armor System]
     * [http://code.google.com/p/conflictterra/wiki/Adding_an_AI How to Add an AI]
