@@ -5,6 +5,15 @@
 
 Welcome to Conflict Terra.  We're a small, open-source RTS running on the Spring Engine that hopes to offer fun and unique gameplay.  We hope you enjoy the game that we've worked very hard on, and that you can help us improve the game as time goes by!
 
+= Table of Contents =
+  * [http://code.google.com/p/conflictterra/wiki/Welcome#What_Do_I_Need_to_Play? What Do I Need to Play?]
+    * [http://code.google.com/p/conflictterra/wiki/Welcome#The_Spring_Engine The Spring Engine]
+    * [http://code.google.com/p/conflictterra/wiki/Welcome#Conflict_Terra_Game_Files Conflict Terra Game Files]
+    * [http://code.google.com/p/conflictterra/wiki/Welcome#Updating_Conflict_Terra Updating Conflict Terra]
+    * [http://code.google.com/p/conflictterra/wiki/Welcome#A_Map_to_Play_On A Map to Play On]
+  * [http://code.google.com/p/conflictterra/wiki/Welcome#Now_to_Play! Now to Play!]
+  * [http://code.google.com/p/conflictterra/wiki/Welcome#Enjoy_the_Game Enjoy the Game]
+
 = What Do I Need to Play? =
 
 == The Spring Engine ==
