@@ -5,8 +5,8 @@ math.randomseed( os.time() )
 math.random(); math.random(); math.random()
 
 taskqueues = {
-   bflagshipbase = {
-       
+   bflagshipbase_AI = {
+        "bminer",
         "bengineer1",
         "breztank",
        },  
@@ -14,16 +14,16 @@ taskqueues = {
       bengineer1 = {
 
 ---------------------------------MEX---------------------------------
-        "bmex",
-        "bmex",
+        "bsupplydepot",
+        "bsupplydepot",
 
 ---------------------------------MEX OR ENEGRY---------------------------------
         (function()
                         local r = math.random(0,4)
                         if r == 0 then
-                                return "bmex"
+                                return "bsupplydepot"
                         elseif r == 1 then
-                                return "bmex"
+                                return "bsupplydepot"
                         elseif r == 2 then
                                 return "bpowerplant"
                         elseif r == 3 then
@@ -39,9 +39,9 @@ taskqueues = {
         (function()
                         local r = math.random(0,4)
                         if r == 0 then
-                                return "bmex"
+                                return "bsupplydepot"
                         elseif r == 1 then
-                                return "bmex"
+                                return "bsupplydepot"
                         elseif r == 2 then
                                 return "bpowerplant"
                         elseif r == 3 then
@@ -60,16 +60,10 @@ taskqueues = {
 
 ---------------------------------PICK A FACTORY---------------------------------
         (function()
-                        local r = math.random(0,4)
+                        local r = math.random(0,1)
                         if r == 0 then
-                                return "bmechfactory"
-                        elseif r == 1 then
-                                return "btankfactory"
-                        elseif r == 2 then
-                                return "bairport"
-                        elseif r == 3 then
                                 return "bsubpens"
-                        elseif r == 4 then
+                        elseif r == 1 then
                                 return "bshipyard"
                                 
                         end                                                                                             
@@ -248,9 +242,9 @@ taskqueues = {
         (function()
                         local r = math.random(0,4)
                         if r == 0 then
-                                return "bmex"
+                                return "bsupplydepot"
                         elseif r == 1 then
-                                return "bmex"
+                                return "bsupplydepot"
                         elseif r == 2 then
                                 return "bpowerplant"
                         elseif r == 3 then
@@ -263,29 +257,11 @@ taskqueues = {
                 end),
 ---------------------------------PICK A FACTORY---------------------------------
         (function()
-                        local r = math.random(0,10)
+                        local r = math.random(0,1)
                         if r == 0 then
-                                return "bmechfactory"
-                        elseif r == 1 then
-                                return "btankfactory"
-                        elseif r == 2 then
-                                return "bairport"
-                        elseif r == 3 then
                                 return "bsubpens"
-                        elseif r == 4 then
+                        elseif r == 1 then
                                 return "bshipyard"
-                        elseif r == 5 then
-                                return "bsupportfactory"
-                        elseif r == 6 then
-                                return "bsupportfactory"
-                        elseif r == 7 then
-                                return "bsupportfactory"
-                        elseif r == 8 then
-                                return "bsupportfactory"
-                        elseif r == 9 then
-                                return "bsupportfactory"
-                        elseif r == 10 then
-                                return "bsupportfactory"
                                 
                         end                                                                                             
                         
@@ -295,9 +271,9 @@ taskqueues = {
         (function()
                         local r = math.random(0,4)
                         if r == 0 then
-                                return "bmex"
+                                return "bsupplydepot"
                         elseif r == 1 then
-                                return "bmex"
+                                return "bsupplydepot"
                         elseif r == 2 then
                                 return "bpowerplant"
                         elseif r == 3 then
@@ -487,37 +463,6 @@ taskqueues = {
                 
                  },
 
----------------------------------SUPPORT FACTORY BUILD TASKS---------------------------------
-        bsupportfactory = {
 
-                (function()
-                
-                 local r = math.random(0,9)
-                         if r == 0 then
-                                return "bmetaltruck"
-                 elseif r == 1 then
-                                return "bmetaltruck"
-                 elseif r == 2 then
-                                return "bmetaltruck"    
-                 elseif r == 3 then              
-                                return "benergytruck"
-                 elseif r == 4 then
-                                return "benergytruck"
-                 elseif r == 5 then
-                                return "benergytruck"
-                 elseif r == 6 then
-                                return "bengineer1"
-                 elseif r == 7 then
-                                return "bengineer1"
-                 elseif r == 8 then
-                                return "breztank"
-                 elseif r == 9 then
-                                return "breztank"
-                                                        
-                 end                                                                                            
-                        
-                end)
-                
-                 },
                  
                  }
