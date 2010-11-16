@@ -9,6 +9,7 @@
     * [http://code.google.com/p/conflictterra/wiki/ArmorSystem?ts=1280542250&updated=ArmorSystem Armor System]
     * [http://code.google.com/p/conflictterra/wiki/Adding_an_AI How to Add an AI]
     * [http://code.google.com/p/conflictterra/wiki/How_to_update_Conflict_Terra_using_Rapid How to Update Conflict Terra Using Rapid]
+    * [http://code.google.com/p/conflictterra/wiki/How_to_Update_Conflict_Terra_using_zk How to Update Conflict Terra Using the Zero K Lobby]
   * Unit Guide
     * [http://code.google.com/p/conflictterra/wiki/NKGUnitOverview NKG Unit Guide]
   * Conflict Terra's Maps
