@@ -24,7 +24,7 @@ local resource_name = {}--{"bminerals","bmeteorimpact","bmeteorimpact_big"}		--t
 local dropoff_name = {"bsupplydepot", "bflagshipbase2"}	--where the miners bring the resources to
 local dropoff_distance = 100 --how near do miners have to get to a dropoff to drop their cargo? (this value is added to unitRadius)
 local maxcargo = 25			--how much a miner can carry before having to return to a drop off
-local resreturneffect = "resdropoff"	--ceg effect played at miners location when a miner returns its cargo
+local resreturneffect = "resdropoff_singleparticle"	--ceg effect played at miners location when a miner returns its cargo
 ----------------
 function gadget:UnitFinished(unitID, unitDefID, teamID)
 	if (is_miner_type (unitDefID) == true) then 
@@ -81,12 +81,17 @@ function gadget:GameFrame(frameNum)
 			search_res (i)
 		end
 		
-		if (miners[i].cargo > 0 and is_miner_at_dropoff (i)) then	--drop the cargo
+		if (miners[i].cargo > 5 and is_miner_at_dropoff (i)) then	--drop the cargo
 			local minerteam = Spring.GetUnitTeam (i)
-			Spring.AddTeamResource (minerteam, "metal", miners[i].cargo)
-			miners[i].cargo = 0
+			Spring.AddTeamResource (minerteam, "metal", miners[i].cargo)			
 			local x,y,z=Spring.GetUnitPosition (i)
-			if (x and y and z) then Spring.SpawnCEG(resreturneffect, x, y, z) end
+			if (x and y and z) then 
+				for i = 1, miners[i].cargo/5 , 1 do
+					Spring.Echo ("returned" .. i)
+					Spring.SpawnCEG(resreturneffect, x, y, z) 
+				end
+			end
+			miners[i].cargo = 0
 			return_to_mine (i)
 		end
 	end
