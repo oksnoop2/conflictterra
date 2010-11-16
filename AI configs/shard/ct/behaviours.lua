@@ -4,7 +4,7 @@ require "taskqueuebehaviour"
 require "attackerbehaviour"
 
 behaviours = {
-	bflagshipbase_AI = {
+	bflagshipbaseai = {
 		TaskQueueBehaviour,
 	},
 }

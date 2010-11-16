@@ -5,25 +5,43 @@ math.randomseed( os.time() )
 math.random(); math.random(); math.random()
 
 taskqueues = {
-   bflagshipbase_AI = {
+   bflagshipbaseai = {
         "bminer",
+		"bminer",
+		"bminer",
         "bengineer1",
+        "bengineer1",		
         "breztank",
-       },  
+(function()
+      local r = math.random(0,4)
+          if r == 0 then
+              return "baircruiser"
+           elseif r == 1 then
+              return "bmechcruiser"
+           elseif r == 2 then
+              return "bmechcruiser"
+           elseif r == 3 then
+              return "btankcruiser"
+           elseif r == 4 then
+              return "btankcruiser"
+                                
+                end                                                                                             
+                        
+                end),    
+	},  
   
+    
       bengineer1 = {
 
----------------------------------MEX---------------------------------
-        "bsupplydepot",
-        "bsupplydepot",
 
----------------------------------MEX OR ENEGRY---------------------------------
+
+---------------------------------dropzone OR ENEGRY---------------------------------
         (function()
                         local r = math.random(0,4)
                         if r == 0 then
                                 return "bsupplydepot"
                         elseif r == 1 then
-                                return "bsupplydepot"
+                                return "bpowerplant"
                         elseif r == 2 then
                                 return "bpowerplant"
                         elseif r == 3 then
@@ -35,13 +53,13 @@ taskqueues = {
                         
                 end),
 
----------------------------------MEX OR ENEGRY---------------------------------
+---------------------------------dropzone OR ENEGRY---------------------------------
         (function()
                         local r = math.random(0,4)
                         if r == 0 then
                                 return "bsupplydepot"
                         elseif r == 1 then
-                                return "bsupplydepot"
+                                return "bpowerplant"
                         elseif r == 2 then
                                 return "bpowerplant"
                         elseif r == 3 then
@@ -238,13 +256,13 @@ taskqueues = {
                         
                 end),
 
----------------------------------MEX OR ENEGRY---------------------------------
+---------------------------------dropzone OR ENEGRY---------------------------------
         (function()
                         local r = math.random(0,4)
                         if r == 0 then
                                 return "bsupplydepot"
                         elseif r == 1 then
-                                return "bsupplydepot"
+                                return "bpowerplant"
                         elseif r == 2 then
                                 return "bpowerplant"
                         elseif r == 3 then
@@ -255,6 +273,47 @@ taskqueues = {
                         end                                                                                             
                         
                 end),
+----------------------------------PICK A DEFENSE---------------------------------           
+        (function()
+                        local r = math.random(0,16)
+                        if r == 0 then
+                                return "bairturret"
+                        elseif r == 1 then
+                                return "blandnavalturret"
+                        elseif r == 2 then
+                                return "bgatlingturret"
+                        elseif r == 3 then
+                                return "bgatlingturret"
+                        elseif r == 4 then
+                                return "bgatlingturret"
+                        elseif r == 5 then
+                                return "bgatlingturret"
+                        elseif r == 6 then
+                                return "blandturret"
+                        elseif r == 7 then
+                                return "blandturret"
+                        elseif r == 8 then
+                                return "blandturret"
+                        elseif r == 9 then
+                                return "blandturret"
+                        elseif r == 10 then
+                                return "blandturret"
+                        elseif r == 11 then
+                                return "blandturret"
+                        elseif r == 12 then
+                                return "bmechturret"
+                        elseif r == 13 then
+                                return "bradartower"
+                        elseif r == 14 then
+                                return "bradartower"
+                        elseif r == 15 then
+                                return "bairturret"
+                        elseif r == 16 then
+                                return "bairturret"
+                                
+                        end                                                                                             
+                        
+                end),				
 ---------------------------------PICK A FACTORY---------------------------------
         (function()
                         local r = math.random(0,1)
@@ -267,13 +326,13 @@ taskqueues = {
                         
                 end),
 
----------------------------------MEX OR ENEGRY---------------------------------
+---------------------------------dropzone OR ENEGRY---------------------------------
         (function()
                         local r = math.random(0,4)
                         if r == 0 then
                                 return "bsupplydepot"
                         elseif r == 1 then
-                                return "bsupplydepot"
+                                return "bpowerplant"
                         elseif r == 2 then
                                 return "bpowerplant"
                         elseif r == 3 then
@@ -286,8 +345,49 @@ taskqueues = {
                 end),
 
                  },
+----------------------------------PICK A DEFENSE---------------------------------           
+        (function()
+                        local r = math.random(0,16)
+                        if r == 0 then
+                                return "bairturret"
+                        elseif r == 1 then
+                                return "blandnavalturret"
+                        elseif r == 2 then
+                                return "bgatlingturret"
+                        elseif r == 3 then
+                                return "bgatlingturret"
+                        elseif r == 4 then
+                                return "bgatlingturret"
+                        elseif r == 5 then
+                                return "bgatlingturret"
+                        elseif r == 6 then
+                                return "blandturret"
+                        elseif r == 7 then
+                                return "blandturret"
+                        elseif r == 8 then
+                                return "blandturret"
+                        elseif r == 9 then
+                                return "blandturret"
+                        elseif r == 10 then
+                                return "blandturret"
+                        elseif r == 11 then
+                                return "blandturret"
+                        elseif r == 12 then
+                                return "bmechturret"
+                        elseif r == 13 then
+                                return "bradartower"
+                        elseif r == 14 then
+                                return "bradartower"
+                        elseif r == 15 then
+                                return "bairturret"
+                        elseif r == 16 then
+                                return "bairturret"
+                                
+                        end                                                                                             
+                        
+                end),				 
 ---------------------------------TANK FACTORY BUILD TASKS---------------------------------
-        btankfactory = {
+        btankcruiserfactory = {
 
                 (function()
                 
@@ -321,7 +421,7 @@ taskqueues = {
                  },
 
 ---------------------------------MECH FACTORY BUILD TASKS---------------------------------
-        bmechfactory = {
+        bmechcruiserfactory = {
 
                 (function()
                 
@@ -359,7 +459,7 @@ taskqueues = {
 
 
 ---------------------------------AIR FACTORY BUILD TASKS---------------------------------
-        bairport = {
+        baircruiserfactory = {
 
                 (function()
                 
