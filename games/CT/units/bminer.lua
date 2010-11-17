@@ -4,8 +4,8 @@ local bminer = {
         acceleration        = 0.06,
         brakerate           = 1.5,
         buildpic            = [[bengineermkii.png]],
-        buildCostEnergy     = 140,
-        buildCostMetal      = 112,
+        buildCostEnergy     = 100,
+        buildCostMetal      = 100,
         buildDistance       = 220,
         builder             = true,
 
@@ -26,7 +26,7 @@ local bminer = {
                 [[bmechturret]],
         },
 
-        buildTime           = 15,
+        buildTime           = 10,
         canAssist           = false,
         canFight            = false,
         canGuard            = true,
