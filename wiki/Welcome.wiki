@@ -69,7 +69,7 @@ We hope you enjoy our game, and that you follow the project as it matures over t
 
 Join our chat channel in the Spring Lobby by typing /join #ct, and then selecting autojoin from the channel tab.
 
-Read the Starting Guide if you're having some trouble figuring the game out, or just curious.
+Read the [http://code.google.com/p/conflictterra/wiki/StartsGuide2 Starting Guide] if you're having some trouble figuring the game out, or just curious.
 
 Report a bug or issue on our [http://code.google.com/p/conflictterra/issues/entry Issues] page.  Don't worry if you think you're criticizing the game, we need feedback to make it better!
 
