@@ -5,7 +5,7 @@
 	  acceleration        = 0.03,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.01,
-	  buildCostEnergy     = 250,
+	  buildCostEnergy     = 200,
 	  buildCostMetal      = 200,
 	  builder             = false,
 	  buildPic            = [[bmissiletank.png]],

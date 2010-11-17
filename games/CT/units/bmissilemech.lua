@@ -5,11 +5,11 @@
 	  acceleration        = 0.12,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.19,
-	  buildCostEnergy     = 400,
-	  buildCostMetal      = 320,
+	  buildCostEnergy     = 225,
+	  buildCostMetal      = 225,
 	  builder             = false,
 	  buildPic            = [[bmissilemech.png]],
-	  buildTime           = 21,
+	  buildTime           = 17,
 	  canAttack           = true,
 	  canGuard            = true,
 	  canMove             = true,
@@ -72,18 +72,18 @@
 	
 	    {
 	      def                = [[Anti_Mech]],
-	      badTargetCategory  = [[SINK FLOAT GUNSHIP]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
 	    {
 	      def                = [[Anti_Mech]],
-	      badTargetCategory  = [[SINK FLOAT GUNSHIP]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
 	

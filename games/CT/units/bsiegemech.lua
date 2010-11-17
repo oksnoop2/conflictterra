@@ -5,11 +5,11 @@
 	  acceleration        = 0.12,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.225,
-	  buildCostEnergy     = 500,
-	  buildCostMetal      = 400,
+	  buildCostEnergy     = 275,
+	  buildCostMetal      = 275,
 	  builder             = false,
 	  buildPic            = [[bsiegemech.png]],
-	  buildTime           = 24,
+	  buildTime           = 20,
 	  canAttack           = true,
 	  canGuard            = true,
 	  canMove             = true,
@@ -82,6 +82,7 @@
 	
 	    {
 	      def                = [[Machine_Gun]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
@@ -89,6 +90,7 @@
 
 	    {
 	      def                = [[Machine_Gun]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],

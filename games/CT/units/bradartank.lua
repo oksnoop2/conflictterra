@@ -7,7 +7,7 @@
 	  bmcode              = [[1]],
 	  brakeRate           = 0.02,
 	  buildCostEnergy     = 100,
-	  buildCostMetal      = 80,
+	  buildCostMetal      = 100,
 	  builder             = false,
 	  buildPic            = [[bradartank.png]],
 	  buildTime           = 10,

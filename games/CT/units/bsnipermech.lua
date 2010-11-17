@@ -5,8 +5,8 @@
 	  acceleration        = 0.12,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.19,
-	  buildCostEnergy     = 1000,
-	  buildCostMetal      = 800,
+	  buildCostEnergy     = 400,
+	  buildCostMetal      = 400,
 	  builder             = false,
 	  buildPic            = [[bsnipermech.png]],
 	  buildTime           = 25,
@@ -64,10 +64,10 @@
 	
 	    {
 	      def                = [[Sniper]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 	
 	  },

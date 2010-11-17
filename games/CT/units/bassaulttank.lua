@@ -5,8 +5,8 @@
 	  acceleration        = 0.04,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.02,
-	  buildCostEnergy     = 180,
-	  buildCostMetal      = 144,
+	  buildCostEnergy     = 150,
+	  buildCostMetal      = 150,
 	  builder             = false,
 	  buildPic            = [[bassaulttank.png]],
 	  buildTime           = 10,
@@ -78,8 +78,8 @@
 	
 	    {
 	      def                = [[Cannon]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      badTargetCategory  = [[SINK FLOAT]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 	
 	  },
