@@ -8,6 +8,7 @@
   * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks#Coordinate_Helper_Widget Coordinate Helper Widget]
   * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks#Map_Options_&_Advanced_Stuff Map Options & Advanced Stuff]
   * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks#Plans Plans]
+  * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks#Guide_With_Pictures Guide With Pictures]
 
 = Introduction =
 This page explains how to add start minerals to your map.<br>
@@ -82,6 +83,10 @@ Or example you could return different rock layouts (res tables) based on a choic
 
 This will be explained in depth later, if you are somewhat familiar with Lua you can probably figure it out. <br>
 If you have a special idea/trouble with your map you can also ask Knorke.<br>
+
+= Guide With Pictures =
+note: you might have to use rightclick -> "view image" to see the image unscaled and in full resolution<br>
+http://h-3.abload.de/img/properstoningr1tgm1.jpg
 
 = Plans =
 Allowing mappers to define the interval etc. of meteor storms on their map.
