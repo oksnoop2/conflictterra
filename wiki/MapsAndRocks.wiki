@@ -48,15 +48,17 @@ Of course this causes problems if the mod does not have such a unit.
 
 Scroll down to<br><br>
 
----coordinates go in between here---<br>
-SpawnResource (1722 , 3361)   -- left start field<br>
-SpawnResource (1574 , 3318)   -- <br>
-SpawnResource (1880 , 3412)   -- <br>
-SpawnResource (1373 , 3272)   -- <br>
-SpawnResource (2042 , 3482)   -- <br>
-...<br>
-...<br>
----coordinates go in between here---<br><br>
+{{{
+---coordinates go in between here---
+SpawnResource (1722 , 3361)   -- left start field
+SpawnResource (1574 , 3318)   -- 
+SpawnResource (1880 , 3412)   -- 
+SpawnResource (1373 , 3272)   -- 
+SpawnResource (2042 , 3482)   -- 
+...
+...
+---coordinates go in between here---
+}}}
 
 
 Change the numbers to where you want rocks to appear at gamestart.<br>
