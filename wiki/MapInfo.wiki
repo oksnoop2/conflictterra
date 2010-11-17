@@ -50,3 +50,5 @@ for more detailed placement of resouces.<br>
 So far such configs exist for the following map:<br>
 - Victoria Crater<br>
 - MoonQ20x<br>
+- TitanDuel<br>
+- Trench_Linked<br>
