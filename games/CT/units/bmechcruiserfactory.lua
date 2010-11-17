@@ -15,15 +15,13 @@ unitDef = {
 
     [[bminer]],
     [[bbasicmech]],
-
-    [[bsnipermech]],
-
-    [[bflyingmech]],
     [[bmissilemech]],
     [[bantitankmech]],
+    [[bamphmech]],
     [[bsiegemech]],
 
-    [[bamphmech]],
+    [[bflyingmech]],
+    [[bsnipermech]],
   },
 
 

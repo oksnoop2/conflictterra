@@ -21,14 +21,13 @@ unitDef = {
 	[[baatruck]],
 	[[badvradartank]],
 	[[bminer]],
+	[[bradartank]],
 	[[bassaulttank]],
 
 	[[bmissiletank]],
-
-	[[bartillery]],
 	[[baabuggy]],
-	[[bradartank]],
 	[[breztank]],
+	[[bartillery]],
   },
 
 
