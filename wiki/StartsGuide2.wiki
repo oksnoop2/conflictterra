@@ -2,14 +2,14 @@
 #labels Phase-Guide
 
 = Table of Contents =
-  * [Your Flagship]
-  * [The Mobile Headquarters]
-    * [The Engineer Support Mech]
-    * [Factory Cruisers]
-    * [Resurrection Truck]
-  * [Meteors and Meteorites]
-  * [Energy]
-  * [Taking to the Field]
+  * [http://code.google.com/p/conflictterra/wiki/StartsGuide2#Your_Flagship Your Flagship]
+  * [http://code.google.com/p/conflictterra/wiki/StartsGuide2#The_Mobile_Headquarters The Mobile Headquarters]
+    * [http://code.google.com/p/conflictterra/wiki/StartsGuide2#The_Engineer_Support_Mech The Engineer Support Mech]
+    * [http://code.google.com/p/conflictterra/wiki/StartsGuide2#Factory_Cruisers Factory Cruisers]
+    * [http://code.google.com/p/conflictterra/wiki/StartsGuide2#Resurrection_Truck Resurrection Truck]
+  * [http://code.google.com/p/conflictterra/wiki/StartsGuide2#Meteors_and_Meteorites Meteors and Meteorites]
+  * [http://code.google.com/p/conflictterra/wiki/StartsGuide2#Energy Energy]
+  * [http://code.google.com/p/conflictterra/wiki/StartsGuide2#Taking_to_the_Field Taking to the Field]
 
 = Your Flagship =
 
