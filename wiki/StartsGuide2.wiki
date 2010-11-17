@@ -41,7 +41,7 @@ The *Mobile Headquarters* is an armed factory, able to both produce units and fi
 
   A miner carrying metal will have a yellow triangle around it.
 
-  [http://conflictterra.googlecode.com/svn/wiki/images/Mining%20symbols.png]
+  [http://h-3.abload.de/img/cteasyeasymoneyef4c.gif]
 
   A meteorite being mined by a miner will have a green circle around it.
 
