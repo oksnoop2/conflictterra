@@ -7,8 +7,8 @@ unitDef = {
   acceleration                  = 0,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 1800,
-  buildCostMetal                = 1440,
+  buildCostEnergy               = 1000,
+  buildCostMetal                = 1000,
   builder                       = true,
   reclaimable                   = false,
 

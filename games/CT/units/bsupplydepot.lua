@@ -7,12 +7,12 @@ unitDef = {
   activateWhenBuilt             = true,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 150,
-  buildCostMetal                = 120,
+  buildCostEnergy               = 200,
+  buildCostMetal                = 200,
   builder                       = false,
 
   buildPic                      = [[bsupplydepot.png]],
-  buildTime                     = 25,
+  buildTime                     = 20,
   category                      = [[SINK]],
   corpse                        = [[DEAD]],
 

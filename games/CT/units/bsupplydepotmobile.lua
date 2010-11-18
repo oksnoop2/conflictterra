@@ -9,8 +9,8 @@
           bankscale           = [[1.5]],
 	  bmcode              = [[0]],
 	  brakeRate           = 1.88,
-	  buildCostEnergy     = 150,
-	  buildCostMetal      = 120,
+	  buildCostEnergy     = 200,
+	  buildCostMetal      = 200,
 	  builder             = false,
 	  reclaimable         = false,
 
@@ -20,7 +20,7 @@
 	  collisionVolumeType    = [[box]],
 
 	  buildPic            = [[bsupplydepotmobile.png]],
-	  buildTime           = 25,
+	  buildTime           = 20,
 	  canAttack           = false,
           canFly              = true,
 	  canFight            = false,

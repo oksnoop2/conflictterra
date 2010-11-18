@@ -8,7 +8,7 @@ unitDef = {
   activateWhenBuilt             = true,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 1000,
+  buildCostEnergy               = 800,
   buildCostMetal                = 800,
   builder                       = false,
 

@@ -19,10 +19,10 @@ local bminer = {
                 [[bsubpens]],
                 [[bradartower]],
                 [[bjammertower]],
-                [[blandturret]],
-                [[bairturret]],
-                [[blandnavalturret]],
                 [[bgatlingturret]],
+                [[bairturret]],
+                [[blandturret]],
+                [[blandnavalturret]],
                 [[bmechturret]],
         },
 

@@ -8,8 +8,8 @@ unitDef = {
   activateWhenBuilt             = false,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 800,
-  buildCostMetal                = 600,
+  buildCostEnergy               = 400,
+  buildCostMetal                = 400,
   builder                       = true,
 
   buildoptions                  = {
@@ -23,7 +23,7 @@ unitDef = {
 
 
   buildPic                      = [[bbeacon.png]],
-  buildTime                     = 120,
+  buildTime                     = 45,
   canMove                       = true,
   canPatrol                     = true,
   canstop                       = [[1]],

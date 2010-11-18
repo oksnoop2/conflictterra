@@ -9,11 +9,11 @@ unitDef = {
   bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 100,
-  buildCostMetal                = 80,
+  buildCostMetal                = 100,
   builder                       = false,
 
   buildPic                      = [[bradartower.png]],
-  buildTime                     = 25,
+  buildTime                     = 20,
   canAttack                     = false,
   category                      = [[SINK]],
   corpse                        = [[DEAD]],

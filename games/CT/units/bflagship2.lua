@@ -9,8 +9,8 @@
           bankscale           = [[1.5]],
 	  bmcode              = [[0]],
 	  brakeRate           = 1.88,
-	  buildCostEnergy     = 1800,
-	  buildCostMetal      = 1440,
+	  buildCostEnergy     = 1000,
+	  buildCostMetal      = 1000,
 	  builder             = false,
 	  reclaimable         = false,
 
