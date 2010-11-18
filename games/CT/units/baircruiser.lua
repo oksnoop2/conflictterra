@@ -164,13 +164,13 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 650,
-		Building = 650,
-		Mech = 650,
-		Tank = 650,
-		Aircraft = 650,
-		Ship = 650,
-		Sub = 45,
+		Cruiser = 250,
+		Building = 250,
+		Mech = 250,
+		Tank = 250,
+		Aircraft = 250,
+		Ship = 250,
+		Sub = 250,
 	      },
 	
 	      model                   = [[bsmallmissile.s3o]],
