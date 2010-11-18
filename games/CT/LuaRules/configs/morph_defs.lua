@@ -123,12 +123,12 @@ local morphDefs = {
       energy = 0,
       time = 5,
     },
-    {
-      into = 'badvmechcruiser',
-      metal = 800,
-      energy = 1000,
-      time = 60,
-    },
+--    {
+--      into = 'badvmechcruiser',
+--      metal = 800,
+--      energy = 1000,
+--      time = 60,
+--    },
   },
 
   bmechcruiserfactory = {
@@ -138,12 +138,12 @@ local morphDefs = {
       energy = 0,
       time = 5,
     },
-    {
-      into = 'badvmechcruiserfactory',
-      metal = 800,
-      energy = 1000,
-      time = 60,
-    },
+--    {
+--      into = 'badvmechcruiserfactory',
+--      metal = 800,
+--      energy = 1000,
+--      time = 60,
+--    },
   },
 
   btankcruiser = {
@@ -153,12 +153,12 @@ local morphDefs = {
       energy = 0,
       time = 5,
     },
-    {
-      into = 'badvtankcruiser',
-      metal = 800,
-      energy = 1000,
-      time = 60,
-    },
+--    {
+--      into = 'badvtankcruiser',
+--      metal = 800,
+--      energy = 1000,
+--      time = 60,
+--    },
   },
 
   btankcruiserfactory = {
@@ -168,12 +168,12 @@ local morphDefs = {
       energy = 0,
       time = 5,
     },
-    {
-      into = 'badvtankcruiserfactory',
-      metal = 800,
-      energy = 1000,
-      time = 60,
-    },
+--    {
+--      into = 'badvtankcruiserfactory',
+--      metal = 800,
+--      energy = 1000,
+--      time = 60,
+--    },
   },
 
   baircruiser = {
@@ -183,12 +183,12 @@ local morphDefs = {
       energy = 0,
       time = 5,
     },
-    {
-      into = 'badvaircruiser',
-      metal = 800,
-      energy = 1000,
-      time = 60,
-    },
+--    {
+--      into = 'badvaircruiser',
+--      metal = 800,
+--      energy = 1000,
+--      time = 60,
+--    },
   },
 
   baircruiserfactory = {
@@ -198,12 +198,12 @@ local morphDefs = {
       energy = 0,
       time = 5,
     },
-    {
-      into = 'badvaircruiserfactory',
-      metal = 800,
-      energy = 1000,
-      time = 60,
-    },
+--    {
+--      into = 'badvaircruiserfactory',
+--      metal = 800,
+--      energy = 1000,
+--      time = 60,
+--    },
   },
 
   badvmechcruiser = {
@@ -260,14 +260,14 @@ local morphDefs = {
     },
   },
 
-  bbeacon = {
-    {
-      into = 'badvbeacon',
-      metal = 1200,
-      energy = 1600,
-      time = 60,
-    },
-  },
+--  bbeacon = {
+--    {
+--      into = 'badvbeacon',
+--      metal = 1200,
+--      energy = 1600,
+--      time = 60,
+--    },
+--  },
 
   bshipyard = {
     {
