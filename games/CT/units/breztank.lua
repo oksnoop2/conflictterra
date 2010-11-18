@@ -4,8 +4,8 @@ local breztank = {
         acceleration        = 0.04,
         brakerate           = 0.02,
         buildpic            = [[bmetaltruck.png]],
-	buildCostEnergy     = 200,
-	buildCostMetal      = 200,
+	buildCostEnergy     = 300,
+	buildCostMetal      = 300,
         buildDistance       = 180,
         builder             = true,
 
