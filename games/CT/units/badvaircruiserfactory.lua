@@ -19,13 +19,14 @@ unitDef = {
     [[badvrocketplane]],
 
     [[badvradarplane]],
+    [[bradarplane]],
     [[bfighter]],
-    [[bbomber]],
-
     [[brocketplane]],
 
     [[blaserplane]],
-    [[bradarplane]],
+    [[bbomber]],
+
+
   },
 
 

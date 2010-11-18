@@ -3,8 +3,8 @@
 	  name                = [[Tori Type Fighter]],
 	  description         = [[Light Fighter - Fast, light fighter armed with four air cannons.]],
           amphibious          = false,
-	  buildCostEnergy     = 150,
-	  buildCostMetal      = 120,
+	  buildCostEnergy     = 300,
+	  buildCostMetal      = 300,
 	  buildPic            = [[bfighter.png]],
 	  buildTime           = 12,
 	  canAttack           = true,
@@ -64,6 +64,7 @@
 	
 	    {
 	      def                = [[Machine_Gun]],
+	      badTargetCategory  = [[GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 60,
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
@@ -72,6 +73,7 @@
 	
 	    {
 	      def                = [[Machine_Gun]],
+	      badTargetCategory  = [[GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 60,
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
@@ -79,6 +81,7 @@
 
 	    {
 	      def                = [[Machine_Gun]],
+	      badTargetCategory  = [[GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 60,
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
@@ -87,6 +90,7 @@
 	
 	    {
 	      def                = [[Machine_Gun]],
+	      badTargetCategory  = [[GUNSHIP]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 60,
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
@@ -104,13 +108,13 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 10,
-		Building = 10,
-		Mech = 10,
-		Tank = 10,
+		Cruiser = 5,
+		Building = 5,
+		Mech = 5,
+		Tank = 5,
 		Aircraft = 20,
-		Ship = 10,
-		Sub = 0.3,
+		Ship = 5,
+		Sub = 5,
 	      },
 	
 	      edgeEffectiveness       = 1,

@@ -3,10 +3,10 @@
 	  name                = [[Suzaku Type Fighter]],
 	  description         = [[High-Tech Fighter - New fighter model armed with  beam weaponry that cuts through cruisers.]],
           amphibious          = false,
-	  buildCostEnergy     = 200,
-	  buildCostMetal      = 160,
+	  buildCostEnergy     = 400,
+	  buildCostMetal      = 400,
 	  buildPic            = [[blaserplane.png]],
-	  buildTime           = 18,
+	  buildTime           = 15,
 	  canAttack           = true,
           canDropFlare        = false,
           canFly              = true,
@@ -61,6 +61,7 @@
 	
 	    {
 	      def                = [[Laser]],
+	      badTargetCategory  = [[FIXEDWING]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 45,
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
@@ -68,6 +69,7 @@
 	
 	    {
 	      def                = [[Laser]],
+	      badTargetCategory  = [[FIXEDWING]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 45,
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
@@ -75,6 +77,7 @@
 
 	    {
 	      def                = [[Laser]],
+	      badTargetCategory  = [[FIXEDWING]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 45,
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
@@ -83,6 +86,7 @@
 	
 	    {
 	      def                = [[Laser]],
+	      badTargetCategory  = [[FIXEDWING]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 45,
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],

@@ -4,7 +4,7 @@
 	  description         = [[Bomber - Light bomber able to drop small payloads.]],
           amphibious          = false,
 	  buildCostEnergy     = 500,
-	  buildCostMetal      = 400,
+	  buildCostMetal      = 500,
 	  builder             = false,
 	  buildPic            = [[bbomber.png]],
 	  buildTime           = 18,
