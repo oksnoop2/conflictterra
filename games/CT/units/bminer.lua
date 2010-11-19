@@ -38,6 +38,11 @@ local bminer = {
         corpse              = [[DEAD]],
         reclaimable         = false,
 
+	customParams = {
+		is_miner=1,	--used by minig: if the unit can mine is_mineable=1 ressources
+		max_cargo=25,	--used by mining: how much metal the unit can carry at once before having to return to a drop off
+	},
+
         defaultmissiontype  = [[Standby]],
         energyMake          = 0.25,
         explodeAs           = [[SMALL_UNIT]],
@@ -95,10 +100,7 @@ local bminer = {
         showNanospray       = 0,
         workerTime          = 1,
         script              = "bminer.lua",
-		customParams = {
-		is_miner=1,		--used by minig: if the unit can mine is_mineable=1 ressources
-		max_cargo=25,	--used by mining: how much metal the unit can carry at once before having to return to a drop off
-		},
+
           weapons             = {
         
             {
@@ -116,13 +118,14 @@ local bminer = {
             Rock_Drill = {
               name                    = [[Rock Drill]],
               areaOfEffect            = 8,
+              avoidFriendly           = 0,
               craterMult              = 0.25,
-              accuracy                = 200,
+              accuracy                = 0,
 	      collideFriendly         = false,
         
               damage                  = {
                 Cruiser = 1,
-                Building = 15,
+                Building = 1,
                 Mech = 1,
                 Tank = 1,
                 Aircraft = 1,
@@ -130,25 +133,25 @@ local bminer = {
                 Sub = 1,
               },
         
-              explosionGenerator      = [[custom:resmining]], -- [[custom:FLAK_BURST_Expl]],
+              explosionGenerator      = [[custom:resmining]],
               interceptedByShieldType = 1,
               lineOfSight             = true,
               range                   = 90,
               reloadtime              = 0.2,
               rgbColor                = [[1 0.95 0.4]],
               separation              = 2,
-              size                    = 0.4, --was 1.25
-              soundStart              = [[ct/machine_gun]],
+              size                    = 0.4,
+            --  soundStart              = [[ct/machine_gun]],
               soundStartVolume        = 0.5,
               soundTrigger            = true,
               stages                  = 50,
-              sprayAngle              = 1180,
+              targetBorder            = 1,
               tolerance               = 8000,
               turret                  = true,
               weaponType              = [[Cannon]],
-              weaponVelocity          = 750,
-              targetBorder=1,
-              avoidFriendly=0,
+              weaponVelocity          = 7500,
+
+
 			},
         
           },
