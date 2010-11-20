@@ -89,31 +89,21 @@
 
 	
 	  weapons             = {
-	
-	    {
-	      def                = [[AA]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
-
 
 	    {
 	      def                = [[Ground]],
 	      badTargetCategory  = [[SINK FLOAT]],
+	      mainDir            = [[0 -1 1]],
+	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
 	    {
 	      def                = [[AA]],
 	      badTargetCategory  = [[GUNSHIP]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 90,
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
-
-
-	    {
-	      def                = [[Ground]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 	
 	  },
@@ -144,8 +134,8 @@
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      model                   = [[baamissile.s3o]],
-	      range                   = 530,
-	      reloadtime              = 4.5,
+	      range                   = 600,
+	      reloadtime              = 3,
 	      smokedelay              = [[0.1]],
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
@@ -154,6 +144,7 @@
 	      tolerance               = 22000,
 	      tracks                  = true,
 	      turnRate                = 30000,
+	      turret                  = true,
 	      weaponAcceleration      = 550,
 	      weaponTimer             = 5,
 	      weaponType              = [[MissileLauncher]],
@@ -166,37 +157,38 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 650,
-		Building = 650,
-		Mech = 650,
-		Tank = 650,
-		Aircraft = 650,
-		Ship = 650,
-		Sub = 45,
+		Cruiser = 250,
+		Building = 250,
+		Mech = 250,
+		Tank = 250,
+		Aircraft = 250,
+		Ship = 250,
+		Sub = 250,
 	      },
 	
 	      model                   = [[bsmallmissile.s3o]],
 	      edgeEffectiveness       = 0.5,
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
-	      flightTime              = 4,
+	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
-	      range                   = 800,
-	      reloadtime              = 6,
+	      range                   = 600,
+	      reloadtime              = 3,
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[nexuiz/rocket_fire]],
-	      tolerance               = 8000,
+	      tolerance               = 4000,
 	      trajectoryHeight        = 0.5,
-	      tracks                  = false,
+	      tracks                  = true,
+	      turnRate                = 1000,
 	      turret                  = true,
 	      weaponType              = [[MissileLauncher]],
 	      weaponVelocity          = 400,
 	      startVelocity           = 400,
 	      weaponAcceleration      = 70,
 	    },
-	
-	  },
+
+          },
 	
 	
 	  featureDefs         = {
