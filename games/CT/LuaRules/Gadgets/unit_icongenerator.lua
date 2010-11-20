@@ -2,7 +2,7 @@
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --
---  file:    gfx_halo.lua
+--  file:    unit_icongenerator.lua
 --  brief:   
 --  author:  jK
 --
@@ -12,10 +12,16 @@
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
+--[[
+example usage (need cheats):
+/luarules buildicons all
+/luarules buildicon armcom
+]]
+
 function gadget:GetInfo()
   return {
     name      = "IconGenerator",
-    desc      = "",
+    desc      = "/luarules buildicon(s) [unitdefname|all]",
     author    = "jK",
     date      = "Oct 01, 2008",
     license   = "GNU GPL, v2 or later",
@@ -73,7 +79,9 @@ if (gadgetHandler:IsSyncedCode()) then
         Spring.GiveOrderToUnit(uid,CMD.FIRE_STATE,{0},{});
         Spring.GiveOrderToUnit(uid,CMD.STOP,{},{});
 
-        Spring.CallCOBScript(uid,"Activate",0);
+		env = Spring.UnitScript.GetScriptEnv(uid)
+		if env and env.Activate then Spring.UnitScript.CallAsUnit(uid, env.Activate)
+        else Spring.CallCOBScript(uid,"Activate",0) end
 
         if (cunit.move) then
           Spring.CallCOBScript(uid,"StartMoving",0);
