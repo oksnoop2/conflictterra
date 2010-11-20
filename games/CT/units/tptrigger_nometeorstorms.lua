@@ -1,0 +1,55 @@
+unitDef = {
+  unitname                      = [[tptrigger_nometeorstorms]],
+  name                          = [[Meteor Storm Blocker]],
+  description                   = [[causes spacerocks.lua not to spawn any random meteor storms]],
+  acceleration                  = 0,
+  activateWhenBuilt             = true,
+  bmcode                        = [[0]],
+  brakeRate                     = 0,
+  buildCostEnergy               = 1,
+  buildCostMetal                = 1,
+  iconType           		  = "meteor",
+  builder                       = false,
+  buildPic                      = [[tptrigger_nometeorstorms.png]],
+  buildTime                     = 1,
+  canattack                     = [[false]],
+  category                      = [[MINERALS]],
+
+  reclaimable                   = false,
+  repairable			= false,
+  energyUse                     = 0,
+  --explodeAs                     = [[ROCK_IMPACT_SMALL]],
+  extractsMetal                 = 0.000,
+  floater                       = false,
+  footprintX                    = 3,
+  footprintZ                    = 3,
+  idleAutoHeal                  = 0,
+  levelGround                   = false,
+  mass                          = 37.5,
+  maxDamage                     = 500,
+  maxSlope                      = 255,
+  maxVelocity                   = 0,
+  maxWaterDepth                 = 0,
+  minCloakDistance              = 150,
+  noAutoFire                    = false,
+  objectName                    = [[point.s3o]],
+
+  onoffable                     = true,
+  seismicSignature              = 4,
+  --selfDestructAs                = [[ROCK_IMPACT_SMALL]],
+  side                          = [[NKG]],
+  sightDistance                 = 250,
+
+  smoothAnim                    = true,
+  TEDClass                      = [[METAL]],
+  turnRate                      = 0,
+
+  waterline                     = 1,
+  workerTime                    = 0,
+  yardMap                       = [[ooo ooo ooo]],
+  script                        = [[tptrigger_nometeorstorms.lua]],
+}
+
+
+
+return lowerkeys({ tptrigger_nometeorstorms = unitDef })

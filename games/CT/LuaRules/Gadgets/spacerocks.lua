@@ -19,19 +19,39 @@ end
 
 
 ----- Settings -----------------------------------------------------------------
-local meteorDefName  = {"bmeteor_big", "bmeteor"} --meteor unit name in flight, use a unit with a death explosion
---local crashedMeteorDefname ="bminerals"  --the unit that should remain after the meteor has crashed into the ground
-local meteorInterval = 120--2000 	-- time between the arrival of meteor storms, in seconds
+local meteorDefName  = {} --{"bmeteor_big", "bmeteor"} --meteor unit name in flight -> add impactunitname="unitname" tag to a unitdef to make i spawn as a meteor
+local meteorInterval = 120	--2000 	-- time between the arrival of meteor storms, in seconds
 local meteorNumber = 5		--how many meteors per meteor storm
-local meteorSpread = 300	--how far apart meteors drop (this defines the maximum possible distance)
+local meteorSpread = 300	--how far apart meteors drop (meteors storms cover a square with a sidelength of meteorSpread)
 local fallGravity = 1
 local meteorSpawnHeight = 5000
 local min_distance_to_units = 100	--how far away from player units a meteor must impact to leave a rock (as not to block units or factories)
 local burnEffect1 = "firetrail2" -- CEG used for the meteor trail, needs to be visible out of los
 local burnEffect2 = "buildersparks"
 local slidespeed = 30
+local debug = true
 ----------------------------------------------------------------------------------
 local meteors = {} -- meteor set
+
+function make_meteorDefName_table ()
+if (debug) then Spring.Echo ("spacerocks.lua: looking for spacerocks unitdefs") end
+	for id,unitDef in pairs(UnitDefs) do
+		local cp = UnitDefs[id].customParams
+		if (cp) then
+			if (cp.impactunitname) then
+				local resname = unitDef.name
+				if (debug) then Spring.Echo ("spacerocks.lua: found unitdef with impactunitname tag:" .. resname) end
+				table.insert (meteorDefName, resname)
+			end
+		end
+	end
+if (meteorDefName == nil or #meteorDefName == 0) then
+	Spring.Echo ("spacerocks: no unitdefs with impactunitname tag found, no meteors will drop.")
+	gadgetHandler:RemoveGadget() 
+	end
+end
+
+
 
 local function Impact (meteorID)
 	local nearunits = Spring.GetUnitNearestEnemy  (meteorID, min_distance_to_units, false)		
@@ -44,6 +64,8 @@ local function Impact (meteorID)
 	local mx = x+(gnx*slidespeed)
 	local mz = z+(gnz*slidespeed)
 	Spring.MoveCtrl.SetPosition (meteorID, mx, h,mz)	
+	--Spring.MoveCtrl.SetRotationOffset (meteorID,0,0,0)
+	--Spring.MoveCtrl.SetRotationVelocity (meteorID, gnx, 0, gnz) --this doesnt really work
 	if (math.abs (x-mx) > 3 or math.abs (z-mz) > 3) then return end --danger: depending on terrain and too high slidespeed, unit might jump between two positions and never come to rest
 	
 	--	if (cp) then Spring.Echo ("has custom para") else Spring.Echo ("has NO custom para") end
@@ -105,10 +127,25 @@ function gadget:GameFrame(frame)
   end
 end
 
---for testing: if cheating is enabled you can summon meteor storms by selfdestructing bmex
+
 function gadget:UnitDestroyed(unitID, unitDefID, teamID, attackerID)
-if (Spring.IsCheatingEnabled()==true and string.find (UnitDefs[unitDefID].name, "bmex") ~= nil) then 
-	local x, y, z = Spring.GetUnitPosition(unitID)
-	MeteorStorm (x, z, meteorSpread, 6)
-	end
+--for testing: if cheating is enabled you can summon meteor storms by selfdestructing bmex
+	if (Spring.IsCheatingEnabled()==true and string.find (UnitDefs[unitDefID].name, "bmex") ~= nil) then 
+		local x, y, z = Spring.GetUnitPosition(unitID)
+		MeteorStorm (x, z, meteorSpread, 6)
+		end
+--triggering meteor storms (ie for missions)
+	if (string.find (UnitDefs[unitDefID].name, "tptrigger_meteorstorm")) then
+		local x, y, z = Spring.GetUnitPosition(unitID)
+		MeteorStorm (x, z, meteorSpread, 6)
+		end	
+--blocking random meteor storms (ie for missions)
+		if (string.find (UnitDefs[unitDefID].name, "tptrigger_nometeorstorms")) then
+		meteorInterval = 999999999
+		Spring.Echo ("spacerocks.lua: no random meteor storms")
+		end		
+end
+
+function gadget:Initialize()
+	make_meteorDefName_table ()
 end
