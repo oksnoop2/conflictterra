@@ -15,7 +15,7 @@
 	  reclaimable         = false,
 
 	  collisionVolumeOffsets = [[0 0 0]],
-	  collisionVolumeScales  = [[96 96 160]],
+	  collisionVolumeScales  = [[70 70 160]],
 	  collisionVolumeTest    = 1,
 	  collisionVolumeType    = [[box]],
 
@@ -41,8 +41,8 @@
 	  energyUse           = 0,
 	  explodeAs           = [[BIG_UNIT]],
           floater             = true,
-          footprintx          = 10,
-	  footprintZ          = 10,
+          footprintx          = 5,
+	  footprintZ          = 5,
 	  hoverAttack         = true,
 	  idleAutoHeal        = 0,
 	  maneuverleashlength = [[1280]],
@@ -55,7 +55,7 @@
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
 	  norestrict          = [[1]],
-	  objectName          = [[bsupplydepot.s3o]],
+	  objectName          = [[bsupplydepotmobile.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[BIG_UNIT]],
           showNanospray       = 0,
