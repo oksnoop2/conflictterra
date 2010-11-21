@@ -111,8 +111,8 @@
 	      },
 	
 	      model                   = [[bantimechmissile.s3o]],
-	      dance                   = 20,
-	      wobble                  = 5000,
+	      dance                   = 75,
+	      wobble                  = 2000,
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
