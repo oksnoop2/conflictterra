@@ -13,7 +13,7 @@ unitDef = {
   buildoptions                  = {
 
     [[bseaengineer1]],
-    [[bamphmech]],
+    [[bhovermech]],
 
     [[bsubmarine]],
     [[baasub]],

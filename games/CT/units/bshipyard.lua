@@ -14,7 +14,7 @@ unitDef = {
 
     [[bseaengineer1]],
     [[benergysupplyboat]],
-    [[bamphmech]],
+    [[bhovermech]],
     [[bbattleship]],
 
     [[brocketbattleship]],

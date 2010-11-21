@@ -1,5 +1,5 @@
 	unitDef = {
-	  unitname            = [[badvamphmech]],
+	  unitname            = [[badvhovermech]],
 	  name                = [[Yagyu Hover Combat Mech]],
 	  description         = [[High-Tech Hover Assault Mech - Newer hovercraft "mech" armed with powerful beam weapons. - Build Limit: 10]],
 	  acceleration        = 0.07,
@@ -8,7 +8,7 @@
 	  buildCostEnergy     = 700,
 	  buildCostMetal      = 560,
 	  builder             = false,
-	  buildPic            = [[badvamphmech.png]],
+	  buildPic            = [[badvhovermech.png]],
 	  buildTime           = 30,
 	  canAttack           = true,
 	  canGuard            = true,
@@ -35,7 +35,7 @@
 	  movementClass       = [[MedHOVER]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
-	  objectName          = [[badvamphmech.s3o]],
+	  objectName          = [[badvhovermech.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[MEDIUM_UNIT]],
 
@@ -61,7 +61,7 @@
 	  turnRate            = 410,
 	  workerTime          = 0,
 	  unitRestricted      = 10,
-          script              = [[badvamphmech.lua]],
+          script              = [[badvhovermech.lua]],
 	
 	  weapons             = {
 	
@@ -161,4 +161,4 @@
 	
 	}
 	
-	return lowerkeys({ badvamphmech = unitDef })
+	return lowerkeys({ badvhovermech = unitDef })

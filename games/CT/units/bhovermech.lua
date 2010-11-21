@@ -1,5 +1,5 @@
 	unitDef = {
-	  unitname            = [[bamphmech]],
+	  unitname            = [[bhovermech]],
 	  name                = [[Ukita Hover Combat Mech]],
 	  description         = [[Hover Assault Mech - Hover-equipped "mech" that is able to instantly move between land and sea.  Armed with both missiles and torpedoes.]],
 	  acceleration        = 0.08,
@@ -8,7 +8,7 @@
 	  buildCostEnergy     = 350,
 	  buildCostMetal      = 350,
 	  builder             = false,
-	  buildPic            = [[bamphmech.png]],
+	  buildPic            = [[bhovermech.png]],
 	  buildTime           = 19,
 	  canAttack           = true,
 	  canGuard            = true,
@@ -34,7 +34,7 @@
 	  movementClass       = [[LightHOVER]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP]],
-	  objectName          = [[bamphmech2.s3o]],
+	  objectName          = [[bhovermech.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_UNIT]],
 
@@ -66,7 +66,7 @@
 	  turninPlace         = 0,
 	  turnRate            = 525,
 	  workerTime          = 0,
-          script              = [[bamphmech.lua]],
+          script              = [[bhovermech.lua]],
 	
 	  weapons             = {
 	
@@ -227,4 +227,4 @@
 	
 	}
 	
-	return lowerkeys({ bamphmech = unitDef })
+	return lowerkeys({ bhovermech = unitDef })

@@ -12,11 +12,11 @@ unitDef = {
 
   buildoptions                  = {
     [[bseaengineer2]],
-    [[badvamphmech]],
+    [[badvhovermech]],
 
     [[badvsubmarine]],
     [[badvaasub]],
-    [[bamphmech]],
+    [[bhovermech]],
     [[bsubmarine]],
     [[baasub]],
   },
