@@ -50,7 +50,7 @@ unitDef = {
   waterline                     = 1,
   workerTime                    = 0,
   yardMap                       = [[ooo ooo ooo]],
-  script                        = [[bmeteor.lua]],
+  script                        = [[bmeteorimpact.lua]],
   customParams = {
  	is_mineable=1,		--used by minig: if the unit is a mineable resource
 	},

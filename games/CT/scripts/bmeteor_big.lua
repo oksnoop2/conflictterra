@@ -2,7 +2,6 @@
 	
 	--pieces
 	local meteor = piece "bmeteor"
-	local fxflare = piece "fxflare"
 	
 	function script.Create()
 		Spin(meteor, x_axis, 10)
