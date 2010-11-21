@@ -36,7 +36,7 @@ unitDef = {
 
   onoffable                     = true,
   seismicSignature              = 4,
-  --selfDestructAs                = [[ROCK_IMPACT_SMALL]],
+  selfDestructAs                = [[ROCK_IMPACT_SMALL]],
   side                          = [[NKG]],
   sightDistance                 = 250,
 

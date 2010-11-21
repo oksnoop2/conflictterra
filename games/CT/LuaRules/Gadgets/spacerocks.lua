@@ -4,7 +4,7 @@ function gadget:GetInfo()
   return {
     name      = "Space Rock",
     desc      = "Spawns rocks from space.",
-    author    = "oksnoop2 heavily modded by knorke yo!",
+    author    = "oksnoop2 heavily modded by knorke by 98% yo!",
     date      = "4/24/2010",
     license   = "GNU GPL, v2 or later",
     layer     = 0,
@@ -27,11 +27,11 @@ local fallGravity = 1
 local meteorSpawnHeight = 5000
 local min_distance_to_units = 100	--how far away from player units a meteor must impact to leave a rock (as not to block units or factories)
 local burnEffect1 = "firetrail2" -- CEG used for the meteor trail, needs to be visible out of los
-local burnEffect2 = "buildersparks"
 local slidespeed = 30
 local debug = true
 ----------------------------------------------------------------------------------
 local meteors = {} -- meteor set
+local storms = {} --triggered meteor storms
 
 function make_meteorDefName_table ()
 if (debug) then Spring.Echo ("spacerocks.lua: looking for spacerocks unitdefs") end
@@ -85,6 +85,15 @@ local function Impact (meteorID)
 	Spring.DestroyUnit(meteorID) -- make meteor explode
 end
 
+local function NewMeteorStorm (stormX,stormY, a, n)
+	newstorm = {}
+	newstorm.stormX = stormX
+	newstorm.stormY = stormY
+	newstorm.a = a
+	newstorm.n = n
+	table.insert (storms, newstorm)
+	Spring.Echo ("storm added")
+end
 
 local function MeteorStorm (stormX,stormY, a, n)
 	for i = 1, n, 1 do
@@ -104,9 +113,7 @@ local function MeteorStorm (stormX,stormY, a, n)
 end
 
 function gadget:GameFrame(frame)
---Spring.SpawnCEG(burnEffect2, 10,300 , 10)
---Spring.SpawnCEG(burnEffect1, 50,300 , 10,0,1,0,5)
---if (frame % 90 == 0) then Spring.SpawnCEG(burnEffect1, 100,300,10) end
+	--spawn new meteorstorms by intervall--
 	if frame > 1 and frame % (30 * meteorInterval) == 0 then 
 		-- pick a random location for the meteor storm
 		local meteorSpawnX = math.random(Game.mapSizeX)
@@ -114,7 +121,19 @@ function gadget:GameFrame(frame)
 		Spring.Echo ("Incoming Meteor Storm! Coordinates: [" .. meteorSpawnX .. " : " .. meteorSpawnZ .."]")
 		MeteorStorm (meteorSpawnX, meteorSpawnZ, meteorSpread, meteorNumber)
 	end
-  for meteorID in pairs(meteors) do  -- loop through every meteor in the meteor set
+	--spawn "triggered" storms--
+	if (storms ~=nil) then 
+		--unleash all the stored storms
+		if (#storms > 0) then		
+			for i = 1, #storms, 1 do
+				MeteorStorm (storms[i].stormX, storms[i].stormY, storms[i].a, storms[i].n)
+			end
+		storms = nil --all storms unleashed \o/
+		end
+	end
+	
+	--move the existing meteors--
+	for meteorID in pairs(meteors) do
     local x, y, z = Spring.GetUnitPosition(meteorID)
     local h = Spring.GetGroundHeight(x, z)
     if y < h+15 then -- if the meteor below ground level
@@ -122,7 +141,6 @@ function gadget:GameFrame(frame)
 		Impact (meteorID)
     else -- above ground, show the meteor trail
       Spring.SpawnCEG(burnEffect1, x+math.random(-20,20), y, z+math.random(-20,20))
---      Spring.SpawnCEG(burnEffect2, x, y, z)
     end
   end
 end
@@ -135,9 +153,11 @@ function gadget:UnitDestroyed(unitID, unitDefID, teamID, attackerID)
 		MeteorStorm (x, z, meteorSpread, 6)
 		end
 --triggering meteor storms (ie for missions)
-	if (string.find (UnitDefs[unitDefID].name, "tptrigger_meteorstorm")) then
+	if (string.find (UnitDefs[unitDefID].name, "tptrigger_meteorstorm") ~=nil) then
 		local x, y, z = Spring.GetUnitPosition(unitID)
-		MeteorStorm (x, z, meteorSpread, 6)
+		--MeteorStorm (x, z, meteorSpread, 6)
+		--Spring.Echo ("storm triggered")
+		NewMeteorStorm (x,z, meteorSpread, 6)
 		end	
 --blocking random meteor storms (ie for missions)
 		if (string.find (UnitDefs[unitDefID].name, "tptrigger_nometeorstorms")) then
