@@ -79,11 +79,6 @@
 	      def                = [[AA]],
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
-
-	    {
-	      def                = [[AA]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
 	
 	  },
 	
@@ -114,7 +109,7 @@
 	      lineOfSight             = true,
 	      model                   = [[baamissile.s3o]],
 	      range                   = 530,
-	      reloadtime              = 4.5,
+	      reloadtime              = 2,
 	      smokedelay              = [[0.1]],
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],

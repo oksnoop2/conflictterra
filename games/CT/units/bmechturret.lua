@@ -61,18 +61,6 @@
 	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
-
-	    {
-	      def                = [[Large]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
-	    },
-
-	    {
-	      def                = [[Large]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
-	    },
 	
 	  },
 	
@@ -101,7 +89,7 @@
 	      model                   = [[blargemissile.s3o]],
 	      noSelfDamage            = true,
 	      range                   = 800,
-	      reloadtime              = 7.5,
+	      reloadtime              = 3,
 	      smokedelay              = [[0.1]],
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],

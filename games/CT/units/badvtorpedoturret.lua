@@ -61,21 +61,6 @@
 	      def                = [[Torpedo]],
 	      onlyTargetCategory = [[SWIM SUB FLOAT SHIP]],
 	    },
-
-	    {
-	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM SUB FLOAT SHIP]],
-	    },
-
-	    {
-	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM SUB FLOAT SHIP]],
-	    },
-
-	    {
-	      def                = [[Torpedo]],
-	      onlyTargetCategory = [[SWIM SUB FLOAT SHIP]],
-	    },
 	
 	  },
 	
@@ -106,7 +91,7 @@
 	      model                   = [[btorpedo.s3o]],
 	      propeller               = [[1]],
 	      range                   = 500,
-	      reloadtime              = 3,
+	      reloadtime              = 1.5,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[evolutionRTS/torpedolaunch]],
 	      startVelocity           = 140,

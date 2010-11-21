@@ -120,9 +120,6 @@ unitDef = {
               turret                  = true,
               weaponType              = [[LaserCannon]],
               weaponVelocity          = 1500,
-            },
-        
-          },
         
               model                   = [[bsmallmissile.s3o]],
               edgeEffectiveness       = 0.5,

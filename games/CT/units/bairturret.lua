@@ -68,16 +68,6 @@
 	      def                = [[AA]],
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
-
-	    {
-	      def                = [[AA]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
-
-	    {
-	      def                = [[AA]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
 	
 	  },
 	
@@ -88,6 +78,8 @@
 	      name                    = [[Homing AA Missile]],
 	      areaOfEffect            = 48,
 	      avoidFriendly           = true,
+	      burst                   = 3,
+	      burstrate               = 0.5,
 	      canattackground         = false,
 	      cylinderTargetting      = 1,
 	      craterMult              = 0.25,
@@ -108,7 +100,7 @@
 	      lineOfSight             = true,
 	      model                   = [[baamissile.s3o]],
 	      range                   = 800,
-	      reloadtime              = 4.5,
+	      reloadtime              = 3,
 	      smokedelay              = [[0.1]],
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],

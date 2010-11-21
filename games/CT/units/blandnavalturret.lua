@@ -71,18 +71,6 @@
 	      badTargetCategory  = [[LAND SINK]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
-
-	    {
-	      def                = [[Cannon]],
-	      badTargetCategory  = [[LAND SINK]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
-	    },
-
-	    {
-	      def                = [[Cannon]],
-	      badTargetCategory  = [[LAND SINK]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
-	    },
 	
 	  },
 	
@@ -108,7 +96,7 @@
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      range                   = 1000,
-	      reloadtime              = 3,
+	      reloadtime              = 1,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_heavy_machinegun]],
 	      turret                  = true,

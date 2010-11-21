@@ -66,21 +66,12 @@
 	      maxAngleDif        = 60,
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
-	
-	
-	    {
-	      def                = [[Machine_Gun]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 60,
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
 
 	    {
 	      def                = [[AA]],
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
-	
-	
+
 	    {
 	      def                = [[AA]],
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],

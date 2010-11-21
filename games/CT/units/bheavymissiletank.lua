@@ -92,12 +92,6 @@
 	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
 	    },
-
-	    {
-	      def                = [[Anti_Mech]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
-	    },
 	
 	  },
 	
@@ -161,7 +155,7 @@
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      range                   = 600,
-	      reloadtime              = 2,
+	      reloadtime              = 1,
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[nexuiz/rocket_fire]],

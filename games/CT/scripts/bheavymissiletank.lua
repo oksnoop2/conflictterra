@@ -10,11 +10,12 @@
 	local flare = piece "flare"
 	local flare2 = piece "flare2"
 
+	local currBarrel = 1
+
 	--signals
 	local SIG_AIM = 1
 	local SIG_AIM_SEC = 2
 	local SIG_AIM_THIR = 4
-	local SIG_AIM_FOUR = 8
         local orc_machinegun_flash = SFX.CEG
         local orc_machinegun_muzzle = SFX.CEG + 1
 	
@@ -37,13 +38,15 @@
 	
 	function script.AimFromWeapon2() return turret end
 
-	function script.QueryWeapon3() return flare end
+	function script.QueryWeapon3()
+		if (currBarrel == 1) then 
+			return flare
+		else 
+			return flare2
+		end
+	end
 	
 	function script.AimFromWeapon3() return turret end
-
-	function script.QueryWeapon4() return flare2 end
-	
-	function script.AimFromWeapon4() return turret end
 	
 	function script.AimWeapon1( heading, pitch )
                 Signal(SIG_AIM)
@@ -77,17 +80,6 @@
 		StartThread(RestoreAfterDelay)
 		return true
 	end
-
-	function script.AimWeapon4( heading, pitch )
-		Signal(SIG_AIM_FOUR)
-		SetSignalMask(SIG_AIM_FOUR)
-        	Turn(turret, y_axis, heading, math.rad(90))
-        	Turn(smallgun, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(turret, y_axis)
-        	WaitForTurn(smallgun, x_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
 	
 	function script.FireWeapon1()
 		EmitSfx(flare3, orc_machinegun_flash)
@@ -102,16 +94,17 @@
         end
 
 	function script.FireWeapon3()
-		EmitSfx(flare, orc_machinegun_flash)
-		EmitSfx(flare, orc_machinegun_muzzle)	
-	       Sleep(30)
-        end
-
-	function script.FireWeapon4()
-		EmitSfx(flare2, orc_machinegun_flash)
-		EmitSfx(flare2, orc_machinegun_muzzle)	
-	       Sleep(30)
-        end
+		if currBarrel == 1 then
+			EmitSfx(flare2, orc_machinegun_flash)
+			EmitSfx(flare2, orc_machinegun_muzzle)	
+		end
+		if currBarrel == 2 then
+			EmitSfx(flare, orc_machinegun_flash)
+			EmitSfx(flare, orc_machinegun_muzzle)	
+		end
+		currBarrel = currBarrel + 1
+		if currBarrel == 3 then currBarrel = 1 end
+	end
 
 	function script.Killed(recentDamage, maxHealth)
 		Sleep(30)

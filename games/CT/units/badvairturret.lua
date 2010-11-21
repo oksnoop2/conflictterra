@@ -42,6 +42,15 @@
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:orc_machinegun_flash_big",
+		"custom:orc_machinegun_muzzle_big",
+	    },
+	
+	  },
+
 	  shootme             = [[1]],
 	  side                = [[NKG]],
 	  sightDistance       = 750,
@@ -52,18 +61,6 @@
 	
 	  weapons             = {
 	
-	    {
-	      def                = [[Flak]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
-
-	    {
-	      def                = [[Flak]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
-
 	    {
 	      def                = [[Flak]],
 	      badTargetCategory  = [[GUNSHIP]],
@@ -104,7 +101,7 @@
 	      interceptedByShieldType = 1,
 	      minbarrelangle          = [[-24]],
 	      range                   = 900,
-	      reloadtime              = 0.4,
+	      reloadtime              = 0.5,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_heavy_machinegun]],
 	      turret                  = true,

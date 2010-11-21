@@ -25,11 +25,12 @@
 	local pad = piece "pad"
 	local nano = piece "nano"
 
+	local currBarrel = 1
+
 	--signals
 	local SIG_AIM = 1
 	local SIG_AIM_SEC = 2
-	local SIG_AIM_THIR = 4
-	local SIG_CRANE = 8
+	local SIG_CRANE = 4
 
         local orc_machinegun_flash = SFX.CEG
         local orc_machinegun_muzzle = SFX.CEG + 1
@@ -152,15 +153,17 @@
 
 	function script.QueryWeapon1() return flare1 end
 
-	function script.QueryWeapon2() return flare2 end
-
-	function script.QueryWeapon3() return flare3 end
+	function script.QueryWeapon2()
+		if (currBarrel == 1) then 
+			return flare3
+		else 
+			return flare4
+		end
+	end
 	
 	function script.AimFromWeapon1() return landturret end
 	
 	function script.AimFromWeapon2() return airturret end
-	
-	function script.AimFromWeapon3() return airturret end
 	
 	function script.AimWeapon1( heading, pitch )
                 Signal(SIG_AIM)
@@ -181,33 +184,23 @@
         	WaitForTurn(airbarrel, x_axis)
 		return true
 	end
-
-	function script.AimWeapon3( heading, pitch )
-		Signal(SIG_AIM_THIR)
-		SetSignalMask(SIG_AIM_THIR)
-        	Turn(airturret, y_axis, heading, math.rad(90))
-        	Turn(airbarrel, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(airturret, y_axis)
-        	WaitForTurn(airbarrel, x_axis)
-		return true
-	end
 	
 	function script.FireWeapon1()
 		EmitSfx(flare1, orc_machinegun_flash)
 		EmitSfx(flare1, orc_machinegun_muzzle)
-	       Sleep(30)
 	end
 
 	function script.FireWeapon2()
-		EmitSfx(flare2, orc_machinegun_flash)
-		EmitSfx(flare2, orc_machinegun_muzzle)
-	       Sleep(30)
-	end
-
-	function script.FireWeapon3()
-		EmitSfx(flare3, orc_machinegun_flash)
-		EmitSfx(flare3, orc_machinegun_muzzle)
-	       Sleep(30)
+		if currBarrel == 1 then
+			EmitSfx(flare2, orc_machinegun_flash)
+			EmitSfx(flare2, orc_machinegun_muzzle)	
+		end
+		if currBarrel == 2 then
+			EmitSfx(flare1, orc_machinegun_flash)
+			EmitSfx(flare1, orc_machinegun_muzzle)	
+		end
+		currBarrel = currBarrel + 1
+		if currBarrel == 3 then currBarrel = 1 end
 	end
 
 	function script.QueryBuildInfo() return pad end

@@ -9,17 +9,14 @@
 	local flare2 = piece "flare2"
 
 	local flpad = piece "flpad"
-
 	local frpad = piece "frpad"
-
 	local blpad = piece "blpad"
-
 	local brpad = piece "brpad"
 
+	local currBarrel = 1
 
 	--signals
 	local SIG_AIM = 1
-	local SIG_AIM_SEC = 2
 	local SIG_go = 4
 	local SIG_stop = 8
 	
@@ -79,13 +76,15 @@
 		StartThread(stop)
 	end
 
-	function script.QueryWeapon1() return flare1 end
-
-	function script.QueryWeapon2() return flare2 end
+	function script.QueryWeapon1()
+		if (currBarrel == 1) then 
+			return flare1
+		else 
+			return flare2
+		end
+	end
 	
 	function script.AimFromWeapon1() return lbarrel end
-
-	function script.AimFromWeapon2() return rbarrel end
 	
 	function script.AimWeapon1( heading, pitch )
                 Signal(SIG_AIM)
@@ -95,22 +94,10 @@
 		StartThread(RestoreAfterDelay)
 		return true
 	end
-
-	function script.AimWeapon2( heading, pitch )
-		Signal(SIG_AIM_SEC)
-		SetSignalMask(SIG_AIM_SEC)
-		Turn(body, y_axis, heading, math.rad(90))
-        	WaitForTurn(body, y_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
 	
 	function script.FireWeapon1()
-	       Sleep(30)
-	end
-
-	function script.FireWeapon2()
-	       Sleep(30)
+		currBarrel = currBarrel + 1
+		if currBarrel == 3 then currBarrel = 1 end
 	end
 	
 	function script.Killed(recentDamage, maxHealth)

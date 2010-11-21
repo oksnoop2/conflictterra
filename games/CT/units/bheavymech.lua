@@ -95,14 +95,6 @@
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	    },
-
-	    {
-	      def                = [[Cannon]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
-	    },
 	
 	  },
 	

@@ -70,32 +70,6 @@
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 	
-	
-	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 60,
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
-
-	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 60,
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
-	
-	
-	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 60,
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
-	
 	  },
 	
 	

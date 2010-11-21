@@ -17,13 +17,12 @@
 	local flare6 = piece "flare6"
 	local flare7 = piece "flare7"
 
+	local currBarrel = 1
+	local currBarrel2 = 1
+
 	local SIG_AIM = 1
 	local SIG_AIM_SEC = 2
 	local SIG_AIM_THIR = 4
-	local SIG_AIM_FOUR = 8
-	local SIG_AIM_FIVE = 16
-	local SIG_AIM_SIX = 32
-	local SIG_AIM_SEV = 64
 
 	function script.Create(unitID)
 	end
@@ -40,31 +39,33 @@
 
 	function script.QueryWeapon1() return flare1 end
 
-        function script.QueryWeapon2() return flare2 end
+	function script.QueryWeapon2()
+		if (currBarrel == 1) then 
+			return flare2
+		end
+		if (currBarrel == 2) then 
+			return flare3
+		else 
+			return flare4
+		end
+	end
 
-	function script.QueryWeapon3() return flare3 end
-
-        function script.QueryWeapon4() return flare4 end
-
-        function script.QueryWeapon5() return flare5 end
-
-	function script.QueryWeapon6() return flare6 end
-
-        function script.QueryWeapon7() return flare7 end
+	function script.QueryWeapon3()
+		if (currBarrel2 == 1) then 
+			return flare5
+		end
+		if (currBarrel2 == 2) then 
+			return flare6
+		else 
+			return flare7
+		end
+	end
 	
 	function script.AimFromWeapon1() return dturret end
 
         function script.AimFromWeapon2() return lturret end
 
-	function script.AimFromWeapon3() return lturret end
-
-        function script.AimFromWeapon4() return lturret end
-
-        function script.AimFromWeapon5() return rturret end
-
-	function script.AimFromWeapon6() return rturret end
-
-        function script.AimFromWeapon7() return rturret end
+	function script.AimFromWeapon3() return rturret end
 	
 	function script.AimWeapon1( heading, pitch )
                 Signal(SIG_AIM)
@@ -91,50 +92,6 @@
 	function script.AimWeapon3( heading, pitch )
                 Signal(SIG_AIM_THIR)
 		SetSignalMask(SIG_AIM_THIR)
-		Turn(lturret, y_axis, heading, math.rad(90))
-        	Turn(lturret, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(lturret, y_axis)
-        	WaitForTurn(lturret, x_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
-
-	function script.AimWeapon4( heading, pitch )
-		Signal(SIG_AIM_FOUR)
-		SetSignalMask(SIG_AIM_FOUR)
-		Turn(lturret, y_axis, heading, math.rad(90))
-        	Turn(lturret, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(lturret, y_axis)
-        	WaitForTurn(lturret, x_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
-
-	function script.AimWeapon5( heading, pitch )
-		Signal(SIG_AIM_FIVE)
-		SetSignalMask(SIG_AIM_FIVE)
-		Turn(rturret, y_axis, heading, math.rad(90))
-        	Turn(rturret, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(rturret, y_axis)
-        	WaitForTurn(rturret, x_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
-
-	function script.AimWeapon6( heading, pitch )
-                Signal(SIG_AIM_SIX)
-		SetSignalMask(SIG_AIM_SIX)
-		Turn(rturret, y_axis, heading, math.rad(90))
-        	Turn(rturret, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(rturret, y_axis)
-        	WaitForTurn(rturret, x_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
-
-	function script.AimWeapon7( heading, pitch )
-		Signal(SIG_AIM_SEV)
-		SetSignalMask(SIG_AIM_SEV)
 		Turn(rturret, y_axis, heading, math.rad(90))
         	Turn(rturret, x_axis, -pitch, math.rad(50))
         	WaitForTurn(rturret, y_axis)
@@ -144,31 +101,20 @@
 	end
 	
 	function script.FireWeapon1()
-	       Sleep(30)
+	end
+
+	function script.FireWeapon1()
+		currBarrel = currBarrel + 1
+		if currBarrel == 2 then currBarrel = 2 end
+		if currBarrel == 3 then currBarrel = 3 end
+		if currBarrel == 4 then currBarrel = 1 end
 	end
 
 	function script.FireWeapon2()
-	       Sleep(30)
-	end
-
-	function script.FireWeapon3()
-	       Sleep(30)
-	end
-
-	function script.FireWeapon4()
-	       Sleep(30)
-	end
-
-	function script.FireWeapon5()
-	       Sleep(30)
-	end
-
-	function script.FireWeapon6()
-	       Sleep(30)
-	end
-
-	function script.FireWeapon7()
-	       Sleep(30)
+		currBarrel2 = currBarrel2 + 1
+		if currBarrel2 == 2 then currBarrel2 = 2 end
+		if currBarrel2 == 3 then currBarrel2 = 3 end
+		if currBarrel2 == 4 then currBarrel2 = 1 end
 	end
 
 	function script.Killed(recentDamage, maxHealth)

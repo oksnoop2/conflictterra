@@ -9,15 +9,12 @@
 	local flare3 = piece "flare3"
 	local flare4 = piece "flare4"
 
+	local currBarrel = 1
 
 	--signals
 	local SIG_AIM = 1
-	local SIG_AIM_SEC = 2
-	local SIG_AIM_THIR = 4
-	local SIG_AIM_FOUR = 8
 	
-	function script.Create()
-	       
+	function script.Create()     
 	end
 	
 	local function RestoreAfterDelay(unitID)
@@ -26,21 +23,21 @@
 
 	end
 
-	function script.QueryWeapon1() return flare1 end
-
-	function script.QueryWeapon2() return flare2 end
-
-	function script.QueryWeapon3() return flare3 end
-
-	function script.QueryWeapon4() return flare4 end
+	function script.QueryWeapon1()
+		if (currBarrel == 1) then 
+			return flare1
+		end
+		if (currBarrel == 2) then 
+			return flare2
+		end
+		if (currBarrel == 3) then 
+			return flare3
+		else 
+			return flare4
+		end
+	end
 	
 	function script.AimFromWeapon1() return turret end
-
-	function script.AimFromWeapon2() return turret end
-
-	function script.AimFromWeapon3() return turret end
-
-	function script.AimFromWeapon4() return turret end
 	
 	function script.AimWeapon1( heading, pitch )
 		Signal(SIG_AIM)
@@ -52,54 +49,13 @@
 		StartThread(RestoreAfterDelay)
 		return true
 	end
-
-	function script.AimWeapon2( heading, pitch )
-		Signal(SIG_AIM_SEC)
-		SetSignalMask(SIG_AIM_SEC)
-        	Turn(turret, y_axis, heading, math.rad(90))
-        	Turn(barrel, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(turret, y_axis)
-        	WaitForTurn(barrel, x_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
-
-	function script.AimWeapon3( heading, pitch )
-		Signal(SIG_AIM_THIR)
-		SetSignalMask(SIG_AIM_THIR)
-        	Turn(turret, y_axis, heading, math.rad(90))
-        	Turn(barrel, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(turret, y_axis)
-        	WaitForTurn(barrel, x_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
-
-	function script.AimWeapon4( heading, pitch )
-		Signal(SIG_AIM_FOUR)
-		SetSignalMask(SIG_AIM_FOUR)
-        	Turn(turret, y_axis, heading, math.rad(90))
-        	Turn(barrel, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(turret, y_axis)
-        	WaitForTurn(barrel, x_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
 	
 	function script.FireWeapon1()
-		Sleep(30)
-	end
-
-	function script.FireWeapon2()
-		Sleep(30)
-	end
-
-	function script.FireWeapon3()
-		Sleep(30)
-	end
-
-	function script.FireWeapon4()
-		Sleep(30)
+		currBarrel = currBarrel + 1
+		if currBarrel == 2 then currBarrel = 2 end
+		if currBarrel == 3 then currBarrel = 3 end
+		if currBarrel == 4 then currBarrel = 4 end
+		if currBarrel == 5 then currBarrel = 1 end
 	end
 	
 	function script.Killed(recentDamage, maxHealth)

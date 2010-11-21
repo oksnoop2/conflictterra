@@ -21,8 +21,8 @@
 	
 	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[BIG_UNIT]],
-	  footprintX          = 4,
-	  footprintZ          = 4,
+	  footprintX          = 6,
+	  footprintZ          = 6,
 	  idleAutoHeal        = 0,
 	  maneuverleashlength = [[640]],
 	  mass                = 6000,
@@ -81,46 +81,7 @@
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
 	    },
-
-	    {
-	      def                = [[Artillery]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
-	    },
 	
-	    {
-	      def                = [[Cannon]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
-	    },
-
-	    {
-	      def                = [[Cannon]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
-	    },
-
-	    {
-	      def                = [[Cannon]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
-	    },
-
-	    {
-	      def                = [[Cannon]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
-	    },
-
 	    {
 	      def                = [[Cannon]],
 	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
@@ -163,7 +124,7 @@
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,
 	      range                   = 1000,
-	      reloadtime              = 4.5,
+	      reloadtime              = 2,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_Whamsound]],
 	      turret                  = true,
@@ -191,7 +152,7 @@
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      range                   = 340,
-	      reloadtime              = 2,
+	      reloadtime              = 1,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_heavy_machinegun]],
 	      turret                  = true,

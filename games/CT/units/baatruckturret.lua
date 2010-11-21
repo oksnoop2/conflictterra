@@ -69,12 +69,6 @@
 	      badTargetCategory  = [[GUNSHIP]],
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
-
-	    {
-	      def                = [[Flak]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
 	
 	  },
 	
@@ -104,7 +98,7 @@
 	      interceptedByShieldType = 1,
 	      minbarrelangle          = [[-24]],
 	      range                   = 900,
-	      reloadtime              = 0.4,
+	      reloadtime              = 0.5,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_heavy_machinegun]],
 	      turret                  = true,

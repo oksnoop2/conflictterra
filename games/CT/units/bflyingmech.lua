@@ -86,29 +86,6 @@
 	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
 	    },
-	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
-	    },
-
-	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
-	    },
-
-	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
-	    },
-
-	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
-	    },
 	
 	  },
 	
@@ -136,7 +113,7 @@
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      range                   = 250,
-	      reloadtime              = 1,
+	      reloadtime              = 0.5,
 	      rgbColor                = [[1 0.95 0.4]],
 	      seperation              = 2,
               size                    = 0.75,
