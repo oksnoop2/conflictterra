@@ -128,7 +128,7 @@ function gadget:GameFrame(frame)
 			for i = 1, #storms, 1 do
 				MeteorStorm (storms[i].stormX, storms[i].stormY, storms[i].a, storms[i].n)
 			end
-		storms = nil --all storms unleashed \o/
+		storms = {} --all storms unleashed \o/
 		end
 	end
 	
