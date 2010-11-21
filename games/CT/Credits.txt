@@ -1,7 +1,13 @@
-sounds/argh sounds done by Argh.
+- Virtually all modelling, texturing, unit def creation and animation for the NKG is done by Sanada.  badvjammertower.s3o was modeled by Oksnoop2, and various balance changes were also done by him.
 
-sounds/argh leveled by Nightcold.
+- Credit for work on refining elements of the game (gadgets, and widgets) along with creating maps, and a general liason with the Spring Community goes to Oksnoop2.
 
-sounds/
+- Thanks to Flozi and Forboding Angel for helping to get alternating fire figured out for the units.
 
-I give myself credit for typing this.
+- Thanks to Knorke for developing and getting the new metal economy going.  The mining and falling meteors are his work.
+
+- Sounds in the sound folder /argh done by Argh.  Most were leveled by Nightcold.
+
+- Many others in the days before this was documented.
+
+*Other contributions will hopefully be remembered/added as time progresses.*
