@@ -95,8 +95,6 @@ unitDef = {
 	    {
 	      def                = [[Cannon]],
 	      badTargetCategory  = [[SINK FLOAT]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 100,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
