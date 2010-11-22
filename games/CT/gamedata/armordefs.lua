@@ -17,6 +17,7 @@ local armorDefs = {
 
   Building  =  {
     "bflagshipbase2",
+    "bflagshipbaseai",
     "bsupplydepot",
     "bmex",
     "bpowerplant",
