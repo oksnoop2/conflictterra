@@ -6,6 +6,8 @@
 
 - Thanks to Knorke for developing and getting the new metal economy going.  The mining and falling meteors are his work.
 
+- Thanks to zwzsg for writing the Spread'n'Morph gadget that allowed the AI to morph units.  Huge step in making Conflict Terra AI friendly!
+
 - Sounds in the sound folder /argh done by Argh.  Most were leveled by Nightcold.
 
 - Many others in the days before this was documented.
