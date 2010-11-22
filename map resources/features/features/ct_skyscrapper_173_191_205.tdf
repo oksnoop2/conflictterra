@@ -1,0 +1,17 @@
+[ct_skyscrapper_173_191_205]
+	{
+	world=All Worlds;
+	description=Gray Skyscrapper;
+	category=arm_corpses;
+	object=ct_skyscrapper_173_191_205;
+	footprintx=3;
+	footprintz=3;
+	height=500;
+	blocking=1;
+	hitdensity=1000;
+	metal=500;
+	damage=10000; 
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
