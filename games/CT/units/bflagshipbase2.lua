@@ -16,6 +16,7 @@ unitDef = {
 
 	[[bminer]],
 	[[breztank]],
+	[[bsupplydepotmobile]],
 	[[bmechcruiser]],
 	[[btankcruiser]],
 	[[baircruiser]],
