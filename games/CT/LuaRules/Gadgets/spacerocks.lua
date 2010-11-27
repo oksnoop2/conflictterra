@@ -21,6 +21,7 @@ end
 ----- Settings -----------------------------------------------------------------
 local meteorDefName  = {} --{"bmeteor_big", "bmeteor"} --meteor unit name in flight -> add impactunitname="unitname" tag to a unitdef to make i spawn as a meteor
 local meteorInterval = 120	--2000 	-- time between the arrival of meteor storms, in seconds
+local meteorFirstTime = 300 --delay in seconds until the first meteor storm
 local meteorNumber = 5		--how many meteors per meteor storm
 local meteorSpread = 300	--how far apart meteors drop (meteors storms cover a square with a sidelength of meteorSpread)
 local fallGravity = 1
@@ -29,9 +30,39 @@ local min_distance_to_units = 100	--how far away from player units a meteor must
 local burnEffect1 = "firetrail2" -- CEG used for the meteor trail, needs to be visible out of los
 local slidespeed = 30
 local debug = true
+local mapconfig_fn = Game.mapName .. "_res.lua"		--name of map config files
 ----------------------------------------------------------------------------------
 local meteors = {} -- meteor set
 local storms = {} --triggered meteor storms
+
+-----read map config file----------------------------------------------------------
+--find and open the config file
+if (VFS.FileExists(mapconfig_fn)) then 
+	Spring.Echo ("spacerocks: found" .. mapconfig_fn .." in mod root folder or map")
+	gamesettings = VFS.Include(mapconfig_fn)
+else
+	if (VFS.FileExists("mapconfigs\\" .. mapconfig_fn)) then 
+		Spring.Echo ("spacerocks: found " .. mapconfig_fn .. " in mod mapconfigs folder")
+		gamesettings = VFS.Include("mapconfigs\\" .. mapconfig_fn)
+	else
+		Spring.Echo ("spacerocks " .. mapconfig_fn .. " not found at all")
+	end
+end
+if (gamesettings.meteorstorm_interval) then
+	meteorInterval = gamesettings.meteorstorm_interval
+	Spring.Echo ("spacerocks: map has defined meteorstorm_interval:" .. meteorInterval)
+	end
+if (gamesettings.meteorstorm_firsttime) then
+	meteorFirstTime = gamesettings.meteorstorm_firsttime
+	Spring.Echo ("spacerocks: map has defined meteorstorm_firsttime:" .. meteorFirstTime)
+	end
+if (gamesettings.meteorstorm_number) then
+	meteorNumber = gamesettings.meteorstorm_number
+	Spring.Echo ("spacerocks: map has defined meteorstorm_number:" .. meteorNumber)
+	end
+	
+------------------------------------------------------------------------------------
+
 
 function make_meteorDefName_table ()
 if (debug) then Spring.Echo ("spacerocks.lua: looking for spacerocks unitdefs") end
@@ -46,7 +77,7 @@ if (debug) then Spring.Echo ("spacerocks.lua: looking for spacerocks unitdefs") 
 		end
 	end
 if (meteorDefName == nil or #meteorDefName == 0) then
-	Spring.Echo ("spacerocks: no unitdefs with impactunitname tag found, no meteors will drop.")
+	Spring.Echo ("spacerocks.lua: no unitdefs with impactunitname tag found, no meteors will drop.")
 	gadgetHandler:RemoveGadget() 
 	end
 end
@@ -92,7 +123,7 @@ local function NewMeteorStorm (stormX,stormY, a, n)
 	newstorm.a = a
 	newstorm.n = n
 	table.insert (storms, newstorm)
-	Spring.Echo ("storm added")
+	--Spring.Echo ("storm added")
 end
 
 local function MeteorStorm (stormX,stormY, a, n)
@@ -108,13 +139,13 @@ local function MeteorStorm (stormX,stormY, a, n)
 		Spring.MoveCtrl.Enable(meteorID) -- tell spring we'll take care of moving the meteor
 		Spring.MoveCtrl.SetPosition (meteorID,mx,mh,mz)
 		Spring.MoveCtrl.SetGravity(meteorID, fallGravity*math.random(1,1.5)) -- make gravity affect the meteor
-		Spring.MoveCtrl.SetRotationVelocity (meteorID, math.random (-0.2,0.2),math.random (-0.2,0.2),math.random (-0.05,0.05))   --spinning and tumbling!
+		Spring.MoveCtrl.SetRotationVelocity (0,math.random (-0.5,0.5),0)   --spinning
 	end
 end
 
 function gadget:GameFrame(frame)
 	--spawn new meteorstorms by intervall--
-	if frame > 1 and frame % (30 * meteorInterval) == 0 then 
+	if frame > (30 * meteorFirstTime) and frame % (30 * meteorInterval) == 0 then 
 		-- pick a random location for the meteor storm
 		local meteorSpawnX = math.random(Game.mapSizeX)
 		local meteorSpawnZ = math.random(Game.mapSizeZ)
