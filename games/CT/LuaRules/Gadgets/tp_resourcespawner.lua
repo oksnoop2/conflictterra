@@ -93,11 +93,37 @@ local function PutResourcesOnMap ()
 	end
 end
 
+--handle features with metal: remove or replace
+function FeatureHandling ()
+	local featurehandling = "replace" --
+	if (gamesettings.featurehandling) then featurehandling = gamesettings.featurehandling end
+	if (string.find (Game.mapName, "CT_") ~= nil) then featurehandling = "donothing" end --dont remove rocks on CT_Eureka & CT_Fishboneridge****hack
+	if (featurehanding == "donothing") then return end
+	local all_features = Spring.GetAllFeatures ()
+	for i in pairs(all_features) do
+		local RemainingMetal, maxMetal, RemainingEnergy, maxEnergy, reclaimLeft = Spring.GetFeatureResources(all_features[i])
+		if (maxMetal) then
+			if (maxMetal > 0) then
+				local fx,fy,fz = Spring.GetFeaturePosition (all_features[i])
+				if (featurehandling=="replace") then 
+					SpawnResource (fx,fz) 
+					Spring.DestroyFeature (all_features[i])
+					Spring.Echo ("tp_resourcespawner: feature replaced")
+				end
+				if (featurehandling=="remove") then 				
+					Spring.DestroyFeature (all_features[i])
+					Spring.Echo ("tp_resourcespawner: feature removed")
+				end
+			end
+		end
+	end
+end
 
 
 function gadget:GameStart()
 	Spring.Echo ("tp_resourcespawner: Hey I am the resource spawn gadget")
 	PutResourcesOnMap ()
+	FeatureHandling ()
 	--Spring.Echo ("!!!!!!!! lolfactor=" .. gamesettings.lolfactor)
 end
 
