@@ -69,4 +69,4 @@ SpawnResource (7367 , 4988)   --
 ---coordinates go in between here---
 
 
-return {lolfactor=95, res=res, featurehandling="replace", meteorstorm_interval=30, meteorstorm_firsttime =600, meteorstorm_number=1}
+return {lolfactor=95, res=res, featurehandling="replace", meteorstorm_interval=30, meteorstorm_firsttime =600, meteorstorm_number=3}
