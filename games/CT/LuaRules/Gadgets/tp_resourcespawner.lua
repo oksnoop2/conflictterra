@@ -96,6 +96,7 @@ end
 --handle features with metal: remove or replace
 function FeatureHandling ()
 	local featurehandling = "replace" --
+	if (gamesettings==nil) then return end
 	if (gamesettings.featurehandling) then featurehandling = gamesettings.featurehandling end
 	if (string.find (Game.mapName, "CT_") ~= nil) then featurehandling = "donothing" end --dont remove rocks on CT_Eureka & CT_Fishboneridge****hack
 	if (featurehanding == "donothing") then return end
