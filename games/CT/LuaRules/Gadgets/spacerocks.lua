@@ -20,7 +20,7 @@ end
 
 ----- Settings -----------------------------------------------------------------
 local meteorDefName  = {} --{"bmeteor_big", "bmeteor"} --meteor unit name in flight -> add impactunitname="unitname" tag to a unitdef to make i spawn as a meteor
-local meteorInterval = 60	--2000 	-- time between the arrival of meteor storms, in seconds
+local meteorInterval = 120	--2000 	-- time between the arrival of meteor storms, in seconds
 local meteorNumber = 5		--how many meteors per meteor storm
 local meteorSpread = 300	--how far apart meteors drop (meteors storms cover a square with a sidelength of meteorSpread)
 local fallGravity = 1
