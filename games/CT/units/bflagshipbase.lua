@@ -36,8 +36,8 @@ unitDef = {
   corpse                        = [[DEAD]],
 
   defaultmissiontype            = [[GUARD_NOMOVE]],
-  energyMake                    = 7.2,
-  energyStorage                 = 980,
+  energyMake                    = 5,
+  energyStorage                 = 0,
   explodeAs                     = [[LARGE_BUILDING]],
   footprintX                    = 17,
   footprintZ                    = 17,

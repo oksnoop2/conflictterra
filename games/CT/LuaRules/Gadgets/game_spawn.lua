@@ -110,7 +110,7 @@ local function SpawnStartUnit(teamID)
 		-- remove the pre-existing storage
 		--   must be done after the start unit is spawned,
 		--   otherwise the starting resources are lost!
-		Spring.SetTeamResource(teamID, "es", tonumber(e))
+		Spring.SetTeamResource(teamID, "es", 1000)
 		Spring.SetTeamResource(teamID, "e", 0)
 		Spring.AddTeamResource(teamID, "e", tonumber(e))
 	end

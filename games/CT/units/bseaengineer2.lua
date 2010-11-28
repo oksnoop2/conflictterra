@@ -33,7 +33,7 @@ local bseaengineer2 = {
 
 
 	defaultmissiontype  = [[Standby]],
-        energyMake          = 0.25,
+        energyMake          = 0,
 	energyUse           = 0,
 	explodeAs           = [[SMALL_UNIT]],
 	floater             = true,

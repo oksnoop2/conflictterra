@@ -39,7 +39,7 @@ local bengineer1 = {
         reclaimable         = false,
 
 	defaultmissiontype  = [[Standby]],
-        energyMake          = 0.25,
+        energyMake          = 0,
 	explodeAs           = [[SMALL_UNIT]],
         footprintx          = 2,
 	footprintZ          = 2,

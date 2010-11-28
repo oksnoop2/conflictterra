@@ -36,8 +36,8 @@
           cruiseAlt           = 175,
 	
 	  defaultmissiontype  = [[VTOL_standby]],
-          energyMake          = 7.2,
-	  energyStorage       = 980,
+          energyMake          = 5,
+	  energyStorage       = 0,
 	  energyUse           = 0,
 	  explodeAs           = [[BIG_UNIT]],
           floater             = true,
