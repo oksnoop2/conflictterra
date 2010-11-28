@@ -12,6 +12,8 @@ taskqueues = {
         "bengineer1",
         "bengineer1",		
         "breztank",
+		{ action="wait",frames=30},
+		
 (function()
       local r = math.random(0,4)
           if r == 0 then
@@ -33,17 +35,17 @@ taskqueues = {
     
       bengineer1 = {
 
-
+            "bsupplydepotai",
 
 ---------------------------------dropzone OR ENEGRY---------------------------------
         (function()
                         local r = math.random(0,4)
                         if r == 0 then
-                                return "bsupplydepot"
+                                return "bsupplydepotai"
                         elseif r == 1 then
-                                return "bpowerplant"
+                                return "bsupplydepotai"
                         elseif r == 2 then
-                                return "bpowerplant"
+                                return "bsupplydepotai"
                         elseif r == 3 then
                                 return "bpowerplant"
                         elseif r == 4 then
@@ -57,7 +59,7 @@ taskqueues = {
         (function()
                         local r = math.random(0,4)
                         if r == 0 then
-                                return "bsupplydepot"
+                                return "bsupplydepotai"
                         elseif r == 1 then
                                 return "bpowerplant"
                         elseif r == 2 then
@@ -71,10 +73,7 @@ taskqueues = {
                         
                 end),
 
----------------------------------ENGERGY---------------------------------
-        "bpowerplant",
-        "bpowerplant",
-        "bpowerplant",
+
 
 ---------------------------------PICK A FACTORY---------------------------------
         (function()
@@ -260,7 +259,7 @@ taskqueues = {
         (function()
                         local r = math.random(0,4)
                         if r == 0 then
-                                return "bsupplydepot"
+                                return "bsupplydepotai"
                         elseif r == 1 then
                                 return "bpowerplant"
                         elseif r == 2 then
@@ -330,7 +329,7 @@ taskqueues = {
         (function()
                         local r = math.random(0,4)
                         if r == 0 then
-                                return "bsupplydepot"
+                                return "bsupplydepotai"
                         elseif r == 1 then
                                 return "bpowerplant"
                         elseif r == 2 then
@@ -437,11 +436,11 @@ taskqueues = {
                  elseif r == 4 then
                                 return "bmissilemech"
                  elseif r == 5 then
-                                return "bamphmech"
+                                return "bhovermech"
                  elseif r == 6 then
-                                return "bamphmech"
+                                return "bhovermech"
                  elseif r == 7 then
-                                return "bamphmech"
+                                return "bhovermech"
                  elseif r == 8 then
                                 return "bantitankmech"
                  elseif r == 9 then
@@ -498,13 +497,13 @@ taskqueues = {
                 
                  local r = math.random(0,9)
                          if r == 0 then
-                                return "bamphmech"
+                                return "bhovermech"
                  elseif r == 1 then
-                                return "bamphmech"
+                                return "bhovermech"
                  elseif r == 2 then
-                                return "bamphmech"      
+                                return "bhovermech"      
                  elseif r == 3 then              
-                                return "bamphmech"
+                                return "bhovermech"
                  elseif r == 4 then
                                 return "bseaengineer1"
                  elseif r == 5 then
