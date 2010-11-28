@@ -48,19 +48,20 @@ else
 		Spring.Echo ("spacerocks " .. mapconfig_fn .. " not found at all")
 	end
 end
-if (gamesettings.meteorstorm_interval) then
-	meteorInterval = gamesettings.meteorstorm_interval
-	Spring.Echo ("spacerocks: map has defined meteorstorm_interval:" .. meteorInterval)
-	end
-if (gamesettings.meteorstorm_firsttime) then
-	meteorFirstTime = gamesettings.meteorstorm_firsttime
-	Spring.Echo ("spacerocks: map has defined meteorstorm_firsttime:" .. meteorFirstTime)
-	end
-if (gamesettings.meteorstorm_number) then
-	meteorNumber = gamesettings.meteorstorm_number
-	Spring.Echo ("spacerocks: map has defined meteorstorm_number:" .. meteorNumber)
-	end
-	
+if (gamesettings) then
+	if (gamesettings.meteorstorm_interval) then
+		meteorInterval = gamesettings.meteorstorm_interval
+		Spring.Echo ("spacerocks: map has defined meteorstorm_interval:" .. meteorInterval)
+		end
+	if (gamesettings.meteorstorm_firsttime) then
+		meteorFirstTime = gamesettings.meteorstorm_firsttime
+		Spring.Echo ("spacerocks: map has defined meteorstorm_firsttime:" .. meteorFirstTime)
+		end
+	if (gamesettings.meteorstorm_number) then
+		meteorNumber = gamesettings.meteorstorm_number
+		Spring.Echo ("spacerocks: map has defined meteorstorm_number:" .. meteorNumber)
+		end
+end
 ------------------------------------------------------------------------------------
 
 
