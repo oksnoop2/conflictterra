@@ -10,7 +10,7 @@ local bengineer1 = {
         builder             = true,
 
 	buildoptions            = {
-		[[bsupplydepot]],
+		[[bsupplydepotai]],
                 [[bpowerplant]],
                 [[bnuclearpower]],
                 [[bsupportfactory]],

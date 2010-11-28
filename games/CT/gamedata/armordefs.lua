@@ -68,6 +68,7 @@ local armorDefs = {
     "bairdefmobileship",
     "bnavydefship",
     "bnavydefmobileship",
+	"bsupplydepotai",
   },
 
   Mech  =  {
