@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bnuclearpower]],
   name                          = [[Nuclear Power Plant]],
-  description                   = [[Compact nuclear reactor provides power but also explodes upon destruction.  Adds +45 energy.]],
+  description                   = [[Compact nuclear reactor provides power but also explodes upon destruction.  Adds +25 energy.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,
@@ -24,7 +24,7 @@ unitDef = {
   collisionVolumeType           = [[box]],
 
   energyMake                    = 0,
-  energyUse                     = -45,
+  energyUse                     = -25,
   explodeAs                     = [[VOLATILE_BUILDING]],
   footprintX                    = 4,
   footprintZ                    = 4,

@@ -120,7 +120,7 @@ local morphDefs = {
     {
       into = 'bmechcruiserfactory',
       metal = 0,
-      energy = 0,
+      energy = 100,
       time = 5,
     },
 --    {
@@ -135,7 +135,7 @@ local morphDefs = {
     {
       into = 'bmechcruiser',
       metal = 0,
-      energy = 0,
+      energy = 100,
       time = 5,
     },
 --    {
@@ -150,7 +150,7 @@ local morphDefs = {
     {
       into = 'btankcruiserfactory',
       metal = 0,
-      energy = 0,
+      energy = 100,
       time = 5,
     },
 --    {
@@ -165,7 +165,7 @@ local morphDefs = {
     {
       into = 'btankcruiser',
       metal = 0,
-      energy = 0,
+      energy = 100,
       time = 5,
     },
 --    {
@@ -180,7 +180,7 @@ local morphDefs = {
     {
       into = 'baircruiserfactory',
       metal = 0,
-      energy = 0,
+      energy = 100,
       time = 5,
     },
 --    {
@@ -195,7 +195,7 @@ local morphDefs = {
     {
       into = 'baircruiser',
       metal = 0,
-      energy = 0,
+      energy = 100,
       time = 5,
     },
 --    {

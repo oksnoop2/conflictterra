@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bpowerplant]],
   name                          = [[Stirling Power Generator]],
-  description                   = [[Uses heat from the sun to run a generator.  Adds +5 energy.]],
+  description                   = [[Uses heat from the sun to run a generator.  Adds +3 energy.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,
@@ -24,7 +24,7 @@ unitDef = {
   collisionVolumeType           = [[box]],
 
   damageModifier                = 0.25,
-  energyUse                     = -5,
+  energyUse                     = -3,
   energyMake                    = 0,
   explodeAs                     = [[MEDIUM_BUILDING]],
   footprintX                    = 2,
