@@ -1,9 +1,9 @@
-[ct_sagebrush01]
+[ct_tumbleweed01]
 	{
 	world=All Worlds;
-	description=Sagebrush;
+	description=Tumbleweed;
 	category=arm_corpses;
-	object=ct_sagebrush01.s3o;
+	object=ct_tumbleweed01.s3o;
 	footprintx=2;
 	footprintz=2;
 	height=20;

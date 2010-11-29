@@ -15,3 +15,22 @@
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;
 	}
+
+[ct_fatcactus1]
+	{
+	world=All Worlds;
+	description=Cactus;
+	category=arm_corpses;
+	object=ct_fatcactus.s3o;
+	footprintx=2;
+	footprintz=2;
+	height=20;
+	blocking=0;
+	hitdensity=1000;
+	energy=0;
+	damage=10; 
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

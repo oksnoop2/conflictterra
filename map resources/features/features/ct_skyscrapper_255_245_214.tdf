@@ -3,7 +3,7 @@
 	world=All Worlds;
 	description=Gray Skyscrapper;
 	category=arm_corpses;
-	object=ct_skyscrapper_255_245_214;
+	object=ct_skyscrapper_255_245_214.s3o;
 	footprintx=3;
 	footprintz=3;
 	height=500;
