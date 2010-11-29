@@ -60,5 +60,6 @@ TitanDuel<br>
 Trench_Linked<br>
 Valley Of Unrest V3<br>
 Victoria Crater<br>
+Seths_Ravine
 
 Thanks to all mappers who originally made these nice maps :)
