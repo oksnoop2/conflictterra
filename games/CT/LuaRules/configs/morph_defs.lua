@@ -9,12 +9,12 @@ local morphDefs = {
       energy = 0,
       time = 5,
     },
-    {
-      into = 'bbattleflagship',
-      metal = 9600,
-      energy = 12000,
-      time = 120,
-    },
+--    {
+--      into = 'bbattleflagship',
+--      metal = 9600,
+--      energy = 12000,
+--      time = 120,
+--    },
   },
 
   bflagshipbase2 = {
