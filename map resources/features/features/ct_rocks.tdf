@@ -9,8 +9,9 @@
 	height=80;
 	blocking=1;
 	hitdensity=1000;
-	metal=500;
-	damage=10000; 
+	metal=0;
+	damage=100; 
+	reclaimable=0;
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;
 	}
@@ -26,8 +27,9 @@
 	height=95;
 	blocking=1;
 	hitdensity=1000;
-	metal=500;
-	damage=10000; 
+	metal=0;
+	damage=100; 
+	reclaimable=0;
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;
 	}
@@ -43,8 +45,9 @@
 	height=95;
 	blocking=1;
 	hitdensity=1000;
-	metal=500;
-	damage=10000; 
+	metal=0;
+	damage=100; 
+	reclaimable=0;
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;
 	}

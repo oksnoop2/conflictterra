@@ -9,7 +9,7 @@
 	height=60;
 	blocking=1;
 	hitdensity=1000;
-	metal=100;
+	metal=0;
 	damage=100; 
         upright=true;
 	reclaimable=0;
@@ -28,7 +28,7 @@
 	height=60;
 	blocking=1;
 	hitdensity=1000;
-	metal=300;
+	metal=0;
 	damage=100; 
         upright=true;
 	reclaimable=0;
