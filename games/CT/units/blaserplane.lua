@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[blaserplane]],
 	  name                = [[Suzaku Type Fighter]],
-	  description         = [[High-Tech Fighter - New fighter model armed with  beam weaponry that cuts through cruisers.]],
+	  description         = [[Anti-Cruiser Fighter - New fighter model armed with  beam weaponry that cuts through cruisers.]],
           amphibious          = false,
 	  buildCostEnergy     = 400,
 	  buildCostMetal      = 400,
