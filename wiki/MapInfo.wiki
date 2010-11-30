@@ -7,8 +7,8 @@
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#Links Links]
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#"Official"_Conflict_Terra_Maps "Official" Conflict Terra Maps]
     * [http://code.google.com/p/conflictterra/wiki/MapInfo#CT_Eureka CT_Eureka]
-    * [http://code.google.com/p/conflictterra/wiki/MapInfo#CT_Fishbone_Ridge CT_Fishbone_Ridge]
-    * [http://code.google.com/p/conflictterra/wiki/MapInfo#CT_Tumblebrush_Basin CT_Tumblebrush_Basin]
+    * [http://code.google.com/p/conflictterra/wiki/MapInfo#CT_Fishbone_Ridge CT Fishbone Ridge]
+    * [http://code.google.com/p/conflictterra/wiki/MapInfo#CT_Tumblebrush_Basin CT Tumblebrush Basin]
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#Non-CT_Maps_with_Defined_Resource_Placement Non-CT Maps with Defined Resource Placement]
 
 = Note for Players =
@@ -33,7 +33,7 @@ Here are some links to some guides to help you make your own Conflict Terra map,
 
 These maps are made by the development team, specifically Oksnoop2, who embraces the map-making side of Spring.
 
-== CT_Eureka ==
+== CT Eureka ==
 
   * CT_Eureka is a relatively open map that is broken up by small hills.  Pine trees dot the lowlands, and an occasional boulder gives a strong alpine feeling to the map.
   * Supports up to 8 players
@@ -43,7 +43,7 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
 ||http://img101.imageshack.us/img101/5854/eurekamap.png||http://img177.imageshack.us/img177/7713/eurekabengis.png||
 ||http://img94.imageshack.us/img94/6784/eurekasniper.png||http://img139.imageshack.us/img139/9849/eurekasiege.png||
 
-== CT_Fishbone_Ridge ==
+== CT Fishbone Ridge ==
 
   * CT_Fishbone_Ridge is an interesting map.  A spine-like ridge runs through the middle, with initial starting spots in small canyons jutting from the ridge.  Cacti and boulders stand in this desert battleground.
   * Supports up to 13 players
@@ -53,7 +53,7 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
 ||http://img337.imageshack.us/img337/9398/fishbonemap.png||http://img813.imageshack.us/img813/8660/fishbonebase.png||
 ||http://img838.imageshack.us/img838/205/fishbonehojo.png||http://img109.imageshack.us/img109/6388/fishboneview.png||
 
-== CT_Tumblebrush_Basin ==
+== CT Tumblebrush Basin ==
 
   * CT_Tumblebrush_Basin is a large basin where fighting ignites most often in the middle of the map.  The flat bottom of the basin appears barren at first, but it is actually filled with cacti, flowering barrel cacti, tumbleweed, and even has a few hoodoos.  Some say a strange plant grows high in the hills there, a hybrid plant called tumblebrush!
   * Supports up to 10 players
