@@ -10,7 +10,7 @@
 	blocking=1;
 	hitdensity=1000;
 	metal=500;
-	damage=10000; 
+	damage=100; 
         upright=true;
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;
@@ -28,7 +28,7 @@
 	blocking=1;
 	hitdensity=1000;
 	metal=500;
-	damage=10000; 
+	damage=100; 
         upright=true;
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;
