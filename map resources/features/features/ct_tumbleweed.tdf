@@ -10,7 +10,7 @@
 	blocking=0;
 	hitdensity=1000;
 	metal=0;
-	damage=100; 
+	damage=10; 
 	reclaimable=0;
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;

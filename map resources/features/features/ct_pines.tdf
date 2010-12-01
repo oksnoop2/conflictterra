@@ -12,6 +12,7 @@
 	metal=500;
 	damage=100; 
         upright=true;
+	reclaimable=0;
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;
 	}
@@ -30,6 +31,7 @@
 	metal=500;
 	damage=100; 
         upright=true;
+	reclaimable=0;
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;
 	}
