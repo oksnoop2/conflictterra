@@ -87,6 +87,7 @@ local bengineer2 = {
 	TEDClass            = [[KBOT]],
         terraformSpeed      = 300,
 	reclaimSpeed        = 300,
+	repairSpeed         = 0.5,
 	turninplace         = 0,
 	turnInPlace         = 0,
 	turnRate            = 1250,

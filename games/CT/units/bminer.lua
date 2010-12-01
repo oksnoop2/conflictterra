@@ -89,6 +89,7 @@ local bminer = {
         TEDClass            = [[TANK]],
         terraformSpeed      = 300,
         reclaimSpeed        = 300,
+	repairSpeed         = 0.5,
         trackOffset         = 12,
         trackStrength       = 5,
         trackStretch        = 1,

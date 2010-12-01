@@ -79,6 +79,7 @@ local bseaengineer2 = {
 	TEDClass            = [[SHIP]],
         terraformSpeed      = 600,
 	reclaimSpeed        = 300,
+	repairSpeed         = 0.5,
 	turnRate            = 448,
 	workerTime          = 1,
 	waterline           = 5,
