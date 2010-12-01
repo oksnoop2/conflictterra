@@ -39,7 +39,7 @@
 	                footprintz = 4,
 	                maxwaterdepth = 22,
 	                maxslope = 36,
-	                crushstrength = 5000,
+	                crushstrength = 1000,
 	        },
 
 	        LightTANK = {
@@ -63,7 +63,7 @@
 	                footprintz = 5,
 	                maxwaterdepth = 22,
 	                maxslope = 18,
-	                crushstrength = 5000,
+	                crushstrength = 1000,
 	        },
 
 	        LightSHIP = {
@@ -84,7 +84,7 @@
 	                footprintx = 10,
 	                footprintz = 10,
 	                minwaterdepth = 15,
-	                crushstrength = 5000,
+	                crushstrength = 1000,
 	        },
 
 	        LightHOVER = {
@@ -108,7 +108,7 @@
 	                footprintz = 10,
 	                maxwaterdepth = 22,
 	                maxslope = 18,
-	                crushstrength = 5000,
+	                crushstrength = 1000,
 	        },
 
 	        SubBOAT = {
