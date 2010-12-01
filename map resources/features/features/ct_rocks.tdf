@@ -11,6 +11,7 @@
 	hitdensity=1000;
 	metal=0;
 	damage=100; 
+	mass=2000;
 	reclaimable=0;
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;
@@ -29,6 +30,7 @@
 	hitdensity=1000;
 	metal=0;
 	damage=100; 
+	mass=2000;
 	reclaimable=0;
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;
@@ -47,6 +49,7 @@
 	hitdensity=1000;
 	metal=0;
 	damage=100; 
+	mass=2000;
 	reclaimable=0;
 	featurereclamate=smudge01;
 	seqnamereclamate=tree1reclamate;

@@ -11,6 +11,7 @@
 	hitdensity=1000;
 	energy=0;
 	damage=10; 
+	mass=10;
         upright=true;
 	reclaimable=0;
 	featurereclamate=smudge01;
@@ -30,6 +31,7 @@
 	hitdensity=1000;
 	energy=0;
 	damage=10; 
+	mass=10;
         upright=true;
 	reclaimable=0;
 	featurereclamate=smudge01;
