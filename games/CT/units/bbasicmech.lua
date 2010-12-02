@@ -68,14 +68,6 @@
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
-
-	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
-	    },
 	
 	  },
 	
@@ -85,6 +77,8 @@
 	    Machine_Gun = {
 	      name                    = [[Rapid Fire Cannon]],
 	      areaOfEffect            = 8,
+	      burst                   = 2,
+	      burstrate               = 0.001,
 	      craterMult              = 0.25,
 	      accuracy                = 200,
 	

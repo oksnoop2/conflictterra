@@ -69,12 +69,6 @@
 	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
-
-	    {
-	      def                = [[Cannon]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
-	    },
 	
 	  },
 	
@@ -84,6 +78,8 @@
 	    Cannon = {
 	      name                    = [[Light Cannon]],
 	      areaOfEffect            = 32,
+	      burst                   = 2,
+	      burstrate               = 0.001,
 	      craterMult              = 0.25,
 	
 	      damage                  = {

@@ -81,15 +81,6 @@
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
-
-	    {
-	      def                = [[AntiTank]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
-	    },
-
 	
 	  },
 	
@@ -99,6 +90,8 @@
 	    AntiTank = {
 	      name                    = [[Armor Piercing Cannon]],
 	      areaOfEffect            = 32,
+	      burst                   = 2,
+	      burstrate               = 0.001,
 	      craterMult              = 0.25,
 	
 	      damage                  = {

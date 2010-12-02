@@ -68,12 +68,6 @@
 	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
-
-	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
-	    },
 	
 	  },
 	
@@ -83,6 +77,8 @@
 	    Machine_Gun = {
 	      name                    = [[Rapid Fire Cannon]],
 	      areaOfEffect            = 8,
+	      burst                   = 2,
+	      burstrate               = 0.001,
 	      craterMult              = 0.25,
 	
 	      damage                  = {

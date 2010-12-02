@@ -26,20 +26,21 @@
         local rightshin = piece "rshin"
         local rightfoot = piece "rfoot"
 
+	local currBarrel = 1
+
 
 	--signals
 	local SIG_AIM = 1
 	local SIG_AIM_SEC = 2
-	local SIG_AIM_THIR = 4
-	local walk_go = 8
-	local walk_stop = 16
+	local walk_go = 4
+	local walk_stop = 8
         local orc_machinegun_flash = SFX.CEG
         local orc_machinegun_muzzle = SFX.CEG + 1
 	
 	function script.Create()
-	Turn( flare1, x_axis, -90, 2 )
-	Turn( flare2, x_axis, 90, 2 )
-	Turn( flare3, x_axis, 90, 2 )
+	Turn( flare1, x_axis, -1.55, 2 )
+	Turn( flare2, x_axis, 1.55, 2 )
+	Turn( flare3, x_axis, 1.55, 2 )
 	       
 	end
 
@@ -140,15 +141,17 @@
 
 	function script.QueryWeapon1() return flare1 end
 
-        function script.QueryWeapon2() return flare2 end
-
-        function script.QueryWeapon3() return flare3 end
+	function script.QueryWeapon2()
+		if (currBarrel == 1) then 
+			return flare2
+		else 
+			return flare3
+		end
+	end
 	
 	function script.AimFromWeapon1() return body end
 
         function script.AimFromWeapon2() return body end
-
-        function script.AimFromWeapon3() return body end
 	
 	function script.AimWeapon1( heading, pitch )
                 Signal(SIG_AIM)
@@ -167,20 +170,11 @@
         	Turn(body, y_axis, heading, math.rad(150))
         	Turn(larm, x_axis, -0.75, math.rad(100))
                 Turn(lgun, x_axis, -0.85, math.rad(100))
-        	WaitForTurn(body, y_axis)
-        	WaitForTurn(larm, x_axis)
-        	WaitForTurn(lgun, x_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
-
-	function script.AimWeapon3( heading, pitch )
-		Signal(SIG_AIM_THIR)
-		SetSignalMask(SIG_AIM_THIR)
-        	Turn(body, y_axis, heading, math.rad(150))
         	Turn(rarm, x_axis, -0.75, math.rad(100))
                 Turn(rgun, x_axis, -0.85, math.rad(100))
         	WaitForTurn(body, y_axis)
+        	WaitForTurn(larm, x_axis)
+        	WaitForTurn(lgun, x_axis)
         	WaitForTurn(rarm, x_axis)
         	WaitForTurn(rgun, x_axis)
 		StartThread(RestoreAfterDelay)
@@ -194,16 +188,18 @@
 		Sleep(30)
 	end
 
-	function script.FireWeapon2()
-	EmitSfx(flare2, orc_machinegun_flash)
-	EmitSfx(flare2, orc_machinegun_muzzle)
-		Sleep(30)
-	end
-
-	function script.FireWeapon3()
-	EmitSfx(flare3, orc_machinegun_flash)
-	EmitSfx(flare3, orc_machinegun_muzzle)
-		Sleep(30)
+	function script.Shot2()
+		if currBarrel == 1 then
+			EmitSfx(flare3, orc_machinegun_flash)
+			EmitSfx(flare3, orc_machinegun_muzzle)	
+		end
+		if currBarrel == 2 then
+			EmitSfx(flare2, orc_machinegun_flash)
+			EmitSfx(flare2, orc_machinegun_muzzle)	
+		end
+		currBarrel = currBarrel + 1
+		if currBarrel == 2 then currBarrel = 2 end
+		if currBarrel == 3 then currBarrel = 1 end
 	end
 
 	function recoil()

@@ -21,12 +21,13 @@
 	local forrthigh = piece "rfthigh"
 	local forrshin = piece "rfshin"
 
+	local currBarrel = 1
+
 
 	--signals
 	local SIG_AIM = 1
-	local SIG_AIM_SEC = 2
-	local walk_go = 4
-	local walk_stop = 8
+	local walk_go = 2
+	local walk_stop = 4
         local orc_machinegun_flash = SFX.CEG
         local orc_machinegun_muzzle = SFX.CEG + 1
 	
@@ -115,9 +116,14 @@
 	function script.StopMoving()
 	        StartThread( StopWalk )
 	end
-	
 
-	function script.QueryWeapon1() return flare1 end
+	function script.QueryWeapon1()
+		if (currBarrel == 1) then 
+			return flare1
+		else 
+			return flare2
+		end
+	end
 	
 	function script.AimFromWeapon1() return body end
 	
@@ -126,38 +132,26 @@
 		SetSignalMask(SIG_AIM)
         	Turn(body, y_axis, heading, math.rad(150))
         	Turn(lgun, x_axis, -pitch, math.rad(100))
-        	WaitForTurn(body, y_axis)
-        	WaitForTurn(lgun, x_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
-	
-	function script.QueryWeapon2() return flare2 end
-	
-	function script.AimFromWeapon2() return body end
-	
-	function script.AimWeapon2( heading, pitch )
-		Signal(SIG_AIM_SEC)
-		SetSignalMask(SIG_AIM_SEC)
-        	Turn(body, y_axis, heading, math.rad(150))
         	Turn(rgun, x_axis, -pitch, math.rad(100))
         	WaitForTurn(body, y_axis)
+        	WaitForTurn(lgun, x_axis)
         	WaitForTurn(rgun, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
-
 	
-	function script.FireWeapon1()
-	EmitSfx(flare1, orc_machinegun_flash)
-	EmitSfx(flare1, orc_machinegun_muzzle)
-	       Sleep(30)
-	end
-
-	function script.FireWeapon2()
-	EmitSfx(flare2, orc_machinegun_flash)
-	EmitSfx(flare2, orc_machinegun_muzzle)
-	       Sleep(30)
+	function script.Shot1()
+		if currBarrel == 1 then
+			EmitSfx(flare2, orc_machinegun_flash)
+			EmitSfx(flare2, orc_machinegun_muzzle)	
+		end
+		if currBarrel == 2 then
+			EmitSfx(flare1, orc_machinegun_flash)
+			EmitSfx(flare1, orc_machinegun_muzzle)	
+		end
+		currBarrel = currBarrel + 1
+		if currBarrel == 2 then currBarrel = 2 end
+		if currBarrel == 3 then currBarrel = 1 end
 	end
 
 	
