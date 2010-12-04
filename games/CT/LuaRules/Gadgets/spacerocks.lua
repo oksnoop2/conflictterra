@@ -29,12 +29,13 @@ local meteorSpawnHeight = 5000
 local min_distance_to_units = 100	--how far away from player units a meteor must impact to leave a rock (as not to block units or factories)
 local burnEffect1 = "firetrail2" -- CEG used for the meteor trail, needs to be visible out of los
 local slidespeed = 30
+local slidetime = 60	--how long (in frames) a meteor can slide before exploding anyway
 local debug = true
 local mapconfig_fn = Game.mapName .. "_res.lua"		--name of map config files
 ----------------------------------------------------------------------------------
-local meteors = {} -- meteor set
+local meteors = {} -- meteor set 1==in flight, > 1 sliding on ground (time it is already sliding in frames)
 local storms = {} --triggered meteor storms
-
+local gameframe = 0	--current gameframe (orly)
 -----read map config file----------------------------------------------------------
 --find and open the config file
 if (VFS.FileExists(mapconfig_fn)) then 
@@ -90,16 +91,17 @@ local function Impact (meteorID)
 	local x, y, z = Spring.GetUnitPosition(meteorID)
 	local h = Spring.GetGroundHeight(x, z)
 	local cp = UnitDefs[Spring.GetUnitDefID(meteorID)].customParams
-	
-	--slide down slopes
-	local gnx,gny,gnz = Spring.GetGroundNormal (x,z)
-	local mx = x+(gnx*slidespeed)
-	local mz = z+(gnz*slidespeed)
-	Spring.MoveCtrl.SetPosition (meteorID, mx, h,mz)	
-	--Spring.MoveCtrl.SetRotationOffset (meteorID,0,0,0)
-	--Spring.MoveCtrl.SetRotationVelocity (meteorID, gnx, 0, gnz) --this doesnt really work
-	if (math.abs (x-mx) > 3 or math.abs (z-mz) > 3) then return end --danger: depending on terrain and too high slidespeed, unit might jump between two positions and never come to rest
-	
+	meteors[meteorID] = meteors[meteorID] + 1
+	if (meteors[meteorID] < slidetime) then
+		--slide down slopes
+		local gnx,gny,gnz = Spring.GetGroundNormal (x,z)
+		local mx = x+(gnx*slidespeed)
+		local mz = z+(gnz*slidespeed)
+		Spring.MoveCtrl.SetPosition (meteorID, mx, h,mz)	
+		--Spring.MoveCtrl.SetRotationOffset (meteorID,0,0,0)
+		--Spring.MoveCtrl.SetRotationVelocity (meteorID, gnx, 0, gnz) --this doesnt really work		
+		if (math.abs (x-mx) > 3 or math.abs (z-mz) > 3) then return end --danger: depending on terrain and too high slidespeed, unit might jump between two positions and never come to rest
+	end
 	--	if (cp) then Spring.Echo ("has custom para") else Spring.Echo ("has NO custom para") end
 	if (h > 0 and nearunits==nil and cp) then	--only leave a rock if the meteor landed on land and not too near units. otherwise just explode (so it does not block factories etc)	
 --		Spring.Echo ("yo")
@@ -135,7 +137,7 @@ local function MeteorStorm (stormX,stormY, a, n)
 		local mz =stormY+math.random(-a/2,a/2)
 		local meteortype =  math.random(table.getn(meteorDefName))	--select a random type of meteor
 		local meteorID = Spring.CreateUnit(meteorDefName[meteortype], mx, mh, mz, "n", Spring.GetGaiaTeamID()) -- will ignore Y and spawn at ground level
-		meteors[meteorID] = true -- put it in the meteor set
+		meteors[meteorID] = 1 -- put it in the meteor set
 		Spring.SetUnitAlwaysVisible(meteorID, true)
 		Spring.MoveCtrl.Enable(meteorID) -- tell spring we'll take care of moving the meteor
 		Spring.MoveCtrl.SetPosition (meteorID,mx,mh,mz)
@@ -145,6 +147,7 @@ local function MeteorStorm (stormX,stormY, a, n)
 end
 
 function gadget:GameFrame(frame)
+	local gameframe = frame
 	--spawn new meteorstorms by intervall--
 	if frame > (30 * meteorFirstTime) and frame % (30 * meteorInterval) == 0 then 
 		-- pick a random location for the meteor storm
