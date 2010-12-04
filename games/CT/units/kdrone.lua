@@ -1,5 +1,5 @@
 local kdrone = {
-	name                = [[Replicator]],
+	name                = [[Replicator Drone]],
 	description         = [[The Replicator will replicate.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
