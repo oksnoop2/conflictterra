@@ -100,13 +100,13 @@
 	      accuracy                = 500,
 	
 	      damage                  = {
-		Cruiser = 190,
-		Building = 600,
-		Mech = 190,
-		Tank = 190,
-		Aircraft = 190,
-		Ship = 190,
-		Sub = 10,
+		Cruiser = 100,
+		Building = 500,
+		Mech = 100,
+		Tank = 100,
+		Aircraft = 100,
+		Ship = 100,
+		Sub = 100,
 	      },
 	
 	      model                   = [[bshell.s3o]],
@@ -137,7 +137,7 @@
 		Tank = 15,
 		Aircraft = 15,
 		Ship = 15,
-		Sub = 1,
+		Sub = 15,
 	      },
 	
 	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
