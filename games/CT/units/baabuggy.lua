@@ -2,7 +2,7 @@
 	  unitname            = [[baabuggy]],
 	  name                = [[Yumi Type Jeep]],
 	  description         = [[Anti-Air Jeep - Mobile anti-air jeep that fires two homing missiles.]],
-	  acceleration        = 0.04,
+	  acceleration        = 0.4,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.2,
 	  buildCostEnergy     = 300,
