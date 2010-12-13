@@ -7,16 +7,16 @@ unitDef = {
   acceleration                  = 0,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 250,
+  buildCostEnergy               = 0,
   buildCostMetal                = 500,
   builder                       = true,
   buildoptions                  = {
 
     [[kdroneengineer]],
     [[kairdrone]],
-        [[kdronewarrior]],
+	[[kdronewarrior]],
   },
- 
+  
   buildPic                      = [[kdronestructure.png]],
   buildTime                     = 45,
   canMove                       = true,
@@ -30,9 +30,8 @@ unitDef = {
   collisionVolumeType           = [[box]],
   corpse                        = [[DEAD]],
   reclaimable                   = false,
-  energyMake                    = 50,
+  energyMake                    = 0,
   energyUse                     = 0,
-  extractsMetal                 = 0.001,
   explodeAs                     = [[LARGE_BUILDING]],
   footprintX                    = 6,
   footprintZ                    = 6,
@@ -46,27 +45,27 @@ unitDef = {
   minCloakDistance              = 150,
   noAutoFire                    = false,
   objectName                    = [[kdronestructure.s3o]],
- 
+  
   seismicSignature              = 4,
   selfDestructAs                = [[LARGE_BUILDING]],
   showNanoSpray                 = false,
   side                          = [[Drone]],
   sightDistance                 = 250,
 
-          sounds                        = {
-              select = {
-                "golgotha/vehicle_done_44khz",
-                },
-              ok = {
-                "golgotha/vehicle_done_44khz",
-                },
-          },
+	  sounds			= {
+	      select = {
+		"golgotha/vehicle_done_44khz",
+		},
+	      ok = {
+		"golgotha/vehicle_done_44khz",
+		},
+	  },
 
   smoothAnim                    = true,
   sortbias                      = [[0]],
   turnRate                      = 0,
   workerTime                    = 1,
-  yardMap                       = [[cccccc cccccc cccccc cccccc cccccc cccccc]],
+  yardMap                       = [[oooooo oooooo oooooo oooooo oooooo oooooo]],
   script                        = [[kdronestructure.lua]],
 
 
@@ -125,4 +124,3 @@ unitDef = {
 
 
 return lowerkeys({ kdronestructure = unitDef })
-
