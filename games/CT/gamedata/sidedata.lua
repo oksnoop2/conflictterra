@@ -17,7 +17,7 @@ local
 
     --name      = 'Drones',
 
-   -- startunit = 'kdrone',
+   -- startunit = 'kdroneengineer',
 
  -- },
 
