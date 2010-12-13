@@ -33,6 +33,7 @@ unitDef = {
   energyMake                    = 0,
   energyUse                     = 0,
   explodeAs                     = [[LARGE_BUILDING]],
+  extractsMetal                 = 0.001,  
   footprintX                    = 6,
   footprintZ                    = 6,
   idleAutoHeal                  = 0,
