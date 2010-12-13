@@ -10,8 +10,8 @@ local kdroneengineer = {
     builder             = true,
 	buildoptions		= {
         [[kdroneengineer]],
- 		[[kairdrone]],
-		[[]],
+ 		[[kdronestructure]],
+
                
 	},
 
