@@ -66,7 +66,7 @@ unitDef = {
   sortbias                      = [[0]],
   turnRate                      = 0,
   workerTime                    = 1,
-  yardMap                       = [[c]],
+ yardMap                       = [[occcco occcco occcco occcco occcco occcco]],
   script                        = [[kdronestructure.lua]],
 
 
