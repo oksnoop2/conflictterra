@@ -1,8 +1,8 @@
 unitDef = {
 
-  unitname                      = [[kdronefactory]],
-  name                          = [[Replication Tower]],
-  description                   = [[Produces combat and support mechs.]],
+  unitname                      = [[kdronestructure]],
+  name                          = [[Drone Structure]],
+  description                   = [[This mysterious structure appears to extract metal, produce energy, and create Drones of all types.]],
   amphibious                    = false,
   acceleration                  = 0,
   bmcode                        = [[0]],
@@ -12,10 +12,12 @@ unitDef = {
   builder                       = true,
   buildoptions                  = {
 
-    [[kdrone]],
+    [[kdroneengineer]],
+    [[kairdrone]],
+	[[kdronewarrior]],
   },
   
-  buildPic                      = [[kdronefactory.png]],
+  buildPic                      = [[kdronestructure.png]],
   buildTime                     = 45,
   canMove                       = true,
   canPatrol                     = true,
@@ -42,12 +44,12 @@ unitDef = {
   metalMake                     = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
-  objectName                    = [[kdronefactory.s3o]],
+  objectName                    = [[kdronestructure.s3o]],
   
   seismicSignature              = 4,
   selfDestructAs                = [[LARGE_BUILDING]],
   showNanoSpray                 = false,
-  side                          = [[Replicator]],
+  side                          = [[Drone]],
   sightDistance                 = 250,
 
 	  sounds			= {
@@ -63,8 +65,8 @@ unitDef = {
   sortbias                      = [[0]],
   turnRate                      = 0,
   workerTime                    = 1,
-  yardMap                       = [[occcco occcco occcco occcco occcco occcco]],
-  script                        = [[kdronefactory.lua]],
+  yardMap                       = [[oooooo oooooo oooooo oooooo oooooo oooooo]],
+  script                        = [[kdronestructure.lua]],
 
 
 
@@ -121,4 +123,4 @@ unitDef = {
 
 
 
-return lowerkeys({ kdronefactory = unitDef })
+return lowerkeys({ kdronestructure = unitDef })
