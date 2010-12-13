@@ -65,7 +65,7 @@ unitDef = {
   sortbias                      = [[0]],
   turnRate                      = 0,
   workerTime                    = 1,
-  yardMap                       = [[oooooo oooooo oooooo oooooo oooooo oooooo]],
+  yardMap                       = [[occccc cccccc cccccc cccccc cccccc ccccco]],
   script                        = [[kdronestructure.lua]],
 
 
@@ -73,7 +73,7 @@ unitDef = {
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Replication Tower]],
+      description      = [[Wreckage - Drone Structure]],
       blocking         = true,
       category         = [[corpses]],
       damage           = 6375,
@@ -95,7 +95,7 @@ unitDef = {
 
 
     DEAD2 = {
-      description      = [[Debris - Replication Tower]],
+      description      = [[Debris - Drone Structure]],
       blocking         = false,
       category         = [[heaps]],
       damage           = 4250,
