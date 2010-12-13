@@ -69,6 +69,7 @@ local armorDefs = {
     "bnavydefship",
     "bnavydefmobileship",
 	"bsupplydepotai",
+	"kdronestructure",	
   },
 
   Mech  =  {
@@ -86,7 +87,9 @@ local armorDefs = {
     "bhovermech",
     "badvhovermech",
     "bheavyassaultmech",
-    "kdrone",
+    "kdroneeengineer",
+	"kdronewarrior",
+
   },
 
   Tank = {
@@ -119,6 +122,7 @@ local armorDefs = {
     "badvrocketplane",
     "badvradarplane",
     "blaserplane",
+    "kairdrone",	
   },
 
   Ship = {
