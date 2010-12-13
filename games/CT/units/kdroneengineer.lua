@@ -4,14 +4,14 @@ local kdroneengineer = {
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdroneengineer.png]],
-	buildCostEnergy     = 0,
+	buildCostEnergy     = 50,
 	buildCostMetal      = 100,
     buildDistance       = 150,
     builder             = true,
 	buildoptions		= {
         [[kdroneengineer]],
- 		[[kdronemine]],
-		[[kairdrone]],
+ 		[[kairdrone]],
+		[[]],
                
 	},
 

@@ -1,6 +1,6 @@
 local kairdrone = {
-	name                = [[Drone Engineer]],
-	description         = [[The Drone Engineer is an agressive builder and can put of a fight in large swarms.]],
+	name                = [[Air Drone]],
+	description         = [[The Air Drone is a weak air box used for scouting, air defense, and harassment.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kairdrone.png]],
@@ -10,8 +10,6 @@ local kairdrone = {
     builder             = true,
 	buildoptions		= {
         [[kairdrone]],
- 		[[kdronemine]],
-		[[kairdrone]],
                
 	},
 
@@ -40,7 +38,7 @@ local kairdrone = {
 	mass                = 80,
 	maxDamage           = 100,
     maxSlope            = 99999999,
-	maxVelocity         = 4,
+	maxVelocity         = 5,
     maxWaterDepth       = 10000,
     metalMake           = 1,
 	minCloakDistance    = 75,

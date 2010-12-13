@@ -48,7 +48,7 @@ unitDef = {
   
   seismicSignature              = 4,
   selfDestructAs                = [[LARGE_BUILDING]],
-  showNanoSpray                 = false,
+  showNanoSpray                 = true,
   side                          = [[Drone]],
   sightDistance                 = 250,
 
@@ -65,7 +65,7 @@ unitDef = {
   sortbias                      = [[0]],
   turnRate                      = 0,
   workerTime                    = 1,
-  yardMap                       = [[oooooo oooooo oooooo oooooo oooooo oooooo]],
+  yardMap                       = [[c]],
   script                        = [[kdronestructure.lua]],
 
 
