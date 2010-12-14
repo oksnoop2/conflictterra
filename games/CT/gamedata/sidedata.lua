@@ -13,13 +13,13 @@ local
   },
 
 
-  [2] = {
+  ---[2] = {
 
-    name      = 'UNSTABLE TEST FACTION Drones',
+    ---name      = 'UNSTABLE TEST FACTION Drones',
 
-   startunit = 'kdroneengineer',
+   ---startunit = 'kdroneengineer',
 
-  },
+  ---},
 
 
 }
