@@ -70,6 +70,7 @@ local armorDefs = {
     "bnavydefmobileship",
 	"bsupplydepotai",
 	"kdronestructure",	
+	"kmex",	
   },
 
   Mech  =  {
