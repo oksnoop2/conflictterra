@@ -1,7 +1,7 @@
 unitDef = {
 
   unitname                      = [[bmex]],
-  name                          = [[Raw Metal Extractor]],
+  name                          = [[Drone Metal Extractor]],
   description                   = [[Extracts usable metal resources from below the ground.  Must be built over a metal deposit.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
@@ -38,7 +38,7 @@ unitDef = {
   onoffable                     = true,
   seismicSignature              = 4,
   selfDestructAs                = [[MEDIUM_BUILDING]],
-  side                          = [[NKG]],
+  side                          = [[Drone]],
   sightDistance                 = 250,
 
 	  sfxtypes            = {

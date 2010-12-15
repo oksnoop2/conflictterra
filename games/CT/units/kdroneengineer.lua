@@ -11,6 +11,8 @@ local kdroneengineer = {
 	buildoptions		= {
         [[kdroneengineer]],
  		[[kdronestructure]],
+		[[bmex]],
+		
 
                
 	},

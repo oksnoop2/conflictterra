@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[kdronestructure]],
   name                          = [[Drone Structure]],
-  description                   = [[This mysterious structure appears to extract metal, produce energy, and create Drones of all types.]],
+  description                   = [[This mysterious structure appears to produce energy and create Drones of all types.]],
   amphibious                    = false,
   acceleration                  = 0,
   bmcode                        = [[0]],
@@ -33,7 +33,6 @@ unitDef = {
   energyMake                    = 0,
   energyUse                     = 0,
   explodeAs                     = [[LARGE_BUILDING]],
-  extractsMetal                 = 0.001,  
   footprintX                    = 6,
   footprintZ                    = 6,
   idleAutoHeal                  = 0,
