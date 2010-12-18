@@ -7,16 +7,11 @@ local kairdrone = {
 	buildCostEnergy     = 100,
 	buildCostMetal      = 200,
     buildDistance       = 150,
-    builder             = true,
-	buildoptions		= {
-        [[kairdrone]],
-               
-	},
-
+    builder             = false,
 	buildTime           = 15,
     canAssist           = true,
 	CanAttack 			=1,
-	CanCapture			=1,
+	CanCapture			=0,
     canGuard            = true,
 	canMove		  	    = true,
 	canPatrol           = true,

@@ -7,10 +7,8 @@ local kdronewarrior = {
 	buildCostEnergy     = 150,
 	buildCostMetal      = 300,
     buildDistance       = 150,
-    builder             = true,
-	buildoptions		= {
-        [[kdronewarrior]],            
-	},
+    builder             = false,
+
 
 	buildTime           = 15,
     canAssist           = true,

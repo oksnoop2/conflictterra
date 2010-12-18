@@ -9,7 +9,7 @@ local kdroneengineer = {
     buildDistance       = 150,
     builder             = true,
 	buildoptions		= {
-        [[kdroneengineer]],
+        
  		[[kdronestructure]],
 		[[kmex]],
 		

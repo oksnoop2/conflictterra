@@ -15,7 +15,7 @@ local
 
   [2] = {
 
-    name      = 'UNSTABLE TEST FACTION Drones',
+    name      = 'Drone',
 
    startunit = 'kdroneengineer',
 
