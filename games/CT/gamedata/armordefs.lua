@@ -88,7 +88,7 @@ local armorDefs = {
     "bhovermech",
     "badvhovermech",
     "bheavyassaultmech",
-    "kdroneeengineer",
+    "kdroneengineer",
 	"kdronewarrior",
 
   },
