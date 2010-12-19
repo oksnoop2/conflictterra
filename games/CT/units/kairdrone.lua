@@ -66,8 +66,8 @@ local kairdrone = {
 	
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER]],
+	      badTargetCategory  = [[MINERALS]],
+	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER FIXEDWING]],
 	    },
 	
 	  },
@@ -83,13 +83,13 @@ local kairdrone = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 50,
-		Building = 50,
-		Mech = 50,
-		Tank = 50,
-		Aircraft = 50,
-		Ship = 50,
-		Sub = 50,
+		Cruiser = 20,
+		Building = 20,
+		Mech = 20,
+		Tank = 20,
+		Aircraft = 20,
+		Ship = 20,
+		Sub = 20,
 	      },
 	
 	      duration                = 0.02,
@@ -97,7 +97,7 @@ local kairdrone = {
 	      interceptedByShieldType = 1,
 	      heightMod               = 0.5,
 	      lineOfSight             = true,
-	      range                   = 150,
+	      range                   = 400,
 	      reloadtime              = 0.5,
 	      rgbColor                = [[0 1 0]],
 	      soundStart              = [[ct/pew1]],
@@ -120,9 +120,9 @@ local kairdrone = {
 	trackStretch        = 1,
 	trackType           = [[StdTank]],
 	trackWidth          = 15,
-	turninplace         = 0,
-	turnInPlace         = 0,
-	turnRate            = 560,
+	turninplace         = 1,
+	turnInPlace         = 1,
+	turnRate            = 800,
 	showNanospray	    = 1,
 	Resurrectspeed      =100,
 	workerTime          = 1,

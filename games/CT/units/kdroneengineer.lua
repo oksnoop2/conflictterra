@@ -51,7 +51,7 @@ local kdroneengineer = {
     seismicSignature    = 4,
     selfDestructAs      = [[SMALL_UNIT]],
     side                = [[Drone]],
-    sightDistance       = 400,
+    sightDistance       = 300,
 	sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",
@@ -90,13 +90,13 @@ local kdroneengineer = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 50,
-		Building = 50,
-		Mech = 50,
-		Tank = 50,
-		Aircraft = 50,
-		Ship = 50,
-		Sub = 50,
+		Cruiser = 10,
+		Building = 10,
+		Mech = 10,
+		Tank = 10,
+		Aircraft = 10,
+		Ship = 10,
+		Sub = 10,
 	      },
 	
 	      duration                = 0.02,
@@ -104,7 +104,7 @@ local kdroneengineer = {
 	      interceptedByShieldType = 1,
 	      heightMod               = 0.5,
 	      lineOfSight             = true,
-	      range                   = 150,
+	      range                   = 300,
 	      reloadtime              = 0.5,
 	      rgbColor                = [[0 1 0]],
 	      soundStart              = [[ct/pew1]],
