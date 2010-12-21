@@ -9,21 +9,21 @@ local cloneDefs = {
     tech = 0,
     time = 30,
     metal = 100,
-    energy = 50,
+    energy = 100,
   },
   kdronewarrior = {
     into = 'kdronewarrior',
     tech = 0,
     time = 30,
-    metal = 300,
-    energy = 150,
+    metal = 600,
+    energy = 600,
   },
   kairdrone = {
     into = 'kairdrone',
     tech = 0,
     time = 30,
     metal = 200,
-    energy = 100,
+    energy = 200,
   },
   
 

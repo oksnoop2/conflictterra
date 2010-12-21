@@ -31,7 +31,7 @@ local kdronewarrior = {
 	leaveTracks         = false,
 	maneuverleashlength = [[640]],
 	mass                = 80,
-	maxDamage           = 1000,
+	maxDamage           = 800,
     maxSlope            = 99999999,
 	maxVelocity         = 3,
     maxWaterDepth       = 10000,
@@ -66,8 +66,8 @@ local kdronewarrior = {
 	
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER]],
+	      badTargetCategory  = [[ SINK FLOAT]],
+	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER FIXEDWING]],
 	    },
 	
 	  },
