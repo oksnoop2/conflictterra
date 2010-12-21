@@ -7,21 +7,21 @@
 	local flare1 = piece "flare1"
 
 	local baclthigh = piece "lbthigh"
-	local baclshin = piece "lbshin"
+	local lbshin = piece "lbshin"
 	local baclfoot = piece "lbfoot"
 
 	local bacrthigh = piece "rbthigh"
-	local bacrshin = piece "rbshin"
+	local rbshin = piece "rbshin"
 	local bacrfoot = piece "rbfoot"
 
 	local flare2  = piece "flare2"
 
 	local forlthigh = piece "lfthigh"
-	local forlshin = piece "lfshin"
+	local lfshin = piece "lfshin"
 	local forlfoot = piece "lffoot"
 
 	local forrthigh = piece "rfthigh"
-	local forrshin = piece "rfshin"
+	local rfshin = piece "rfshin"
 	local forrfoot = piece "rffoot"
 
 
@@ -68,72 +68,84 @@
 		Turn(body, y_axis, 0, math.rad(150))
 		Turn(barrel, x_axis, 0, math.rad(150))
 	end
+	
+	local function standup()
+		Move( body, y_axis, 0, 30 )
+		Turn( rfshin, x_axis, 0, 2)
+		Turn( lfshin, x_axis, 0, 2)
+		Turn( rbshin, x_axis, 0, 2)
+		Turn( lbshin, x_axis, 0, 2)
+		Turn( forrfoot, x_axis, 0, 2)
+		Turn( forlfoot, x_axis, 0, 2)
+		Turn( bacrfoot, x_axis, 0, 2)
+		Turn( baclfoot, x_axis, 0, 2)
+	end
+	
+	local function sitdown()
+		Move( body, y_axis, -25, 30 )
+		Turn( rfshin, x_axis, -1, 2)
+		Turn( lfshin, x_axis, -1, 2)
+		Turn( rbshin, x_axis, 1, 2)
+		Turn( lbshin, x_axis, 1, 2)
+		Turn( forrfoot, x_axis, 1, 2)
+		Turn( forlfoot, x_axis, 1, 2)
+		Turn( bacrfoot, x_axis, -1, 2)
+		Turn( baclfoot, x_axis, -1, 2)
+	end
 
 	local function Walk()
 	        SetSignalMask( walk_go )
                 Sleep(30)
+			StartThread(standup)
 	        while ( true ) do
 	                Turn( forrthigh, x_axis, 0, 2 )
 	                Turn( baclthigh, x_axis, 0, 2 )
-
-	                Turn( forrshin, x_axis, 0.5, 2 )
-	                Turn( baclshin, x_axis, -0.5, 2 )
-
+	                Turn( rfshin, x_axis, 0.5, 2 )
+	                Turn( lbshin, x_axis, -0.5, 2 )
    	                Turn( forlthigh, x_axis, -0.5, 2 )
         	        Turn( bacrthigh, x_axis, 0.5, 2 )
-
-   	                Turn( forlshin, x_axis, 0, 2 )
-        	        Turn( bacrshin, x_axis, 0, 2 )
-
+   	                Turn( lfshin, x_axis, 0, 2 )
+        	        Turn( rbshin, x_axis, 0, 2 )
 	                WaitForTurn( bacrthigh, x_axis )
 	                WaitForTurn( forlthigh, x_axis )
-                        WaitForTurn( forrthigh, x_axis )
+                    WaitForTurn( forrthigh, x_axis )
    	                WaitForTurn( baclthigh, x_axis )
-
-	                WaitForTurn( bacrshin, x_axis )
-	                WaitForTurn( forlshin, x_axis )
-                        WaitForTurn( forrshin, x_axis )
-   	                WaitForTurn( baclshin, x_axis )
+	                WaitForTurn( rbshin, x_axis )
+	                WaitForTurn( lfshin, x_axis )
+                    WaitForTurn( rfshin, x_axis )
+   	                WaitForTurn( lbshin, x_axis )
 	                Sleep(30)
-	               
 	                Turn( bacrthigh, x_axis, 0, 2 )
 	                Turn( forlthigh, x_axis, 0, 2 )
-
-   	                Turn( forlshin, x_axis, 0.5, 2 )
-        	        Turn( bacrshin, x_axis, -0.5, 2 )
-
+   	                Turn( lfshin, x_axis, 0.5, 2 )
+        	        Turn( rbshin, x_axis, -0.5, 2 )
 	                Turn( forrthigh, x_axis, -0.5, 2 )
 	                Turn( baclthigh, x_axis, 0.5, 2 )
-
-	                Turn( forrshin, x_axis, 0, 2 )
-	                Turn( baclshin, x_axis, 0, 2 )
-
+	                Turn( rfshin, x_axis, 0, 2 )
+	                Turn( lbshin, x_axis, 0, 2 )
 	                WaitForTurn( bacrthigh, x_axis )
 	                WaitForTurn( forlthigh, x_axis )
-                        WaitForTurn( forrthigh, x_axis )
+                    WaitForTurn( forrthigh, x_axis )
    	                WaitForTurn( baclthigh, x_axis )
-
-	                WaitForTurn( bacrshin, x_axis )
-	                WaitForTurn( forlshin, x_axis )
-                        WaitForTurn( forrshin, x_axis )
-   	                WaitForTurn( baclshin, x_axis )
+	                WaitForTurn( rbshin, x_axis )
+	                WaitForTurn( lfshin, x_axis )
+                    WaitForTurn( rfshin, x_axis )
+   	                WaitForTurn( lbshin, x_axis )
 	                Sleep(30)
 	        end
 	end
 	
 	local function StopWalk()
 	        Signal( walk_go )
+		StartThread(sitdown)
 		Turn( forrthigh, x_axis, 0, 2 )
 		Turn( baclthigh, x_axis, 0, 2 )
-	       
-	        Turn( forlthigh, x_axis, 0, 2 )
-	        Turn( bacrthigh, x_axis, 0, 2 )
-
-		Turn( forrshin, x_axis, 0, 2 )
-		Turn( baclshin, x_axis, 0, 2 )
-	       
-	        Turn( forlshin, x_axis, 0, 2 )
-	        Turn( bacrshin, x_axis, 0, 2 )
+	    Turn( forlthigh, x_axis, 0, 2 )
+	    Turn( bacrthigh, x_axis, 0, 2 )
+		Turn( rfshin, x_axis, 0, 2 )
+		Turn( lbshin, x_axis, 0, 2 )
+	    Turn( lfshin, x_axis, 0, 2 )
+	    Turn( rbshin, x_axis, 0, 2 )
 	end
 	
 	function script.StartMoving()
