@@ -40,8 +40,8 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
   * 16 x 16
   * [http://conflictterra.googlecode.com/files/CT_Eurekav6.sd7 Download]
 
-||http://img101.imageshack.us/img101/5854/eurekamap.png||http://img177.imageshack.us/img177/7713/eurekabengis.png||
-||http://img94.imageshack.us/img94/6784/eurekasniper.png||http://img139.imageshack.us/img139/9849/eurekasiege.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20map.png||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20miners.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20snipers.png||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20hojo%20and%20oukami.png||
 
 == CT Fishbone Ridge ==
 
@@ -50,8 +50,8 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
   * 20 x 10
   * [http://conflictterra.googlecode.com/files/CT_Fishbone_Ridgev6.sd7 Download]
 
-||http://img337.imageshack.us/img337/9398/fishbonemap.png||http://img813.imageshack.us/img813/8660/fishbonebase.png||
-||http://img838.imageshack.us/img838/205/fishbonehojo.png||http://img109.imageshack.us/img109/6388/fishboneview.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20Map.png||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20miners.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20artillery%20mech.png||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20Sunset.png||
 
 == CT Tumblebrush Basin ==
 
