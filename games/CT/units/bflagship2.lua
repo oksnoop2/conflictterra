@@ -27,7 +27,7 @@
           canSubmerge         = false,
 	  category            = [[GUNSHIP]],
           collisionVolumeOffsets = [[0 0 0]],
-          collisionVolumeScales  = [[125 150 300]],
+          collisionVolumeScales  = [[125 100 300]],
           collisionVolumeTest    = 1,
           collisionVolumeType    = [[box]],
           collide             = false,
