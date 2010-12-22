@@ -75,8 +75,8 @@ else
 	glText(msg, ebar_startx, vsy-UIscale*1.2, UIscale*1.4, "o")	
 	glText("Income:" ..energyincome , (ebar_startx+ebar_endx)/2.1, vsy+UIscale*0.7, UIscale*1.5, "oc")
 	gl.Color(1, 0, 0, 0.8)
-	glText("Spending:  " .. math.ceil (energypull) , (ebar_startx+ebar_endx)/2, vsy-UIscale*0.6, UIscale*0.9, "o")
-	glText("Production:" .. math.ceil (energyincome) , (ebar_startx+ebar_endx)/2, vsy-UIscale*1.3, UIscale*0.9, "o")
+	glText("Spending:  " .. math.ceil (energypull) , (ebar_startx+ebar_endx)/2, vsy-UIscale*1.3, UIscale*0.9, "o")
+	glText("Production:  " .. math.ceil (energyincome) , (ebar_startx+ebar_endx)/2, vsy-UIscale*0.6, UIscale*0.9, "o")
 end
 glPopMatrix()
 end
