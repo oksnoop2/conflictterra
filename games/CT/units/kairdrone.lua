@@ -87,7 +87,7 @@ local kairdrone = {
 		Building = 20,
 		Mech = 20,
 		Tank = 20,
-		Aircraft = 40,
+		Aircraft = 100,
 		Ship = 20,
 		Sub = 20,
 	      },
