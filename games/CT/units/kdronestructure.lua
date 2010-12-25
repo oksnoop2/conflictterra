@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[kdronestructure]],
   name                          = [[Drone Structure]],
-  description                   = [[This mysterious structure appears to produce energy and create Drones of all types.]],
+  description                   = [[This structure produces energy and create Drones of all types.]],
   amphibious                    = false,
   acceleration                  = 0,
   bmcode                        = [[0]],
@@ -15,6 +15,7 @@ unitDef = {
     [[kdroneengineer]],
     [[kairdrone]],
 	[[kdronewarrior]],
+	[[kdroneroller]],
   },
   
   buildPic                      = [[kdronestructure.png]],

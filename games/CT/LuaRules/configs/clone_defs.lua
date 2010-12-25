@@ -26,7 +26,13 @@ local cloneDefs = {
     energy = 200,
   },
   
-
+  kdroneroller = {
+    into = 'kdroneroller',
+    tech = 0,
+    time = 30,
+    metal = 600,
+    energy = 600,
+  },
 
 }
 
