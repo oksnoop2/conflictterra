@@ -31,7 +31,7 @@
 	  maxVelocity         = 3,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[HeavyMech]],
+	  movementClass       = [[Mech4x4]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[bheavymissilemech.s3o]],

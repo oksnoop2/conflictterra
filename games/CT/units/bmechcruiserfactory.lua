@@ -19,7 +19,6 @@ unitDef = {
     [[bantitankmech]],
     [[bhovermech]],
     [[bsiegemech]],
-
     [[bflyingmech]],
     [[bsnipermech]],
   },

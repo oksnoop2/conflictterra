@@ -37,7 +37,7 @@
 	  maxVelocity         = 1.8,
 	  minCloakDistance    = 75,
 	  minWaterDepth       = 10,
-	  movementClass       = [[LightSHIP]],
+	  movementClass       = [[SHIP4x4]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],

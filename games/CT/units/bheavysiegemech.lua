@@ -32,7 +32,7 @@
 	  maxVelocity         = 1,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[HeavyMech]],
+	  movementClass       = [[Mech4x4]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],

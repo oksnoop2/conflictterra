@@ -32,7 +32,7 @@
 	  maxVelocity         = 1.5,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[HeavyTANK]],
+	  movementClass       = [[TANK5x5]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[bempcannon.s3o]],

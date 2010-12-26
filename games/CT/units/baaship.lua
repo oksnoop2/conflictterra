@@ -35,7 +35,7 @@
 	  maxVelocity         = 2.25,
 	  minCloakDistance    = 75,
 	  minWaterDepth       = 5,
-	  movementClass       = [[LightSHIP]],
+	  movementClass       = [[SHIP4x4]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],

@@ -35,7 +35,7 @@
 	  maxVelocity         = 2.25,
 	  minCloakDistance    = 75,
 	  minWaterDepth       = 45,
-	  movementClass       = [[SubBOAT]],
+	  movementClass       = [[SubBOAT5x5]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP]],
 	  objectName          = [[badvsubmarine.s3o]],

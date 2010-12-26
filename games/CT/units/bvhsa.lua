@@ -33,7 +33,7 @@
 	  maxVelocity         = 1,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[HeavyTANK]],
+	  movementClass       = [[TANK5x5]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[bvhsa.s3o]],

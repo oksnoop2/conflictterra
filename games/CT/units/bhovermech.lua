@@ -31,7 +31,7 @@
 	  maxSlope            = 36,
 	  maxVelocity         = 1.75,
 	  minCloakDistance    = 75,
-	  movementClass       = [[LightHOVER]],
+	  movementClass       = [[HOVER2x2]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP]],
 	  objectName          = [[bhovermech.s3o]],

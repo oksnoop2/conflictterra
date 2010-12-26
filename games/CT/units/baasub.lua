@@ -35,7 +35,7 @@
 	  maxVelocity         = 2,
 	  minCloakDistance    = 75,
 	  minWaterDepth       = 45,
-	  movementClass       = [[SubBOAT]],
+	  movementClass       = [[SubBOAT4x4]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[baasub.s3o]],

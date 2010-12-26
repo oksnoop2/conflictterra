@@ -8,6 +8,8 @@
 
 - Thanks to zwzsg for writing the Spread'n'Morph gadget that allowed the AI to morph units.  Huge step in making Conflict Terra AI friendly!
 
+- Thanks to Smoth for his work in figuring out how the engine deals with pathfinding, and the consequent code he made to check movedefs.
+
 - Sounds in the sound folder /argh done by Argh.  Most were leveled by Nightcold.
 
 - Many others in the days before this was documented.

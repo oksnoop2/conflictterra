@@ -41,7 +41,7 @@
           metalMake           = 0,
 	  metalStorage        = 0,
 	  minCloakDistance    = 75,
-	  movementClass       = [[MedTANK]],
+	  movementClass       = [[TANK4x4]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],

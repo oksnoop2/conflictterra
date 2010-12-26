@@ -32,7 +32,7 @@
 	  maxVelocity         = 1.75,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[MedHOVER]],
+	  movementClass       = [[HOVER4x4]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[badvhovermech.s3o]],

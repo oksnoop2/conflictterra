@@ -16,11 +16,9 @@ unitDef = {
     [[benergysupplyboat]],
     [[bhovermech]],
     [[bbattleship]],
-
     [[brocketbattleship]],
     [[bartilleryship]],
     [[baaship]],
-
     [[bradarship]],
   },
 

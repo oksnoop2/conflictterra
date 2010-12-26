@@ -19,8 +19,8 @@ local kdroneengineer = {
 
 	buildTime           = 15,
     canAssist           = true,
-	CanAttack 			=1,
-	CanCapture			=false,
+	CanAttack 			= 1,
+	CanCapture			= false,
     canGuard            = true,
 	canMove		  	    = true,
 	canPatrol           = true,

@@ -32,7 +32,7 @@
 	  maxVelocity         = 2,
           maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
-	  movementClass       = [[LightTANK]],
+	  movementClass       = [[TANK2x2]],
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],

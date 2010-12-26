@@ -23,7 +23,6 @@ unitDef = {
 	[[bminer]],
 	[[bradartank]],
 	[[bassaulttank]],
-
 	[[bmissiletank]],
 	[[baabuggy]],
 	[[breztank]],

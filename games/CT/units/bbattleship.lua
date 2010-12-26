@@ -35,7 +35,7 @@
 	  maxVelocity         = 2,
 	  minCloakDistance    = 75,
 	  minWaterDepth       = 10,
-	  movementClass       = [[MedSHIP]],
+	  movementClass       = [[SHIP5x5]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[bbattleship.s3o]],

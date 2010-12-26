@@ -1,151 +1,53 @@
-	-- $Id: movedefs.lua 3518 2008-12-23 08:46:54Z saktoth $
-	--------------------------------------------------------------------------------
-	--------------------------------------------------------------------------------
-	--
-	--  file:    moveDefs.lua
-	--  brief:   move data definitions
-	--
-	--------------------------------------------------------------------------------
-	--------------------------------------------------------------------------------
-	
-	local moveDefs = {
+local preProcFile  = 'gamedata/movedefs_pre.lua'
+local postProcFile = 'gamedata/movedefs_post.lua'
 
-	        Engineer = {
-	                footprintx = 3,
-	                footprintz = 3,
-	                maxwaterdepth = 30,
-	                maxslope = 36,
-	                crushstrength = 50,
-	        },
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
-	        LightMech = {
-	                footprintx = 4,
-	                footprintz = 4,
-	                maxwaterdepth = 22,
-	                maxslope = 36,
-	                crushstrength = 50,
-	        },
-	
-	        MedMech = {
-	                footprintx = 4,
-	                footprintz = 4,
-	                maxwaterdepth = 22,
-	                maxslope = 36,
-	                crushstrength = 500,
-	        },
+local moveDefine	=	VFS.Include("gamedata/movedefs_classes.lua")
+local tags			= 	VFS.Include("gamedata/movedefs_tags.lua")
+local tagList		=	tags.defaults
+local cleanMovDefs	= {}
 
-	        HeavyMech = {
-	                footprintx = 4,
-	                footprintz = 4,
-	                maxwaterdepth = 22,
-	                maxslope = 36,
-	                crushstrength = 1000,
-	        },
+for _,mdef in pairs (moveDefine) do -- be sure to get everything lowercase
+	for tagName,tagVal in pairs (tagList) do
+		cleanMovDefs[string.lower(tagName)] = tagVal
+	end		
+end
 
-	        LightTANK = {
-	                footprintx = 2,
-	                footprintz = 2,
-	                maxwaterdepth = 22,
-	                maxslope = 18,
-	                crushstrength = 50,
-	        },
+for _,mdef in pairs (moveDefine) do
+	for tagName,tagVal in pairs (tagList) do
+		tagName = string.lower(tagName)
+		if( mdef[tagName] == nil and tagVal ~=  0 ) then
+		local tempVal
+			if(tagName == "footprintz")then
+				if (mdef["footprintx"] == nil) then
+					mdef["footprintx"] = tagList["footprintx"]
+				end
+				tempVal = mdef["footprintx"]
+			elseif(tagName == "slopemod")then
+				if (mdef["maxslope"] == nil) then
+					mdef["maxslope"] = tagList["maxslope"]
+				end
+				tempVal = 4/ (mdef["maxslope"] + 0.001)
+			else
+				tempVal = tagVal			
+			end
+			Spring.Echo("Warning! moveDef: " .. mdef["name"] .. ", assigning default value for missing tag " .. tagName .. "(" .. tempVal .. ")")
+		end
+	end		
+end
 
-	        MedTANK = {
-	                footprintx = 4,
-	                footprintz = 4,
-	                maxwaterdepth = 22,
-	                maxslope = 18,
-	                crushstrength = 500,
-	        },
+if (VFS.FileExists(postProcFile)) then
+  Shared = shared  -- make it global
+  MoveDefs = moveDefine  -- make it global
+  VFS.Include(postProcFile)
+  MoveDefs = nil
+end
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
-	        HeavyTANK = {
-	                footprintx = 5,
-	                footprintz = 5,
-	                maxwaterdepth = 22,
-	                maxslope = 18,
-	                crushstrength = 1000,
-	        },
+return moveDefine
 
-	        LightSHIP = {
-	                footprintx = 6,
-	                footprintz = 6,
-	                minwaterdepth = 5,
-	                crushstrength = 50,
-	        },
-
-	        MedSHIP = {
-	                footprintx = 5,
-	                footprintz = 5,
-	                minwaterdepth = 10,
-	                crushstrength = 500,
-	        },
-
-	        HeavySHIP = {
-	                footprintx = 10,
-	                footprintz = 10,
-	                minwaterdepth = 15,
-	                crushstrength = 1000,
-	        },
-
-	        LightHOVER = {
-	                footprintx = 2,
-	                footprintz = 2,
-	                maxwaterdepth = 22,
-	                maxslope = 18,
-	                crushstrength = 50,
-	        },
-
-	        MedHOVER = {
-	                footprintx = 4,
-	                footprintz = 4,
-	                maxwaterdepth = 22,
-	                maxslope = 18,
-	                crushstrength = 500,
-	        },
-
-	        HeavyHOVER = {
-	                footprintx = 10,
-	                footprintz = 10,
-	                maxwaterdepth = 22,
-	                maxslope = 18,
-	                crushstrength = 1000,
-	        },
-
-	        SubBOAT = {
-	                footprintx = 5,
-	                footprintz = 5,
-	                minwaterdepth = 45,
-	                crushstrength = 500,
-	                subMarine = 1,
-	        },
- 		
-		kdrone = {
-	                footprintx = 3,
-	                footprintz = 3,
-	                maxwaterdepth = 99999999,
-	                maxslope = 99999999,
-	                crushstrength = 50,
-	        },	
-	}
-	
-	--------------------------------------------------------------------------------
-	--------------------------------------------------------------------------------
-	
-	-- convert from map format to the expected array format
-	
-	local array = {}
-	local i = 1
-	for k,v in pairs(moveDefs) do
-	        array[i] = v
-	        v.name = k
-	        i = i + 1
-	end
-	
-	
-	--------------------------------------------------------------------------------
-	--------------------------------------------------------------------------------
-	
-	return array
-	
-	--------------------------------------------------------------------------------
-	--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
