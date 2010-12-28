@@ -168,7 +168,18 @@ effectUnitDefs = {
 		{class='AirJet',	options={color={0,0.75,0,0},	emitVector    = {-.5,0,-.5},	width =  4, length=10, piece="fxflare6", onActive=true}},
 	},
 	
-
+	kdroneminingtower = {
+		{class='AirJet',	options={color={0,0.75,0,0},	emitVector    = {0,-1,0},	width =  4, length=10, piece="flare9", onActive=true}},
+		{class='AirJet',	options={color={0,0.75,0,0},	emitVector    = {0,1,0},	width =  4, length=10, piece="flare5", onActive=true}},
+		{class='AirJet',	options={color={0,0.75,0,0},	emitVector    = {.5,0,-.5},	width =  4, length=10, piece="flare5", onActive=true}},
+		{class='AirJet',	options={color={0,0.75,0,0},	emitVector    = {-.5,0,.5},	width =  4, length=10, piece="flare6", onActive=true}},
+		{class='AirJet',	options={color={0,0.75,0,0},	emitVector    = {.5,0,.5}, width =  4, length=10, piece="flare8", onActive=true}},
+		{class='AirJet',	options={color={0,0.75,0,0},	emitVector    = {-.5,0,-.5},	width =  4, length=10, piece="flare7", onActive=true}},
+		{class='AirJet',	options={color={0,0.75,0,0},	emitVector    = {0,-1,0},	width =  4, length=5, piece="flare1", onActive=true}},
+		{class='AirJet',	options={color={0,0.75,0,0},	emitVector    = {0,-1,0},	width =  4, length=5, piece="flare2", onActive=true}},
+		{class='AirJet',	options={color={0,0.75,0,0},	emitVector    = {{0,-1,0}, width =  4, length=5, piece="flare3", onActive=true}},
+		{class='AirJet',	options={color={0,0.75,0,0},	emitVector    = {0,-1,0},	width =  4, length=5, piece="flare4", onActive=true}},	
+	},
 
 
 	esolar2 = {
