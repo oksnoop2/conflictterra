@@ -70,7 +70,8 @@ local armorDefs = {
     "bnavydefmobileship",
 	"bsupplydepotai",
 	"kdronestructure",	
-	"kmex",	
+	"kmex",
+	"kdroneminingtower",		
   },
 
   Mech  =  {
@@ -90,6 +91,7 @@ local armorDefs = {
     "bheavyassaultmech",
     "kdroneengineer",
 	"kdronewarrior",
+	"kdroneminer",
 
   },
 
