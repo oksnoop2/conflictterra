@@ -19,7 +19,7 @@ local dropoffs = {} 	-- [unitID]
 local resources = {} 	-- [unitID] frame_last_mined
 local debug = false
 -----config-----
-local miner_name = "bminer", "kdroneminer";			--the unit used for mining
+local miner_name = {}-- {"bminer", "kdroneminer";}			--the unit used for mining
 local resource_name = {}--{"bminerals","bmeteorimpact","bmeteorimpact_big"}		--the stuff that gets mined
 local dropoff_name = {"bsupplydepot", "bsupplydepotai", "bflagshipbase2", "bflagshipbaseai","kdronestructure"}	--where the miners bring the resources to
 local dropoff_distance = 100 --how near do miners have to get to a dropoff to drop their cargo? (this value is added to unitRadius)
