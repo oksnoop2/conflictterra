@@ -1,0 +1,39 @@
+[ct_archleft]
+	{
+	world=All Worlds;
+	description=Arch;
+	category=arm_corpses;
+	object=ct_archleft.s3o;
+	footprintx=32;
+	footprintz=32;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=999999; 
+	mass=20000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_archright]
+	{
+	world=All Worlds;
+	description=Arch;
+	category=arm_corpses;
+	object=ct_archright.s3o;
+	footprintx=32;
+	footprintz=32;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=999999; 
+	mass=20000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
