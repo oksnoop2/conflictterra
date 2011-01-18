@@ -59,8 +59,8 @@
         
             {
               def                = [[Rock_Drill]],
-              mainDir            = [[0 0 1]],
-              maxAngleDif        = 180,
+              --mainDir            = [[0 0 1]],	--this limits the angle a weapon can aim
+              --maxAngleDif        = 180,		--depending from piece you aim from blabla this fails on nonmobile units like this so i removed it so the tower can aim 360°
               onlyTargetCategory = [[MINERALS]],
             },
         
