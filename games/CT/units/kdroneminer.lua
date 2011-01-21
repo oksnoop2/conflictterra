@@ -1,6 +1,6 @@
 local kdroneminer = {
-	name                = [[Drone Engineer]],
-	description         = [[The Drone Engineer is an agressive builder and can put of a fight in large swarms.]],
+	name                = [[Drone Miner]],
+	description         = [[The Drone miner is miner.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdroneminer.png]],
