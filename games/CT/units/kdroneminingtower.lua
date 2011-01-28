@@ -5,8 +5,8 @@
 	  acceleration        = 0,
 	  bmcode              = [[0]],
 	  brakeRate           = 0,
-	  buildCostEnergy     = 1000,
-	  buildCostMetal      = 800,
+	  buildCostEnergy     = 600,
+	  buildCostMetal      = 600,
 	  builder             = false,
 	  buildPic            = [[kdroneminingtower.png]],
 	  buildTime           = 60,
@@ -25,7 +25,7 @@
 	  idleAutoHeal        = 0,
 	  levelGround         = false,
 	  mass                = 1300,
-	  maxDamage           = 11500,
+	  maxDamage           = 1000,
           maxSlope            = 18,
 	  maxVelocity         = 0,
           maxWaterDepth       = 0,
@@ -36,7 +36,7 @@
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_BUILDING]],
 	  side                = [[NKG]],
-	  sightDistance       = 600,
+	  sightDistance       = 450,
 
 	  sounds			= {
 	      select = {
@@ -74,7 +74,8 @@
               avoidFriendly           = 0,
               craterMult              = 0.25,
               accuracy                = 0,
-	      collideFriendly         = false,
+			  collideFriendly         = false,
+		  	  energypershot           = 10,
         
               damage                  = {
                 Cruiser = 1,
@@ -91,8 +92,9 @@
               lineOfSight             = true,
               range                   = 130,
               reloadtime              = 0.2,
-              rgbColor                = [[1 0.95 0.4]],
+              rgbColor                = [[0 1 0]],
               separation              = 2,
+			  thickness               = 1,
               size                    = 0.4,
               soundStart              = [[tp/swoosh]],
               soundStartVolume        = 0.5,
@@ -101,7 +103,7 @@
               targetBorder            = 1,
               tolerance               = 8000,
               turret                  = true,
-              weaponType              = [[Cannon]],
+			  weaponType              = [[LaserCannon]],
               weaponVelocity          = 7500,
 
 
@@ -118,6 +120,7 @@
 	      category         = [[corpses]],
 	      damage           = 8625,
 	      energy           = 0,
+		  
 	      featureDead      = [[DEAD2]],
 	      featurereclamate = [[SMUDGE01]],
 	      footprintX       = 2,

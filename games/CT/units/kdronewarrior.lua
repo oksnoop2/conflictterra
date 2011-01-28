@@ -44,7 +44,7 @@ local kdronewarrior = {
     seismicSignature    = 4,
     selfDestructAs      = [[SMALL_UNIT]],
     side                = [[Drone]],
-    sightDistance       = 500,
+    sightDistance       = 400,
 	sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",

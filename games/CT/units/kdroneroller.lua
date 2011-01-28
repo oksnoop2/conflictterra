@@ -1,12 +1,12 @@
 	unitDef = {
 	  unitname            = [[kdroneroller]],
 	  name                = [[Roller Drone]],
-	  description         = [[It drones, it rolls, it's rock and lolz?]],
+	  description         = [[Short Ranged Beam disperses groups. Can take quite a few hits.]],
 	  acceleration        = 0.04,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.02,
-	  buildCostEnergy     = 600,
-	  buildCostMetal      = 600,
+	  buildCostEnergy     = 500,
+	  buildCostMetal      = 500,
 	  builder             = false,
 	  buildPic            = [[kdroneroller.png]],
 	  buildTime           = 10,
@@ -27,7 +27,7 @@
 	  leaveTracks         = true,
 	  maneuverleashlength = [[640]],
 	  mass                = 90,
-	  maxDamage           = 2000,
+	  maxDamage           = 3000,
           maxSlope            = 18,
 	  maxVelocity         = 1.5,
           maxWaterDepth       = 22,
@@ -60,7 +60,7 @@
 	  },
 
 	  side                = [[Drone]],
-	  sightDistance       = 340,
+	  sightDistance       = 300,
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
 	  TEDClass            = [[TANK]],
@@ -85,11 +85,13 @@
 	  },
 	
 	
-	  weaponDefs          = {
+	weaponDefs             = {
 	
-	    Cannon = {
-	      name                    = [[Light Cannon]],
-	      areaOfEffect            = 500,
+	    Laser = {
+	      name                    = [[Burst Laser]],
+	      areaOfEffect            = 8,
+	      coreThickness           = 0.5,
+	      collideFriendly         = false,
 	      craterMult              = 0.25,
 	
 	      damage                  = {
@@ -102,18 +104,22 @@
 		Sub = 100,
 	      },
 	
-	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      duration                = 1,
+	      energypershot           = 0,
 	      interceptedByShieldType = 1,
+	      lineOfSight             = true,
+	      range                   = 50,
+	      reloadtime              = 20,
           impulseBoost            = 10,
-          impulseFactor           = 10,	      
-		  range                   = 50,
-	      reloadtime              = 1,
-	      soundHit                = [[argh/Argh_MedExplosion]],
-	      soundStart              = [[argh/Argh_heavy_machinegun]],
+          impulseFactor           = 10,		  
+	      rgbColor                = [[0 1 0]],
+	      soundStart              = [[ct/pew1]],
+	      targetMoveError         = 0.15,
+	      thickness               = 5,
+	      tolerance               = 10000,
 	      turret                  = true,
-	      weaponType              = [[Cannon]],
-	      weaponVelocity          = 600,
+	      weaponType              = [[LaserCannon]],
+	      weaponVelocity          = 1500,
 	    },
 	
 	  },
@@ -122,7 +128,7 @@
 	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Assault Tank]],
+	      description      = [[Wreckage - Drone Roller]],
 	      blocking         = false,
 	      category         = [[corpses]],
 	      damage           = 1125,
@@ -143,7 +149,7 @@
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Assault Tank]],
+	      description      = [[Debris - Drone Roller]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 750,

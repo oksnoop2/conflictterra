@@ -7,8 +7,8 @@ unitDef = {
   acceleration                  = 0,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 250,
-  buildCostMetal                = 500,
+  buildCostEnergy               = 400,
+  buildCostMetal                = 400,
   builder                       = true,
   buildoptions                  = {
 
@@ -16,6 +16,7 @@ unitDef = {
     [[kairdrone]],
 	[[kdronewarrior]],
 	[[kdroneroller]],
+	[[kdroneminer]],
   },
   
   buildPic                      = [[kdronestructure.png]],

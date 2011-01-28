@@ -33,7 +33,7 @@ local kairdrone = {
 	leaveTracks         = false,
 	maneuverleashlength = [[640]],
 	mass                = 80,
-	maxDamage           = 100,
+	maxDamage           = 300,
     maxSlope            = 99999999,
 	maxVelocity         = 5,
     maxWaterDepth       = 10000,
@@ -47,7 +47,7 @@ local kairdrone = {
     seismicSignature    = 4,
     selfDestructAs      = [[SMALL_UNIT]],
     side                = [[Drone]],
-    sightDistance       = 400,
+    sightDistance       = 500,
 	sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",

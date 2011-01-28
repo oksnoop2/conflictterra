@@ -1,11 +1,11 @@
 local kdroneminer = {
-	name                = [[Drone Miner]],
-	description         = [[The Drone miner is miner.]],
+	name                = [[Drone Petard]],
+	description         = [[The Drone Petard is a walking bomb that deals higher damage to buildings.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdroneminer.png]],
-	buildCostEnergy     = 100,
-	buildCostMetal      = 100,
+	buildCostEnergy     = 500,
+	buildCostMetal      = 500,
     buildDistance       = 150,
     builder             = false,
 
@@ -21,11 +21,8 @@ local kdroneminer = {
 	canstop             = [[1]],
 	category            = [[LAND]],
     corpse              = [[DEAD]],
-customParams = {
-		is_miner=1,	--used by minig: if the unit can mine is_mineable=1 ressources
-		max_cargo=25,	--used by mining: how much metal the unit can carry at once before having to return to a drop off
-	},
-
+	Kamikaze			=1,
+	KamikazeDistance	=80,
     reclaimable         = false,
     defaultmissiontype  = [[Standby]],
     energyMake          = 0,
@@ -36,7 +33,7 @@ customParams = {
 	leaveTracks         = false,
 	maneuverleashlength = [[640]],
 	mass                = 80,
-	maxDamage           = 100,
+	maxDamage           = 250,
     maxSlope            = 99999999,
 	maxVelocity         = 4,
     maxWaterDepth       = 10000,
@@ -67,10 +64,10 @@ customParams = {
 	
 	  },
 
-	weapons             = {
+		weapons             = {
 	
 	    {
-	      def                = [[Laser]],
+	      def                = [[Mine]],
 	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
 	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER]],
 	    },
@@ -78,37 +75,28 @@ customParams = {
 	  },
 	
 	
-         weapons             = {
-        
-            {
-              def                = [[Rock_Drill]],
-              mainDir            = [[0 0 1]],
-              maxAngleDif        = 180,
-              onlyTargetCategory = [[MINERALS]],
-            },
-        
-          },
-        
-        
-          weaponDefs          = {
-        
-            Rock_Drill = {
-              name                    = [[Rock Drill]],
-              areaOfEffect            = 8,
-              avoidFriendly           = 0,
-              craterMult              = 0.25,
-              accuracy                = 0,
+	weaponDefs             = {
+	
+	    Mine = {
+	      name                    = [[Mine]],
+	      areaOfEffect            = 8,
 	      collideFriendly         = false,
-        
-              damage                  = {
-                Cruiser = 1,
-                Building = 1,
-                Mech = 1,
-                Tank = 1,
-                Aircraft = 1,
-                Ship = 1,
-                Sub = 1,
-              },
+	      craterMult              = 0.25,
+	
+	      damage                  = {
+		Cruiser = 10,
+		Building = 1000,
+		Mech = 10,
+		Tank = 10,
+		Aircraft = 10,
+		Ship = 10,
+		Sub = 10,
+	      },
+	
+	      
+	    },
+	
+	  },
         
               explosionGenerator      = [[custom:resmining]],
               interceptedByShieldType = 1,
@@ -153,7 +141,7 @@ customParams = {
 	featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Drone Engineer]],
+	      description      = [[Wreckage - Drone Petard]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 262,
@@ -174,7 +162,7 @@ customParams = {
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Drone Engineer]],
+	      description      = [[Debris - Drone Petard]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 175,
