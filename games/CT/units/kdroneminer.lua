@@ -21,8 +21,8 @@ local kdroneminer = {
 	canstop             = [[1]],
 	category            = [[LAND]],
     corpse              = [[DEAD]],
-	Kamikaze			=1,
-	KamikazeDistance	=80,
+	kamikaze			= 1,
+	kamikazeDistance	= 80,
     reclaimable         = false,
     defaultmissiontype  = [[Standby]],
     energyMake          = 0,
@@ -58,7 +58,7 @@ local kdroneminer = {
 
 
 	
-	  },
+
 
 		weapons             = {
 	
