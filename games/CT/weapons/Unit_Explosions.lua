@@ -257,6 +257,33 @@ ROCK_IMPACT_BIG = {
 		Sub = 100,
 	      },
   },
+  
+    DRONE_PETARD = {
+
+   name="Drone Petard",
+   craterMult=2000,
+   rendertype=4,
+   ballistic=1,
+   turret=1,
+   impulseFactor      = 0,
+   range=480,
+   reloadtime=3.6,
+   weaponvelocity=250,
+   areaofeffect=75,
+   soundstart="golgotha/old_generic.wav",
+   soundhit="golgotha/old_generic.wav",
+
+   explosiongenerator="custom:SMALL_UNIT_Expl",
+	      damage                  = {
+		Cruiser = 10,
+		Building = 800,
+		Mech = 10,
+		Tank = 10,
+		Aircraft = 10,
+		Ship = 10,
+		Sub = 10,
+	      },
+  },
 }
 
 return lowerkeys(unitDeaths)
