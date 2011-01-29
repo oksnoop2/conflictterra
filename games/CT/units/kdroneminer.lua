@@ -56,11 +56,7 @@ local kdroneminer = {
 		},
 	  },
 
-	sfxtypes            = {
-	
-	    explosiongenerators = {
-		"custom:buildersparks",
-	    },
+
 	
 	  },
 
@@ -74,7 +70,7 @@ local kdroneminer = {
 	
 	  },
 	
-	
+		
 	weaponDefs             = {
 	
 	    Mine = {
@@ -82,6 +78,7 @@ local kdroneminer = {
 	      areaOfEffect            = 8,
 	      collideFriendly         = false,
 	      craterMult              = 0.25,
+		  range                   = 100,
 	
 	      damage                  = {
 		Cruiser = 10,
@@ -97,29 +94,7 @@ local kdroneminer = {
 	    },
 	
 	  },
-        
-              explosionGenerator      = [[custom:resmining]],
-              interceptedByShieldType = 1,
-              lineOfSight             = true,
-              range                   = 90,
-              reloadtime              = 0.2,
-              rgbColor                = [[1 0.95 0.4]],
-              separation              = 2,
-              size                    = 0.4,
-              soundStart              = [[tp/swoosh]],
-              soundStartVolume        = 0.5,
-              soundTrigger            = true,
-              stages                  = 50,
-              targetBorder            = 1,
-              tolerance               = 8000,
-              turret                  = true,
-              weaponType              = [[Cannon]],
-              weaponVelocity          = 7500,
-
-
-			},
-        
-          },
+	  
 	  
 	smoothAnim          = true,
 	steeringmode        = [[1]],

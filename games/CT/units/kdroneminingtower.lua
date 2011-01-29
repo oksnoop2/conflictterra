@@ -75,7 +75,7 @@
               craterMult              = 0.25,
               accuracy                = 0,
 			  collideFriendly         = false,
-		  	  energypershot           = 10,
+		  	  energypershot           = 1,
         
               damage                  = {
                 Cruiser = 1,
