@@ -269,7 +269,7 @@ ROCK_IMPACT_BIG = {
    range=480,
    reloadtime=3.6,
    weaponvelocity=250,
-   areaofeffect=75,
+   areaofeffect=400,  -- "Range" of explosion"
    soundstart="golgotha/old_generic.wav",
    soundhit="golgotha/old_generic.wav",
 

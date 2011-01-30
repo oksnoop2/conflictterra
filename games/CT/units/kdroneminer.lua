@@ -55,46 +55,6 @@ local kdroneminer = {
 		"golgotha/vehicle_done_44khz",
 		},
 	  },
-
-
-	
-
-
-		weapons             = {
-	
-	    {
-	      def                = [[Mine]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER]],
-	    },
-	
-	  },
-	
-		
-	weaponDefs             = {
-	
-	    Mine = {
-	      name                    = [[Mine]],
-	      areaOfEffect            = 8,
-	      collideFriendly         = false,
-	      craterMult              = 0.25,
-		  range                   = 200,
-	
-	      damage                  = {
-		Cruiser = 10,
-		Building = 1000,
-		Mech = 10,
-		Tank = 10,
-		Aircraft = 10,
-		Ship = 10,
-		Sub = 10,
-	      },
-	
-	      
-	    },
-	
-	  },
-	  
 	  
 	smoothAnim          = true,
 	steeringmode        = [[1]],
@@ -109,7 +69,7 @@ local kdroneminer = {
 	turnInPlace         = 0,
 	turnRate            = 560,
 	showNanospray	    = 1,
-	Resurrectspeed      =100,
+	Resurrectspeed      = 100,
 	workerTime          = 1,
 	script		    = "kdroneengineer.lua",
 
