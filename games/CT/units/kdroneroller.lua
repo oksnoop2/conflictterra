@@ -77,7 +77,7 @@
 	  weapons             = {
 	
 	    {
-	      def                = [[Cannon]],
+	      def                = [[Laser]],
 	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
@@ -110,15 +110,15 @@
 	      lineOfSight             = true,
 	      range                   = 50,
 	      reloadtime              = 20,
-          impulseBoost            = 10,
-          impulseFactor           = 10,		  
+              impulseBoost            = 10,
+              impulseFactor           = 100,		  
 	      rgbColor                = [[0 1 0]],
 	      soundStart              = [[ct/pew1]],
 	      targetMoveError         = 0.15,
 	      thickness               = 5,
 	      tolerance               = 10000,
 	      turret                  = true,
-	      weaponType              = [[LaserCannon]],
+	      weaponType              = [[BeamLaser]],
 	      weaponVelocity          = 1500,
 	    },
 	
