@@ -5,8 +5,8 @@
 	  acceleration        = 0,
 	  bmcode              = [[0]],
 	  brakeRate           = 0,
-	  buildCostEnergy     = 600,
-	  buildCostMetal      = 600,
+	  buildCostEnergy     = 400,
+	  buildCostMetal      = 400,
 	  builder             = false,
 	  buildPic            = [[kdroneminingtower.png]],
 	  buildTime           = 60,
@@ -73,7 +73,7 @@
               craterMult              = 0.25,
               accuracy                = 0,
 	      collideFriendly         = false,
-	      energypershot           = 1,
+	      energypershot           = 0,
         
               damage                  = {
                 Cruiser = 1,
