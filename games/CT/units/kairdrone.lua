@@ -86,13 +86,13 @@ local kairdrone = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 20,
-		Building = 20,
-		Mech = 20,
-		Tank = 20,
+		Cruiser = 10,
+		Building = 10,
+		Mech = 10,
+		Tank = 10,
 		Aircraft = 100,
-		Ship = 20,
-		Sub = 20,
+		Ship = 10,
+		Sub = 10,
 	      },
 	
 	      duration                = 0.02,
