@@ -13,7 +13,6 @@
 	  canAttack           = true,
 	  canstop             = [[1]],
 	  category            = [[SINK]],
-	  collisionVolumeTest = 1,
 	  corpse              = [[DEAD]],
 	  reclaimable         = false,
 	
@@ -58,8 +57,6 @@
         
             {
               def                = [[Rock_Drill]],
-              --mainDir            = [[0 0 1]],	--this limits the angle a weapon can aim
-              --maxAngleDif        = 180,		--depending from piece you aim from blabla this fails on nonmobile units like this so i removed it so the tower can aim 360°
               onlyTargetCategory = [[MINERALS]],
             },
         
@@ -72,10 +69,11 @@
               name                    = [[Rock Drill]],
               areaOfEffect            = 8,
               avoidFriendly           = 0,
+	      beamTime                = 0.2,
               craterMult              = 0.25,
               accuracy                = 0,
-			  collideFriendly         = false,
-		  	  energypershot           = 1,
+	      collideFriendly         = false,
+	      energypershot           = 1,
         
               damage                  = {
                 Cruiser = 1,
@@ -94,7 +92,8 @@
               reloadtime              = 0.2,
               rgbColor                = [[0 1 0]],
               separation              = 2,
-			  thickness               = 1,
+	      thickness               = 1,
+	      minIntensity            = 1,
               size                    = 0.4,
               soundStart              = [[tp/swoosh]],
               soundStartVolume        = 0.5,
@@ -103,8 +102,8 @@
               targetBorder            = 1,
               tolerance               = 8000,
               turret                  = true,
-			  weaponType              = [[LaserCannon]],
-              weaponVelocity          = 7500,
+              weaponType              = [[BeamLaser]],
+              weaponVelocity          = 2500,
 
 
 			},
