@@ -13,7 +13,7 @@ function widget:GetInfo()
     date      = "23 Nov 2010",
     license   = "lol",
     layer     = 0,
-    enabled   = true  --  loaded by default	
+    enabled   = false  --  loaded by default	
   }
 end
 
