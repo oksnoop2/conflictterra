@@ -153,7 +153,7 @@ function gadget:GameFrame(frame)
 		-- pick a random location for the meteor storm
 		local meteorSpawnX = math.random(Game.mapSizeX)
 		local meteorSpawnZ = math.random(Game.mapSizeZ)
-		Spring.Echo ("Incoming Meteor Storm! Coordinates: [" .. meteorSpawnX .. " : " .. meteorSpawnZ .."]")
+		-- Spring.Echo ("Incoming Meteor Storm! Coordinates: [" .. meteorSpawnX .. " : " .. meteorSpawnZ .."]")
 		MeteorStorm (meteorSpawnX, meteorSpawnZ, meteorSpread, meteorNumber)
 	end
 	--spawn "triggered" storms--

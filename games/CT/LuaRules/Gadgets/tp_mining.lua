@@ -40,7 +40,7 @@ function gadget:UnitDestroyed(unitID, unitDefID, teamID, attackerID)
 	--remove destroyed dropoffs:
 	if is_dropoff (unitID) then remove_dropoff (unitID) end
 	--wenn etwas geerntet wurde:
-	if (is_resource_type (unitDefID) and is_miner (attackerID)) then Spring.Echo ("resource mined out") end
+	--if (is_resource_type (unitDefID) and is_miner (attackerID)) then Spring.Echo ("resource mined out") end
 	--if (is_miner(attackerID)) then Spring.Echo ("miner mined") end
 	if (is_resource_type (unitDefID) and is_miner(attackerID)) then
 		--fill the cargo bay of the miner, alot of options here....:
