@@ -109,7 +109,7 @@
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      range                   = 50,
-	      reloadtime              = 20,
+	      reloadtime              = 10,
               impulseBoost            = 10,
               impulseFactor           = 100,		  
 	      rgbColor                = [[0 1 0]],

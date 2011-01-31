@@ -17,7 +17,7 @@
 	  reclaimable         = false,
 	
 	  damageModifier      = 0.25,
-	  defaultmissiontype  = [[GUARD_NOMOVE]],
+	  --defaultmissiontype  = [[GUARD_NOMOVE]],
 	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 2,
 	  footprintZ          = 2,
