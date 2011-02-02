@@ -9,7 +9,7 @@
 	  buildCostMetal      = 400,
 	  builder             = false,
 	  buildPic            = [[kdroneminingtower.png]],
-	  buildTime           = 60,
+	  buildTime           = 30,
 	  canAttack           = true,
 	  canstop             = [[1]],
 	  category            = [[SINK]],

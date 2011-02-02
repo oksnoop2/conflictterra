@@ -58,7 +58,7 @@ end
 function gadget:UnitDamaged (unitID, unitDefID, unitTeam, damage, paralyzer, weaponID, attackerID, attackerDefID, attackerTeam) 
 if (is_resource_type (unitDefID) and is_miner(attackerID)) then
 		--fill the cargo bay of the miner, alot of options here....:
-		if (miners[attackerID].cargo < maxcargo) then miners[attackerID].cargo = miners[attackerID].cargo + math.ceil(damage) end
+		if (miners[attackerID].cargo < maxcargo) then miners[attackerID].cargo = miners[attackerID].cargo + (damage) end
 		if (unitID ~=nil) then 
 			miners[attackerID].last_mined_id = unitID 
 			resources[unitID] = {} --*** -> add_resource und so...
