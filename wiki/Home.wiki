@@ -33,6 +33,8 @@
   * [http://conflictterra.googlecode.com/files/CT_Fishbone_Ridgev6.sd7 Fishbone Ridge Version 6]
   * [http://conflictterra.googlecode.com/files/CT_Tumblebrush_Basinv1.sd7 Tumblebrush Basin Version 1]
   * [http://conflictterra.googlecode.com/files/CT_Roundhouse_Canyonv2.sd7 Roundhouse Canyon Version 2]
+  * [http://conflictterra.googlecode.com/files/CT_Archwayv2.sd7 Archway Version 2]
+  * [http://conflictterra.googlecode.com/files/CT_Eitbyeit_Gorgev1.sd7 Eitbyeit Gorge Version 1]
 
 
 
