@@ -7,8 +7,8 @@ unitDef = {
   acceleration                  = 0,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 1000,
-  buildCostMetal                = 800,
+  buildCostEnergy               = 1200,
+  buildCostMetal                = 1200,
   builder                       = true,
 
   buildoptions                  = {
@@ -18,14 +18,15 @@ unitDef = {
 	[[bheavysiegemech]],
 	[[bheavymissilemech]],
 	[[bheavyflyingmech]],
-    [[badvhovermech]],
+        [[badvhovermech]],
 	[[bminer]],
 	[[bbasicmech]],
 	[[bmissilemech]],
 	[[bantitankmech]],
 	[[bhovermech]],
 	[[bsiegemech]],
-	[[bflyingmech]],
+	
+        [[bflyingmech]],
 	[[bsnipermech]],
   },
 
