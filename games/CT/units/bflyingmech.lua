@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bflyingmech]],
 	  name                = [[Fuma Aerial Combat Mech]],
-	  description         = [[Aerial Raider Mech - Airborne "mech" designed to harass enemy lines and outposts.  Fires multiple rapid cannons.]],
+	  description         = [[Aerial Raider Mech - Airborne "mech" designed to harass enemy lines and outposts.  Fires multiple rapid cannons and two AA missiles.]],
 	  acceleration        = 0.154,
 	  amphibious          = false,
 	  bankscale           = [[1]],
@@ -77,14 +77,24 @@
 	
 	    {
 	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      badTargetCategory  = [[SINK FLOAT]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
 	    {
 	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      badTargetCategory  = [[SINK FLOAT]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
+	    },
+
+	    {
+	      def                = [[AA]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	    },
+
+	    {
+	      def                = [[AA]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 	
 	  },
@@ -106,7 +116,7 @@
 		Tank = 15,
 		Aircraft = 15,
 		Ship = 15,
-		Sub = 1,
+		Sub = 15,
 	      },
 	
 	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
@@ -125,6 +135,47 @@
 	      tolerance               = 8000,
 	      turret                  = true,
 	      weaponType              = [[Cannon]],
+	      weaponVelocity          = 750,
+	    },
+
+	    AA         = {
+	      name                    = [[Homing AA Missile]],
+	      areaOfEffect            = 48,
+	      avoidFriendly           = true,
+	      canattackground         = false,
+	      cylinderTargetting      = 1,
+	      collideFriendly         = false,
+	      craterMult              = 0.25,
+	
+	      damage                  = {
+		Cruiser = 50,
+		Building = 10,
+		Mech = 10,
+		Tank = 10,
+		Aircraft = 50,
+		Ship = 10,
+		Sub = 10,
+	      },
+	
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      flightTime              = 3,
+	      interceptedByShieldType = 1,
+	      lineOfSight             = true,
+	      model                   = [[baamissile.s3o]],
+	      range                   = 530,
+	      reloadtime              = 6,
+	      smokedelay              = [[0.1]],
+	      smokeTrail              = true,
+	      soundHit                = [[argh/Argh_LargeExplosion]],
+	      soundStart              = [[evolutionRTS/aircraft_missile_01]],
+	      startVelocity           = 200,
+	      tolerance               = 22000,
+	      tracks                  = true,
+	      turnRate                = 30000,
+	      turret                  = true,
+	      weaponAcceleration      = 550,
+	      weaponTimer             = 5,
+	      weaponType              = [[MissileLauncher]],
 	      weaponVelocity          = 750,
 	    },
 	

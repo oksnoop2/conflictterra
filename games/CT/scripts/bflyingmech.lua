@@ -17,12 +17,20 @@
         local bottomjets = piece "bottomjets"
         local topjets = piece "topjets"
 
+	local leftmissile = piece "leftmissile"
+	local leftpod = piece "leftpod"
+
+	local rightmissile = piece "rightmissile"
+	local rightpod = piece "rightpod"
+
 	local currBarrel = 1
 	local currBarrel2 = 1
 
 	--signals
 	local SIG_AIM = 1
 	local SIG_AIM_SEC = 2
+	local SIG_AIM_THIR = 4
+	local SIG_AIM_FOUR = 8
         local orc_machinegun_flash = SFX.CEG
         local orc_machinegun_muzzle = SFX.CEG + 1
 	
@@ -56,10 +64,18 @@
 			return flare6
 		end
 	end
+
+	function script.QueryWeapon3() return leftpod end
+
+	function script.QueryWeapon4() return rightpod end
 	
 	function script.AimFromWeapon1() return body end
 
 	function script.AimFromWeapon2() return body end
+
+	function script.AimFromWeapon3() return leftmissile end
+
+	function script.AimFromWeapon4() return rightmissile end
 	
 	function script.AimWeapon1( heading, pitch )
                 Signal(SIG_AIM)
@@ -75,6 +91,28 @@
 		SetSignalMask(SIG_AIM_SEC)
         	Turn(rightgun, x_axis, -pitch, math.rad(150))
         	WaitForTurn(rightgun, x_axis)
+		StartThread(RestoreAfterDelay)
+		return true
+	end
+
+	function script.AimWeapon3( heading, pitch )
+                Signal(SIG_AIM_THIR)
+		SetSignalMask(SIG_AIM_THIR)
+        	Turn(leftmissile, x_axis, -pitch, math.rad(150))
+        	Turn(leftpod, y_axis, heading, math.rad(150))
+        	WaitForTurn(leftmissile, x_axis)
+        	WaitForTurn(leftpod, y_axis)
+		StartThread(RestoreAfterDelay)
+		return true
+	end
+
+	function script.AimWeapon4( heading, pitch )
+		Signal(SIG_AIM_FOUR)
+		SetSignalMask(SIG_AIM_FOUR)
+        	Turn(rightmissile, x_axis, -pitch, math.rad(150))
+        	Turn(rightpod, y_axis, heading, math.rad(150))
+        	WaitForTurn(rightmissile, x_axis)
+        	WaitForTurn(rightpod, y_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
@@ -115,6 +153,12 @@
 		if currBarrel2 == 2 then currBarrel2 = 2 end
 		if currBarrel2 == 3 then currBarrel2 = 3 end
 		if currBarrel2 == 4 then currBarrel2 = 1 end
+	end
+
+	function script.FireWeapon3()      	       
+	end
+
+	function script.FireWeapon4()      	       
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
