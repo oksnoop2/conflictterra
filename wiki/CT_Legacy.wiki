@@ -9,7 +9,7 @@ Conflict Terra Legacy is simply a side-project with two main goals in mind:
 
 = So what's the point? =
 
-Well there isn't much of one.  The idea came about when contemplating the consequences of our current moves into a different economy.  The shift would undoubtedly complicate our game structurally quite a bit, and that meant that our game could no longer be used as an example for future modders.  This was saddening, because the Development Team is all too familiar with the cold wasteland that is making a game for Spring.
+Well there isn't much of one.  The idea came about when contemplating the consequences of our movement into a different economy.  The shift would undoubtedly complicate our game structurally quite a bit, and that meant that our game could no longer be used as an example for future modders.  This was saddening, because the Development Team is all too familiar with the cold wasteland that is game development in Spring.
 
 I decided to make the Conflict Terra Legacy branch so that the previous simplicity of our game could be maintained for others to look at for examples and help.
 
