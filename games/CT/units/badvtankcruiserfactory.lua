@@ -13,13 +13,13 @@ unitDef = {
 
   buildoptions                  = {
 
-	[[bengineer2]],
+--	[[bengineer2]],
+	[[badvradartank]],
 	[[bheavyassaulttank]],
 	[[bheavymissiletank]],
+	[[baatruck]],
 	[[bvhsa]],
 	[[bempcannon]],
-	[[baatruck]],
-	[[badvradartank]],
 	[[bminer]],
 	[[bradartank]],
 	[[bassaulttank]],
