@@ -94,7 +94,7 @@ local kairdrone = {
 		Ship = 10,
 		Sub = 10,
 	      },
-	
+		  beamTime                = 0.2,
 	      duration                = 0.02,
 	      energypershot           = 0,
 	      interceptedByShieldType = 1,
@@ -108,7 +108,7 @@ local kairdrone = {
 	      thickness               = 1,
 	      tolerance               = 100,
 	      turret                  = true,
-	      weaponType              = [[LaserCannon]],
+	      weaponType              = [[BeamLaser]],
 	      weaponVelocity          = 2000,
 	    },
 	
