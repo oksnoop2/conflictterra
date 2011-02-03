@@ -9,6 +9,8 @@
     * [http://code.google.com/p/conflictterra/wiki/MapInfo#CT_Eureka CT_Eureka]
     * [http://code.google.com/p/conflictterra/wiki/MapInfo#CT_Fishbone_Ridge CT Fishbone Ridge]
     * [http://code.google.com/p/conflictterra/wiki/MapInfo#CT_Tumblebrush_Basin CT Tumblebrush Basin]
+    * [http://code.google.com/p/conflictterra/wiki/MapInfo#CT_Archway CT Archway]
+    * [http://code.google.com/p/conflictterra/wiki/MapInfo#CT_Eitbyeit_Gorge CT Eitbyeit Gorge]
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#Non-CT_Maps_with_Defined_Resource_Placement Non-CT Maps with Defined Resource Placement]
 
 = Note for Players =
@@ -35,7 +37,7 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
 
 == CT Eureka ==
 
-  * CT_Eureka is a relatively open map that is broken up by small hills.  Pine trees dot the lowlands, and an occasional boulder gives a strong alpine feeling to the map.
+  * CT Eureka is a relatively open map that is broken up by small hills.  Pine trees dot the lowlands, and an occasional boulder gives a strong alpine feeling to the map.
   * Supports up to 8 players
   * 16 x 16
   * [http://conflictterra.googlecode.com/files/CT_Eurekav6.sd7 Download]
@@ -45,7 +47,7 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
 
 == CT Fishbone Ridge ==
 
-  * CT_Fishbone_Ridge is an interesting map.  A spine-like ridge runs through the middle, with initial starting spots in small canyons jutting from the ridge.  Cacti and boulders stand in this desert battleground.
+  * CT Fishbone Ridge is an interesting map.  A spine-like ridge runs through the middle, with initial starting spots in small canyons jutting from the ridge.  Cacti and boulders stand in this desert battleground.
   * Supports up to 13 players
   * 20 x 10
   * [http://conflictterra.googlecode.com/files/CT_Fishbone_Ridgev6.sd7 Download]
@@ -55,13 +57,33 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
 
 == CT Tumblebrush Basin ==
 
-  * CT_Tumblebrush_Basin is a large basin where fighting ignites most often in the middle of the map.  The flat bottom of the basin appears barren at first, but it is actually filled with cacti, flowering barrel cacti, tumbleweed, and even has a few hoodoos.  Some say a strange plant grows high in the hills there, a hybrid plant called tumblebrush!
+  * CT Tumblebrush Basin is a large basin where fighting ignites most often in the middle of the map.  Success usually comes from the most aggressive player.  The flat bottom of the basin appears barren at first, but it is actually filled with cacti, flowering barrel cacti, tumbleweed, and even has a few hoodoo.  Some say a strange plant grows high in the hills there, a hybrid plant called tumblebrush!
   * Supports up to 10 players
   * 16 x 16
   * [http://conflictterra.googlecode.com/files/CT_Tumblebrush_Basinv1.sd7 Download]
 
 ||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20map.png||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20view1.png||
 ||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20cacti.png||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20miners.png||
+
+== CT Archway ==
+
+  * CT Archway is a map divided by a steep chasm spanned by both flat land and extremely large stone arches.  The arches cannot be crossed, but units can move under them!  Deforested plateaus rise in each corner, providing a raised location for a base.
+  * Supports up to 8 players
+  * 16 x 16
+  * [http://conflictterra.googlecode.com/files/CT_Archwayv2.sd7 Download]
+
+||http://conflictterra.googlecode.com/svn/wiki/images/Archway%20Map.png||http://conflictterra.googlecode.com/svn/wiki/images/Archway%20Arches.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Archway%20Plateau.png||http://conflictterra.googlecode.com/svn/wiki/images/Archway%20Stumps.png||
+
+== CT Eitbyeit Gorge ==
+
+  * CT Eitbyeit Gorge is a small map intended for one on one battles.  The first map ever made with the "CT style", it sat as a testing map due to it's small size.  It was pulled out for one on one's when the desire was made known for a small map.  Large meteor supplies are in the middle mountain, but side-by-side mining is dangerous!
+  * Supports up to 2 players
+  * 8 x 8
+  * [http://conflictterra.googlecode.com/files/CT_Eitbyeit_Gorgev1.sd7 Download]
+
+||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Map.png||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Gorge.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Mining.png||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Deeper.png||
 
 = Non-CT Maps with Defined Resource Placement =
 Besides placing resources via the metal map, Conflict Terra also contains configuration files for more detailed placement of resources.
