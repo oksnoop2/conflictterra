@@ -147,12 +147,12 @@ local morphDefs = {
       energy = 100,
       time = 5,
     },
---    {
---      into = 'badvaircruiser',
---      metal = 1200,
---      energy = 1200,
---      time = 60,
---    },
+    {
+      into = 'badvaircruiser',
+      metal = 1200,
+      energy = 1200,
+      time = 60,
+    },
   },
 
   baircruiserfactory = {
@@ -162,12 +162,12 @@ local morphDefs = {
       energy = 100,
       time = 5,
     },
---    {
---      into = 'badvaircruiserfactory',
---      metal = 1200,
---      energy = 1200,
---      time = 60,
---    },
+    {
+      into = 'badvaircruiserfactory',
+      metal = 1200,
+      energy = 1200,
+      time = 60,
+    },
   },
 
   badvmechcruiser = {
