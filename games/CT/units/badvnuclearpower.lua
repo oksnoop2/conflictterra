@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[badvnuclearpower]],
   name                          = [[Advanced Nuclear Power Plant]],
-  description                   = [[Very advanced reactor that has a large explosion on destruction.  Adds +225 energy.]],
+  description                   = [[Very advanced reactor that has a large explosion on destruction.  Adds +50 energy.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
   bmcode                        = [[0]],
