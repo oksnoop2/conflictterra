@@ -8,7 +8,7 @@ unitDef = {
   activateWhenBuilt             = false,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 1500,
+  buildCostEnergy               = 1200,
   buildCostMetal                = 1200,
   builder                       = true,
 
@@ -20,7 +20,7 @@ unitDef = {
 
 
   buildPic                      = [[bexperimentalpad.png]],
-  buildTime                     = 120,
+  buildTime                     = 90,
   canMove                       = true,
   canPatrol                     = true,
   canstop                       = [[1]],

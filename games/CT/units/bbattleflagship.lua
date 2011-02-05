@@ -9,8 +9,8 @@
           bankscale           = [[1.5]],
 	  bmcode              = [[0]],
 	  brakeRate           = 1.88,
-	  buildCostEnergy     = 1800,
-	  buildCostMetal      = 1440,
+	  buildCostEnergy     = 4000,
+	  buildCostMetal      = 4000,
 	  builder             = false,
 	  reclaimable         = false,
 
@@ -18,7 +18,7 @@
 
 	  buildPic            = [[bbattleflagship.png]],
           buildRange3D        = false,
-	  buildTime           = 60,
+	  buildTime           = 120,
 	  canAttack           = true,
 	  canDGun             = true,
           canFly              = true,

@@ -8,25 +8,24 @@ unitDef = {
   activateWhenBuilt             = false,
   bmcode                        = [[0]],
   brakeRate                     = 0,
-  buildCostEnergy               = 1600,
-  buildCostMetal                = 1200,
+  buildCostEnergy               = 800,
+  buildCostMetal                = 800,
   builder                       = true,
 
   buildoptions                  = {
-
+	[[bsupplydepotmobile]],
 	[[bflagship2]],
 	[[badvmechcruiser]],
 	[[badvtankcruiser]],
 	[[badvaircruiser]],
 	[[bbattlecruiser]],
 	[[btransportcarrier2]],
-	[[benergysupplyship]],
   },
 
 
 
   buildPic                      = [[badvbeacon.png]],
-  buildTime                     = 120,
+  buildTime                     = 60,
   canMove                       = true,
   canPatrol                     = true,
   canstop                       = [[1]],

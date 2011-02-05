@@ -9,12 +9,12 @@ local morphDefs = {
       energy = 0,
       time = 5,
     },
---    {
---      into = 'bbattleflagship',
---      metal = 9600,
---      energy = 12000,
---      time = 120,
---    },
+    {
+      into = 'bbattleflagship',
+      metal = 4000,
+      energy = 4000,
+      time = 120,
+    },
   },
 
   bflagshipbase2 = {
@@ -87,12 +87,12 @@ local morphDefs = {
       energy = 100,
       time = 5,
     },
---    {
---      into = 'badvmechcruiser',
---      metal = 1200,
---      energy = 1200,
---      time = 60,
---    },
+    {
+      into = 'badvmechcruiser',
+      metal = 1200,
+      energy = 1200,
+      time = 60,
+    },
   },
 
   bmechcruiserfactory = {
@@ -102,12 +102,12 @@ local morphDefs = {
       energy = 100,
       time = 5,
     },
---    {
---      into = 'badvmechcruiserfactory',
---      metal = 1200,
---      energy = 1200,
---      time = 60,
---    },
+    {
+      into = 'badvmechcruiserfactory',
+      metal = 1200,
+      energy = 1200,
+      time = 60,
+    },
   },
 
   btankcruiser = {
@@ -224,20 +224,20 @@ local morphDefs = {
     },
   },
 
---  bbeacon = {
---    {
---      into = 'badvbeacon',
---      metal = 1200,
---      energy = 1600,
---      time = 60,
---    },
---  },
+  bbeacon = {
+    {
+      into = 'badvbeacon',
+      metal = 800,
+      energy = 800,
+      time = 60,
+    },
+  },
 
   bshipyard = {
     {
       into = 'badvshipyard',
       metal = 800,
-      energy = 1000,
+      energy = 800,
       time = 60,
     },
   },
@@ -246,7 +246,7 @@ local morphDefs = {
     {
       into = 'badvsubpens',
       metal = 800,
-      energy = 1000,
+      energy = 800,
       time = 60,
     },
   },

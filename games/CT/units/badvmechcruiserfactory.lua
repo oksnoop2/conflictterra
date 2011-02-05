@@ -15,10 +15,10 @@ unitDef = {
 
 	[[bengineer2]],
 	[[bheavymech]],
-	[[bheavysiegemech]],
 	[[bheavymissilemech]],
-	[[bheavyflyingmech]],
         [[badvhovermech]],
+	[[bheavysiegemech]],
+	[[bheavyflyingmech]],
 	[[bminer]],
 	[[bbasicmech]],
 	[[bmissilemech]],
