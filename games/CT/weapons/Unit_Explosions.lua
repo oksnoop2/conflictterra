@@ -181,7 +181,7 @@ BIG_UNIT = {
   ROCK_IMPACT_SMALL = {
 
    name="Small Unit",
-   craterMult=2000,
+   craterMult=1000,
    rendertype=4,
    ballistic=1,
    turret=1,
@@ -189,7 +189,7 @@ BIG_UNIT = {
    range=480,
    reloadtime=3.6,
    weaponvelocity=250,
-   areaofeffect=75,
+   areaofeffect=200,
    soundstart="golgotha/old_generic.wav",
    soundhit="golgotha/old_generic.wav",
 
