@@ -109,13 +109,13 @@
 	      accuracy                = 100,
 	
 	      damage                  = {
-	        Cruiser = 2000,
-		Building = 2000,
-	        Mech = 2000,
-		Tank = 2000,
-	        Aircraft = 2000,
-		Ship = 2000,
-		Sub = 200,
+	        Cruiser = 1000,
+		Building = 1000,
+	        Mech = 1000,
+		Tank = 1000,
+	        Aircraft = 1000,
+		Ship = 1000,
+		Sub = 1000,
 
 	      },
 	
