@@ -4,8 +4,8 @@ local kdronewarrior = {
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdronewarrior.png]],
-	buildCostEnergy     = 600,
-	buildCostMetal      = 600,
+	buildCostEnergy     = 300,
+	buildCostMetal      = 300,
     buildDistance       = 150,
     builder             = false,
 
