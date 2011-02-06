@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
-
+ 
 local morphDefs = {
-
+ 
   bflagship2 = {
     {
       into = 'bflagshipbase2',
@@ -14,9 +14,9 @@ local morphDefs = {
       metal = 4000,
       energy = 4000,
       time = 120,
-    },
+    }
   },
-
+ 
   bflagshipbase2 = {
     {
       into = 'bflagship2',
@@ -25,7 +25,7 @@ local morphDefs = {
       time = 5,
     },
   },
-
+ 
   baatruck = {
     {
       into = 'baatruckturret',
@@ -34,7 +34,7 @@ local morphDefs = {
       time = 2,
     },
   },
-
+ 
   baatruckturret = {
     {
       into = 'baatruck',
@@ -43,7 +43,7 @@ local morphDefs = {
       time = 2,
     },
   },
-
+ 
   bempcannon = {
     {
       into = 'bempcannonturret',
@@ -52,7 +52,7 @@ local morphDefs = {
       time = 3,
     },
   },
-
+ 
   bempcannonturret = {
     {
       into = 'bempcannon',
@@ -61,7 +61,7 @@ local morphDefs = {
       time = 3,
     },
   },
-
+ 
   bsupplydepot = {
     {
       into = 'bsupplydepotmobile',
@@ -70,7 +70,7 @@ local morphDefs = {
       time = 4,
     },
   },
-
+ 
   bsupplydepotmobile = {
     {
       into = 'bsupplydepot',
@@ -79,7 +79,43 @@ local morphDefs = {
       time = 4,
     },
   },
-
+ 
+  benergytruck = {
+    {
+      into = 'benergytruckdepot',
+      metal = 0,
+      energy = 0,
+      time = 2,
+    },
+  },
+ 
+  benergytruckdepot = {
+    {
+      into = 'benergytruck',
+      metal = 0,
+      energy = 0,
+      time = 2,
+    },
+  },
+ 
+  benergysupplyship = {
+    {
+      into = 'benergysupplyshipdepot',
+      metal = 0,
+      energy = 0,
+      time = 4,
+    },
+  },
+ 
+  benergysupplyshipdepot = {
+    {
+      into = 'benergysupplyship',
+      metal = 0,
+      energy = 0,
+      time = 4,
+    },
+  },
+ 
   bmechcruiser = {
     {
       into = 'bmechcruiserfactory',
@@ -94,7 +130,7 @@ local morphDefs = {
       time = 60,
     },
   },
-
+ 
   bmechcruiserfactory = {
     {
       into = 'bmechcruiser',
@@ -109,7 +145,7 @@ local morphDefs = {
       time = 60,
     },
   },
-
+ 
   btankcruiser = {
     {
       into = 'btankcruiserfactory',
@@ -119,12 +155,12 @@ local morphDefs = {
     },
     {
       into = 'badvtankcruiser',
-      metal = 1200,
-      energy = 1200,
+      metal = 800,
+      energy = 1000,
       time = 60,
     },
   },
-
+ 
   btankcruiserfactory = {
     {
       into = 'btankcruiser',
@@ -134,12 +170,12 @@ local morphDefs = {
     },
     {
       into = 'badvtankcruiserfactory',
-      metal = 1200,
-      energy = 1200,
+      metal = 800,
+      energy = 1000,
       time = 60,
     },
   },
-
+ 
   baircruiser = {
     {
       into = 'baircruiserfactory',
@@ -149,12 +185,12 @@ local morphDefs = {
     },
     {
       into = 'badvaircruiser',
-      metal = 1200,
-      energy = 1200,
+      metal = 800,
+      energy = 1000,
       time = 60,
     },
   },
-
+ 
   baircruiserfactory = {
     {
       into = 'baircruiser',
@@ -164,66 +200,66 @@ local morphDefs = {
     },
     {
       into = 'badvaircruiserfactory',
-      metal = 1200,
-      energy = 1200,
+      metal = 800,
+      energy = 1000,
       time = 60,
     },
   },
-
+ 
   badvmechcruiser = {
     {
       into = 'badvmechcruiserfactory',
       metal = 0,
-      energy = 200,
+      energy = 0,
       time = 5,
     },
   },
-
+ 
   badvmechcruiserfactory = {
     {
       into = 'badvmechcruiser',
       metal = 0,
-      energy = 200,
+      energy = 0,
       time = 5,
     },
   },
-
+ 
   badvtankcruiser = {
     {
       into = 'badvtankcruiserfactory',
       metal = 0,
-      energy = 200,
+      energy = 0,
       time = 5,
     },
   },
-
+ 
   badvtankcruiserfactory = {
     {
       into = 'badvtankcruiser',
       metal = 0,
-      energy = 200,
+      energy = 0,
       time = 5,
     },
   },
-
+ 
   badvaircruiser = {
     {
       into = 'badvaircruiserfactory',
       metal = 0,
-      energy = 200,
+      energy = 0,
       time = 5,
     },
   },
-
+ 
   badvaircruiserfactory = {
     {
       into = 'badvaircruiser',
       metal = 0,
-      energy = 200,
+      energy = 0,
       time = 5,
     },
   },
-
+ 
   bbeacon = {
     {
       into = 'badvbeacon',
@@ -232,7 +268,7 @@ local morphDefs = {
       time = 60,
     },
   },
-
+ 
   bshipyard = {
     {
       into = 'badvshipyard',
@@ -241,7 +277,7 @@ local morphDefs = {
       time = 60,
     },
   },
-
+ 
   bsubpens = {
     {
       into = 'badvsubpens',
@@ -250,7 +286,7 @@ local morphDefs = {
       time = 60,
     },
   },
-
+ 
   blanddefship = {
     {
       into = 'blanddefmobileship',
@@ -259,7 +295,7 @@ local morphDefs = {
       time = 5,
     },
   },
-
+ 
   blanddefmobileship = {
     {
       into = 'blanddefship',
@@ -268,7 +304,7 @@ local morphDefs = {
       time = 5,
     },
   },
-
+ 
   bairdefship = {
     {
       into = 'bairdefmobileship',
@@ -277,7 +313,7 @@ local morphDefs = {
       time = 5,
     },
   },
-
+ 
   bairdefmobileship = {
     {
       into = 'bairdefship',
@@ -286,7 +322,7 @@ local morphDefs = {
       time = 5,
     },
   },
-
+ 
   bnavydefship = {
     {
       into = 'bnavydefmobileship',
@@ -295,7 +331,7 @@ local morphDefs = {
       time = 5,
     },
   },
-
+ 
   bnavydefmobileship = {
     {
       into = 'bnavydefship',
@@ -305,8 +341,8 @@ local morphDefs = {
     },
   },
 }
-
-
+ 
+ 
 return morphDefs
-
+ 
 --------------------------------------------------------------------------------
