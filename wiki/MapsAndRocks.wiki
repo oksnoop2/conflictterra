@@ -86,6 +86,15 @@ Or example you could return different rock layouts (res tables) based on a choic
 This will be explained in depth later, if you are somewhat familiar with Lua you can probably figure it out. <br>
 If you have a special idea/trouble with your map you can also ask Knorke.<br>
 
+The config file can also include the following in the return section of the script for the described effects:
+
+||featurehandling="remove"||Remove metal features.||
+||featurehandling="replace"||Replace metal features with bminerals.  DEFAULT if
+this tag is missing.||
+||featurehandling="donothing"||Does nothing.||
+
+You can see [http://code.google.com/p/conflictterra/source/browse/games/CT/mapconfigs/MoonQ20x_res.lua?spec=svn835&r=835#72 MoonQ20x_res.lua] for an example.
+
 = Guide With Pictures =
 note: you might have to use rightclick -> "view image" to see the image unscaled and in full resolution<br>
 http://h-3.abload.de/img/properstoningr1tgm1.jpg
