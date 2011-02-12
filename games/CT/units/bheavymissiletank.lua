@@ -29,7 +29,7 @@
 	  mass                = 390,
 	  maxDamage           = 2650,
 	  maxSlope            = 18,
-	  maxVelocity         = 1.5,
+	  maxVelocity         = 2,
 	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
 	  movementClass       = [[TANK4x4]],
