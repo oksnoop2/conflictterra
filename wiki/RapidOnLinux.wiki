@@ -2,7 +2,9 @@
 copy/paste or type in these lines:
 
 sudo apt-get install python-dev python-setuptools python-pip
+
 sudo easy_install rapid-spring
+
 rapid pin ct:test
 
 enter your password, and Congratulations! You've successfully installed Conflict Terra!
