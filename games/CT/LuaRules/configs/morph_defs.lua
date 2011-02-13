@@ -340,7 +340,24 @@ local morphDefs = {
       time = 5,
     },
   },
-}
+  kdroneengineer = {
+    {
+      into = 'kdroneminingtower',
+      metal = 0,
+      energy = 50,
+      time = 5,
+    },
+  },
+ 
+  kdroneminingtower = {
+    {
+      into = 'kdroneengineer',
+      metal = 0,
+      energy = 50,
+      time = 5,
+    },
+  },
+ }
  
  
 return morphDefs
