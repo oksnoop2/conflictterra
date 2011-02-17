@@ -10,20 +10,19 @@ local bengineer1 = {
         builder             = true,
 
 	buildoptions            = {
-		[[bsupplydepotai]],
+				[[bsupplydepotai]],
                 [[bpowerplant]],
-                [[bnuclearpower]],
-                [[bsupportfactory]],
-		[[bbeacon]],
-                [[bshipyard]],
-                [[bsubpens]],
+				[[bbeacon]],
                 [[bradartower]],
                 [[bjammertower]],
                 [[blandturret]],
                 [[bairturret]],
-                [[blandnavalturret]],
                 [[bgatlingturret]],
                 [[bmechturret]],
+                [[btankcruiserfactory]],
+                [[baircruiserfactory]],
+                [[bmechcruiserfactory]],				
+				
         },
 
 	buildTime           = 15,

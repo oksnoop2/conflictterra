@@ -54,7 +54,7 @@ unitDef = {
   },
 
   smoothAnim                    = true,
-  TEDClass                      = [[ENERGY]],
+
   turnRate                      = 0,
   workerTime                    = 0,
   yardMap                       = [[cooooc cooooc cooooc cooooc cooooc cooooc cooooc cooooc cooooc cooooc]],
