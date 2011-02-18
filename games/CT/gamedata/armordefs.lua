@@ -67,7 +67,8 @@ local armorDefs = {
 	"bsupplydepotai",
 	"kdronestructure",	
 	"kmex",
-	"kdroneminingtower",		
+	"kdroneminingtower",
+	"kaidronefactory",	
   },
 
   Mech  =  {
@@ -88,6 +89,8 @@ local armorDefs = {
     "kdroneengineer",
 	"kdronewarrior",
 	"kdroneminer",
+	"kdronebehemoth",
+	
 
   },
 
@@ -121,7 +124,9 @@ local armorDefs = {
     "badvrocketplane",
     "badvradarplane",
     "blaserplane",
-    "kairdrone",	
+    "kairdrone",
+	"kdiairdrone",
+	"ktriairdrone",		
   },
 
   Ship = {
