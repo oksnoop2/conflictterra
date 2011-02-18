@@ -16,9 +16,9 @@ unitDef = {
 
 	[[bminer]],
 	[[breztank]],
-	--[[bmechcruiser]],
-	--[[btankcruiser]],
-	--[[baircruiser]],
+	-- [[bmechcruiser]],
+	-- [[btankcruiser]],
+	-- [[baircruiser]],
 	[[bengineer1]],
   },
 
