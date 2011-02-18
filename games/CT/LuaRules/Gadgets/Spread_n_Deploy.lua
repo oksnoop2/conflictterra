@@ -35,7 +35,7 @@ function gadget:GetInfo()
 		version = "1.2",
 		license = "Free",
 		layer = 0,
-		enabled = true,
+		enabled = false,
 	}
 end
 
