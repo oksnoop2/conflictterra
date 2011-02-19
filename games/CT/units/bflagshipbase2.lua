@@ -148,7 +148,7 @@ unitDef = {
 	      collideFriendly         = false,
 	
 	      damage                  = {
-		Cruiser = 100,
+		Cruiser = 75,
 		Building = 5,
 		Mech = 5,
 		Tank = 5,
@@ -162,7 +162,7 @@ unitDef = {
 	      interceptedByShieldType = 1,
 	      minbarrelangle          = [[-24]],
 	      range                   = 1000,
-	      reloadtime              = 1,
+	      reloadtime              = 0.5,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_heavy_machinegun]],
 	      turret                  = true,

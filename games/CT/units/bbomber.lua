@@ -84,11 +84,11 @@
 	
 	      damage                  = {
 		Cruiser = 10,
-		Building = 200,
+		Building = 100,
 		Mech = 10,
 		Tank = 10,
 		Aircraft = 10,
-		Ship = 200,
+		Ship = 100,
 		Sub = 10,
 	      },
 	
