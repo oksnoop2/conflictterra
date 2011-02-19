@@ -162,7 +162,7 @@ unitDef = {
 		Tank = 5,
 		Aircraft = 100,
 		Ship = 5,
-		Sub = 2.5,
+		Sub = 5,
 	      },
 	
 	      edgeEffectiveness       = 0.85,
@@ -170,7 +170,7 @@ unitDef = {
 	      interceptedByShieldType = 1,
 	      minbarrelangle          = [[-24]],
 	      range                   = 1000,
-	      reloadtime              = 0.4,
+	      reloadtime              = 1,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_heavy_machinegun]],
 	      turret                  = true,
