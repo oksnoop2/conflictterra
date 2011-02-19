@@ -90,7 +90,7 @@
 	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
 	    {
@@ -98,7 +98,7 @@
 	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
 	    {
@@ -106,7 +106,7 @@
 	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
 	    {
@@ -114,7 +114,7 @@
 	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
 	    {

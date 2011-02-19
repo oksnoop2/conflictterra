@@ -77,6 +77,7 @@
 	
 	    {
 	      def                = [[AA]],
+	      badTargetCategory  = [[GUNSHIP]],
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 	

@@ -90,7 +90,7 @@
 	    {
 	      def                = [[Anti_Mech]],
 	      badTargetCategory  = [[SINK FLOAT]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER GUNSHIP]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 	
 	  },

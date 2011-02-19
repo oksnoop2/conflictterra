@@ -77,6 +77,7 @@
 
 	    {
 	      def                = [[Artillery]],
+	      badTargetCategory  = [[SWIM LAND SHIP HOVER]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
@@ -84,18 +85,18 @@
 	
 	    {
 	      def                = [[Cannon]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 
 	    {
 	      def                = [[Cannon]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 	
 	  },
