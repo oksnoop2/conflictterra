@@ -31,7 +31,7 @@
 	  footprintZ          = 8,
 	  idleAutoHeal        = 0,
 	  mass                = 3000,
-	  maxDamage           = 20000,
+	  maxDamage           = 7500,
 	  maxSlope            = 18,
 	  maxVelocity         = 1,
 	  maxWaterDepth       = 22,
