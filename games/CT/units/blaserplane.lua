@@ -32,7 +32,7 @@
 	  maneuverleashlength = [[1280]],
 	  mass                = 150,
           maxAcc              = 0.3,
-	  maxDamage           = 450,
+	  maxDamage           = 750,
 	  maxVelocity         = 11,
 	  minCloakDistance    = 75,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
@@ -82,7 +82,7 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 100,
+		Cruiser = 125,
 		Building = 10,
 		Mech = 10,
 		Tank = 10,

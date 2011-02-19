@@ -85,11 +85,11 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 200,
+		Cruiser = 125,
 		Building = 20,
 		Mech = 20,
 		Tank = 20,
-		Aircraft = 200,
+		Aircraft = 125,
 		Ship = 20,
 		Sub = 20,
 	      },
