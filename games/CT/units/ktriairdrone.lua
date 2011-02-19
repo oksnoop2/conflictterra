@@ -130,7 +130,7 @@ local ktriairdrone = {
 	showNanospray	    = 1,
 	Resurrectspeed      =100,
 	workerTime          = 1,
-	--script		    = "ktriairdrone.lua",
+	script		    = "ktriairdrone.lua",
 
 	featureDefs         = {
 	

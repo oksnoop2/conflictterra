@@ -72,6 +72,12 @@ local kdiairdrone = {
 	      badTargetCategory  = [[MINERALS]],
 	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER FIXEDWING]],
 	    },
+
+	    {
+	      def                = [[Laser]],
+	      badTargetCategory  = [[MINERALS]],
+	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER FIXEDWING]],
+	    },
 	
 	  },
 	
@@ -130,7 +136,7 @@ local kdiairdrone = {
 	showNanospray	    = 1,
 	Resurrectspeed      =100,
 	workerTime          = 1,
-	--script		    = "kdiairdrone.lua",
+	script		    = "kdiairdrone.lua",
 
 	featureDefs         = {
 	
