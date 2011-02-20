@@ -260,14 +260,14 @@ local morphDefs = {
     },
   },
  
-  bbeacon = {
-    {
-      into = 'badvbeacon',
-      metal = 800,
-      energy = 800,
-      time = 60,
-    },
-  },
+--  bbeacon = {
+--    {
+--      into = 'badvbeacon',
+--      metal = 800,
+--      energy = 800,
+--      time = 60,
+--    },
+--  },
  
   bshipyard = {
     {
