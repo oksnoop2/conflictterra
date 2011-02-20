@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bmissilemech]],
 	  name                = [[Ueda Combat Support Mech]],
-	  description         = [[Anti-Mech Mech - Light SM built to combat other mechs.  Fires two anti-mech missiles.]],
+	  description         = [[Anti-Mech Mech - Light SM built to combat other mechs.  Fires two bursts of anti-mech missiles.]],
 	  acceleration        = 0.12,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.19,
