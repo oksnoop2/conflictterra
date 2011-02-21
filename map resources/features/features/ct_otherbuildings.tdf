@@ -1,0 +1,99 @@
+[ct_fountain]
+	{
+	world=All Worlds;
+	description=Fountain;
+	category=arm_corpses;
+	object=ct_fountain.s3o;
+	footprintx=4;
+	footprintz=4;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_gasstation]
+	{
+	world=All Worlds;
+	description=Gas Station;
+	category=arm_corpses;
+	object=ct_gasstation.s3o;
+	footprintx=10;
+	footprintz=10;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_grasspatch]
+	{
+	world=All Worlds;
+	description=Grass;
+	category=arm_corpses;
+	object=ct_grasspatch.s3o;
+	footprintx=4;
+	footprintz=4;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_library]
+	{
+	world=All Worlds;
+	description=Grass;
+	category=arm_corpses;
+	object=ct_library.s3o;
+	footprintx=8;
+	footprintz=8;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_statue]
+	{
+	world=All Worlds;
+	description=Statue;
+	category=arm_corpses;
+	object=ct_statue.s3o;
+	footprintx=4;
+	footprintz=4;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

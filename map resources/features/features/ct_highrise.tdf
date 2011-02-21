@@ -1,0 +1,59 @@
+[ct_highrise_dome]
+	{
+	world=All Worlds;
+	description=Highrise Building;
+	category=arm_corpses;
+	object=ct_highrise_dome.s3o;
+	footprintx=4;
+	footprintz=4;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_highrise_pyramid]
+	{
+	world=All Worlds;
+	description=Highrise Building;
+	category=arm_corpses;
+	object=ct_highrise_pyramid.s3o;
+	footprintx=4;
+	footprintz=4;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_highrise_top]
+	{
+	world=All Worlds;
+	description=Highrise Building;
+	category=arm_corpses;
+	object=ct_highrise_top.s3o;
+	footprintx=4;
+	footprintz=4;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

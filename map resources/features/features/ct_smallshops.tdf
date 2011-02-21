@@ -1,0 +1,39 @@
+[ct_smallshop1]
+	{
+	world=All Worlds;
+	description=Small Shop;
+	category=arm_corpses;
+	object=ct_smallshop1.s3o;
+	footprintx=2;
+	footprintz=2;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_smallshop2]
+	{
+	world=All Worlds;
+	description=Small Shop;
+	category=arm_corpses;
+	object=ct_smallshop2.s3o;
+	footprintx=2;
+	footprintz=2;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

@@ -1,0 +1,159 @@
+[ct_housing1]
+	{
+	world=All Worlds;
+	description=House;
+	category=arm_corpses;
+	object=ct_housing1.s3o;
+	footprintx=8;
+	footprintz=8;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_housing2]
+	{
+	world=All Worlds;
+	description=House;
+	category=arm_corpses;
+	object=ct_housing2.s3o;
+	footprintx=4;
+	footprintz=4;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_housing3]
+	{
+	world=All Worlds;
+	description=House;
+	category=arm_corpses;
+	object=ct_housing3.s3o;
+	footprintx=4;
+	footprintz=4;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_housing5]
+	{
+	world=All Worlds;
+	description=House;
+	category=arm_corpses;
+	object=ct_housing5.s3o;
+	footprintx=4;
+	footprintz=4;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_housing6]
+	{
+	world=All Worlds;
+	description=House;
+	category=arm_corpses;
+	object=ct_housing6.s3o;
+	footprintx=4;
+	footprintz=8;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_housing10]
+	{
+	world=All Worlds;
+	description=House;
+	category=arm_corpses;
+	object=ct_housing10.s3o;
+	footprintx=3;
+	footprintz=8;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_housing11]
+	{
+	world=All Worlds;
+	description=House;
+	category=arm_corpses;
+	object=ct_housing11.s3o;
+	footprintx=4;
+	footprintz=4;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_housing12]
+	{
+	world=All Worlds;
+	description=House;
+	category=arm_corpses;
+	object=ct_housing12.s3o;
+	footprintx=4;
+	footprintz=4;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

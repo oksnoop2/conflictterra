@@ -1,0 +1,39 @@
+[ct_postoffice]
+	{
+	world=All Worlds;
+	description=Post Office;
+	category=arm_corpses;
+	object=ct_postoffice.s3o;
+	footprintx=4;
+	footprintz=8;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_postoffice2]
+	{
+	world=All Worlds;
+	description=Post Office;
+	category=arm_corpses;
+	object=ct_postoffice2.s3o;
+	footprintx=4;
+	footprintz=8;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

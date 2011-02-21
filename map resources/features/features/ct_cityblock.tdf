@@ -1,0 +1,39 @@
+[ct_cityblock1]
+	{
+	world=All Worlds;
+	description=City Block;
+	category=arm_corpses;
+	object=ct_cityblock.s3o;
+	footprintx=10;
+	footprintz=10;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_cityblock2]
+	{
+	world=All Worlds;
+	description=City Block;
+	category=arm_corpses;
+	object=ct_cityblock2.s3o;
+	footprintx=10;
+	footprintz=10;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=2000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
