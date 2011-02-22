@@ -10,9 +10,9 @@ local bengineer1 = {
         builder             = true,
 
 	buildoptions            = {
-				[[bsupplydepotai]],
+                [[bsupplydepotai]],
                 [[bpowerplant]],
-				[[bbeacon]],
+                [[bbeacon]],
                 [[bradartower]],
                 [[bjammertower]],
                 [[blandturret]],
@@ -21,7 +21,10 @@ local bengineer1 = {
                 [[bmechturret]],
                 [[btankcruiserfactory]],
                 [[baircruiserfactory]],
-                [[bmechcruiserfactory]],				
+                [[bmechcruiserfactory]],
+                [[badvtankcruiserfactory]],
+                [[badvaircruiserfactory]],
+                [[badvmechcruiserfactory]],	                
 				
         },
 
