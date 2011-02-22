@@ -26,7 +26,7 @@
 	  idleAutoHeal        = 0,
 	  maneuverleashlength = [[640]],
 	  mass                = 2000,
-	  maxDamage           = 1300,
+	  maxDamage           = 1600,
 	  maxSlope            = 36,
 	  maxVelocity         = 3,
 	  maxWaterDepth       = 22,
@@ -100,13 +100,13 @@
 	      accuracy                = 100,
 	
 	      damage                  = {
-		Cruiser = 30,
-		Building = 30,
+		Cruiser = 20,
+		Building = 20,
 		Mech = 75,
-		Tank = 30,
-		Aircraft = 30,
-		Ship = 30,
-		Sub = 30,
+		Tank = 20,
+		Aircraft = 20,
+		Ship = 20,
+		Sub = 20,
 	      },
 	
 	      model                   = [[bantimechmissile.s3o]],
