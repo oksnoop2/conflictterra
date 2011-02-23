@@ -119,7 +119,7 @@
 	
 	      damage                  = {
 		Cruiser = 120,
-		Building = 120,
+		Building = 60,
 		Mech = 120,
 		Tank = 120,
 		Aircraft = 200,
@@ -133,7 +133,7 @@
 	      interceptedByShieldType = 1,
 	      heightMod               = 0.5,
 	      lineOfSight             = true,
-	      range                   = 1000,
+	      range                   = 750,
 	      reloadtime              = 0.5,
 	      rgbColor                = [[1 0 0]],
 	      soundStart              = [[ct/pew1]],

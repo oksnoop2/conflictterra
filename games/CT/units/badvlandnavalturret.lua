@@ -24,7 +24,7 @@
 	  idleAutoHeal        = 0,
 	  levelGround         = true,
 	  mass                = 125,
-	  maxDamage           = 9300,
+	  maxDamage           = 5000,
           maxSlope            = 36,
 	  maxVelocity         = 0,
           maxWaterDepth       = 0,

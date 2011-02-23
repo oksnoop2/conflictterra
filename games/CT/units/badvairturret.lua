@@ -22,7 +22,7 @@
 	  idleAutoHeal        = 0,
 	  levelGround         = false,
 	  mass                = 140,
-	  maxDamage           = 10500,
+	  maxDamage           = 5000,
           maxSlope            = 18,
           maxWaterDepth       = 0,
 	  minCloakDistance    = 60,
