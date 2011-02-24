@@ -19,7 +19,7 @@ local kdroneengineer = {
 
 	buildTime           = 15,
     canAssist           = true,
-	CanAttack 			= 1,
+	CanAttack 			= false,
 	CanCapture			= false,
     canGuard            = true,
 	canMove		  	    = true,
@@ -69,54 +69,7 @@ local kdroneengineer = {
 	
 	  },
 
-	weapons             = {
-	
-	    {
-	      def                = [[Laser]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER]],
-	    },
-	
-	  },
-	
-	
-	weaponDefs             = {
-	
-	    Laser = {
-	      name                    = [[Burst Laser]],
-	      areaOfEffect            = 8,
-	      coreThickness           = 0.5,
-	      collideFriendly         = false,
-	      craterMult              = 0.25,
-	
-	      damage                  = {
-		Cruiser = 10,
-		Building = 10,
-		Mech = 10,
-		Tank = 10,
-		Aircraft = 10,
-		Ship = 10,
-		Sub = 10,
-	      },
-	
-	      duration                = 0.02,
-	      energypershot           = 0,
-	      interceptedByShieldType = 1,
-	      heightMod               = 0.5,
-	      lineOfSight             = true,
-	      range                   = 300,
-	      reloadtime              = 0.5,
-	      rgbColor                = [[0 1 0]],
-	      soundStart              = [[ct/pew1]],
-	      targetMoveError         = 0.15,
-	      thickness               = 1,
-	      tolerance               = 10000,
-	      turret                  = true,
-	      weaponType              = [[LaserCannon]],
-	      weaponVelocity          = 1500,
-	    },
-	
-	  },
+
 	  
 	smoothAnim          = true,
 	steeringmode        = [[1]],

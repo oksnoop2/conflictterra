@@ -1,21 +1,13 @@
 local kdronebehemoth = {
 	name                = [[behe moth! ]],
-	description         = [[This text needs more salt.]],
+	description         = [[This text needs more $@1+.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdronebehemoth.png]],
 	buildCostEnergy     = 100,
 	buildCostMetal      = 100,
     buildDistance       = 150,
-    builder             = true,
-	buildoptions		= {
-        
- 		[[kdronestructure]],
-		[[kdroneminingtower]],
-		
-
-               
-	},
+    builder             = false,
 
 	buildTime           = 15,
     canAssist           = true,
@@ -69,54 +61,53 @@ local kdronebehemoth = {
 	
 	  },
 
-	weapons             = {
-	
-	    {
-	      def                = [[Laser]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER]],
-	    },
-	
-	  },
+	 weapons                = {
+
+    {
+      def                = [[carriertargeting]],
+      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
+    },
 	
 	
 	weaponDefs             = {
 	
-	    Laser = {
-	      name                    = [[Burst Laser]],
-	      areaOfEffect            = 8,
-	      coreThickness           = 0.5,
-	      collideFriendly         = false,
-	      craterMult              = 0.25,
-	
-	      damage                  = {
-		Cruiser = 10,
-		Building = 10,
-		Mech = 10,
-		Tank = 10,
-		Aircraft = 10,
-		Ship = 10,
-		Sub = 10,
-	      },
-	
-	      duration                = 0.02,
-	      energypershot           = 0,
-	      interceptedByShieldType = 1,
-	      heightMod               = 0.5,
-	      lineOfSight             = true,
-	      range                   = 300,
-	      reloadtime              = 0.5,
-	      rgbColor                = [[0 1 0]],
-	      soundStart              = [[ct/pew1]],
-	      targetMoveError         = 0.15,
-	      thickness               = 1,
-	      tolerance               = 10000,
-	      turret                  = true,
-	      weaponType              = [[LaserCannon]],
-	      weaponVelocity          = 1500,
-	    },
-	
-	  },
+	    carriertargeting   = {
+      name                    = [[Fake Targeting Weapon]],
+      areaOfEffect            = 8,
+      collideFriendly         = false,
+      craterBoost             = 0,
+      craterMult              = 0,
+
+      damage                  = {
+        default = 1E-06,
+        planes  = 1E-06,
+        subs    = 5E-08,
+      },
+
+      explosionGenerator      = [[custom:NONE]],
+      fireStarter             = 0,
+      impactOnly              = true,
+      interceptedByShieldType = 1,
+      range                   = 1600,
+      reloadtime              = 1.25,
+      size                    = 1E-06,
+      smokeTrail              = false,
+
+      textures                = {
+        [[null]],
+        [[null]],
+        [[null]],
+      },
+
+      turnrate                = 1000000000,
+      turret                  = true,
+      weaponAcceleration      = 20000,
+      weaponTimer             = 0.5,
+      weaponType              = [[StarburstLauncher]],
+      weaponVelocity          = 20000,
+    },
+
+  },
 	  
 	smoothAnim          = true,
 	steeringmode        = [[1]],
@@ -180,6 +171,6 @@ local kdronebehemoth = {
   	  },
 
 	}
-
+}
 
 return lowerkeys({ ["kdronebehemoth"] = kdronebehemoth })
