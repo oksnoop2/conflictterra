@@ -62,7 +62,7 @@ unitDef = {
   sortbias                      = [[0]],
   turnRate                      = 0,
   workerTime                    = 1,
-  yardMap                       = [[occccc cccccc cccccc cccccc cccccc ccccco]],
+  yardMap                       = [[c]],
   script                        = [[kairdronefactory.lua]],
 
 
