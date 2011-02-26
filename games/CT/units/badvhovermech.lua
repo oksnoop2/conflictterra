@@ -57,8 +57,8 @@
 	 
 
 	  TEDClass            = [[TANK]],
-	  turninplace         = 0,
-	  turnRate            = 410,
+	  turnInPlace         = 1,
+	  turnRate            = 1000,
 	  workerTime          = 0,
 	  unitRestricted      = 10,
           script              = [[badvhovermech.lua]],

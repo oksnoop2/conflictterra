@@ -63,8 +63,8 @@
 	  },
 
 	  TEDClass            = [[TANK]],
-	  turninPlace         = 0,
-	  turnRate            = 525,
+	  turnInPlace         = 1,
+	  turnRate            = 1000,
 	  workerTime          = 0,
           script              = [[bhovermech.lua]],
 	

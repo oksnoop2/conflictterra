@@ -65,8 +65,8 @@
 	  smoothAnim          = true,
 	  steeringmode        = [[1]],
 	  TEDClass            = [[TANK]],
-	  turninplace         = 0,
-	  turnRate            = 300,
+	  turnInPlace         = 1,
+	  turnRate            = 1000,
 	  workerTime          = 0,
           script              = [[bartillery.lua]],
 	

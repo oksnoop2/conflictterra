@@ -61,9 +61,8 @@
 
 	  steeringmode        = [[1]],
 	  TEDClass            = [[TANK]],
-	  turninplace         = 0,
-	  turnInPlace         = 0,
-	  turnRate            = 231,
+	  turnInPlace         = 1,
+	  turnRate            = 1000,
 	  workerTime          = 0,
 	  unitRestricted      = 10,
           script              = [[badvradartank.lua]],
