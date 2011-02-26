@@ -132,6 +132,7 @@
 	      soundStart              = [[nexuiz/rocket_fire]],
 	      tolerance               = 8000,
 	      tracks                  = false,
+	      trajectoryHeight        = 0.5,
 	      turret                  = true,
 	      weaponType              = [[MissileLauncher]],
 	      weaponVelocity          = 550,
