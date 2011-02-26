@@ -148,7 +148,7 @@ unitDef = {
 	      collideFriendly         = false,
 	
 	      damage                  = {
-		Cruiser = 75,
+		Cruiser = 100,
 		Building = 5,
 		Mech = 5,
 		Tank = 5,
