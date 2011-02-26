@@ -6,7 +6,6 @@ unitDef = {
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 115,
   buildCostMetal                = 92,
@@ -18,8 +17,6 @@ unitDef = {
   corpse                        = [[DEAD]],
   reclaimable                   = false,
 
-
-  damageModifier                = 0.25,
   energyUse                     = -15,
   energyMake                    = 0,
   explodeAs                     = [[SMALL_BUILDING]],
@@ -53,9 +50,6 @@ unitDef = {
 	},
   },
 
-  TEDClass                      = [[ENERGY]],
-  turnRate                      = 0,
-  workerTime                    = 0,
   yardMap                       = [[ooo ooo ooo]],
   script                        = [[bseapowerplant.lua]],
 

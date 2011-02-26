@@ -3,7 +3,6 @@
 	  name                = [[Uma Type Hover Truck]],
 	  description         = [[Artillery Hover Truck - Light mobile artillery.  Stronger against buildings than units.]],
 	  acceleration        = 0.02,
-	  bmcode              = [[1]],
 	  brakeRate           = 0.02,
 	  buildCostEnergy     = 350,
 	  buildCostMetal      = 350,
@@ -20,13 +19,11 @@
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[SMALL_UNIT]],
 	  footprintX          = 2,
 	  footprintZ          = 2,
 	  highTrajectory      = 2,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[640]],
 	  mass                = 80,
 	  maxDamage           = 900,
 	  maxSlope            = 18,
@@ -63,11 +60,8 @@
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,
-	  steeringmode        = [[1]],
-	  TEDClass            = [[TANK]],
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
-	  workerTime          = 0,
           script              = [[bartillery.lua]],
 	
 	  weapons             = {

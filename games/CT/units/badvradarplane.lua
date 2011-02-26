@@ -2,7 +2,6 @@
 	  unitname            = [[badvradarplane]],
 	  name                = [[Obou Type Radar Plane]],
 	  description         = [[Long Range Radar Plane - New radar plane with long ranged radar. - Build Limit: 20]],
-          altfromsealevel     = [[1]],
           amphibious          = false,
 	  buildCostEnergy     = 500,
 	  buildCostMetal      = 500,
@@ -24,14 +23,12 @@
           cruiseAlt           = 400,
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[VTOL_standby]],
           energyUse           = 1.5,
 	  explodeAs           = [[SMALL_UNIT]],
           floater             = false,
           footprintx          = 5,
 	  footprintZ          = 5,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[1280]],
 	  mass                = 150,
           maxAcc              = 0.5,
 	  maxDamage           = 375,
@@ -41,7 +38,6 @@
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
 	  objectName          = [[badvradarplane.s3o]],
           radarDistance       = 2500,
-          scale               = [[1]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[SMALL_UNIT]],
 	  side                = [[NKG]],
@@ -58,7 +54,6 @@
 	  },
 
 	  smoothAnim          = true,
-	  TEDClass            = [[VTOL]],
 	  unitRestricted      = 20,
           script              = [[badvradarplane.lua]],
 	

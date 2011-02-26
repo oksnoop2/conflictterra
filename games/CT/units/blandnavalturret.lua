@@ -4,7 +4,6 @@
 	  description         = [[Fires three shells that do much more damage to ships.  Should be built near shore.]],
 	  acceleration        = 0,
 	  activateWhenBuilt   = true,
-	  bmcode              = [[0]],
 	  brakeRate           = 0,
 	  buildCostEnergy     = 275,
 	  buildCostMetal      = 275,
@@ -12,12 +11,11 @@
 	  buildPic            = [[blandnavalturret.png]],
 	  buildTime           = 20,
 	  canAttack           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[SINK]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[GUARD_NOMOVE]],
 	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 3,
 	  footprintZ          = 3,
@@ -37,9 +35,6 @@
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,
-	  TEDClass            = [[WATER]],
-	  turnRate            = 0,
-	  workerTime          = 0,
 	  yardMap             = [[ooo ooo ooo]],
 
 	  sfxtypes            = {

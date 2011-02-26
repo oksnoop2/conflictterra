@@ -4,7 +4,6 @@
 	  description         = [[Submarine - Stealthy submersible.  Fires two torpedoes.]],
 	  acceleration        = 0.02,
           activateWhenBuilt   = true,
-	  bmcode              = [[1]],
 	  brakeRate           = 0.23,
 	  buildCostEnergy     = 600,
 	  buildCostMetal      = 480,
@@ -15,7 +14,7 @@
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[SUB]],
           collisionVolumeOffsets = [[0 0 0]],
           collisionVolumeScales  = [[64 50 150]],
@@ -24,12 +23,10 @@
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[640]],
 	  mass                = 300,
 	  maxDamage           = 1750,
 	  maxVelocity         = 2,
@@ -44,7 +41,6 @@
 	  side                = [[NKG]],
 	  sightDistance       = 500,
 	  smoothAnim          = true,
-	  steeringmode        = [[1]],
 
 	  sounds			= {
 	      select = {
@@ -56,7 +52,6 @@
 	  },
 
           sonarDistance       = 500,
-	  TEDClass            = [[WATER]],
 	  turnRate            = 225,
           waterline           = 45,
           script              = [[bsubmarine.lua]],

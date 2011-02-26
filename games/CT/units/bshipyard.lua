@@ -4,7 +4,6 @@ unitDef = {
   name                          = [[Naval Factory]],
   description                   = [[Produces battleships and other sea-faring vessels.]],
   acceleration                  = 0,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 400,
   buildCostMetal                = 400,
@@ -16,9 +15,11 @@ unitDef = {
     [[benergysupplyboat]],
     [[bhovermech]],
     [[bbattleship]],
+
     [[brocketbattleship]],
     [[bartilleryship]],
     [[baaship]],
+
     [[bradarship]],
   },
 
@@ -28,7 +29,7 @@ unitDef = {
   buildTime                     = 45,
   canMove                       = true,
   canPatrol                     = true,
-  canstop                       = [[1]],
+  canStop                       = true,
   canBeAssisted                 = false,
   category                      = [[FLOAT]],
   collisionVolumeOffsets        = [[0 8 0]],
@@ -69,10 +70,7 @@ unitDef = {
 		},
 	  },
 
-  smoothAnim                    = true,
-  TEDClass                      = [[PLANT]],
-  turnRate                      = 0,
-  
+  smoothAnim                    = true, 
   waterline                     = 5,
   workerTime                    = 1,
   yardMap                       = [[ooccccccoo ooccccccoo ooccccccoo ooccccccoo ooccccccoo ooccccccoo ooccccccoo ooccccccoo ooccccccoo ooccccccoo]],

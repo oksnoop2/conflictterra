@@ -4,7 +4,6 @@
 	  description         = [[Fires four powerful anti-ship shells.  Should be built near shore.]],
 	  acceleration        = 0,
 	  activateWhenBuilt   = true,
-	  bmcode              = [[0]],
 	  brakeRate           = 0,
 	  buildCostEnergy     = 550,
 	  buildCostMetal      = 550,
@@ -12,12 +11,11 @@
 	  buildPic            = [[badvlandnavalturret.png]],
 	  buildTime           = 40,
 	  canAttack           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[SINK]],
 	  corpse              = [[DEAD]],
 	  reclaimable         = false,
 	
-	  defaultmissiontype  = [[GUARD_NOMOVE]],
 	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 4,
 	  footprintZ          = 4,
@@ -58,9 +56,6 @@
 
 	  smoothAnim          = true,
 	  sonarDistance       = 580,
-	  TEDClass            = [[WATER]],
-	  turnRate            = 0,
-	  workerTime          = 0,
 	  yardMap             = [[oooo oooo oooo oooo]],
           script              = [[badvlandnavalturret.lua]],
 	

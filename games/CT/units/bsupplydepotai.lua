@@ -5,7 +5,6 @@ unitDef = {
   description                   = [[Drop-off point for mined metal from meteorites.  Can morph to a mobile form to deploy elsewhere.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 200,
   buildCostMetal                = 200,
@@ -55,8 +54,6 @@ unitDef = {
 
   smoothAnim                    = true,
 
-  turnRate                      = 0,
-  workerTime                    = 0,
   yardMap                       = [[cooooc cooooc cooooc cooooc cooooc cooooc cooooc cooooc cooooc cooooc]],
   script                        = [[bsupplydepot.lua]],
 

@@ -4,7 +4,6 @@
 	  description         = [[Floating torpedo platform that fires at nearby ships.]],
 	  acceleration        = 0,
 	  activateWhenBuilt   = true,
-	  bmcode              = [[0]],
 	  brakeRate           = 0,
 	  buildCostEnergy     = 1000,
 	  buildCostMetal      = 800,
@@ -12,12 +11,11 @@
 	  buildPic            = [[badvtorpedoturret.png]],
 	  buildTime           = 60,
 	  canAttack           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[FLOAT]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[GUARD_NOMOVE]],
 	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 4,
 	  footprintZ          = 4,
@@ -49,9 +47,6 @@
 		},
 	  },
 
-	  TEDClass            = [[WATER]],
-	  turnRate            = 0,
-	  workerTime          = 0,
 	  yardMap             = [[ooo ooo ooo]],
           script              = [[badvtorpedoturret.lua]],
 	

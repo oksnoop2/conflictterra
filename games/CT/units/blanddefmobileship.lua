@@ -3,7 +3,6 @@
 	  name                = [[Yamada Class Battery (Mobile Form)]],
 	  description         = [[Mobile Form of an anti-land battery.  Unarmed.  Can transform into an immobile, armed form.]],
 	  acceleration        = 0.04,
-	  bmcode              = [[1]],
 	  brakeRate           = 0.02,
 	  buildCostEnergy     = 1500,
 	  buildCostMetal      = 1500,
@@ -15,7 +14,7 @@
 	  canFight            = false,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  canHover            = true,
 	  category            = [[HOVER]],
           collisionVolumeOffsets = [[0 8 0]],
@@ -25,7 +24,6 @@
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[LARGE_BUILDING]],
           footprintx          = 8,
 	  footprintZ          = 8,
@@ -56,10 +54,8 @@
 
 	  sightDistance       = 750,
 	  smoothAnim          = true,
-	  TEDClass            = [[TANK]],
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
-	  workerTime          = 0,
 	  unitRestricted      = 2,
           script              = [[blanddefmobileship.lua]],
 	

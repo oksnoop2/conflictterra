@@ -5,7 +5,6 @@ unitDef = {
   description                   = [[Extracts usable metal resources from below the ground.  Must be built over a metal deposit.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 75,
   buildCostMetal                = 60,
@@ -13,7 +12,7 @@ unitDef = {
 
   buildPic                      = [[bmex.png]],
   buildTime                     = 25,
-  canattack                     = [[false]],
+  canAttack                     = false,
   category                      = [[SINK]],
   corpse                        = [[DEAD]],
   reclaimable                   = false,
@@ -38,7 +37,7 @@ unitDef = {
   onoffable                     = true,
   seismicSignature              = 4,
   selfDestructAs                = [[MEDIUM_BUILDING]],
-  side                          = [[Drone]],
+  side                          = [[NKG]],
   sightDistance                 = 250,
 
 	  sfxtypes            = {
@@ -59,11 +58,7 @@ unitDef = {
 	  },
 
   smoothAnim                    = true,
-  TEDClass                      = [[METAL]],
-  turnRate                      = 0,
-
   waterline                     = 1,
-  workerTime                    = 0,
   yardMap                       = [[ooooooooo]],
   script                        = [[bmex.lua]],
 

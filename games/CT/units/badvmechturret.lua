@@ -3,7 +3,6 @@
 	  name                = [[Advanced Anti-Mech Missile Turret]],
 	  description         = [[Powerful missile launcher designed to destroy mechs.]],
 	  acceleration        = 0,
-	  bmcode              = [[0]],
 	  brakeRate           = 0,
 	  buildCostEnergy     = 550,
 	  buildCostMetal      = 550,
@@ -16,8 +15,6 @@
 	  corpse              = [[DEAD]],
 	  reclaimable         = false,
 
-	  damageModifier      = 0.2,	
-	  defaultmissiontype  = [[GUARD_NOMOVE]],
 	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 5,
 	  footprintZ          = 5,
@@ -48,8 +45,6 @@
 
 	  smoothAnim          = true,
 	  stealth             = true,
-	  TEDClass            = [[FORT]],
-	  turnRate            = 0,
 	  yardMap             = [[ooooo ooooo ooooo ooooo ooooo]],
           script              = [[badvmechturret.lua]],
 	

@@ -3,7 +3,6 @@
 	  name                = [[Enkei Combat Support Mech]],
 	  description         = [[Anti-Tank Mech - Slightly old cloakable SM model built to destroy tanks.  Fires two armor piercing rounds.]],
 	  acceleration        = 0.12,
-	  bmcode              = [[1]],
 	  brakeRate           = 0.19,
 	  buildCostEnergy     = 325,
 	  buildCostMetal      = 325,
@@ -23,12 +22,10 @@
 	  init_Cloaked        = false,
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[SMALL_UNIT]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[640]],
 	  mass                = 45,
 	  maxDamage           = 800,
 	  maxSlope            = 36,
@@ -64,12 +61,9 @@
 	  side                = [[NKG]],
 	  sightDistance       = 600,
 	  smoothAnim          = true,
-	  steeringmode        = [[2]],
-	  TEDClass            = [[KBOT]],
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  upright             = true,
-	  workerTime          = 0,
           script              = [[bantitankmech.lua]],
 	
 	  weapons             = {

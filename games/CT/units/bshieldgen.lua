@@ -3,7 +3,6 @@
 	  name                = [[Shield Generator]],
 	  description         = [[Very complex, specialized equipment is able to project an energy shield around a large radius.  Stops all weapons, but EMP can penetrate it.]],
 	  acceleration        = 0,
-	  bmcode              = [[0]],
 	  brakeRate           = 0,
 	  buildCostEnergy     = 2500,
 	  buildCostMetal      = 2000,
@@ -33,24 +32,20 @@
 	  seismicSignature    = 4,
 	  pushResistant       = 1,
 	  selfDestructAs      = [[SMALL_BUILDING]],
-	  shootme             = [[1]],
 	  side                = [[NKG]],
 	  sightDistance       = 500,
 	  smoothAnim          = true,
 
-  sounds			= {
-      select = {
-	"ct/shield_chatter",
-	},
+	  sounds			= {
+	      select = {
+		"ct/shield_chatter",
+		},
 
-      ok = {
-	"ct/shield_chatter",
-	},
-  },
+	      ok = {
+		"ct/shield_chatter",
+		},
+	  },
 
-	  TEDClass            = [[FORT]],
-	  turnRate            = 0,
-	  workerTime          = 0,
 	  yardMap             = [[ooo ooo ooo]],
           script              = [[bshieldgen.lua]],
 	

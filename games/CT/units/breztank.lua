@@ -9,9 +9,6 @@ local breztank = {
         buildDistance       = 180,
         builder             = true,
 
-	buildoptions		= {
-	},
-
 	buildTime           = 15,
 	canAttack           = false,
         canAssist           = false,
@@ -21,19 +18,17 @@ local breztank = {
         canReclaim          = true,
 	canFight            = false,
 	canResurrect        = true,
-	canstop             = [[1]],
+	canStop             = true,
 	category            = [[LAND]],
         corpse              = [[DEAD]],
         reclaimable         = false,
 
 
-	defaultmissiontype  = [[Standby]],
         energyMake          = 0,
 	explodeAs           = [[SMALL_UNIT]],
         footprintx          = 2,
 	footprintZ          = 2,
 	idleAutoHeal        = 0,
-	maneuverleashlength = [[640]],
 	mass                = 50,
 	maxDamage           = 750,
         maxSlope            = 18,
@@ -68,8 +63,6 @@ local breztank = {
 	
 	  },
 
-	steeringmode        = [[1]],
-	TEDClass            = [[TANK]],
 	trackOffset         = 3,
 	trackStrength       = 6,
 	trackStretch        = 1,

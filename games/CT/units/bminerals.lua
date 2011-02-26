@@ -5,7 +5,6 @@ unitDef = {
   description                   = [[Meteorite]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 1,
   buildCostMetal                = 1,
@@ -61,7 +60,6 @@ unitDef = {
 	  },
 
   smoothAnim                    = true,
-  TEDClass                      = [[METAL]],
   turnRate                      = 0,
 
   waterline                     = 1,

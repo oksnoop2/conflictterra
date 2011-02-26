@@ -5,7 +5,6 @@ unitDef = {
   description                   = [[Docked Oda Class Cruiser.  Acts as a temporary base, providing defence and unit production. - Build Limit: 1]],
   amphibious                    = false,
   acceleration                  = 0,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 1800,
   buildCostMetal                = 1440,
@@ -29,7 +28,7 @@ unitDef = {
   canAttack                     = true,
   canMove                       = true,
   canPatrol                     = true,
-  canstop                       = [[1]],
+  canStop                       = true,
   canBeAssisted                 = false,
   category                      = [[SINK]],
   collisionVolumeOffsets        = [[0 0 0]],
@@ -39,7 +38,6 @@ unitDef = {
   commander                     = true,
   corpse                        = [[DEAD]],
 
-  defaultmissiontype            = [[GUARD_NOMOVE]],
   energyMake                    = 5,
   energyStorage                 = 0,
   explodeAs                     = [[LARGE_BUILDING]],
@@ -64,7 +62,6 @@ unitDef = {
   side                          = [[NKG]],
   sightDistance                 = 500,
   smoothAnim                    = true,
-  sortbias                      = [[0]],
 
 	  sounds			= {
 	      select = {
@@ -85,8 +82,6 @@ unitDef = {
 	
 	  },
 
-  TEDClass                      = [[PLANT]],
-  turnRate                      = 0,
   workerTime                    = 1,
   yardMap                       = [[cccccccccccccccooooooo cccccccccccccccooooooo cccccccccccccccooooooo oocccccccooccccooooooo oocccccccooccccooooooo oocccccccooccccooooooo oocccccccooccccooooooo oocccccccoocccccoooooc oocccccccoocccccoooooc oocccccccoocccccoooooc oocccccccoocccccoooooc oocccccccoocccccoooooc oocccccccooccccccooocc oocccccccooccccccooocc oocccccccooccccccooocc oocccccccooccccccooocc oocccccccooccooccooocc oocccccccooccoocccoccc oocccccccoocccccccoccc ccccccccccccccccccoccc cccccccccccccccccccccc cccccccccccccccccccccc]],
   script                        = [[bflagshipbase2.lua]],

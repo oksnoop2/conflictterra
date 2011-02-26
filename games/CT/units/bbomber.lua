@@ -13,7 +13,7 @@
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
           canSubmerge         = false,
 	  category            = [[FIXEDWING]],
           collide             = false,
@@ -21,14 +21,12 @@
           cruiseAlt           = 300,
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[VTOL_standby]],
 	  explodeAs           = [[SMALL_UNIT]],
           fireState           = 0,
           floater             = false,
           footprintx          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[1380]],
 	  mass                = 250,
           maxAcc              = 0.5,
 	  maxDamage           = 500,
@@ -54,7 +52,6 @@
 		},
 	  },
 
-	  TEDClass            = [[VTOL]],
           script              = [[bbomber.lua]],
 	
 	  weapons             = {

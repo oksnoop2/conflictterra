@@ -5,7 +5,6 @@ unitDef = {
   description                   = [[Higher yield metal resource extractor that requires power to run.  Must be built over a metal desposit.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 500,
   buildCostMetal                = 400,
@@ -59,11 +58,6 @@ unitDef = {
 	
 	  },
 
-  TEDClass                      = [[METAL]],
-  turnRate                      = 0,
-
-  waterline                     = 1,
-  workerTime                    = 0,
   yardMap                       = [[ooooo ooooo ooooo ooooo ooooo]],
   script                        = [[badvmex.lua]],
 

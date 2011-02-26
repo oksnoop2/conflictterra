@@ -6,7 +6,6 @@ unitDef = {
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = false,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 1200,
   buildCostMetal                = 1200,
@@ -23,7 +22,7 @@ unitDef = {
   buildTime                     = 90,
   canMove                       = true,
   canPatrol                     = true,
-  canstop                       = [[1]],
+  canStop                       = true,
   canBeAssisted                 = false,
   category                      = [[SINK]],
   collisionVolumeOffsets        = [[0 0 0]],
@@ -74,8 +73,6 @@ unitDef = {
 	
 	  },
 
-  TEDClass                      = [[PLANT]],
-  turnRate                      = 0,
   workerTime                    = 1,
   yardMap                       = [[occcccccco cccccccccc cccccccccc cccccccccc cccccccccc cccccccccc cccccccccc cccccccccc cccccccccc  occcccccco]],
   unitRestricted                = 1,

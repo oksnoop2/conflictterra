@@ -4,7 +4,6 @@
 	  description         = [[Radar Hover Tank - Light mobile radar and sonar unit.  Also jams radar.]],
 	  acceleration        = 0.04,
           activateWhenBuilt   = true,
-	  bmcode              = [[1]],
 	  brakeRate           = 0.02,
 	  buildCostEnergy     = 100,
 	  buildCostMetal      = 100,
@@ -16,7 +15,7 @@
 	  canFight            = false,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  canHover            = true,
 	  category            = [[HOVER]],
 	  corpse              = [[DEAD]],
@@ -28,7 +27,6 @@
 	  footprintX          = 2,
 	  footprintZ          = 2,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[640]],
 	  mass                = 50,
 	  maxDamage           = 800,
 	  maxSlope            = 18,
@@ -59,11 +57,8 @@
 	  },
 
 	  smoothAnim          = true,
-	  steeringmode        = [[1]],
-	  TEDClass            = [[TANK]],
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
-	  workerTime          = 0,
           script              = [[bradartank.lua]],
 	
 	

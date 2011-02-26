@@ -4,7 +4,6 @@ unitDef = {
   name                          = [[Submarine Pens]],
   description                   = [[Produces submarines and hover mechs.]],
   acceleration                  = 0,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 400,
   buildCostMetal                = 400,
@@ -25,7 +24,7 @@ unitDef = {
   buildTime                     = 45,
   canMove                       = true,
   canPatrol                     = true,
-  canstop                       = [[1]],
+  canStop                       = true,
   canBeAssisted                 = false,
   category                      = [[FLOAT]],
   collisionVolumeOffsets        = [[0 -16 0]],
@@ -66,10 +65,7 @@ unitDef = {
 		},
 	  },
 
-  smoothAnim                    = true,
-  TEDClass                      = [[PLANT]],
-  turnRate                      = 0,
-  
+  smoothAnim                    = true, 
   waterline                     = 40,
   workerTime                    = 1,
   yardMap                       = [[oooccccccccooo oooccccccccooo oooccccccccooo oooccccccccooo oooccccccccooo oooccccccccooo oooccccccccooo oooccccccccooo oooccccccccooo oooccccccccooo oooccccccccooo oooccccccccooo oooccccccccooo oooccccccccooo]],

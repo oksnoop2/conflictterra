@@ -6,7 +6,6 @@ unitDef = {
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 400,
   buildCostMetal                = 320,
@@ -28,7 +27,6 @@ unitDef = {
   isTargetingUpgrade            = false,
   levelGround                   = true,
   mass                          = 250,
-  maxangledifl                  = [[1]],
   maxDamage                     = 3000,
   maxSlope                      = 36,
   maxVelocity                   = 0,
@@ -56,9 +54,6 @@ unitDef = {
 	},
   },
 
-  TEDClass                      = [[SPECIAL]],
-  turnRate                      = 0,
-  workerTime                    = 0,
   yardMap                       = [[oooo oooo oooo ooooo]],
   script                        = [[badvsearadartower.lua]],
 

@@ -2,7 +2,6 @@ local bseaengineer2 = {
 	name                = [[Advanced Naval Engineer Support Ship]],
 	description         = [[Larger seaworthy construction vessel with more advanced build options.]],
         acceleration        = 0.05,
-	bmcode              = [[1]],
         brakerate           = 0.5,
 	buildCostEnergy     = 280,
 	buildCostMetal      = 224,
@@ -26,13 +25,11 @@ local bseaengineer2 = {
 	canMove		    = true,
 	canPatrol           = true,
         canReclaim          = true,
-	canstop             = [[1]],
+	canStop             = true,
 	category            = [[SHIP]],
         corpse              = [[DEAD]],
         reclaimable         = false,
 
-
-	defaultmissiontype  = [[Standby]],
         energyMake          = 0,
 	energyUse           = 0,
 	explodeAs           = [[SMALL_UNIT]],
@@ -40,7 +37,6 @@ local bseaengineer2 = {
         footprintx          = 5,
 	footprintZ          = 5,
 	idleAutoHeal        = 0,
-	maneuverleashlength = [[640]],
 	mass                = 120,
 	maxDamage           = 500,
 	maxVelocity         = 2.5,
@@ -57,7 +53,6 @@ local bseaengineer2 = {
         side                = [[NKG]],
         sightDistance       = 500,
 	smoothAnim          = true,
-	steeringmode        = [[1]],
 
 	  sounds			= {
 	      select = {
@@ -76,7 +71,6 @@ local bseaengineer2 = {
 	
 	  },
 
-	TEDClass            = [[SHIP]],
         terraformSpeed      = 600,
 	reclaimSpeed        = 300,
 	repairSpeed         = 0.5,

@@ -32,7 +32,7 @@ local bminer = {
         canMove             = true,
         canPatrol           = true,
         canReclaim          = true,
-        canstop             = [[1]],
+	canStop             = true,
         category            = [[LAND]],
         corpse              = [[DEAD]],
         reclaimable         = false,
@@ -42,14 +42,12 @@ local bminer = {
 		max_cargo=25,	--used by mining: how much metal the unit can carry at once before having to return to a drop off
 	},
 
-        defaultmissiontype  = [[Standby]],
         energyMake          = 0,
         explodeAs           = [[SMALL_UNIT]],
         footprintx          = 2,
         footprintZ          = 2,
         idleAutoHeal        = 0,
         leaveTracks         = true,
-        maneuverleashlength = [[640]],
         mass                = 70,
         maxDamage           = 350,
         maxSlope            = 36,
@@ -83,9 +81,7 @@ local bminer = {
         
           },
 
-        smoothAnim          = false,--true,
-        steeringmode        = [[1]],
-        TEDClass            = [[TANK]],
+        smoothAnim          = true,
         terraformSpeed      = 300,
         reclaimSpeed        = 300,
 	repairSpeed         = 0.5,

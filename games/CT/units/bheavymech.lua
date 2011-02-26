@@ -3,7 +3,6 @@
 	  name                = [[Honda Combat Mech MkII]],
 	  description         = [[Assault Mech - High powered SM armed with dual cannons and powerful beam weapons. - Build Limit: 10]],
 	  acceleration        = 0.12,
-	  bmcode              = [[1]],
 	  brakeRate           = 0.25,
 	  buildCostEnergy     = 825,
 	  buildCostMetal      = 825,
@@ -14,17 +13,15 @@
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[BIG_UNIT]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[640]],
 	  mass                = 175,
 	  maxDamage           = 1250,
 	  maxSlope            = 36,
@@ -41,7 +38,6 @@
 	  side                = [[NKG]],
 	  sightDistance       = 600,
 	  smoothAnim          = true,
-	  steeringmode        = [[2]],
 
 	  sounds			= {
 	      select = {
@@ -62,11 +58,9 @@
 	
 	  },
 
-	  TEDClass            = [[KBOT]],
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  upright             = true,
-	  workerTime          = 0,
 	  unitRestricted      = 10,
           script              = [[bassaultmech.lua]],
 	

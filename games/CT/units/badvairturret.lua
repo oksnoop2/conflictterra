@@ -9,13 +9,12 @@
 	  buildPic            = [[badvairturret.png]],
 	  buildTime           = 30,
 	  canAttack           = true,
-	  canstop             = [[1]],
+	  canstop             = true,
 	  category            = [[SINK]],
 	  collisionVolumeTest = 1,
 	  corpse              = [[DEAD]],
 	  reclaimable         = false,
 	
-	  damageModifier      = 0.25,
 	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 5,
 	  footprintZ          = 5,
@@ -51,11 +50,8 @@
 	
 	  },
 
-	  shootme             = [[1]],
 	  side                = [[NKG]],
 	  sightDistance       = 750,
-	  TEDClass            = [[FORT]],
-	  workerTime          = 0,
 	  yardMap             = [[ooooo ooooo ooooo ooooo ooooo]],
           script              = [[badvairturret.lua]],
 	

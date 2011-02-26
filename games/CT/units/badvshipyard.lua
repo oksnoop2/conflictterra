@@ -4,7 +4,6 @@ unitDef = {
   name                          = [[Advanced Naval Factory]],
   description                   = [[Produces more advanced battleships and other sea-faring vessels.]],
   acceleration                  = 0,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 800,
   buildCostMetal                = 800,
@@ -36,7 +35,7 @@ unitDef = {
   buildTime                     = 60,
   canMove                       = true,
   canPatrol                     = true,
-  canstop                       = [[1]],
+  canStop                       = true,
   canBeAssisted                 = false,
   category                      = [[FLOAT]],
   collisionVolumeOffsets        = [[0 48 0]],
@@ -78,9 +77,6 @@ unitDef = {
 	  },
 
   smoothAnim                    = true,
-  TEDClass                      = [[PLANT]],
-  turnRate                      = 0,
-  
   waterline                     = 10,
   workerTime                    = 1,
   yardMap                       = [[oooooocccccccccc oooooocccccccccc oooooocccccccccc oooooocccccccccc oooooocccccccccc oooooocccccccccc oooooocccccccccc oooooocccccccccc oooooocccccccccc oooooocccccccccc oooooocccccccccc oooooocccccccccc oooooocccccccccc oooooocccccccccc]],

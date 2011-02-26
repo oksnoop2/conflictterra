@@ -5,11 +5,10 @@ unitDef = {
   description                   = [[Meteor]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 1,
   buildCostMetal                = 1,
-  iconType           		  = "meteor",
+  iconType           		= "meteor",
   builder                       = false,
   buildPic                      = [[bmex.png]],
   buildTime                     = 1,
@@ -42,7 +41,6 @@ unitDef = {
   sightDistance                 = 250,
 
   smoothAnim                    = true,
-  TEDClass                      = [[METAL]],
   turnRate                      = 0,
 
   waterline                     = 1,

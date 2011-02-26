@@ -3,7 +3,6 @@
 	  name                = [[Ukita Hover Combat Mech]],
 	  description         = [[Hover Assault Mech - Hover-equipped "mech" that is able to instantly move between land and sea.  Armed with both missiles and torpedoes.]],
 	  acceleration        = 0.08,
-	  bmcode              = [[1]],
 	  brakeRate           = 0.11,
 	  buildCostEnergy     = 350,
 	  buildCostMetal      = 350,
@@ -15,17 +14,15 @@
 	  canMove             = true,
 	  canPatrol           = true,
 	  canHover            = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[HOVER]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[SMALL_UNIT]],
 	  footprintX          = 2,
 	  footprintZ          = 2,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[640]],
 	  mass                = 120,
 	  maxDamage           = 550,
 	  maxSlope            = 36,
@@ -42,7 +39,6 @@
 	  sightDistance       = 600,
           sonarDistance       = 600,
 	  smoothAnim          = true,
-	  steeringmode        = [[1]],
 
 	  sounds			= {
 	      select = {
@@ -62,10 +58,8 @@
 	
 	  },
 
-	  TEDClass            = [[TANK]],
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
-	  workerTime          = 0,
           script              = [[bhovermech.lua]],
 	
 	  weapons             = {

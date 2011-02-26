@@ -5,13 +5,12 @@ unitDef = {
   description                   = [[Big Meteor]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 1,
   buildCostMetal                = 1,
   builder                       = false,
 
-  iconType           		  = "meteor",
+  iconType           		= "meteor",
   buildPic                      = [[bmex.png]],
   buildTime                     = 1,
   canattack                     = [[false]],
@@ -43,7 +42,6 @@ unitDef = {
   sightDistance                 = 250,
 
   smoothAnim                    = true,
-  TEDClass                      = [[METAL]],
   turnRate                      = 0,
 
   waterline                     = 1,

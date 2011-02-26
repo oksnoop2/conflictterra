@@ -6,7 +6,6 @@ unitDef = {
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 1000,
   buildCostMetal                = 1000,
@@ -55,9 +54,6 @@ unitDef = {
 	},
   },
 
-  TEDClass                      = [[ENERGY]],
-  turnRate                      = 0,
-  workerTime                    = 0,
   yardMap                       = [[oooo oooo oooo oooo]],
   script                        = [[bnuclearpower.lua]],
 

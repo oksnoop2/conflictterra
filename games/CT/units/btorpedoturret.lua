@@ -4,7 +4,6 @@
 	  description         = [[Fires two torpedoes at nearby naval vessels.]],
 	  acceleration        = 0,
 	  activateWhenBuilt   = true,
-	  bmcode              = [[0]],
 	  brakeRate           = 0,
 	  buildCostEnergy     = 350,
 	  buildCostMetal      = 280,
@@ -12,12 +11,11 @@
 	  buildPic            = [[btorpedoturret.png]],
 	  buildTime           = 20,
 	  canAttack           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[FLOAT]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[GUARD_NOMOVE]],
 	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 3,
 	  footprintZ          = 3,
@@ -49,9 +47,6 @@
 
 	  sightDistance       = 500,
 	  smoothAnim          = true,
-	  TEDClass            = [[WATER]],
-	  turnRate            = 0,
-	  workerTime          = 0,
 	  yardMap             = [[ooo ooo ooo]],
           script              = [[btorpedoturret.lua]],
 	

@@ -5,7 +5,6 @@ unitDef = {
   description                   = [[Floating extractor of usable metal resources from below the seafloor.  Must be built over a metal deposit.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 115,
   buildCostMetal                = 92,
@@ -17,7 +16,6 @@ unitDef = {
   category                      = [[FLOAT]],
   corpse                        = [[DEAD]],
   reclaimable                   = false,
-
 
   energyUse                     = 0,
   explodeAs                     = [[SMALL_BUILDING]],
@@ -51,12 +49,7 @@ unitDef = {
 		"ct/mexthump",
 		},
 	  },
-
-  TEDClass                      = [[METAL]],
-  turnRate                      = 0,
-
   waterline                     = 1,
-  workerTime                    = 0,
   yardMap                       = [[oooo oooo oooo oooo]],
   script                        = [[bseamex.lua]],
 

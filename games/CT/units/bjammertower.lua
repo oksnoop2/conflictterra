@@ -6,7 +6,6 @@ unitDef = {
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 300,
   buildCostMetal                = 300,
@@ -31,7 +30,6 @@ unitDef = {
   idleAutoHeal                  = 0,
   levelGround                   = false,
   mass                          = 210,
-  maxangledifl                  = [[1]],
   maxDamage                     = 550,
   maxSlope                      = 36,
   maxVelocity                   = 0,
@@ -58,9 +56,6 @@ unitDef = {
 	},
   },
 
-  TEDClass                      = [[SPECIAL]],
-  turnRate                      = 0,
-  workerTime                    = 0,
   yardMap                       = [[oo oo]],
   script                        = [[bjammertower.lua]],
 

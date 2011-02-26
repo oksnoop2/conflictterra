@@ -6,8 +6,6 @@
 	  activateWhenBuilt   = true,
           airStrafe           = 0,
           amphibious          = false,
-          bankscale           = [[1.5]],
-	  bmcode              = [[0]],
 	  brakeRate           = 1.88,
 	  buildCostEnergy     = 200,
 	  buildCostMetal      = 200,
@@ -28,14 +26,13 @@
 	  canMove             = true,
 	  canPatrol           = true,
           canReclaim          = false,
-	  canstop             = [[1]],
+	  canStop             = true,
           canSubmerge         = false,
 	  category            = [[GUNSHIP]],
           collide             = true,
 	  corpse              = [[DEAD]],
           cruiseAlt           = 100,
 	
-	  defaultmissiontype  = [[VTOL_standby]],
           energyMake          = 0,
 	  energyStorage       = 0,
 	  energyUse           = 0,
@@ -45,7 +42,6 @@
 	  footprintZ          = 5,
 	  hoverAttack         = true,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[1280]],
 	  mass                = 2000,
 	  maxDamage           = 1150,
 	  maxVelocity         = 3,
@@ -54,7 +50,6 @@
 	  minCloakDistance    = 100,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
-	  norestrict          = [[1]],
 	  objectName          = [[bsupplydepotmobile.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[BIG_UNIT]],
@@ -62,7 +57,6 @@
 	  side                = [[NKG]],
 	  sightDistance       = 600,
 	  smoothAnim          = true,
-	  steeringmode        = [[1]],
 
 	  sounds			= {
 	      select = {
@@ -73,9 +67,7 @@
 		},
 	  },
 
-	  TEDClass            = [[VTOL]],
 	  turnRate            = 300,
-	  workerTime          = 1,
 	  upright             = true,
           script              = [[bsupplydepotmobile.lua]],
 	

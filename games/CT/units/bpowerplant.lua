@@ -6,7 +6,6 @@ unitDef = {
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 100,
   buildCostMetal                = 100,
@@ -23,7 +22,6 @@ unitDef = {
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
 
-  damageModifier                = 0.25,
   energyUse                     = -3,
   energyMake                    = 0,
   explodeAs                     = [[MEDIUM_BUILDING]],
@@ -56,9 +54,6 @@ unitDef = {
 	},
   },
 
-  TEDClass                      = [[ENERGY]],
-  turnRate                      = 0,
-  workerTime                    = 0,
   yardMap                       = [[ooooooooo]],
   script                        = [[bpowerplant.lua]],
 

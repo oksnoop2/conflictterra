@@ -6,8 +6,6 @@
 	  activateWhenBuilt   = true,
           airStrafe           = 0,
 	  amphibious          = false,
-	  bankscale           = [[0.5]],
-	  bmcode              = [[0]],
 	  brakeRate           = 3.75,
 	  buildCostEnergy     = 600,
 	  buildCostMetal      = 600,
@@ -19,7 +17,7 @@
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  canSubmerge         = false,
 	  category            = [[GUNSHIP]],
 	  collide             = false,
@@ -31,14 +29,12 @@
           cruiseAlt           = 175,
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[VTOL_standby]],
 	  explodeAs           = [[LARGE_UNIT]],
 	  floater             = true,
           footprintx          = 6,
 	  footprintZ          = 6,
           hoverAttack         = true,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[500]],
 	  mass                = 2500,
 	  maxDamage           = 4500,
 	  maxVelocity         = 3,
@@ -53,7 +49,6 @@
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,
-	  steeringmode        = [[1]],
 
 	  sounds			= {
 	      select = {
@@ -73,10 +68,8 @@
 	
 	  },
 
-	  TEDClass            = [[VTOL]],
 	  turnRate            = 297,
 	  upright             = true,
-	  workerTime          = 0,
           script              = [[bmechcruiser.lua]],
 	
 	  weapons             = {

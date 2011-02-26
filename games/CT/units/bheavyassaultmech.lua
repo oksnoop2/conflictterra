@@ -3,7 +3,6 @@
 	  name                = [[Izanagi Assault Mech]],
 	  description         = [[Heavy Assault Mech - Prototype SM designed to push SM technology to its limit.  Armed with powerful artillery and heavy cannons. - Build Limit: 3]],
 	  acceleration        = 0.1,
-	  bmcode              = [[1]],
 	  brakeRate           = 0.22,
 	  buildCostEnergy     = 2000,
 	  buildCostMetal      = 2000,
@@ -14,17 +13,15 @@
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[BIG_UNIT]],
 	  footprintX          = 6,
 	  footprintZ          = 6,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[640]],
 	  mass                = 6000,
 	  maxDamage           = 50000,
 	  maxSlope            = 36,
@@ -50,8 +47,6 @@
 	
 	  },
 
-
-
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,
@@ -65,12 +60,9 @@
 		},
 	  },
 
-	  steeringmode        = [[2]],
-	  TEDClass            = [[KBOT]],
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  upright             = true,
-	  workerTime          = 0,
 	  unitRestricted      = 3,
           script              = [[bheavyassaultmech.lua]],
 	

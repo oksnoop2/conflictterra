@@ -3,7 +3,6 @@
 	  name                = [[Shibata Combat Support Mech MKII]],
 	  description         = [[Heavy Anti-Mech Mech - Heavy SM armed to the teeth with anti-mech missiles. - Build Limit: 10]],
 	  acceleration        = 0.1,
-	  bmcode              = [[1]],
 	  brakeRate           = 0.24,
 	  buildCostEnergy     = 975,
 	  buildCostMetal      = 975,
@@ -14,7 +13,7 @@
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
@@ -24,7 +23,6 @@
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[640]],
 	  mass                = 2000,
 	  maxDamage           = 1600,
 	  maxSlope            = 36,
@@ -59,12 +57,9 @@
 	
 	  },
 
-	  steeringmode        = [[2]],
-	  TEDClass            = [[KBOT]],
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  upright             = true,
-	  workerTime          = 0,
 	  unitRestricted      = 10,
           script              = [[bheavymissilemechmkii.lua]],
 	

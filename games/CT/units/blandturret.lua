@@ -3,7 +3,6 @@
 	  name                = [[Dual Cannon Turret]],
 	  description         = [[Cheap, mildly effective turret that fires on terrestrial units.  Fires two cannons.]],
 	  acceleration        = 0,
-	  bmcode              = [[0]],
 	  brakeRate           = 0,
 	  buildCostEnergy     = 275,
 	  buildCostMetal      = 275,
@@ -11,7 +10,7 @@
 	  buildPic            = [[blandturret.png]],
 	  buildTime           = 20,
 	  canAttack           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[SINK]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
@@ -35,9 +34,6 @@
 	  side                = [[NKG]],
 	  sightDistance       = 540,
 	  smoothAnim          = true,
-	  TEDClass            = [[FORT]],
-	  turnRate            = 0,
-	  workerTime          = 0,
 	  yardMap             = [[oooo oooo oooo oooo]],
 
 	  sfxtypes            = {

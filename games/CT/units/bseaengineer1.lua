@@ -2,7 +2,6 @@ local bseaengineer1 = {
 	name                = [[Naval Engineer Support Ship]],
 	description         = [[Seaworthy construction vessel.  Can build floating economy buildings, factories, and defences.]],
         acceleration        = 0.05,
-	bmcode              = [[1]],
         brakerate           = 0.5,
 	buildCostEnergy     = 140,
 	buildCostMetal      = 112,
@@ -25,13 +24,11 @@ local bseaengineer1 = {
 	canMove		    = true,
 	canPatrol           = true,
         canReclaim          = true,
-	canstop             = [[1]],
+	canStop             = true,
 	category            = [[SHIP]],
         corpse              = [[DEAD]],
         reclaimable         = false,
 
-
-	defaultmissiontype  = [[Standby]],
         energyMake          = 0,
 	energyUse           = 0,
 	explodeAs           = [[SMALL_UNIT]],
@@ -39,7 +36,6 @@ local bseaengineer1 = {
         footprintx          = 3,
 	footprintZ          = 3,
 	idleAutoHeal        = 0,
-	maneuverleashlength = [[640]],
 	mass                = 90,
 	maxDamage           = 350,
 	maxVelocity         = 2,
@@ -75,7 +71,6 @@ local bseaengineer1 = {
 	
 	  },
 
-	TEDClass            = [[SHIP]],
         terraformSpeed      = 600,
 	reclaimSpeed        = 300,
 	repairSpeed         = 0.5,

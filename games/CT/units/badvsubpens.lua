@@ -4,7 +4,6 @@ unitDef = {
   name                          = [[Advanced Submarine Pens]],
   description                   = [[Produces more advanced submarines and hover mechs.]],
   acceleration                  = 0,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 800,
   buildCostMetal                = 800,
@@ -27,7 +26,7 @@ unitDef = {
   buildTime                     = 60,
   canMove                       = true,
   canPatrol                     = true,
-  canstop                       = [[1]],
+  canStop                       = true,
   canBeAssisted                 = false,
   category                      = [[FLOAT]],
   collisionVolumeOffsets        = [[0 64 0]],
@@ -68,10 +67,7 @@ unitDef = {
 		"ct/sonarbing",
 		},
 	  },
-
-  TEDClass                      = [[PLANT]],
-  turnRate                      = 0,
-  
+ 
   waterline                     = 5,
   workerTime                    = 1,
   yardMap                       = [[ooocccccccccooo ooocccccccccooo ooocccccccccooo ooocccccccccooo ooocccccccccooo ooocccccccccooo ooocccccccccooo ooocccccccccooo ooocccccccccooo ooocccccccccooo ooocccccccccooo ooocccccccccooo ooocccccccccooo ooocccccccccooo ooocccccccccooo]],

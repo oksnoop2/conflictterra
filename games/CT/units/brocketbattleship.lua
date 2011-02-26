@@ -4,7 +4,6 @@
 	  description         = [[Missile Battleship - Specialized navy vessel built to fire four missiles.]],
 	  acceleration        = 0.03,
           activateWhenBuilt   = true,
-	  bmcode              = [[1]],
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 700,
 	  buildCostMetal      = 560,
@@ -15,13 +14,12 @@
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[SHIP]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 
 	
-	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[MEDIUM_UNIT]],
           floater             = true,
 	  footprintX          = 5,
@@ -31,7 +29,6 @@
           collisionVolumeTest    = 1,
           collisionVolumeType    = [[box]],
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[640]],
 	  mass                = 350,
 	  maxDamage           = 4000,
 	  maxVelocity         = 1.8,
@@ -47,7 +44,6 @@
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,
-	  steeringmode        = [[1]],
 
 	  sounds			= {
 	      select = {
@@ -67,9 +63,7 @@
 	
 	  },
 
-	  TEDClass            = [[SHIP]],
 	  turnRate            = 193,
-	  workerTime          = 0,
           waterline           = 5,
           script              = [[brocketbattleship.lua]],
 	

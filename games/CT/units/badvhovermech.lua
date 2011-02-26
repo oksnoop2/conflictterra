@@ -3,7 +3,6 @@
 	  name                = [[Yagyu Hover Combat Mech]],
 	  description         = [[High-Tech Hover Assault Mech - Newer hovercraft "mech" armed with powerful beam weapons. - Build Limit: 10]],
 	  acceleration        = 0.07,
-	  bmcode              = [[1]],
 	  brakeRate           = 0.08,
 	  buildCostEnergy     = 1050,
 	  buildCostMetal      = 1050,
@@ -15,17 +14,15 @@
 	  canMove             = true,
 	  canPatrol           = true,
 	  canHover            = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[HOVER]],
 	  corpse              = [[DEAD]],
 	  reclaimable         = false,
 	
-	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[640]],
 	  mass                = 350,
 	  maxDamage           = 850,
 	  maxSlope            = 36,
@@ -42,7 +39,6 @@
 	  side                = [[NKG]],
 	  sightDistance       = 600,
 	  smoothAnim          = true,
-	  steeringmode        = [[1]],
 
 
 
@@ -56,10 +52,8 @@
 	  },
 	 
 
-	  TEDClass            = [[TANK]],
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
-	  workerTime          = 0,
 	  unitRestricted      = 10,
           script              = [[badvhovermech.lua]],
 	

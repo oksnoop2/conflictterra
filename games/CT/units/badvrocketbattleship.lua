@@ -3,7 +3,6 @@
 	  name                = [[Sasaki Class Battleship]],
 	  description         = [[Barrage Battleship - Naval vessel that attacks with three missile barrages. - Build Limit: 5]],
 	  acceleration        = 0.03,
-	  bmcode              = [[1]],
 	  brakeRate           = 0.03,
 	  buildCostEnergy     = 2300,
 	  buildCostMetal      = 1840,
@@ -14,12 +13,11 @@
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[SHIP]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[BIG_UNIT]],
           floater             = true,
 	  footprintX          = 6,
@@ -29,7 +27,6 @@
           collisionVolumeTest    = 1,
           collisionVolumeType    = [[box]],
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[640]],
 	  mass                = 2300,
 	  maxDamage           = 5000,
 	  maxVelocity         = 1.5,
@@ -45,7 +42,6 @@
 	  side                = [[NKG]],
 	  sightDistance       = 440,
 	  smoothAnim          = true,
-	  steeringmode        = [[1]],
 
 	  sounds			= {
 	      select = {
@@ -65,9 +61,7 @@
 	
 	  },
 
-	  TEDClass            = [[SHIP]],
 	  turnRate            = 90,
-	  workerTime          = 0,
           waterline           = 5,
 	  unitRestricted      = 5,
           script              = [[badvrocketbattleship.lua]],

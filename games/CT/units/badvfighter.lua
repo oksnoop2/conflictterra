@@ -13,7 +13,7 @@
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
           canSubmerge         = false,
 	  category            = [[FIXEDWING]],
           collide             = false,
@@ -21,7 +21,6 @@
           cruiseAlt           = 200,
 	  reclaimable         = false,
 	
-	  defaultmissiontype  = [[VTOL_standby]],
 	  explodeAs           = [[SMALL_UNIT]],
           floater             = false,
           footprintx          = 2,
@@ -29,7 +28,6 @@
 	  idleAutoHeal        = 0,
           frontToSpeed        = 0.5,
           isFighter           = true,
-	  maneuverleashlength = [[1280]],
 	  mass                = 150,
           maxAcc              = 0.5,
 	  maxDamage           = 500,
@@ -54,7 +52,6 @@
 	  sightDistance       = 700,
 	  smoothAnim          = true,
           speedToFront        = 0.5,
-	  TEDClass            = [[VTOL]],
 	  unitRestricted      = 20,
           script              = [[badvfighter.lua]],
 	

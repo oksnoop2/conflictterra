@@ -5,7 +5,6 @@ unitDef = {
   description                   = [[Produces more advanced combat and support mechs.  Can morph back into the Matsudaira Class Cruiser.]],
   amphibious                    = false,
   acceleration                  = 0,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 1200,
   buildCostMetal                = 1200,
@@ -36,7 +35,7 @@ unitDef = {
   buildTime                     = 60,
   canMove                       = true,
   canPatrol                     = true,
-  canstop                       = [[1]],
+  canStop                       = true,
   canBeAssisted                 = false,
   category                      = [[SINK]],
   collisionVolumeOffsets        = [[0 0 0]],
@@ -78,9 +77,6 @@ unitDef = {
 	  },
 
   smoothAnim                    = true,
-  sortbias                      = [[0]],
-  TEDClass                      = [[PLANT]],
-  turnRate                      = 0,
   workerTime                    = 1,
   yardMap                       = [[
 oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc oooooooocccccccccccc]],

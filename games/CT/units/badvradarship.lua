@@ -3,7 +3,6 @@
 	  name                = [[Wakaru Class Radar Ship]],
 	  description         = [[Long Range Radar Ship - Advanced radar and sonar equipped vessel. - Build Limit: 10]],
 	  acceleration        = 0.05,
-	  bmcode              = [[1]],
 	  brakeRate           = 0.06,
 	  buildCostEnergy     = 400,
 	  buildCostMetal      = 320,
@@ -15,12 +14,11 @@
 	  canFight            = false,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[SHIP]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[BIG_UNIT]],
           floater             = true,
 	  footprintX          = 5,
@@ -30,7 +28,6 @@
           collisionVolumeTest    = 1,
           collisionVolumeType    = [[box]],
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[640]],
 	  mass                = 375,
 	  maxDamage           = 3500,
 	  maxVelocity         = 2.5,
@@ -48,7 +45,6 @@
 	  side                = [[NKG]],
 	  sightDistance       = 400,
 	  smoothAnim          = true,
-	  steeringmode        = [[1]],
 
 	  sounds			= {
 	      select = {
@@ -59,9 +55,7 @@
 		},
 	  },
 
-	  TEDClass            = [[SHIP]],
 	  turnRate            = 416,
-	  workerTime          = 0,
           waterline           = 4,
 	  unitRestricted      = 10,
           script              = [[badvradarship.lua]],

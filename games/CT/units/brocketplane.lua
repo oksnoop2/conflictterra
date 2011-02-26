@@ -12,7 +12,7 @@
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
           canSubmerge         = false,
 	  category            = [[FIXEDWING]],
           collide             = false,
@@ -20,16 +20,12 @@
           cruiseAlt           = 150,
           reclaimable         = false,
 
-	
-	  defaultmissiontype  = [[VTOL_standby]],
 	  explodeAs           = [[SMALL_UNIT]],
           floater             = false,
           footprintx          = 2,
 	  footprintZ          = 2,
           frontToSpeed        = 0,
 	  idleAutoHeal        = 0,
-          isFighter           = true,
-	  maneuverleashlength = [[1280]],
 	  mass                = 75,
           maxAcc              = 0.5,
 	  maxDamage           = 325,
@@ -43,8 +39,6 @@
 
 	  side                = [[NKG]],
 	  sightDistance       = 600,
-          size                = [[1]],
-          sizedecay           = [[0]],
 	  smoothAnim          = true,
 
 	  sounds			= {
@@ -67,8 +61,6 @@
 	  },
 
           speedToFront        = 0,
-          stages              = [[50]],
-	  TEDClass            = [[VTOL]],
           script              = [[brocketplane.lua]],
 	
 	  weapons             = {

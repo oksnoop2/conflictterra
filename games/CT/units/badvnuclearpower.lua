@@ -5,7 +5,6 @@ unitDef = {
   description                   = [[Very advanced reactor that has a large explosion on destruction.  Adds +50 energy.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 2000,
   buildCostMetal                = 2000,
@@ -22,7 +21,6 @@ unitDef = {
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
 
-  damageModifier                = 0.95,
   energyMake                    = 0,
   energyUse                     = -50,
   explodeAs                     = [[VOLATILE_BUILDING]],
@@ -55,9 +53,6 @@ unitDef = {
 	},
   },
 
-  TEDClass                      = [[ENERGY]],
-  turnRate                      = 0,
-  workerTime                    = 0,
   yardMap                       = [[ooooo ooooo ooooo ooooo ooooo]],
   script                        = [[badvnuclearpower.lua]],
 

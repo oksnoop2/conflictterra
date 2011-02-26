@@ -3,7 +3,6 @@
 	  name                = [[Gatling Turret]],
 	  description         = [[Rapid fire cannon designed to take out several weaker units.]],
 	  acceleration        = 0,
-	  bmcode              = [[0]],
 	  brakeRate           = 0,
 	  buildCostEnergy     = 150,
 	  buildCostMetal      = 150,
@@ -11,7 +10,7 @@
 	  buildPic            = [[bgatlingturret.png]],
 	  buildTime           = 12,
 	  canAttack           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[SINK]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
@@ -55,9 +54,6 @@
 	  },
 
 	  smoothAnim          = true,
-	  TEDClass            = [[FORT]],
-	  turnRate            = 0,
-	  workerTime          = 0,
 	  yardMap             = [[ooo ooo ooo]],
           script              = [[bgatlingturret.lua]],
 	

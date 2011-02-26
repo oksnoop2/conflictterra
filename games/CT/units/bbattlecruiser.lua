@@ -6,8 +6,6 @@
 	  activateWhenBuilt   = true,
           airStrafe           = 0,
 	  amphibious          = false,
-	  bankscale           = [[0.5]],
-	  bmcode              = [[0]],
 	  brakeRate           = 3.75,
 	  buildCostEnergy     = 2000,
 	  buildCostMetal      = 2000,
@@ -19,7 +17,7 @@
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  canSubmerge         = false,
 	  category            = [[GUNSHIP]],
 	  collide             = false,
@@ -31,14 +29,12 @@
           cruiseAlt           = 175,
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[VTOL_standby]],
 	  explodeAs           = [[LARGE_UNIT]],
 	  floater             = true,
           footprintx          = 7,
 	  footprintZ          = 7,
           hoverAttack         = true,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[500]],
 	  mass                = 2500,
 	  maxDamage           = 6000,
 	  maxVelocity         = 3,
@@ -46,14 +42,12 @@
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS SUB]],
 	  objectName          = [[bbattlecruiser2.s3o]],
-	  scale               = [[1]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[LARGE_UNIT]],
 
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,
-	  steeringmode        = [[1]],
 
 	  sounds			= {
 	      select = {
@@ -64,10 +58,8 @@
 		},
 	  },
 
-	  TEDClass            = [[VTOL]],
 	  turnRate            = 297,
 	  upright             = true,
-	  workerTime          = 0,
 	  unitRestricted      = 8,
           script              = [[bbattlecruiser2.lua]],
 	

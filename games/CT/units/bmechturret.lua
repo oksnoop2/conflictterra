@@ -3,7 +3,6 @@
 	  name                = [[Anti-Mech Missile Turret]],
 	  description         = [[Hidden defensive structure that fires three anti-mech missiles.]],
 	  acceleration        = 0,
-	  bmcode              = [[0]],
 	  brakeRate           = 0,
 	  buildCostEnergy     = 275,
 	  buildCostMetal      = 275,
@@ -11,14 +10,11 @@
 	  buildPic            = [[bmechturret.png]],
 	  buildTime           = 20,
 	  canAttack           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[SINK]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
 
-	  damageModifier      = 0.2,	
-	  defaultmissiontype  = [[GUARD_NOMOVE]],
-	  digger              = [[1]],
 	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 4,
 	  footprintZ          = 2,
@@ -49,8 +45,6 @@
 		},
 	  },
 
-	  TEDClass            = [[FORT]],
-	  turnRate            = 0,
 	  yardMap             = [[oooo oooo]],
           script              = [[bmechturret.lua]],
 	

@@ -6,8 +6,6 @@
 	  activateWhenBuilt   = true,
           airStrafe           = 0,
           amphibious          = true,
-          bankscale           = [[1.5]],
-	  bmcode              = [[0]],
 	  brakeRate           = 1.88,
 	  buildCostEnergy     = 1000,
 	  buildCostMetal      = 1000,
@@ -23,7 +21,7 @@
 	  canMove             = true,
 	  canPatrol           = true,
           canReclaim          = true,
-	  canstop             = [[1]],
+	  canStop             = true,
           canSubmerge         = false,
 	  category            = [[GUNSHIP]],
           collisionVolumeOffsets = [[0 0 0]],
@@ -35,7 +33,6 @@
 	  corpse              = [[DEAD]],
           cruiseAlt           = 175,
 	
-	  defaultmissiontype  = [[VTOL_standby]],
           energyMake          = 5,
 	  energyStorage       = 0,
 	  energyUse           = 0,
@@ -45,7 +42,6 @@
 	  footprintZ          = 7,
 	  hoverAttack         = true,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[1280]],
 	  mass                = 2500,
 	  maxDamage           = 5000,
 	  maxVelocity         = 4,
@@ -63,7 +59,6 @@
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,
-	  steeringmode        = [[1]],
 
 	  sounds			= {
 	      select = {
@@ -83,9 +78,7 @@
 	
 	  },
 
-	  TEDClass            = [[VTOL]],
 	  turnRate            = 300,
-	  workerTime          = 12,
 	  upright             = true,
 	  unitRestricted      = 1,
           script              = [[bflagship2.lua]],

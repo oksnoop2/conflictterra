@@ -2,7 +2,6 @@
 	  unitname            = [[bradarplane]],
 	  name                = [[Kangae Type Radar Plane]],
 	  description         = [[Radar Plane - High flying plane equipped with far reaching radar.]],
-          altfromsealevel     = [[1]],
           amphibious          = false,
 	  buildCostEnergy     = 250,
 	  buildCostMetal      = 250,
@@ -16,7 +15,7 @@
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
           canSubmerge         = false,
 	  category            = [[FIXEDWING]],
           collide             = false,
@@ -24,7 +23,6 @@
           cruiseAlt           = 400,
           reclaimable         = false,
 	
-	  defaultmissiontype  = [[VTOL_standby]],
           energyUse           = 1.5,
 	  explodeAs           = [[SMALL_UNIT]],
           floater             = false,
@@ -41,7 +39,6 @@
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
 	  objectName          = [[bradarplane.s3o]],
           radarDistance       = 1000,
-          scale               = [[1]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[SMALL_UNIT]],
 	  side                = [[NKG]],
@@ -58,7 +55,6 @@
 		},
 	  },
 
-	  TEDClass            = [[VTOL]],
           script              = [[bradarplane.lua]],
 	
 	
