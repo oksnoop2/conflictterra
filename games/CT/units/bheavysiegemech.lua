@@ -63,7 +63,8 @@
 
 	  steeringmode        = [[1]],
 	  TEDClass            = [[KBOT]],
-	  turnRate            = 231,
+	  turnInPlace         = 1,
+	  turnRate            = 1000,
 	  unitRestricted      = 15,
           script              = [[bheavysiegemech.lua]],
 	

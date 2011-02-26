@@ -67,7 +67,8 @@
 
 	  steeringmode        = [[2]],
 	  TEDClass            = [[KBOT]],
-	  turnRate            = 1056,
+	  turnInPlace         = 1,
+	  turnRate            = 1000,
 	  upright             = true,
 	  workerTime          = 0,
 	  unitRestricted      = 3,
