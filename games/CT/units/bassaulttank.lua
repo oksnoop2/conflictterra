@@ -69,8 +69,8 @@
 	  trackStretch        = 1,
 	  trackType           = [[StdTank]],
 	  trackWidth          = 24,
-	  turninplace         = 0,
-	  turnRate            = 550,
+	  turnInPlace         = 1,
+	  turnRate            = 500,
 	  workerTime          = 0,
           script              = [[bassaulttank.lua]],
 	

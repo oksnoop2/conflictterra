@@ -69,9 +69,8 @@
 	  trackStretch        = 1,
 	  trackType           = [[StdTank]],
 	  trackWidth          = 30,
-	  turninplace         = 0,
-	  turnInPlace         = 0,
-	  turnRate            = 400,
+	  turnInPlace         = 1,
+	  turnRate            = 500,
 	  workerTime          = 0,
           script              = [[bmissiletank.lua]],
 	
