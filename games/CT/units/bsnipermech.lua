@@ -52,7 +52,6 @@
 	  sightDistance       = 750,
 	  smoothAnim          = true,
 	  steeringmode        = [[2]],
-	  stealth             = true,
 	  TEDClass            = [[KBOT]],
 	  turninplace         = 0,
 	  turnRate            = 1338,
