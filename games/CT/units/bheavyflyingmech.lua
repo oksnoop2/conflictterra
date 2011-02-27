@@ -51,8 +51,7 @@
 	  side                = [[NKG]],
 	  sightDistance       = 500,
 	  smoothAnim          = true,
-	  turnRate            = 792,
-	  workerTime          = 0,
+	  turnRate            = 750,
 	  unitRestricted      = 10,
           script              = [[bheavyflyingmech.lua]],
 	

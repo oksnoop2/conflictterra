@@ -58,7 +58,7 @@
 		},
 	  },
 
-	  turnRate            = 297,
+	  turnRate            = 250,
 	  upright             = true,
 	  unitRestricted      = 8,
           script              = [[bbattlecruiser2.lua]],

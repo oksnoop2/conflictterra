@@ -71,8 +71,7 @@
 	  },
 
 	  smoothAnim          = true,
-	  turnRate            = 300,
-	  workerTime          = 12,
+	  turnRate            = 250,
 	  upright             = true,
 	  unitRestricted      = 1,
           script              = [[bbattleflagship.lua]],

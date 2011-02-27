@@ -48,7 +48,6 @@
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,
-	  steeringmode        = [[1]],
 
 	  sounds			= {
 	      select = {
@@ -68,7 +67,7 @@
 	
 	  },
 
-	  turnRate            = 297,
+	  turnRate            = 250,
 	  upright             = true,
 	  workerTime          = 0,
           script              = [[badvmechcruiser.lua]],

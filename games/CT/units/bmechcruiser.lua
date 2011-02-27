@@ -42,7 +42,6 @@
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS SUB]],
 	  objectName          = [[bmechcruiser.s3o]],
-	  scale               = [[1]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[LARGE_UNIT]],
 
@@ -68,7 +67,7 @@
 	
 	  },
 
-	  turnRate            = 297,
+	  turnRate            = 250,
 	  upright             = true,
           script              = [[bmechcruiser.lua]],
 	

@@ -67,7 +67,7 @@
 	
 	  },
 
-	  turnRate            = 297,
+	  turnRate            = 250,
 	  upright             = true,
           script              = [[badvtankcruiser.lua]],
 	

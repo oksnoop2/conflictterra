@@ -50,7 +50,6 @@
 	  minCloakDistance    = 100,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS SUB]],
-	  norestrict          = [[1]],
 	  objectName          = [[bflagship2.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[BIG_UNIT]],
@@ -78,7 +77,7 @@
 	
 	  },
 
-	  turnRate            = 300,
+	  turnRate            = 250,
 	  upright             = true,
 	  unitRestricted      = 1,
           script              = [[bflagship2.lua]],

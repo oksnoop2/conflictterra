@@ -67,7 +67,7 @@
 		},
 	  },
 
-	  turnRate            = 300,
+	  turnRate            = 250,
 	  upright             = true,
           script              = [[bsupplydepotmobile.lua]],
 	

@@ -42,7 +42,6 @@
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS SUB]],
 	  objectName          = [[badvaircruiser.s3o]],
-	  scale               = [[1]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[LARGE_UNIT]],
 
@@ -69,9 +68,8 @@
 	
 	  },
 
-	  turnRate            = 297,
+	  turnRate            = 250,
 	  upright             = true,
-	  workerTime          = 0,
           script              = [[badvaircruiser.lua]],
 	
 	  weapons             = {

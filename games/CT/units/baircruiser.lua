@@ -17,7 +17,7 @@
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  canSubmerge         = false,
 	  category            = [[GUNSHIP]],
 	  collide             = false,
@@ -42,7 +42,6 @@
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS SUB]],
 	  objectName          = [[baircruiser.s3o]],
-	  scale               = [[1]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[LARGE_UNIT]],
 
@@ -68,7 +67,7 @@
 	
 	  },
 
-	  turnRate            = 297,
+	  turnRate            = 250,
 	  upright             = true,
           script              = [[baircruiser.lua]],
 	

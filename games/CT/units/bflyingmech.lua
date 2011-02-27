@@ -61,7 +61,7 @@
 	  side                = [[NKG]],
 	  sightDistance       = 500,
 	  smoothAnim          = true,
-	  turnRate            = 693,
+	  turnRate            = 750,
           script              = [[bflyingmech.lua]],
 	
 	  weapons             = {
