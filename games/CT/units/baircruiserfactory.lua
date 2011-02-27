@@ -6,8 +6,8 @@ unitDef = {
   amphibious                    = false,
   acceleration                  = 0,
   brakeRate                     = 0,
-  buildCostEnergy               = 600,
-  buildCostMetal                = 600,
+  buildCostEnergy               = 300,
+  buildCostMetal                = 300,
   builder                       = true,
 
   buildoptions                  = {
@@ -23,7 +23,7 @@ unitDef = {
 
 
   buildPic                      = [[baircruiserfactory.png]],
-  buildTime                     = 45,
+  buildTime                     = 30,
   canMove                       = true,
   canPatrol                     = true,
   canStop                       = true,

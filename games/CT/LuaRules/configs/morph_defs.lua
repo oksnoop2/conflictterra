@@ -185,9 +185,9 @@ local morphDefs = {
     },
     {
       into = 'badvaircruiser',
-      metal = 1200,
-      energy = 1200,
-      time = 60,
+      metal = 600,
+      energy = 600,
+      time = 45,
     },
   },
  

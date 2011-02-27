@@ -6,8 +6,8 @@ unitDef = {
   amphibious                    = false,
   acceleration                  = 0,
   brakeRate                     = 0,
-  buildCostEnergy               = 1200,
-  buildCostMetal                = 1200,
+  buildCostEnergy               = 600,
+  buildCostMetal                = 600,
   builder                       = true,
 
   buildoptions                  = {
@@ -29,7 +29,7 @@ unitDef = {
 
 
   buildPic                      = [[badvaircruiserfactory.png]],
-  buildTime                     = 60,
+  buildTime                     = 45,
   canMove                       = true,
   canPatrol                     = true,
   canStop                       = true,
