@@ -3,7 +3,6 @@
 	  name                = [[Laser]],
 	  description         = [[Do you feel lucky punk?]],
 	  acceleration        = 0,
-	  bmcode              = [[0]],
 	  brakeRate           = 0,
 	  buildCostEnergy     = 100,
 	  buildCostMetal      = 100,
@@ -11,13 +10,12 @@
 	  buildPic            = [[pnfieldlaser.png]],
 	  buildTime           = 30,
 	  canAttack           = true,
-	  canstop             = [[1]],
+	  canStop             = true,
 	  category            = [[SINK]],
 	  corpse              = [[DEAD]],
 	  reclaimable         = false,
-	  radarDistance       =  300,
-	  damageModifier      = 0.25,
-	  --defaultmissiontype  = [[GUARD_NOMOVE]],
+	  radarDistance       = 300,
+
 	  explodeAs           = [[SMALL_BUILDING]],
 	  fireState           = 2,
           footprintx          = 2,
@@ -49,8 +47,6 @@
 	  },
 
 	  smoothAnim          = true,
-	  turnRate            = 0,
-	  workerTime          = 0,
 	  yardMap             = [[ooooo ooooo ooooo ooooo ooooo]],
           --script              = [[pnfieldlaser.lua]],
 	

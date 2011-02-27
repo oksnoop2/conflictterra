@@ -5,7 +5,6 @@ unitDef = {
   description                   = [[Extracts usable metal resources from below the ground.  Must be built over a metal deposit.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
-  bmcode                        = [[0]],
   brakeRate                     = 0,
   buildCostEnergy               = 75,
   buildCostMetal                = 60,
@@ -59,11 +58,7 @@ unitDef = {
 	  },
 
   smoothAnim                    = true,
-  TEDClass                      = [[METAL]],
-  turnRate                      = 0,
-
   waterline                     = 1,
-  workerTime                    = 0,
   yardMap                       = [[ooooooooo]],
   script                        = [[bmex.lua]],
 
