@@ -1,6 +1,6 @@
 local kdroneminer = {
-	name                = [[Drone Petard]],
-	description         = [[The Drone Petard is a walking bomb that deals higher damage to buildings.]],
+	name                = [[Light Battle Drone]],
+	description         = [[The Light Battle Drone is a lightly armored unit strong in mass..]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdroneminer.png]],
@@ -24,7 +24,7 @@ local kdroneminer = {
     reclaimable         = false,
     defaultmissiontype  = [[Standby]],
     energyMake          = 0,
-	explodeAs           = [[DRONE_PETARD]],
+	explodeAs           = [[SMALL_UNIT]],
     footprintx          = 2,
 	footprintZ          = 2,
 	idleAutoHeal        = 1,
@@ -42,7 +42,7 @@ local kdroneminer = {
 	objectName          = "kdroneminer.s3o",
     onoffable           = false,
     seismicSignature    = 4,
-    selfDestructAs      = [[DRONE_PETARD]],
+    selfDestructAs      = [[SMALL_UNIT]],
     side                = [[Drone]],
     sightDistance       = 300,
 	sounds			= {
@@ -121,7 +121,7 @@ local kdroneminer = {
 	featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Drone Petard]],
+	      description      = [[Wreckage - Light Battle Drone]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 262,
@@ -142,7 +142,7 @@ local kdroneminer = {
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Drone Petard]],
+	      description      = [[Debris - Light Battle Drone]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 175,

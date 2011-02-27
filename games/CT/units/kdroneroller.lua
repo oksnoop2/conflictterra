@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[kdroneroller]],
 	  name                = [[Roller Drone]],
-	  description         = [[Short Ranged Beam disperses groups. Can take quite a few hits.]],
+	  description         = [[Fires EMP weapon. Can take quite a few hits.]],
 	  acceleration        = 0.04,
 	  bmcode              = [[1]],
 	  brakeRate           = 0.02,
@@ -74,23 +74,24 @@
 	  workerTime          = 0,
           script              = [[kdroneroller.lua]],
 	
-	  weapons             = {
+
+	
+	
+	weapons             = {
 	
 	    {
-	      def                = [[Laser]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
+	      def                = [[Stun]],
+	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
 	    },
 	
 	  },
 	
 	
-	weaponDefs             = {
+	  weaponDefs          = {
 	
-	    Laser = {
-	      name                    = [[Burst Laser]],
-	      areaOfEffect            = 8,
-	      coreThickness           = 0.5,
+	    Stun = {
+	      name                    = [[Electromagnetic Beam]],
+	      areaOfEffect            = 32,
 	      collideFriendly         = false,
 	      craterMult              = 0.25,
 	
@@ -104,22 +105,26 @@
 		Sub = 100,
 	      },
 	
-	      duration                = 1,
-	      energypershot           = 0,
-	      interceptedByShieldType = 1,
+	      duration                = 0.01,
+	      explosionGenerator      = [[custom:STUNNER_Expl]],
+	      heightMod               = 1,
+	      intensity               = 10,
+	      interceptedByShieldType = 2,
 	      lineOfSight             = true,
-	      range                   = 200,
-	      reloadtime              = 5,
-              impulseBoost            = 15,
-              impulseFactor           = 100,		  
-	      rgbColor                = [[0 1 0]],
-	      soundStart              = [[ct/pew1]],
-	      targetMoveError         = 0.15,
-	      thickness               = 5,
-	      tolerance               = 10000,
+	      minIntensity            = 1,
+	      paralyzer               = true,
+	      paralyzeTime            = 4,
+	      range                   = 500,
+	      reloadtime              = 3,
+	      rgbColor                = [[1 1 0]],
+	      soundHit                = [[ct/empfire]],
+	      soundStart              = [[ct/empfire]],
+	      soundTrigger            = true,
+	      thickness               = 1,
+	      tolerance               = 6000,
 	      turret                  = true,
-	      weaponType              = [[BeamLaser]],
-	      weaponVelocity          = 1500,
+	      weaponType              = [[LightningCannon]],
+	      weaponVelocity          = 1000,
 	    },
 	
 	  },

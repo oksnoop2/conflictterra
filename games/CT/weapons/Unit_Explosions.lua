@@ -261,11 +261,11 @@ ROCK_IMPACT_BIG = {
     DRONE_PETARD = {
 
    name="Drone Petard",
-   craterMult=2000,
+   craterMult=1,
    rendertype=4,
    ballistic=1,
    turret=1,
-   impulseFactor      = 0,
+   impulseFactor      = 1,
    range=480,
    reloadtime=3.6,
    weaponvelocity=250,
@@ -275,11 +275,11 @@ ROCK_IMPACT_BIG = {
 
    explosiongenerator="custom:SMALL_UNIT_Expl",
 	      damage                  = {
-		Cruiser = 10,
-		Building = 800,
+		Cruiser = 300,
+		Building = 10,
 		Mech = 10,
 		Tank = 10,
-		Aircraft = 10,
+		Aircraft = 200,
 		Ship = 10,
 		Sub = 10,
 	      },

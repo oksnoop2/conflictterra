@@ -1,6 +1,6 @@
 local kdroneengineer = {
 	name                = [[Drone Engineer]],
-	description         = [[The Drone Engineer is an agressive builder and can put of a fight in large swarms.]],
+	description         = [[The Drone Engineer is unarmed building unit.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdroneengineer.png]],
@@ -12,6 +12,7 @@ local kdroneengineer = {
         
  		[[kdronestructure]],
 		[[kdroneminingtower]],
+		[[kairdronefactory]],
 		
 
                

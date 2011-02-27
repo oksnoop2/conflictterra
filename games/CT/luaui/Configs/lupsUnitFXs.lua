@@ -168,13 +168,13 @@ effectUnitDefs = {
                 {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {-.5,0,-.5},    width =  4, length=15, piece="fxflare6", onActive=true}},
         },
         
-        ktriairdrone = {
-                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {.5,-1,0},       width =  2, length=15, piece="lflare4", onActive=true}},
-                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {0,1,0},        width =  2, length=15, piece="lflare5", onActive=true}},
-                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {.5,0,-.5},     width =  2, length=15, piece="rflare4", onActive=true}},
-                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {-.5,0,.5},     width =  2, length=15, piece="rflare5", onActive=true}},
-                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {.5,0,.5}, 		width =  2, length=15, piece="tflare4", onActive=true}},
-                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {0,-1,0},       width =  2, length=15, piece="tflare5", onActive=true}},
+     --   ktriairdrone = {
+            --    {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {.5,-1,0},       width =  2, length=15, piece="lflare4", onActive=true}},
+            --    {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {0,1,0},        width =  2, length=15, piece="lflare5", onActive=true}},
+            --    {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {.5,0,-.5},     width =  2, length=15, piece="rflare4", onActive=true}},
+             --   {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {-.5,0,.5},     width =  2, length=15, piece="rflare5", onActive=true}},
+             --   {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {.5,0,.5}, 		width =  2, length=15, piece="tflare4", onActive=true}},
+             --   {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {0,-1,0},       width =  2, length=15, piece="tflare5", onActive=true}},
              --   {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {0,1,0},        width =  4, length=15, piece="fxflare2", onActive=true}},
              --   {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {.5,0,-.5},     width =  4, length=15, piece="fxflare3", onActive=true}},
              --   {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {-.5,0,.5},     width =  4, length=15, piece="fxflare4", onActive=true}},
@@ -184,7 +184,7 @@ effectUnitDefs = {
              --   {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {.5,0,-.5},     width =  4, length=15, piece="fxflare3", onActive=true}},
              --   {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {-.5,0,.5},     width =  4, length=15, piece="fxflare4", onActive=true}},
              --   {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {.5,0,.5}, 		width =  4, length=15, piece="fxflare5", onActive=true}},		
-		},
+	--	},
 
 
         esolar2 = {

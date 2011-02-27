@@ -1,12 +1,12 @@
 local ktriairdrone = {
 	name                = [[Tri Air Drone]],
-	description         = [[trigun?]],
+	description         = [[The Tri Air Drone is a long range flying siege unit. Can only attack ground.]],
     acceleration        = 0.06,
     bankscale           = [[1]],
     brakerate           = 1.5,
     buildpic            = [[ktriairdrone.png]],
-	buildCostEnergy     = 700,
-	buildCostMetal      = 700,
+	buildCostEnergy     = 400,
+	buildCostMetal      = 400,
     buildDistance       = 150,
     builder             = false,
 	buildTime           = 15,
@@ -35,7 +35,7 @@ local ktriairdrone = {
 	mass                = 80,
 	maxDamage           = 300,
     maxSlope            = 99999999,
-	maxVelocity         = 5,
+	maxVelocity         = 4,
     maxWaterDepth       = 10000,
     metalMake           = 0,
 	minCloakDistance    = 75,
@@ -86,13 +86,13 @@ local ktriairdrone = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 10,
-		Building = 10,
-		Mech = 10,
-		Tank = 10,
-		Aircraft = 100,
-		Ship = 10,
-		Sub = 10,
+		Cruiser = 200,
+		Building = 600,
+		Mech = 200,
+		Tank = 200,
+		Aircraft = 200,
+		Ship = 200,
+		Sub = 200,
 	      },
 
 	      beamTime                = 0.5,
@@ -136,7 +136,7 @@ local ktriairdrone = {
 	featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Drone Engineer]],
+	      description      = [[Wreckage - Tri Air Drone]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 262,
@@ -157,7 +157,7 @@ local ktriairdrone = {
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Drone Engineer]],
+	      description      = [[Debris - Tri Air Drone]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 175,

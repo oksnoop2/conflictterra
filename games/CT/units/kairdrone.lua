@@ -1,6 +1,6 @@
 local kairdrone = {
 	name                = [[Air Drone]],
-	description         = [[The Air Drone is a weak air box used for scouting, air defense, and harassment.]],
+	description         = [[The Air Drone is a weak kamikaze unit used for scouting and air defense Can only attack air.]],
     acceleration        = 0.06,
     bankscale           = [[1]],
     brakerate           = 1.5,
@@ -25,17 +25,19 @@ local kairdrone = {
 	reclaimable         = false,
     defaultmissiontype  = [[VTOL_standby]],
     energyMake          = 1,
-	explodeAs           = [[SMALL_UNIT]],
+	explodeAs           = [[DRONE_PETARD]],
     footprintx          = 2,
 	footprintZ          = 2,
 	hoverAttack         = true,
 	idleAutoHeal        = 1,
+	kamikaze            =1,
+	kamikazeDistance    =25,
 	leaveTracks         = false,
 	maneuverleashlength = [[640]],
 	mass                = 80,
 	maxDamage           = 300,
     maxSlope            = 99999999,
-	maxVelocity         = 5,
+	maxVelocity         = 7,
     maxWaterDepth       = 10000,
     metalMake           = 0,
 	minCloakDistance    = 75,
@@ -45,7 +47,7 @@ local kairdrone = {
 	objectName          = "kairdrone.s3o",
     onoffable           = false,
     seismicSignature    = 4,
-    selfDestructAs      = [[SMALL_UNIT]],
+    selfDestructAs      = [[DRONE_PETARD]],
     side                = [[Drone]],
     sightDistance       = 500,
 	sounds			= {
@@ -69,8 +71,8 @@ local kairdrone = {
 	
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[MINERALS]],
-	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER FIXEDWING]],
+	      --badTargetCategory  = [[MINERALS]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 	
 	  },
@@ -78,38 +80,23 @@ local kairdrone = {
 	
 	weaponDefs             = {
 	
-	    Laser = {
-	      name                    = [[Burst Laser]],
+	    Mine = {
+	      name                    = [[Mine]],
 	      areaOfEffect            = 8,
-	      coreThickness           = 0.5,
 	      collideFriendly         = false,
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 10,
-		Building = 10,
-		Mech = 10,
-		Tank = 10,
+		Cruiser = 100,
+		Building = 100,
+		Mech = 100,
+		Tank = 100,
 		Aircraft = 100,
-		Ship = 10,
-		Sub = 10,
+		Ship = 100,
+		Sub = 100,
 	      },
-		  beamTime                = 0.5,
-	      duration                = 0.5,
-	      energypershot           = 0,
-	      interceptedByShieldType = 1,
-	      heightMod               = 0.5,
-	      lineOfSight             = true,
-	      range                   = 400,
-	      reloadtime              = 0.5,
-	      rgbColor                = [[0 1 0]],
-	      soundStart              = [[ct/pew1]],
-	      targetMoveError         = 0,
-	      thickness               = 1,
-	      tolerance               = 100,
-	      turret                  = true,
-	      weaponType              = [[BeamLaser]],
-	      weaponVelocity          = 2000,
+	
+	      
 	    },
 	
 	  },
