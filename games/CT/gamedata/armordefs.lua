@@ -68,7 +68,7 @@ local armorDefs = {
     "kdronestructure",	
     "kmex",
     "kdroneminingtower",
-    "kaidronefactory",	
+    "kairdronefactory",	
   },
 
   Mech  =  {
