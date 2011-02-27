@@ -16,7 +16,7 @@
 	  reclaimable         = false,
 	  radarDistance       =  300,
 	  damageModifier      = 0.25,
-
+	      energyMake          = 1,
 	  explodeAs           = [[SMALL_BUILDING]],
 	  fireState           = 2,
           footprintx          = 2,
