@@ -11,7 +11,7 @@ unitDef = {
   builder                       = true,
 
   buildoptions                  = {
-    [[badvradarplane]],
+    -- [[badvradarplane]],
     [[badvfighter]],
     [[badvrocketplane]],
 
