@@ -30,7 +30,6 @@
 	  mass                = 175,
           maxAcc              = 0.5,
 	  maxDamage           = 750,
-          maxFuel             = 75,
 	  maxVelocity         = 5,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
