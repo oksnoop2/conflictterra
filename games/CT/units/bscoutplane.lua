@@ -1,13 +1,13 @@
 	unitDef = {
-	  unitname            = [[bradarplane]],
-	  name                = [[Kangae Type Radar Plane]],
-	  description         = [[Radar Plane - High flying plane equipped with far reaching radar.]],
+	  unitname            = [[bscoutplane]],
+	  name                = [[Suzume Type Plane]],
+	  description         = [[Scout Plane - Unmanned and unarmed scouting aircraft.  Very fast, and equipped with radar.]],
           amphibious          = false,
-	  buildCostEnergy     = 125,
-	  buildCostMetal      = 125,
+	  buildCostEnergy     = 100,
+	  buildCostMetal      = 100,
           builder             = false,
-	  buildPic            = [[bradarplane.png]],
-	  buildTime           = 12,
+	  buildPic            = [[bscoutplane.png]],
+	  buildTime           = 10,
 	  canAttack           = false,
           canDropFlare        = false,
           canFly              = true,
@@ -23,26 +23,24 @@
           cruiseAlt           = 400,
           reclaimable         = false,
 	
-          energyUse           = 1.5,
 	  explodeAs           = [[SMALL_UNIT]],
           floater             = false,
-          footprintx          = 5,
-	  footprintZ          = 5,
+          footprintx          = 2,
+	  footprintZ          = 2,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[1280]],
 	  mass                = 150,
-          maxAcc              = 0.5,
-	  maxDamage           = 285,
-	  maxVelocity         = 6,
+          maxAcc              = 1,
+	  maxDamage           = 200,
+	  maxVelocity         = 10,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
-	  objectName          = [[bradarplane.s3o]],
-          radarDistance       = 1000,
+	  objectName          = [[bscoutplane.s3o]],
+          radarDistance       = 750,
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[SMALL_UNIT]],
 	  side                = [[NKG]],
-	  sightDistance       = 400,
+	  sightDistance       = 750,
 	  smoothAnim          = true,
 
 	  sounds			= {
@@ -55,13 +53,14 @@
 		},
 	  },
 
-          script              = [[bradarplane.lua]],
+	  turnRadius          = 200,
+          script              = [[bscoutplane.lua]],
 	
 	
 	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Radar Plane]],
+	      description      = [[Wreckage - Scout Plane]],
 	      blocking         = false,
 	      category         = [[corpses]],
 	      damage           = 213,
@@ -82,18 +81,18 @@
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Radar Plane]],
+	      description      = [[Debris - Scout Plane]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 142,
 	      energy           = 0,
 	      featurereclamate = [[SMUDGE01]],
-	      footprintX       = 5,
-	      footprintZ       = 5,
+	      footprintX       = 2,
+	      footprintZ       = 2,
 	      height           = [[4]],
 	      hitdensity       = [[100]],
 	      metal            = 60,
-	      object           = [[b5x5heap.s3o]],
+	      object           = [[b2x2heap.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 15,
 	      seqnamereclamate = [[TREE1RECLAMATE]],
@@ -104,4 +103,4 @@
 	
 	}
 	
-	return lowerkeys({ bradarplane = unitDef })
+	return lowerkeys({ bscoutplane = unitDef })

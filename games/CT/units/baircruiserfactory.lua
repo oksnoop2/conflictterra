@@ -11,11 +11,10 @@ unitDef = {
   builder                       = true,
 
   buildoptions                  = {
-    [[bradarplane]],
+    [[bscoutplane]],
     [[bfighter]],
-    [[brocketplane]],
-
     [[blaserplane]],
+    [[brocketplane]],
     [[bbomber]],
 
   },

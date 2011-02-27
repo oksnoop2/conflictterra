@@ -64,11 +64,11 @@ local armorDefs = {
     "bairdefmobileship",
     "bnavydefship",
     "bnavydefmobileship",
-	"bsupplydepotai",
-	"kdronestructure",	
-	"kmex",
-	"kdroneminingtower",
-	"kaidronefactory",	
+    "bsupplydepotai",
+    "kdronestructure",	
+    "kmex",
+    "kdroneminingtower",
+    "kaidronefactory",	
   },
 
   Mech  =  {
@@ -87,9 +87,9 @@ local armorDefs = {
     "badvhovermech",
     "bheavyassaultmech",
     "kdroneengineer",
-	"kdronewarrior",
-	"kdroneminer",
-	"kdronebehemoth",
+    "kdronewarrior",
+    "kdroneminer",
+    "kdronebehemoth",
 	
 
   },
@@ -109,7 +109,7 @@ local armorDefs = {
     "bempcannonturret",
     "baatruck",
     "baatruckturret",
-	"kdroneroller",
+    "kdroneroller",
   },
 
   Aircraft = {
@@ -118,15 +118,15 @@ local armorDefs = {
     "bfighter",
     "bbomber",
     "brocketplane",
-    "bradarplane",
+    "bscoutplane",
     "badvfighter",
     "badvbomber",
     "badvrocketplane",
     "badvradarplane",
     "blaserplane",
     "kairdrone",
-	"kdiairdrone",
-	"ktriairdrone",		
+    "kdiairdrone",
+    "ktriairdrone",		
   },
 
   Ship = {
