@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bflyingmech]],
 	  name                = [[Fuma Aerial Combat Mech]],
-	  description         = [[Aerial Raider Mech - Airborne "mech" designed to harass enemy lines and outposts.  Fires multiple rapid cannons and two AA missiles.]],
+	  description         = [[Cruiser Destroyer Mech - Airborne "mech" designed to destroy cruisers.  Fires beam weapons and two AA missiles.  Cannot attack ground.]],
 	  acceleration        = 0.154,
 	  amphibious          = false,
 	  brakeRate           = 3.75,
@@ -29,7 +29,7 @@
           hoverAttack         = true,
 	  idleAutoHeal        = 0,
 	  mass                = 125,
-	  maxDamage           = 575,
+	  maxDamage           = 500,
 	  maxVelocity         = 5,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
@@ -67,24 +67,26 @@
 	  weapons             = {
 	
 	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
+	      def                = [[Laser]],
+	      badTargetCategory  = [[FIXEDWING]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 
 	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
-	    },
-
-	    {
-	      def                = [[AA]],
+	      def                = [[Laser]],
+	      badTargetCategory  = [[FIXEDWING]],
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 
 	    {
 	      def                = [[AA]],
+	      badTargetCategory  = [[GUNSHIP]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	    },
+
+	    {
+	      def                = [[AA]],
+	      badTargetCategory  = [[GUNSHIP]],
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 	
@@ -93,40 +95,38 @@
 	
 	  weaponDefs          = {
 	
-	    Machine_Gun = {
-	      name                    = [[Rapid Fire Cannon]],
+	    Laser = {
+	      name                    = [[Burst Laser]],
 	      areaOfEffect            = 8,
+	      coreThickness           = 0.5,
 	      collideFriendly         = false,
 	      craterMult              = 0.25,
-	      accuracy                = 200,
 	
 	      damage                  = {
-		Cruiser = 15,
-		Building = 15,
-		Mech = 15,
-		Tank = 15,
-		Aircraft = 15,
-		Ship = 15,
-		Sub = 15,
+		Cruiser = 50,
+		Building = 10,
+		Mech = 10,
+		Tank = 10,
+		Aircraft = 10,
+		Ship = 10,
+		Sub = 10,
 	      },
 	
-	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
+	      duration                = 0.01,
+	      energypershot           = 0,
+	      explosionGenerator      = [[custom:megapartgun]],
 	      interceptedByShieldType = 1,
-	      lineOfSight             = true,
-	      range                   = 300,
-	      reloadtime              = 0.5,
-	      rgbColor                = [[1 0.95 0.4]],
-	      seperation              = 2,
-              size                    = 0.75,
-	      soundStart              = [[ct/single_machine_gun]],
-	      soundTrigger            = true,
-	      soundStartVolume        = 0.5,
-	      stages                  = 50,
-	      sprayAngle              = 1180,
-	      tolerance               = 8000,
+	      heightMod               = 0.5,
+	      range                   = 750,
+	      reloadtime              = 1,
+	      rgbColor                = [[1 0 0]],
+	      soundStart              = [[ct/pew1]],
+	      targetMoveError         = 0.07,
+	      thickness               = 4,
+	      tolerance               = 2000,
 	      turret                  = true,
-	      weaponType              = [[Cannon]],
-	      weaponVelocity          = 750,
+	      weaponType              = [[LaserCannon]],
+	      weaponVelocity          = 2000,
 	    },
 
 	    AA         = {
@@ -139,7 +139,7 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 50,
+		Cruiser = 20,
 		Building = 10,
 		Mech = 10,
 		Tank = 10,
