@@ -11,7 +11,6 @@ local kdroneengineer = {
 	buildoptions		= {
         
  		[[kdronestructure]],
-		[[kdroneminingtower]],
 		[[kairdronefactory]],
 		
 
