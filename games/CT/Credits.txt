@@ -12,6 +12,8 @@
 
 - Sounds in the sound folder /argh done by Argh.  Most were leveled by Nightcold.
 
+- Big thanks to KDR_11k for the suggestion on how to make the temporary cameras work, and CarRepairer for providing example code.
+
 - Many others in the days before this was documented.
 
 *Other contributions will hopefully be remembered/added as time progresses.*
