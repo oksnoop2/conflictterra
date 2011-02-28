@@ -23,6 +23,7 @@ local armorDefs = {
     "bnuclearpower",
     "bseamex",
     "bseapowerplant",
+    "bcameratower",
     "bradartower",
     "bjammertower",
     "blandturret",
@@ -74,6 +75,7 @@ local armorDefs = {
   Mech  =  {
     "bengineer1",
     "bminer",
+    "bscoutmech",
     "bbasicmech",
     "bsnipermech",
     "bsiegemech",
