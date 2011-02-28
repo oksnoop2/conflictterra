@@ -51,13 +51,13 @@
 		SetSignalMask(walk_go)
 		Move (waist, y_axis, 15, 10)
 		while (true) do
-	                Turn( lshin, x_axis, -0.75, 2 )
-	                Turn( lthigh, x_axis, 0.5, 2 )
-			Turn( lfoot, x_axis, 0, 2 )
+	                Turn( lshin, x_axis, -0.75, 2.5 )
+	                Turn( lthigh, x_axis, 0.5, 2.5 )
+			Turn( lfoot, x_axis, 0, 2.5 )
 	               
-	                Turn( rshin, x_axis, 1.5, 2 )
-	                Turn( rthigh, x_axis, -1, 2 )
-			Turn( rfoot, x_axis, 0, 2 )
+	                Turn( rshin, x_axis, 1.5, 2.5 )
+	                Turn( rthigh, x_axis, -1, 2.5 )
+			Turn( rfoot, x_axis, 0, 2.5 )
 
 	                WaitForTurn( lshin, x_axis )
 	                WaitForTurn( lthigh, x_axis )
@@ -67,13 +67,13 @@
 	                WaitForTurn( rfoot, x_axis )
 	                Sleep(1)
 	               
-	                Turn( lshin, x_axis, 1.5, 2 )
-	                Turn( lthigh, x_axis, -1, 2 )
-			Turn( lfoot, x_axis, 0, 2 )
+	                Turn( lshin, x_axis, 1.5, 2.5 )
+	                Turn( lthigh, x_axis, -1, 2.5 )
+			Turn( lfoot, x_axis, 0, 2.5 )
 	               
-	                Turn( rshin, x_axis, -0.75, 2 )
-	                Turn( rthigh, x_axis, 0.5, 2 )
-			Turn( rfoot, x_axis, 0, 2 )
+	                Turn( rshin, x_axis, -0.75, 2.5 )
+	                Turn( rthigh, x_axis, 0.5, 2.5 )
+			Turn( rfoot, x_axis, 0, 2.5 )
 
 	                WaitForTurn( lshin, x_axis )
 	                WaitForTurn( lthigh, x_axis )
@@ -89,13 +89,13 @@
 	        Signal(walk_go)
 		Move( waist, y_axis, 0, 10 )
 
-		Turn( lshin, x_axis, 0, 2 )
-		Turn( lthigh, x_axis, 0, 2 )
-		Turn( lfoot, x_axis, 0, 2 )
+		Turn( lshin, x_axis, 0, 2.5 )
+		Turn( lthigh, x_axis, 0, 2.5 )
+		Turn( lfoot, x_axis, 0, 2.5 )
 	       
-	        Turn( rshin, x_axis, 0, 2 )
-	        Turn( rthigh, x_axis, 0, 2 )
-		Turn( rfoot, x_axis, 0, 2 )
+	        Turn( rshin, x_axis, 0, 2.5 )
+	        Turn( rthigh, x_axis, 0, 2.5 )
+		Turn( rfoot, x_axis, 0, 2.5 )
 
 	end
 	
