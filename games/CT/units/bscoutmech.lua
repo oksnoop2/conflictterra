@@ -1,6 +1,6 @@
 local bscoutmech = {
 	name                = [[Hashiba Scout Mech]],
-	description         = [[Recon Mech - Very fast, lightly armored reconnaissance mech.  Unarmed.  Can build temporary camera towers.]],
+	description         = [[Recon Mech - Very fast, lightly armored reconnaissance mech.  Unarmed and radar equipped.  Can build temporary camera towers.]],
         acceleration        = 0.5,
         brakerate           = 1.5,
         buildpic            = [[bscoutmech.png]],
