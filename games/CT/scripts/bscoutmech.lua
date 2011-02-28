@@ -1,7 +1,7 @@
 local waist = piece "waist"
 
 local body = piece "body"
-
+local camera = piece "camera"
 local nano = piece "nano"
 
 local lthigh = piece "leftthigh"
@@ -76,7 +76,28 @@ local walk_go = 4
 	        StartThread(stop_walk)
 	end
 
+	local function camera_spins()
+		while (true) do
+			Turn( camera, z_axis, 1, 1 )
+			WaitForTurn( camera, z_axis )
+			Sleep(1000)
+			Move( camera, z_axis, -2, 5 )
+			WaitForMove( camera, z_axis )
+			Sleep(1000)
+			Turn( camera, z_axis, -1, 1 )
+			WaitForTurn( camera, z_axis )
+			Sleep(1000)
+			Move( camera, z_axis, 0, 5 )
+			WaitForMove( camera, z_axis )
+			Sleep(1000)
+			Turn( camera, z_axis, 0, 1 )
+			WaitForTurn( camera, z_axis )
+			Sleep(1000)
+		end
+	end
+
 function script.Create(unitID)
+	StartThread(camera_spins)
 end
 
 function script.StartBuilding(heading, pitch)
