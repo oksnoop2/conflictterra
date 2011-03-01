@@ -14,6 +14,8 @@
 
 - Big thanks to KDR_11k for the suggestion on how to make the temporary cameras work, and CarRepairer for providing example code.
 
+- Thanks to CarRepairer to getting Sprint working!
+
 - Many others in the days before this was documented.
 
 *Other contributions will hopefully be remembered/added as time progresses.*

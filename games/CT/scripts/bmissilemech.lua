@@ -32,6 +32,35 @@
 	       
 	end
 
+---------- Sprint code
+local SIG_SPRINT = 16
+local speedFactor = 4
+local myOrigSpeed = UnitDefs[unitDefID].speed
+local myOrigAcc = UnitDefs[unitDefID].maxAcc
+local myOrigTurnRate = UnitDefs[unitDefID].turnRate
+
+local function SprintEffects()
+	Signal(SIG_SPRINT)
+	SetSignalMask(SIG_SPRINT)
+end
+function StartSprint()
+    Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {
+        maxSpeed    = myOrigSpeed*speedFactor,
+        accRate     = myOrigAcc*speedFactor,
+        turnRate    = myOrigTurnRate*speedFactor,
+        })
+	StartThread(SprintEffects)
+end
+function StopSprint()
+    Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {
+        maxSpeed    = myOrigSpeed,
+        accRate     = myOrigAcc,
+        turnRate    = myOrigTurnRate,
+    })
+    Signal(SIG_SPRINT)
+end
+---------- End sprint code
+
 	local function walk()
 		SetSignalMask(walk_go)
 		Move (waist, y_axis, 4, 2)

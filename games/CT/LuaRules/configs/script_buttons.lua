@@ -14,10 +14,10 @@ return {
   -- },
   
 
-  	bengineer1 = {
+  	bmissilemech = {
 		{
 			name		= "Sprint",
-			tooltip		= "Sprint",
+			tooltip		= "Sprint at high speeds for 10 seconds.  20 second recharge.",
 			startscript	= "StartSprint",
 			endscript	= "StopSprint",
 			reload		= 20,
