@@ -38,6 +38,7 @@ local SIG_SPRINT = 8
 local speedFactor = 4
 local myOrigSpeed = UnitDefs[unitDefID].speed
 local myOrigAcc = UnitDefs[unitDefID].maxAcc
+local myOrigTurnRate = UnitDefs[unitDefID].turnRate
 
 local function SprintEffects()
     Signal(SIG_SPRINT)
@@ -51,11 +52,19 @@ local function SprintEffects()
 	end
 end
 function StartSprint()
-    Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {maxSpeed = myOrigSpeed*speedFactor, accRate=myOrigAcc*speedFactor})
+    Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {
+        maxSpeed    = myOrigSpeed*speedFactor,
+        accRate     = myOrigAcc*speedFactor,
+        turnRate    = myOrigTurnRate*speedFactor,
+        })
 	StartThread(SprintEffects)
 end
 function StopSprint()
-    Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {maxSpeed = myOrigSpeed, accRate=myOrigAcc})
+    Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {
+        maxSpeed    = myOrigSpeed,
+        accRate     = myOrigAcc,
+        turnRate    = myOrigTurnRate,
+    })
     Signal(SIG_SPRINT)
 end
 ---------- End sprint code
