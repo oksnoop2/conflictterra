@@ -31,6 +31,37 @@ local function sparks()
 	end
 end
 
+
+
+---------- Sprint code
+local SIG_SPRINT = 8
+local speedFactor = 4
+local myOrigSpeed = UnitDefs[unitDefID].speed
+local myOrigAcc = UnitDefs[unitDefID].maxAcc
+
+local function SprintEffects()
+    Signal(SIG_SPRINT)
+	SetSignalMask(SIG_SPRINT)
+    while true do
+		EmitSfx(flare1, buildersparks)
+		EmitSfx(flare2, buildersparks)
+        EmitSfx(body, buildersparks)
+		EmitSfx(mask, buildersparks)
+		Sleep(1)
+	end
+end
+function StartSprint()
+    Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {maxSpeed = myOrigSpeed*speedFactor, accRate=myOrigAcc*speedFactor})
+	StartThread(SprintEffects)
+end
+function StopSprint()
+    Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {maxSpeed = myOrigSpeed, accRate=myOrigAcc})
+    Signal(SIG_SPRINT)
+end
+---------- End sprint code
+
+
+
 local function arms()
 	while true do
 		Turn(luparm, x_axis, 0, 2)
