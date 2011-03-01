@@ -47,7 +47,7 @@
 		SetSignalMask(SIG_AIM)
         	Turn(body, y_axis, heading, math.rad(150))
         	WaitForTurn(body, y_axis)
-		StartThread(RestoreAfterDelay)
+--		StartThread(RestoreAfterDelay)
 		return true
 	end
 	
