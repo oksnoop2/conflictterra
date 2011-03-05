@@ -98,5 +98,6 @@ So far Conflict Terra includes configuration files for the following Spring maps
   * Valley Of Unrest V3
   * Victoria Crater
   * Seths_Ravine
+  * Tabula v4
 
 Thanks to all mappers who originally made these nice maps :)
