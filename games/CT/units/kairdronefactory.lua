@@ -12,7 +12,7 @@ unitDef = {
   buildoptions                  = {
 
     [[kairdrone]],
--- [[kdiairdrone]],
+    [[kdiairdrone]],
 	[[ktriairdrone]],
 
   },
