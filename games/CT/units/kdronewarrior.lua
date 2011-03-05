@@ -1,6 +1,6 @@
 local kdronewarrior = {
 	name                = [[Drone Warrior]],
-	description         = [[The Drone Warrior is a power attacking unit.]],
+	description         = [[The Drone Warrior is a powerful attacking unit.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdronewarrior.png]],
@@ -30,7 +30,7 @@ local kdronewarrior = {
 	idleAutoHeal        = 1,
 	leaveTracks         = false,
 	mass                = 80,
-	maxDamage           = 800,
+	maxDamage           = 1000,
     maxSlope            = 99999999,
 	maxVelocity         = 3,
     maxWaterDepth       = 10000,
