@@ -28,6 +28,14 @@
 		end
 	end
 
+	local function RestoreAfterDelay(unitID)
+		Sleep(2500)
+		Turn(lflare1, y_axis, 0, math.rad(90))
+		Turn(rflare1, y_axis, 0, math.rad(90))
+        	Turn(lflare1, x_axis, 0, math.rad(50))
+        	Turn(rflare1, x_axis, 0, math.rad(50))
+	end
+
 	local function drones()
 
 	end
@@ -43,12 +51,22 @@
 	function script.AimWeapon1( heading, pitch )
                 Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
+        	Turn(lflare1, y_axis, heading, math.rad(90))
+        	Turn(lflare1, x_axis, -pitch, math.rad(50))
+        	WaitForTurn(lflare1, y_axis)
+        	WaitForTurn(lflare1, x_axis)
+		StartThread(RestoreAfterDelay)
 		return true
 	end
 
 	function script.AimWeapon2( heading, pitch )
                 Signal(SIG_AIM_SEC)
 		SetSignalMask(SIG_AIM_SEC)
+        	Turn(rflare1, y_axis, heading, math.rad(90))
+        	Turn(rflare1, x_axis, -pitch, math.rad(50))
+        	WaitForTurn(rflare1, y_axis)
+        	WaitForTurn(rflare1, x_axis)
+		StartThread(RestoreAfterDelay)
 		return true
 	end
 	
