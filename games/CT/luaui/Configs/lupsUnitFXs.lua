@@ -113,7 +113,8 @@ effectUnitDefs = {
 
 
         bfighter = {
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  4, length=35, piece="fxflare", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    width =  4, length=35, piece="fxflare1", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    width =  4, length=35, piece="fxflare2", onActive=true}},
         },
 
         bbomber = {

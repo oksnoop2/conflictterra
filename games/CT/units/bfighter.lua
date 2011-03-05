@@ -1,11 +1,11 @@
 	unitDef = {
 	  unitname            = [[bfighter]],
-	  name                = [[Tori Type Fighter]],
-	  description         = [[Light Fighter - Fast, light fighter armed with four air cannons.]],
+	  name                = [[Hayabusa Type Fighter MkII]],
+	  description         = [[Light Fighter - Fast, light fighter armed with two air cannons.]],
           amphibious          = false,
 	  buildCostEnergy     = 150,
 	  buildCostMetal      = 150,
-	  buildPic            = [[bfighter.png]],
+	  buildPic            = [[bfightermkii.png]],
 	  buildTime           = 12,
 	  canAttack           = true,
           canFly              = true,
@@ -34,7 +34,7 @@
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
-	  objectName          = [[bfighter.s3o]],
+	  objectName          = [[bfightermkii.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[SMALL_UNIT]],
 
@@ -52,18 +52,10 @@
 	  sightDistance       = 700,
 	  smoothAnim          = true,
           speedToFront        = 0,
-          script              = [[bfighter.lua]],
+          script              = [[bfightermkii.lua]],
 	
 	  weapons             = {
 	
-	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 60,
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
-
 	    {
 	      def                = [[Machine_Gun]],
 	      badTargetCategory  = [[GUNSHIP]],
