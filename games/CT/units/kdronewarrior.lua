@@ -82,11 +82,11 @@ local kdronewarrior = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 100,
+		Cruiser = 20,
 		Building = 100,
 		Mech = 100,
 		Tank = 100,
-		Aircraft = 100,
+		Aircraft = 20,
 		Ship = 100,
 		Sub = 100,
 	      },
