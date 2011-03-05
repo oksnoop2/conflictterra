@@ -7,8 +7,8 @@ unitDef = {
   acceleration                  = 0,
   activateWhenBuilt             = true,
   brakeRate                     = 0,
-  buildCostEnergy               = 10,
-  buildCostMetal                = 10,
+  buildCostEnergy               = 5,
+  buildCostMetal                = 5,
   builder                       = false,
 
   buildPic                      = [[bcameratower.png]],

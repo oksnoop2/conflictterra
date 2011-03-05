@@ -4,7 +4,7 @@ local camera = piece "camera"
 
 function script.Create()
 	Spin (camera, y_axis, 1)
-	Sleep(30000)
+	Sleep(60000)
 	Spring.DestroyUnit(unitID)
 end
 

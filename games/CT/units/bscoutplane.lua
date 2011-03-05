@@ -31,7 +31,7 @@
 	  mass                = 150,
           maxAcc              = 1,
 	  maxDamage           = 200,
-	  maxVelocity         = 10,
+	  maxVelocity         = 8,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
