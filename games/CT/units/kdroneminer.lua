@@ -4,8 +4,8 @@ local kdroneminer = {
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdroneminer.png]],
-	buildCostEnergy     = 250,
-	buildCostMetal      = 250,
+	buildCostEnergy     = 150,
+	buildCostMetal      = 150,
     buildDistance       = 150,
     builder             = false,
 
