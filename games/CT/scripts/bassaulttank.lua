@@ -39,9 +39,7 @@
 	function script.FireWeapon1()
 	EmitSfx(flare, orc_machinegun_flash)
 	EmitSfx(flare, orc_machinegun_muzzle)	       
-	Sleep(30)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
-		Sleep(30)
 	end
