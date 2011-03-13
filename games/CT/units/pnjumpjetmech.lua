@@ -63,7 +63,7 @@
 	  turnRate            = 500,
 	  upright             = true,
 	  workerTime          = 0,
-      ----script              = [[pnjumpjetmech.lua]],
+          script              = [[pnjumpjetmech.lua]],
 	
 	  weapons             = {
 
