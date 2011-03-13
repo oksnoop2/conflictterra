@@ -118,7 +118,7 @@ effectUnitDefs = {
         },
 
         bbomber = {
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  6, length=45, piece="fxflare", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    width =  6, length=45, piece="fxflare1", onActive=true}},
         },
 
         brocketplane = {
