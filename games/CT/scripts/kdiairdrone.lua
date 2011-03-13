@@ -19,12 +19,14 @@
 
 			WaitForMove(lbody, y_axis)
 			WaitForMove(rbody, y_axis)
+			Sleep(1)
 
 			Move(lbody, y_axis, -2, 0.5)
 			Move(rbody, y_axis, 2, 0.5)
 
 			WaitForMove(lbody, y_axis)
 			WaitForMove(rbody, y_axis)
+			Sleep(1)
 		end
 	end
 
