@@ -45,8 +45,6 @@
 	
 	  },
 
-
-
 	  sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",
@@ -69,17 +67,19 @@
 
 	    {
 	      def                = [[Cannon]],
-	      badTargetCategory  = [[SWIM LAND SHIP HOVER]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
+	      badTargetCategory  = [[SINK FLOAT]],
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 	
 	    {
-	      def                = [[Machine_Gun]],
+	      def                = [[Large]],
 	      badTargetCategory  = [[SINK FLOAT]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
+	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
+	    },
+
+	    {
+	      def                = [[Large]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
 	
@@ -89,69 +89,65 @@
 	  weaponDefs          = {
 	
 	    Cannon = {
-	      name                    = [[Artillery Cannon]],
-	      areaOfEffect            = 64,
-              craterMult              = 0.25,
-	      accuracy                = 500,
+	      name                    = [[Light Cannon]],
+	      areaOfEffect            = 32,
+	      craterMult              = 0.25,
 	
 	      damage                  = {
 		Cruiser = 100,
-		Building = 500,
+		Building = 100,
 		Mech = 100,
 		Tank = 100,
 		Aircraft = 100,
 		Ship = 100,
-		Sub = 100,
+		Sub = 5,
 	      },
 	
 	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:LRPC_Expl]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
-	      myGravity               = 0.1,
-	      range                   = 750,
-	      reloadtime              = 4.5,
+	      range                   = 400,
+	      reloadtime              = 3,
 	      soundHit                = [[argh/Argh_MedExplosion]],
-	      soundStart              = [[argh/Argh_Whamsound]],
+	      soundStart              = [[argh/Argh_heavy_machinegun]],
 	      turret                  = true,
 	      weaponType              = [[Cannon]],
 	      weaponVelocity          = 750,
 	    },
 
-	    Machine_Gun = {
-	      name                    = [[Rapid Fire Cannon]],
-	      areaOfEffect            = 8,
-	      burst                   = 2,
-	      burstrate               = 0.001,
+	    Large = {
+	      name                    = [[Large Missile]],
+	      areaOfEffect            = 96,
+	      collideFriendly         = false,
 	      craterMult              = 0.25,
-	      accuracy                = 200,
 	
 	      damage                  = {
-		Cruiser = 15,
-		Building = 15,
-		Mech = 15,
-		Tank = 15,
-		Aircraft = 15,
-		Ship = 15,
-		Sub = 15,
+		Cruiser = 50,
+		Building = 50,
+		Mech = 100,
+		Tank = 50,
+		Aircraft = 50,
+		Ship = 50,
+		Sub = 50,
 	      },
 	
-	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
-	      range                   = 200,
-	      reloadtime              = 0.2,
-	      rgbColor                = [[1 0.95 0.4]],
-	      separation              = 2,
-              size                    = 1.25,
-	      soundStart              = [[ct/machine_gun]],
-	      soundStartVolume        = 0.5,
-	      soundTrigger            = true,
-	      stages                  = 50,
-	      sprayAngle              = 1180,
-	      tolerance               = 8000,
-	      turret                  = true,
-	      weaponType              = [[Cannon]],
-	      weaponVelocity          = 750,
+	      model                   = [[blargemissile.s3o]],
+	      noSelfDamage            = true,
+	      range                   = 800,
+	      reloadtime              = 3,
+	      smokedelay              = [[0.1]],
+	      smokeTrail              = true,
+	      soundHit                = [[argh/Argh_LargeExplosion]],
+	      soundStart              = [[nexuiz/rocket_fire]],
+	      tolerance               = 9000,
+	      vlaunch                 = true,
+	      weaponAcceleration      = 1000,
+	      weaponTimer             = 0.1,
+	      weaponType              = [[StarburstLauncher]],
+	      weaponVelocity          = 10000,
 	    },
 	
 	  },
