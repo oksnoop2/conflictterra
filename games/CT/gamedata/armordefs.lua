@@ -101,7 +101,7 @@ local armorDefs = {
     "bmissiletank",
     "bartillery",
     "baabuggy",
-    "bradartank",
+    "bscoutvehicle",
     "breztank",
     "bheavyassaulttank",
     "bvhsa",

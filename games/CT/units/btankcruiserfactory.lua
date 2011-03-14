@@ -13,7 +13,7 @@ unitDef = {
   buildoptions                  = {
 
 	[[bminer]],
-	[[bradartank]],
+	[[bscoutvehicle]],
 	[[bassaulttank]],
 
 	[[bmissiletank]],
