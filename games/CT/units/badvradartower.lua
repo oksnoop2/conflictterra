@@ -23,7 +23,7 @@ unitDef = {
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
 
-  energyUse                     = 3,
+  energyUse                     = 30,
   explodeAs                     = [[SMALL_BUILDING]],
   footprintX                    = 7,
   footprintZ                    = 7,
@@ -40,7 +40,7 @@ unitDef = {
   objectName                    = [[badvradartower.s3o]],
 
   onoffable                     = true,
-  radarDistance                 = 5000,
+  radarDistance                 = 3000,
   seismicSignature              = 4,
   selfDestructAs                = [[SMALL_BUILDING]],
 

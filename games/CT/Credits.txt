@@ -16,6 +16,8 @@
 
 - Thanks to CarRepairer to getting Sprint working!
 
+- Thanks to Google_Frog for suggesting the unit_estall_disable.lua gadget from ZK.
+
 - Many others in the days before this was documented.
 
 *Other contributions will hopefully be remembered/added as time progresses.*

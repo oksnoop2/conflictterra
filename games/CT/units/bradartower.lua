@@ -23,7 +23,7 @@ unitDef = {
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
 
-  energyUse                     = 0.8,
+  energyUse                     = 10,
   explodeAs                     = [[SMALL_BUILDING]],
   footprintX                    = 1,
   footprintZ                    = 1,
