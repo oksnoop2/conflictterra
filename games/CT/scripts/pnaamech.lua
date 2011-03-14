@@ -103,21 +103,20 @@
 	local function RestoreAfterDelay(unitID)
 		Sleep(2500)
 		Turn(body, y_axis, 0, math.rad(150))
-        	Turn(lpod, x_axis, 0, math.rad(100))
-        	Turn(rpod, x_axis, 0, math.rad(100))
+        	Turn(larm, x_axis, 0, math.rad(100))
+        	Turn(rarm, x_axis, 0, math.rad(100))
 	end
 
 	function script.QueryWeapon1()
 		if (currBarrel == 1) then 
 			return flare1
-		else 
+		end
 		if (currBarrel == 2) then 
 			return flare2
-		else 
+		end
 		if (currBarrel == 3) then 
 			return flare3
 		else 
-		if (currBarrel == 4) then 		
 			return flare4
 		end
 	end
@@ -125,29 +124,28 @@
 	function script.QueryWeapon2()
 		if (currBarrel2 == 1) then 
 			return flare5
-		else 
+		end
 		if (currBarrel2 == 2) then 
 			return flare6
-		else 
+		end
 		if (currBarrel2 == 3) then 
 			return flare7
 		else 
-		if (currBarrel2 == 4) then 		
 			return flare8
 		end
 	end
 	
-	function script.AimFromWeapon1() return larm end
+	function script.AimFromWeapon1() return rarm end
 
-	function script.AimFromWeapon2() return rarm end
+	function script.AimFromWeapon2() return larm end
 	
 	function script.AimWeapon1( heading, pitch )
                 Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
         	Turn(body, y_axis, heading, math.rad(150))
-        	Turn(larm, x_axis, -pitch, math.rad(100))
+        	Turn(rarm, x_axis, -pitch, math.rad(100))
         	WaitForTurn(body, y_axis)
-        	WaitForTurn(larm, x_axis)
+        	WaitForTurn(rarm, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
@@ -156,57 +154,58 @@
 		Signal(SIG_AIM_SEC)
 		SetSignalMask(SIG_AIM_SEC)
         	Turn(body, y_axis, heading, math.rad(150))
-        	Turn(rarm, x_axis, -pitch, math.rad(100))
+        	Turn(larm, x_axis, -pitch, math.rad(100))
         	WaitForTurn(body, y_axis)
-        	WaitForTurn(rarm, x_axis)
+        	WaitForTurn(larm, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
 	
-	function script.FireWeapon1()
+	function script.Shot1()
 		if currBarrel == 1 then
-			EmitSfx(flare4, orc_machinegun_flash)
-			EmitSfx(flare4, orc_machinegun_muzzle)	
+			EmitSfx(flare2, orc_machinegun_flash)
+			EmitSfx(flare2, orc_machinegun_muzzle)	
 		end
 		if currBarrel == 2 then
 			EmitSfx(flare3, orc_machinegun_flash)
 			EmitSfx(flare3, orc_machinegun_muzzle)	
 		end
 		if currBarrel == 3 then
-			EmitSfx(flare2, orc_machinegun_flash)
-			EmitSfx(flare2, orc_machinegun_muzzle)	
+			EmitSfx(flare4, orc_machinegun_flash)
+			EmitSfx(flare4, orc_machinegun_muzzle)	
 		end
 		if currBarrel == 4 then
 			EmitSfx(flare1, orc_machinegun_flash)
 			EmitSfx(flare1, orc_machinegun_muzzle)	
-		end	
-		currBarrel = currBarrel2 + 1
+		end
+		currBarrel = currBarrel + 1
 		if currBarrel == 2 then currBarrel = 2 end
 		if currBarrel == 3 then currBarrel = 3 end
-		if currBarrel == 4 then currBarrel = 1 end
+		if currBarrel == 4 then currBarrel = 4 end
+		if currBarrel == 5 then currBarrel = 1 end
 	end
-
-	function script.FireWeapon2()
+	function script.Shot2()
 		if currBarrel2 == 1 then
-			EmitSfx(flare8, orc_machinegun_flash)
-			EmitSfx(flare8, orc_machinegun_muzzle)	
+			EmitSfx(flare6, orc_machinegun_flash)
+			EmitSfx(flare6, orc_machinegun_muzzle)	
 		end
 		if currBarrel2 == 2 then
 			EmitSfx(flare7, orc_machinegun_flash)
 			EmitSfx(flare7, orc_machinegun_muzzle)	
 		end
 		if currBarrel2 == 3 then
-			EmitSfx(flare6, orc_machinegun_flash)
-			EmitSfx(flare6, orc_machinegun_muzzle)	
+			EmitSfx(flare8, orc_machinegun_flash)
+			EmitSfx(flare8, orc_machinegun_muzzle)	
 		end
 		if currBarrel2 == 4 then
 			EmitSfx(flare5, orc_machinegun_flash)
 			EmitSfx(flare5, orc_machinegun_muzzle)	
-		end	
-		currBarrel2 = currBarrel3 + 1
+		end
+		currBarrel2 = currBarrel2 + 1
 		if currBarrel2 == 2 then currBarrel2 = 2 end
 		if currBarrel2 == 3 then currBarrel2 = 3 end
-		if currBarrel2 == 4 then currBarrel2 = 1 end
+		if currBarrel2 == 4 then currBarrel2 = 4 end
+		if currBarrel2 == 5 then currBarrel2 = 1 end
 	end
 	
 	function script.Killed(recentDamage, maxHealth)

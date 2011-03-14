@@ -75,14 +75,6 @@
 	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
 	    },
 	
-	    {
-	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
-	    },
-	
 	  },
 	
 	

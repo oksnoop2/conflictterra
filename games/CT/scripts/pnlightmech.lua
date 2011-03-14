@@ -16,9 +16,6 @@
         local rleg = piece "rleg"
         local rfoot = piece "rfoot"
 
-	local currBarrel = 1
-	local currBarrel2 = 1
-
 	--signals
 	local SIG_AIM = 1
 	local walk_go = 2
