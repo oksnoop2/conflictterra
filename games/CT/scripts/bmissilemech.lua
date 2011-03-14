@@ -161,15 +161,12 @@ end
 	function script.FireWeapon1()
 		EmitSfx(flare1, orc_machinegun_flash)
 		EmitSfx(flare1, orc_machinegun_muzzle)	
-               Sleep(30)
 	end
 
 	function script.FireWeapon2()
 		EmitSfx(flare2, orc_machinegun_flash)
 		EmitSfx(flare2, orc_machinegun_muzzle)	
-	       Sleep(30)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
-		Sleep(30)
 	end
