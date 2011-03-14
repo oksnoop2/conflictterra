@@ -48,6 +48,8 @@ local changeStateDelay = 3 -- delay in seconds before state of unit can be chang
 local radarDefs = {
   [ UnitDefNames['bradartower'].id ] = true,
   [ UnitDefNames['badvradartower'].id ] = true,
+  [ UnitDefNames['bjammertower'].id ] = true,
+  [ UnitDefNames['badvjammertower'].id ] = true,
 }
 
 
