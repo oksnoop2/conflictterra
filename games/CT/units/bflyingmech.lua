@@ -33,7 +33,7 @@
 	  maxVelocity         = 5,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS SUB]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[bflyingmech.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[MEDIUM_UNIT]],
