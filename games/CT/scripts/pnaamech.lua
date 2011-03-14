@@ -184,6 +184,7 @@
 		if currBarrel == 4 then currBarrel = 4 end
 		if currBarrel == 5 then currBarrel = 1 end
 	end
+
 	function script.Shot2()
 		if currBarrel2 == 1 then
 			EmitSfx(flare6, orc_machinegun_flash)

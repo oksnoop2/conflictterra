@@ -82,22 +82,6 @@
 	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
 	    },
-
-	    {
-	      def                = [[Cannon]],
-	      badTargetCategory  = [[SWIM LAND SHIP HOVER]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
-	    },
-
-	    {
-	      def                = [[Cannon]],
-	      badTargetCategory  = [[SWIM LAND SHIP HOVER]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
-	    },
 	
 	  },
 	
@@ -107,6 +91,8 @@
 	    Cannon = {
 	      name                    = [[Artillery Cannon]],
 	      areaOfEffect            = 64,
+	      burst                   = 2,
+	      burstrate               = 1,
               craterMult              = 0.25,
 	      accuracy                = 500,
 	
