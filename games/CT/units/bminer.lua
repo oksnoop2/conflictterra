@@ -12,6 +12,7 @@ local bminer = {
         buildoptions            = {
 		[[bsupplydepot]],
                 [[bpowerplant]],
+		[[badvpowerplant]],
 --                [[bnuclearpower]],
 		[[bbeacon]],
 --                [[bshipyard]],
