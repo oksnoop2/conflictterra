@@ -24,7 +24,7 @@
 	  idleAutoHeal        = 0,
 	  leaveTracks         = true,
 	  mass                = 390,
-	  maxDamage           = 2650,
+	  maxDamage           = 2250,
 	  maxSlope            = 18,
 	  maxVelocity         = 2,
 	  maxWaterDepth       = 22,
@@ -99,13 +99,13 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 200,
-		Building = 200,
-		Mech = 450,
-		Tank = 200,
-		Aircraft = 200,
-		Ship = 200,
-		Sub = 200,
+		Cruiser = 100,
+		Building = 100,
+		Mech = 350,
+		Tank = 100,
+		Aircraft = 100,
+		Ship = 100,
+		Sub = 100,
 	      },
 	
 	      model                   = [[blargemissile.s3o]],
@@ -141,7 +141,7 @@
 		Tank = 35,
 		Aircraft = 35,
 		Ship = 35,
-		Sub = 2,
+		Sub = 35,
 	      },
 	
 	      model                   = [[bantimechmissile.s3o]],
