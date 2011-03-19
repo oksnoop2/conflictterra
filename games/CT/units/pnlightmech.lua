@@ -81,7 +81,7 @@
 	  weaponDefs          = {
 	
 	    Cannon = {
-	      name                    = [[Artillery Cannon]],
+	      name                    = [[Flame]],
 	      areaOfEffect            = 64,
               craterMult              = 0.25,
 	      accuracy                = 500,
@@ -96,55 +96,21 @@
 		Sub = 100,
 	      },
 	
-	      model                   = [[bshell.s3o]],
+	      lineOfSight             =1,
+		  renderType              =5,
 	      explosionGenerator      = [[custom:LRPC_Expl]],
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,
-	      range                   = 750,
-	      reloadtime              = 4.5,
+	      range                   = 300,
+	      reloadtime              = .001,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_Whamsound]],
 	      turret                  = true,
-	      weaponType              = [[Cannon]],
+	      weaponType              = [[Flame]],
 	      weaponVelocity          = 750,
 	    },
 
-	    Machine_Gun = {
-	      name                    = [[Rapid Fire Cannon]],
-	      areaOfEffect            = 8,
-	      burst                   = 2,
-	      burstrate               = 0.001,
-	      craterMult              = 0.25,
-	      accuracy                = 200,
-	
-	      damage                  = {
-		Cruiser = 15,
-		Building = 15,
-		Mech = 15,
-		Tank = 15,
-		Aircraft = 15,
-		Ship = 15,
-		Sub = 15,
-	      },
-	
-	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
-	      interceptedByShieldType = 1,
-	      lineOfSight             = true,
-	      range                   = 200,
-	      reloadtime              = 0.2,
-	      rgbColor                = [[1 0.95 0.4]],
-	      separation              = 2,
-              size                    = 1.25,
-	      soundStart              = [[ct/machine_gun]],
-	      soundStartVolume        = 0.5,
-	      soundTrigger            = true,
-	      stages                  = 50,
-	      sprayAngle              = 1180,
-	      tolerance               = 8000,
-	      turret                  = true,
-	      weaponType              = [[Cannon]],
-	      weaponVelocity          = 750,
-	    },
+	    
 	
 	  },
 	
