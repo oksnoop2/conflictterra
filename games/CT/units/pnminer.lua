@@ -71,56 +71,68 @@
 	  turnInPlace         = 1,
 	  turnRate            = 500,
 	  unitRestricted      = 5,
-          --script              = [[pnminer.lua]],
+          script              = [[pnminer.lua]],
 	
 	  weapons             = {
-	
-	    {
-	      def                = [[Artillery]],
-	      badTargetCategory  = [[SWIM LAND SHIP HOVER]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 45,
-	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
-	    },
+        
+            {
+              def                = [[Rock_Drill]],
+              onlyTargetCategory = [[MINERALS]],
+            },
 
 	    {
 	      def                = [[Cannon]],
 	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
 	    },
+        
+          },
 	
-	  },
 	
-	
-	  weaponDefs          = {
-	
-	    Artillery             = {
-	      name                    = [[Heavy Artillery Cannon]],
-	      areaOfEffect            = 32,
-	      crater                  = 0.25,
-	
-	      damage                  = {
-		Cruiser = 1000,
-		Building = 2500,
-		Mech = 1000,
-		Tank = 1000,
-		Aircraft = 1000,
-		Ship = 1000,
-		Sub = 50,
-	      },
-	
-	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:LRPC_Expl]],
-	      interceptedByShieldType = 1,
-	      myGravity               = 0.1,
-	      range                   = 1000,
-	      reloadtime              = 7.5,
-	      soundHit                = [[argh/Argh_MedExplosion]],
-	      soundStart              = [[argh/Argh_Whamsound]],
-	      turret                  = true,
-	      weaponType              = [[Cannon]],
-	      weaponVelocity          = 750,
-	    },
+	            weaponDefs          = {
+        
+            Rock_Drill = {
+              name                    = [[Rock Drill]],
+              areaOfEffect            = 8,
+              avoidFriendly           = 0,
+	      beamTime                = 0.2,
+              craterMult              = 0.25,
+              accuracy                = 0,
+	      collideFriendly         = false,
+	      energypershot           = 0,
+        
+              damage                  = {
+                Cruiser = 1,
+                Building = 1,
+                Mech = 1,
+                Tank = 1,
+                Aircraft = 1,
+                Ship = 1,
+                Sub = 1,
+              },
+        
+              explosionGenerator      = [[custom:resmining]],
+              interceptedByShieldType = 1,
+              lineOfSight             = true,
+              range                   = 130,
+              reloadtime              = 0.2,
+              rgbColor                = [[0 1 0]],
+              separation              = 2,
+	      thickness               = 1,
+	      minIntensity            = 1,
+              size                    = 0.4,
+              soundStart              = [[tp/swoosh]],
+              soundStartVolume        = 0.5,
+              soundTrigger            = true,
+              stages                  = 50,
+              targetBorder            = 1,
+              tolerance               = 8000,
+              turret                  = true,
+              weaponType              = [[BeamLaser]],
+              weaponVelocity          = 2500,
+
+
+		},
 
 	    Cannon = {
 	      name                    = [[Light Cannon]],
@@ -140,7 +152,7 @@
 	      model                   = [[bshell.s3o]],
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
-	      range                   = 340,
+	      range                   = 400,
 	      reloadtime              = 3,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_heavy_machinegun]],
@@ -148,8 +160,8 @@
 	      weaponType              = [[Cannon]],
 	      weaponVelocity          = 750,
 	    },
-	
-	  },
+        
+          },
 	
 	
 	  featureDefs         = {
