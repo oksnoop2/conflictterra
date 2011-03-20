@@ -74,12 +74,12 @@ local kdroneminer = {
 	
 	      damage                  = {
 		Cruiser = 10,
-		Building = 50,
-		Mech = 50,
-		Tank = 50,
+		Building = 10,
+		Mech = 10,
+		Tank = 10,
 		Aircraft = 10,
-		Ship = 50,
-		Sub = 50,
+		Ship = 10,
+		Sub = 10,
 	      },
 	
 	      duration                = 0.02,
