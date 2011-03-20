@@ -71,22 +71,14 @@
 	  turnInPlace         = 1,
 	  turnRate            = 500,
 	  unitRestricted      = 5,
-          --script              = [[pnrocketartillery.lua]],
+          script              = [[pnrocketartillery.lua]],
 	
 	  weapons             = {
 	
 	    {
-	      def                = [[Artillery]],
-	      badTargetCategory  = [[SWIM LAND SHIP HOVER]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 45,
-	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
-	    },
-
-	    {
-	      def                = [[Cannon]],
+	      def                = [[Rocket]],
 	      badTargetCategory  = [[SINK FLOAT]],
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
+	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
 	    },
 	
 	  },
@@ -94,37 +86,11 @@
 	
 	  weaponDefs          = {
 	
-	    Artillery             = {
-	      name                    = [[Heavy Artillery Cannon]],
-	      areaOfEffect            = 32,
-	      crater                  = 0.25,
-	
-	      damage                  = {
-		Cruiser = 1000,
-		Building = 2500,
-		Mech = 1000,
-		Tank = 1000,
-		Aircraft = 1000,
-		Ship = 1000,
-		Sub = 50,
-	      },
-	
-	      model                   = [[bshell.s3o]],
-	      explosionGenerator      = [[custom:LRPC_Expl]],
-	      interceptedByShieldType = 1,
-	      myGravity               = 0.1,
-	      range                   = 1000,
-	      reloadtime              = 7.5,
-	      soundHit                = [[argh/Argh_MedExplosion]],
-	      soundStart              = [[argh/Argh_Whamsound]],
-	      turret                  = true,
-	      weaponType              = [[Cannon]],
-	      weaponVelocity          = 750,
-	    },
-
-	    Cannon = {
-	      name                    = [[Light Cannon]],
-	      areaOfEffect            = 32,
+	    Rocket = {
+	      name                    = [[Missile Barrage]],
+	      areaOfEffect            = 48,
+	      burst                   = 10,
+	      burstrate               = 0.08,
 	      craterMult              = 0.25,
 	
 	      damage                  = {
@@ -137,16 +103,26 @@
 		Sub = 5,
 	      },
 	
-	      model                   = [[bshell.s3o]],
+	      model                   = [[bsmallmissile.s3o]],
+	      dance                   = 20,
+	      wobble                  = 7000,
+	      edgeEffectiveness       = 0.5,
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      flightTime              = 2.5,
 	      interceptedByShieldType = 1,
-	      range                   = 340,
-	      reloadtime              = 3,
-	      soundHit                = [[argh/Argh_MedExplosion]],
-	      soundStart              = [[argh/Argh_heavy_machinegun]],
+	      lineOfSight             = true,
+	      range                   = 440,
+	      reloadtime              = 10,
+	      smokeTrail              = true,
+	      soundHit                = [[argh/Argh_LargeExplosion]],
+	      soundStart              = [[nexuiz/rocket_fire]],
+	      tolerance               = 500,
+	      trajectoryHeight        = 1,
 	      turret                  = true,
-	      weaponType              = [[Cannon]],
-	      weaponVelocity          = 750,
+	      weaponType              = [[MissileLauncher]],
+	      weaponVelocity          = 250,
+	      startVelocity           = 100,
+	      weaponAcceleration      = 100,
 	    },
 	
 	  },
