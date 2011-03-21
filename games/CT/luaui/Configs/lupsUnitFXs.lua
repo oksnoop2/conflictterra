@@ -155,8 +155,7 @@ effectUnitDefs = {
         },
 
         blaserplane = {
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  4, length=35, piece="fxflare1", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  4, length=35, piece="fxflare2", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    width =  6, length=50, piece="fxflare1", onActive=true}},
         },
 
 
