@@ -1,6 +1,6 @@
 local kdroneminer = {
 	name                = [[Light Battle Drone]],
-	description         = [[The Light Battle Drone is a lightly armored unit strong in mass..]],
+	description         = [[The Light Battle Drone is a lightly armored unit strong in mass.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdroneminer.png]],
