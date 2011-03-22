@@ -1,7 +1,7 @@
 #summary Hojo Combat Mech
 #labels Phase-Guide
 
-[http://dl.dropbox.com/u/21910537/Wiki/Hojo%20Title.png]
+[http://img217.imageshack.us/img217/8919/hojotitle.png]
 
 == Role ==
 
@@ -12,7 +12,7 @@ The Hojo Combat Mech is a light, raiding oriented unit that does best in ambushe
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
 
-||http://dl.dropbox.com/u/21910537/Wiki/Hojo%20Raiding.png||
+||http://img827.imageshack.us/img827/1081/hojoraiding.png||
 ||A group of Hojo Combat Mechs raiding a small mining operation.||
 
 == History ==
