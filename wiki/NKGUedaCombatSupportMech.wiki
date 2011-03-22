@@ -1,7 +1,7 @@
 #summary Ueda Combat Support Mech
 #labels Phase-Guide
 
-[http://dl.dropbox.com/u/21910537/Wiki/Ueda%20Title.png]
+[http://img24.imageshack.us/img24/2610/uedatitle.png]
 
 == Role ==
 
@@ -14,13 +14,13 @@ They work well when combined with the Enkei Combat Support Mech, an anti-tank un
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Mechs||
 
-||http://dl.dropbox.com/u/21910537/Wiki/Ueda%20Firing.png||
+||http://img705.imageshack.us/img705/2856/uedafiring.png||
 ||The Ueda Combat Support Mech can unleash several missiles when in groups.||
 
 == History ==
 The Ueda Combat Support Mech was actually modeled a long time into Conflict Terra's life.  The role had been defined from the start, but I neglected to come up with a "good design" for it.  It was among the final units modeled before playtesting began with my friends.  I actually struggled for a while trying to come up with a design I liked.  Below is an example of a finished model that never got textured.
 
-||[http://dl.dropbox.com/u/21910537/Wiki/Missile%20Mech%20Early.png]||
+||[http://img143.imageshack.us/img143/7590/missilemechearly.png]||
 ||An early model for the Missile Mech.||
 
 I was unhappy with this one for several reasons.  I was experimenting with leg-styles, and this was the result of pushing the "reverse-joint" style too far.  I also felt the missile pods were too large, and it gave the unit a somewhat rabbit-like appearance.
@@ -29,12 +29,12 @@ The model I made next is what made it into the game.  I went with a simplified l
 
 This unit is also somewhat unique in that it is the first unit I made where the legs made a perfect right angle at the knee.  In other words, they looked like this:
 
-||[http://dl.dropbox.com/u/21910537/Wiki/Reverse%20Joint%2090.png]||
+||[http://img710.imageshack.us/img710/2248/reversejoint90.png]||
 ||Note the 90 degree angle.||
 
 The two previous reverse-joint leg mechs had legs that were positioned more like this:
 
-||[http://dl.dropbox.com/u/21910537/Wiki/Reverse%20Joint%2045.png]||
+||[http://img819.imageshack.us/img819/1432/reversejoint45.png]||
 ||Note the sharper angle.||
 
 For the longest time the "bmissilemech" just fired a volley of two anti-mech missiles, one from each pod, exactly like its tank counterpart, the Kuma Type Tank.  Much later, when I was trying to think of a way to legitimize the use of the more expensive mechs via making them "special," it came to me to give the anti-mech mech a more explosive type of attack, and so the bursts of missile were born.  It has worked well, making the Ueda a formidable unit against mechs.
