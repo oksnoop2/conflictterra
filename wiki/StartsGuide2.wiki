@@ -1,5 +1,5 @@
 #summary Starting Guide for Conflict Terra.
-#labels Phase-Guide
+#labels Phase-Guide,Featured
 
 = Table of Contents =
   * [http://code.google.com/p/conflictterra/wiki/StartsGuide2#Your_Flagship Your Flagship]
