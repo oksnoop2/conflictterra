@@ -40,7 +40,7 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
   * CT Eureka is a relatively open map that is broken up by small hills.  Pine trees dot the lowlands, and an occasional boulder gives a strong alpine feeling to the map.
   * Supports up to 8 players
   * 16 x 16
-  * [http://conflictterra.googlecode.com/files/CT_Eurekav6.sd7 Download]
+  * [http://conflictterra.googlecode.com/files/CT_Eurekav7.sd7 Download]
 
 ||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20map.png||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20miners.png||
 ||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20snipers.png||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20hojo%20and%20oukami.png||
@@ -50,7 +50,7 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
   * CT Fishbone Ridge is an interesting map.  A spine-like ridge runs through the middle, with initial starting spots in small canyons jutting from the ridge.  Cacti and boulders stand in this desert battleground.
   * Supports up to 13 players
   * 20 x 10
-  * [http://conflictterra.googlecode.com/files/CT_Fishbone_Ridgev6.sd7 Download]
+  * [http://conflictterra.googlecode.com/files/CT_Fishbone_Ridgev7.sd7 Download]
 
 ||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20Map.png||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20miners.png||
 ||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20artillery%20mech.png||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20Sunset.png||
