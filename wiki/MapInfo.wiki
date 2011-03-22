@@ -42,8 +42,10 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
   * 16 x 16
   * [http://conflictterra.googlecode.com/files/CT_Eurekav7.sd7 Download]
 
-||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20map.png||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20miners.png||
-||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20snipers.png||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20hojo%20and%20oukami.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20map.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20miners.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20snipers.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20hojo%20and%20oukami.png||
 
 == CT Fishbone Ridge ==
 
@@ -52,8 +54,10 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
   * 20 x 10
   * [http://conflictterra.googlecode.com/files/CT_Fishbone_Ridgev7.sd7 Download]
 
-||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20Map.png||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20miners.png||
-||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20artillery%20mech.png||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20Sunset.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20Map.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20miners.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20artillery%20mech.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20Sunset.png||
 
 == CT Tumblebrush Basin ==
 
@@ -62,8 +66,10 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
   * 16 x 16
   * [http://conflictterra.googlecode.com/files/CT_Tumblebrush_Basinv1.sd7 Download]
 
-||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20map.png||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20view1.png||
-||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20cacti.png||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20miners.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20map.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20view1.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20cacti.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20miners.png||
 
 == CT Archway ==
 
@@ -72,8 +78,10 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
   * 16 x 16
   * [http://conflictterra.googlecode.com/files/CT_Archwayv2.sd7 Download]
 
-||http://conflictterra.googlecode.com/svn/wiki/images/Archway%20Map.png||http://conflictterra.googlecode.com/svn/wiki/images/Archway%20Arches.png||
-||http://conflictterra.googlecode.com/svn/wiki/images/Archway%20Plateau.png||http://conflictterra.googlecode.com/svn/wiki/images/Archway%20Stumps.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Archway%20Map.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Archway%20Arches.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Archway%20Plateau.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Archway%20Stumps.png||
 
 == CT Eitbyeit Gorge ==
 
@@ -82,8 +90,10 @@ These maps are made by the development team, specifically Oksnoop2, who embraces
   * 8 x 8
   * [http://conflictterra.googlecode.com/files/CT_Eitbyeit_Gorgev1.sd7 Download]
 
-||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Map.png||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Gorge.png||
-||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Mining.png||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Deeper.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Map.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Gorge.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Mining.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Deeper.png||
 
 = Non-CT Maps with Defined Resource Placement =
 Besides placing resources via the metal map, Conflict Terra also contains configuration files for more detailed placement of resources.
