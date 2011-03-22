@@ -1,0 +1,30 @@
+#summary Hojo Combat Mech
+#labels Phase-Guide
+
+= Role =
+*Light, fast, rapid fire SM.  Built for skirmishing as opposed to holding the line.*
+
+||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
+||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
+
+The Hojo Combat Mech is a light, raiding oriented unit that does best in ambushes and other off-the-front-line maneuvers.  That being said, they are not completely frail, and can be sufficiently effective if supported by other units.  Armed with a Rapid Fire Cannon on each arm, they are able to deal adequate damage over time.  If they get into trouble, or are needing to traverse trying terrain, the Hojo Combat Mech has the ability to "JumpJet" over obstacles and enemies.  This ability has a short recharge counter.
+
+= History =
+The Hojo Combat Mech was designed and modeled early in Conflict Terra's life, but was made fully operational much later.  This was because of the lack of knowledge on how to create a walking animation.  So, for the longest time, the "bbasicmech" was simply a tall and stiff robot that rolled on the ground as if on roller skates, and fired bullets from his pointed-down guns.
+
+Early one morning, after several hours of working on other things for the game, I suddenly had a realization of how the animation scripts we'd been given actually worked.  After a few more hours, I was able to successfully animate Hojo to lift his arms, and fire forward.  What an accomplishment that was!
+
+It would take a few more days before I could apply that acquired knowledge to form a very crude walking animation.  What I came up with that day is still sitting in the Hojo's animation script today, and has served as the basis for all of the other walking animations in Conflict Terra.  It may not be very pretty, but it gets the job done.
+
+As far as the design for Hojo goes, it was perhaps one of the most drawn out designs I created.  There is a page in my "Conflict Terra notebook" dedicated to Hojo's various parts.  The goal was to create a grunt-type unit that also looked cool, and majestic if it were actually real.  Heavy inspiration was, of course, taken from the [http://en.wikipedia.org/wiki/RGM-79_GM GM] of Gundam fame.
+
+It was with Hojo that I made the decision to eschew robotic hands that grasped the handles of guns, something very common in Mecha.  So Hojo was given "machine gun hands", with small shields protecting the sides of his "hands."  The thought put into Hojo goes so far as to include extra ammunition clips mounted on his outer thighs, so that the mech could release the spent ammunition clip, and with a combined motion of raising the leg and lowering the arm, load an extra clip.  This idea was of course not scripted into the unit, due to both its complexity and the fact that our units do not actually have ammo.
+
+Another "real world" idea worked into Hojo are the odd spike-like protrusions coming off of the rear thigh.  The idea behind these was that if Hojo were to be hit with a powerful forward force, such as a well-aimed shell, the spikes could immediately extend into the ground and stabilize the enormous robot.  This is yet another idea that was not scripted into the unit.
+
+When I had finished the first version of Hojo's model, I chose to play around with poses and I discovered a tremendous flaw!  I had put in a solid core running down the entirety of his trunk.  This prevented him for pivoting his waist!  I fixed this problem with no issues, but if I hadn't of discovered it then, I would have gotten a unit into the game only to discover it could not properly function.
+
+The Hojo Combat Mech stands as the sort of "icon" or "poster boy" of Conflict Terra.  His memorable name and design probably outweigh his actual usefulness, but many a Hojo has finished a player, and many more have died trying.
+
+= Name =
+The name Hojo is taken from the [http://en.wikipedia.org/wiki/Late_Hōjō_clan Hōjō clan] of medieval Japan.  The name was selected for this unit with the mentality that due to this mech's general purpose, and early-game deployment, it would stand as an "earlier" mech in the Conflict Terra universe.  The Hōjō were indeed a mighty and powerful clan in Japanese history, but by the time of the Sengoku Jidai, their power had begun to wane.  The name stands as a memorable and affectionate one, although often mispronounced and misspelled by players (as with almost all of the NKG's names.)
