@@ -1,6 +1,6 @@
 	unitDef = {
 	  unitname            = [[bheavymissilemech]],
-	  name                = [[Shibata Combat Support Mech MKII]],
+	  name                = [[Shibata Combat Support Mech MkII]],
 	  description         = [[Heavy Anti-Mech Mech - Heavy SM armed to the teeth with anti-mech missiles. - Build Limit: 10]],
 	  acceleration        = 0.1,
 	  brakeRate           = 0.24,
