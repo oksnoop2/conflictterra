@@ -1,0 +1,31 @@
+#summary Mech Hub
+#labels Phase-Guide
+
+= Summary =
+The mechs of the NKG are called sentou mekka, SM for short.  Sentou is the Japanese word for "combat" or "fighting", and mekka is the romanization of the Japanese pronunciation of the word mech.  Ironically, SM when mirrored is MS, a common abbreviation for Mobile Suits, from the famous [http://en.wikipedia.org/wiki/Gundam Gundam franchise].
+
+= Common Attributes =
+The SM of the NKG are overall meant to contrast the tanks by being faster, less heavily armored, yet more heavily armed units.  They are also a small bit more expensive than tanks, and perform better in offensive situations rather than defensive ones.  Some of the mechs also have special abilities, such as the Jump Jet or Sprint, that help differentiate them from the tanks.
+
+The color scheme of the NKG mechs is a blue one, using two shades of a slightly dulled navy blue, along with the three shades of grey usable by all units, to give a unified appearance for the mechs.  The exception is the Ukita Hover Combat Mech, which uses the black scheme of the submarines, as it was originally going to be a submersible.
+
+The names of the various mechs of the NKG are derived from the names of [http://en.wikipedia.org/wiki/Samurai samurai] and [http://en.wikipedia.org/wiki/Daimyo daimyo] from the [http://en.wikipedia.org/wiki/Sengoku_period Sengoku Jidai] of Japan, or the "Warring States Era."  Mostly I used the family names, although a few given names have crept in.  Some of the names are slightly altered, to make them easier to read or to just give them a small bit of flair.  
+
+= Mechs =
+== Tech Level 1 ==
+  * [http://code.google.com/p/conflictterra/wiki/NKGEngineerSupportMech Engineer Support Mech]
+  * [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mech]
+  * [http://code.google.com/p/conflictterra/wiki/NKGUedaCombatSupportMech Ueda Combat Support Mech]
+  * [http://code.google.com/p/conflictterra/wiki/NKGEnkeiCombatSupportMech Enkei Combat Support Mech]
+  * [http://code.google.com/p/conflictterra/wiki/NKGUkitaHoverCombatMech Ukita Hover Combat Mech]
+  * [http://code.google.com/p/conflictterra/wiki/NKGIshidaCombatMech Ishida Combat Mech]
+  * [http://code.google.com/p/conflictterra/wiki/NKGFumaAerialCombatMech Fuma Aerial Combat Mech]
+  * [http://code.google.com/p/conflictterra/wiki/NKGSaigaCombatSupportMech Saiga Combat Support Mech]
+== Tech Level 2 ==
+  * [http://code.google.com/p/conflictterra/wiki/NKGAdvancedEngineerSupportMech Advanced Engineer Support Mech]
+  * [http://code.google.com/p/conflictterra/wiki/NKGHondaCombatMech Honda Combat Mech MkII]
+  * [http://code.google.com/p/conflictterra/wiki/NKGShibataCombatSupportMech Shibata Combat Support Mech MkII]
+  * [http://code.google.com/p/conflictterra/wiki/NKGYagyuHoverCombatMech Yagyu Hover Combat Mech]
+  * [http://code.google.com/p/conflictterra/wiki/NKGShimazuCombatMech Shimazu Combat Mech]
+  * [http://code.google.com/p/conflictterra/wiki/NKGHattoriAerialCombatMech Hattori Aerial Combat Mech]
+  * [http://code.google.com/p/conflictterra/wiki/NKGIzanagiAssaultMech Izanagi Assault Mech]
