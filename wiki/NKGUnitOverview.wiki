@@ -1,5 +1,5 @@
 #summary A basic guide to the units for the NKG.
-#labels Phase-Guide
+#labels Phase-Guide,Deprecated
 
 *Caution:  This page is not up to date with the current working version of Conflict Terra.  After decisions are made concerning the structure, roles, and naming of the NKG, it will be updated.*
 
