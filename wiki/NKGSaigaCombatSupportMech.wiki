@@ -1,0 +1,39 @@
+#summary Saiga Combat Support Mech
+#labels Phase-Guide
+
+[http://img829.imageshack.us/img829/1807/saigatitle.png]
+
+== Role ==
+
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsnipermech.png]||Long range SM that does heavy damage to units.||
+
+The Saiga Combat Support Mech is in purpose a sniper.  With a long range Sniping Cannon the unit can deliver high damage to enemy units, but it does not fair as well against buildings.  It has a long reload time of 6 seconds to compensate for its power.  If built en masse, they can pose a heavy threat even for a well-balanced and well-used army, but the cost of doing this would very high and leave the player open to early rushing.
+
+||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
+||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Weak Against Buildings||
+
+||http://img838.imageshack.us/img838/9043/saigasniping.png||
+||A group of Hojo Combat Mechs are being picked off by snipers.||
+
+== History ==
+Like the Fuma Aerial Combat Mech, the Saiga was an early concept that I was eager to realize.  The idea of a sniping mech was born mostly out of the desire for the mechs to be interesting and more than a handful of units with machine guns and missiles.
+
+The design of the unit came very naturally to me, and was a joy to model.  The overall look of the mech drew heavily from the [http://en.wikipedia.org/wiki/Metal_Gear_REX#Metal_Gear_REX Metal Gear REX] of [http://en.wikipedia.org/wiki/Metal_Gear_Solid Metal Gear Solid].  The angular body, "reverse-joint" legs, and indeed perhaps even the shield-like projections on the sides of the body are all seen on the REX.
+
+||[http://img199.imageshack.us/img199/8425/mgrexexample.png]||
+||The Metal Gear REX.  It is easy to see the similarities.||
+
+This was the first mech I made that used the "reverse-joint" leg style.  The legs I made used very sharp inward angles for the knees, something I would later step slowly away from.
+
+||[http://img819.imageshack.us/img819/1432/reversejoint45.png]||
+||Note the sharper angle.||
+
+Below is an example of reverse-joint legs made much later.
+
+||[http://img710.imageshack.us/img710/2248/reversejoint90.png]||
+||Note the 90 degree angle.||
+
+The shields on the side of the unit were the final touch to the model before I began texturing it.  I felt it was too narrow and boring, and eventually came to this idea of something resembling "radar dampeners."  This however sounded odd and kind of dumb, so I decided they could serve as just extra shielding.
+
+== Name ==
+The name Saiga is one of the handful of names given specifically to its unit for a reason.  The [http://en.wikipedia.org/wiki/Saika_Ikki Saiga], or sometimes Saika, was the name of an army in the Sengoku Jidai of Japan that was famous for extensively using firearms.  [http://en.wikipedia.org/wiki/Suzuki_Magoichi Saiga Magoichi], their leader, is a commonly portrayed figure from historical Japan, and is often a sharpshooter or otherwise just a skilled gunman in a world where the spear and sword are still dominant.  This emphasis on gunnery was of course the reason for giving the name to the "bsnipermech."
