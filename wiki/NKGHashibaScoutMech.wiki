@@ -9,7 +9,7 @@
 
 The Hashiba Scout Mech is purely a reconnaissance and intellegence unit.  Unarmed and easy to kill, it is very speedy and excellent at scouting out strategic positions.  It is equipped with a radar that extends to precisely the same range as its Line of Sight, so it can detect cloaked units.  Being very cheap, it is usually not a risky endeavor to build a handful of these units to help scout out the map.
 
-The Hashiba Scout Mech has the unique ability to build temporary camera towers.  These towers are stealthy, cloaked buildings with a large Line of Sight.  After 60 seconds, they will self-destruct.  They cost a negligible 5 metal and 5 energy to build, and are built quickly, so they can be easily used to set up a way of observing key points on the map.
+The Hashiba Scout Mech has the unique ability to build temporary camera towers.  These towers are stealthy, cloaked buildings with a large Line of Sight.  It should be noted they DO NOT have any radar, and cloaked units will remain cloaked when near them.  After 60 seconds, the tower will self-destruct.  They cost a negligible 5 metal and 5 energy to build, and are built quickly, so they can be easily used to set up a way of observing key points on the map.
 
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Unarmed||
@@ -21,16 +21,16 @@ Not long after it was decided that a scouting mech would make it into the game, 
 
 The Night Elves had an [http://classic.battle.net/war3/nightelf/units/huntress.shtml early unit] that could place a Sentinel--an owl spirit of sorts-- in a tree.  This Sentinel was invisible to other players, and could detect cloaked units.  This unique form of information gathering always greatly appealed to me, and I decided to use one of the few things I liked from Warcraft III.  The camera tower is my floating owl spirit now.
 
-Modeling the Hashiba proved to be an acute challenge.  Early ideas I had for the unit was a very lanky humanoid design, that had "arms" that were in fact radar arrays.  A handful of doodles doomed this idea to looking too stupid.  I eventually went with a "reverse-joint" leg style, for the nimble quality I wanted to give it, and tried attaching some sort of radar arrays onto the body.  This too was deemed to look silly, so I opted to redo the unit.
+Modeling the Hashiba proved to be an acute challenge.  An early idea I had for the unit was a very lanky humanoid design, that had "arms" that were in fact radar arrays.  A handful of doodles doomed this idea to looking too stupid.  I eventually went with a "reverse-joint" leg style, for the nimble quality I wanted to give it, and tried attaching some sort of radar arrays onto the body.  This too was deemed to look silly, so I opted to redo the unit.
 
 ||[http://3.bp.blogspot.com/_g-xTa3Zhnd8/SaRc4w5BWrI/AAAAAAAAJ7c/xXwz6Hm7RiE/s400/racing_mech_by_muzzoid.jpg]||
 ||The googled image I used to create the Hashiba.||
 
 A lucky Google search yielded me the above image, an image I liked very much.  I then went with a rounded "body", with a center mounted camera.  This made sense for a recon unit afterall!
 
-The camera was quickly and for the most part thoughtlessly modeled.  A cloaked, stealthy unit that would only ever live for a total of 60 seconds would not be seen often at all, and so I felt its design did not matter very much.  Going for a very basic and utilitarian design, I made it a simple tower with a rotating "camera disk."
+The camera tower that accompanies the unit was quickly and for the most part thoughtlessly modeled.  A cloaked, stealthy unit that would only ever live for a total of 60 seconds would not be seen often at all, and so I felt its design did not matter very much.  Going for a very basic and utilitarian design, I made it a simple tower with a rotating "camera disk."
 
-Shortly after it was brought in-game, it was Oksnoop2 who suggested the camera lens rotate and zoom when the unit idled.  I decided this was something easy to add, and would bring a little bit of life to the unit.  Sadly, the movement of the lens is usually so far away and so subtle that its difficult to detect from a normal play distance, but its there!
+Shortly after it was brought in-game, it was Oksnoop2 who suggested the camera lens of the mech rotate and zoom when the unit idled.  I decided this was something easy to add, and would bring a little bit of life to the unit.  Sadly, the movement of the lens is usually so far away and so subtle that its difficult to detect from a normal play distance, but its there!
 
 When I was working on animating this unit, I was unsatisfied with the walking animation I developed for the Ueda Combat Support Mech.  Resolved to try and improve it for the Hashiba, I soon discovered I had made a much better and more fluid walking animation from a simple tweak.  I excitedly applied this new script to most of the reverse-joint leg mechs in the game.
 
