@@ -32,5 +32,8 @@ When I had finished the first version of Hojo's model, I chose to play around wi
 
 The Hojo Combat Mech stands as the sort of "icon" or "poster boy" of Conflict Terra.  His memorable name and design probably outweigh his actual usefulness, but many a Hojo has finished a player, and many more have died trying.
 
+||[http://img809.imageshack.us/img809/3554/hojoalpha.png]||
+||An illustration of a readied Hojo Combat Mech.||
+
 == Name ==
 The name Hojo is taken from the [http://en.wikipedia.org/wiki/Late_Hōjō_clan Hōjō clan] of medieval Japan.  The name was selected for this unit with the mentality that due to this mech's general purpose, and early-game deployment, it would stand as an "earlier" mech in the Conflict Terra universe.  The Hōjō were indeed a mighty and powerful clan in Japanese history, but by the time of the Sengoku Jidai, their power had begun to wane.  The name stands as a memorable and affectionate one, although often mispronounced and misspelled by players (as with almost all of the NKG's names.)
