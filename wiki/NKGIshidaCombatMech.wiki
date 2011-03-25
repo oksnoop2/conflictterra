@@ -22,6 +22,9 @@ When I placed the main gun, however, I realized that with my maxim of having no 
 
 The overall look of the unit was meant to be like a beefier Hojo Combat Mech.  I once again drew upon [http://en.wikipedia.org/wiki/Armored_core Armored Core] for inspiration.  The shape of the shoulders were taken from a pair of heavy Arms in the original Armored Core, and the legs were also partially derived from a set of heavy Legs in this game.
 
+||[http://upload.wikimedia.org/wikipedia/en/8/8b/Armored_Core_Project_Phantasma.jpg]||
+||An example of the shoulders that inspired the Ishida.||
+
 It is one of the few units that does not completely aim when it fires!  Due to the odd placement of the gun on its back, I encountered difficulty making it aim properly on the X axis.  Although I now know how to remedy this, I didn't at the time, and resolved to have the gun always move to the same angle when firing.  This looks rather fine most of the time, especially at the typical zoom level while playing a game.  Only when zooming in very closely to the unit, and while firing at high or low enemies, does it look oddly.
 
 This unit also originally came with the High-Trajectory option provided by Spring.  It was, afterall, an artillery unit.  However, during one game I realized that when this was turned on, it affected all of the weapons.  The Rapid Fire Cannons also shot straight up!  This of course looked very odd, especially when considering that due to the range limits, the bullets phased out of existence a few hundred feet above the unit.  There was no way around this, other than taking away the High Trajectory ability.
