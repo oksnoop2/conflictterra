@@ -24,7 +24,13 @@ It would take a few more days before I could apply that acquired knowledge to fo
 
 As far as the design for Hojo goes, it was perhaps one of the most drawn out designs I created.  There is a page in my "Conflict Terra notebook" dedicated to Hojo's various parts.  The goal was to create a grunt-type unit that also looked cool, and majestic if it were actually real.  Heavy inspiration was, of course, taken from the [http://en.wikipedia.org/wiki/RGM-79_GM GM] of Gundam fame.
 
+||[http://www.mahq.net/Mecha/gundam/msgundam/rgm-79.jpg]||
+||The RGM-79 GM.||
+
 It was with Hojo that I made the decision to eschew robotic hands that grasped the handles of guns, something very common in Mecha.  So Hojo was given "machine gun hands", with small shields protecting the sides of his "hands."  The thought put into Hojo goes so far as to include extra ammunition clips mounted on his outer thighs, so that the mech could release the spent ammunition clip, and with a combined motion of raising the leg and lowering the arm, load an extra clip.  This idea was of course not scripted into the unit, due to both its complexity and the fact that our units do not actually have ammo.
+
+||[http://img840.imageshack.us/img840/507/hojoleg.png]||
+||The stabilizing spikes and extra ammunition clip on the leg of a Hojo Combat Mech.||
 
 Another "real world" idea worked into Hojo are the odd spike-like protrusions coming off of the rear thigh.  The idea behind these was that if Hojo were to be hit with a powerful forward force, such as a well-aimed shell, the spikes could immediately extend into the ground and stabilize the enormous robot.  This is yet another idea that was not scripted into the unit.
 
