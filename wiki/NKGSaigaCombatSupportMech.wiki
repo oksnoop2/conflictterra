@@ -18,6 +18,9 @@ The Saiga Combat Support Mech is in purpose a sniper.  With a long range Sniping
 == History ==
 Like the Fuma Aerial Combat Mech, the Saiga was an early concept that I was eager to realize.  The idea of a sniping mech was born mostly out of the desire for the mechs to be interesting and more than a handful of units with machine guns and missiles.
 
+||[http://img845.imageshack.us/img845/671/saigasketch.png]||
+||An early sketch for the Saiga.||
+
 The design of the unit came very naturally to me, and was a joy to model.  The overall look of the mech drew heavily from the [http://en.wikipedia.org/wiki/Metal_Gear_REX#Metal_Gear_REX Metal Gear REX] of [http://en.wikipedia.org/wiki/Metal_Gear_Solid Metal Gear Solid].  The angular body, "reverse-joint" legs, and indeed perhaps even the shield-like projections on the sides of the body are all seen on the REX.
 
 ||[http://img199.imageshack.us/img199/8425/mgrexexample.png]||
