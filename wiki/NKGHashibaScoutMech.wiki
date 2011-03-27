@@ -21,6 +21,9 @@ Not long after it was decided that a scouting mech would make it into the game, 
 
 The Night Elves had an [http://classic.battle.net/war3/nightelf/units/huntress.shtml early unit] that could place a Sentinel--an owl spirit of sorts-- in a tree.  This Sentinel was invisible to other players, and could detect cloaked units.  This unique form of information gathering always greatly appealed to me, and I decided to use one of the few things I liked from Warcraft III.  The camera tower is my floating owl spirit now.
 
+||[http://img13.imageshack.us/img13/7863/hashibasketch.png]||
+||Preliminary sketches for the Hashiba, when it was still going to be humanoid.  Note the radar arms.||
+
 Modeling the Hashiba proved to be an acute challenge.  An early idea I had for the unit was a very lanky humanoid design, that had "arms" that were in fact radar arrays.  A handful of doodles doomed this idea to looking too stupid.  I eventually went with a "reverse-joint" leg style, for the nimble quality I wanted to give it, and tried attaching some sort of radar arrays onto the body.  This too was deemed to look silly, so I opted to redo the unit.
 
 ||[http://3.bp.blogspot.com/_g-xTa3Zhnd8/SaRc4w5BWrI/AAAAAAAAJ7c/xXwz6Hm7RiE/s400/racing_mech_by_muzzoid.jpg]||
