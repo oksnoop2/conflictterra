@@ -34,6 +34,9 @@ It was with Hojo that I made the decision to eschew robotic hands that grasped t
 
 Another "real world" idea worked into Hojo are the odd spike-like protrusions coming off of the rear thigh.  The idea behind these was that if Hojo were to be hit with a powerful forward force, such as a well-aimed shell, the spikes could immediately extend into the ground and stabilize the enormous robot.  This is yet another idea that was not scripted into the unit.
 
+||[http://img829.imageshack.us/img829/9205/hojosketch.png]||
+||The early sketches of the various parts of the Hojo.||
+
 When I had finished the first version of Hojo's model, I chose to play around with poses and I discovered a tremendous flaw!  I had put in a solid core running down the entirety of his trunk.  This prevented him for pivoting his waist!  I fixed this problem with no issues, but if I hadn't of discovered it then, I would have gotten a unit into the game only to discover it could not properly function.
 
 The Hojo Combat Mech stands as the sort of "icon" or "poster boy" of Conflict Terra.  His memorable name and design probably outweigh his actual usefulness, but many a Hojo has finished a player, and many more have died trying.
