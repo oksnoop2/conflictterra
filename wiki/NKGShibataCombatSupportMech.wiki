@@ -37,6 +37,11 @@ The unit was never loved and saw brief stints of heavy use due to imbalances; it
 
 Its accessibility was eventually cut off, along with the rest of Tech Level 2.  It was around this time that I began designing a new model for the unit.  This new design has a somewhat interesting history.  It was conceived while I was brainstorming the idea of a "beefier" Hojo Combat Mech.  I wasn't wanting to redesign the Hojo Combat Mech, but was playing with the idea of customized mechs for "Ace Pilots" in the NKG.  My trail of thought centered around the Hojo Combat Mech's small shields guarding its Rapid Fire Cannon "hands."  I thought of making them larger, more circular and "Ancient Greek-like."  From there I began to imagine a beefier, stockier mech in general.  I began doodling this idea, for I felt it was a good one.  When I was finished, I liked what I had come up with.  Determining that it was too good to waste, I began thinking about what I could use it for.
 
+||[http://img268.imageshack.us/img268/834/shibatasketch1st.png]||
+||The very first sketch of the new design, done the night of its conception.||
+||[http://img151.imageshack.us/img151/8718/shibatasketch2nd.png]||
+||A more refined sketch, done the next day while I was at work.||
+
 Ah ha!  Of course!  The awful old Tech Level 2 anti-mech mech.  I made a model based on my doodle, and asked for a critique from the Spring Community.  There was something about the doodle that wasn't conveyed in the model; something was missing, to give it that "good" quality.  The model sat unfinished for months, as I focused instead on the balancing and reshaping of Tech Level 1.
 
 Finally, when it was determined to bring Tech Level 2 back into the game, I finished this unit.  Pulling my act together, I fixed the model, textured it, and brought it in-game.  The Ueda Combat Mech had since had an upgrade, being able to fire a barrage of clustered missiles.  I decided to retain this form of attack, increasing its volume and power for this Tech Level 2 unit.
