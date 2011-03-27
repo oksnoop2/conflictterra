@@ -65,55 +65,57 @@ local kdiairdrone = {
 	weapons             = {
 	
 	    {
-	      def                = [[Laser]],
+	      def                = [[AA]],
+	      badTargetCategory  = [[GUNSHIP]],
 	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 60,
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
-
-	    {
-	      def                = [[Laser]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 60,
+	      maxAngleDif        = 90,
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 	
 	  },
 	
 	
-	weaponDefs             = {
+	  weaponDefs          = {
 	
-	    Laser = {
-	      name                    = [[Burst Laser]],
-	      areaOfEffect            = 8,
-	      coreThickness           = 0.5,
-	      collideFriendly         = false,
+	    AA         = {
+	      name                    = [[Homing AA Missile]],
+	      areaOfEffect            = 48,
+	      avoidFriendly           = true,
+	      canattackground         = false,
+	      cylinderTargetting      = 1,
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 10,
-		Building = 10,
-		Mech = 10,
-		Tank = 10,
-		Aircraft = 20,
-		Ship = 10,
+		Cruiser = 200,
+		Building = 20,
+		Mech = 20,
+		Tank = 20,
+		Aircraft = 200,
+		Ship = 20,
 		Sub = 10,
 	      },
-
-	      duration                = 0.01,
-	      energypershot           = 0,
+	
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      flightTime              = 3,
 	      interceptedByShieldType = 1,
-	      heightMod               = 0.5,
-	      range                   = 700,
-	      reloadtime              = 0.05,
-	      rgbColor                = [[0 1 0]],
-	      soundStart              = [[ct/pew1]],
-	      targetMoveError         = 0.07,
-	      thickness               = 4,
-	      tolerance               = 2000,
+	      lineOfSight             = true,
+	     -- model                   = [[baamissile.s3o]],
+	      range                   = 600,
+		  cegtag                  = [[VULCANFX]],
+	      reloadtime              = 3,
+	      smokedelay              = [[0.1]],
+	      smokeTrail              = false,
+	      soundHit                = [[argh/Argh_LargeExplosion]],
+	      soundStart              = [[evolutionRTS/aircraft_missile_01]],
+	      startVelocity           = 200,
+	      tolerance               = 22000,
+	      tracks                  = true,
+	      turnRate                = 30000,
 	      turret                  = true,
-	      weaponType              = [[LaserCannon]],
-	      weaponVelocity          = 2000,
+	      weaponAcceleration      = 550,
+	      weaponTimer             = 5,
+	      weaponType              = [[MissileLauncher]],
+	      weaponVelocity          = 750,
 	    },
 	
 	  },
