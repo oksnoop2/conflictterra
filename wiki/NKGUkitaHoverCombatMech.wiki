@@ -29,6 +29,9 @@ This original idea was also at odds with the original structure I outlined for t
 
 Like the Ueda Combat Support Mech, the unit that we see today as the Ukita Hover Combat Mech was modeled shortly before the initial playtesting began.  I asked a friend which he thought would be a cooler unit:  a hover mech, or a mech that walked on the seafloor.  Both would give me my amphibious quality, and both were easy to do.  He told me he preferred a hover unit, and so I set out to model something that hovered.
 
+||[http://img263.imageshack.us/img263/1512/ukitasketch.png]||
+||An early sketch of the odd vehicle.||
+
 My thinking at the time of modeling this unit was admittedly a bit odd, but I figured that some kind of "hover" technology could provide the floating quality, and I wanted some other way for actual propulsion.  What I came up with were strange corkscrew "legs" that could propel it both in the water and on land.
 
 ||[http://uploads.neatorama.com/wp-content/uploads/2010/12/5299098424_0c16a712ea_z-500x324.jpg]||
