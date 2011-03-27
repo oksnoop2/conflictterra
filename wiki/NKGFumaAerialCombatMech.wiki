@@ -19,6 +19,9 @@ The Fuma Aerial Combat Mech's main purpose is to destroy Cruisers.  It is armed 
 == History ==
 To some, the idea of a "flying mech" is an odd, or even dumb one.  I stand by this idea by arguing that mechs themselves are more implausible than plausible, and therefore do not have to abide by reason.  Also, a mech does not have to emulate a human or human shape.  In the very least, I can say that it does not resemble a conventional aircraft, and put the term "flying mech" in quotations, as a compromise to those who will continue to disagree.
 
+||[http://img714.imageshack.us/img714/9215/fumasketch.png]||
+||An early sketch of the Fuma.||
+
 The "bflyingmech" was a unit idea I was excited about very early on, and was among the first handful of units I modeled and textured.  Its design was something that changed quite a bit in my mind.  Originally, what I imagined was something more along the lines of the mechs found in [http://en.wikipedia.org/wiki/Robotech Robotech] or [http://en.wikipedia.org/wiki/Macross Macross], something that greatly resembled an aircraft but also had "humanoid elements."  Its funny that this is what I imagined, because I don't really enjoy either of those anime franchises.
 
 ||[http://img705.imageshack.us/img705/8030/robotechexample.png]||
