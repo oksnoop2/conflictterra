@@ -12,21 +12,25 @@ The color scheme of the NKG mechs is a blue one, using two shades of a slightly 
 The names of the various mechs of the NKG are derived from the names of [http://en.wikipedia.org/wiki/Samurai samurai] and [http://en.wikipedia.org/wiki/Daimyo daimyo] from the [http://en.wikipedia.org/wiki/Sengoku_period Sengoku Jidai] of Japan, or the "Warring States Era."  Mostly I used the family names, although a few given names have crept in.  Some of the names are slightly altered, to make them easier to read or to just give them a small bit of flair.  
 
 = Mechs =
+
 == Tech Level 1 ==
-  * [http://code.google.com/p/conflictterra/wiki/NKGEngineerSupportMech Engineer Support Mech]
-  * [http://code.google.com/p/conflictterra/wiki/NKGHashibaScoutMech Hashiba Scout Mech]
-  * [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mech]
-  * [http://code.google.com/p/conflictterra/wiki/NKGUedaCombatSupportMech Ueda Combat Support Mech]
-  * [http://code.google.com/p/conflictterra/wiki/NKGEnkeiCombatSupportMech Enkei Combat Support Mech]
-  * [http://code.google.com/p/conflictterra/wiki/NKGUkitaHoverCombatMech Ukita Hover Combat Mech]
-  * [http://code.google.com/p/conflictterra/wiki/NKGIshidaCombatMech Ishida Combat Mech]
-  * [http://code.google.com/p/conflictterra/wiki/NKGFumaAerialCombatMech Fuma Aerial Combat Mech]
-  * [http://code.google.com/p/conflictterra/wiki/NKGSaigaCombatSupportMech Saiga Combat Support Mech]
+
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bengineermkii.png]||[http://code.google.com/p/conflictterra/wiki/NKGEngineerSupportMech Engineer Support Mech]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bscoutmech.png]||[http://code.google.com/p/conflictterra/wiki/NKGHashibaScoutMech Hashiba Scout Mech]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbasicmech.png]||[http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mech]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmissilemech.png]||[http://code.google.com/p/conflictterra/wiki/NKGUedaCombatSupportMech Ueda Combat Support Mech]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bantitankmech.png]||[http://code.google.com/p/conflictterra/wiki/NKGEnkeiCombatSupportMech Enkei Combat Support Mech]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bhovermech.png]||[http://code.google.com/p/conflictterra/wiki/NKGUkitaHoverCombatMech Ukita Hover Combat Mech]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsiegemech.png]||[http://code.google.com/p/conflictterra/wiki/NKGIshidaCombatMech Ishida Combat Mech]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bflyingmech.png]||[http://code.google.com/p/conflictterra/wiki/NKGFumaAerialCombatMech Fuma Aerial Combat Mech]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsnipermech.png]||[http://code.google.com/p/conflictterra/wiki/NKGSaigaCombatSupportMech Saiga Combat Support Mech]||
+
 == Tech Level 2 ==
-  * [http://code.google.com/p/conflictterra/wiki/NKGAdvancedEngineerSupportMech Advanced Engineer Support Mech]
-  * [http://code.google.com/p/conflictterra/wiki/NKGHondaCombatMech Honda Combat Mech MkII]
-  * [http://code.google.com/p/conflictterra/wiki/NKGShibataCombatSupportMech Shibata Combat Support Mech MkII]
-  * [http://code.google.com/p/conflictterra/wiki/NKGYagyuHoverCombatMech Yagyu Hover Combat Mech]
-  * [http://code.google.com/p/conflictterra/wiki/NKGShimazuCombatMech Shimazu Combat Mech]
-  * [http://code.google.com/p/conflictterra/wiki/NKGHattoriAerialCombatMech Hattori Aerial Combat Mech]
-  * [http://code.google.com/p/conflictterra/wiki/NKGIzanagiAssaultMech Izanagi Assault Mech]
+
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvengineermkii.png]||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedEngineerSupportMech Advanced Engineer Support Mech]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bassaultmech.png]||[http://code.google.com/p/conflictterra/wiki/NKGHondaCombatMech Honda Combat Mech MkII]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavymissilemechmkii.png]||[http://code.google.com/p/conflictterra/wiki/NKGShibataCombatSupportMech Shibata Combat Support Mech MkII]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvhovermech.png]||[http://code.google.com/p/conflictterra/wiki/NKGYagyuHoverCombatMech Yagyu Hover Combat Mech]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavysiegemech.png]||[http://code.google.com/p/conflictterra/wiki/NKGShimazuCombatMech Shimazu Combat Mech]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavyflyingmech.png]||[http://code.google.com/p/conflictterra/wiki/NKGHattoriAerialCombatMech Hattori Aerial Combat Mech]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavyassaultmech.png]||[http://code.google.com/p/conflictterra/wiki/NKGIzanagiAssaultMech Izanagi Assault Mech]||
