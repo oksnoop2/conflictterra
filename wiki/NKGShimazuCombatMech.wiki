@@ -1,0 +1,33 @@
+#summary Shimazu Combat Mech
+#labels Phase-Guide
+
+[http://img24.imageshack.us/img24/9662/shimazutitle.png]
+
+== Role ==
+
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavysiegemech.png]||Slow, heavily armed SM sporting two long ranged cannons.||
+
+*Coming Soon*
+
+||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
+||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Buildings||
+
+== History ==
+The first quadruped mech I designed, the "bheavysiegemech" drew heavy inspiration from the game series [http://en.wikipedia.org/wiki/Armored_core Armored Core].  Deciding that the Tech Level 2 version of the Ishida Combat Mech should be heavy duty to the highest degree, I went with the stable four-legged design.
+
+||[http://img856.imageshack.us/img856/1286/shimazusketch.png]||
+||Early sketches of the Shimazu as I worked on different designs.||
+
+When designing the legs I wanted them to look well armored and powerful, so I extruded the fronts of the shins to create extended "panels."  I extended the "waist" to give the unit something resembling a tail.
+
+Initially the design called for the guns being mounted on the back or "inside shoulders" of the body, not unlikely the guns for the [http://en.wikipedia.org/wiki/Guncannon Guncannon] and [http://en.wikipedia.org/wiki/RX-75_Guntank Guntank] from [http://en.wikipedia.org/wiki/Mobile_Suit_Gundam Gundam].  However I realized that doing it this way would neglect any need for arms, and I wanted to avoid a bare torso.  After a while of pondering, I realized I could just mount the guns onto the "outside shoulders" to give them an arm-like appearance, and solve my problem!
+
+The actual guns themselves are completely based off of a weapon from [http://en.wikipedia.org/wiki/Armored_Core_3 Armored Core 3].  Of the two grenade launchers available to a player, the lighter option was short and simple, and very closely resembles what we see now on the Shimazu.  This weapon design, for whatever reason, has always been deeply ingrained in what I imagine "heavy weaponry" to look like.
+
+== Name ==
+The [http://en.wikipedia.org/wiki/Shimazu_clan Shimazu clan] was a mighty clan, conquerers of the island of [http://en.wikipedia.org/wiki/Kyushu Kyushu] and fearsome warriors.  They were present at the pivotal [http://en.wikipedia.org/wiki/Sekigahara Battle of Sekigahara], but did not participate because the Shimazu daimyo present had been ridiculed by his fellow samurai when he arrived at the main camp with a bow strung across his back.  Many consider this lack of participation a key factor in the Western Army's defeat.  This daimyo, [http://en.wikipedia.org/wiki/Shimazu_Yoshihiro Shimazu Yoshihiro], is the particular namesake for the unit, often portrayed as a gruff and powerful warrior, this was the quality I wished the "bheavysiegemech" to convey.
+
+The disk like shields on the outside of the arms were actually added almost entirely because of the units name.  One of the very rare occasions where a units (planned) name affected its model, I added the shoulder pads to imitate the design of Yoshihiro from the game [http://en.wikipedia.org/wiki/Samurai_Warriors_2 Samurai Warriors 2].
+
+||[http://dynastywarriors.neoseeker.com/w/i/dynastywarriors/thumb/6/66/Yoshihiro_shimazu_sw2.png/400px-Yoshihiro_shimazu_sw2.png]||
+||Shimazu Yoshihiro as he appears in Samurai Warriors 2.  Note the circular shoulder pads.||
