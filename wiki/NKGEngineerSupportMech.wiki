@@ -28,6 +28,8 @@ There is another important thing to remember about the Engineer Support Mech.  D
 == History ==
 The Engineer Support Mech has had an interesting life.  It was of course needed from the very start, being a constructor, and therefore was modeled rather early.  An early example of a model that never made it in-game still exists and is pictured below.
 
+||[http://img15.imageshack.us/img15/190/bengisketch.png]||
+||The very bare sketch for my early Engineer ideas.||
 ||[http://img121.imageshack.us/img121/3909/bengimodelold.png]||
 ||A surviving prototype for the Engineer Support Mech.||
 
@@ -46,6 +48,9 @@ The compromise was a compromise though, and I always felt that the welding spark
 ||A robotic welding arm.||
 
 What I actually made where relatively similar, articulated arms coming from the body and resting idly in a "praying mantis" like position.  In another attempt to make the unit interesting, I gave the unit a giant welders mask, that pivoted down over the windshield while building.  For locomotion, I retained the utilitarian treads of the previous model, actually copying that very part of the model.
+
+||[http://img215.imageshack.us/img215/6396/bengisketchmkii.png]||
+||Sketches working out how the robotic arms would operate.||
 
 Animating these new arms was quite a chore, and what I came up with wasn't exactly what I wanted, but to go any further would require a very complex list of animations.
 
