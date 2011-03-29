@@ -14,7 +14,9 @@ This unit builds the Tech Level 1 structures for the NKG.  These include economi
   * Only one Engineer Support Mech can work on a building at a time.  No assisting.
   * The Engineer Support Mech cannot assist "factories" in building their units.
 
-The other main role of the Engineer Support Mech is that it is the only miner for the NKG.  This unit can "mine" meteorites for Metal, which it then must deposit at a drop-off area for the player to actually acquire the mined Metal.  The mining process is mostly automated; Engineer Support Mechs will seek out mine-able meteorites, mine them until they are "full", return to a drop-off area, and then return to continue mining.
+It should be noted that the above rules apply to both of the NKG builder units.
+
+The other main role of the Engineer Support Mech is that it is the only miner for the NKG.  This unit can "mine" meteorites for Metal, which it then must deposit at a [http://code.google.com/p/conflictterra/wiki/NKGResourceDropZone drop-off area] for the player to actually acquire the mined Metal.  The mining process is mostly automated; Engineer Support Mechs will seek out mine-able meteorites, mine them until they are "full", return to a drop-off area, and then return to continue mining.
 
 There is another important thing to remember about the Engineer Support Mech.  Due to the design of the gadget that allows it to mine meteorites for Metal, it is almost always necessary to manually "turn off" a miner so that it can build a building without interruption.  If this isn't done, the miner will more than likely ignore your order and continue mining.  To "turn off" a miner is to set it to "Hold pos".  Below are what the following commands mean:
 
@@ -24,6 +26,23 @@ There is another important thing to remember about the Engineer Support Mech.  D
 
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Unarmed||
+
+||Built From||[http://code.google.com/p/conflictterra/wiki/NKGOdaClassCruiser Mobile Headquarters]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGSaitoClassCruiser Saito Class Cruiser Mech Factory]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGTakedaClassCruiser Takeda Class Cruiser Tank Factory]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
+
+||Builds||[http://code.google.com/p/conflictterra/wiki/NKGResourceDropZone Resource Drop Zone]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGSterlingPowerGenerator Sterling Power Generator]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGHighTechPowerPlant High-Tech Power Plant]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGCruiserBeacon Cruiser Beacon]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGRadarOutpost Radar Outpost]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGRadarJammingOutpost Radar Jamming Outpost]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGGatlingTurret Gatling Turret]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGAntiAirMissileTurret Anti-Air Missile Turret]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGDualCannonTurret Dual Cannon Turret]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGAntiMechMissileTurret Anti-Mech Missile Turret]||
 
 == History ==
 The Engineer Support Mech has had an interesting life.  It was of course needed from the very start, being a constructor, and therefore was modeled rather early.  An early example of a model that never made it in-game still exists and is pictured below.
