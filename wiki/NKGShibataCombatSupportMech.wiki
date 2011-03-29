@@ -3,6 +3,8 @@
 
 [http://img62.imageshack.us/img62/9318/shibatatitle.png]
 
+----
+
 == Role ==
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavymissilemechmkii.png]||Heavy SM armed to the teeth with anti-mech missiles.||
@@ -17,6 +19,8 @@ Fulfilling the role of a "bigger and badder" [http://code.google.com/p/conflictt
 
 ||http://img822.imageshack.us/img822/9879/shibatashooting.png||
 ||A pair of Shibata Combat Support Mech MkIIs.||
+
+----
 
 == History ==
 Conceived as nothing more than a bigger and stronger anti-mech mech, this unit was modeled later in the initial creation of units.  Not long before playtesting began I had to wrap up the remaining units, the units I had little inspiration or ideas for.  This unit was one of those.
@@ -50,6 +54,8 @@ Ah ha!  Of course!  The awful old Tech Level 2 anti-mech mech.  I made a model b
 Finally, when it was determined to bring Tech Level 2 back into the game, I finished this unit.  Pulling my act together, I fixed the model, textured it, and brought it in-game.  The [http://code.google.com/p/conflictterra/wiki/NKGUedaCombatSupportMech Ueda Combat Mech] had since had an upgrade, being able to fire a barrage of clustered missiles.  I decided to retain this form of attack, increasing its volume and power for this Tech Level 2 unit.
 
 Shortly after it was doodled, I thought the unit looked like it could use a "charging" type of attack in a "real life" setting.  What I imagined was the unit crouching forward slightly, and moving its shielded arms up front of its "face", and rushing the enemy.  This "Charge" would have been a linear attack, causing low-to-medium damage and ideally having a slight repulsive quality to push back the enemy.  It was, however, deemed too difficult to do, as it would require an entirely new gadget written.  The unit can NOT use this attack.  Someday we may see this move on the Shibata Combat Support Mech MkII, and it will be a good day.
+
+----
 
 == Name ==
 Shibata comes from the samurai [http://en.wikipedia.org/wiki/Shibata_Katsuie Shibata Katsuie], an important and loyal servant to [http://en.wikipedia.org/wiki/Oda_Nobunaga Oda Nobunaga.]  Shibata is often portrayed as an able yet gruff general, something I wanted to convey with this powerful unit.  Amusingly, I feel the second design for the unit better fits the name than the first.
