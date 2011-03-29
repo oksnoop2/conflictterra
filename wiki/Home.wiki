@@ -13,6 +13,7 @@
   * Unit Guide
     * [http://code.google.com/p/conflictterra/wiki/NKGMechHub NKG Mech Hub]
     * [http://code.google.com/p/conflictterra/wiki/NKGTankHub NKG Tank Hub]
+    * [http://code.google.com/p/conflictterra/wiki/NKGScrapyard NKG Scrapyard]
     * [http://code.google.com/p/conflictterra/wiki/Glossary Glossary]
   * Conflict Terra's Maps
     * [http://code.google.com/p/conflictterra/wiki/MapInfo Map Information]
