@@ -7,10 +7,12 @@
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavyassaultmech.png]||Prototype SM designed to push SM technology to its limit.  Armed with powerful artillery and heavy cannons.||
 
-The Izanagi Assault Mech is second to only one unit:  the Uesugi Class Cruiser.  While the Uesugi Class Cruiser takes to the skies to bring destruction to all fronts, the Izanagi Assault Mech is restricted to the land, but can bring about heavy damage regardless.  Armed with a total of eight cannons, and the most heavily armored unit in the NKG arsenal, the Izanagi Assault Mech has one role:  to charge into the enemy base, and to keep going.  Using two heavier cannons mounted on the back to deal longer ranged damage, the Izanagi Assault Mech also has a total of six faster firing cannons to deal with closer units.  Its potential for damage is of course offset with a high price and complicated access.  Built at the Experimental Build Pad, a player must dedicate their economy to the development of this unit.
+The Izanagi Assault Mech is second to only one unit:  the [http://code.google.com/p/conflictterra/wiki/NKGUesugiClassCruiser Uesugi Class Cruiser].  While the [http://code.google.com/p/conflictterra/wiki/NKGUesugiClassCruiser Uesugi Class Cruiser] takes to the skies to bring destruction to all fronts, the Izanagi Assault Mech is restricted to the land, but can bring about heavy damage regardless.  Armed with a total of eight cannons, and the most heavily armored unit in the NKG arsenal, the Izanagi Assault Mech has one role:  to charge into the enemy base, and to keep going.  Using two heavier cannons mounted on the back to deal longer ranged damage, the Izanagi Assault Mech also has a total of six faster firing cannons to deal with closer units.  Its potential for damage is of course offset with a high price and complicated access.  Built at the [http://code.google.com/p/conflictterra/wiki/NKGExperimentalBuildPad Experimental Build Pad], a player must dedicate their economy to the development of this unit.
 
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
+
+||Built From||[http://code.google.com/p/conflictterra/wiki/NKGExperimentalBuildPad Experimental Build Pad]||
 
 == History ==
 The Izanagi is unique because it is the very first unit made _on whim._  That is, its the first unit I made and got in-game that wasn't in the original "plan" for the faction.  I had been toying with the idea of writing a story centered around mech combat around the time of this units conception--the earliest days of Conflict Terra.  The mech I was imagining in my head for this story is what you see today:  a reverse-joint styled leg setup holding up an angular "shark-like" head with a hefty array of weapons mounted on the sides and back.  The idea for this story was a more Americanized or Westernized portrayal of mech combat, a subject and genre so closely bound to Japanese portrayal and its culture's quirks.  The story was never realized, and never will be, but the idea lives on in this unit.
@@ -23,7 +25,7 @@ The earliest notions of this unit brewed up in leg designs.  I was seeking to ex
 ||[http://images3.wikia.nocookie.net/__cb20101110192702/metalgear/images/9/9d/Gekko.jpg]||
 ||The Gekko of Metal Gear Solid 4.||
 
-From the legs I moved to the body, modeling the aforementioned "shark-like" body.  This general design can be seen in the game elsewhere in the Saiga Combat Support Mech; these two units bear very similar bodies.
+From the legs I moved to the body, modeling the aforementioned "shark-like" body.  This general design can be seen in the game elsewhere in the [http://code.google.com/p/conflictterra/wiki/NKGSaigaCombatSupportMech Saiga Combat Support Mech]; these two units bear very similar bodies.
 
 I attached the weapons next, packing three guns onto each side.  I added the two heavier cannons on the back of the unit to help load the body down with weapons.
 
