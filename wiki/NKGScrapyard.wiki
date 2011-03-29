@@ -1,0 +1,52 @@
+#summary Scrapyard
+#labels Phase-Information
+
+= Summary =
+It is always a sad day to see a unit leave Conflict Terra.  Even if the unit was disliked, it was still time spent.  The Scrapyard will be a place set aside for units that are no longer in the current build of Conflict Terra.
+
+= Reasons for Removal =
+There have been a handful of reasons for removing units from Conflict Terra.  Units that have proven to be too difficult to balance, too difficult to _fix_, too difficult to get working, and in some cases, units that are just simply misused by players are some reasons for removal.  Also, some units have become outdated or unneeded, as massive changes altered how the very structure of the NKG sat.
+
+= Cruisers =
+
+||[http://code.google.com/p/conflictterra/wiki/NKGTakedaClassSupplyCruiser Takeda Class Supply Cruiser]||
+||[http://code.google.com/p/conflictterra/wiki/NKGDendaClassSupplyCruiser Denda Class Supply Cruiser]||
+
+= Buildings =
+
+||[http://code.google.com/p/conflictterra/wiki/NKGRawMaterialExtractor Raw Material Extractor]||
+||[http://code.google.com/p/conflictterra/wiki/NKGNuclearPowerPlant Nuclear Power Plant]||
+||[http://code.google.com/p/conflictterra/wiki/NKGMaterialRefinery Material Refinery]||
+||[http://code.google.com/p/conflictterra/wiki/NKGMetalStorageFacility Metal Storage Facility]||
+||[http://code.google.com/p/conflictterra/wiki/NKGEnergyStorageFacility Energy Storage Facility]||
+||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedRawMaterialExtractor Advanced Raw Material Extractor]||
+||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedNuclearPowerPlant Advanced Nuclear Power Plant]||
+||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedMaterialRefinery Advanced Material Refinery]||
+||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedMetalStorageFacility Advanced Metal Storage Facility]||
+||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedEnergyStorageFacility Advanced Energy Storage Facility]||
+||[http://code.google.com/p/conflictterra/wiki/NKGShieldGenerator Shield Generator]||
+||[http://code.google.com/p/conflictterra/wiki/NKGCombatMechFactory Combat Mech Factory]||
+||[http://code.google.com/p/conflictterra/wiki/NKGTankFactory Tank Factory]||
+||[http://code.google.com/p/conflictterra/wiki/NKGCombatAirbase Combat Airbase]||
+||[http://code.google.com/p/conflictterra/wiki/NKGSupportFactory Support Factory]||
+||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedCombatMechFactory Advanced Combat Mech Factory]||
+||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedTankFactory Advanced Tank Factory]||
+||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedCombatAirbase Advanced Combat Airbase]||
+
+= Mechs =
+
+||[http://code.google.com/p/conflictterra/wiki/NKGTairaDefenseMech Taira Defense Mech]||
+
+= Tanks =
+
+||[http://code.google.com/p/conflictterra/wiki/NKGTetsudaTypeSupplyTruck Tetsuda Type Supply Truck]||
+||[http://code.google.com/p/conflictterra/wiki/NKGRaidaTypeSupplyTruck Raida Type Supply Truck]||
+||[http://code.google.com/p/conflictterra/wiki/NKGSaitoTypeHoverTransport Saito Type Hover Transport]||
+||[http://code.google.com/p/conflictterra/wiki/NKGTatakauTypeTank Tatakau Type Tank]||
+||[http://code.google.com/p/conflictterra/wiki/NKGUremeTypeRadarTank Ureme Type Radar Tank]||
+||[http://code.google.com/p/conflictterra/wiki/NKGOmeTypeRadarTank Ome Type Radar Tank]||
+
+= Aircraft =
+
+||[http://code.google.com/p/conflictterra/wiki/NKGKangaeTypeRadarPlane Kangae Type Radar Plane]||
+||[http://code.google.com/p/conflictterra/wiki/NKGObouTypeRadarPlane Obou Type Radar Plane]||
