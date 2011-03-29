@@ -3,6 +3,8 @@
 
 [http://img217.imageshack.us/img217/8919/hojotitle.png]
 
+----
+
 == Role ==
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbasicmech.png]||Light, fast, rapid fire SM.  Built for skirmishing as opposed to holding the line.||
@@ -17,6 +19,8 @@ The Hojo Combat Mech is a light, raiding oriented unit that does best in ambushe
 
 ||http://img827.imageshack.us/img827/1081/hojoraiding.png||
 ||A group of Hojo Combat Mechs raiding a small mining operation.||
+
+----
 
 == History ==
 The Hojo Combat Mech was designed and modeled early in Conflict Terra's life, but was made fully operational much later.  This was because of the lack of knowledge on how to create a walking animation.  So, for the longest time, the "bbasicmech" was simply a tall and stiff robot that rolled on the ground as if on roller skates, and fired bullets from his pointed-down guns.
@@ -46,6 +50,8 @@ The Hojo Combat Mech stands as the sort of "icon" or "poster boy" of Conflict Te
 
 ||[http://img809.imageshack.us/img809/3554/hojoalpha.png]||
 ||An illustration of a readied Hojo Combat Mech.||
+
+----
 
 == Name ==
 The name Hojo is taken from the [http://en.wikipedia.org/wiki/Late_Hōjō_clan Hōjō clan] of medieval Japan.  The name was selected for this unit with the mentality that due to this mech's general purpose, and early-game deployment, it would stand as an "earlier" mech in the Conflict Terra universe.  The Hōjō were indeed a mighty and powerful clan in Japanese history, but by the time of the Sengoku Jidai, their power had begun to wane.  The name stands as a memorable and affectionate one, although often mispronounced and misspelled by players (as with almost all of the NKG's names.)
