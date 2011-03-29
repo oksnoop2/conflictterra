@@ -85,3 +85,11 @@ For the NKG, units specified as "siege" units specifically deal high damage to b
 
 === Stealth ===
 Stealth units are visible to the enemy, but will not show up on radar.  Stealth units do not require any sort of Energy maintenance, and the Stealth state can not be turned off or on; it is always on.
+
+= T =
+
+=== Tech Level 1 ===
+Synonymous with the Total Annihilation term "T1", Tech Level 1 roughly means any unit that is able to built "right out of the gate."  Of course, due to the somewhat different structure of the NKG, this term can be difficult to define with words, so it will just be said that they represent the first tier of units for a player.  In-game, an easy way to identify a Tech Level 1 unit is its grey border in its build pic.
+
+=== Tech Level 2 ===
+Synonymous with the Total Annihilation term "T2", Tech Level 2 roughly means any unit that is only accessible after upgrading a "factory."  They are usually more expensive, and therefore powerful or useful, then their Tech Level 1 cousins.  An easy way to identify a Tech Level 2 unit in-game is by its golden border in the build pic.
