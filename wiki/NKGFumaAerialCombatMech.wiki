@@ -3,6 +3,8 @@
 
 [http://img25.imageshack.us/img25/3059/fumatitle.png]
 
+----
+
 == Role ==
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bflyingmech.png]||Airborne "mech" designed to destroy cruisers.  Fires beam weapons and two AA missiles.  Cannot attack ground.||
@@ -18,6 +20,8 @@ The Fuma Aerial Combat Mech's main purpose is to destroy Cruisers.  It is armed 
 
 ||[http://img9.imageshack.us/img9/6775/fumashooting.png]||
 ||A small force of Fuma Aerial Combat Mechs attacking a [http://code.google.com/p/conflictterra/wiki/NKGOdaClassCruiser Flagship].||
+
+----
 
 == History ==
 To some, the idea of a "flying mech" is an odd, or even dumb one.  I stand by this idea by arguing that mechs themselves are more implausible than plausible, and therefore do not have to abide by reason.  Also, a mech does not have to emulate a human or human shape.  In the very least, I can say that it does not resemble a conventional aircraft, and put the term "flying mech" in quotations, as a compromise to those who will continue to disagree.
@@ -46,6 +50,8 @@ An example of one of these poses is the "landed" form, pictured above.  The mech
 ||The Fuma in its planned forward "flying" form.||
 
 When the Fuma was to be flying, it would sort of lean forward headfirst, with the engines and guns rotating to accommodate this.  This pose was a more aggressive one, and I think would look well to make the units seem more alive.  It is still my desire to someday put these different poses into the unit, but that day may not come for a long time, not until someone can tell me how to do it.
+
+----
 
 == Name ==
 The name Fuma was given to this unit because of its unique role of being a "flying mech."  I felt this implied a special, covert quality to the unit, and so I picked the name of one of the two great ninja clans from Japan, the [http://en.wikipedia.org/wiki/Fūma_Kotarō Fūma].  I chose the other clans name, the [http://en.wikipedia.org/wiki/Hattori_Hanzō Hattori], for the Tech Level 2 flying mech, so I guess you could say I think less of the Fūma.  Indeed, their place in Japanese history and legend is lesser, but still something to note.  Ironically, the name Fūma means "Wind Demon", appropriate for this flying war machine.
