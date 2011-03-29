@@ -9,10 +9,13 @@
 
 The Ueda Combat Support Mech is a lightly armored counter mech that specializes in anti-mech warfare.  It attacks by firing two volleys of anti-mech missiles at the same time.  Each volley is comprised of three missiles, totaling in six.  The missiles stay in a tightly packed trajectory, and most are likely to hit a target.  While the Ueda Combat Support Mech can destroy buildings and other units sufficiently when en masse, they are not hardy and are likely to be taken out easily.  They have a Sprint function, which when activated, will allow the Ueda Combat Support Mech to move very quickly for 10 seconds.  A 20 second recharge period follows.
 
-They work well when combined with the Enkei Combat Support Mech, an anti-tank unit.
+They work well when combined with the [http://code.google.com/p/conflictterra/wiki/NKGEnkeiCombatSupportMech Enkei Combat Support Mech], an anti-tank unit.
 
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Mechs||
+
+||Built From||[http://code.google.com/p/conflictterra/wiki/NKGSaitoClassCruiser Saito Class Cruiser Mech Factory]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
 
 ||http://img705.imageshack.us/img705/2856/uedafiring.png||
 ||The Ueda Combat Support Mech can unleash several missiles when in groups.||
@@ -37,7 +40,7 @@ The two previous reverse-joint leg mechs had legs that were positioned more like
 ||[http://img819.imageshack.us/img819/1432/reversejoint45.png]||
 ||Note the sharper angle.||
 
-For the longest time the "bmissilemech" just fired a volley of two anti-mech missiles, one from each pod, exactly like its tank counterpart, the Kuma Type Tank.  Much later, when I was trying to think of a way to legitimize the use of the more expensive mechs via making them "special," it came to me to give the anti-mech mech a more explosive type of attack, and so the bursts of missile were born.  It has worked well, making the Ueda a formidable unit against mechs.
+For the longest time the "bmissilemech" just fired a volley of two anti-mech missiles, one from each pod, exactly like its tank counterpart, the [http://code.google.com/p/conflictterra/wiki/NKGKumaTypeTank Kuma Type Tank].  Much later, when I was trying to think of a way to legitimize the use of the more expensive mechs via making them "special," it came to me to give the anti-mech mech a more explosive type of attack, and so the bursts of missile were born.  It has worked well, making the Ueda a formidable unit against mechs.
 
 It was a decent amount of time after that development that the Ueda was finally given the Sprint ability.  Many thanks to Car Repairer for getting that working for us.
 
