@@ -7,18 +7,21 @@
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvhovermech.png]||Newer hovercraft "mech" armed with powerful beam weapons.||
 
-The Yagyu Hover Combat Mech is essentially an improved Ukita Hover Combat Mech; it is a stronger and more heavily armored hover unit.  This means it can traverse across both water and land.  However, unlike its weaker cousin, the Yagyu Hover Combat Mech _cannot_ attack submarine units; it can only attack enemies above the waters surface.  Its attack is substantially more fearsome than the Ukita Hover Combat Mech however, being armed with a pair of beam weapons that have a reasonably quick reload rate of one and a half seconds.  Due to its versatile movement range, it is somewhat expensive, being in the middle of the spectrum for Tech Level 2 mechs.
+The Yagyu Hover Combat Mech is essentially an improved [http://code.google.com/p/conflictterra/wiki/NKGUkitaHoverCombatMech Ukita Hover Combat Mech]; it is a stronger and more heavily armored hover unit.  This means it can traverse across both water and land.  However, unlike its weaker cousin, the Yagyu Hover Combat Mech _cannot_ attack submarine units; it can only attack enemies above the waters surface.  Its attack is substantially more fearsome than the [http://code.google.com/p/conflictterra/wiki/NKGUkitaHoverCombatMech Ukita Hover Combat Mech] however, being armed with a pair of beam weapons that have a reasonably quick reload rate of one and a half seconds.  Due to its versatile movement range, it is somewhat expensive, being in the middle of the spectrum for Tech Level 2 mechs.
 
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
 
+||Built From||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
+
 == History ==
-Like the Ukita Hover Combat Mech, this unit began its conceptual life intended to be an "amphibious unit."  However, because it was a Tech Level 2 version of this conceptual "amphibious unit", it was never designed due to the idea being shot down.  The original idea for the amphibious mechs was that while in the water, the unit would be in a slightly submerged "swimming mode", and when the unit reached land, it would transform slightly and shift upright to walk like a human on the ground.  Due to our limits of scripting knowledge, this idea was never realized, and so we utilized the hover unit type.
+Like the [http://code.google.com/p/conflictterra/wiki/NKGUkitaHoverCombatMech Ukita Hover Combat Mech], this unit began its conceptual life intended to be an "amphibious unit."  However, because it was a Tech Level 2 version of this conceptual "amphibious unit", it was never designed due to the idea being shot down.  The original idea for the amphibious mechs was that while in the water, the unit would be in a slightly submerged "swimming mode", and when the unit reached land, it would transform slightly and shift upright to walk like a human on the ground.  Due to our limits of scripting knowledge, this idea was never realized, and so we utilized the hover unit type.
 
 ||[http://img97.imageshack.us/img97/9568/yagyusketch.png]||
 ||An early sketch of the Yagyu.||
 
-Of the two designs I made for the pair of hover units, the Yagyu was by far the better, and therefore fitting it be used for the stronger unit.  The Ukita Hover Combat Mech utilized offbeat ideas of locomotion, but the Yagyu relied on very stereotypical "hover pads" that extended off of its bullet-shaped body.
+Of the two designs I made for the pair of hover units, the Yagyu was by far the better, and therefore fitting it be used for the stronger unit.  The [http://code.google.com/p/conflictterra/wiki/NKGUkitaHoverCombatMech Ukita Hover Combat Mech] utilized offbeat ideas of locomotion, but the Yagyu relied on very stereotypical "hover pads" that extended off of its bullet-shaped body.
 
 Much like its weaker cousin, I decided to use some "interesting" animation to spice up the unit.  While "standing" still, the Yagyu's hover pads are angled downward and away from the body.  When it begins to move, the Yagyu's body lowers slightly, and the pads raise to a horizontal position.  The low profile of the design was meant to convey a sense of swiftness, which is ironic because the unit is not especially quick.
 
