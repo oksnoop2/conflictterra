@@ -3,6 +3,8 @@
 
 [http://img405.imageshack.us/img405/6048/hattorititle.png]
 
+----
+
 == Role ==
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavyflyingmech.png]||Stronger model of the airborne "mech."  Fires a powerful beam.||
@@ -14,6 +16,8 @@
 
 ||Built From||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
+
+----
 
 == History ==
 While the [http://code.google.com/p/conflictterra/wiki/NKGFumaAerialCombatMech Fuma Aerial Combat Mech] was inspired by the [http://en.wikipedia.org/wiki/Mobile_armour#Mobile_armour Mobile Armour]'s of [http://en.wikipedia.org/wiki/Gundam Gundam], the Hattori Aerial Combat Mech was more intimately designed after the Mobile Armours.  Wanting a large, foreboding, and intemedating appearance for this "bheavyflyingmech", I looked at some of the most fearsome of the Mobile Armours in Gundam's [http://en.wikipedia.org/wiki/Universal_Century Universal Century] timeline.  What I looked at most was none other than the awesome [http://en.wikipedia.org/wiki/AMA-002_Neue_Ziel#AMA-002_.28AMA-X2.2C_AMX-002.29_Neue_Ziel Neue Ziel].
@@ -33,6 +37,8 @@ I did however give the Hattori a single, central weapon.  Fired from the front "
 Originally, before we had LUPs in the game, the model was as it is in Wings3D.  After we added LUPs effects into the game, the Hattori, like the [http://code.google.com/p/conflictterra/wiki/NKGFumaAerialCombatMech Fuma Aerial Combat Mech], was given thruster effects to help realize the image of the unit.  This has helped a lot.  Also like the [http://code.google.com/p/conflictterra/wiki/NKGFumaAerialCombatMech Fuma Aerial Combat Mech], movement of the thruster "limbs" is planned into the unit, with various movements meant to convey different types of movements.  This is not yet implemented, due to limits in scripting prowess, but we hope someday it will be so.
 
 The unit has had a long history of being overpowered.  Indeed, in early playtesting it was so powerful that if a player could secure a handful of them, victory was almost guaranteed.  Today they see little use due to their price and mystique around them, but we hope to someday remedy this with proper balance work.
+
+----
 
 == Name ==
 Named after the infamous [http://en.wikipedia.org/wiki/Hattori_Hanzō Hattori Hanzō] of the Hattori clan, the reason for giving this name was that the Hattori would be the ultimate in "special warfare".  Able to fly over any terrain, and deliver immense damage, the Hattori is much like the legends of its namesake.  The several Hattori Hanzōs of history have cultivated an immense cultural significance that persists to this day in [http://en.wikipedia.org/wiki/Hattori_Hanzo_(Kill_Bill) movies], [http://en.wikipedia.org/wiki/List_of_Samurai_Shodown_characters#Hanzo_Hattori video games], and [http://en.wikipedia.org/wiki/Path_of_the_Assassin comic books].
