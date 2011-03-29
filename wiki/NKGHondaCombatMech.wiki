@@ -7,20 +7,23 @@
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bassaultmech.png]||High powered SM armed with dual cannons and powerful beam weapons.||
 
-The Honda Combat Mech MkII is a classic example of the "glass cannon."  It is a very powerful and deadly unit that is also very easy to kill.  Lightly armored, it is none-the-less swift and mobile, sharing the Jump Jet ability of its lesser cousin the Hojo Combat Mech.  Armed with two beam weapons that deal very high damage, the Honda Combat Mech MkII is most effective as a secondary force.  They won't last long on the front line, but if used strategically, can decimate an enemy force or base.  Their secondary weapons are two cannons, which while not very strong, will continue adding pressure on the enemy while the main beam weapons recharge.
+The Honda Combat Mech MkII is a classic example of the "glass cannon."  It is a very powerful and deadly unit that is also very easy to kill.  Lightly armored, it is none-the-less swift and mobile, sharing the Jump Jet ability of its lesser cousin the [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mech].  Armed with two beam weapons that deal very high damage, the Honda Combat Mech MkII is most effective as a secondary force.  They won't last long on the front line, but if used strategically, can decimate an enemy force or base.  Their secondary weapons are two cannons, which while not very strong, will continue adding pressure on the enemy while the main beam weapons recharge.
 
 Players should be careful though!  The beams remain firing for a full second, and will damage friendly units.  Clumsily used Honda Combat Mech MkIIs will kill each other and other friendlies rapidly with friendly fire.
 
-Like the Hojo Combat Mech, the Honda Combat Mech MkII can Jump Jet over rough terrain and hostile enemies.  Their Jump Jet range is a little farther than the Hojo Combat Mech, as is their recharge rate.
+Like the [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mech], the Honda Combat Mech MkII can Jump Jet over rough terrain and hostile enemies.  Their Jump Jet range is a little farther than the [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mech], as is their recharge rate.
 
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
+
+||Built From||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
 
 ||http://img145.imageshack.us/img145/7875/hondabeam.png||
 ||A raiding Honda Combat Mech MkII.||
 
 == History ==
-The original Honda Combat Mech differed quite a bit from what we now see as the Honda Combat Mech MkII.  Envisioned as a heavier and bulkier assault mech, it was more stout than what the unit would later become.  It was designed shortly after the Hojo Combat Mech, mostly because it was seen as a Tech Level 2 counterpart.
+The original Honda Combat Mech differed quite a bit from what we now see as the Honda Combat Mech MkII.  Envisioned as a heavier and bulkier assault mech, it was more stout than what the unit would later become.  It was designed shortly after the [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mech], mostly because it was seen as a Tech Level 2 counterpart.
 
 ||[http://img834.imageshack.us/img834/3841/hondaold.png]||
 ||The original, heavier Honda Combat Mech.||
@@ -42,7 +45,7 @@ None-the-less, the unit persisted as a difficult to balance Tech Level 2 mech.  
 
 The final mission in [http://en.wikipedia.org/wiki/Armored_Core:_Master_of_Arena Armored Core:  Master of Arena] culminated in you fighting one of the most fearsome AC's to ever be in the series.  This customized AC (customized in that you could never obtain the parts it was made of) struck terror into my young heart, and was extremely difficult to defeat.  Amazingly fast and sometimes able to completely destroy you in seconds, it was everything I wanted this new unit to be.
 
-I mirrored its large back-mounted thruster engines, and its overall nimble humanoid appearance.  For the new units weapons, I decided to fully realize what I intended for the original Honda, and made animated cannons like the Tallgeese III.  I once again ran into the conundrum of what to put on each arm, before deciding to just make a symmetrical mech with a combination of the beam weaponry and normal cannon on each arm.  This design was difficult to animate, and is difficult to see in-game, but is just more spice to the observant.
+I mirrored its large back-mounted thruster engines, and its overall nimble humanoid appearance.  For the new units weapons, I decided to fully realize what I intended for the original Honda, and made animated cannons like the [http://en.wikipedia.org/wiki/Tallgeese_III#Tallgeese Tallgeese III].  I once again ran into the conundrum of what to put on each arm, before deciding to just make a symmetrical mech with a combination of the beam weaponry and normal cannon on each arm.  This design was difficult to animate, and is difficult to see in-game, but is just more spice to the observant.
 
 Balance of this new unit has been difficult, mostly due to its overwhelming power.  Eventually, it has settled into being reasonably destructive, and easy to eliminate.  A lower cost was given to it to help compensate the investment.
 
