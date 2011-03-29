@@ -3,6 +3,8 @@
 
 [http://img24.imageshack.us/img24/2610/uedatitle.png]
 
+----
+
 == Role ==
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmissilemech.png]||Light SM built to combat other mechs.  Fires two bursts of anti-mech missiles.||
@@ -19,6 +21,8 @@ They work well when combined with the [http://code.google.com/p/conflictterra/wi
 
 ||http://img705.imageshack.us/img705/2856/uedafiring.png||
 ||The Ueda Combat Support Mech can unleash several missiles when in groups.||
+
+----
 
 == History ==
 The Ueda Combat Support Mech was actually modeled a long time into Conflict Terra's life.  The role had been defined from the start, but I neglected to come up with a "good design" for it.  It was among the final units modeled before playtesting began with my friends.  I actually struggled for a while trying to come up with a design I liked.  Below is an example of a finished model that never got textured.
@@ -43,6 +47,8 @@ The two previous reverse-joint leg mechs had legs that were positioned more like
 For the longest time the "bmissilemech" just fired a volley of two anti-mech missiles, one from each pod, exactly like its tank counterpart, the [http://code.google.com/p/conflictterra/wiki/NKGKumaTypeTank Kuma Type Tank].  Much later, when I was trying to think of a way to legitimize the use of the more expensive mechs via making them "special," it came to me to give the anti-mech mech a more explosive type of attack, and so the bursts of missile were born.  It has worked well, making the Ueda a formidable unit against mechs.
 
 It was a decent amount of time after that development that the Ueda was finally given the Sprint ability.  Many thanks to Car Repairer for getting that working for us.
+
+----
 
 == Name ==
 Ueda, being a name given later in the NKG's development, is a name taken from [http://en.wikipedia.org/wiki/Ueda_Castle Ueda Castle], the stronghold of the famous Sanada family of Sengoku Jidai Japan.  At this point I was running out of samurai and daimyo names, and so I decided to pull the name of a castle out for this.  I'd always been fond of the name Ueda, both for its sound and meaning.  Ue (上) being the Japanese word for "up" or "above", and da (田) being the Japanese word for "field" or "rice pattie."  It could be either taken as a higher rice field, being better than the others, or as the point of view being the castle is above the lowly rice field and its peasantry.  A classic example of the Japanese and their love of puns.
