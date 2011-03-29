@@ -12,11 +12,14 @@ The Saiga Combat Support Mech is in purpose a sniper.  With a long range Sniping
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Weak Against Buildings||
 
+||Built From||[http://code.google.com/p/conflictterra/wiki/NKGSaitoClassCruiser Saito Class Cruiser Mech Factory]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
+
 ||http://img838.imageshack.us/img838/9043/saigasniping.png||
-||A group of Hojo Combat Mechs are being picked off by snipers.||
+||A group of [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mechs] are being picked off by snipers.||
 
 == History ==
-Like the Fuma Aerial Combat Mech, the Saiga was an early concept that I was eager to realize.  The idea of a sniping mech was born mostly out of the desire for the mechs to be interesting and more than a handful of units with machine guns and missiles.
+Like the [http://code.google.com/p/conflictterra/wiki/NKGFumaAerialCombatMech Fuma Aerial Combat Mech], the Saiga was an early concept that I was eager to realize.  The idea of a sniping mech was born mostly out of the desire for the mechs to be interesting and more than a handful of units with machine guns and missiles.
 
 ||[http://img845.imageshack.us/img845/671/saigasketch.png]||
 ||An early sketch for the Saiga.||
