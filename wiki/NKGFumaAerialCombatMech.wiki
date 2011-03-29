@@ -13,8 +13,11 @@ The Fuma Aerial Combat Mech's main purpose is to destroy Cruisers.  It is armed 
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Beam Weapons Strong Against Cruisers.||
 || ||Anti-Air Missiles Strong Against Aircraft.||
 
+||Built From||[http://code.google.com/p/conflictterra/wiki/NKGSaitoClassCruiser Saito Class Cruiser Mech Factory]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
+
 ||[http://img9.imageshack.us/img9/6775/fumashooting.png]||
-||A small force of Fuma Aerial Combat Mechs attacking a Flagship.||
+||A small force of Fuma Aerial Combat Mechs attacking a [http://code.google.com/p/conflictterra/wiki/NKGOdaClassCruiser Flagship].||
 
 == History ==
 To some, the idea of a "flying mech" is an odd, or even dumb one.  I stand by this idea by arguing that mechs themselves are more implausible than plausible, and therefore do not have to abide by reason.  Also, a mech does not have to emulate a human or human shape.  In the very least, I can say that it does not resemble a conventional aircraft, and put the term "flying mech" in quotations, as a compromise to those who will continue to disagree.
@@ -27,7 +30,7 @@ The "bflyingmech" was a unit idea I was excited about very early on, and was amo
 ||[http://img705.imageshack.us/img705/8030/robotechexample.png]||
 ||An example of the stereotypical mech design from Robotech or Macross.||
 
-But I soon decided that such a design would both be too blatantly a rip-off, and that I didn't really want the design anyways.  I turned next to my beloved Gundam, and began to draw emphasis from the Mobile Armours that populate that universe.  In particular I think what I drew from was the idea of a craft that didn't resemble an aircraft or a humanoid mech, but was its own entity.  What I came up with was a very angular machine that in many ways resembled the spacecraft found in the [http://en.wikipedia.org/wiki/Einhänder Playstation game Einhänder].  This game blew my mind in a lot of ways when I was young, and I think I was subconsciously channeling its design when modeling the Fuma.
+But I soon decided that such a design would both be too blatantly a rip-off, and that I didn't really want the design anyways.  I turned next to my beloved Gundam, and began to draw emphasis from the [http://en.wikipedia.org/wiki/Mobile_armour#Mobile_armour Mobile Armours] that populate that universe.  In particular I think what I drew from was the idea of a craft that didn't resemble an aircraft or a humanoid mech, but was its own entity.  What I came up with was a very angular machine that in many ways resembled the spacecraft found in the [http://en.wikipedia.org/wiki/Einhänder Playstation game Einhänder].  This game blew my mind in a lot of ways when I was young, and I think I was subconsciously channeling its design when modeling the Fuma.
 
 ||[http://downloads.khinsider.com/album_images/1433-johumgkifg.jpg]||
 ||The spacecraft from Einhänder.||
