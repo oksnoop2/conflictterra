@@ -12,6 +12,7 @@
     * [http://code.google.com/p/conflictterra/wiki/How_to_Update_Conflict_Terra_using_zk How to Update Conflict Terra Using the Zero K Lobby]
   * Unit Guide
     * [http://code.google.com/p/conflictterra/wiki/NKGMechHub NKG Mech Hub]
+    * [http://code.google.com/p/conflictterra/wiki/Glossary Glossary]
   * Conflict Terra's Maps
     * [http://code.google.com/p/conflictterra/wiki/MapInfo Map Information]
     * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks How to Add Starting Rocks to a Map]
