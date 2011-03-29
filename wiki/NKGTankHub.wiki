@@ -1,0 +1,31 @@
+#summary Mech Hub
+#labels Phase-Guide
+
+= Summary =
+The tanks of the NKG are much like the tanks in modern warfare; they are armored vehicles that do well at forming a defensive line in the NKG army.  Less exciting or spectacular than the mechs, they are none-the-less useful additions to any player's army.
+
+= Common Attributes =
+The NKG tanks contrast the mechs in that they are cheaper to build, slower, and harder to kill.  This also means they deal less damage overall, but they counter this with generally longer ranged weapons.  While mechs excel at blitzkrieging your enemy, the tanks are better at defending a base, or providing a solid line for skirmishing units to fall back to.
+
+The color scheme of the NKG tanks uses a dulled forest green, in addition to the usual three shades of grey used by all units.  This was used to convey a sense of older military vehicles, around long enough to retain relics of the "past"--indeed, our own time.
+
+While the mechs of the NKG use the names of [http://en.wikipedia.org/wiki/Samurai samurai] and [http://en.wikipedia.org/wiki/Daimyo daimyo] from the [http://en.wikipedia.org/wiki/Sengoku_period Sengoku Jidai] of Japan, the tanks use more mundane names.  They are still Japanese names, but are instead the words for animals, or objects, as opposed to actual names used by people.  This was decided to help elevate the place of the mechs, meant to be the awe and pizazz of the NKG army.
+
+= Tanks =
+
+== Tech Level 1 ==
+
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bscoutvehicle.png]||[http://code.google.com/p/conflictterra/wiki/NKGShikaTypeVehicle Shika Type Vehicle]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bassaulttank.png]||[http://code.google.com/p/conflictterra/wiki/NKGOukamiTypeTank Oukami Type Tank]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmissiletank.png]||[http://code.google.com/p/conflictterra/wiki/NKGKumaTypeTank Kuma Type Tank]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/baabuggy.png]||[http://code.google.com/p/conflictterra/wiki/NKGYumiTypeJeep Yumi Type Jeep]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/breztank.png]||[http://code.google.com/p/conflictterra/wiki/NKGResurrectionTruck Resurrection Truck]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bartillery.png]||[http://code.google.com/p/conflictterra/wiki/NKGUmaTypeHoverTruck Uma Type Hover Truck]||
+
+== Tech Level 2 ==
+
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavyassaulttank.png]||[http://code.google.com/p/conflictterra/wiki/NKGOgamiTypeTank Ogami Type Tank]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavymissiletank.png]||[http://code.google.com/p/conflictterra/wiki/NKGOkumaTypeTank Okuma Type Tank]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/baatruck.png]||[http://code.google.com/p/conflictterra/wiki/NKGTakaTypeArmoredTruck Taka Type Armored Truck]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bvhsa.png]||[http://code.google.com/p/conflictterra/wiki/NKGSekaiTypeTank Sekai Type Tank]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bempcannon.png]||[http://code.google.com/p/conflictterra/wiki/NKGKizetsuTypeTank Kizetsu Type Tank]||
