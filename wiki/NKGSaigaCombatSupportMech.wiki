@@ -3,6 +3,8 @@
 
 [http://img829.imageshack.us/img829/1807/saigatitle.png]
 
+----
+
 == Role ==
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsnipermech.png]||Long range SM that does heavy damage to units.||
@@ -17,6 +19,8 @@ The Saiga Combat Support Mech is in purpose a sniper.  With a long range Sniping
 
 ||http://img838.imageshack.us/img838/9043/saigasniping.png||
 ||A group of [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mechs] are being picked off by snipers.||
+
+----
 
 == History ==
 Like the [http://code.google.com/p/conflictterra/wiki/NKGFumaAerialCombatMech Fuma Aerial Combat Mech], the Saiga was an early concept that I was eager to realize.  The idea of a sniping mech was born mostly out of the desire for the mechs to be interesting and more than a handful of units with machine guns and missiles.
@@ -40,6 +44,8 @@ Below is an example of reverse-joint legs made much later.
 ||Note the 90 degree angle.||
 
 The shields on the side of the unit were the final touch to the model before I began texturing it.  I felt it was too narrow and boring, and eventually came to this idea of something resembling "radar dampeners."  This however sounded odd and kind of dumb, so I decided they could serve as just extra shielding.
+
+----
 
 == Name ==
 The name Saiga is one of the handful of names given specifically to its unit for a reason.  The [http://en.wikipedia.org/wiki/Saika_Ikki Saiga], or sometimes Saika, was the name of an army in the Sengoku Jidai of Japan that was famous for extensively using firearms.  [http://en.wikipedia.org/wiki/Suzuki_Magoichi Saiga Magoichi], their leader, is a commonly portrayed figure from historical Japan, and is often a sharpshooter or otherwise just a skilled gunman in a world where the spear and sword are still dominant.  This emphasis on gunnery was of course the reason for giving the name to the "bsnipermech."
