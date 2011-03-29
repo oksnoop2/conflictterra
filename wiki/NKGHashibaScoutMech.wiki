@@ -3,6 +3,8 @@
 
 [http://img8.imageshack.us/img8/171/hashibatitle.png]
 
+----
+
 == Role ==
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bscoutmech.png]||Very fast, lightly armored reconnaissance mech.  Unarmed and radar equipped.  Can build temporary camera towers.||
@@ -16,6 +18,8 @@ The Hashiba Scout Mech has the unique ability to build temporary camera towers. 
 
 ||Built From||[http://code.google.com/p/conflictterra/wiki/NKGSaitoClassCruiser Saito Class Cruiser Mech Factory]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
+
+----
 
 == History ==
 This unit was conceived very late into Conflict Terra's life.  A sort of light and quick scouting mech was desired by some early on, but was put off as being "unnecessary."  However, it was realized eventually that the NKG's pre-existing "radar units"--slow, clunky units that provided radar coverage--were un-enticing and hardly used.  The solution to this was to remodel the very concept of the "radar units" into something that more resembled a group of "scout units"--very cheap, fast, unarmed units that were easy to use.  The Hashiba was born soon after this realization.
@@ -39,6 +43,8 @@ The camera tower that accompanies the unit was quickly and for the most part tho
 Shortly after it was brought in-game, it was Oksnoop2 who suggested the camera lens of the mech rotate and zoom when the unit idled.  I decided this was something easy to add, and would bring a little bit of life to the unit.  Sadly, the movement of the lens is usually so far away and so subtle that its difficult to detect from a normal play distance, but its there!
 
 When I was working on animating this unit, I was unsatisfied with the walking animation I developed for the [http://code.google.com/p/conflictterra/wiki/NKGUedaCombatSupportMech Ueda Combat Support Mech].  Resolved to try and improve it for the Hashiba, I soon discovered I had made a much better and more fluid walking animation from a simple tweak.  I excitedly applied this new script to most of the reverse-joint leg mechs in the game.
+
+----
 
 == Name ==
 Hashiba is a name that I, somewhat comically, never thought of until I was looking at this unit.  The acquired "family" name of one of the most important people in Japanese history, [http://en.wikipedia.org/wiki/Hashiba_Hideyoshi Hashiba Hideyoshi] was the man who finally and completely united Japan during the Era of Warring States.  However, he started his life as a peasant, and so had no family name.  After gaining recognition under his lord [http://en.wikipedia.org/wiki/Oda_Nobunaga Oda Nobunaga], Hideyoshi took the name Hashiba.  Later in life, Hideyoshi would earn the "family" name of Toyotomi, the one he is perhaps more well known for.
