@@ -12,6 +12,9 @@ The Hojo Combat Mech is a light, raiding oriented unit that does best in ambushe
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
 
+||Built From||[http://code.google.com/p/conflictterra/wiki/NKGSaitoClassCruiser Saito Class Cruiser Mech Factory]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
+
 ||http://img827.imageshack.us/img827/1081/hojoraiding.png||
 ||A group of Hojo Combat Mechs raiding a small mining operation.||
 
