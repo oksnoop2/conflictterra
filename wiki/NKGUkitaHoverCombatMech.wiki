@@ -3,6 +3,8 @@
 
 [http://img10.imageshack.us/img10/1836/ukitatitle.png]
 
+----
+
 == Role ==
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bhovermech.png]||Hover-equipped "mech" that is able to instantly move between land and sea.  Armed with both missiles and torpedoes.||
@@ -14,6 +16,8 @@ The Ukita Hover Combat Mech is a unique unit.  It is a hover unit, meaning it ca
 
 ||Built From||[http://code.google.com/p/conflictterra/wiki/NKGSaitoClassCruiser Saito Class Cruiser Mech Factory]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
+
+----
 
 == History ==
 This unit has had a long and sad history, changing form, role, and even name until it finally became what it is today.  It started off as an amphibious mech in concept, the plan being that while in the water it would be in a slightly submerged and speedy "mode", and when it reached land, it would change form slightly and walk slowly.
@@ -45,6 +49,8 @@ The body I attached to these legs was a generic and very boxy form, equipped wit
 For the longest time this unit was internally known as the "bamphmech" and externally as the Amphibious Mech.  To this day it makes sense to me, as it is indeed amphibious.  However, the fact that it is actually a hover unit confused and upset others to the point that one day I changed its internal name to "bhovermech" and its external name to match it.
 
 For a period of time, this unit was only built from the [http://code.google.com/p/conflictterra/wiki/NKGSubmarinePens Submarine Pens].  It saw limited use, so I decided it made sense to put it in the [http://code.google.com/p/conflictterra/wiki/NKGMechFactory Mech Factory].  With easy accessibility, it became known that it was very cheap, and effective for its cost.  Indeed, at this time it could attack flying units, and so it was a jack-of-all-trades.  Players could effectively spam these units early on and decimate an unsuspecting foe.  Balance was soon in order, and today we rarely see the Ukita Hover Combat Mech due to Conflict Terra's (hopefully) temporary incompatibility with water maps.
+
+----
 
 == Name ==
 Being a late comer, Ukita was given as this unit's name as a true bottom-of-the-barrel name.  It comes from [http://en.wikipedia.org/wiki/Ukita_Hideie Ukita Hideie], a somewhat minor name in the Sengoku Jidai of Japan.  An advisor of [http://en.wikipedia.org/wiki/Hideyoshi Toyotomi Hideyoshi], the Uniter of Japan, he fought at the [http://en.wikipedia.org/wiki/Sekigahara Battle of Sekigahara] and was exiled later for being on the losing side.  His family name always stuck out to me, but nothing more.
