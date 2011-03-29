@@ -3,6 +3,8 @@
 
 [http://img59.imageshack.us/img59/8833/bengititle.png]
 
+----
+
 == Role ==
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bengineermkii.png]||Utilitarian vehicle able to build structures and mine meteorites for metal.  Unarmed.||
@@ -44,6 +46,8 @@ There is another important thing to remember about the Engineer Support Mech.  D
 || ||[http://code.google.com/p/conflictterra/wiki/NKGDualCannonTurret Dual Cannon Turret]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGAntiMechMissileTurret Anti-Mech Missile Turret]||
 
+----
+
 == History ==
 The Engineer Support Mech has had an interesting life.  It was of course needed from the very start, being a constructor, and therefore was modeled rather early.  An early example of a model that never made it in-game still exists and is pictured below.
 
@@ -74,6 +78,8 @@ What I actually made where relatively similar, articulated arms coming from the 
 Animating these new arms was quite a chore, and what I came up with wasn't exactly what I wanted, but to go any further would require a very complex list of animations.
 
 Ironically, shortly after introducing this new model, Knorke approached us and we set to work installing the mining attribute of the game.  This turned the Engineer into an attacking unit, because the gadget works by having the miner "attack" a mine-able unit.  The building animation was applied to its firing animation, and what we have today is the mining, building Engineer Support Mech!
+
+----
 
 == Name ==
 This unit was never given a Japanese name of any kind simply for the reason that even a good one could not replace its very role.  It was a builder, an engineer unit that would always be called that.  I feel this was the right choice.
