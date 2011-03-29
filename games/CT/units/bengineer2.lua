@@ -12,7 +12,6 @@ local bengineer2 = {
 	buildoptions		= {
 		[[bpowerplant]],
                 [[badvpowerplant]],
---		[[badvnuclearpower]],
 --		[[badvshipyard]],
 --		[[badvsubpens]],
                 [[badvbeacon]],
@@ -27,7 +26,6 @@ local bengineer2 = {
 		[[blanddefship]],
 		[[bairdefship]],
 --		[[bnavydefship]],
---		[[bshieldgen]],
 	},
 
 	buildTime           = 25,
