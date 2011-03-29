@@ -3,6 +3,8 @@
 
 [http://img97.imageshack.us/img97/6766/advbengititle.png]
 
+----
+
 == Role ==
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvengineermkii.png]||Newer model of the Engineer Support Mech, capable of constructing more complex buildings.  Unarmed.||
@@ -41,6 +43,8 @@ When reaching Tech Level 2, it is often times a good idea to invest in one or tw
 || ||[http://code.google.com/p/conflictterra/wiki/NKGYamadaClassBattery Yamada Class Battery]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGSanadaClassBattery Sanada Class Battery]||
 
+----
+
 == History ==
 The original Advanced Engineer Support Mech was modeled quickly and with little thought, simply relying on a design philosophy of "bigger and badder."  Very closely resembling its Tech Level 1 cousin, the new unit was given a pair of crane booms instead of a single (and sensible) one.  This was admittedly a very dumb idea, and I never liked it.
 
@@ -57,6 +61,8 @@ It may be difficult to notice, but one may note the low angle at which the Vikin
 As for the upper body, it was modeled to very closely resemble its new Tech Level 1 counterpart.  The welding mask of the smaller unit was excused, but the small, insect-like arms were kept.  Instead of being welding arms, they were instead given "grabbers", meant to hold whatever the unit would be welding.  An extra pair of welding arms were attached to the sides of the unit, to resemble humanoid arms.  This marked the first four armed mech for the NKG.
 
 The animation for the small "grabbers" was taken directly from the animation developed for the welding arms of the [http://code.google.com/p/conflictterra/wiki/NKGEngineerSupportMech Engineer Support Mech], and so the unit has an appearance similar to that of a crab or other crayfish eating; the little arms are constantly moving as the unit is "active."
+
+----
 
 == Name ==
 Like its Tech Level 1 version, this unit was never given a Japanese name of any kind simply for the reason that even a good one could not replace its very role.  It was a builder, an engineer unit that would always be called that.  I feel this was the right choice.
