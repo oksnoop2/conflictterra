@@ -19,11 +19,13 @@ There have been a handful of reasons for removing units from Conflict Terra.  Un
 ||[http://code.google.com/p/conflictterra/wiki/NKGMaterialRefinery Material Refinery]||
 ||[http://code.google.com/p/conflictterra/wiki/NKGMetalStorageFacility Metal Storage Facility]||
 ||[http://code.google.com/p/conflictterra/wiki/NKGEnergyStorageFacility Energy Storage Facility]||
+||[http://code.google.com/p/conflictterra/wiki/NKGAntiNavalTurret Anti-Naval Turret]||
 ||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedRawMaterialExtractor Advanced Raw Material Extractor]||
 ||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedNuclearPowerPlant Advanced Nuclear Power Plant]||
 ||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedMaterialRefinery Advanced Material Refinery]||
 ||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedMetalStorageFacility Advanced Metal Storage Facility]||
 ||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedEnergyStorageFacility Advanced Energy Storage Facility]||
+||[http://code.google.com/p/conflictterra/wiki/NKGAntiNavalGunEmplacement Anti-Naval Gun Emplacement]||
 ||[http://code.google.com/p/conflictterra/wiki/NKGShieldGenerator Shield Generator]||
 ||[http://code.google.com/p/conflictterra/wiki/NKGCombatMechFactory Combat Mech Factory]||
 ||[http://code.google.com/p/conflictterra/wiki/NKGTankFactory Tank Factory]||
