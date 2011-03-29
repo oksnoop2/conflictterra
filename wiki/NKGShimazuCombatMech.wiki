@@ -12,8 +12,11 @@
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Buildings||
 
+||Built From||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
+
 == History ==
-The first quadruped mech I designed, the "bheavysiegemech" drew heavy inspiration from the game series [http://en.wikipedia.org/wiki/Armored_core Armored Core].  Deciding that the Tech Level 2 version of the Ishida Combat Mech should be heavy duty to the highest degree, I went with the stable four-legged design.
+The first quadruped mech I designed, the "bheavysiegemech" drew heavy inspiration from the game series [http://en.wikipedia.org/wiki/Armored_core Armored Core].  Deciding that the Tech Level 2 version of the [http://code.google.com/p/conflictterra/wiki/NKGIshidaCombatMech Ishida Combat Mech] should be heavy duty to the highest degree, I went with the stable four-legged design.
 
 ||[http://img856.imageshack.us/img856/1286/shimazusketch.png]||
 ||Early sketches of the Shimazu as I worked on different designs.||
