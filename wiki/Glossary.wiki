@@ -23,6 +23,12 @@ For the NKG, the definition of beam weaponry closely reflects the [http://en.wik
 
 = C =
 
+=== Cannon ===
+For the NKG, the term cannon is used to describe a generic "gun" type weapon.  Firing some kind of shell, cannons are often not the fastest weapon types, but not the slowest either.  Their damage is also not especially high, but are decent.  In short, most cannons are very average and middle-of-the-spectrum weapons in most ways.
+
+=== Cloak ===
+The Cloak ability makes units invisible to enemy players, but the Cloaked unit is still susceptible to being picked up by radar.  Most Cloaked units require Energy to maintain the state, although that is not always the case.  It should also be noted that Cloaked units will be detected if they go to close to enemy units.
+
 === Cruiser ===
 Large flying "ships" for the NKG, Cruisers are a staple of the NKG and are necessary for any NKG player.  They serve many roles, with some being factories to produce other units such as mechs and tanks, and some being simple battle units.  They are not spacecraft, and shouldn't be confused with that despite their stereotypical "spacecraft" appearance.
 
@@ -76,3 +82,6 @@ SM for short, Sentou Meka is the full and "official" name of the type of mechs u
 
 === Siege ===
 For the NKG, units specified as "siege" units specifically deal high damage to buildings.  Essentially the same as the term Artillery.
+
+=== Stealth ===
+Stealth units are visible to the enemy, but will not show up on radar.  Stealth units do not require any sort of Energy maintenance, and the Stealth state can not be turned off or on; it is always on.
