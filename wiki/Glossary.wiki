@@ -31,6 +31,13 @@ Large flying "ships" for the NKG, Cruisers are a staple of the NKG and are neces
 === Drones ===
 Coming Soon.
 
+= E =
+
+=== Energy ===
+Energy is one of the two resources in Conflict Terra.  Obtained primarily through building buildings whose sole purpose is to create Energy, the resource is mostly used as a limiting factor on a player, requiring them to build an adequate Energy economy in order to expand.  Every unit requires Energy to be built, and all Energy and Metal values are the same.
+
+For the NKG, it is also used by radar towers to function; if the player has exhausted their Energy, the radar towers will stop functioning.
+
 = H =
 
 === Hover ===
@@ -40,6 +47,17 @@ For the NKG, a hover unit means that the unit is able to travel over water just 
 
 === Light ===
 For the NKG, a light unit essentially means that the unit either does low damage, has low HP, or a combination of the two.  It does not always mean the unit is especially fast, although it is sometimes the case.
+
+= M =
+
+=== Metal ===
+One of the two resources in Conflict Terra, Metal is obtained primarily through mining meteorites on the map.  Another way to obtain Metal is to reclaim wrecked units.  On some maps, ones not made by the Conflict Terra Team, some features can be reclaimed for Metal as well, although that could affect the state of balance in the game.  Metal is used to build buildings and units, and all Metal and Energy values are the same.
+
+=== Meteorite ===
+A meteorite is any mine-able "rock" on the map.  There are two main types of meteorites:  meteorites that spawn on the map at the start of the game, and meteorites that fall to the map and crash throughout the course of a game.  Your miners, when told to do so, will seek out these meteorites.
+
+=== Miner ===
+A miner is any unit that can "mine" meteorites on the map to obtain Metal for their player.
 
 = N =
 
