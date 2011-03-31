@@ -1,5 +1,5 @@
 #summary A hub for the design and implementation of the gameplay mechanic we call Space Rocks.
-#labels Phase-Information
+#labels Phase-Information,Deprecated
 
 = What is Space Rocks? =
 
