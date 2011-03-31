@@ -96,6 +96,39 @@ this tag is missing.||
 You can see [http://code.google.com/p/conflictterra/source/browse/games/CT/mapconfigs/MoonQ20x_res.lua?spec=svn835&r=835#72 MoonQ20x_res.lua] for an example.
 
 = Guide With Pictures =
+A guide to Proper Stoning
+
+Conflict Terra’s economy is based on harvesting rocks.
+
+This guide explains how:
+-map makers can place CT rocks on their map
+-everybody* can put rocks on his favorite spring map
+
+*everybody with access to CT’s SVN
+/join #ct for details
+
+1) Load your map in Spring and pause at gamestart so you are not interrupted by the AI attacking, meteorites or whatever.
+
+2) You will notice that Conflict Terra’s resource spawner has already put some rocks on the metal spots. Ignore those for now, they will not appear as soon as your config is finished.
+
+3) Press f11 to show the widget menu and enable the “coordinate helper”.
+
+4)The position of each marker you place will be logged to a file. Let’s with a small rock field near the players start position. It’s a good idea to put a description  on your markers because this text will also be logged. It will be helpful when you want to modify the layout later. Notice the console output of the coordinate widget.
+
+
+5)The continue adding markers where ever you rocks to appear. Here I have made a line along and across the river between the mountains. Again, notice the markers with description.
+
+6)Finished your layout? Close Spring.
+
+7) Look for the output created by the coordindate widget. It will be in your spring directory, next to the infolog.txt and the maps and mods folders.
+
+8)  Create a config file named MAPNAME_res.lua. MAPNAME replaced with the name of your name. IE in this case “Terra” results in “Terra_res.lua”.
+
+9) Copy and Paste coordinates. You can get this file from the Conflict Terra wiki or use another map config.
+
+10) Save your config in the mapconfigs folder of Conflict Terra or if you are the map maker place in the maps folder of the map.
+
+
 note: you might have to use rightclick -> "view image" to see the image unscaled and in full resolution<br>
 http://h-3.abload.de/img/properstoningr1tgm1.jpg
 
