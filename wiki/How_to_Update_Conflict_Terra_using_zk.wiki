@@ -1,6 +1,10 @@
 #summary How to Update Conflict Terra Using the Zero K Lobby
 #labels Phase-Guide
 
+= Where is my rapid tab? =
+
+Some installations of Zero K Lobby will run in what they called "limited mode" which will hide the Rapid tab. In order to remedy this you need to go into the settings tab and change Limited Mode = True to Limited Mode = False. Close Zero K lobby and restart the application. The rapid tab should be back.
+
 = Open the Zero K Lobby Application =
 
 = Click the Downloader Tab at the Top =
