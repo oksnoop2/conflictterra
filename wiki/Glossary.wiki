@@ -7,6 +7,9 @@ This is intended to be a glossary of terms for Conflict Terra.  When coming up w
 
 = A =
 
+=== Aircraft ===
+For the NKG, the term aircraft is used to specify flying units that are constantly moving.  They differ from the Cruisers, which have the ability to float-in-place, in this way.  They are also much smaller than Cruisers, and very much mirror real-life aircraft.
+
 === Anti-Mech ===
 For the NKG, while the name is pretty self-explanatory, it specifically means a unit is designed to deal higher damage to mechs.  All Anti-Mech units fire missiles, but not all missile units are Anti-Mech units.
 
@@ -44,6 +47,14 @@ Energy is one of the two resources in Conflict Terra.  Obtained primarily throug
 
 For the NKG, it is also used by radar towers to function; if the player has exhausted their Energy, the radar towers will stop functioning.
 
+= F =
+
+=== Fighter ===
+For the NKG, a fighter is a type of aircraft specifically built to counter enemy aircraft.  They are unable to attack the ground, or any unit on the ground, and can only fire at other flying units.  While they can deal some damage to Cruisers, fighters are specifically strong against actual aircraft.
+
+=== Flying Mech ===
+For the NKG, the term flying mech pertains to only two units, a pair of unique "mechs" that are in fact airborne.  They have this name mostly because although they are air units, they do not resemble aircraft at all.  The flying mechs can be confusing, because although their movement style is shared by the Cruisers, they fall under the Aircraft Armor Type.  To repeat, flying mechs use the _Aircraft_ Armor Type.
+
 = H =
 
 === Hover ===
@@ -55,6 +66,9 @@ For the NKG, a hover unit means that the unit is able to travel over water just 
 For the NKG, a light unit essentially means that the unit either does low damage, has low HP, or a combination of the two.  It does not always mean the unit is especially fast, although it is sometimes the case.
 
 = M =
+
+=== Mech ===
+See [http://code.google.com/p/conflictterra/wiki/Glossary#Sentou_Meka Sentou Meka].
 
 === Metal ===
 One of the two resources in Conflict Terra, Metal is obtained primarily through mining meteorites on the map.  Another way to obtain Metal is to reclaim wrecked units.  On some maps, ones not made by the Conflict Terra Team, some features can be reclaimed for Metal as well, although that could affect the state of balance in the game.  Metal is used to build buildings and units, and all Metal and Energy values are the same.
@@ -88,8 +102,16 @@ Stealth units are visible to the enemy, but will not show up on radar.  Stealth 
 
 = T =
 
+=== Tank ===
+For the NKG, the tanks are overall the less advanced of the two main unit types.  Generally slower, cheaper, and dealing less damage, they exceed the mechs in their superior armor and longer ranged weapons.  They are best in a defensive situation, although they do well in providing a solid line to fall back to during an offensive maneuver.
+
 === Tech Level 1 ===
 Synonymous with the Total Annihilation term "T1", Tech Level 1 roughly means any unit that is able to built "right out of the gate."  Of course, due to the somewhat different structure of the NKG, this term can be difficult to define with words, so it will just be said that they represent the first tier of units for a player.  In-game, an easy way to identify a Tech Level 1 unit is its grey border in its build pic.
 
 === Tech Level 2 ===
 Synonymous with the Total Annihilation term "T2", Tech Level 2 roughly means any unit that is only accessible after upgrading a "factory."  They are usually more expensive, and therefore powerful or useful, then their Tech Level 1 cousins.  An easy way to identify a Tech Level 2 unit in-game is by its golden border in the build pic.
+
+= U =
+
+=== Unit ===
+A common RTS term, we use the word "unit" to specify an individual mech, tank, aircraft, or any other controllable entity in the game.  While buildings technically can be called units, we tend to just call them buildings to help differentiate them.
