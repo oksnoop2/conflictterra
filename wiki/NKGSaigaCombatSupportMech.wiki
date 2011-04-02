@@ -45,6 +45,8 @@ Below is an example of reverse-joint legs made much later.
 
 The shields on the side of the unit were the final touch to the model before I began texturing it.  I felt it was too narrow and boring, and eventually came to this idea of something resembling "radar dampeners."  This however sounded odd and kind of dumb, so I decided they could serve as just extra shielding.
 
+For a long time, the Saiga's weapon actually had an interesting ricochet attribute.  An artifact from when we pillaged Complete Annihilation's scripts for examples and content, the ricochet, or "bounce" added an interesting little feature to the shot.  This was eventually removed when it was deemed unnecessary, and indeed never planned.
+
 ----
 
 == Name ==
