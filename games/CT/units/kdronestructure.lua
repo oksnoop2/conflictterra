@@ -80,7 +80,7 @@ unitDef = {
       height           = [[40]],
       hitdensity       = [[100]],
       metal            = 200,
-      object           = [[bgenericwreckage.s3o]],
+      object           = [[wrecks/kdronestructurewreck.s3o]],
       reclaimable      = true,
       reclaimTime      = 6375,
 
