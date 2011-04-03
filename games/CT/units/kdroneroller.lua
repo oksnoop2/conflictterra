@@ -140,7 +140,7 @@
 	      height           = [[4]],
 	      hitdensity       = [[100]],
 	      metal            = 72,
-	      object           = [[bgenericwreckage.s3o]],
+	      object           = [[wrecks/kdronerollerwreck.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 15,
 	      seqnamereclamate = [[TREE1RECLAMATE]],
