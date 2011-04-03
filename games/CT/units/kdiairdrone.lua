@@ -86,11 +86,11 @@ local kdiairdrone = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 200,
+		Cruiser = 100,
 		Building = 20,
 		Mech = 20,
 		Tank = 20,
-		Aircraft = 200,
+		Aircraft = 100,
 		Ship = 20,
 		Sub = 10,
 	      },
@@ -100,7 +100,7 @@ local kdiairdrone = {
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	     -- model                   = [[baamissile.s3o]],
-	      range                   = 600,
+	      range                   = 800,
 		  cegtag                  = [[VULCANFX]],
 	      reloadtime              = 3,
 	      smokedelay              = [[0.1]],

@@ -1,6 +1,6 @@
 local kairdrone = {
 	name                = [[Air Drone]],
-	description         = [[The Air Drone is a weak kamikaze stealth unit used for scouting and air defense Can only attack air.]],
+	description         = [[The Air Drone is a weak kamikaze stealth cloaking unit used for scouting and air defense Can only attack air.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kairdrone.png]],
@@ -21,6 +21,9 @@ local kairdrone = {
     canFly              = true,
 	corpse              = [[DEAD]],
     cruiseAlt           = 50,
+	cloakCost           = 10,
+    cloakCostMoving     = 10,
+    init_Cloaked        = false,
 	reclaimable         = false,
 	stealth             =true,
     energyMake          = 1,
