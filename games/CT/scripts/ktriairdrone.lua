@@ -37,6 +37,6 @@
 	function script.FireWeapon1()
 	end
 	
-	function script.Killed(recentDamage, maxHealth)
-		Sleep(30)
-	end
+function script.Killed(recentDamage, maxHealth)
+   return 0
+end
