@@ -19,11 +19,11 @@ By holding CTRL while initiating a group move, all units will move at the same s
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Aircraft||
 || ||Strong Against Cruisers||
 
-||Built From||[http://code.google.com/p/conflictterra/wiki/NKGTakedaClassCruiser Takeda Class Cruiser Mech Factory]||
-|| ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Mech Factory]||
+||Built From||[http://code.google.com/p/conflictterra/wiki/NKGTakedaClassCruiser Takeda Class Cruiser Tank Factory]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
 
-||http://img862.imageshack.us/img862/2958/kumarocks.png||
-||A group of Kuma Type Tanks using the terrain to their advantage.||
+||http://img26.imageshack.us/img26/544/yumishooting.png||
+||Yumi Type Jeeps firing on enemy fighters.||
 
 ----
 
