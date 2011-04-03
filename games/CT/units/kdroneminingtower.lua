@@ -125,7 +125,7 @@
 	      height           = [[4]],
 	      hitdensity       = [[100]],
 	      metal            = 400,
-	      object           = [[bgenericwreckage.s3o]],
+	      object           = [[wrecks/kdroneminingtowerwreck.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 15,
 	      seqnamereclamate = [[TREE1RECLAMATE]],
