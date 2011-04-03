@@ -18,8 +18,8 @@ Because the Kuma Type Tank fires arcing missiles, a player can effectively use c
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Tank||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Mechs||
 
-||Built From||[http://code.google.com/p/conflictterra/wiki/NKGTakedaClassCruiser Takeda Class Cruiser Mech Factory]||
-|| ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Mech Factory]||
+||Built From||[http://code.google.com/p/conflictterra/wiki/NKGTakedaClassCruiser Takeda Class Cruiser Tank Factory]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
 
 ||http://img862.imageshack.us/img862/2958/kumarocks.png||
 ||A group of Kuma Type Tanks using the terrain to their advantage.||
