@@ -261,6 +261,7 @@ ROCK_IMPACT_BIG = {
     DRONE_PETARD = {
 
    name="Drone Petard",
+   collideFriendly=0,
    craterMult=1,
    rendertype=4,
    ballistic=1,

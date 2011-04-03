@@ -32,8 +32,6 @@ local kairdrone = {
 	footprintZ          = 2,
 	hoverAttack         = true,
 	idleAutoHeal        = 1,
-	kamikaze            = 1,
-	kamikazeDistance    = 25,
 	leaveTracks         = false,
 	mass                = 80,
 	maxDamage           = 300,
@@ -70,8 +68,8 @@ local kairdrone = {
 	weapons             = {
 	
 	    {
-	      def                = [[Laser]],
-	      --badTargetCategory  = [[MINERALS]],
+	      def                = [[AA]],
+	      badTargetCategory  = [[FIXEDWING]],
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 	
@@ -80,23 +78,40 @@ local kairdrone = {
 	
 	weaponDefs             = {
 	
-	    Mine = {
-	      name                    = [[Mine]],
-	      areaOfEffect            = 8,
-	      collideFriendly         = false,
+	    AA         = {
+	      name                    = [[Homing AA Missile]],
+	      areaOfEffect            = 48,
+	      avoidFriendly           = true,
+	      canattackground         = false,
+	      cylinderTargetting      = 1,
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 100,
-		Building = 100,
-		Mech = 100,
-		Tank = 100,
-		Aircraft = 100,
-		Ship = 100,
-		Sub = 100,
+		Cruiser = 0,
+		Building = 0,
+		Mech = 0,
+		Tank = 0,
+		Aircraft = 0,
+		Ship = 0,
+		Sub = 0,
 	      },
 	
-	      
+	      flightTime              = 3,
+	      interceptedByShieldType = 1,
+	      lineOfSight             = true,
+	      range                   = 100,
+	      reloadtime              = 1,
+	      smokedelay              = [[0.1]],
+	      smokeTrail              = false,
+	      startVelocity           = 200,
+	      tolerance               = 22000,
+	      tracks                  = true,
+	      turnRate                = 30000,
+	      turret                  = true,
+	      weaponAcceleration      = 550,
+	      weaponTimer             = 5,
+	      weaponType              = [[MissileLauncher]],
+	      weaponVelocity          = 750,
 	    },
 	
 	  },
