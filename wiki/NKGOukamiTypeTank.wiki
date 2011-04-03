@@ -16,8 +16,8 @@ They work well accompanying [http://code.google.com/p/conflictterra/wiki/NKGKuma
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Tank||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
 
-||Built From||[http://code.google.com/p/conflictterra/wiki/NKGTakedaClassCruiser Takeda Class Cruiser Mech Factory]||
-|| ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Mech Factory]||
+||Built From||[http://code.google.com/p/conflictterra/wiki/NKGTakedaClassCruiser Takeda Class Cruiser Tank Factory]||
+|| ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
 
 ||http://img685.imageshack.us/img685/2789/oukamifiring.png||
 ||A group of Oukami Type Tanks happening upon a mech.||
