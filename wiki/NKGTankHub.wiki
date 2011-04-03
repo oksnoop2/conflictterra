@@ -19,7 +19,7 @@ While the mechs of the NKG use the names of [http://en.wikipedia.org/wiki/Samura
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bassaulttank.png]||[http://code.google.com/p/conflictterra/wiki/NKGOukamiTypeTank Oukami Type Tank]||
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmissiletank.png]||[http://code.google.com/p/conflictterra/wiki/NKGKumaTypeTank Kuma Type Tank]||
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/baabuggy.png]||[http://code.google.com/p/conflictterra/wiki/NKGYumiTypeJeep Yumi Type Jeep]||
-||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/breztank.png]||[http://code.google.com/p/conflictterra/wiki/NKGResurrectionTruck Resurrection Truck]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmetaltruck.png]||[http://code.google.com/p/conflictterra/wiki/NKGResurrectionTruck Resurrection Truck]||
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bartillery.png]||[http://code.google.com/p/conflictterra/wiki/NKGUmaTypeHoverTruck Uma Type Hover Truck]||
 
 == Tech Level 2 ==
