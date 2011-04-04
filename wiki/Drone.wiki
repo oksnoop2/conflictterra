@@ -12,14 +12,14 @@
 
 == Tech Level 1 ==
 
-||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdroneengineer.png]||[http://code.google.com/p/conflictterra/wiki/NKGShikaTypeVehicle Shika Type Vehicle]||
-||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdroneminer.png]||[http://code.google.com/p/conflictterra/wiki/NKGOukamiTypeTank Oukami Type Tank]||
-||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdroneroller.png]||[http://code.google.com/p/conflictterra/wiki/NKGKumaTypeTank Kuma Type Tank]||
-||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdronewarrior.png]||[http://code.google.com/p/conflictterra/wiki/NKGYumiTypeJeep Yumi Type Jeep]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdroneengineer.png]||[http://code.google.com/p/conflictterra/wiki/DroneEngineer Drone Engineer]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdroneminer.png]||[http://code.google.com/p/conflictterra/wiki/LightBattleDrone Light Battle Drone]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdroneroller.png]||[http://code.google.com/p/conflictterra/wiki/RollerDrone Roller Drone]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdronewarrior.png]||[http://code.google.com/p/conflictterra/wiki/DroneWarrior Drone Warrior]||
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kairdrone.png]||[http://code.google.com/p/conflictterra/wiki/NKGResurrectionTruck Resurrection Truck]||
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdiairdrone.png]||[http://code.google.com/p/conflictterra/wiki/NKGUmaTypeHoverTruck Uma Type Hover Truck]||
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/ktriairdrone.png]||[http://code.google.com/p/conflictterra/wiki/NKGUmaTypeHoverTruck Uma Type Hover Truck]||
-||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdroneminigtower.png]||[http://code.google.com/p/conflictterra/wiki/NKGUmaTypeHoverTruck Uma Type Hover Truck]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdroneminingtower.png]||[http://code.google.com/p/conflictterra/wiki/NKGUmaTypeHoverTruck Uma Type Hover Truck]||
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdronestructure.png]||[http://code.google.com/p/conflictterra/wiki/NKGUmaTypeHoverTruck Uma Type Hover Truck]||
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kairdronefactory.png]||[http://code.google.com/p/conflictterra/wiki/NKGUmaTypeHoverTruck Uma Type Hover Truck]||
 
@@ -29,8 +29,6 @@ The Drone economy is slightly different from the NKG's. They still mine meteors 
 The Drones create energy from their "flagship", the Drone Structure. The Structure creates 20 energy per second.
 
 http://dl.dropbox.com/u/22845238/screen00039.png http://dl.dropbox.com/u/22845238/screen00031.png
-
-
 
 
 
