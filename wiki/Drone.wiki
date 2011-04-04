@@ -26,10 +26,9 @@
 ==*Drone Economy*==
 
 The Drone economy is slightly different from the NKG's. They still mine meteors and create energy, but their way of going about it is different. The Drones main unit, the Drone Engineer, finds some meteorites to mine, then morphs into the Drone Mining Tower. This tower then extracts metal from the meteor using a thin, constant laser beam. The tower is a stable building when in the tower state. Once the meteors are depleted, simply morph the engineer back and continue your adventure!
+The Drones create energy from their "flagship", the Drone Structure. The Structure creates 20 energy per second.
 
-http://dl.dropbox.com/u/22845238/screen00039.png
-
-
+http://dl.dropbox.com/u/22845238/screen00039.png http://dl.dropbox.com/u/22845238/screen00031.png
 
 
 
