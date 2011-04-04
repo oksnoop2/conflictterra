@@ -65,6 +65,9 @@ For the NKG, a hover unit means that the unit is able to travel over water just 
 === Light ===
 For the NKG, a light unit essentially means that the unit either does low damage, has low HP, or a combination of the two.  It does not always mean the unit is especially fast, although it is sometimes the case.
 
+=== Line of Sight ===
+Line of Sight means the distance each unit can "see" in the game.  This affects if your units can see enemy units.  If a normal enemy unit is within one of your units Line of Sight, you will be able to see it.  An easy way to see exactly how much of the map you can "see" is to push the hotkey L.  This toggles the Fog of War on and off.  It should be noted that Cloaked enemy units do not appear in your Line of Sight.
+
 = M =
 
 === Mech ===
@@ -88,6 +91,11 @@ The Nihon Kadousei Guntai is the full name for the often abbreviated NKG.  It is
 
 === PN ===
 Coming Soon.
+
+= R =
+
+=== Radar ===
+Radar is a function some units in Conflict Terra have, that allows players to be aware of the presence of enemy units that they may not be able to see.  Any normal enemy units within the range of a Radar unit will appear as a colored circle to the player.  You will need to get visual confirmation with your actual Line of Sight to identify the unit.  It should be noted that Stealth units do not appear on Radar.
 
 = S =
 
