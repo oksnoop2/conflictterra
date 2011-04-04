@@ -1,12 +1,8 @@
+#summary Drone Hub
 #labels Phase-Guide
-http://dl.dropbox.com/u/22845238/CT%20logo.png We fix it later.
-==*The Drone Faction*==
-
+= The Drone Faction =
 
      The Drones are a simple faction with several units that can clone themselves to create a massive army capable of destruction on a broad scale. Little is known about their origins other than that they are a robot-like alien civilization attacking earth in search of metal. They must harvest earth and destroy all in their way to continue their existence.
 
-
-http://dl.dropbox.com/u/22845238/screen00026.png http://dl.dropbox.com/u/22845238/screen00039.png                                                                      (left)A small Drone mining operation guarded by two Drone Warriors.                       
-
-
-(right)A Drone Engineer morphed into a Drone Mining Tower, the Drone's way of extracting vital metals out of meteorites to continue their existence.
+||[http://dl.dropbox.com/u/22845238/screen00026.png]||[http://dl.dropbox.com/u/22845238/screen00039.png]||
+||A small Drone mining operation guarded by two Drone Warriors.||A Drone Engineer morphed into a Drone Mining Tower, the Drone's way of extracting vital metals out of meteorites to continue their existence.||
