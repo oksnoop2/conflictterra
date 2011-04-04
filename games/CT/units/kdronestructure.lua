@@ -1,7 +1,7 @@
 unitDef = {
 
   unitname                      = [[kdronestructure]],
-  name                          = [[Drone Structure]],
+  name                          = [[Ground Drone Structure]],
   description                   = [[This structure produces energy and creates ground Drones.]],
   amphibious                    = false,
   acceleration                  = 0,
