@@ -2,7 +2,23 @@
 #labels Phase-Guide
 = The Drone Faction =
 
+== Caution: This page is still under construction information may not be accurate. ==
+
      The Drones are a simple faction with several units that can clone themselves to create a massive army capable of destruction on a broad scale. Little is known about their origins other than that they are a robot-like alien civilization attacking earth in search of metal. They must harvest earth and destroy all in their way to continue their existence.
 
 ||[http://dl.dropbox.com/u/22845238/screen00026.png]||[http://dl.dropbox.com/u/22845238/screen00039.png]||
 ||A small Drone mining operation guarded by two Drone Warriors.||A Drone Engineer morphed into a Drone Mining Tower, the Drone's way of extracting vital metals out of meteorites to continue their existence.||
+
+
+== Tech Level 1 ==
+
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdroneengineer.png]||[http://code.google.com/p/conflictterra/wiki/NKGShikaTypeVehicle Shika Type Vehicle]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdroneminer.png]||[http://code.google.com/p/conflictterra/wiki/NKGOukamiTypeTank Oukami Type Tank]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdroneroller.png]||[http://code.google.com/p/conflictterra/wiki/NKGKumaTypeTank Kuma Type Tank]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdronewarrior.png]||[http://code.google.com/p/conflictterra/wiki/NKGYumiTypeJeep Yumi Type Jeep]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kairdrone.png]||[http://code.google.com/p/conflictterra/wiki/NKGResurrectionTruck Resurrection Truck]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdiairdrone.png]||[http://code.google.com/p/conflictterra/wiki/NKGUmaTypeHoverTruck Uma Type Hover Truck]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/ktriairdrone.png]||[http://code.google.com/p/conflictterra/wiki/NKGUmaTypeHoverTruck Uma Type Hover Truck]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdroneminigtower.png]||[http://code.google.com/p/conflictterra/wiki/NKGUmaTypeHoverTruck Uma Type Hover Truck]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kdronestructure.png]||[http://code.google.com/p/conflictterra/wiki/NKGUmaTypeHoverTruck Uma Type Hover Truck]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/kairdronefactory.png]||[http://code.google.com/p/conflictterra/wiki/NKGUmaTypeHoverTruck Uma Type Hover Truck]||
