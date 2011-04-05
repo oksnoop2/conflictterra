@@ -1,0 +1,31 @@
+#summary Cruiser Hub
+#labels Phase-Guide
+
+= Summary =
+The Cruisers are the backbone to the NKG army, and essential to any NKG player.  Being the main way to produce units, they can also be powerful combat units, and sometimes fulfill secondary roles such as transportation.
+
+= Common Attributes =
+Almost all of the Cruisers are large, intimidating units.  Most have a very large amount of HP, although they are not the fastest units.  Although most are armed, only the [http://code.google.com/p/conflictterra/wiki/NKGOwariClassCruiser Owari Class Cruiser] and [http://code.google.com/p/conflictterra/wiki/NKGUesugiClassCruiser Uesugi Class Cruiser] are true combat units.
+
+Overall the Cruisers do not really share a unified color scheme.  Each of the "factory cruisers" bears the color scheme of the unit type it creates.  The other Cruisers use the generic scheme of three greys.  The [http://code.google.com/p/conflictterra/wiki/NKGResourceDropZone Resource Drop Zone] utilizes the light tan associated with Resources and Supply.
+
+The names are for the most part derived from [http://en.wikipedia.org/wiki/Samurai samurai] and [http://en.wikipedia.org/wiki/Daimyo daimyo] from Japanese history.  Usually, the more grand names were reserved for the Cruisers, such as the [http://en.wikipedia.org/wiki/Oda_clan Oda] and [http://en.wikipedia.org/wiki/Takeda_clan Takeda], both powerful clans.  Their place in the NKG army is significant, so I sought to portray this with some of the most illustrious names in Japanese history.
+
+= Cruisers =
+
+== Tech Level 1 ==
+
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bflagship2.png]||[http://code.google.com/p/conflictterra/wiki/NKGOdaClassCruiser Oda Class Cruiser]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bsupplydepotmobile.png]||[http://code.google.com/p/conflictterra/wiki/NKGResourceDropZone Resource Drop Zone]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bmechcruiser.png]||[http://code.google.com/p/conflictterra/wiki/NKGSaitoClassCruiser Saito Class Cruiser]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/btankcruiser.png]||[http://code.google.com/p/conflictterra/wiki/NKGTakedaClassCruiser Takeda Class Cruiser]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/baircruiser.png]||[http://code.google.com/p/conflictterra/wiki/NKGHeikeClassCruiser Heike Class Cruiser]||
+
+== Tech Level 2 ==
+
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbattleflagship.png]||[http://code.google.com/p/conflictterra/wiki/NKGOwariClassCruiser Owari Class Cruiser]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvmechcruiser.png]||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvtankcruiser.png]||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvaircruiser.png]||[http://code.google.com/p/conflictterra/wiki/NKGTairaClassCruiser Taira Class Cruiser]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbattlecruiser2.png]||[http://code.google.com/p/conflictterra/wiki/NKGUesugiClassCruiser Uesugi Class Cruiser]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/btransportcarrier2.png]||[http://code.google.com/p/conflictterra/wiki/NKGMaedaClassCruiser Maeda Class Cruiser]||
