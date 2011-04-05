@@ -23,6 +23,11 @@ The Hashiba Scout Mech has the unique ability to build temporary camera towers. 
 
 ----
 
+== Story ==
+Coming soon!
+
+----
+
 == History ==
 This unit was conceived very late into Conflict Terra's life.  A sort of light and quick scouting mech was desired by some early on, but was put off as being "unnecessary."  However, it was realized eventually that the NKG's pre-existing "radar units"--slow, clunky units that provided radar coverage--were un-enticing and hardly used.  The solution to this was to remodel the very concept of the "radar units" into something that more resembled a group of "scout units"--very cheap, fast, unarmed units that were easy to use.  The Hashiba was born soon after this realization.
 
