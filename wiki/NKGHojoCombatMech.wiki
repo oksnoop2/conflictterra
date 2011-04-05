@@ -24,6 +24,11 @@ The Hojo Combat Mech is a light, raiding oriented unit that does best in ambushe
 
 ----
 
+== Story ==
+Coming soon!
+
+----
+
 == History ==
 The Hojo Combat Mech was designed and modeled early in Conflict Terra's life, but was made fully operational much later.  This was because of the lack of knowledge on how to create a walking animation.  So, for the longest time, the "bbasicmech" was simply a tall and stiff robot that rolled on the ground as if on roller skates, and fired bullets from his pointed-down guns.
 
