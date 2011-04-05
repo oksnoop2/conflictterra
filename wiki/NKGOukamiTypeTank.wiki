@@ -13,6 +13,8 @@ The Oukami Type Tank is one of the most basic units available to NKG players.  I
 
 They work well accompanying [http://code.google.com/p/conflictterra/wiki/NKGKumaTypeTank Kuma Type Tanks].
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bassaulttank.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Tank||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
 
@@ -21,6 +23,11 @@ They work well accompanying [http://code.google.com/p/conflictterra/wiki/NKGKuma
 
 ||http://img685.imageshack.us/img685/2789/oukamifiring.png||
 ||A group of Oukami Type Tanks happening upon a mech.||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
