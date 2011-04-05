@@ -13,6 +13,8 @@ The Hashiba Scout Mech is purely a reconnaissance and intellegence unit.  Unarme
 
 The Hashiba Scout Mech has the unique ability to build temporary camera towers.  These towers are stealthy, cloaked buildings with a large Line of Sight.  It should be noted they DO NOT have any radar, and cloaked units will remain cloaked when near them.  After 60 seconds, the tower will self-destruct.  They cost a negligible 5 metal and 5 energy to build, and are built quickly, so they can be easily used to set up a way of observing key points on the map.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bscoutmech.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Unarmed||
 
