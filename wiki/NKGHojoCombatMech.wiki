@@ -11,6 +11,8 @@
 
 The Hojo Combat Mech is a light, raiding oriented unit that does best in ambushes and other off-the-front-line maneuvers.  That being said, they are not completely frail, and can be sufficiently effective if supported by other units.  Armed with a Rapid Fire Cannon on each arm, they are able to deal adequate damage over time.  If they get into trouble, or are needing to traverse trying terrain, the Hojo Combat Mech has the ability to "Jump Jet" over obstacles and enemies.  This ability has a short recharge counter.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bbasicmech.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
 
