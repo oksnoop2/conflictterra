@@ -11,6 +11,8 @@
 
 The Saiga Combat Support Mech is in purpose a sniper.  With a long range Sniping Cannon the unit can deliver high damage to enemy units, but it does not fair as well against buildings.  It has a long reload time of 6 seconds to compensate for its power.  If built en masse, they can pose a heavy threat even for a well-balanced and well-used army, but the cost of doing this would very high and leave the player open to early rushing.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bsnipermech.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Weak Against Buildings||
 
@@ -19,6 +21,11 @@ The Saiga Combat Support Mech is in purpose a sniper.  With a long range Sniping
 
 ||http://img838.imageshack.us/img838/9043/saigasniping.png||
 ||A group of [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mechs] are being picked off by snipers.||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
