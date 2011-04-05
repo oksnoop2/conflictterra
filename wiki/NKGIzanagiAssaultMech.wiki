@@ -11,10 +11,17 @@
 
 The Izanagi Assault Mech is second to only one unit:  the [http://code.google.com/p/conflictterra/wiki/NKGUesugiClassCruiser Uesugi Class Cruiser].  While the [http://code.google.com/p/conflictterra/wiki/NKGUesugiClassCruiser Uesugi Class Cruiser] takes to the skies to bring destruction to all fronts, the Izanagi Assault Mech is restricted to the land, but can bring about heavy damage regardless.  Armed with a total of eight cannons, and the most heavily armored unit in the NKG arsenal, the Izanagi Assault Mech has one role:  to charge into the enemy base, and to keep going.  Using two heavier cannons mounted on the back to deal longer ranged damage, the Izanagi Assault Mech also has a total of six faster firing cannons to deal with closer units.  Its potential for damage is of course offset with a high price and complicated access.  Built at the [http://code.google.com/p/conflictterra/wiki/NKGExperimentalBuildPad Experimental Build Pad], a player must dedicate their economy to the development of this unit.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bheavyassaultmech.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
 
 ||Built From||[http://code.google.com/p/conflictterra/wiki/NKGExperimentalBuildPad Experimental Build Pad]||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
