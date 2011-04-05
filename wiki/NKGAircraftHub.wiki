@@ -1,0 +1,28 @@
+#summary Aircraft Hub
+#labels Phase-Guide
+
+= Summary =
+The aircraft of the NKG allow NKG players to take to the skies to fight for air superiority, damage ground units, or to collect information on the enemy.  They are overall a cheap investment, and act more as a supplementary force than a primary army.
+
+= Common Attributes =
+The NKG aircraft have always been in a tough spot.  Due to several humiliating defeats from massive hoards of bombers in Balanced Annihilation, it was an early choice to not make the air-force overly powerful.  Balancing this to make them useful as well has been a tricky task.
+
+The original color scheme relied heavily on a solid white, with light greys used to accent parts of the planes.  This did not look very good, and so as the planes were remodeled and re-textured, the new color scheme shifted to a more predominantly grey one.  White still appears on the planes, but far less than it did.
+
+The names for the aircraft, like the tanks, use Japanese words and names for things and animals as opposed to the names of [http://en.wikipedia.org/wiki/Samurai samurai] and [http://en.wikipedia.org/wiki/Daimyo daimyo] from the [http://en.wikipedia.org/wiki/Sengoku_period Sengoku Jidai] of Japan.  By the time I was naming the aircraft, I had run out of "good" family names to use, and so I had to resort to normal words or sometimes made-up words.  The made-up words, however, are slowly being weeded out.
+
+= Tanks =
+
+== Tech Level 1 ==
+
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bscoutplane.png]||[http://code.google.com/p/conflictterra/wiki/NKGSuzumeTypePlane Suzume Type Plane]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bfightermkii.png]||[http://code.google.com/p/conflictterra/wiki/NKGHayabusaTypeFighter Hayabusa Type Fighter MkII]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/blaserplanemkiii.png]||[http://code.google.com/p/conflictterra/wiki/NKGSuzakuTypeFighter Suzaku Type Fighter MkIII]||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/brocketplane.png]||Washi Type Warplane||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbombermkii.png]||[http://code.google.com/p/conflictterra/wiki/NKGFukurouTypeBomber Fukurou Type Bomber MkII]||
+
+== Tech Level 2 ==
+
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvfighter.png]||Otorii Type Fighter||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvbomber.png]||Otoko Type Bomber||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/badvrocketplane.png]||Daishi Type Warplane||
