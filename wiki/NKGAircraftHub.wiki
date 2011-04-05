@@ -11,7 +11,7 @@ The original color scheme relied heavily on a solid white, with light greys used
 
 The names for the aircraft, like the tanks, use Japanese words and names for things and animals as opposed to the names of [http://en.wikipedia.org/wiki/Samurai samurai] and [http://en.wikipedia.org/wiki/Daimyo daimyo] from the [http://en.wikipedia.org/wiki/Sengoku_period Sengoku Jidai] of Japan.  By the time I was naming the aircraft, I had run out of "good" family names to use, and so I had to resort to normal words or sometimes made-up words.  The made-up words, however, are slowly being weeded out.
 
-= Tanks =
+= Aircraft =
 
 == Tech Level 1 ==
 
