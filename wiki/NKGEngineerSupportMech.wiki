@@ -50,6 +50,11 @@ There is another important thing to remember about the Engineer Support Mech.  D
 
 ----
 
+== Story ==
+Coming soon!
+
+----
+
 == History ==
 The Engineer Support Mech has had an interesting life.  It was of course needed from the very start, being a constructor, and therefore was modeled rather early.  An early example of a model that never made it in-game still exists and is pictured below.
 
