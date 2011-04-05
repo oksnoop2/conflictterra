@@ -1,5 +1,5 @@
 #labels Phase-Guide
-http://dl.dropbox.com/u/22845238/CT%20logo.png We fix it later.
+
 =*Drone Warrior*=  
  ||http://dl.dropbox.com/u/22845238/screen00024.png ||
 
@@ -12,6 +12,4 @@ The Drone Warrior's design is a simple one. A central hub, controlled either by 
 
  ||http://dl.dropbox.com/u/22845238/screen00028.png ||
 An example of a small group of Drone Warriors sacking an NKG outpost
-
-
 
