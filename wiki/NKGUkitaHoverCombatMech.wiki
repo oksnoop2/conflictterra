@@ -11,11 +11,18 @@
 
 The Ukita Hover Combat Mech is a unique unit.  It is a hover unit, meaning it can move between land and sea seamlessly, and therefore is armed to deal with both situations.  Able to fire two missiles to attack land units, and two torpedoes to damage floating and submerged units, the Ukita Hover Combat Mech would be a jack-of-all-trades if it could attack flying units, which it can't.  Due to their versatility they are somewhat expensive, and don't specialize in damaging any armor class.  They excel on maps with water.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bhovermech.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
 
 ||Built From||[http://code.google.com/p/conflictterra/wiki/NKGSaitoClassCruiser Saito Class Cruiser Mech Factory]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
