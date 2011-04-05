@@ -11,11 +11,18 @@
 
 The Yagyu Hover Combat Mech is essentially an improved [http://code.google.com/p/conflictterra/wiki/NKGUkitaHoverCombatMech Ukita Hover Combat Mech]; it is a stronger and more heavily armored hover unit.  This means it can traverse across both water and land.  However, unlike its weaker cousin, the Yagyu Hover Combat Mech _cannot_ attack submarine units; it can only attack enemies above the waters surface.  Its attack is substantially more fearsome than the [http://code.google.com/p/conflictterra/wiki/NKGUkitaHoverCombatMech Ukita Hover Combat Mech] however, being armed with a pair of beam weapons that have a reasonably quick reload rate of one and a half seconds.  Due to its versatile movement range, it is somewhat expensive, being in the middle of the spectrum for Tech Level 2 mechs.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/badvhovermech.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
 
 ||Built From||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
