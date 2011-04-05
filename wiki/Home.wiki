@@ -11,8 +11,13 @@
     * [http://code.google.com/p/conflictterra/wiki/How_to_update_Conflict_Terra_using_Rapid How to Update Conflict Terra Using Rapid]
     * [http://code.google.com/p/conflictterra/wiki/How_to_Update_Conflict_Terra_using_zk How to Update Conflict Terra Using the Zero K Lobby]
   * Unit Guide
+    * [http://code.google.com/p/conflictterra/wiki/NKGCruiserHub NKG Cruiser Hub]
+    * [http://code.google.com/p/conflictterra/wiki/NKGBuildingHub NKG Building Hub]
     * [http://code.google.com/p/conflictterra/wiki/NKGMechHub NKG Mech Hub]
     * [http://code.google.com/p/conflictterra/wiki/NKGTankHub NKG Tank Hub]
+    * [http://code.google.com/p/conflictterra/wiki/NKGAircraftHub NKG Aircraft Hub]
+    * [http://code.google.com/p/conflictterra/wiki/NKGShipHub NKG Ship Hub]
+    * [http://code.google.com/p/conflictterra/wiki/NKGSubmarineHub NKG Submarine Hub]
     * [http://code.google.com/p/conflictterra/wiki/NKGScrapyard NKG Scrapyard]
     * [http://code.google.com/p/conflictterra/wiki/Glossary Glossary]
   * Conflict Terra's Maps
