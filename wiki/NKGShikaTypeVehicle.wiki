@@ -15,11 +15,18 @@ It should be noted that it does NOT share the ability to build Camera Towers, li
 
 It differs from the [http://code.google.com/p/conflictterra/wiki/NKGHashibaScoutMech Hashiba Scout Mech] in that it is even cheaper, and has more HP, but is also a little slower and its Line of Sight is not as far.  Despite this, it is still a viable intelligence unit.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bscoutvehicle.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Tank||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Unarmed||
 
 ||Built From||[http://code.google.com/p/conflictterra/wiki/NKGTakedaClassCruiser Takeda Class Cruiser Tank Factory]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
