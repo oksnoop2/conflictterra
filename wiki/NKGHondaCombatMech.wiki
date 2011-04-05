@@ -15,6 +15,8 @@ Players should be careful though!  The beams remain firing for a full second, an
 
 Like the [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mech], the Honda Combat Mech MkII can Jump Jet over rough terrain and hostile enemies.  Their Jump Jet range is a little farther than the [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mech], as is their recharge rate.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bheavymech.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
 
@@ -23,6 +25,11 @@ Like the [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Com
 
 ||http://img145.imageshack.us/img145/7875/hondabeam.png||
 ||A raiding Honda Combat Mech MkII.||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
