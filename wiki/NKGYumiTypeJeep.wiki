@@ -15,6 +15,8 @@ Due to their usefulness, it is usually a good idea to invest in at least a handf
 
 By holding CTRL while initiating a group move, all units will move at the same speed as the slowest unit selected.  This can help keep the Yumi Type Jeep back behind or around units that can attack the ground.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/baabuggy.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Tank||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Aircraft||
 || ||Strong Against Cruisers||
@@ -24,6 +26,11 @@ By holding CTRL while initiating a group move, all units will move at the same s
 
 ||http://img26.imageshack.us/img26/544/yumishooting.png||
 ||Yumi Type Jeeps firing on enemy fighters.||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
