@@ -13,6 +13,8 @@ The Enkei Combat Support Mech is a somewhat hardier mech designed to counter tan
 
 It works well with the [http://code.google.com/p/conflictterra/wiki/NKGUedaCombatSupportMech Ueda Combat Support Mech], an anti-mech unit.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bantitankmech.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Tanks||
 
@@ -21,6 +23,11 @@ It works well with the [http://code.google.com/p/conflictterra/wiki/NKGUedaComba
 
 ||http://img196.imageshack.us/img196/9994/enkeiambush.png||
 ||Some tanks have fallen into an ambush!||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
