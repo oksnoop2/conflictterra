@@ -26,6 +26,8 @@ There is another important thing to remember about the Engineer Support Mech.  D
 ||Maneuver||The miner will seek out and mine nearby meteorites, but will not search the whole map.||
 ||Roam||The miner will seek out any meteorites on the map to mine.||
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bminer.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Unarmed||
 
