@@ -11,11 +11,18 @@
 
 *Coming Soon*
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bheavyflyingmech.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Aircraft||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
 
 ||Built From||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
