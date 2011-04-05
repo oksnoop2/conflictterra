@@ -24,6 +24,8 @@ It should be noted that the above rules apply to both of the NKG builder units.
 
 When reaching Tech Level 2, it is often times a good idea to invest in one or two of these units, so that the player can build either the [http://code.google.com/p/conflictterra/wiki/NKGExperimentalBuildPad Experimental Build Pad] or the [http://code.google.com/p/conflictterra/wiki/NKGAdvancedCruiserBeacon Advanced Cruiser Beacon], both of which produce fearsome units.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bengineer2.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Unarmed||
 
@@ -42,6 +44,11 @@ When reaching Tech Level 2, it is often times a good idea to invest in one or tw
 || ||[http://code.google.com/p/conflictterra/wiki/NKGAdvancedAntiMechMissileTurret Advanced Anti-Mech Missile Turret]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGYamadaClassBattery Yamada Class Battery]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGSanadaClassBattery Sanada Class Battery]||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
