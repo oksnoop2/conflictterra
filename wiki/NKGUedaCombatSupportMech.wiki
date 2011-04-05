@@ -13,6 +13,8 @@ The Ueda Combat Support Mech is a lightly armored counter mech that specializes 
 
 They work well when combined with the [http://code.google.com/p/conflictterra/wiki/NKGEnkeiCombatSupportMech Enkei Combat Support Mech], an anti-tank unit.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bmissilemech.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Mechs||
 
@@ -21,6 +23,11 @@ They work well when combined with the [http://code.google.com/p/conflictterra/wi
 
 ||http://img705.imageshack.us/img705/2856/uedafiring.png||
 ||The Ueda Combat Support Mech can unleash several missiles when in groups.||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
