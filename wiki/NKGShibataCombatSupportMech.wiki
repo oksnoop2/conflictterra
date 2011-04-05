@@ -11,6 +11,8 @@
 
 Fulfilling the role of a "bigger and badder" [http://code.google.com/p/conflictterra/wiki/NKGUedaCombatSupportMech Ueda Combat Support Mech], the Shibata Combat Support Mech MkII is a fearsome destroyer of mechs.  Able to fire a salvo of ten anti-mech missiles at once, the Shibata Combat Support Mech MkII is also able to take a decent beating.  Hardier than the [http://code.google.com/p/conflictterra/wiki/NKGHondaCombatMech Honda Combat Mech MkII], but also slower, the Shibata Combat Support Mech MkII can take up the role of a front-line unit, although it too should have some backup.  
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bheavymissilemech.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Mechs||
 
@@ -19,6 +21,11 @@ Fulfilling the role of a "bigger and badder" [http://code.google.com/p/conflictt
 
 ||http://img822.imageshack.us/img822/9879/shibatashooting.png||
 ||A pair of Shibata Combat Support Mech MkIIs.||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
