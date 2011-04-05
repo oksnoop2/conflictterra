@@ -17,6 +17,8 @@ The Uma Type Hover Truck also has the High-Trajectory mode.  When this is activa
 
 Being the most expensive Tech Level 1 tank, they are nonetheless usually a safe investment, especially when trying to crack a dug-in player.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bartillery.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Tank||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Buildings||
 
@@ -25,6 +27,11 @@ Being the most expensive Tech Level 1 tank, they are nonetheless usually a safe 
 
 ||http://img828.imageshack.us/img828/3758/umafiring.png||
 ||A group of Uma Type Hover Trucks besieging a base.||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
