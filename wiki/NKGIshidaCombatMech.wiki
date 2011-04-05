@@ -11,6 +11,8 @@
 
 The Ishida Combat Mech is a heavier armed and armored mech whose primary purpose is to destroy enemy buildings.  While its main gun has a shorter range than the Uma Type Hover Truck artillery, it fires more quickly, and the Ishida Combat Mech is also armed with secondary Rapid Fire Cannons, much like the [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mech].  This allows the Ishida Combat Mech to be able defend itself to a reasonable degree.  This culminates in a formidable opponent, which can deal heavy damage if used in small groups and protected from anti-mech units.  Its power comes at the price of being more expensive to build than other mechs, but they are almost always worth building.
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bsiegemech.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Main Gun Strong Against Buildings.||
 
@@ -19,6 +21,11 @@ The Ishida Combat Mech is a heavier armed and armored mech whose primary purpose
 
 ||http://img838.imageshack.us/img838/8375/ishidasiege.png||
 ||A group of Ishida Combat Mechs destroying a base.||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
