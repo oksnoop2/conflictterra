@@ -15,12 +15,19 @@ It should be noted that it can only Resurrect _wrecks_.  Wrecks are the initial 
 
 In addition to Repairing and Resurrecting, the Resurrection Truck can also Reclaim features on the map for resources, and Restore the topography of the map.  These are basic functions shared by the [http://code.google.com/p/conflictterra/wiki/NKGEngineerSupportMech Engineer Support Mech].
 
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/breztank.lua Link to Unit Definition.  This will display its current stats.]||
+
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Tank||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Unarmed||
 
 ||Built From||[http://code.google.com/p/conflictterra/wiki/NKGOdaClassCruiser Mobile Headquarters]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGTakedaClassCruiser Takeda Class Cruiser Tank Factory]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
+
+----
+
+== Story ==
+Coming soon!
 
 ----
 
