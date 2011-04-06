@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[brocketplane]],
 	  name                = [[Washi Type Warplane]],
-	  description         = [[Rocket Warplane - Versatile anti-land aircraft.  Fires four anti-tank missiles that do little damage to buildings.]],
+	  description         = [[Rocket Warplane - Versatile anti-land aircraft.  Fires four missiles that do little damage to buildings.]],
           amphibious          = false,
 	  buildCostEnergy     = 175,
 	  buildCostMetal      = 175,
@@ -109,13 +109,13 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 25,
+		Cruiser = 50,
 		Building = 5,
-		Mech = 25,
-		Tank = 75,
-		Aircraft = 25,
-		Ship = 25,
-		Sub = 25,
+		Mech = 50,
+		Tank = 50,
+		Aircraft = 50,
+		Ship = 50,
+		Sub = 50,
 	      },
 	
 	      model                   = [[bsmallmissile.s3o]],
