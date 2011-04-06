@@ -17,7 +17,6 @@ Fulfilling the role of a "bigger and badder" [http://code.google.com/p/conflictt
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Mechs||
 
 ||Built From||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
-|| ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
 
 ||http://img822.imageshack.us/img822/9879/shibatashooting.png||
 ||A pair of Shibata Combat Support Mech MkIIs.||
