@@ -52,7 +52,6 @@
 	  smoothAnim          = true,
 	  speedToFront        = 0.5,
 	  turnRate            = 300,
-	  turnRadius          = 1000,
 	  script              = [[blaserplane.lua]],
 	
 	  weapons             = {
@@ -79,7 +78,7 @@
 	      energypershot           = 0,
         
               damage                  = {
-                Cruiser = 20,
+                Cruiser = 50,
                 Building = 10,
                 Mech = 10,
                 Tank = 10,

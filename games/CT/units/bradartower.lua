@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bradartower]],
   name                          = [[Radar Outpost]],
-  description                   = [[Temporary radar installation.  Provides a steady, but close-reaching, range of radar.]],
+  description                   = [[Temporary radar installation.  Provides a steady, but close-reaching, range of radar.  Uses 10 energy per second to operate.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,

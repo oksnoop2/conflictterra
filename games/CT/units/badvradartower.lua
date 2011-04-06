@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[badvradartower]],
   name                          = [[Long Range Radar Tower]],
-  description                   = [[A more permanent radar installation, this facility provides ample coverage.]],
+  description                   = [[A more permanent radar installation, this facility provides ample coverage.  Uses 30 energy per second to operate.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,
