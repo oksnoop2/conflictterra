@@ -11,6 +11,11 @@ The original color scheme relied heavily on a solid white, with light greys used
 
 The names for the aircraft, like the tanks, use Japanese words and names for things and animals as opposed to the names of [http://en.wikipedia.org/wiki/Samurai samurai] and [http://en.wikipedia.org/wiki/Daimyo daimyo] from the [http://en.wikipedia.org/wiki/Sengoku_period Sengoku Jidai] of Japan.  By the time I was naming the aircraft, I had run out of "good" family names to use, and so I had to resort to normal words or sometimes made-up words.  The made-up words, however, are slowly being weeded out.
 
+= When to Use Aircraft =
+Because aircraft are rather inexpensive, they are considered mainly a supplementary force.  Most players would do well to build at least a few aircraft for support roles, although skilled players may find only using planes to be effective.  Due to the importance of Cruisers, aircraft are a good idea to build to destroy these vital units.  This in turn will cause players to defend against aircraft with their own, creating the necessity for using planes.
+
+Other than defending against Cruisers and enemy fighters, aircraft make great scouts, and bombers are able to make effective raids on enemy bases.
+
 = Aircraft =
 
 == Tech Level 1 ==
