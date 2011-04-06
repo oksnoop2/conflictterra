@@ -28,8 +28,8 @@ local kdroneengineer = {
 	canStop             = true,
 	category            = [[LAND]],
     corpse              = [[DEAD]],
-    reclaimable         = false,
-
+    commander           = true,    
+	reclaimable         = false,
     energyMake          = 1,
 	explodeAs           = [[SMALL_UNIT]],
     footprintx          = 2,
