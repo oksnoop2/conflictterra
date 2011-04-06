@@ -189,15 +189,15 @@
 	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Flagship]],
+	      description      = [[Wreckage - Oda Class Cruiser]],
 	      blocking         = true,
 	      category         = [[corpses]],
-	      damage           = 3750,
+	      damage           = 2500,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
 	      footprintX       = 6,
 	      footprintZ       = 20,
-	      metal            = 720,
+	      metal            = 500,
 	      object           = [[wrecks/bflagship2wreck2.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 15,
@@ -205,14 +205,14 @@
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Flagship]],
+	      description      = [[Debris - Oda Class Cruiser]],
 	      blocking         = false,
 	      category         = [[heaps]],
-	      damage           = 2500,
+	      damage           = 1250,
 	      energy           = 0,
 	      footprintX       = 7,
 	      footprintZ       = 7,
-	      metal            = 360,
+	      metal            = 250,
 	      object           = [[b7x7heap.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 15,
