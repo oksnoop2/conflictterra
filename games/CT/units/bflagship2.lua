@@ -201,8 +201,6 @@
 	      object           = [[wrecks/bflagship2wreck2.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 15,
-	      seqnamereclamate = [[TREE1RECLAMATE]],
-	      world            = [[All Worlds]],
 	    },
 	
 	
@@ -218,8 +216,6 @@
 	      object           = [[b7x7heap.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 15,
-	      seqnamereclamate = [[TREE1RECLAMATE]],
-	      world            = [[All Worlds]],
 	    },
 	
 	  },
