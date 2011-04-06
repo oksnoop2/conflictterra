@@ -124,6 +124,12 @@
 	function script.QueryWeapon1()
 		if (currBarrel == 1) then 
 			return flare1
+		end
+		if (currBarrel == 2) then 
+			return flare2
+		end
+		if (currBarrel == 3) then 
+			return flare1
 		else 
 			return flare2
 		end
@@ -153,9 +159,19 @@
 			EmitSfx(flare1, orc_machinegun_flash_big)
 			EmitSfx(flare1, orc_machinegun_muzzle_big)	
 		end
+		if currBarrel == 3 then
+			EmitSfx(flare2, orc_machinegun_flash_big)
+			EmitSfx(flare2, orc_machinegun_muzzle_big)	
+		end
+		if currBarrel == 4 then
+			EmitSfx(flare1, orc_machinegun_flash_big)
+			EmitSfx(flare1, orc_machinegun_muzzle_big)	
+		end
 		currBarrel = currBarrel + 1
 		if currBarrel == 2 then currBarrel = 2 end
-		if currBarrel == 3 then currBarrel = 1 end
+		if currBarrel == 3 then currBarrel = 3 end
+		if currBarrel == 4 then currBarrel = 4 end
+		if currBarrel == 5 then currBarrel = 1 end
 	end
 
 	
