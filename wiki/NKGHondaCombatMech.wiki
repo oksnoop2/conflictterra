@@ -21,7 +21,6 @@ Like the [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Com
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||None||
 
 ||Built From||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
-|| ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
 
 ||http://img145.imageshack.us/img145/7875/hondabeam.png||
 ||A raiding Honda Combat Mech MkII.||
