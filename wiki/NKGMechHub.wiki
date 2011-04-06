@@ -9,7 +9,16 @@ The SM of the NKG are overall meant to contrast the tanks by being faster, less 
 
 The color scheme of the NKG mechs is a blue one, using two shades of a slightly dulled navy blue, along with the three shades of grey usable by all units, to give a unified appearance for the mechs.  The exception is the Ukita Hover Combat Mech, which uses the black scheme of the submarines, as it was originally going to be a submersible.
 
-The names of the various mechs of the NKG are derived from the names of [http://en.wikipedia.org/wiki/Samurai samurai] and [http://en.wikipedia.org/wiki/Daimyo daimyo] from the [http://en.wikipedia.org/wiki/Sengoku_period Sengoku Jidai] of Japan, or the "Warring States Era."  Mostly I used the family names, although a few given names have crept in.  Some of the names are slightly altered, to make them easier to read or to just give them a small bit of flair.  
+The names of the various mechs of the NKG are derived from the names of [http://en.wikipedia.org/wiki/Samurai samurai] and [http://en.wikipedia.org/wiki/Daimyo daimyo] from the [http://en.wikipedia.org/wiki/Sengoku_period Sengoku Jidai] of Japan, or the "Warring States Era."  Mostly I used the family names, although a few given names have crept in.  Some of the names are slightly altered, to make them easier to read or to just give them a small bit of flair.
+
+= When to Use Mechs =
+At the beginning of a game, most players will have to make the decision of whether to start with using mechs, or start with using tanks.  Both have their merits and their downfalls, and careful selection, and having a plan for what a player does select, are crucial.
+
+Because the mechs are more expensive, players will not be able to create as many as quickly at the start of the game.  Attacking early with mechs is effective, due to their speed and power, although an adequate defense can thwart the rush.
+
+Another thing to consider is the topography of the map.  Mechs have greater slope tolerance than tanks, which means they can go up steeper terrain.  Maps with a lot of elevation change are better for mechs because of this.
+
+Starting with mechs is usually a gamble, but if used properly they can be devastating in the early-game.  Later in the game, mechs can be useful in assaulting other players, or moping them up after they are broken.
 
 = Mechs =
 
