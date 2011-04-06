@@ -11,6 +11,15 @@ The color scheme of the NKG tanks uses a dulled forest green, in addition to the
 
 While the mechs of the NKG use the names of [http://en.wikipedia.org/wiki/Samurai samurai] and [http://en.wikipedia.org/wiki/Daimyo daimyo] from the [http://en.wikipedia.org/wiki/Sengoku_period Sengoku Jidai] of Japan, the tanks use more mundane names.  They are still Japanese names, but are instead the words for animals, or objects, as opposed to actual names used by people.  This was decided to help elevate the place of the mechs, meant to be the awe and pizazz of the NKG army.
 
+= When to Use Tanks =
+At the beginning of a game, most players will have to decide whether to use mechs or tanks as their initial unit-type.  Both mechs and tanks have their positives and negatives, and knowing these can help a player choose wisely.
+
+Tanks are less expensive and build faster than mechs, which means they can be more easily amassed early in the game.  Despite this, they move slower, and don't deal as much damage.  Although well-put-together tank armies can easily destroy lesser players, it is not a guaranteed victory.  Going with tanks out of the gate is usually a safer choice, although this may not pan out well in the late-game.
+
+Another thing to consider is the topography of the map.  Tanks have less slope tolerance than mechs, which means they can only go up less steep slopes.  This means that sometimes players will not be able to access parts of the map with tanks, which may be crippling early in the game on a map where players are divided by steep slopes.  Flat maps are the best for tanks, although large maps can be a handicap due to their slow speed.
+
+Tanks excel at defense, and so they do well for the cautious player, although they will have to play well to defend against skilled, aggressive players using mechs.
+
 = Tanks =
 
 == Tech Level 1 ==
