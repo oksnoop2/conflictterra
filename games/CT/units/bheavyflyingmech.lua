@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bheavyflyingmech]],
 	  name                = [[Hattori Aerial Combat Mech]],
-	  description         = [[Aerial Assault Mech - Stronger model of the airborne "mech."  Fires a powerful beam. - Build Limit: 10]],
+	  description         = [[Cruiser Destroyer Mech - Fires a powerful beam to deal heavy damage to Cruisers. - Build Limit: 10]],
 	  acceleration        = 0.24,
 	  amphibious          = false,
 	  brakeRate           = 4.41,
@@ -34,7 +34,7 @@
 	  maxVelocity         = 4,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING SUB]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB FIXEDWING]],
 	  objectName          = [[bheavyflyingmech.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[BIG_UNIT]],
@@ -59,8 +59,7 @@
 	
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT HOVER]],
+	      onlyTargetCategory = [[GUNSHIP]],
 	    },
 	
 	  },
@@ -71,19 +70,19 @@
 	   Laser = {
 	      name                    = [[Beam Laser]],
 	      areaOfEffect            = 20,
-	      beamTime                = 1,
+	      beamTime                = 0.5,
 	      craterMult              = 0.25,
 	      collideFriendly         = false,
 	      accuracy                = 100,
 	
 	      damage                  = {
 		Cruiser = 2000,
-		Building = 2000,
-		Mech = 2000,
-		Tank = 2000,
-		Aircraft = 2000,
-		Ship = 2000,
-		Sub = 200,
+		Building = 500,
+		Mech = 500,
+		Tank = 500,
+		Aircraft = 500,
+		Ship = 500,
+		Sub = 500,
 	      },
 	
 	      energypershot           = 0,
