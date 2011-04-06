@@ -7,9 +7,11 @@
 
 == Role ==
 
-||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavysiegemech.png]||Slow, heavily armed SM sporting two long ranged cannons.||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bheavysiegemech.png]||Heavily armed SM that fires a salvo of inaccurate shells that are strong against buildings.||
 
-*Coming Soon*
+The Shimazu Combat Mech acts as a heavy siege unit, firing a salvo of four artillery shells that do high damage to buildings and mild damage to units.  The shells are very inaccurate and land in a wide spread rather than a narrow point.  This makes them more effective against large units, namely buildings.  This also contrasts the [http://code.google.com/p/conflictterra/wiki/NKGSekaiTypeTank Sekai Type Tank], which fires a single, much more accurate shell.
+
+While it is a slow mech, it is still faster than most tanks.  A handful of these units could deal serious damage to an enemy base, but they are also very expensive.
 
 ||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bheavysiegemech.lua Link to Unit Definition.  This will display its current stats.]||
 
@@ -17,7 +19,6 @@
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Buildings||
 
 ||Built From||[http://code.google.com/p/conflictterra/wiki/NKGMatsudairaClassCruiser Matsudaira Class Cruiser Mech Factory]||
-|| ||[http://code.google.com/p/conflictterra/wiki/NKGOkuboClassCruiser Okubo Class Cruiser Tank Factory]||
 
 ----
 
@@ -37,6 +38,8 @@ When designing the legs I wanted them to look well armored and powerful, so I ex
 Initially the design called for the guns being mounted on the back or "inside shoulders" of the body, not unlikely the guns for the [http://en.wikipedia.org/wiki/Guncannon Guncannon] and [http://en.wikipedia.org/wiki/RX-75_Guntank Guntank] from [http://en.wikipedia.org/wiki/Mobile_Suit_Gundam Gundam].  However I realized that doing it this way would neglect any need for arms, and I wanted to avoid a bare torso.  After a while of pondering, I realized I could just mount the guns onto the "outside shoulders" to give them an arm-like appearance, and solve my problem!
 
 The actual guns themselves are completely based off of a weapon from [http://en.wikipedia.org/wiki/Armored_Core_3 Armored Core 3].  Of the two grenade launchers available to a player, the lighter option was short and simple, and very closely resembles what we see now on the Shimazu.  This weapon design, for whatever reason, has always been deeply ingrained in what I imagine "heavy weaponry" to look like.
+
+Originally this unit fired two simple shells that did more damage to buildings.  However, it was decided that a way to make the unit more exciting, and therefore more enticing to use, was to give it a more interesting attack.  The unit got an upgrade and now fires a salvo of four shells over a large area.  This inaccuracy makes them better against buildings even beyond simple damage values.  This contrasts the [http://code.google.com/p/conflictterra/wiki/NKGSekaiTypeTank Sekai Type Tank] which is more accurate but only fires a single shot.
 
 ----
 
