@@ -3,6 +3,7 @@
 
 = Table of Contents =
   * [http://code.google.com/p/conflictterra/wiki/Useful_Dev_Information#Conflict_Terra's_Categories Conflict Terra's Categories]
+  * [http://code.google.com/p/conflictterra/wiki/Useful_Dev_Information#Wreck_Info]
   * [http://code.google.com/p/conflictterra/wiki/Useful_Dev_Information#Rough_Scale Rough Scale]
 
 = Conflict Terra's Categories =
@@ -17,6 +18,21 @@
 ||SHIP||All of the naval units.  Mobile!||
 ||FLOAT||Floating buildings.||
 ||SUB||Submarines||
+
+= Wreck Info =
+
+== Wrecks ==
+  * damage of Wreck should be half of unit's maxDamage.
+  * metal of Wreck should be half of unit's metalCost.
+  * reclaimTime of Wreck should be:
+  {{{
+  reclaimTime = (metal / 10) * 300
+  }}}
+
+== Debris ==
+  * damage of Debris should be half of damage for Wreck.
+  * metal of Debris should be half of metal for Wreck.
+  * reclaimTime of Debris should be half of reclaimTime of Wreck.
 
 = Rough Scale =
 
