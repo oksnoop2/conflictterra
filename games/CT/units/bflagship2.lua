@@ -199,10 +199,11 @@
 	      featureDead      = [[DEAD2]],
 	      footprintX       = 6,
 	      footprintZ       = 20,
+	      mass             = 2000,
 	      metal            = 500,
 	      object           = [[wrecks/bflagship2wreck2.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
+	      reclaimTime      = 15000,
 	    },
 	
 	
@@ -215,9 +216,10 @@
 	      footprintX       = 7,
 	      footprintZ       = 7,
 	      metal            = 250,
+	      mass             = 750,
 	      object           = [[b7x7heap.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
+	      reclaimTime      = 7500,
 	    },
 	
 	  },

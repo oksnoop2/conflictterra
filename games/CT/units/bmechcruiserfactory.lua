@@ -89,10 +89,11 @@ unitDef = {
       featureDead      = [[DEAD2]],
       footprintX       = 16,
       footprintZ       = 17,
+      mass             = 2000,
       metal            = 300,
       object           = [[wrecks/bmechcruiserfactorywreck.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,
+      reclaimTime      = 9000,
     },
 
 
@@ -105,10 +106,12 @@ unitDef = {
       energy           = 0,
       footprintX       = 16,
       footprintZ       = 16,
+      mass             = 750,
       metal            = 150,
       object           = [[b16x16heap.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,    },
+      reclaimTime      = 4500,
+    },
 
 
   },

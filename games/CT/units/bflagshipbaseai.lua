@@ -192,10 +192,11 @@ unitDef = {
       featureDead      = [[DEAD2]],
       footprintX       = 22,
       footprintZ       = 21,
+      mass             = 2000,
       metal            = 500,
       object           = [[wrecks/bflagshipbase2wreck.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,
+      reclaimTime      = 15000,
     },
 
 
@@ -208,10 +209,11 @@ unitDef = {
       energy           = 0,
       footprintX       = 17,
       footprintZ       = 16,
+      mass             = 750,
       metal            = 250,
       object           = [[b17x16heap.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,
+      reclaimTime      = 7500,
     },
 
 

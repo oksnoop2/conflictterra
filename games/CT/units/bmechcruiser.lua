@@ -187,10 +187,11 @@
 	      featureDead      = [[DEAD2]],
 	      footprintX       = 6,
 	      footprintZ       = 15,
+	      mass             = 2000,
 	      metal            = 300,
 	      object           = [[wrecks/bmechcruiserwreck.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
+	      reclaimTime      = 9000,
 	    },
 	
 	
@@ -203,10 +204,11 @@
 	      featurereclamate = [[SMUDGE01]],
 	      footprintX       = 7,
 	      footprintZ       = 7,
+	      mass             = 750,
 	      metal            = 150,
 	      object           = [[b7x7heap.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
+	      reclaimTime      = 4500,
 	    },
 	
 	  },

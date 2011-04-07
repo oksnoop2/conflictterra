@@ -83,10 +83,11 @@
 	      featureDead      = [[DEAD2]],
 	      footprintX       = 6,
 	      footprintZ       = 10,
+	      mass             = 2000,
 	      metal            = 100,
 	      object           = [[wrecks/bsupplydepotmobilewreck.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
+	      reclaimTime      = 3000,
 	    },
 	
 	
@@ -98,10 +99,11 @@
 	      energy           = 0,
 	      footprintX       = 6,
 	      footprintZ       = 6,
+	      mass             = 750,
 	      metal            = 50,
 	      object           = [[b6x6heap.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
+	      reclaimTime      = 1500,
 	    },
 	
 	  },

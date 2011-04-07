@@ -187,10 +187,11 @@
 	      featureDead      = [[DEAD2]],
 	      footprintX       = 7,
 	      footprintZ       = 16,
+	      mass             = 2000,
 	      metal            = 150,
 	      object           = [[wrecks/baircruiserwreck.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
+	      reclaimTime      = 4500,
 	    },
 	
 	
@@ -202,10 +203,11 @@
 	      energy           = 0,
 	      footprintX       = 7,
 	      footprintZ       = 7,
+	      mass             = 750,
 	      metal            = 75,
 	      object           = [[b7x7heap.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
+	      reclaimTime      = 2250,
 	    },
 	
 	  },

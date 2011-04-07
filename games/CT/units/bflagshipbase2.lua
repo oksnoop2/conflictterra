@@ -185,9 +185,10 @@ unitDef = {
       footprintX       = 22,
       footprintZ       = 21,
       metal            = 500,
+      mass             = 2000,
       object           = [[wrecks/bflagshipbase2wreck.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,
+      reclaimTime      = 15000,
     },
 
 
@@ -201,9 +202,10 @@ unitDef = {
       footprintX       = 17,
       footprintZ       = 16,
       metal            = 250,
+      mass             = 750,
       object           = [[b17x16heap.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,
+      reclaimTime      = 7500,
     },
 
 
