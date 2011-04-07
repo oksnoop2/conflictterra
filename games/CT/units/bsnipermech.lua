@@ -76,7 +76,7 @@
 	      accuracy                = 50,
 	
 	      damage                  = {
-		default = ,600
+		default = 600,
 		Cruiser = 600,
 		Building = 300,
 		Mech = 600,
