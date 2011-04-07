@@ -92,7 +92,7 @@ unitDef = {
       metal            = 300,
       object           = [[wrecks/bmechcruiserfactorywreck.s3o]],
       reclaimable      = true,
-      reclaimTime      = 6375,
+      reclaimTime      = 275,
     },
 
 
