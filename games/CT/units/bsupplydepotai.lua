@@ -59,49 +59,38 @@ unitDef = {
 
 
 
+
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Supply Depot]],
+      description      = [[Wreckage - Resource Drop Zone(AI)]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 862,
+      damage           = 575,
       energy           = 0,
       featureDead      = [[DEAD2]],
-      featurereclamate = [[SMUDGE01]],
-      footprintX       = 2,
-      footprintZ       = 2,
-      height           = [[40]],
-      hitdensity       = [[100]],
-      metal            = 80,
-      object           = [[bgenericwreckage.s3o]],
+      footprintX       = 6,
+      footprintZ       = 10,
+      metal            = 100,
+      object           = [[wrecks/bsupplydepotwreck.s3o]],
       reclaimable      = true,
       reclaimTime      = 275,
-
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
     },
 
 
     DEAD2 = {
-      description      = [[Debris - Supply Depot]],
+      description      = [[Debris - Resource Drop Zone(AI)]],
       blocking         = false,
 
       category         = [[heaps]],
-      damage           = 575,
+      damage           = 287,
       energy           = 0,
-      featurereclamate = [[SMUDGE01]],
-      footprintX       = 4,
-      footprintZ       = 4,
-      height           = [[4]],
-      hitdensity       = [[100]],
-      metal            = 40,
-      object           = [[b4x4heap.s3o]],
+      footprintX       = 6,
+      footprintZ       = 6,
+      metal            = 50,
+      object           = [[b6x6heap.s3o]],
       reclaimable      = true,
       reclaimTime      = 275,
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
-
     },
 
 

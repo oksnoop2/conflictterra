@@ -182,46 +182,34 @@ unitDef = {
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Mobile Headquarters]],
+      description      = [[Wreckage - Mobile Headquarters (AI)]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 15000,
+      damage           = 10000,
       energy           = 0,
       featureDead      = [[DEAD2]],
-      featurereclamate = [[SMUDGE01]],
-      footprintX       = 7,
-      footprintZ       = 6,
-      height           = [[40]],
-      hitdensity       = [[100]],
-      metal            = 720,
-      object           = [[bgenericwreckage.s3o]],
+      footprintX       = 22,
+      footprintZ       = 21,
+      metal            = 500,
+      object           = [[wrecks/bflagshipbase2wreck.s3o]],
       reclaimable      = true,
       reclaimTime      = 275,
-
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
     },
 
 
     DEAD2 = {
-      description      = [[Debris - Mobile Headquarters]],
+      description      = [[Debris - Mobile Headquarters (AI)]],
       blocking         = false,
 
       category         = [[heaps]],
-      damage           = 10000,
+      damage           = 5000,
       energy           = 0,
-      featurereclamate = [[SMUDGE01]],
       footprintX       = 17,
-      footprintZ       = 17,
-      height           = [[4]],
-      hitdensity       = [[100]],
-      metal            = 360,
-      object           = [[b7x7heap.s3o]],
+      footprintZ       = 16,
+      metal            = 250,
+      object           = [[b17x16heap.s3o]],
       reclaimable      = true,
       reclaimTime      = 275,
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
-
     },
 
 
