@@ -127,6 +127,7 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		default = 750,
 		Cruiser = 750,
 		Building = 750,
 		Mech = 750,
@@ -156,6 +157,7 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		default = 1500,
 		Cruiser = 1500,
 		Building = 1500,
 		Mech = 1500,

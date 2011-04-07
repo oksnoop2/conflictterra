@@ -79,6 +79,7 @@
 	      collideFriendly         = true,
 	
 	      damage                  = {
+		default = 10,
 		Cruiser = 10,
 		Building = 100,
 		Mech = 10,

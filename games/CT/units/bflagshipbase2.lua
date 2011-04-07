@@ -112,13 +112,14 @@ unitDef = {
 	      collideFriendly         = false,
 	
 	      damage                  = {
+		default = 200,
 		Cruiser = 200,
 		Building = 200,
 		Mech = 200,
 		Tank = 200,
 		Aircraft = 200,
 		Ship = 200,
-		Sub = 5,
+		Sub = 200,
 	      },
 	
 	      model                   = [[bshell.s3o]],
@@ -143,6 +144,7 @@ unitDef = {
 	      collideFriendly         = false,
 	
 	      damage                  = {
+		default = 5,
 		Cruiser = 100,
 		Building = 5,
 		Mech = 5,

@@ -78,6 +78,7 @@
 	      energypershot           = 0,
         
               damage                  = {
+		default = 10,
                 Cruiser = 50,
                 Building = 10,
                 Mech = 10,

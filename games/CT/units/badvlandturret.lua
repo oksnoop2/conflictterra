@@ -70,13 +70,14 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		default = 2000,
 		Cruiser = 2000,
 		Building = 2000,
 		Mech = 2000,
 		Tank = 2000,
 		Aircraft = 2000,
 		Ship = 2000,
-		Sub = 200,
+		Sub = 2000,
 	      },
 	
 	      energypershot           = 0,

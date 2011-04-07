@@ -76,6 +76,7 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		default = 30,
 		Cruiser = 30,
 		Building = 30,
 		Mech = 30,

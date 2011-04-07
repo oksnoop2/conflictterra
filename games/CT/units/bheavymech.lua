@@ -103,6 +103,7 @@
 	      accuracy                = 100,
 	
 	      damage                  = {
+		default = 500,
 	        Cruiser = 500,
 		Building = 500,
 	        Mech = 500,
@@ -140,13 +141,14 @@
 	      accuracy                = 200,
 	
 	      damage                  = {
+		default = 100,
 		Cruiser = 100,
 		Building = 100,
 		Mech = 100,
 		Tank = 100,
 		Aircraft = 100,
 		Ship = 100,
-		Sub = 5.25,
+		Sub = 100,
 	      },
 	
 	      model                   = [[bshell.s3o]],

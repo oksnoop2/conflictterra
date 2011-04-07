@@ -90,13 +90,14 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		default = 20,
 		Cruiser = 150,
 		Building = 20,
 		Mech = 20,
 		Tank = 20,
 		Aircraft = 150,
 		Ship = 20,
-		Sub = 10,
+		Sub = 20,
 	      },
 	
 	      explosionGenerator      = [[custom:PLASMA_Expl]],

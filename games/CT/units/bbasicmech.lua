@@ -77,13 +77,14 @@
 	      accuracy                = 200,
 	
 	      damage                  = {
+		default = 15,
 		Cruiser = 15,
 		Building = 15,
 		Mech = 15,
 		Tank = 15,
 		Aircraft = 15,
 		Ship = 15,
-		Sub = 1,
+		Sub = 15,
 	      },
 	
 	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],

@@ -80,13 +80,14 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		default = 5,
 		Cruiser = 100,
 		Building = 5,
 		Mech = 5,
 		Tank = 5,
 		Aircraft = 100,
 		Ship = 5,
-		Sub = 2.5,
+		Sub = 5,
 	      },
 	
 	      edgeEffectiveness       = 0.85,

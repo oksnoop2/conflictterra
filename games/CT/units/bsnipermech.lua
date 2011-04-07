@@ -76,13 +76,14 @@
 	      accuracy                = 50,
 	
 	      damage                  = {
+		default = ,600
 		Cruiser = 600,
 		Building = 300,
 		Mech = 600,
 		Tank = 600,
 		Aircraft = 600,
 		Ship = 600,
-		Sub = 10,
+		Sub = 600,
 	      },
 	
 	      explosionGenerator      = [[custom:PLASMA_Expl]],

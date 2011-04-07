@@ -86,6 +86,7 @@
 	      collideFriendly         = true,
 	
 	      damage                  = {
+		default = 150,
 		Cruiser = 150,
 		Building = 250,
 		Mech = 150,
@@ -117,13 +118,14 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		default = 10,
 		Cruiser = 30,
 		Building = 10,
 		Mech = 10,
 		Tank = 10,
 		Aircraft = 30,
 		Ship = 10,
-		Sub = 0.3,
+		Sub = 10,
 	      },
 	
 	      canAttackGround         = false,
