@@ -36,6 +36,8 @@
 				tpsmoke 			= 'tpsmoke.png',
 				tpsmoke2			= 'tpsmoke2.png',
 				tpdollar			= 'tpdollar.png',
+				experiment_front                = 'experiment_front.tga',
+				experiment_side                 = 'experiment_side.tga',
 			},
 		}
 	}
