@@ -1,6 +1,6 @@
 local kdroneminer = {
-	name                = [[Light Battle Drone]],
-	description         = [[The Light Battle Drone is a lightly armored unit strong in mass.]],
+	name                = [[Spread Shot Drone]],
+	description         = [[Dangeresque at close range, this unit fires a spread of shots.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdroneminer.png]],
@@ -55,7 +55,7 @@ local kdroneminer = {
 	 weapons             = {
 	
 	    {
-	      def                = [[Laser]],
+	      def                = [[Cannon]],
 	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
 	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER]],
 	    },
@@ -63,43 +63,45 @@ local kdroneminer = {
 	  },
 	
 	
-	weaponDefs             = {
+	  weaponDefs          = {
 	
-	    Laser = {
-	      name                    = [[Burst Laser]],
-	      areaOfEffect            = 8,
-	      coreThickness           = 0.5,
-	      collideFriendly         = false,
+	    Cannon = {
+	      name                    = [[Light Cannon]],
+	      areaOfEffect            = 32,
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 10,
-		Building = 10,
-		Mech = 10,
-		Tank = 10,
-		Aircraft = 10,
-		Ship = 10,
-		Sub = 10,
+		default = 80,
+		Cruiser = 80,
+		Building = 80,
+		Mech = 80,
+		Tank = 80,
+		Aircraft = 80,
+		Ship = 80,
+		Sub = 80,
 	      },
 	
-	      duration                = 0.02,
-	      energypershot           = 0,
+	    --model                   = [[bshell.s3o]],
+		  cegtag                  = [[VULCANFX]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
+		  projectiles             =5,
+		  -- groundbounce            =1,
+		 -- numbounce               =3,
+		 -- waterbounce             =1,
+		 -- bouncebebound           =.8,
+		 -- bounceblip              =.8,
+		  sprayangle              =2000,
 	      interceptedByShieldType = 1,
-	      heightMod               = 0.5,
-	      lineOfSight             = true,
-	      range                   = 300,
-	      reloadtime              = 0.5,
-	      rgbColor                = [[0 1 0]],
-	      soundStart              = [[ct/pew1]],
-	      targetMoveError         = 0.15,
-	      thickness               = 1,
-	      tolerance               = 10000,
+	      range                   = 400,
+	      reloadtime              = 3,
+	      soundHit                = [[argh/Argh_MedExplosion]],
+	      soundStart              = [[argh/Argh_heavy_machinegun]],
 	      turret                  = true,
-	      weaponType              = [[LaserCannon]],
-	      weaponVelocity          = 1500,
+	      weaponType              = [[Cannon]],
+	      weaponVelocity          = 500,
 	    },
 	
-	  }, 
+	  },
 	smoothAnim          = true,
     terraformSpeed      = 300,
 	reclaimSpeed        = 300,
@@ -108,7 +110,7 @@ local kdroneminer = {
 	showNanospray	    = 1,
 	Resurrectspeed      = 100,
 	workerTime          = 1,
-	script		    = "kdroneengineer.lua",
+	script		    = "kdroneminer.lua",
 
 	featureDefs         = {
 	

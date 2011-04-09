@@ -30,7 +30,7 @@ local kdronewarrior = {
 	idleAutoHeal        = 1,
 	leaveTracks         = false,
 	mass                = 80,
-	maxDamage           = 1000,
+	maxDamage           = 900,
     maxSlope            = 99999999,
 	maxVelocity         = 3,
     maxWaterDepth       = 10000,
@@ -65,8 +65,8 @@ local kdronewarrior = {
 	
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[ SINK FLOAT]],
-	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER FIXEDWING]],
+	      badTargetCategory  = [[SWIM LAND SHIP HOVER]],
+	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
 	    },
 	
 	  },
@@ -75,23 +75,24 @@ local kdronewarrior = {
 	weaponDefs             = {
 	
 	    Laser = {
-	      name                    = [[Burst Laser]],
+	      name                    = [[BeamLaser]],
 	      areaOfEffect            = 8,
 	      coreThickness           = 0.5,
 	      collideFriendly         = false,
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 20,
-		Building = 100,
-		Mech = 100,
-		Tank = 100,
-		Aircraft = 20,
-		Ship = 100,
-		Sub = 100,
+		Cruiser = 200,
+		Building = 200,
+		Mech = 200,
+		Tank = 200,
+		Aircraft = 200,
+		Ship = 200,
+		Sub = 200,
 	      },
-	
-	      duration                = 0.02,
+
+	      beamTime                = .5,
+	      duration                = 5,
 	      energypershot           = 0,
 	      interceptedByShieldType = 1,
 	      heightMod               = 0.5,
@@ -100,12 +101,12 @@ local kdronewarrior = {
 	      reloadtime              = 2,
 	      rgbColor                = [[0 1 0]],
 	      soundStart              = [[ct/pew1]],
-	      targetMoveError         = 0.15,
+	      targetMoveError         = 0,
 	      thickness               = 5,
-	      tolerance               = 10000,
+	      tolerance               = 100,
 	      turret                  = true,
-	      weaponType              = [[LaserCannon]],
-	      weaponVelocity          = 1500,
+	      weaponType              = [[BeamLaser]],
+	      weaponVelocity          = 2000,
 	    },
 	
 	  },

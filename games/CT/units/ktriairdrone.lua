@@ -84,13 +84,13 @@ local ktriairdrone = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 20,
-		Building = 60,
-		Mech = 20,
-		Tank = 20,
-		Aircraft = 20,
-		Ship = 20,
-		Sub = 20,
+		Cruiser = 50,
+		Building = 25,
+		Mech = 50,
+		Tank = 50,
+		Aircraft = 50,
+		Ship = 50,
+		Sub = 50
 	      },
 
 	      beamTime                = 0.5,

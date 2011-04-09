@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[kdroneroller]],
 	  name                = [[Roller Drone]],
-	  description         = [[Fires EMP weapon. Can take quite a few hits.]],
+	  description         = [[Artillery troop ablity to fire from a great distance away.]],
 	  acceleration        = 0.04,
 	  brakeRate           = 0.02,
 	  buildCostEnergy     = 250,
@@ -16,19 +16,19 @@
 	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
-	
+      reclaimable         = false,
 	  explodeAs           = [[SMALL_UNIT]],
-          footprintx          = 2,
+      footprintx          = 2,
 	  footprintZ          = 2,
+	  highTrajectory      = 2,
 	  idleAutoHeal        = 0,
 	  leaveTracks         = true,
 	  maneuverleashlength = [[640]],
 	  mass                = 90,
-	  maxDamage           = 3000,
-          maxSlope            = 18,
+	  maxDamage           = 2000,
+      maxSlope            = 18,
 	  maxVelocity         = 1.5,
-          maxWaterDepth       = 22,
+      maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
 	  movementClass       = [[TANK2x2]],
 	  moveState           = 0,
@@ -72,10 +72,13 @@
 
 	
 	
-	weapons             = {
+	  weapons             = {
 	
 	    {
-	      def                = [[Stun]],
+	      def                = [[Cannon]],
+	      badTargetCategory  = [[SWIM LAND SHIP HOVER]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
 	    },
 	
@@ -84,42 +87,34 @@
 	
 	  weaponDefs          = {
 	
-	    Stun = {
-	      name                    = [[Electromagnetic Beam]],
-	      areaOfEffect            = 32,
-	      collideFriendly         = false,
+	    Cannon = {
+	      name                    = [[Artillery Cannon]],
+	      areaOfEffect            = 80,
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 100,
-		Building = 100,
-		Mech = 100,
-		Tank = 100,
-		Aircraft = 100,
-		Ship = 100,
-		Sub = 100,
+		default = 150,
+		Cruiser = 150,
+		Building = 300,
+		Mech = 150,
+		Tank = 150,
+		Aircraft = 150,
+		Ship = 150,
+		Sub = 150,
 	      },
 	
-	      duration                = 0.01,
-	      explosionGenerator      = [[custom:STUNNER_Expl]],
-	      heightMod               = 1,
-	      intensity               = 10,
-	      interceptedByShieldType = 2,
-	      lineOfSight             = true,
-	      minIntensity            = 1,
-	      paralyzer               = true,
-	      paralyzeTime            = 4,
-	      range                   = 500,
-	      reloadtime              = 3,
-	      rgbColor                = [[1 1 0]],
-	      soundHit                = [[ct/empfire]],
-	      soundStart              = [[ct/empfire]],
-	      soundTrigger            = true,
-	      thickness               = 1,
-	      tolerance               = 6000,
+	   -- model                   = [[bshell.s3o]],
+		  cegtag                  = [[VULCANFX]],	     
+		  explosionGenerator      = [[custom:LRPC_Expl]],
+	      interceptedByShieldType = 1,
+	      myGravity               = 0.1,
+	      range                   = 1250,
+	      reloadtime              = 7.5,
+	      soundHit                = [[argh/Argh_MedExplosion]],
+	      soundStart              = [[argh/Argh_Whamsound]],
 	      turret                  = true,
-	      weaponType              = [[LightningCannon]],
-	      weaponVelocity          = 1000,
+	      weaponType              = [[Cannon]],
+	      weaponVelocity          = 750,
 	    },
 	
 	  },
