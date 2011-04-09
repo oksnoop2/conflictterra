@@ -36,6 +36,7 @@
 	local function RestoreAfterDelay(unitID)
 		Sleep(2500)
 		Turn(body, y_axis, 0, math.rad(150))
+		Turn(body, x_axis, 0, math.rad(150))
 	end
 
 	function script.QueryWeapon1() return flare1 end
@@ -46,13 +47,14 @@
                 Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
         	Turn(body, y_axis, heading, math.rad(150))
+        	Turn(body, x_axis, -pitch, math.rad(150))
         	WaitForTurn(body, y_axis)
---		StartThread(RestoreAfterDelay)
+        	WaitForTurn(body, x_axis)
+		StartThread(RestoreAfterDelay)
 		return true
 	end
 	
 	function script.FireWeapon1()
-	       Sleep(30)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
