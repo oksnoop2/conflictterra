@@ -6,134 +6,84 @@
 	local barrel = piece "barrel"
 	local flare1 = piece "flare1"
 
-	local baclthigh = piece "lbthigh"
-	local baclshin = piece "lbshin"
-	local baclfoot = piece "lbfoot"
+	local lbthigh = piece "lbthigh"
+	local lbshin = piece "lbshin"
+	local lbfoot = piece "lbfoot"
 
-	local bacrthigh = piece "rbthigh"
-	local bacrshin = piece "rbshin"
-	local bacrfoot = piece "rbfoot"
+	local rbthigh = piece "rbthigh"
+	local rbshin = piece "rbshin"
+	local rbfoot = piece "rbfoot"
 
 	local flare2  = piece "flare2"
 
-	local forlthigh = piece "lfthigh"
-	local forlshin = piece "lfshin"
-	local forlfoot = piece "lffoot"
+	local lfthigh = piece "lfthigh"
+	local lfshin = piece "lfshin"
+	local lffoot = piece "lffoot"
 
-	local forrthigh = piece "rfthigh"
-	local forrshin = piece "rfshin"
-	local forrfoot = piece "rffoot"
+	local rfthigh = piece "rfthigh"
+	local rfshin = piece "rfshin"
+	local rffoot = piece "rffoot"
 
 
 	--signals
 	local SIG_AIM = 1
 	local walk_go = 2
 	local walk_stop = 4
-	local SIG_BUILD = 8
 
 	function script.Create(unitID)
 	end
-
-	function script.StartBuilding(heading, pitch)
-		Signal(SIG_BUILD)
-		SetSignalMask(SIG_BUILD)
-        	Turn(body, y_axis, heading, math.rad(90))
-        	WaitForTurn(body, y_axis)
-		SetUnitValue(COB.INBUILDSTANCE, 1)
-		return 1
-	end
-
-	function script.Querybody() return flare2 end
-
-	function script.AimFromWeapon() return body end
-
-	function script.StopBuilding()
-		Signal(SIG_BUILD)
-		SetSignalMask(SIG_BUILD)
-		SetUnitValue(COB.INBUILDSTANCE, 0)
-		Turn(body, y_axis, 0, math.rad(90))
-		WaitForTurn(body, y_axis)
-		Sleep(1)
-		return 0
-	end
-
-	function script.AimFromWeapon() return flare2 end
-
-	function script.QueryWeapon() return flare2 end
-
-	function script.QueryNanoPiece() return flare2 end
 	
 	local function RestoreAfterDelay(unitID)
 		Sleep(2500)
-		Turn(body, y_axis, 0, math.rad(150))
+		Turn(barrel, y_axis, 0, math.rad(150))
 		Turn(barrel, x_axis, 0, math.rad(150))
 	end
 
 	local function Walk()
 	        SetSignalMask( walk_go )
-                Sleep(30)
+		Turn( rfthigh, x_axis, -0.25, 2 )
+		Turn( lbthigh, x_axis, -0.15, 2 )
+
+		WaitForTurn( rfthigh, x_axis )
+		WaitForTurn( lbthigh, x_axis )
+                Sleep(1)
+
 	        while ( true ) do
-	                Turn( forrthigh, x_axis, 0, 2 )
-	                Turn( baclthigh, x_axis, 0, 2 )
+			Turn( lfthigh, x_axis, -0.25, 2)
+			Turn( rbthigh, x_axis, -0.15, 2)
 
-	                Turn( forrshin, x_axis, 0.5, 2 )
-	                Turn( baclshin, x_axis, -0.5, 2 )
+			Turn (rfthigh, x_axis, 0.15, 2)
+			Turn (lbthigh, x_axis, 0.25, 2)
 
-   	                Turn( forlthigh, x_axis, -0.5, 2 )
-        	        Turn( bacrthigh, x_axis, 0.5, 2 )
+			WaitForTurn( lfthigh, x_axis )
+			WaitForTurn( rbthigh, x_axis )
 
-   	                Turn( forlshin, x_axis, 0, 2 )
-        	        Turn( bacrshin, x_axis, 0, 2 )
+			WaitForTurn( rfthigh, x_axis )
+			WaitForTurn( lbthigh, x_axis )
+			Sleep(1)
 
-	                WaitForTurn( bacrthigh, x_axis )
-	                WaitForTurn( forlthigh, x_axis )
-                        WaitForTurn( forrthigh, x_axis )
-   	                WaitForTurn( baclthigh, x_axis )
+			Turn( lfthigh, x_axis, 0.15, 2)
+			Turn( rbthigh, x_axis, 0.25, 2)
 
-	                WaitForTurn( bacrshin, x_axis )
-	                WaitForTurn( forlshin, x_axis )
-                        WaitForTurn( forrshin, x_axis )
-   	                WaitForTurn( baclshin, x_axis )
-	                Sleep(30)
-	               
-	                Turn( bacrthigh, x_axis, 0, 2 )
-	                Turn( forlthigh, x_axis, 0, 2 )
+			Turn (rfthigh, x_axis, -0.25, 2)
+			Turn (lbthigh, x_axis, -0.15, 2)
 
-   	                Turn( forlshin, x_axis, 0.5, 2 )
-        	        Turn( bacrshin, x_axis, -0.5, 2 )
+			WaitForTurn( lfthigh, x_axis )
+			WaitForTurn( rbthigh, x_axis )
 
-	                Turn( forrthigh, x_axis, -0.5, 2 )
-	                Turn( baclthigh, x_axis, 0.5, 2 )
-
-	                Turn( forrshin, x_axis, 0, 2 )
-	                Turn( baclshin, x_axis, 0, 2 )
-
-	                WaitForTurn( bacrthigh, x_axis )
-	                WaitForTurn( forlthigh, x_axis )
-                        WaitForTurn( forrthigh, x_axis )
-   	                WaitForTurn( baclthigh, x_axis )
-
-	                WaitForTurn( bacrshin, x_axis )
-	                WaitForTurn( forlshin, x_axis )
-                        WaitForTurn( forrshin, x_axis )
-   	                WaitForTurn( baclshin, x_axis )
-	                Sleep(30)
+			WaitForTurn( rfthigh, x_axis )
+			WaitForTurn( lbthigh, x_axis )
+			Sleep(1)
 	        end
 	end
 	
 	local function StopWalk()
 	        Signal( walk_go )
-		Turn( forrthigh, x_axis, 0, 2 )
-		Turn( baclthigh, x_axis, 0, 2 )
-	       
-	        Turn( forlthigh, x_axis, 0, 2 )
-	        Turn( bacrthigh, x_axis, 0, 2 )
+			Turn( lfthigh, x_axis, 0, 2)
+			Turn( rbthigh, x_axis, 0, 2)
 
-		Turn( forrshin, x_axis, 0, 2 )
-		Turn( baclshin, x_axis, 0, 2 )
-	       
-	        Turn( forlshin, x_axis, 0, 2 )
-	        Turn( bacrshin, x_axis, 0, 2 )
+			Turn (rfthigh, x_axis, 0, 2)
+			Turn (lbthigh, x_axis, 0, 2)
 	end
 	
 	function script.StartMoving()
@@ -151,16 +101,15 @@
 	function script.AimWeapon1( heading, pitch )
                 Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(body, y_axis, heading, math.rad(150))
+        	Turn(barrel, y_axis, heading, math.rad(150))
         	Turn(barrel, x_axis, -pitch, math.rad(100))
-        	WaitForTurn(body, y_axis)
+        	WaitForTurn(barrel, y_axis)
         	WaitForTurn(barrel, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
 	
 	function script.FireWeapon1()
-	       Sleep(30)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
