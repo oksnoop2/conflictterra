@@ -38,6 +38,8 @@
 				tpdollar			= 'tpdollar.png',
 				experiment_front                = 'experiment_front.tga',
 				experiment_side                 = 'experiment_side.tga',
+				ct_machinegun_front                = 'ct_machinegun_front.tga',
+				ct_machinegun_side                 = 'ct_machinegun_side.tga',
 			},
 		}
 	}
