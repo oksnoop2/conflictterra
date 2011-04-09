@@ -38,7 +38,7 @@
 = Useful Spring Wiki Links =
   * [http://springrts.com/wiki/Units:FBI Unit Def tags]
   * [http://springrts.com/wiki/Weapon_Variables Weapon tags]
-  * [http://springrts.com/wiki/Units:MoveTypes Move Def into]
+  * [http://springrts.com/wiki/Units:MoveTypes Move Def info]
   * [http://springrts.com/wiki/Animation-LuaCallins Lua Animation Callins]
   * [http://springrts.com/wiki/Animation-LuaCallouts Lua Animation Callouts]
 
