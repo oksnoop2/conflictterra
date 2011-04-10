@@ -1,5 +1,5 @@
 #labels Phase-Guide
-http://dl.dropbox.com/u/22845238/CT%20logo.png 
+
 
 
 =*Drone Engineer*=    
