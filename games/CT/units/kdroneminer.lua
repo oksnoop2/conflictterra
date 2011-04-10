@@ -57,7 +57,7 @@ local kdroneminer = {
 	    {
 	      def                = [[Cannon]],
 	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT HOVER]],
 	    },
 	
 	  },
@@ -71,14 +71,14 @@ local kdroneminer = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		default = 80,
-		Cruiser = 80,
-		Building = 80,
-		Mech = 80,
-		Tank = 80,
-		Aircraft = 80,
-		Ship = 80,
-		Sub = 80,
+		default = 30,
+		Cruiser = 30,
+		Building = 30,
+		Mech = 30,
+		Tank = 30,
+		Aircraft = 30,
+		Ship = 30,
+		Sub = 30,
 	      },
 	
 	    --model                   = [[bshell.s3o]],
