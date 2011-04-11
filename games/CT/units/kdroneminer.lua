@@ -1,6 +1,6 @@
 local kdroneminer = {
 	name                = [[Spread Shot Drone]],
-	description         = [[Dangeresque at close range, this unit fires a spread of shots.]],
+	description         = [[Dangerous at close range, this unit fires a spread of shots.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdroneminer.png]],
@@ -43,7 +43,7 @@ local kdroneminer = {
     seismicSignature    = 4,
     selfDestructAs      = [[SMALL_UNIT]],
     side                = [[Drone]],
-    sightDistance       = 300,
+    sightDistance       = 400,
 	sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",
@@ -71,12 +71,12 @@ local kdroneminer = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		default = 30,
-		Cruiser = 30,
+		default = 50,
+		Cruiser = 50,
 		Building = 30,
-		Mech = 30,
-		Tank = 30,
-		Aircraft = 30,
+		Mech = 50,
+		Tank = 50,
+		Aircraft = 50,
 		Ship = 30,
 		Sub = 30,
 	      },

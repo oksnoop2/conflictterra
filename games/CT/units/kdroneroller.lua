@@ -58,7 +58,7 @@
 	  },
 
 	  side                = [[Drone]],
-	  sightDistance       = 300,
+	  sightDistance       = 750,
 	  smoothAnim          = true,
 	  trackOffset         = 3,
 	  trackStrength       = 6,
@@ -93,11 +93,11 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		default = 150,
-		Cruiser = 150,
+		default = 200,
+		Cruiser = 200,
 		Building = 300,
-		Mech = 150,
-		Tank = 150,
+		Mech = 200,
+		Tank = 200,
 		Aircraft = 150,
 		Ship = 150,
 		Sub = 150,
