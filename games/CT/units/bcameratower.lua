@@ -27,7 +27,7 @@ unitDef = {
   collisionVolumeType           = [[box]],
 
   energyUse                     = 0,
-  explodeAs                     = [[SMALL_BUILDING]],
+  explodeAs                     = [[CAMERA_EXPLOSION]],
   footprintX                    = 1,
   footprintZ                    = 1,
   idleAutoHeal                  = 0,
@@ -43,7 +43,7 @@ unitDef = {
 
   onoffable                     = true,
   seismicSignature              = 4,
-  selfDestructAs                = [[SMALL_BUILDING]],
+  selfDestructAs                = [[CAMERA_EXPLOSION]],
   side                          = [[NKG]],
   sightDistance                 = 500,
   smoothAnim                    = true,

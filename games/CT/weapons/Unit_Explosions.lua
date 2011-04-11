@@ -2,6 +2,30 @@
 
 unitDeaths = {
 
+CAMERA_EXPLOSION = {
+   name = "Camera Tower Explosion",
+   rendertype=4,
+   ballistic=1,
+   turret=1,
+   impulseFactor      = 0,
+   range=480,
+   reloadtime=3.6,
+   weaponvelocity=250,
+   areaofeffect=8,
+--   soundstart="golgotha/generic.wav",
+--   soundhit="golgotha/generic.wav",
+--   explosiongenerator="custom:FACTORY_EXPLOSION_SMALL",
+	      damage                  = {
+		Cruiser = 10,
+		Building = 10,
+		Mech = 10,
+		Tank = 10,
+		Aircraft = 10,
+		Ship = 10,
+		Sub = 10,
+	      },
+  },
+
 SMALL_BUILDING = {
    name = "Small building",
    rendertype=4,
