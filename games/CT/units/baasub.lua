@@ -114,6 +114,7 @@
 	      flightTime              = 4,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
+	      impulseFactor           = 0,
 	      model                   = [[baamissile.s3o]],
 	      range                   = 840,
 	      reloadtime              = 1.5,

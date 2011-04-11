@@ -88,6 +88,7 @@
 	
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      lineOfSight             = true,
 	      range                   = 1000,
 	      reloadtime              = 6,

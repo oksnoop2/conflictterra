@@ -130,6 +130,7 @@ local bminer = {
         
               explosionGenerator      = [[custom:resmining]],
               interceptedByShieldType = 1,
+	      impulseFactor           = 0,
               lineOfSight             = true,
               range                   = 90,
               reloadtime              = 0.2,

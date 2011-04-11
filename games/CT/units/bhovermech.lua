@@ -119,6 +119,7 @@
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      lineOfSight             = true,
 	      range                   = 600,
 	      reloadtime              = 1,
@@ -156,6 +157,7 @@
 	
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      lineOfSight             = true,
 	      model                   = [[btorpedo.s3o]],
 	      propeller               = [[1]],

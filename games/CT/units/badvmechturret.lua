@@ -80,6 +80,7 @@
 	
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      lineOfSight             = true,
 	      model                   = [[blargemissile.s3o]],
 	      noSelfDamage            = true,

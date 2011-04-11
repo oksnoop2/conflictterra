@@ -81,6 +81,7 @@
 	      explosionGenerator      = [[custom:STUNNER_Expl]],
 	      heightMod               = 1,
 	      intensity               = 10,
+	      impulseFactor           = 0,
 	      interceptedByShieldType = 2,
 	      lineOfSight             = true,
 	      minIntensity            = 1,

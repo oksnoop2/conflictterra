@@ -108,6 +108,7 @@
 	      model                   = [[bshell.s3o]],
 	      explosionGenerator      = [[custom:LRPC_Expl]],
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      myGravity               = 0.1,
 	      range                   = 750,
 	      reloadtime              = 4.5,
@@ -139,6 +140,7 @@
 	
 	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      lineOfSight             = true,
 	      range                   = 200,
 	      reloadtime              = 0.2,

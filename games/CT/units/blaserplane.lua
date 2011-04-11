@@ -89,6 +89,7 @@
               },
         
               interceptedByShieldType = 1,
+	      impulseFactor           = 0,
               lineOfSight             = true,
               range                   = 500,
               reloadtime              = 0.2,

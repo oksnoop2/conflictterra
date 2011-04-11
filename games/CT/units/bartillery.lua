@@ -98,6 +98,7 @@
 	      model                   = [[bshell.s3o]],
 	      explosionGenerator      = [[custom:LRPC_Expl]],
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      myGravity               = 0.1,
 	      range                   = 1250,
 	      reloadtime              = 7.5,

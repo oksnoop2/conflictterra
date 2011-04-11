@@ -108,6 +108,7 @@
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 4,
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      lineOfSight             = true,
 	      model                   = [[baamissile.s3o]],
 	      range                   = 840,

@@ -117,6 +117,7 @@
 	      energypershot           = 0,
 	      explosionGenerator      = [[custom:megapartgun]],
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      largeBeamLaser          = true,
 	      laserFlareSize          = 2,
 	      lineOfSight             = true,

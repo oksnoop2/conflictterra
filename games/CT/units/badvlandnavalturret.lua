@@ -97,6 +97,7 @@
 	      model                   = [[bshell.s3o]],
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      range                   = 1200,
 	      reloadtime              = 1.5,
 	      soundHit                = [[argh/Argh_MedExplosion]],

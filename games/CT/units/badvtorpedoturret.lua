@@ -83,9 +83,9 @@
 	
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      lineOfSight             = true,
 	      model                   = [[btorpedo.s3o]],
-	      propeller               = [[1]],
 	      range                   = 500,
 	      reloadtime              = 1.5,
 	      soundHit                = [[argh/Argh_LargeExplosion]],

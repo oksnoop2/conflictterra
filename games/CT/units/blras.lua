@@ -101,8 +101,8 @@
 	
 	      model                   = [[bshell.s3o]],
 	      explosionGenerator      = [[custom:LRPC_Expl]],
-	      holdtime                = [[1]],
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      range                   = 2400,
 	      reloadtime              = 7,
 	      soundHit                = [[argh/Argh_MedExplosion]],

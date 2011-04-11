@@ -93,6 +93,7 @@
 	      edgeEffectiveness       = 0.7,
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      manualBombSettings      = true,
 	      model                   = [[bbombs.s3o]],
 	      myGravity               = 0.7,
