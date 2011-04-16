@@ -39,7 +39,7 @@ local ktriairdrone = {
 	minCloakDistance    = 75,
 	movementClass       = [[kdrone]],
 	moverate1           = [[3]],
-    noChaseCategory     = [[MINERALS GUNSHIP FIXEDWING]],
+    noChaseCategory     = [[MINERALS GUNSHIP FIXEDWING SUB]],
 	objectName          = "ktriairdrone.s3o",
     onoffable           = false,
     seismicSignature    = 4,
@@ -67,7 +67,7 @@ local ktriairdrone = {
 	
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[SWIM LAND SHIP HOVER]],
+	      badTargetCategory  = [[SINK FLOAT]],
 	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
 	    },
 	

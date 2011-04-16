@@ -36,7 +36,7 @@
           maxWaterDepth       = 0,
 	  minCloakDistance    = 150,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[LAND SINK HOVER SHIP FLOAT FIXEDWING GUNSHIP SUB]],
 	  objectName          = [[kdroneminingtower.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_BUILDING]],
