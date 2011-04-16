@@ -288,8 +288,8 @@
 	        },			
  		
 		kdrone = {
-	                footprintx = 2,
-	                footprintz = 2,
+	                footprintx = 3,
+	                footprintz = 3,
 	                maxwaterdepth = 99999999,
 	                maxslope = 99999999,
 					slopemod = 4,

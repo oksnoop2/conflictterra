@@ -87,6 +87,7 @@ local kairdrone = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		default = 0,
 		Cruiser = 0,
 		Building = 0,
 		Mech = 0,
@@ -129,43 +130,33 @@ local kairdrone = {
 	featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Drone Engineer]],
+	      description      = [[Wreckage - Air Drone]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 262,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
-	      featurereclamate = [[SMUDGE01]],
-	      footprintX       = 3,
-	      footprintZ       = 3,
-	      height           = [[20]],
-	      hitdensity       = [[100]],
+	      footprintX       = 2,
+	      footprintZ       = 2,
 	      metal            = 50,
 	      object           = [[wrecks/kairdronewreck.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 70,
-	      seqnamereclamate = [[TREE1RECLAMATE]],
-	      world            = [[All Worlds]],
 	    },
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Drone Engineer]],
+	      description      = [[Debris - Air Drone]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 175,
 	      energy           = 0,
-	      featurereclamate = [[SMUDGE01]],
 	      footprintX       = 2,
 	      footprintZ       = 2,
-	      height           = [[4]],
-	      hitdensity       = [[100]],
 	      metal            = 25,
 	      object           = [[b2x2heap.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 70,
-	      seqnamereclamate = [[TREE1RECLAMATE]],
-	      world            = [[All Worlds]],
 	    },
 
   	  },

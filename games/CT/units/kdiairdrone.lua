@@ -86,13 +86,14 @@ local kdiairdrone = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		default = 20,
 		Cruiser = 100,
 		Building = 20,
 		Mech = 20,
 		Tank = 20,
 		Aircraft = 100,
 		Ship = 20,
-		Sub = 10,
+		Sub = 20,
 	      },
 	
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
@@ -133,43 +134,33 @@ local kdiairdrone = {
 	featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Drone Engineer]],
+	      description      = [[Wreckage - Drone Fighter]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 262,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
-	      featurereclamate = [[SMUDGE01]],
-	      footprintX       = 3,
-	      footprintZ       = 3,
-	      height           = [[20]],
-	      hitdensity       = [[100]],
+	      footprintX       = 2,
+	      footprintZ       = 2,
 	      metal            = 50,
 	      object           = [[wrecks/kdiairdronewreck.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 70,
-	      seqnamereclamate = [[TREE1RECLAMATE]],
-	      world            = [[All Worlds]],
 	    },
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Drone Engineer]],
+	      description      = [[Debris - Drone Fighter]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 175,
 	      energy           = 0,
-	      featurereclamate = [[SMUDGE01]],
 	      footprintX       = 2,
 	      footprintZ       = 2,
-	      height           = [[4]],
-	      hitdensity       = [[100]],
 	      metal            = 25,
 	      object           = [[b2x2heap.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 70,
-	      seqnamereclamate = [[TREE1RECLAMATE]],
-	      world            = [[All Worlds]],
 	    },
 
   	  },

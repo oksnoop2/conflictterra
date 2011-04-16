@@ -29,8 +29,8 @@ unitDef = {
   energyMake                    = 20,
   energyUse                     = 0,
   explodeAs                     = [[LARGE_BUILDING]],
-  footprintX                    = 6,
-  footprintZ                    = 6,
+  footprintX                    = 8,
+  footprintZ                    = 8,
   idleAutoHeal                  = 0,
   mass                          = 275,
   maxDamage                     = 2500,
@@ -60,7 +60,7 @@ unitDef = {
   smoothAnim                    = true,
   turnRate                      = 0,
   workerTime                    = 1,
-  yardMap                       = [[occccc cccccc cccccc cccccc cccccc ccccco]],
+  yardMap                       = [[occcccco cccccccc cccccccc cccccccc cccccccc cccccccc cccccccc occcccco]],
   script                        = [[kdronestructure.lua]],
 
 
@@ -68,45 +68,33 @@ unitDef = {
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Drone Structure]],
+      description      = [[Wreckage - Ground Drone Structure]],
       blocking         = true,
       category         = [[corpses]],
       damage           = 6375,
       energy           = 0,
       featureDead      = [[DEAD2]],
-      featurereclamate = [[SMUDGE01]],
-      footprintX       = 7,
-      footprintZ       = 6,
-      height           = [[40]],
-      hitdensity       = [[100]],
+      footprintX       = 8,
+      footprintZ       = 8,
       metal            = 200,
       object           = [[wrecks/kdronestructurewreck.s3o]],
       reclaimable      = true,
       reclaimTime      = 6375,
-
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
     },
 
 
     DEAD2 = {
-      description      = [[Debris - Drone Structure]],
+      description      = [[Debris - Ground Drone Structure]],
       blocking         = false,
       category         = [[heaps]],
       damage           = 4250,
       energy           = 0,
-      featurereclamate = [[SMUDGE01]],
-      footprintX       = 6,
-      footprintZ       = 6,
-      height           = [[4]],
-      hitdensity       = [[100]],
+      footprintX       = 8,
+      footprintZ       = 8,
       metal            = 100,
-      object           = [[b6x6heap.s3o]],
+      object           = [[b8x8heap.s3o]],
       reclaimable      = true,
       reclaimTime      = 275,
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
-
     },
 
 
