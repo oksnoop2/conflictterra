@@ -123,7 +123,8 @@ local armorDefs = {
     "blaserplane",
     "kairdrone",
     "kdiairdrone",
-    "ktriairdrone",		
+    "ktriairdrone",
+    "pnfighter",		
   },
 
   Ship = {

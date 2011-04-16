@@ -186,6 +186,12 @@ effectUnitDefs = {
              --   {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {.5,0,.5}, 		width =  4, length=15, piece="fxflare5", onActive=true}},		
 	--	},
 
+		        pnfighter = {
+                {class='AirJet',        options={color={0.75,0.75,0,0},    width =  4, length=35, piece="fxflare1", onActive=true}},
+                {class='AirJet',        options={color={0.75,0.75,0,0},    width =  4, length=35, piece="fxflare2", onActive=true}},
+				{class='AirJet',        options={color={0.75,0.75,0,0},    width =  4, length=35, piece="fxflare3", onActive=true}},
+        },
+
 
         esolar2 = {
 --    {class='StaticParticles', options=corfusNova},
