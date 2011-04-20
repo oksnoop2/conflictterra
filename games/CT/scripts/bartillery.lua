@@ -36,11 +36,10 @@
 	end
 	
 	function script.FireWeapon1()
-	EmitSfx(flare, orc_machinegun_flash)
-	EmitSfx(flare, orc_machinegun_muzzle)	       
-	Sleep(30)
+		EmitSfx(flare, orc_machinegun_flash)
+		EmitSfx(flare, orc_machinegun_muzzle)	       
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
-		Sleep(30)
+		return 0
 	end
