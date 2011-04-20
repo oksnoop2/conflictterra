@@ -62,46 +62,34 @@ unitDef = {
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Power Plant]],
+      description      = [[Wreckage - Stirling Power Generator]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 1125,
+      damage           = 750,
       energy           = 0,
       featureDead      = [[DEAD2]],
-      featurereclamate = [[SMUDGE01]],
       footprintX       = 2,
-      footprintZ       = 2,
-      height           = [[40]],
-      hitdensity       = [[100]],
-      metal            = 28,
-      object           = [[bgenericwreckage.s3o]],
+      footprintZ       = 4,
+      metal            = 50,
+      object           = [[wrecks/bpowerplantwreck.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,
-
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
+      reclaimTime      = 1500,
     },
 
 
     DEAD2 = {
-      description      = [[Debris - Power Plant]],
+      description      = [[Debris - Stirling Power Generator]],
       blocking         = false,
 
       category         = [[heaps]],
-      damage           = 750,
+      damage           = 375,
       energy           = 0,
-      featurereclamate = [[SMUDGE01]],
       footprintX       = 2,
       footprintZ       = 4,
-      height           = [[4]],
-      hitdensity       = [[100]],
-      metal            = 14,
+      metal            = 25,
       object           = [[b2x4heap.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
-
+      reclaimTime      = 750,
     },
 
 

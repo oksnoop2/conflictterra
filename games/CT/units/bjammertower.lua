@@ -64,46 +64,34 @@ unitDef = {
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Jammer Tower]],
+      description      = [[Wreckage - Radar Jamming Outpost]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 412,
+      damage           = 275,
       energy           = 0,
       featureDead      = [[DEAD2]],
-      featurereclamate = [[SMUDGE01]],
       footprintX       = 2,
       footprintZ       = 2,
-      height           = [[40]],
-      hitdensity       = [[100]],
-      metal            = 100,
-      object           = [[bgenericwreckage.s3o]],
+      metal            = 150,
+      object           = [[wrecks/bjammertowerwreck.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,
-
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
+      reclaimTime      = 4500,
     },
 
 
     DEAD2 = {
-      description      = [[Debris - Jammer Tower]],
+      description      = [[Debris - Radar Jamming Outpost]],
       blocking         = false,
 
       category         = [[heaps]],
-      damage           = 275,
+      damage           = 137,
       energy           = 0,
-      featurereclamate = [[SMUDGE01]],
       footprintX       = 2,
       footprintZ       = 2,
-      height           = [[4]],
-      hitdensity       = [[100]],
-      metal            = 50,
+      metal            = 75,
       object           = [[b2x2heap.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
-
+      reclaimTime      = 2250,
     },
 
 

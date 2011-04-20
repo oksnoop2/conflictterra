@@ -23,7 +23,6 @@
 
 	function script.Create()
 		StartThread(underground)
-		Sleep(30)
 	end
 	
 	local function RestoreAfterDelay(unitID)
@@ -67,5 +66,5 @@
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
-		Sleep(30)
+		return 0
 	end

@@ -57,46 +57,34 @@ unitDef = {
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Advanced Power Plant]],
+      description      = [[Wreckage - High-Tech Power Plant]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 2062,
+      damage           = 1375,
       energy           = 0,
       featureDead      = [[DEAD2]],
-      featurereclamate = [[SMUDGE01]],
-      footprintX       = 2,
-      footprintZ       = 2,
-      height           = [[40]],
-      hitdensity       = [[100]],
-      metal            = 160,
-      object           = [[bgenericwreckage.s3o]],
+      footprintX       = 4,
+      footprintZ       = 4,
+      metal            = 250,
+      object           = [[wrecks/badvpowerplantwreck.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,
-
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
+      reclaimTime      = 7500,
     },
 
 
     DEAD2 = {
-      description      = [[Debris - Advanced Power Plant]],
+      description      = [[Debris - High-Tech Power Plant]],
       blocking         = false,
 
       category         = [[heaps]],
-      damage           = 1375,
+      damage           = 687,
       energy           = 0,
-      featurereclamate = [[SMUDGE01]],
       footprintX       = 4,
       footprintZ       = 4,
-      height           = [[4]],
-      hitdensity       = [[100]],
-      metal            = 80,
+      metal            = 125,
       object           = [[b4x4heap.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,
-      seqnamereclamate = [[TREE1RECLAMATE]],
-      world            = [[All Worlds]],
-
+      reclaimTime      = 3750,
     },
 
 
