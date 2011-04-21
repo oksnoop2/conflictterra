@@ -94,6 +94,12 @@
 		Aircraft = 150,
 		Ship = 250,
 		Sub = 150,
+
+		Meteor = 0,
+		Drone = 150,
+		Spare1 = 150,
+		Spare2 = 150,
+		Spare3 = 150,
 	      },
 	
 	      dropped                 = true,
@@ -127,6 +133,12 @@
 		Aircraft = 30,
 		Ship = 10,
 		Sub = 10,
+
+		Meteor = 0,
+		Drone = 10,
+		Spare1 = 10,
+		Spare2 = 10,
+		Spare3 = 10,
 	      },
 	
 	      canAttackGround         = false,

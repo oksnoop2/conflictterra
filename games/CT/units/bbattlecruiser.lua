@@ -118,6 +118,12 @@
 		Aircraft = 200,
 		Ship = 120,
 		Sub = 120,
+
+		Meteor = 0,
+		Drone = 120,
+		Spare1 = 120,
+		Spare2 = 120,
+		Spare3 = 120,
 	      },
 	
 	      duration                = 0.02,

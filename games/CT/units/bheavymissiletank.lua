@@ -107,6 +107,12 @@
 		Aircraft = 100,
 		Ship = 100,
 		Sub = 100,
+
+		Meteor = 0,
+		Drone = 100,
+		Spare1 = 100,
+		Spare2 = 100,
+		Spare3 = 100,
 	      },
 	
 	      model                   = [[blargemissile.s3o]],
@@ -145,6 +151,12 @@
 		Aircraft = 35,
 		Ship = 35,
 		Sub = 35,
+
+		Meteor = 0,
+		Drone = 35,
+		Spare1 = 35,
+		Spare2 = 35,
+		Spare3 = 35,
 	      },
 	
 	      model                   = [[bantimechmissile.s3o]],

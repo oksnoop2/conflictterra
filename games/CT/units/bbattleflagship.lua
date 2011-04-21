@@ -124,6 +124,12 @@
 		Aircraft = 99999,
 		Ship = 99999,
 		Sub = 99999,
+
+		Meteor = 0,
+		Drone = 99999,
+		Spare1 = 99999,
+		Spare2 = 99999,
+		Spare3 = 99999,
 	      },
 	
 	      energypershot           = 300,
@@ -159,6 +165,12 @@
 		Aircraft = 160,
 		Ship = 160,
 		Sub = 160,
+
+		Meteor = 0,
+		Drone = 160,
+		Spare1 = 160,
+		Spare2 = 160,
+		Spare3 = 160,
 	      },
 	
 	      duration                = 0.02,

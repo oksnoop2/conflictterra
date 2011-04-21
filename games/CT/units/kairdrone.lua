@@ -95,6 +95,12 @@ local kairdrone = {
 		Aircraft = 0,
 		Ship = 0,
 		Sub = 0,
+
+		Meteor = 0,
+		Drone = 0,
+		Spare1 = 0,
+		Spare2 = 0,
+		Spare3 = 0,
 	      },
 	
 	      flightTime              = 3,

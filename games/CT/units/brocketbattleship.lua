@@ -120,6 +120,12 @@
 		Aircraft = 150,
 		Ship = 150,
 		Sub = 150,
+
+		Meteor = 0,
+		Drone = 150,
+		Spare1 = 150,
+		Spare2 = 150,
+		Spare3 = 150,
 	      },
 	
 	      model                   = [[bsmallmissile.s3o]],

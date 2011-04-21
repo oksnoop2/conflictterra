@@ -113,6 +113,12 @@
 		Aircraft = 35,
 		Ship = 35,
 		Sub = 35,
+
+		Meteor = 0,
+		Drone = 35,
+		Spare1 = 35,
+		Spare2 = 35,
+		Spare3 = 35,
 	      },
 	
 	      model                   = [[bsmallmissile.s3o]],
@@ -153,6 +159,12 @@
 		Aircraft = 400,
 		Ship = 400,
 		Sub = 400,
+
+		Meteor = 0,
+		Drone = 400,
+		Spare1 = 400,
+		Spare2 = 400,
+		Spare3 = 400,
 	      },
 	
 	      explosionGenerator      = [[custom:PLASMA_Expl]],

@@ -90,6 +90,12 @@ local kdronewarrior = {
 		Aircraft = 300,
 		Ship = 300,
 		Sub = 300,
+
+		Meteor = 0,
+		Drone = 300,
+		Spare1 = 300,
+		Spare2 = 300,
+		Spare3 = 300,
 	      },
 
 	      beamTime                = .5,

@@ -103,6 +103,12 @@
 		Aircraft = 100,
 		Ship = 100,
 		Sub = 100,
+
+		Meteor = 0,
+		Drone = 100,
+		Spare1 = 100,
+		Spare2 = 100,
+		Spare3 = 100,
 	      },
 	
 	      model                   = [[bshell.s3o]],
@@ -136,6 +142,12 @@
 		Aircraft = 15,
 		Ship = 15,
 		Sub = 15,
+
+		Meteor = 0,
+		Drone = 15,
+		Spare1 = 15,
+		Spare2 = 15,
+		Spare3 = 15,
 	      },
 	
 	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],

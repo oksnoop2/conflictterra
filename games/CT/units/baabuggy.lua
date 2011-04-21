@@ -97,6 +97,12 @@
 		Aircraft = 150,
 		Ship = 20,
 		Sub = 20,
+
+		Meteor = 0,
+		Drone = 20,
+		Spare1 = 20,
+		Spare2 = 20,
+		Spare3 = 20,
 	      },
 	
 	      explosionGenerator      = [[custom:PLASMA_Expl]],

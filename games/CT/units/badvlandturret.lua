@@ -78,6 +78,12 @@
 		Aircraft = 2000,
 		Ship = 2000,
 		Sub = 2000,
+
+		Meteor = 0,
+		Drone = 2000,
+		Spare1 = 2000,
+		Spare2 = 2000,
+		Spare3 = 2000,
 	      },
 	
 	      energypershot           = 0,

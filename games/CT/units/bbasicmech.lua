@@ -84,6 +84,12 @@
 		Aircraft = 15,
 		Ship = 15,
 		Sub = 15,
+
+		Meteor = 0,
+		Drone = 15,
+		Spare1 = 15,
+		Spare2 = 15,
+		Spare3 = 15,
 	      },
 	
 	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],

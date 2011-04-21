@@ -120,6 +120,12 @@ unitDef = {
 		Aircraft = 200,
 		Ship = 200,
 		Sub = 200,
+
+		Meteor = 0,
+		Drone = 200,
+		Spare1 = 200,
+		Spare2 = 200,
+		Spare3 = 200,
 	      },
 	
 	      model                   = [[bshell.s3o]],
@@ -153,6 +159,12 @@ unitDef = {
 		Aircraft = 100,
 		Ship = 5,
 		Sub = 5,
+
+		Meteor = 0,
+		Drone = 5,
+		Spare1 = 5,
+		Spare2 = 5,
+		Spare3 = 5,
 	      },
 	
 	      edgeEffectiveness       = 0.85,

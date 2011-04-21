@@ -123,6 +123,12 @@
 		Aircraft = 75,
 		Ship = 25,
 		Sub = 25,
+
+		Meteor = 0,
+		Drone = 25,
+		Spare1 = 25,
+		Spare2 = 25,
+		Spare3 = 25,
 	      },
 	
 	      edgeEffectiveness       = 0.85,

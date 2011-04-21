@@ -79,6 +79,12 @@ local kdroneminer = {
 		Aircraft = 50,
 		Ship = 30,
 		Sub = 30,
+
+		Meteor = 0,
+		Drone = 30,
+		Spare1 = 20,
+		Spare2 = 30,
+		Spare3 = 30,
 	      },
 	
 	    --model                   = [[bshell.s3o]],

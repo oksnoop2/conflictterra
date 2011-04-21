@@ -161,6 +161,12 @@
 		Aircraft = 100,
 		Ship = 100,
 		Sub = 100,
+
+		Meteor = 0,
+		Drone = 100,
+		Spare1 = 100,
+		Spare2 = 100,
+		Spare3 = 100,
 	      },
 	
 	      model                   = [[bsmallmissile.s3o]],

@@ -84,6 +84,12 @@
 		Aircraft = 20,
 		Ship = 5,
 		Sub = 5,
+
+		Meteor = 0,
+		Drone = 5,
+		Spare1 = 5,
+		Spare2 = 5,
+		Spare3 = 5,
 	      },
 	
 	      edgeEffectiveness       = 1,

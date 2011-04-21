@@ -88,6 +88,12 @@
                 Aircraft = 1,
                 Ship = 1,
                 Sub = 1,
+
+		Meteor = 1,
+		Drone = 1,
+		Spare1 = 1,
+		Spare2 = 1,
+		Spare3 = 1,
               },
         
               explosionGenerator      = [[custom:resmining]],

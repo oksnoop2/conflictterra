@@ -104,6 +104,12 @@
 		Aircraft = 20,
 		Ship = 20,
 		Sub = 20,
+
+		Meteor = 0,
+		Drone = 20,
+		Spare1 = 20,
+		Spare2 = 20,
+		Spare3 = 20,
 	      },
 	
 	      model                   = [[bantimechmissile.s3o]],

@@ -86,6 +86,12 @@
                 Aircraft = 10,
                 Ship = 10,
                 Sub = 10,
+
+		Meteor = 0,
+		Drone = 10,
+		Spare1 = 10,
+		Spare2 = 10,
+		Spare3 = 10,
               },
         
               interceptedByShieldType = 1,

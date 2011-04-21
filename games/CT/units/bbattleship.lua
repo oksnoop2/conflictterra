@@ -102,6 +102,12 @@
 		Aircraft = 250,
 		Ship = 250,
 		Sub = 250,
+
+		Meteor = 0,
+		Drone = 250,
+		Spare1 = 250,
+		Spare2 = 250,
+		Spare3 = 250,
 	      },
 	
 	      model                   = [[bshell.s3o]],

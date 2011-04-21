@@ -79,6 +79,12 @@
 		Aircraft = 500,
 		Ship = 500,
 		Sub = 500,
+
+		Meteor = 0,
+		Drone = 500,
+		Spare1 = 500,
+		Spare2 = 500,
+		Spare3 = 500,
 	      },
 	
 	      explosionGenerator      = [[custom:PLASMA_Expl]],

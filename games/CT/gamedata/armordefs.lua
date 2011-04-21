@@ -150,6 +150,24 @@ local armorDefs = {
     "badvaasub",
   },
 
+  Meteor = {
+    "bmeteorimpact",
+    "bmeteorimpact_big",
+    "bminerals",
+  },
+
+  Drone = {
+  },
+
+  Spare1 = {
+  },
+
+  Spare2 = {
+  },
+
+  Spare3 = {
+  },
+
 }
 
 for categoryName, categoryTable in pairs(armorDefs) do
