@@ -167,6 +167,7 @@
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
 	      lineOfSight             = false,
 	      range                   = 600,
 	      reloadtime              = 3,
