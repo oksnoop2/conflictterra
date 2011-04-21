@@ -22,7 +22,7 @@ local kdiairdrone = {
 	corpse              = [[DEAD]],
     cruiseAlt           = 50,
 	reclaimable         = false,
-
+    collide             = false,
     energyMake          = 1,
 	explodeAs           = [[SMALL_UNIT]],
     footprintx          = 2,
