@@ -2,6 +2,7 @@
 	
 	--pieces
 	local link = piece "link"
+	local flare = piece "flare"
 	local lbody = piece "lbody"
 	local rbody = piece "rbody"
 	local tbody = piece "tbody"
@@ -15,21 +16,21 @@
 	
 	local function RestoreAfterDelay(unitID)
 		Sleep(2500)
-		Turn(link, y_axis, 0, math.rad(150))
-		Turn(link, x_axis, 0, math.rad(150))
+		Turn(link, y_axis, 0, math.rad(1500))
+		Turn(link, x_axis, 0, math.rad(1500))
 	end
 
-	function script.QueryWeapon1() return link end
+	function script.QueryWeapon1() return flare end
 	
-	function script.AimFromWeapon1() return link end
+	function script.AimFromWeapon1() return flare end
 	
 	function script.AimWeapon1( heading, pitch )
                 Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(link, y_axis, heading, math.rad(150))
-        	Turn(link, x_axis, -pitch, math.rad(150))
-        	WaitForTurn(link, y_axis)
-        	WaitForTurn(link, x_axis)
+        	Turn(flare, y_axis, heading, math.rad(1500))
+        	Turn(flare, x_axis, -pitch, math.rad(1500))
+        	WaitForTurn(flare, y_axis)
+        	WaitForTurn(flare, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
