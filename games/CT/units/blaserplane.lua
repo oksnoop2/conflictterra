@@ -79,7 +79,7 @@
         
               damage                  = {
 		default = 10,
-                Cruiser = 50,
+                Cruiser = 35,
                 Building = 10,
                 Mech = 10,
                 Tank = 10,
