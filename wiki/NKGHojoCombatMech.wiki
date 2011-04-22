@@ -53,6 +53,11 @@ Another "real world" idea worked into Hojo are the odd spike-like protrusions co
 
 When I had finished the first version of Hojo's model, I chose to play around with poses and I discovered a tremendous flaw!  I had put in a solid core running down the entirety of his trunk.  This prevented him for pivoting his waist!  I fixed this problem with no issues, but if I hadn't of discovered it then, I would have gotten a unit into the game only to discover it could not properly function.
 
+When the Hojo was originally given the Jump Jet ability, a rather ugly placeholder effect was put in the unit to ignite when it jumped.  The "buildersparks" CEG, the same one used by [http://code.google.com/p/conflictterra/wiki/NKGEngineerSupportMech Engineer Support Mech] when it builds, was this effect.  Eventually, we learned how to make our own CEGs, and one of the first new custom ones was an appropriate Jump Jet exhaust, one I have wanted for a long time.  This new one drew heavily from anime, using a starburst-like base that ends in a fading streak of light.  Utilizing the same blue "flame" that all NKG units share, the Hojo was finally complete!
+
+||[http://img508.imageshack.us/img508/8666/newjumpjetside.png]||
+||A Hojo Combat Mech and Honda Combat Mech jumping with their new custom CEGs.||
+
 The Hojo Combat Mech stands as the sort of "icon" or "poster boy" of Conflict Terra.  His memorable name and design probably outweigh his actual usefulness, but many a Hojo has finished a player, and many more have died trying.
 
 ||[http://img809.imageshack.us/img809/3554/hojoalpha.png]||
