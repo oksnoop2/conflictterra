@@ -7,7 +7,6 @@
   * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks#Details Details]
   * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks#Coordinate_Helper_Widget Coordinate Helper Widget]
   * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks#Map_Options_&_Advanced_Stuff Map Options & Advanced Stuff]
-  * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks#Plans Plans]
   * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks#Guide_With_Pictures Guide With Pictures]
 
 = Introduction =
