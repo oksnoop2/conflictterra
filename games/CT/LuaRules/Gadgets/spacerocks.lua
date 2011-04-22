@@ -16,7 +16,11 @@ end
 if not gadgetHandler:IsSyncedCode() then
   return false -- no unsynced code
 end
-
+--constants DONT EDIT---
+local LAND = 1
+local WATER = 2
+local LAND_WATER = 3
+------------------------
 
 ----- Settings -----------------------------------------------------------------
 local meteorDefName  = {} --{"bmeteor_big", "bmeteor"} --meteor unit name in flight -> add impactunitname="unitname" tag to a unitdef to make i spawn as a meteor
@@ -29,8 +33,9 @@ local meteorSpawnHeight = 5000
 local min_distance_to_units = 100	--how far away from player units a meteor must impact to leave a rock (as not to block units or factories)
 local burnEffect1 = "firetrail2" -- CEG used for the meteor trail, needs to be visible out of los
 local slidespeed = 30
-local slidetime = 60	--how long (in frames) a meteor can slide before exploding anyway
-local debug = true
+local slidetime = 60	 --how long (in frames) a meteor can slide before exploding anyway
+local disappearOnUnits = false --should rocks that fall on units stay or disappear? staying rocks might cause the unit to become stuck.
+local debugtest = true
 local mapconfig_fn = Game.mapName .. "_res.lua"		--name of map config files
 ----------------------------------------------------------------------------------
 local meteors = {} -- meteor set 1==in flight, > 1 sliding on ground (time it is already sliding in frames)
@@ -46,7 +51,7 @@ else
 		Spring.Echo ("spacerocks: found " .. mapconfig_fn .. " in mod mapconfigs folder")
 		gamesettings = VFS.Include("mapconfigs\\" .. mapconfig_fn)
 	else
-		Spring.Echo ("spacerocks " .. mapconfig_fn .. " not found at all")
+		Spring.Echo ("spacerocks.lua: " .. mapconfig_fn .. " not found at all")
 	end
 end
 if (gamesettings) then
@@ -67,13 +72,13 @@ end
 
 
 function make_meteorDefName_table ()
-if (debug) then Spring.Echo ("spacerocks.lua: looking for spacerocks unitdefs") end
+if (debugtest) then Spring.Echo ("spacerocks.lua: looking for spacerocks unitdefs") end
 	for id,unitDef in pairs(UnitDefs) do
 		local cp = UnitDefs[id].customParams
 		if (cp) then
 			if (cp.impactunitname) then
 				local resname = unitDef.name
-				if (debug) then Spring.Echo ("spacerocks.lua: found unitdef with impactunitname tag:" .. resname) end
+				if (debugtest) then Spring.Echo ("spacerocks.lua: found unitdef with impactunitname tag:" .. resname) end
 				table.insert (meteorDefName, resname)
 			end
 		end
@@ -103,7 +108,7 @@ local function Impact (meteorID)
 		if (math.abs (x-mx) > 3 or math.abs (z-mz) > 3) then return end --danger: depending on terrain and too high slidespeed, unit might jump between two positions and never come to rest
 	end
 	--	if (cp) then Spring.Echo ("has custom para") else Spring.Echo ("has NO custom para") end
-	if (h > 0 and nearunits==nil and cp) then	--only leave a rock if the meteor landed on land and not too near units. otherwise just explode (so it does not block factories etc)	
+	if (h > 0 and (nearunits==nil or disappearOnUnits==false) and cp) then	--only leave a rock if the meteor landed on land and not too near units. otherwise just explode (so it does not block factories etc)	
 --		Spring.Echo ("yo")
 --		Spring.Echo (cp)
 		--for i,v in ipairs(cp) do Spring.Echo(i .. "="..v) end
@@ -146,13 +151,11 @@ local function MeteorStorm (stormX,stormY, a, n)
 	end
 end
 
-function gadget:GameFrame(frame)
+function gadget:GameFrame(frame)	
 	local gameframe = frame
 	--spawn new meteorstorms by intervall--
 	if frame > (30 * meteorFirstTime) and frame % (30 * meteorInterval) == 0 then 
-		-- pick a random location for the meteor storm
-		local meteorSpawnX = math.random(Game.mapSizeX)
-		local meteorSpawnZ = math.random(Game.mapSizeZ)
+		local meteorSpawnX, meteorSpawnZ = randomMapSpot (LAND,30)
 		-- Spring.Echo ("Incoming Meteor Storm! Coordinates: [" .. meteorSpawnX .. " : " .. meteorSpawnZ .."]")
 		MeteorStorm (meteorSpawnX, meteorSpawnZ, meteorSpread, meteorNumber)
 	end
@@ -201,6 +204,23 @@ function gadget:UnitDestroyed(unitID, unitDefID, teamID, attackerID)
 		end		
 end
 
+function randomMapSpot (groundtype, max_retry)
+	local spotOkay = false
+	local retry = 0
+	while (not spotOkay) do
+		local x = math.random(Game.mapSizeX)
+		local z = math.random(Game.mapSizeZ)
+		local h = Spring.GetGroundHeight (x,z)
+		if (groundtype == LAND and h < 0 and retry < max_retry) then 
+			spotOkay = false
+			retry = retry+1
+		else
+			return x,z
+		end
+	end
+end
+
 function gadget:Initialize()
+	if (debugtest) then Spring.Echo ("space rocks Initialize") end
 	make_meteorDefName_table ()
 end
