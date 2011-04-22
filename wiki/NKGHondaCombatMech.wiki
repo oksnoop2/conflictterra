@@ -57,6 +57,11 @@ The final mission in [http://en.wikipedia.org/wiki/Armored_Core:_Master_of_Arena
 
 I mirrored its large back-mounted thruster engines, and its overall nimble humanoid appearance.  For the new units weapons, I decided to fully realize what I intended for the original Honda, and made animated cannons like the [http://en.wikipedia.org/wiki/Tallgeese_III#Tallgeese Tallgeese III].  I once again ran into the conundrum of what to put on each arm, before deciding to just make a symmetrical mech with a combination of the beam weaponry and normal cannon on each arm.  This design was difficult to animate, and is difficult to see in-game, but is just more spice to the observant.
 
+Like the [http://code.google.com/p/conflictterra/wiki/NKGHojoCombatMech Hojo Combat Mech], the Honda's effect for its Jump Jet ability was a placeholder originally.  When we finally learned how to make our own CEGs, a proper Jump Jet was one of the first made.  Utilizing a style often seen in anime, it starts in a starburst and ends in a fading streak of lighter blue.
+
+||[http://img508.imageshack.us/img508/8666/newjumpjetside.png]||
+||A Honda Combat Mech and Hojo Combat Mech jumping with their new effects.||
+
 Balance of this new unit has been difficult, mostly due to its overwhelming power.  Eventually, it has settled into being reasonably destructive, and easy to eliminate.  A lower cost was given to it to help compensate the investment.
 
 ----
