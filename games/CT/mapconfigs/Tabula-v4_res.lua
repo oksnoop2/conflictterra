@@ -1,4 +1,4 @@
---map config by knorke: placing resources on the hills based on terrain heigth
+--map config by oksnoop2
 
 local res = {}
 
