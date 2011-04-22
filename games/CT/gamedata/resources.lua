@@ -36,10 +36,11 @@
 				tpsmoke 			= 'tpsmoke.png',
 				tpsmoke2			= 'tpsmoke2.png',
 				tpdollar			= 'tpdollar.png',
-				experiment_front                = 'experiment_front.tga',
-				experiment_side                 = 'experiment_side.tga',
-				ct_machinegun_front                = 'ct_machinegun_front.tga',
-				ct_machinegun_side                 = 'ct_machinegun_side.tga',
+				ct_machinegun_front                = 'ct_machinegun_front.png',
+				ct_machinegun_side                 = 'ct_machinegun_side.png',
+				ct_bigbeam                 = 'ct_bigbeam.png',
+				ct_jumpjet_front                 = 'ct_jumpjet_front.png',
+				ct_jumpjet_side                 = 'ct_jumpjet_side.png',
 			},
 		}
 	}

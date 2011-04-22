@@ -38,8 +38,8 @@
 	  sfxtypes            = {
 	
 	    explosiongenerators = {
-		"custom:ct_machinegun_muzzle",
-		"custom:buildersparks",
+		"custom:ct_machinegun",
+		"custom:ct_jumpjet",
 	    },
 	
 	  },

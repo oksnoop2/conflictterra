@@ -36,6 +36,7 @@
 	local walk_stop = 8
         local orc_machinegun_flash = SFX.CEG
         local orc_machinegun_muzzle = SFX.CEG + 1
+        local ct_machinegun = SFX.CEG + 2
 	
 	function script.Create()
 	Turn( flare1, x_axis, -1.55, 2 )
@@ -190,12 +191,10 @@
 
 	function script.Shot2()
 		if currBarrel == 1 then
-			EmitSfx(flare3, orc_machinegun_flash)
-			EmitSfx(flare3, orc_machinegun_muzzle)	
+			EmitSfx(flare3, ct_machinegun)
 		end
 		if currBarrel == 2 then
-			EmitSfx(flare2, orc_machinegun_flash)
-			EmitSfx(flare2, orc_machinegun_muzzle)	
+			EmitSfx(flare2, ct_machinegun)
 		end
 		currBarrel = currBarrel + 1
 		if currBarrel == 2 then currBarrel = 2 end

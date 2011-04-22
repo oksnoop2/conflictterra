@@ -60,6 +60,11 @@
 		Turn(rlaser,x_axis, -0.5, 100)
 		Turn( flare1, x_axis, 90, 2 )
 		Turn( flare2, x_axis, 90, 2 )
+
+		Turn( boosterflare1, x_axis, 2, 2 )
+		Turn( boosterflare2, x_axis, 2, 2 )
+		Turn( boosterflare3, x_axis, 2, 2 )
+		Turn( boosterflare4, x_axis, 2, 2 )
 	end
 
 	local function walk()
@@ -160,6 +165,7 @@
 
 	function script.BeginJump()
 		StartThread(jumpjetaction)
+		Turn(booster, x_axis, 1, 2)
 		Turn(leftfoot, x_axis, 1, 2)
 		Turn(rightfoot, x_axis, 1, 2)
 
@@ -182,6 +188,7 @@
 
 	function script.EndJump()
 		Signal(jumpjet_SIG)
+		Turn(booster, x_axis, 0, 2)
 		Turn(leftfoot, x_axis, 0, 2)
 		Turn(rightfoot, x_axis, 0, 2)
 
