@@ -132,5 +132,10 @@ This guide explains how:
 note: you might have to use rightclick -> "view image" to see the image unscaled and in full resolution<br>
 http://h-3.abload.de/img/properstoningr1tgm1.jpg
 
-= Plans =
-Allowing mappers to define the interval etc. of meteor storms on their map.
+= Other map settings =
+Properties of meteor storms can be adjusted.<br>
+Map features can be replaced with rocks, removed or be ignored.
+
+See this file for details:
+[http://code.google.com/p/conflictterra/source/browse/games/CT/mapconfigs/docu.txt]
+Or look at the examples in mapconfigs\ folder
