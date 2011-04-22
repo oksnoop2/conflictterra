@@ -1,0 +1,33 @@
+documentation of tables and variables
+
+name of config:
+Game.mapName .. "_res.lua"
+ie "Terra_res.lua" for a map named "Terra"
+
+
+table res  .x  .y
+contains the position of rocks
+use SpawnResource to fill.
+
+
+number meteorstorm_interval
+seconds between meteor storms
+
+
+number meteorstorm_firsttime 
+delay in seconds until the first meteor storm
+
+
+number meteorstorm_number
+how many meteors per meteor storm
+
+
+string featurehandling
+current default if not present: do nothing
+"donothing" = do nothing
+"remove" = delete all features with metalvalue > 0
+"replace" = replaces all features with metalvalue > 0 with bminerals
+
+
+if any such variable is read from the mapconfig, the gadget will print to infolog:
+"spacerocks: map has defined meteorstorm_number: XY"
