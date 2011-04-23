@@ -27,7 +27,7 @@
 	  mass                = 90,
 	  maxDamage           = 2000,
       maxSlope            = 18,
-	  maxVelocity         = 1.5,
+	  maxVelocity         = 2,
       maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
 	  movementClass       = [[TANK2x2]],

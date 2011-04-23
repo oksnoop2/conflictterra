@@ -304,7 +304,7 @@ ROCK_IMPACT_BIG = {
 		Building = 10,
 		Mech = 10,
 		Tank = 10,
-		Aircraft = 200,
+		Aircraft = 10,
 		Ship = 10,
 		Sub = 10,
 	      },

@@ -71,14 +71,14 @@ local kdroneminer = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		default = 50,
-		Cruiser = 50,
-		Building = 30,
-		Mech = 50,
-		Tank = 50,
-		Aircraft = 50,
-		Ship = 30,
-		Sub = 30,
+		default = 40,
+		Cruiser = 40,
+		Building = 10,
+		Mech = 40,
+		Tank = 40,
+		Aircraft = 40,
+		Ship = 40,
+		Sub = 40,
 
 		Meteor = 0,
 		Drone = 30,
