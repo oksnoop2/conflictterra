@@ -41,4 +41,4 @@ SpawnResourceField (6426 , 4646, 4, 300)   -- base2
 ---coordinates go in between here---
 
 
-return {lolfactor=95, res=res, meteorstorm_interval=120, meteorstorm_firsttime=900, meteorstorm_number=6, featurehandling="remove"}
+return {lolfactor=95, res=res, meteorstorm_interval=120, meteorstorm_firsttime=120, meteorstorm_number=6, featurehandling="remove"}
