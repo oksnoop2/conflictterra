@@ -39,10 +39,9 @@
 	  sfxtypes            = {
 	
 	    explosiongenerators = {
-		"custom:orc_machinegun_flash",
-		"custom:orc_machinegun_muzzle",
-		"custom:orc_machinegun_flash_big",
-		"custom:orc_machinegun_muzzle_big",
+		"custom:ct_cannon_tank",
+		"custom:ct_cannon_artillery",
+		"custom:ct_cannon_artillery_side",
 	    },
 	
 	  },
@@ -100,6 +99,8 @@
 	    Artillery             = {
 	      name                    = [[Heavy Artillery Cannon]],
 	      areaOfEffect            = 32,
+	      burst                   = 2,
+	      burstrate               = 0.01,
 	      craterMult              = 0.25,
 	      accuracy                = 500,
 	

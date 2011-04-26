@@ -8,7 +8,11 @@
 	local bturret = piece "bturret"
 	local bbarrel = piece "bbarrel"
 	local bflare1 = piece "bflare1"
+	local fxflare1 = piece "fxflare1"
+	local fxflare2 = piece "fxflare2"
         local bflare2 = piece "bflare2"
+	local fxflare3 = piece "fxflare3"
+	local fxflare4 = piece "fxflare4"
 
         local lthigh = piece "lthigh"
         local lshin = piece "lshin"
@@ -36,15 +40,17 @@
 	local SIG_AIM = 1
 	local SIG_AIM_SEC = 2
 	local SIG_AIM_THIR = 4
-	local walk_go = 256
-	local walk_stop = 512
-        local orc_machinegun_flash = SFX.CEG
-        local orc_machinegun_muzzle = SFX.CEG + 1
-        local orc_machinegun_flash_big = SFX.CEG + 2
-        local orc_machinegun_muzzle_big = SFX.CEG + 3
+	local walk_go = 8
+	local walk_stop = 16
+        local ct_cannon_tank = SFX.CEG
+	local ct_cannon_artillery = SFX.CEG + 1
+	local ct_cannon_artillery_side = SFX.CEG + 2	
 	
 	function script.Create()
-	       
+		Turn(fxflare1, y_axis, -1.5, 10)
+		Turn(fxflare2, y_axis, 1.5, 10)
+		Turn(fxflare3, y_axis, -1.5, 10)
+		Turn(fxflare4, y_axis, 1.5, 10)
 	end
 
 	local function walk()
@@ -182,41 +188,33 @@
 		StartThread(RestoreAfterDelay)
 		return true
 	end
-	
-	function script.FireWeapon1()
-	EmitSfx(bflare1, orc_machinegun_flash_big)
-	EmitSfx(bflare1, orc_machinegun_muzzle_big)	 
-	       Sleep(30)
-               StartThread(recoil)
-               Sleep(30)
-	end
 
-	function script.FireWeapon1()
+	function script.Shot1()
 		if currBarrel == 1 then
-			EmitSfx(bflare2, orc_machinegun_flash_big)
-			EmitSfx(bflare2, orc_machinegun_muzzle_big)	
+			EmitSfx(bflare2, ct_cannon_artillery)
+			EmitSfx(fxflare3, ct_cannon_artillery_side)	
+			EmitSfx(fxflare4, ct_cannon_artillery_side)
 		end
 		if currBarrel == 2 then
-			EmitSfx(bflare1, orc_machinegun_flash_big)
-			EmitSfx(bflare1, orc_machinegun_muzzle_big)	
+			EmitSfx(bflare1, ct_cannon_artillery)
+			EmitSfx(fxflare1, ct_cannon_artillery_side)	
+			EmitSfx(fxflare2, ct_cannon_artillery_side)
+		StartThread(recoil)	
 		end
-		StartThread(recoil)
 		currBarrel = currBarrel + 1
+		if currBarrel == 2 then currBarrel = 2 end
 		if currBarrel == 3 then currBarrel = 1 end
 	end
 
 	function script.FireWeapon2()
 		if currBarrel2 == 1 then
-			EmitSfx(tflare3, orc_machinegun_flash)
-			EmitSfx(tflare3, orc_machinegun_muzzle)	
+			EmitSfx(tflare3, ct_cannon_tank)
 		end
 		if currBarrel2 == 2 then
-			EmitSfx(tflare2, orc_machinegun_flash)
-			EmitSfx(tflare2, orc_machinegun_muzzle)	
+			EmitSfx(tflare2, ct_cannon_tank)
 		end
 		if currBarrel2 == 3 then
-			EmitSfx(tflare1, orc_machinegun_flash)
-			EmitSfx(tflare1, orc_machinegun_muzzle)	
+			EmitSfx(tflare1, ct_cannon_tank)
 		end	
 		currBarrel2 = currBarrel2 + 1
 		if currBarrel2 == 2 then currBarrel2 = 2 end
@@ -226,16 +224,13 @@
 
 	function script.FireWeapon3()
 		if currBarrel3 == 1 then
-			EmitSfx(tflare6, orc_machinegun_flash)
-			EmitSfx(tflare6, orc_machinegun_muzzle)	
+			EmitSfx(tflare6, ct_cannon_tank)
 		end
 		if currBarrel3 == 2 then
-			EmitSfx(tflare5, orc_machinegun_flash)
-			EmitSfx(tflare5, orc_machinegun_muzzle)	
+			EmitSfx(tflare5, ct_cannon_tank)
 		end
 		if currBarrel3 == 3 then
-			EmitSfx(tflare4, orc_machinegun_flash)
-			EmitSfx(tflare4, orc_machinegun_muzzle)	
+			EmitSfx(tflare4, ct_cannon_tank)
 		end	
 		currBarrel3 = currBarrel3 + 1
 		if currBarrel3 == 2 then currBarrel3 = 2 end
@@ -250,5 +245,5 @@
         end
 	
 	function script.Killed(recentDamage, maxHealth)
-		Sleep(30)
+		return 0
 	end

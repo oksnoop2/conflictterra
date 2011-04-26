@@ -18,6 +18,8 @@
 
 - Thanks to Google_Frog for suggesting the unit_estall_disable.lua gadget from ZK.
 
+- Thanks to Forboding Angel and rattle from the boards for helping us figure out how to make our own CEGs!
+
 - Many others in the days before this was documented.
 
 *Other contributions will hopefully be remembered/added as time progresses.*

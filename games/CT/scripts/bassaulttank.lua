@@ -7,9 +7,8 @@
 	local flare = piece "flare"
 
 	--signals
-	local SIG_AIM = 2
-	local orc_machinegun_flash = SFX.CEG
-        local orc_machinegun_muzzle = SFX.CEG + 1
+	local SIG_AIM = 1
+	local ct_cannon_tank = SFX.CEG
 	
 	function script.Create()
 	       
@@ -37,8 +36,7 @@
 	end
 	
 	function script.FireWeapon1()
-		EmitSfx(flare, orc_machinegun_flash)
-		EmitSfx(flare, orc_machinegun_muzzle)	       
+		EmitSfx(flare, ct_cannon_tank)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)

@@ -9,7 +9,7 @@ return {
 			count              = 1,
 			underwater         = 1,
 			properties = {
-				colormap           = [[1 1 0 1	    0.75 0.75 0 1     0.5 0.5 0 1]], --Colour map progress from one to next. Colors in RGBA
+				colormap           = [[1 1 0 1	    1 1 0 1     1 0.5 0 1]], --Colour map progress from one to next. Colors in RGBA
 				dir                = [[dir]],
 				frontoffset        = 0,
 				fronttexture       = [[ct_machinegun_front]],
@@ -29,7 +29,7 @@ return {
 			circlegrowth       = 0,
 			flashalpha         = 0.2,
 			flashsize          = 10,
-			ttl                = 17, --Time To Live
+			ttl                = 8, --Time To Live
 			--Red Green Blue
 			color = {
 				[1]  = 1,

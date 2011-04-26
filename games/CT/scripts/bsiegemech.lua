@@ -34,8 +34,8 @@
 	local SIG_AIM_SEC = 2
 	local walk_go = 4
 	local walk_stop = 8
-        local orc_machinegun_flash = SFX.CEG
-        local orc_machinegun_muzzle = SFX.CEG + 1
+	local ct_cannon_artillery = SFX.CEG
+	local ct_cannon_artillery_side = SFX.CEG + 1
         local ct_machinegun = SFX.CEG + 2
 	
 	function script.Create()
@@ -183,10 +183,9 @@
 	end
 	
 	function script.FireWeapon1()
-	EmitSfx(flare1, orc_machinegun_flash)
-	EmitSfx(flare1, orc_machinegun_muzzle)
+		EmitSfx(flare1, ct_cannon_artillery)	     
+		EmitSfx(flare1, ct_cannon_artillery_side)
 		StartThread(recoil)
-		Sleep(30)
 	end
 
 	function script.Shot2()

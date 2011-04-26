@@ -41,6 +41,10 @@
 				ct_bigbeam                 = 'ct_bigbeam.png',
 				ct_jumpjet_front                 = 'ct_jumpjet_front.png',
 				ct_jumpjet_side                 = 'ct_jumpjet_side.png',
+				ct_cannon_tank                 = 'ct_cannon_tank.png',
+				ct_cannon_artillery                 = 'ct_cannon_artillery.png',
+				ct_cannon_artillery_side                 = 'ct_cannon_artillery_side.png',
+				ct_smokecloud                 = 'ct_smokecloud.png',
 			},
 		}
 	}

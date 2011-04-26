@@ -4,6 +4,11 @@
 	local body = piece "body"
 	local biggun = piece "biggun"
 	local flare2 = piece "flare2"
+	local fxflare1 = piece "fxflare1"
+	local fxflare2 = piece "fxflare2"
+	local fxflare3 = piece "fxflare3"
+	local fxflare4 = piece "fxflare4"
+
         local turret = piece "turret"
         local barrel = piece "barrel"
         local flare = piece "flare"
@@ -13,11 +18,19 @@
 	local SIG_AIM_SEC = 2
         local orc_machinegun_flash = SFX.CEG
         local orc_machinegun_muzzle = SFX.CEG + 1
-        local orc_machinegun_flash_big = SFX.CEG + 2
-        local orc_machinegun_muzzle_big = SFX.CEG + 3
+	local ct_cannon_artillery = SFX.CEG + 2
+	local ct_cannon_artillery_side_long = SFX.CEG + 3	
 	
 	function script.Create()
-	       
+		Turn(fxflare1, y_axis, 1.5, 10)
+		Turn(fxflare2, y_axis, -1.5, 10)
+		Turn(fxflare3, y_axis, 1.5, 10)
+		Turn(fxflare4, y_axis, -1.5, 10)
+
+		Turn(fxflare1, x_axis, -0.75, 10)
+		Turn(fxflare2, x_axis, -0.75, 10)
+		Turn(fxflare3, x_axis, 0.75, 10)
+		Turn(fxflare4, x_axis, 0.75, 10)
 	end
 	
 	local function RestoreAfterDelay(unitID)
@@ -55,17 +68,18 @@
 	end
 	
 	function script.FireWeapon1()
-	EmitSfx(flare2, orc_machinegun_flash_big)
-	EmitSfx(flare2, orc_machinegun_muzzle_big)	 
-	       Sleep(30)
+		EmitSfx(flare2, ct_cannon_artillery)
+		EmitSfx(fxflare1, ct_cannon_artillery_side_long)
+		EmitSfx(fxflare2, ct_cannon_artillery_side_long)
+		EmitSfx(fxflare3, ct_cannon_artillery_side_long)
+		EmitSfx(fxflare4, ct_cannon_artillery_side_long)	 
 	end
 
 	function script.FireWeapon2()
-	EmitSfx(flare, orc_machinegun_flash)
-	EmitSfx(flare, orc_machinegun_muzzle)	 
-	       Sleep(30)
+		EmitSfx(flare, orc_machinegun_flash)
+		EmitSfx(flare, orc_machinegun_muzzle)	 
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
-		Sleep(30)
+		return 0
 	end
