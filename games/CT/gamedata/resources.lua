@@ -47,6 +47,7 @@
 				ct_smokecloud                 = 'ct_smokecloud.png',
 				ct_missiletail_side                 = 'ct_missiletail_side.png',
 				ct_missiletail_side_big                 = 'ct_missiletail_side_big.png',
+				ct_smoketrail                 = 'ct_smoketrail.png',
 			},
 		}
 	}

@@ -133,6 +133,7 @@
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[nexuiz/rocket_fire]],
+	      texture2		      = [[ct_smoketrail]],
 	      tolerance               = 8000,
 	      tracks                  = false,
 	      trajectoryHeight        = 0.5,

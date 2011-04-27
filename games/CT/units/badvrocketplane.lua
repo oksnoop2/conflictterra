@@ -118,6 +118,7 @@
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[nexuiz/rocket_fire]],
+	      texture2		      = [[ct_smoketrail]],
 	      tolerance               = 500,
 	      turret                  = true,
 	      weaponType              = [[MissileLauncher]],

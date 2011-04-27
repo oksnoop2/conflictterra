@@ -18,7 +18,6 @@ return {
 				size               = 1,
 				sizegrowth         = 1,
 				ttl                = 1,
-				pos                = [[0, 0, 5]],
 			},
 		},
 	},

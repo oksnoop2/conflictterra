@@ -119,6 +119,7 @@
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[evolutionRTS/aircraft_missile_01]],
 	      startVelocity           = 200,
+	      texture2		      = [[ct_smoketrail]],
 	      tolerance               = 22000,
 	      tracks                  = true,
 	      turret                  = true,
