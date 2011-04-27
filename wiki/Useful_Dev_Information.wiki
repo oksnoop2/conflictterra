@@ -41,6 +41,9 @@
   * [http://springrts.com/wiki/Units:MoveTypes Move Def info]
   * [http://springrts.com/wiki/Animation-LuaCallins Lua Animation Callins]
   * [http://springrts.com/wiki/Animation-LuaCallouts Lua Animation Callouts]
+  * [http://springrts.com/wiki/Skyboxcreation Skyboxes]
+  * [http://springrts.com/wiki/MapSizes Map Size Info]
+  * [http://springrts.com/wiki/Maps:SMD SMD Info]
 
 = Rough Scale =
 
