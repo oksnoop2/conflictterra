@@ -84,6 +84,7 @@
 	      burst                   = 9,
 	      burstrate               = 0.08,
 	      collideFriendly         = false,
+	      cegTag                  = [[ct_missiletail_small]],
 	      craterMult              = 0.25,
 	
 	      damage                  = {
@@ -103,7 +104,7 @@
 		Spare3 = 100,
 	      },
 	
-	      model                   = [[bsmallmissile.s3o]],
+	      model                   = [[projectiles/bsmallmissile.s3o]],
 	      dance                   = 20,
 	      wobble                  = 7000,
 	      edgeEffectiveness       = 0.5,

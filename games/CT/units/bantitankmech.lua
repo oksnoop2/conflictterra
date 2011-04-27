@@ -43,8 +43,7 @@
 	  sfxtypes            = {
 	
 	    explosiongenerators = {
-		"custom:orc_machinegun_flash",
-		"custom:orc_machinegun_muzzle",
+		"custom:ct_cannon_smoke",
 	    },
 	
 	  },
@@ -105,7 +104,7 @@
 		Spare3 = 100,
 	      },
 	
-	      model                   = [[bshell.s3o]],
+	      model                   = [[projectiles/bshell.s3o]],
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,

@@ -103,7 +103,7 @@
 		Sub = 5,
 	      },
 	
-	      model                   = [[bsmallmissile.s3o]],
+	      model                   = [[projectiles/bsmallmissile.s3o]],
 	      dance                   = 20,
 	      wobble                  = 7000,
 	      edgeEffectiveness       = 0.5,

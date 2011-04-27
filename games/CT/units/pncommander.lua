@@ -32,8 +32,8 @@ local pncommander = {
 
     energyMake          = 1,
 	explodeAs           = [[SMALL_UNIT]],
-    footprintx          = 2,
-	footprintZ          = 2,
+    footprintx          = 3,
+	footprintZ          = 3,
 	idleAutoHeal        = 1,
 	leaveTracks         = false,
 	mass                = 80,

@@ -128,7 +128,7 @@
 		Spare3 = 150,
 	      },
 	
-	      model                   = [[bsmallmissile.s3o]],
+	      model                   = [[projectiles/bsmallmissile.s3o]],
 	      edgeEffectiveness       = 0.5,
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 4,

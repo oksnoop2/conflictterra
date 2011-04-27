@@ -40,7 +40,6 @@ local kdronemine = {
     maxWaterDepth       = 10000,
     metalMake           = 10,
 	minCloakDistance    = 5,
-	movementClass       = [[kdrone]],
     noChaseCategory     = [[MINERALS]],
 	objectName          = "kdronemine.s3o",
     onoffable           = false,

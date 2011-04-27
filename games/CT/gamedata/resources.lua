@@ -45,6 +45,8 @@
 				ct_cannon_artillery                 = 'ct_cannon_artillery.png',
 				ct_cannon_artillery_side                 = 'ct_cannon_artillery_side.png',
 				ct_smokecloud                 = 'ct_smokecloud.png',
+				ct_missiletail_side                 = 'ct_missiletail_side.png',
+				ct_missiletail_side_big                 = 'ct_missiletail_side_big.png',
 			},
 		}
 	}

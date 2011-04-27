@@ -12,7 +12,6 @@ unitDef = {
   buildoptions                  = {
 
     [[bseaengineer1]],
-    [[benergysupplyboat]],
     [[bhovermech]],
     [[bbattleship]],
 

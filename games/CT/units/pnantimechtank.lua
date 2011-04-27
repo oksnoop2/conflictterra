@@ -103,7 +103,7 @@
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
-	      model                   = [[baamissile.s3o]],
+	      model                   = [[projectiles/baamissile.s3o]],
 	      range                   = 530,
 	      reloadtime              = 2,
 	      smokedelay              = [[0.1]],

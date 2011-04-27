@@ -40,7 +40,6 @@ local kairdrone = {
     maxWaterDepth       = 10000,
     metalMake           = 0,
 	minCloakDistance    = 75,
-	movementClass       = [[kdrone]],
     noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	objectName          = "kairdrone.s3o",
     onoffable           = false,

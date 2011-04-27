@@ -91,7 +91,7 @@
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      lineOfSight             = true,
-	      model                   = [[btorpedo.s3o]],
+	      model                   = [[projectiles/btorpedo.s3o]],
 	      range                   = 500,
 	      reloadtime              = 1.5,
 	      soundHit                = [[argh/Argh_LargeExplosion]],

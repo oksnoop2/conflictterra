@@ -101,6 +101,7 @@
 	      avoidFriendly           = true,
 	      canattackground         = false,
 	      cylinderTargetting      = 1,
+	      cegtag                  = [[ct_missiletail_aa]],
 	      craterMult              = 0.25,
 	
 	      damage                  = {
@@ -125,7 +126,7 @@
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      lineOfSight             = true,
-	      model                   = [[baamissile.s3o]],
+	      model                   = [[projectiles/baamissile.s3o]],
 	      range                   = 600,
 	      reloadtime              = 3,
 	      smokedelay              = [[0.1]],
@@ -146,6 +147,7 @@
 	    Ground = {
 	      name                    = [[Air-to-Ground Missile]],
 	      areaOfEffect            = 160,
+	      cegTag                  = [[ct_missiletail_big]],
 	      craterMult              = 0.25,
 	
 	      damage                  = {
@@ -165,7 +167,7 @@
 		Spare3 = 250,
 	      },
 	
-	      model                   = [[bsmallmissile.s3o]],
+	      model                   = [[projectiles/bsmallmissile.s3o]],
 	      edgeEffectiveness       = 0.5,
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,

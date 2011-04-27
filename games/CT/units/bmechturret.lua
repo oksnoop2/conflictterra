@@ -88,7 +88,7 @@
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      lineOfSight             = true,
-	      model                   = [[blargemissile.s3o]],
+	      model                   = [[projectiles/blargemissile.s3o]],
 	      noSelfDamage            = true,
 	      range                   = 800,
 	      reloadtime              = 3,

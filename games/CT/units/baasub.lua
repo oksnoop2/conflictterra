@@ -121,7 +121,7 @@
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      impulseFactor           = 0,
-	      model                   = [[baamissile.s3o]],
+	      model                   = [[projectiles/baamissile.s3o]],
 	      range                   = 840,
 	      reloadtime              = 1.5,
 	      smokedelay              = [[0.1]],

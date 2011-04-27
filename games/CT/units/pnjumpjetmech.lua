@@ -106,7 +106,7 @@
 		Sub = 100,
 	      },
 	
-	      model                   = [[bshell.s3o]],
+	      model                   = [[projectiles/bshell.s3o]],
 	      explosionGenerator      = [[custom:LRPC_Expl]],
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,

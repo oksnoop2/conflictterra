@@ -92,6 +92,7 @@
 	      areaOfEffect            = 48,
 	      burst                   = 3,
 	      burstrate               = 0.08,
+	      cegTag                  = [[ct_missiletail_small]],
 	      craterMult              = 0.25,
 	      accuracy                = 100,
 	
@@ -112,7 +113,7 @@
 		Spare3 = 10,
 	      },
 	
-	      model                   = [[bantimechmissile.s3o]],
+	      model                   = [[projectiles/bantimechmissile.s3o]],
 	      dance                   = 75,
 	      wobble                  = 2000,
 	      explosionGenerator      = [[custom:PLASMA_Expl]],

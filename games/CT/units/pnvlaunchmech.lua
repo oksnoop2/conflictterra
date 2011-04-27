@@ -103,7 +103,7 @@
 		Sub = 5,
 	      },
 	
-	      model                   = [[bshell.s3o]],
+	      model                   = [[projectiles/bshell.s3o]],
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      range                   = 400,
@@ -134,7 +134,7 @@
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
-	      model                   = [[blargemissile.s3o]],
+	      model                   = [[projectiles/blargemissile.s3o]],
 	      noSelfDamage            = true,
 	      range                   = 800,
 	      reloadtime              = 3,

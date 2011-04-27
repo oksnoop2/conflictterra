@@ -76,6 +76,7 @@
 	      burst                   = 3,
 	      burstrate               = 0.5,
 	      canattackground         = false,
+	      cegtag                  = [[ct_missiletail_aa]],
 	      cylinderTargetting      = 1,
 	      craterMult              = 0.25,
 	
@@ -101,7 +102,7 @@
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      lineOfSight             = true,
-	      model                   = [[baamissile.s3o]],
+	      model                   = [[projectiles/baamissile.s3o]],
 	      range                   = 800,
 	      reloadtime              = 3,
 	      smokedelay              = [[0.1]],

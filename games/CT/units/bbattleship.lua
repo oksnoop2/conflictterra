@@ -110,7 +110,7 @@
 		Spare3 = 250,
 	      },
 	
-	      model                   = [[bshell.s3o]],
+	      model                   = [[projectiles/bshell.s3o]],
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,

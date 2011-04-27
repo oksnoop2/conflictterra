@@ -87,6 +87,7 @@
 	      avoidFriendly           = true,
 	      canattackground         = false,
 	      cylinderTargetting      = 1,
+	      cegtag                  = [[ct_missiletail_aa]],
 	      collideFriendly         = false,
 	      craterMult              = 0.25,
 	
@@ -112,7 +113,7 @@
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      lineOfSight             = true,
-	      model                   = [[baamissile.s3o]],
+	      model                   = [[projectiles/baamissile.s3o]],
 	      range                   = 530,
 	      reloadtime              = 4.5,
 	      smokedelay              = [[0.1]],

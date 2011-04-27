@@ -85,6 +85,7 @@
 	      name                    = [[Anti-Mech Missile]],
 	      areaOfEffect            = 48,
 	      craterMult              = 0.25,
+	      cegTag                  = [[ct_missiletail_small]],
 	
 	      damage                  = {
 		default = 35,
@@ -103,7 +104,7 @@
 		Spare3 = 35,
 	      },
 	
-	      model                   = [[bantimechmissile.s3o]],
+	      model                   = [[projectiles/bantimechmissile.s3o]],
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,

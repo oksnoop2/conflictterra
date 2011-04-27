@@ -96,6 +96,7 @@
 	    Large = {
 	      name                    = [[Large Missile]],
 	      areaOfEffect            = 160,
+	      cegTag                  = [[ct_missiletail_big]],
 	      craterMult              = 0.25,
 	
 	      damage                  = {
@@ -115,7 +116,7 @@
 		Spare3 = 100,
 	      },
 	
-	      model                   = [[blargemissile.s3o]],
+	      model                   = [[projectiles/blargemissile.s3o]],
 	      edgeEffectiveness       = 0.5,
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 4,
@@ -140,6 +141,7 @@
 	    Anti_Mech = {
 	      name                    = [[Anti-Mech Missile]],
 	      areaOfEffect            = 48,
+	      cegTag                  = [[ct_missiletail_small]],
 	      craterMult              = 0.25,
 	
 	      damage                  = {
@@ -159,7 +161,7 @@
 		Spare3 = 35,
 	      },
 	
-	      model                   = [[bantimechmissile.s3o]],
+	      model                   = [[projectiles/bantimechmissile.s3o]],
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,

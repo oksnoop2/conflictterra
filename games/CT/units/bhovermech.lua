@@ -102,6 +102,7 @@
 	    Launcher = {
 	      name                    = [[Small Missile]],
 	      areaOfEffect            = 48,
+	      cegTag                  = [[ct_missiletail_small]],
 	      craterMult              = 0.25,
 	
 	      damage                  = {
@@ -121,7 +122,7 @@
 		Spare3 = 35,
 	      },
 	
-	      model                   = [[bsmallmissile.s3o]],
+	      model                   = [[projectiles/bsmallmissile.s3o]],
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
@@ -171,7 +172,7 @@
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      lineOfSight             = true,
-	      model                   = [[btorpedo.s3o]],
+	      model                   = [[projectiles/btorpedo.s3o]],
 	      propeller               = [[1]],
 	      range                   = 500,
 	      reloadtime              = 2,

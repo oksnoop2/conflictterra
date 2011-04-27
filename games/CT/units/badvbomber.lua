@@ -108,7 +108,7 @@
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      manualBombSettings      = true,
-	      model                   = [[bbombs.s3o]],
+	      model                   = [[projectiles/bbombs.s3o]],
 	      myGravity               = 0.7,
 	      range                   = 500,
 	      reloadtime              = 10,

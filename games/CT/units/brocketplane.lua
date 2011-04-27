@@ -106,6 +106,7 @@
 	      name                    = [[Small Missiles]],
 	      areaOfEffect            = 48,
 	      collideFriendly         = false,
+	      cegTag                  = [[ct_missiletail_small]],
 	      craterMult              = 0.25,
 	
 	      damage                  = {
@@ -125,7 +126,7 @@
 		Spare3 = 50,
 	      },
 	
-	      model                   = [[bsmallmissile.s3o]],
+	      model                   = [[projectiles/bsmallmissile.s3o]],
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
