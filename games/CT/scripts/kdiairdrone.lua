@@ -8,11 +8,23 @@
 	local rbody = piece "rbody"
 	local rflare1 = piece "rflare1"
 
+	local binderbeampiece = piece "binderbeam"
+
 	--signals
 	local SIG_AIM = 1
 	local SIG_AIM_SEC = 2
+	local ct_binderbeam = SFX.CEG
+
+	local function binderbeam()
+		Turn(binderbeampiece, y_axis, 1.5, 10)
+		while (true) do
+			EmitSfx(binderbeampiece, ct_binderbeam)
+			Sleep(1)
+		end
+	end
 
 	function script.Create(unitID)
+		StartThread(binderbeam)
 		while (true) do
 			Move(lbody, y_axis, 2, 0.5)
 			Move(rbody, y_axis, -2, 0.5)
@@ -36,10 +48,6 @@
 		Turn(rflare1, y_axis, 0, math.rad(90))
         	Turn(lflare1, x_axis, 0, math.rad(50))
         	Turn(rflare1, x_axis, 0, math.rad(50))
-	end
-
-	local function drones()
-
 	end
 
 	function script.QueryWeapon1() return lflare1 end

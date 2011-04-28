@@ -39,6 +39,9 @@
 				ct_machinegun_front                = 'ct_machinegun_front.png',
 				ct_machinegun_side                 = 'ct_machinegun_side.png',
 				ct_bigbeam                 = 'ct_bigbeam.png',
+				ct_bigbeam_zigzag                 = 'ct_bigbeam_zigzag.png',
+				ct_bigbeam_wave                 = 'ct_bigbeam_wave.png',
+				ct_bigbeam_dots                 = 'ct_bigbeam_dots.png',
 				ct_jumpjet_front                 = 'ct_jumpjet_front.png',
 				ct_jumpjet_side                 = 'ct_jumpjet_side.png',
 				ct_cannon_tank                 = 'ct_cannon_tank.png',
@@ -48,6 +51,7 @@
 				ct_missiletail_side                 = 'ct_missiletail_side.png',
 				ct_missiletail_side_big                 = 'ct_missiletail_side_big.png',
 				ct_smoketrail                 = 'ct_smoketrail.png',
+				ct_binderbeam_side                 = 'ct_binderbeam_side.png',
 			},
 		}
 	}
