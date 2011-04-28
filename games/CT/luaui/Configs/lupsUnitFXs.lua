@@ -108,6 +108,8 @@ effectUnitDefs = {
                 {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  4, length=20, piece="fxflare4", onActive=true}},
                 {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  4, length=45, piece="fxflare5", onActive=true}},
                 {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  4, length=25, piece="fxflare6", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  8, length=60, piece="fxflarebig1", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  8, length=60, piece="fxflarebig2", onActive=true}},
         },
 
 
@@ -193,15 +195,12 @@ effectUnitDefs = {
         },
 
 
-        esolar2 = {
---    {class='StaticParticles', options=corfusNova},
---    {class='StaticParticles', options=corfusNova2},
---    {class='StaticParticles', options=corfusNova3},
---    {class='StaticParticles', options=corfusNova4},
+--        badvpowerplant = {
+--      {class='StaticParticles', options=sparks1, piece="building",},
 
 --    {class='Bursts', options=efusion2Bursts},
-    {class='ShieldJitter', options={delay=0,life=math.huge, pos={0,13,5}, size=10, precision=22, strength   = 0.015,  repeatEffect=true}},
-  },
+--    {class='ShieldJitter', options={delay=0,life=math.huge, pos={0,13,5}, size=10, precision=22, strength   = 0.015,  repeatEffect=true}},
+--  },
         egeothermal = {
 --    {class='StaticParticles', options=corfusNova},
 --    {class='StaticParticles', options=corfusNova2},

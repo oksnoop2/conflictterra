@@ -20,6 +20,8 @@
 
 - Thanks to Forboding Angel and rattle from the boards for helping us figure out how to make our own CEGs!
 
+- Huge thanks to Knorke who revealed the simple way to animate flying units!  Flying Mech and Heavy Flying Mech look awesome now!
+
 - Many others in the days before this was documented.
 
 *Other contributions will hopefully be remembered/added as time progresses.*

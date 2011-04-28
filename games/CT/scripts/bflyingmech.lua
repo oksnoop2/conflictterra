@@ -36,6 +36,20 @@
 	
 	function script.Create()
 	end
+
+	function script.Activate()
+		Turn(body, x_axis, 0.5, 1)
+		Turn(tailfin, x_axis, 0.5, 1)
+		Turn(topjets, x_axis, 1, 1)
+		Turn(bottomjets, x_axis, 1, 1)
+	end
+
+	function script.Deactivate()
+		Turn(body, x_axis, 0, 1)
+		Turn(tailfin, x_axis, 0.5, 1)
+		Turn(topjets, x_axis, 0, 1)
+		Turn(bottomjets, x_axis, 0, 1)
+	end
 	
 	local function RestoreAfterDelay(unitID)
 		Sleep(2500)
