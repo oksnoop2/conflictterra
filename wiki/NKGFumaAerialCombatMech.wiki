@@ -9,7 +9,7 @@
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bflyingmech.png]||Airborne "mech" designed to destroy cruisers.  Fires beam weapons and two AA missiles.  Cannot attack ground.||
 
-The Fuma Aerial Combat Mech's main purpose is to destroy Cruisers.  It is armed with six beam weapons that deal higher damage to Cruisers than other aircraft.  It is also able to fire two anti-air missiles, which deal high damage to aircraft than Cruisers.  While somewhat expensive, they are quick units and quite capable of disposing of singled out Cruisers in small packs.  While the anti-air missiles provide some power against aircraft, they are not exceptionally strong, and should have some kind of proper back-up to truly be safe from roaming fighters.
+The Fuma Aerial Combat Mech's main purpose is to destroy Cruisers.  It is armed with six beam weapons that deal high damage to Cruisers.  These beam weapons can only target Cruisers.  It is also able to fire two anti-air missiles, which deal high damage to aircraft than Cruisers.  While somewhat expensive, they are quick units and quite capable of disposing of singled out Cruisers in small packs.  While the anti-air missiles provide some power against aircraft, they are not exceptionally strong, and should have some kind of proper back-up to truly be safe from roaming fighters.
 
 ||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bflyingmech.lua Link to Unit Definition.  This will display its current stats.]||
 
