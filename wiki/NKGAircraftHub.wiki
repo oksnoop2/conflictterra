@@ -23,7 +23,7 @@ Other than defending against Cruisers and enemy fighters, aircraft make great sc
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bscoutplane.png]||[http://code.google.com/p/conflictterra/wiki/NKGSuzumeTypePlane Suzume Type Plane]||
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bfightermkii.png]||[http://code.google.com/p/conflictterra/wiki/NKGHayabusaTypeFighter Hayabusa Type Fighter MkII]||
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/blaserplanemkiii.png]||[http://code.google.com/p/conflictterra/wiki/NKGSuzakuTypeFighter Suzaku Type Fighter MkIII]||
-||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/brocketplane.png]||Washi Type Warplane||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/brocketplanemkiii.png]||[http://code.google.com/p/conflictterra/wiki/NKGTonboTypeWarplane Tonbo Type Warplane MkIII]||
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bbombermkii.png]||[http://code.google.com/p/conflictterra/wiki/NKGFukurouTypeBomber Fukurou Type Bomber MkII]||
 
 == Tech Level 2 ==
