@@ -59,6 +59,8 @@
 	
 	    {
 	      def                = [[Laser]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[GUNSHIP]],
 	    },
 	
