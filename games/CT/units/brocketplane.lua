@@ -1,11 +1,11 @@
 	unitDef = {
 	  unitname            = [[brocketplane]],
-	  name                = [[Washi Type Warplane]],
+	  name                = [[Tonbo Type Warplane MkIII]],
 	  description         = [[Rocket Warplane - Versatile anti-land aircraft.  Fires four missiles that do little damage to buildings.]],
           amphibious          = false,
 	  buildCostEnergy     = 175,
 	  buildCostMetal      = 175,
-	  buildPic            = [[brocketplane.png]],
+	  buildPic            = [[brocketplanemkiii.png]],
 	  buildTime           = 15,
 	  canAttack           = true,
           canFly              = true,
@@ -33,7 +33,7 @@
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
-	  objectName          = [[brocketplane.s3o]],
+	  objectName          = [[brocketplanemkiii.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[SMALL_UNIT]],
 
@@ -61,34 +61,10 @@
 	  },
 
           speedToFront        = 0,
-          script              = [[brocketplane.lua]],
+          script              = [[brocketplanemkiii.lua]],
 	
 	  weapons             = {
 	
-	    {
-	      def                = [[Rocket]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 90,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
-	    },
-
-	    {
-	      def                = [[Rocket]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 90,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
-	    },
-
-	    {
-	      def                = [[Rocket]],
-	      badTargetCategory  = [[SINK FLOAT]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 90,
-	      onlyTargetCategory = [[LAND SINK SHIP SWIM FLOAT HOVER]],
-	    },
-
 	    {
 	      def                = [[Rocket]],
 	      badTargetCategory  = [[SINK FLOAT]],
@@ -105,6 +81,8 @@
 	    Rocket = {
 	      name                    = [[Small Missiles]],
 	      areaOfEffect            = 48,
+	      burst                   = 4,
+	      burstrate               = 0.5,
 	      collideFriendly         = false,
 	      cegTag                  = [[ct_missiletail_small]],
 	      craterMult              = 0.25,
@@ -126,14 +104,14 @@
 		Spare3 = 50,
 	      },
 	
-	      model                   = [[projectiles/bsmallmissile.s3o]],
+	      model                   = [[projectiles/blargemissilemkii.s3o]],
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      lineOfSight             = true,
 	      range                   = 600,
-	      reloadtime              = 2,
+	      reloadtime              = 4,
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[nexuiz/rocket_fire]],
@@ -155,43 +133,33 @@
 	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Rocket Plane]],
-	      blocking         = false,
+	      description      = [[Wreckage - Tonbo Type Warplane MkIII]],
+	      blocking         = true,
 	      category         = [[corpses]],
-	      damage           = 243,
+	      damage           = 162,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
-	      featurereclamate = [[SMUDGE01]],
 	      footprintX       = 2,
 	      footprintZ       = 2,
-	      height           = [[4]],
-	      hitdensity       = [[100]],
-	      metal            = 60,
-	      object           = [[bgenericwreckage.s3o]],
+	      metal            = 67,
+	      object           = [[wrecks/brocketplanemkiiiwreck.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
-	      seqnamereclamate = [[TREE1RECLAMATE]],
-	      world            = [[All Worlds]],
+	      reclaimTime      = 1800,
 	    },
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Rocket Plane]],
+	      description      = [[Debris - Tonbo Type Warplane MkIII]],
 	      blocking         = false,
 	      category         = [[heaps]],
-	      damage           = 162,
+	      damage           = 81,
 	      energy           = 0,
-	      featurereclamate = [[SMUDGE01]],
 	      footprintX       = 2,
 	      footprintZ       = 2,
-	      height           = [[4]],
-	      hitdensity       = [[100]],
-	      metal            = 30,
+	      metal            = 33,
 	      object           = [[b2x2heap.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
-	      seqnamereclamate = [[TREE1RECLAMATE]],
-	      world            = [[All Worlds]],
+	      reclaimTime      = 900,
 	    },
 	
 	  },
