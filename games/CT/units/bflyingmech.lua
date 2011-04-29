@@ -68,25 +68,31 @@
 	
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
+	      onlyTargetCategory = [[GUNSHIP]],
 	    },
 
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
+	      onlyTargetCategory = [[GUNSHIP]],
+	    },
+
+	    {
+	      def                = [[AA]],
+	      badTargetCategory  = [[GUNSHIP]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 
 	    {
 	      def                = [[AA]],
 	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
-	    },
-
-	    {
-	      def                = [[AA]],
-	      badTargetCategory  = [[GUNSHIP]],
+	      mainDir            = [[0 0 1]],
+	      maxAngleDif        = 180,
 	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 	
