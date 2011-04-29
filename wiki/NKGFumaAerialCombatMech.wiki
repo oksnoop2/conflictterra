@@ -46,17 +46,19 @@ But I soon decided that such a design would both be too blatantly a rip-off, and
 ||[http://downloads.khinsider.com/album_images/1433-johumgkifg.jpg]||
 ||The spacecraft from Einhänder.||
 
-Initially the plan was to have the mech's parts move and shift for a very animated appearance.  It was going to have landing and flying positions for its body and engines, and I think it have helped really bring it alive.  As usual, the reality was that I could not figure out how to do this.  To this day it sits very static, the only moving parts being the gun barrels of course.  The addition of LUPs did help bring a good deal of life to the unit.
+The plan was to have the mech's parts move and shift for a very animated appearance.  It was going to have landing and flying positions for its body and engines, and I thought it would have helped really bring it alive.  For the longest time, the way to do this eluded me, until Knorke revealed the exceedingly easy way to achieve this.  I quickly scripted in the animations, and brought the Fuma finally to life.
 
 ||[http://img546.imageshack.us/img546/9495/fumalanded.png]||
-||The Fuma in its planned "landed" form.||
+||The Fuma in its older, planned "landed" form.||
 
-An example of one of these poses is the "landed" form, pictured above.  The mech's engines would have rotated and the fuselage laid on its "back", the large back-mounted engine folding upwards over the head.  While this is a somewhat odd position for the unit, it was conceived in the days of making the mechs actually "work" in a real-world sense.  While that sensibility is still present, it is much weaker when in the face of getting units in-game and fun/memorable.
+An example of one of these early, planned poses is the "landed" form, pictured above.  The mech's engines would have rotated and the fuselage laid on its "back", the large back-mounted engine folding upwards over the head.  While this is a somewhat odd position for the unit, it was conceived in the days of making the mechs actually "work" in a real-world sense.  While that sensibility is still present, it is much weaker when in the face of getting units in-game and fun/memorable.
 
-||[http://img545.imageshack.us/img545/8831/fumaflying.png]||
-||The Fuma in its planned forward "flying" form.||
+Due to some of the limitations of the way to do this, I could only work with a landed and flying animation.  I skipped over the "landed" form and decided it would keep its old "neutral" state while it was on the ground.  However, when it took to the air, I could really have fun.
 
-When the Fuma was to be flying, it would sort of lean forward headfirst, with the engines and guns rotating to accommodate this.  This pose was a more aggressive one, and I think would look well to make the units seem more alive.  It is still my desire to someday put these different poses into the unit, but that day may not come for a long time, not until someone can tell me how to do it.
+||[http://img35.imageshack.us/img35/448/fumanewpose.png]||
+||The Fuma in its forward "flying" form.||
+
+When the Fuma is flying, it leans forward headfirst, with the engines rotating to accommodate this.  The back-mounted "tailfin" also rotates forward.  This pose is a more aggressive one, and I think works well to make the unit seem more alive.
 
 ----
 
