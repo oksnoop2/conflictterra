@@ -22,7 +22,7 @@ local bminer = {
                 [[bairturret]],
                 [[blandturret]],
 --                [[blandnavalturret]],
-                [[bmechturret]],
+--                [[bmechturret]],
         },
 
         buildTime           = 10,
