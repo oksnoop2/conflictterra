@@ -42,7 +42,10 @@ The overall design obviously carried over strongly.  A central "body", surrounde
 
 I did however give the Hattori a single, central weapon.  Fired from the front "nozzle", the powerful beam weapon can wreak havoc on the enemy.
 
-Originally, before we had LUPs in the game, the model was as it is in Wings3D.  After we added LUPs effects into the game, the Hattori, like the [http://code.google.com/p/conflictterra/wiki/NKGFumaAerialCombatMech Fuma Aerial Combat Mech], was given thruster effects to help realize the image of the unit.  This has helped a lot.  Also like the [http://code.google.com/p/conflictterra/wiki/NKGFumaAerialCombatMech Fuma Aerial Combat Mech], movement of the thruster "limbs" is planned into the unit, with various movements meant to convey different types of movements.  This is not yet implemented, due to limits in scripting prowess, but we hope someday it will be so.
+Originally, before we had LUPs in the game, the model was as it is in Wings3D.  After we added LUPs effects into the game, the Hattori, like the [http://code.google.com/p/conflictterra/wiki/NKGFumaAerialCombatMech Fuma Aerial Combat Mech], was given thruster effects to help realize the image of the unit.  This has helped a lot.  Also like the [http://code.google.com/p/conflictterra/wiki/NKGFumaAerialCombatMech Fuma Aerial Combat Mech], movement of the thruster "limbs" was planned into the unit, with various movements meant to convey different types of movements.  This was finally implemented after Knorke revealed the painfully easy way to do this.  It really brought the unit to life, allowing it to shift into a much more reasonable and "battle-ready" position.
+
+||[http://img861.imageshack.us/img861/2103/hattorinewpose.png]||
+||The Hattori in its flying mode.||
 
 The unit has had a long history of being overpowered.  Indeed, in early playtesting it was so powerful that if a player could secure a handful of them, victory was almost guaranteed.  Originally a general-purpose unit, the Hattori was later reconditioned to be specifically an anti-Cruiser unit.  The weapon was restricted from targeting other unit types, and deals high damage to cruisers.  This was done to help steer the unit into a specific role, alongside its weaker cousin, the [http://code.google.com/p/conflictterra/wiki/NKGFumaAerialCombatMech Fuma Aerial Combat Mech].
 
