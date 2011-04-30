@@ -29,8 +29,7 @@
 	local SIG_AIM_SEC = 2
 	local walk_go = 4
 	local walk_stop = 8
-        local orc_machinegun_flash = SFX.CEG
-        local orc_machinegun_muzzle = SFX.CEG + 1
+        local ct_missile_smokecloud = SFX.CEG
 	
 	function script.Create()
 	Turn( flare1, x_axis, 1.55, 2 )
@@ -175,15 +174,13 @@
 	end
 	
 	function script.FireWeapon1()
-		EmitSfx(flare1, orc_machinegun_flash)
-		EmitSfx(flare1, orc_machinegun_muzzle)
+		EmitSfx(flare1, ct_missile_smokecloud)
 	end
 
 	function script.FireWeapon2()
-		EmitSfx(flare2, orc_machinegun_flash)
-		EmitSfx(flare2, orc_machinegun_muzzle)
+		EmitSfx(flare2, ct_missile_smokecloud)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
-		Sleep(30)
+		return 0
 	end

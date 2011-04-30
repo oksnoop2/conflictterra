@@ -31,8 +31,7 @@
 	local SIG_AIM_SEC = 2
 	local SIG_AIM_THIR = 4
 	local SIG_AIM_FOUR = 8
-        local orc_machinegun_flash = SFX.CEG
-        local orc_machinegun_muzzle = SFX.CEG + 1
+        local ct_missile_smokecloud = SFX.CEG
 	
 	function script.Create()
 	end
@@ -169,10 +168,12 @@
 		if currBarrel2 == 4 then currBarrel2 = 1 end
 	end
 
-	function script.FireWeapon3()      	       
+	function script.FireWeapon3()
+		EmitSfx(leftpod, ct_missile_smokecloud)
 	end
 
-	function script.FireWeapon4()      	       
+	function script.FireWeapon4()
+		EmitSfx(rightpod, ct_missile_smokecloud)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)

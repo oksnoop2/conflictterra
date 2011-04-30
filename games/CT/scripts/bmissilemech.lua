@@ -25,40 +25,41 @@
 	local SIG_AIM_SEC = 2
 	local walk_go = 4
 	local walk_stop = 8
-        local orc_machinegun_flash = SFX.CEG
-        local orc_machinegun_muzzle = SFX.CEG + 1
+        local ct_missile_smokecloud = SFX.CEG
 	
 	function script.Create()
 	       
 	end
 
 ---------- Sprint code
-local SIG_SPRINT = 16
-local speedFactor = 4
-local myOrigSpeed = UnitDefs[unitDefID].speed
-local myOrigAcc = UnitDefs[unitDefID].maxAcc
-local myOrigTurnRate = UnitDefs[unitDefID].turnRate
+	local SIG_SPRINT = 16
+	local speedFactor = 4
+	local myOrigSpeed = UnitDefs[unitDefID].speed
+	local myOrigAcc = UnitDefs[unitDefID].maxAcc
+	local myOrigTurnRate = UnitDefs[unitDefID].turnRate
 
-local function SprintEffects()
-	Signal(SIG_SPRINT)
-	SetSignalMask(SIG_SPRINT)
-end
-function StartSprint()
-    Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {
-        maxSpeed    = myOrigSpeed*speedFactor,
-        accRate     = myOrigAcc*speedFactor,
-        turnRate    = myOrigTurnRate*speedFactor,
-        })
-	StartThread(SprintEffects)
-end
-function StopSprint()
-    Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {
-        maxSpeed    = myOrigSpeed,
-        accRate     = myOrigAcc,
-        turnRate    = myOrigTurnRate,
-    })
-    Signal(SIG_SPRINT)
-end
+	local function SprintEffects()
+		Signal(SIG_SPRINT)
+		SetSignalMask(SIG_SPRINT)
+	end
+
+	function StartSprint()
+		Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {
+        		maxSpeed    = myOrigSpeed*speedFactor,
+        		accRate     = myOrigAcc*speedFactor,
+        		turnRate    = myOrigTurnRate*speedFactor,
+        	})
+		StartThread(SprintEffects)
+	end
+
+	function StopSprint()
+		Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {
+			maxSpeed    = myOrigSpeed,
+			accRate     = myOrigAcc,
+			turnRate    = myOrigTurnRate,
+    		})
+    		Signal(SIG_SPRINT)
+	end
 ---------- End sprint code
 
 	local function walk()
@@ -159,13 +160,11 @@ end
 	end
 	
 	function script.FireWeapon1()
-		EmitSfx(flare1, orc_machinegun_flash)
-		EmitSfx(flare1, orc_machinegun_muzzle)	
+		EmitSfx(flare1, ct_missile_smokecloud)
 	end
 
 	function script.FireWeapon2()
-		EmitSfx(flare2, orc_machinegun_flash)
-		EmitSfx(flare2, orc_machinegun_muzzle)	
+		EmitSfx(flare2, ct_missile_smokecloud)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)

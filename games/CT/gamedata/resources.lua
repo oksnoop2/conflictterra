@@ -52,6 +52,7 @@
 				ct_missiletail_side_big                 = 'ct_missiletail_side_big.png',
 				ct_smoketrail                 = 'ct_smoketrail.png',
 				ct_binderbeam_side                 = 'ct_binderbeam_side.png',
+				ct_missile_smokecloud_side                 = 'ct_missile_smokecloud_side.png',
 			},
 		}
 	}

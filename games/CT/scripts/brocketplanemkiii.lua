@@ -23,8 +23,7 @@
 
 	--signals
 	local SIG_AIM = 1
-        local orc_machinegun_flash = SFX.CEG
-        local orc_machinegun_muzzle = SFX.CEG + 1
+        local ct_missile_smokecloud = SFX.CEG
 	
 	function script.Create()
 
@@ -73,23 +72,19 @@
 	
 	function script.Shot1()
 		if currBarrel == 1 then
-			EmitSfx(flare2, orc_machinegun_flash)
-			EmitSfx(flare2, orc_machinegun_muzzle)
+			EmitSfx(flare2, ct_missile_smokecloud)
 			Hide(missile2)	
 		end
 		if currBarrel == 2 then
-			EmitSfx(flare3, orc_machinegun_flash)
-			EmitSfx(flare3, orc_machinegun_muzzle)	
+			EmitSfx(flare3, ct_missile_smokecloud)
 			Hide(missile3)
 		end
 		if currBarrel == 3 then
-			EmitSfx(flare4, orc_machinegun_flash)
-			EmitSfx(flare4, orc_machinegun_muzzle)	
+			EmitSfx(flare4, ct_missile_smokecloud)
 			Hide(missile4)
 		end
 		if currBarrel == 4 then
-			EmitSfx(flare1, orc_machinegun_flash)
-			EmitSfx(flare1, orc_machinegun_muzzle)	
+			EmitSfx(flare1, ct_missile_smokecloud)
 			Hide(missile1)
 		end
 		currBarrel = currBarrel + 1
