@@ -51,9 +51,8 @@
 	local walk_stop = 16
 	local jumpjet_SIG = 32
 
-        local orc_machinegun_flash_big = SFX.CEG
-        local orc_machinegun_muzzle_big = SFX.CEG + 1
-	local jumpjetsfx = SFX.CEG + 2
+        local ct_cannon_narrow = SFX.CEG
+	local jumpjetsfx = SFX.CEG + 1
 	
 	function script.Create()
 		Turn(llaser, x_axis, -0.5, 100)
@@ -300,26 +299,22 @@
 	end
 	
 	function script.FireWeapon1()
-	       Sleep(30)
 	end
 
 	function script.FireWeapon2()
-	       Sleep(30)
 	end
 
 	function script.FireWeapon3()
 		if currBarrel == 1 then
-			EmitSfx(flare2, orc_machinegun_flash_big)
-			EmitSfx(flare2, orc_machinegun_muzzle_big)	
+			EmitSfx(flare2, ct_cannon_narrow)
 		end
 		if currBarrel == 2 then
-			EmitSfx(flare1, orc_machinegun_flash_big)
-			EmitSfx(flare1, orc_machinegun_muzzle_big)	
+			EmitSfx(flare1, ct_cannon_narrow)
 		end
 		currBarrel = currBarrel + 1
 		if currBarrel == 3 then currBarrel = 1 end
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
-		Sleep(30)
+		return 0
 	end

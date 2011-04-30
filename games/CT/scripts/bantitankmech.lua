@@ -28,7 +28,7 @@
 	local SIG_AIM = 1
 	local walk_go = 2
 	local walk_stop = 4
-        local ct_cannon_smoke = SFX.CEG
+        local ct_cannon_narrow = SFX.CEG
 	
 	function script.Create()
 	       
@@ -141,10 +141,10 @@
 	
 	function script.Shot1()
 		if currBarrel == 1 then
-			EmitSfx(flare2, ct_cannon_smoke)
+			EmitSfx(flare2, ct_cannon_narrow)
 		end
 		if currBarrel == 2 then
-			EmitSfx(flare1, ct_cannon_smoke)
+			EmitSfx(flare1, ct_cannon_narrow)
 		end
 		currBarrel = currBarrel + 1
 		if currBarrel == 2 then currBarrel = 2 end

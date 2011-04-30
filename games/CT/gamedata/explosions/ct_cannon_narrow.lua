@@ -1,6 +1,6 @@
 
 return {
-	["ct_cannon_smoke"] = {
+	["ct_cannon_narrow"] = {
 		bitmapmuzzleflame1 = {
 			ground             = true,
 			air                = true,
@@ -13,26 +13,11 @@ return {
 				dir                = [[dir]],
 				frontoffset        = 0,
 				fronttexture       = [[ct_cannon_tank]],
-				length             = 10,
+				length             = 15,
 				sidetexture        = [[ct_cannon_artillery_side]],
-				size               = 5,
+				size               = 3,
 				sizegrowth         = 1,
 				ttl                = 5,
-			},
-		},
-
-		cegfunction1 = {
-			ground             = true,
-			air                = true,
-			water              = true,
-			class              = [[CExpGenSpawner]],
-			count              = 1,
-			underwater         = 1,
-			properties = {
-				delay              = 4,
-				dir                = [[dir]],
-				damage             = 0,
-				explosionGenerator = [[custom:ct_smoke2]],
 			},
 		},
 

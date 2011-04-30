@@ -9,7 +9,7 @@
 
 	--signals
 	local SIG_AIM = 1
-		"custom:ct_missile_smokecloud",
+        local ct_missile_smokecloud = SFX.CEG
 	
 	function script.Create()
 	       

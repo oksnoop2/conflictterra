@@ -43,7 +43,7 @@
 	  sfxtypes            = {
 	
 	    explosiongenerators = {
-		"custom:ct_cannon_smoke",
+		"custom:ct_cannon_narrow",
 	    },
 	
 	  },

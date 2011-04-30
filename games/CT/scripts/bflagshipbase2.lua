@@ -32,8 +32,7 @@
 	local SIG_AIM_SEC = 2
 	local SIG_CRANE = 4
 
-        local orc_machinegun_flash = SFX.CEG
-        local orc_machinegun_muzzle = SFX.CEG + 1
+        local ct_cannon_narrow = SFX.CEG
 
 	function script.Create(unitID)
 		StartThread(bay_open)
@@ -186,18 +185,15 @@
 	end
 	
 	function script.FireWeapon1()
-		EmitSfx(flare1, orc_machinegun_flash)
-		EmitSfx(flare1, orc_machinegun_muzzle)
+		EmitSfx(flare1, ct_cannon_narrow)
 	end
 
 	function script.FireWeapon2()
 		if currBarrel == 1 then
-			EmitSfx(flare3, orc_machinegun_flash)
-			EmitSfx(flare3, orc_machinegun_muzzle)	
+			EmitSfx(flare3, ct_cannon_narrow)
 		end
 		if currBarrel == 2 then
-			EmitSfx(flare2, orc_machinegun_flash)
-			EmitSfx(flare2, orc_machinegun_muzzle)	
+			EmitSfx(flare2, ct_cannon_narrow)
 		end
 		currBarrel = currBarrel + 1
 		if currBarrel == 3 then currBarrel = 1 end

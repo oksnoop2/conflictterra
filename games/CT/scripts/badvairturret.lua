@@ -15,8 +15,7 @@
 	--signals
 	local SIG_AIM = 1
 	local SIG_AIM_SEC = 2
-        local orc_machinegun_flash = SFX.CEG
-        local orc_machinegun_muzzle = SFX.CEG + 1
+        local ct_cannon_narrow = SFX.CEG
 	
 	function script.Create()
 	       
@@ -71,12 +70,10 @@
 	
 	function script.FireWeapon1()
 		if currBarrel == 1 then
-			EmitSfx(flare2, orc_machinegun_flash)
-			EmitSfx(flare2, orc_machinegun_muzzle)	
+			EmitSfx(flare2, ct_cannon_narrow)
 		end
 		if currBarrel == 2 then
-			EmitSfx(flare1, orc_machinegun_flash)
-			EmitSfx(flare1, orc_machinegun_muzzle)	
+			EmitSfx(flare1, ct_cannon_narrow)
 		end
 		currBarrel = currBarrel + 1
 		if currBarrel == 3 then currBarrel = 1 end
@@ -84,17 +81,15 @@
 
 	function script.FireWeapon2()
 		if currBarrel2 == 1 then
-			EmitSfx(flare4, orc_machinegun_flash)
-			EmitSfx(flare4, orc_machinegun_muzzle)	
+			EmitSfx(flare4, ct_cannon_narrow)
 		end
 		if currBarrel2 == 2 then
-			EmitSfx(flare3, orc_machinegun_flash)
-			EmitSfx(flare3, orc_machinegun_muzzle)	
+			EmitSfx(flare3, ct_cannon_narrow)
 		end	
 		currBarrel2 = currBarrel2 + 1
 		if currBarrel2 == 3 then currBarrel2 = 1 end
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
-		Sleep(30)
+		return 0
 	end

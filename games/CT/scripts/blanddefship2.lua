@@ -28,8 +28,7 @@
 	local SIG_AIM_FOUR = 8
 	local SIG_AIM_FIVE = 16
 	local SIG_AIM_SIX = 32
-        local orc_machinegun_flash_big = SFX.CEG
-        local orc_machinegun_muzzle_big = SFX.CEG + 1
+        local ct_cannon_narrow = SFX.CEG
 	
 	function script.Create()
 	       
@@ -134,37 +133,27 @@
 	end
 	
 	function script.FireWeapon1()
-	       Sleep(30)
 	end
 
 	function script.FireWeapon2()
-	       Sleep(30)
 	end
 
 	function script.FireWeapon3()
-	EmitSfx(flare3, orc_machinegun_flash_big)
-	EmitSfx(flare3, orc_machinegun_muzzle_big)
-	       Sleep(30)
+		EmitSfx(flare3, ct_cannon_narrow)
 	end
 
 	function script.FireWeapon4()
-	EmitSfx(flare4, orc_machinegun_flash_big)
-	EmitSfx(flare4, orc_machinegun_muzzle_big)
-	       Sleep(30)
+		EmitSfx(flare4, ct_cannon_narrow)
 	end
 
 	function script.FireWeapon5()
-	EmitSfx(flare5, orc_machinegun_flash_big)
-	EmitSfx(flare5, orc_machinegun_muzzle_big)
-	       Sleep(30)
+		EmitSfx(flare5, ct_cannon_narrow)
 	end
 
 	function script.FireWeapon6()
-	EmitSfx(flare6, orc_machinegun_flash_big)
-	EmitSfx(flare6, orc_machinegun_muzzle_big)
-	       Sleep(30)
+		EmitSfx(flare6, ct_cannon_narrow)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
-		Sleep(30)
+		return 0
 	end
