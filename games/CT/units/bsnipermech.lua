@@ -45,6 +45,15 @@
 		},
 	  },
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:ct_cannon_artillery",
+		"custom:ct_cannon_artillery_side",
+	    },
+	
+	  },
+
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,
