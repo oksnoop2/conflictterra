@@ -6,8 +6,8 @@ unitDef = {
   amphibious                    = false,
   acceleration                  = 0,
   brakeRate                     = 0,
-  buildCostEnergy               = 600,
-  buildCostMetal                = 600,
+  buildCostEnergy               = 450,
+  buildCostMetal                = 450,
   builder                       = true,
 
   buildoptions                  = {
@@ -25,7 +25,7 @@ unitDef = {
 
 
   buildPic                      = [[btankcruiserfactory.png]],
-  buildTime                     = 45,
+  buildTime                     = 40,
   canMove                       = true,
   canPatrol                     = true,
   canStop                       = true,
@@ -88,10 +88,10 @@ unitDef = {
       footprintX       = 8,
       footprintZ       = 13,
       mass             = 2000,
-      metal            = 300,
+      metal            = 225,
       object           = [[wrecks/btankcruiserfactorywreck.s3o]],
       reclaimable      = true,
-      reclaimTime      = 9000,
+      reclaimTime      = 6600,
     },
 
 
@@ -105,10 +105,10 @@ unitDef = {
       footprintX       = 7,
       footprintZ       = 7,
       mass             = 750,
-      metal            = 150,
+      metal            = 112,
       object           = [[b7x7heap.s3o]],
       reclaimable      = true,
-      reclaimTime      = 4500,
+      reclaimTime      = 3300,
     },
 
 
