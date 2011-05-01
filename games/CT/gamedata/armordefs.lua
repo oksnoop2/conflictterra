@@ -104,7 +104,6 @@ local armorDefs = {
     "bvhsa",
     "bheavymissiletank",
     "bempcannon",
-    "bempcannonturret",
     "baatruck",
     "baatruckturret",
     "kdroneroller",

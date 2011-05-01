@@ -44,24 +44,6 @@ local morphDefs = {
     },
   },
  
-  bempcannon = {
-    {
-      into = 'bempcannonturret',
-      metal = 0,
-      energy = 0,
-      time = 3,
-    },
-  },
- 
-  bempcannonturret = {
-    {
-      into = 'bempcannon',
-      metal = 0,
-      energy = 0,
-      time = 3,
-    },
-  },
- 
   bsupplydepot = {
     {
       into = 'bsupplydepotmobile',
