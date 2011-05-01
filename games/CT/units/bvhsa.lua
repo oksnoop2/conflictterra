@@ -144,10 +144,17 @@
 		Aircraft = 100,
 		Ship = 100,
 		Sub = 100,
+
+		Meteor = 0,
+		Drone = 100,
+		Spare1 = 100,
+		Spare2 = 100,
+		Spare3 = 100,
 	      },
 	
 	      model                   = [[projectiles/bshell.s3o]],
 	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      impulseFactor           = 0,
 	      interceptedByShieldType = 1,
 	      range                   = 340,
 	      reloadtime              = 3,
