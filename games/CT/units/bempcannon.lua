@@ -94,7 +94,7 @@
 	      },
 	
 	      duration                = 0.1,
-	      energyPerShot           = 500,
+	      energyPerShot           = 1000,
 	      explosionGenerator      = [[custom:STUNNER_Expl]],
 	      heightMod               = 1,
 	      intensity               = 10,
@@ -103,7 +103,7 @@
 	      lineOfSight             = true,
 	      minIntensity            = 1,
 	      paralyzer               = true,
-	      paralyzeTime            = 10,
+	      paralyzeTime            = 5,
 	      range                   = 1000,
 	      reloadtime              = 10,
 	      rgbColor                = [[1 1 0]],
