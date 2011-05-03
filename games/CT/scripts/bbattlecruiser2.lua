@@ -98,21 +98,17 @@
 	end
 	
 	function script.FireWeapon1()
-	       Sleep(30)
 	end
 
 	function script.FireWeapon2()
-	       Sleep(30)
 	end
 
 	function script.FireWeapon3()
-	       Sleep(30)
 	end
 
 	function script.FireWeapon4()
-	       Sleep(30)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
-		Sleep(30)
+		return 0
 	end
