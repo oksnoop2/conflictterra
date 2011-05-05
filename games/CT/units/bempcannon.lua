@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bempcannon]],
 	  name                = [[Kizetsu Type Tank]],
-	  description         = [[EMP Cannon Tank - Tank armed with a long range, very slow firing EMP beam that can pierce shields. Must build ammo, 500 energy per shot. - Build Limit: 10]],
+	  description         = [[EMP Cannon Tank - Tank armed with a long range, very slow firing EMP beam that can pierce shields. Must build ammo, 1000 energy per shot.  Must be told to fire. - Build Limit: 10]],
 	  acceleration        = 0.02,
 	  brakeRate           = 0.03,
 	  buildCostEnergy     = 700,
@@ -19,6 +19,7 @@
           reclaimable         = false,
 	
 	  explodeAs           = [[BIG_UNIT]],
+	  fireState           = 0,
 	  footprintX          = 5,
 	  footprintZ          = 5,
 	  idleAutoHeal        = 0,
@@ -74,6 +75,7 @@
 	      name                    = [[Electromagnetic Beam]],
 	      areaOfEffect            = 512,
 	      collideFriendly         = false,
+	      commandfire             = true,
 	      craterMult              = 0.25,
 	
 	      damage                  = {
