@@ -55,7 +55,15 @@ local cloneDefs = {
     time = 15,
     metal = 120,
     energy = 120,
-  },    
+  },
+
+    ktridroneroller = {
+    into = 'ktridroneroller',
+    tech = 0,
+    time = 15,
+    metal = 400,
+    energy = 400,
+  },  
 }
 
 return cloneDefs

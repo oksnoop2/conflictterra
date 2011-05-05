@@ -1,11 +1,11 @@
 	unitDef = {
 	  unitname            = [[ktridroneroller]],
-	  name                = [[Roller Drone]],
-	  description         = [[Artillery troop ablity to fire from a great distance away.]],
+	  name                = [[Tri Roller Drone]],
+	  description         = [[Shield Generating Unit.]],
 	  acceleration        = 0.04,
 	  brakeRate           = 0.02,
-	  buildCostEnergy     = 250,
-	  buildCostMetal      = 250,
+	  buildCostEnergy     = 400,
+	  buildCostMetal      = 400,
 	  builder             = false,
 	  buildPic            = [[ktridroneroller.png]],
 	  buildTime           = 10,
@@ -25,7 +25,7 @@
 	  leaveTracks         = true,
 	  maneuverleashlength = [[640]],
 	  mass                = 90,
-	  maxDamage           = 2000,
+	  maxDamage           = 1000,
       maxSlope            = 18,
 	  maxVelocity         = 2,
       maxWaterDepth       = 22,
@@ -71,65 +71,110 @@
 	
 
 	
-	
-	  weapons             = {
-	
-	    {
-	      def                = [[Cannon]],
-	      badTargetCategory  = [[SWIM LAND SHIP HOVER]],
-	      mainDir            = [[0 0 1]],
-	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
-	    },
+ weapons             = {
+
+		--	{
+		--	  def                = [[AA]],
+		--	  onlyTargetCategory = [[GUNSHIP FIXEDWING]],
+		--	},
+ 
+            {
+              def = [[Shield]],
+            },
+			
+
 	
 	  },
-	
-	
-	  weaponDefs          = {
-	
-	    Cannon = {
-	      name                    = [[Artillery Cannon]],
-	      areaOfEffect            = 80,
+        
+
+        
+        
+          weaponDefs          = {
+			
+				    AA         = {
+	      name                    = [[Homing AA Missile]],
+	      areaOfEffect            = 48,
+	      avoidFriendly           = true,
+	      canattackground         = false,
+	      cylinderTargetting      = 1,
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		default = 200,
-		Cruiser = 200,
-		Building = 300,
-		Mech = 200,
-		Tank = 200,
-		Aircraft = 150,
-		Ship = 150,
-		Sub = 150,
+		default = 20,
+		Cruiser = 100,
+		Building = 20,
+		Mech = 20,
+		Tank = 20,
+		Aircraft = 100,
+		Ship = 20,
+		Sub = 20,
 
 		Meteor = 0,
-		Drone = 200,
-		Spare1 = 200,
-		Spare2 = 200,
-		Spare3 = 200,
+		Drone = 20,
+		Spare1 = 20,
+		Spare2 = 20,
+		Spare3 = 20,
 	      },
 	
-	   -- model                   = [[bshell.s3o]],
-		  cegtag                  = [[VULCANFX]],	     
-		  explosionGenerator      = [[custom:LRPC_Expl]],
+	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      flightTime              = 3,
 	      interceptedByShieldType = 1,
-	      myGravity               = 0.1,
-	      range                   = 1250,
-	      reloadtime              = 7.5,
-	      soundHit                = [[argh/Argh_MedExplosion]],
-	      soundStart              = [[argh/Argh_Whamsound]],
+	      lineOfSight             = true,
+	     -- model                   = [[baamissile.s3o]],
+	      range                   = 800,
+		  cegtag                  = [[VULCANFX]],
+	      reloadtime              = 3,
+	      smokedelay              = [[0.1]],
+	      smokeTrail              = false,
+	      soundHit                = [[argh/Argh_LargeExplosion]],
+	      soundStart              = [[evolutionRTS/aircraft_missile_01]],
+	      startVelocity           = 200,
+	      tolerance               = 22000,
+	      tracks                  = true,
+	      turnRate                = 30000,
 	      turret                  = true,
-	      weaponType              = [[Cannon]],
+	      weaponAcceleration      = 550,
+	      weaponTimer             = 5,
+	      weaponType              = [[MissileLauncher]],
 	      weaponVelocity          = 750,
 	    },
-	
-	  },
+			
+            Shield = {
+              name                    = [[Energy Shield]],
+              craterMult              = 0,
+        
+              damage                  = {
+                default = 10,
+              },
+        
+              exteriorShield          = true,
+              impulseFactor           = 0,
+              interceptedByShieldType = 1,
+              isShield                = true,
+              shieldAlpha             = 1,
+              shieldBadColor          = [[1 0 0]],
+              shieldGoodColor         = [[0 0 1]],
+			  shieldforce             =10,
+              shieldInterceptType     = 1,
+              shieldPower             = 800,
+              shieldPowerRegen        = 20,
+              shieldPowerRegenEnergy  = 20,
+              shieldRadius            = 500,
+              shieldRepulser          = true,
+              smartShield             = true,
+              visibleShield           = true,
+              visibleShieldHitFrames  = 4,
+              visibleShieldRepulse    = true,
+              weaponType              = [[Shield]],
+            },
+        
+          },
 	
 	
 	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Roller Drone]],
+	      description      = [[Wreckage - Tri Roller Drone]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 1125,
@@ -145,7 +190,7 @@
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Roller Drone]],
+	      description      = [[Debris - Tri Roller Drone]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 750,

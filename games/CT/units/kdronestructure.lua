@@ -14,6 +14,7 @@ unitDef = {
     [[kdroneengineer]],
 	[[kdronewarrior]],
 	[[kdroneroller]],
+    [[ktridroneroller]],
 	[[kdroneminer]],
   },
   

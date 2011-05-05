@@ -9,6 +9,7 @@
 	local rflare1 = piece "rflare1"
 
 	local binderbeampiece = piece "binderbeam"
+	local binderbeampiece2 = piece "binderbeam2"
 
 	--signals
 	local SIG_AIM = 1
@@ -17,8 +18,10 @@
 
 	local function binderbeam()
 		Turn(binderbeampiece, y_axis, 1.5, 10)
+		Turn(binderbeampiece2, y_axis, 1.5, 10)
 		while (true) do
 			EmitSfx(binderbeampiece, ct_binderbeam)
+			EmitSfx(binderbeampiece2, ct_binderbeam)			
 			Sleep(1)
 		end
 	end

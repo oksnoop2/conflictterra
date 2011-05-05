@@ -107,6 +107,7 @@ local armorDefs = {
     "baatruck",
     "baatruckturret",
     "kdroneroller",
+	"ktridroneroller",
   },
 
   Aircraft = {
