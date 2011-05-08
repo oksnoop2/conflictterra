@@ -131,18 +131,6 @@
 	end
 	
 	function script.FireWeapon1()
-		if currBarrel == 1 then
-			EmitSfx(flare3, orc_machinegun_flash)
-			EmitSfx(flare3, orc_machinegun_muzzle)	
-		end
-		if currBarrel == 2 then
-			EmitSfx(flare2, orc_machinegun_flash)
-			EmitSfx(flare2, orc_machinegun_muzzle)	
-		end
-		if currBarrel == 2 then
-			EmitSfx(flare1, orc_machinegun_flash)
-			EmitSfx(flare1, orc_machinegun_muzzle)	
-		end
 		currBarrel = currBarrel + 1
 		if currBarrel == 2 then currBarrel = 2 end
 		if currBarrel == 3 then currBarrel = 3 end
@@ -150,18 +138,6 @@
 	end
 
 	function script.FireWeapon2()
-		if currBarrel2 == 1 then
-			EmitSfx(flare4, orc_machinegun_flash)
-			EmitSfx(flare4, orc_machinegun_muzzle)	
-		end
-		if currBarrel2 == 2 then
-			EmitSfx(flare5, orc_machinegun_flash)
-			EmitSfx(flare5, orc_machinegun_muzzle)	
-		end
-		if currBarrel2 == 2 then
-			EmitSfx(flare6, orc_machinegun_flash)
-			EmitSfx(flare6, orc_machinegun_muzzle)	
-		end
 		currBarrel2 = currBarrel2 + 1
 		if currBarrel2 == 2 then currBarrel2 = 2 end
 		if currBarrel2 == 3 then currBarrel2 = 3 end
