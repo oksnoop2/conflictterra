@@ -37,7 +37,7 @@
 	function script.StartBuilding()
 		Move(tdoor, z_axis, -150, 100)
 		Move(pod, y_axis, 5000)
-		Move(pad, y_axis, -1000)
+		Move(pad, y_axis, 5000)
 		WaitForMove(pod, y_axis)
 		Move(pod, y_axis, 0, 1000)
 		WaitForMove(pod, y_axis)
