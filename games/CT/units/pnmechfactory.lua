@@ -1,8 +1,8 @@
 unitDef = {
 
   unitname                      = [[pnmechfactory]],
-  name                          = [[Saito Class Cruiser Mech Factory]],
-  description                   = [[Produces combat and support mechs.  Can morph back into the Saito Class Cruiser.]],
+  name                          = [[PN Mech Factory]],
+  description                   = [[Mechamakemechs]],
   amphibious                    = false,
   acceleration                  = 0,
   brakeRate                     = 0,
@@ -12,16 +12,11 @@ unitDef = {
 
   buildoptions                  = {
 
-    [[bminer]],
-    [[bscoutmech]],
-    [[bbasicmech]],
-    [[bmissilemech]],
-    [[bantitankmech]],
-    [[bhovermech]],
-    [[bsiegemech]],
-
-    [[bflyingmech]],
-    [[bsnipermech]],
+    [[pnminer]],
+    [[pnaamech]],
+    [[pnjumpjetmech]],
+    [[pnlightmech]],
+    [[pnvlaunchmech]],
   },
 
 
@@ -33,10 +28,10 @@ unitDef = {
   canStop                       = true,
   canBeAssisted                 = false,
   category                      = [[SINK]],
-  collisionVolumeOffsets        = [[0 0 0]],
-  collisionVolumeScales         = [[256 100 272]],
-  collisionVolumeTest           = 1,
-  collisionVolumeType           = [[box]],
+--  collisionVolumeOffsets        = [[0 0 0]],
+--  collisionVolumeScales         = [[256 100 272]],
+--  collisionVolumeTest           = 1,
+--  collisionVolumeType           = [[box]],
   corpse                        = [[DEAD]],
   reclaimable                   = false,
 
@@ -44,7 +39,7 @@ unitDef = {
   energyUse                     = 0,
   explodeAs                     = [[LARGE_BUILDING]],
   footprintX                    = 16,
-  footprintZ                    = 17,
+  footprintZ                    = 16,
   idleAutoHeal                  = 0,
   mass                          = 275,
   maxDamage                     = 4500,
@@ -73,7 +68,7 @@ unitDef = {
 
   smoothAnim                    = true,
   workerTime                    = 1,
-  yardMap                       = [[oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc ccccccccccccccc]],
+  yardMap                       = [[cccccccccccccccc cccccccccccccccc cccccccccccccccc cccccccccccccccc cccccccccccccccc cccccccccccccccc cccccccccccccccc cccccccccccccccc cccccccccccccccc cccccccccccccccc cccccccccccccccc cccccccccccccccc cccccccccccccccc cccccccccccccccc cccccccccccccccc cccccccccccccccc]],
   script                        = [[pnmechfactory.lua]],
 
 
@@ -91,7 +86,7 @@ unitDef = {
       footprintZ       = 17,
       mass             = 2000,
       metal            = 300,
-      object           = [[wrecks/pnmechfactorywreck.s3o]],
+ --     object           = [[wrecks/pnmechfactorywreck.s3o]],
       reclaimable      = true,
       reclaimTime      = 9000,
     },
