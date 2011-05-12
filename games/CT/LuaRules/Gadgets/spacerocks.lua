@@ -35,7 +35,8 @@ local burnEffect1 = "firetrail2" -- CEG used for the meteor trail, needs to be v
 local slidespeed = 30
 local slidetime = 60	 --how long (in frames) a meteor can slide before exploding anyway
 local disappearOnUnits = false --should rocks that fall on units stay or disappear? staying rocks might cause the unit to become stuck.
-local debugtest = true
+local maxWaterDepth = -15		--(water is always at 0) how deep may the water be that meteors will appear above that spot or roll into it without disappearing?
+local debugtest = false
 local mapconfig_fn = Game.mapName .. "_res.lua"		--name of map config files
 ----------------------------------------------------------------------------------
 local meteors = {} -- meteor set 1==in flight, > 1 sliding on ground (time it is already sliding in frames)
@@ -108,7 +109,7 @@ local function Impact (meteorID)
 		if (math.abs (x-mx) > 3 or math.abs (z-mz) > 3) then return end --danger: depending on terrain and too high slidespeed, unit might jump between two positions and never come to rest
 	end
 	--	if (cp) then Spring.Echo ("has custom para") else Spring.Echo ("has NO custom para") end
-	if (h > 0 and (nearunits==nil or disappearOnUnits==false) and cp) then	--only leave a rock if the meteor landed on land and not too near units. otherwise just explode (so it does not block factories etc)	
+	if (h > maxWaterDepth and (nearunits==nil or disappearOnUnits==false) and cp) then	--only leave a rock if the meteor landed on land and not too near units. otherwise just explode (so it does not block factories etc)	
 --		Spring.Echo ("yo")
 --		Spring.Echo (cp)
 		--for i,v in ipairs(cp) do Spring.Echo(i .. "="..v) end
@@ -211,7 +212,7 @@ function randomMapSpot (groundtype, max_retry)
 		local x = math.random(Game.mapSizeX)
 		local z = math.random(Game.mapSizeZ)
 		local h = Spring.GetGroundHeight (x,z)
-		if (groundtype == LAND and h < 0 and retry < max_retry) then 
+		if (groundtype == LAND and h < maxWaterDepth and retry < max_retry) then 
 			spotOkay = false
 			retry = retry+1
 		else
