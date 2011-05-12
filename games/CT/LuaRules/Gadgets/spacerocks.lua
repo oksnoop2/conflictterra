@@ -35,7 +35,7 @@ local burnEffect1 = "firetrail2" -- CEG used for the meteor trail, needs to be v
 local slidespeed = 30
 local slidetime = 60	 --how long (in frames) a meteor can slide before exploding anyway
 local disappearOnUnits = false --should rocks that fall on units stay or disappear? staying rocks might cause the unit to become stuck.
-local maxWaterDepth = -15		--(water is always at 0) how deep may the water be that meteors will appear above that spot or roll into it without disappearing?
+local maxWaterDepth = -20		--(water is always at 0) how deep may the water be that meteors will appear above that spot or roll into it without disappearing?
 local debugtest = false
 local mapconfig_fn = Game.mapName .. "_res.lua"		--name of map config files
 ----------------------------------------------------------------------------------
