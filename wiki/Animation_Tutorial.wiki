@@ -66,10 +66,12 @@ To start off, here is an example from Conflict Terra; the animation script for t
         end
 }}}
 
-= Links =
+= Links to more documentation on Spring engine wiki =
 For a more detailed and technical explanation, these links will be much more helpful for truly understanding how Spring's animation works, and different options that are available. 
   * [http://springrts.com/wiki/Animation-LuaCallins Lua Callins]
   * [http://springrts.com/wiki/Animation-LuaCallouts Lua Callouts]
+  * [[http://springrts.com/wiki/Animation-LuaScripting Animation-LuaScripting]]
+
 
 = First Thing's First =
 Identify all of the pieces for your model.  *What are pieces?*  They're the different parts of your model that you cut up in Wings3D or Blender, and labeled and placed axis' to in Upspring.  For our tank, we have:
@@ -179,6 +181,7 @@ StartThread(RestoreAfterDelay)
 {{{
 return true
 }}}
- Lets engine know it's aiming???
+Allows the weapon to fire once the aiming animation has finished.
+Returning false blocks the weapon.
 
 Depending on your model, you can have the turret and barrel be the same, in which case just replace all instances of "barrel" with "turret". 
