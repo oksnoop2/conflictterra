@@ -70,7 +70,7 @@ To start off, here is an example from Conflict Terra; the animation script for t
 For a more detailed and technical explanation, these links will be much more helpful for truly understanding how Spring's animation works, and different options that are available. 
   * [http://springrts.com/wiki/Animation-LuaCallins Lua Callins]
   * [http://springrts.com/wiki/Animation-LuaCallouts Lua Callouts]
-  * [[http://springrts.com/wiki/Animation-LuaScripting Animation-LuaScripting]]
+  * [http://springrts.com/wiki/Animation-LuaScripting Animation-LuaScripting]
 
 
 = First Thing's First =
