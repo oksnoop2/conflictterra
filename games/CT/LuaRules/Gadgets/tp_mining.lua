@@ -357,9 +357,12 @@ function gadget:DrawScreen()
 --]]
 end
 
-function gadget:DrawWorldPreUnit()
+
+function gadget:DrawWorldPreUnit()	
 	local localplayerally = Spring.GetMyAllyTeamID ()
 	gl.LineWidth(5.0)
+	--[[
+	--marking dropoffs. works but is annoying esp with drone faction
 	for i in spairs(SYNCED.dropoffs) do
 		local unitally = Spring.GetUnitAllyTeam  (i)
 		if (unitally == localplayerally) then ----only mark our own dropoffs
@@ -371,7 +374,7 @@ function gadget:DrawWorldPreUnit()
 			end
 		end
 	end
-	
+	--]]
 	for i in spairs(SYNCED.miners) do
 			if (SYNCED.miners[i].alive == true and i ~= nil and SYNCED.miners[i] ~=nil) then
 				local unitally = Spring.GetUnitAllyTeam  (i)
