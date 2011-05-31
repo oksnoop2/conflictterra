@@ -72,7 +72,7 @@ unitDef = {
       description      = [[Wreckage - Ground Drone Structure]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 6375,
+      damage           = 1250,
       energy           = 0,
       featureDead      = [[DEAD2]],
       footprintX       = 8,
@@ -80,7 +80,7 @@ unitDef = {
       metal            = 200,
       object           = [[wrecks/kdronestructurewreck.s3o]],
       reclaimable      = true,
-      reclaimTime      = 6375,
+      reclaimTime      = 6000,
     },
 
 
@@ -88,14 +88,14 @@ unitDef = {
       description      = [[Debris - Ground Drone Structure]],
       blocking         = false,
       category         = [[heaps]],
-      damage           = 4250,
+      damage           = 625,
       energy           = 0,
       footprintX       = 8,
       footprintZ       = 8,
       metal            = 100,
       object           = [[b8x8heap.s3o]],
       reclaimable      = true,
-      reclaimTime      = 275,
+      reclaimTime      = 3000,
     },
 
 
