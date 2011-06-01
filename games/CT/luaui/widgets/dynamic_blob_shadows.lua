@@ -85,7 +85,7 @@ unitList = Spring.GetVisibleUnits(-1,3000,false)
 
 local cx,cy,cz = Spring.GetCameraPosition()
 
-  gl.Texture('LuaUI/Images/shadow.tga')
+  gl.Texture('LuaUI/Images/shadow.png')
   gl.DepthMask(false)
   gl.DepthTest(false)
   gl.Color(1,1,1,0.4)
