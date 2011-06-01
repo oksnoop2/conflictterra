@@ -1,0 +1,14 @@
+#summary CT Tumblebrush Basin
+#labels Phase-Guide
+
+= CT Tumblebrush Basin =
+
+  * CT Tumblebrush Basin is a large basin where fighting ignites most often in the middle of the map.  Success usually comes from the most aggressive player.  The flat bottom of the basin appears barren at first, but it is actually filled with cacti, flowering barrel cacti, tumbleweed, and even has a few hoodoo.  Some say a strange plant grows high in the hills there, a hybrid plant called tumblebrush!
+  * Supports up to 10 players
+  * 16 x 16
+  * [http://conflictterra.googlecode.com/files/CT_Tumblebrush_Basinv1.sd7 Download]
+
+||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20map.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20view1.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20cacti.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Tumblebrush%20Basin%20miners.png||
