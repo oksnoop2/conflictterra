@@ -3,7 +3,7 @@
 
 ----
 
-== CT Archway ==
+== Quick Facts ==
   * [http://conflictterra.googlecode.com/files/CT_Archwayv2.sd7 Download]
   * Supports up to 8 players
   * 16 x 16
