@@ -1,0 +1,14 @@
+#summary CT Eitbyeit Gorge
+#labels Phase-Guide
+
+= CT Eitbyeit Gorge =
+
+  * CT Eitbyeit Gorge is a small map intended for one on one battles.  The first map ever made with the "CT style", it sat as a testing map due to it's small size.  It was pulled out for one on one's when the desire was made known for a small map.  Large meteor supplies are in the middle mountain, but side-by-side mining is dangerous!
+  * Supports up to 2 players
+  * 8 x 8
+  * [http://conflictterra.googlecode.com/files/CT_Eitbyeit_Gorgev1.sd7 Download]
+
+||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Map.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Gorge.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Mining.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eitbyeit%20Deeper.png||
