@@ -1,21 +1,31 @@
 #summary CT Fishbone Ridge
 #labels Phase-Guide
 
-= Quick Facts =
+----
+
+== Quick Facts ==
   * [http://conflictterra.googlecode.com/files/CT_Fishbone_Ridgev7.sd7 Download]
   * Supports up to 13 players
   * 20 x 10
 
-= Description =
+----
+
+== Description ==
 CT Fishbone Ridge is an interesting map.  A spine-like ridge runs through the middle, with initial starting spots in small canyons jutting from the ridge.  Cacti and boulders stand in this desert battleground.
 
-= Tactics =
+----
+
+== Tactics ==
 Coming soon!
 
-= History =
+----
+
+== History ==
 Coming soon!
 
-= Gallery =
+----
+
+== Gallery ==
 ||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20Map.png||
 ||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20miners.png||
 ||http://conflictterra.googlecode.com/svn/wiki/images/Fishbone%20Ridge%20artillery%20mech.png||
