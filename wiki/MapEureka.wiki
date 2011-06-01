@@ -1,0 +1,14 @@
+#summary One-sentence summary of this page.
+#labels Phase-Guide
+
+= CT Eureka =
+
+  * CT Eureka is a relatively open map that is broken up by small hills.  Pine trees dot the lowlands, and an occasional boulder gives a strong alpine feeling to the map.
+  * Supports up to 8 players
+  * 16 x 16
+  * [http://conflictterra.googlecode.com/files/CT_Eurekav7.sd7 Download]
+
+||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20map.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20miners.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20snipers.png||
+||http://conflictterra.googlecode.com/svn/wiki/images/Eureka%20hojo%20and%20oukami.png||
