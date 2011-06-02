@@ -5,6 +5,7 @@
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#Note_for_Players Note for Players]
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#Conflict_Terra_Map_Policy Conflict Terra Map Policy]
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#Links Links]
+  * [http://code.google.com/p/conflictterra/wiki/MapInfo#"Official"_Conflict_Terra_Maps "Official" Conflict Terra Maps]
   * [http://code.google.com/p/conflictterra/wiki/MapInfo#Non-CT_Maps_with_Defined_Resource_Placement Non-CT Maps with Defined Resource Placement]
 
 = Note for Players =
@@ -24,6 +25,19 @@ Here are some links to some guides to help you make your own Conflict Terra map,
 
   * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks How to Add Starting Rocks to a Map]
   * [http://code.google.com/p/conflictterra/wiki/Conflict_Terra_Map_Making How to Make a Map in the Style of Conflict Terra's Maps]
+
+= "Official" Conflict Terra Maps =
+
+  * [http://code.google.com/p/conflictterra/wiki/MapEureka CT Eureka]
+  * [http://code.google.com/p/conflictterra/wiki/MapFishboneRidge CT Fishbone Ridge]
+  * [http://code.google.com/p/conflictterra/wiki/MapTumblebrushBasin CT Tumblebrush Basin]
+  * [http://code.google.com/p/conflictterra/wiki/MapRoundhouseCanyon CT Roundhouse Canyon]
+  * [http://code.google.com/p/conflictterra/wiki/MapArchway CT Archway]
+  * [http://code.google.com/p/conflictterra/wiki/MapEitbyeitGorge CT Eitbyeit Gorge]
+  * [http://code.google.com/p/conflictterra/wiki/MapConflictLuna CT Conflict Luna]
+  * [http://code.google.com/p/conflictterra/wiki/MapPathwinder CT Pathwinder]
+  * [http://code.google.com/p/conflictterra/wiki/MapThreeway CT Threeway]
+
 
 = Non-CT Maps with Defined Resource Placement =
 Besides placing resources via the metal map, Conflict Terra also contains configuration files for more detailed placement of resources.
