@@ -1,0 +1,47 @@
+[ct_big_hoodoo1]
+	{
+	world=All Worlds;
+	description=Giant Hoodoo;
+	category=arm_corpses;
+	object=ct_big_hoodoo1.s3o;
+        collisionVolumeOffsets = [[0 0 0]];
+        collisionVolumeScales  = [[160 400 160]];
+        collisionVolumeTest    = 1;
+        collisionVolumeType    = [[box]];
+	footprintx=10;
+	footprintz=10;
+	height=400;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=1000; 
+	mass=4000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_big_hoodoo2]
+	{
+	world=All Worlds;
+	description=Giant Hoodoo;
+	category=arm_corpses;
+	object=ct_big_hoodoo2.s3o;
+        collisionVolumeOffsets = [[0 0 0]];
+        collisionVolumeScales  = [[64 250 64]];
+        collisionVolumeTest    = 1;
+        collisionVolumeType    = [[box]];
+	footprintx=4;
+	footprintz=4;
+	height=250;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=1000; 
+	mass=4000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
