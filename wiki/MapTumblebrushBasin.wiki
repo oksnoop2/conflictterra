@@ -6,9 +6,10 @@
 ----
 
 == Quick Facts ==
-  * [http://conflictterra.googlecode.com/files/CT_Tumblebrush_Basinv2.sd7 Download]
+  * [http://conflictterra.googlecode.com/files/CT_Tumblebrush_Basinv3.sd7 Download]
   * Supports up to 10 players
   * 16 x 16
+  * Map Options:  Invert Height Map
 
 ----
 
