@@ -23,6 +23,7 @@
     * [http://code.google.com/p/conflictterra/wiki/Glossary Glossary]
   * Conflict Terra's Maps
     * [http://code.google.com/p/conflictterra/wiki/MapInfo Map Information]
+    * [http://code.google.com/p/conflictterra/wiki/MapOfficial Official Maps]
     * [http://code.google.com/p/conflictterra/wiki/MapsAndRocks How to Add Starting Rocks to a Map]
     * [http://code.google.com/p/conflictterra/wiki/Conflict_Terra_Map_Making How to Make a Map in the Style of Conflict Terra's Maps]
   * The Conflict Terra Way
