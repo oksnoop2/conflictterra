@@ -8,8 +8,9 @@
     * [http://code.google.com/p/conflictterra/wiki/StartsGuide2 Starter's Guide]
     * [http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor System]
     * [http://code.google.com/p/conflictterra/wiki/Adding_an_AI How to Add an AI]
-    * [http://code.google.com/p/conflictterra/wiki/How_to_update_Conflict_Terra_using_Rapid How to Update Conflict Terra Using Rapid]
-    * [http://code.google.com/p/conflictterra/wiki/How_to_Update_Conflict_Terra_using_zk How to Update Conflict Terra Using the Zero K Lobby]
+    * [http://code.google.com/p/conflictterra/wiki/How_to_update_Conflict_Terra_using_Rapid How to Install and Update Conflict Terra Using Rapid on Windows]
+    * [http://code.google.com/p/conflictterra/wiki/How_to_Update_Conflict_Terra_using_zk How to Install and Update Conflict Terra Using the Zero K Lobby on Windows]
+    * [http://code.google.com/p/conflictterra/wiki/RapidOnLinux How to Install and Update Conflict Terra on Linux]
   * Unit Guide
     * [http://code.google.com/p/conflictterra/wiki/NKGCruiserHub NKG Cruiser Hub]
     * [http://code.google.com/p/conflictterra/wiki/NKGBuildingHub NKG Building Hub]
