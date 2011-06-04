@@ -1,33 +1,28 @@
-#summary How to Update Conflict Terra using Rapid
+#summary How to Install and Update Conflict Terra using Rapid on Windows
 #labels Phase-Guide
 
 = Introduction =
 
-This will show you how to update Conflict Terra using Rapid.
+This will show you how to Install and Update Conflict Terra using Rapid on Windows
 
 --------------------------------------------------------------------------------------------------
 
+||First go to the download page.||
+||[http://img847.imageshack.us/img847/1197/downloadspage.png]||
 
-http://img535.imageshack.us/img535/5024/screenshot010u.png
+||Then download [http://conflictterra.googlecode.com/files/Spring.zip spring.zip].||
+||[http://img98.imageshack.us/img98/8476/screenshot011q.png]||
 
-=First go to the download page.=
+||Open the zip.||
+||[http://img833.imageshack.us/img833/7532/screenshot012s.png]||
 
-http://img98.imageshack.us/img98/8476/screenshot011q.png
+||Place files in the Spring folder in your Program Files.  It should be in Program Files (x86) if you're running a 64 bit OS.||
+||[http://img804.imageshack.us/img804/442/programfiles.png]||
 
-=Then download [http://conflictterra.googlecode.com/files/Spring.zip spring.zip].=
 
-http://img833.imageshack.us/img833/7532/screenshot012s.png
+||Run Rapid.bat||
+||[http://img510.imageshack.us/img510/4549/screenshot014f.png]||
 
-=Open the zip.=
 
-http://img258.imageshack.us/img258/3055/screenshot013w.png
-
-=Place files in the spring folder in program files.=
-
-http://img510.imageshack.us/img510/4549/screenshot014f.png
-
-=Run Rapid.bat=
-
-http://img694.imageshack.us/img694/5640/screenshot015x.png
-
-=If you see a progress bar in cmd you are on your way to having the latest version of Conflict Terra.=
+||If you see a progress bar in cmd you are on your way to having the latest version of Conflict Terra.||
+||[http://img694.imageshack.us/img694/5640/screenshot015x.png]||
