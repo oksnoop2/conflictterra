@@ -6,7 +6,7 @@
 ----
 
 == Quick Facts ==
-  * [http://conflictterra.googlecode.com/files/CT_Conflict_Lunav1.sd7 Download]
+  * [http://conflictterra.googlecode.com/files/CT_Conflict_Lunav2.sd7 Download]
   * Supports up to 6 players
   * 16 x 16
 
