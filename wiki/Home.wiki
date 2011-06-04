@@ -43,9 +43,9 @@
   * [http://conflictterra.googlecode.com/files/CT_Tumblebrush_Basinv3.sd7 Tumblebrush Basin Version 3]
   * [http://conflictterra.googlecode.com/files/CT_Roundhouse_Canyonv2.sd7 Roundhouse Canyon Version 2]
   * [http://conflictterra.googlecode.com/files/CT_Archwayv3.sd7 Archway Version 3]
-  * [http://conflictterra.googlecode.com/files/CT_Eitbyeit_Gorgev1.sd7 Eitbyeit Gorge Version 1]
+  * [http://conflictterra.googlecode.com/files/CT_Eitbyeit_Gorgev2.sd7 Eitbyeit Gorge Version 2]
   * [http://conflictterra.googlecode.com/files/CT_Conflict_Lunav1.sd7 Conflict Luna Version 1]
-  * [http://conflictterra.googlecode.com/files/CT_PathWinderv1.sd7 Pathwinder Version 1]
+  * [http://conflictterra.googlecode.com/files/CT_PathWinderv2.sd7 Pathwinder Version 2]
   * [http://conflictterra.googlecode.com/files/CT_Threewayv1.sd7 Threeway Version 1]
 
 = Links =
