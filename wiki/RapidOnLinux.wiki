@@ -28,7 +28,7 @@ rapid upgrade
 
 ----
 
-Alternatively, here is the content of our older guide to installing Conflict Terra on Linux:
+For Linux Distributions with apt-get (like Ubuntu, Debian, and Mint) you can just do this:
 
   * Open Command Line
   * Copy and Paste the lines below into the terminal.
