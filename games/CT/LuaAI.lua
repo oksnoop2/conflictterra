@@ -1,11 +1,16 @@
 local listOfLuaAIs = {
     {
         name = "KTAI",
-        desc = "knorkes TEST ai. CRAS HDANGER. safer to watch on a video: http://www.youtube.com/watch?v=aOtnOEOtVTM",
+        desc = "knorkes TEST ai. CRASH DANGER. safer to watch on a video: http://www.youtube.com/watch?v=aOtnOEOtVTM",
     },
     {
         name = "SchwarmAI",
-        desc = "drrrrrooooooones",
+        desc = "Knorke's AI for the drone's faction",
+    },
+	{
+        name = "YMSAI",
+        desc = "Yanom's Modified Schwarm AI",
     },
 }
+
 return listOfLuaAIs
