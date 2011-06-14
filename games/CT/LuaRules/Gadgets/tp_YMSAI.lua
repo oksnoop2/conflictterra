@@ -1,3 +1,5 @@
+--comment
+
 function gadget:GetInfo()
 
     return {
@@ -1039,11 +1041,9 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 			unitOnMission [unitID] = 30
 
 			if ( (unitName(unitID) ~= "kdroneengineer") and (unitName(unitID) ~= "kdroneminingtower") and (unitName(unitID) ~= "kdronestructure") and (unitName(unitID) ~= "kdroneairfactory") ) then
-
-				table.insert(teamsData[teamID].squads[1], unitID)
-
-				Spring.Echo("Unit " .. unitID .. " was assigned to squad 1 on team " .. teamID)
-
+				squadassign = math.random(1,4)
+				table.insert(teamsData[teamID].squads[squadassign], unitID) --random squad
+				Spring.Echo(squadassign)
 			end
 
 		
@@ -1255,7 +1255,7 @@ end
 --2         3        4   5   6   7   
 
 --playerID, cmdType, px, py, pz, label
-
+s
 function gadget:RecvLuaMsg(msg, playerID)
 
 	--Spring.Echo ("AI: look what i got " .. msg)
