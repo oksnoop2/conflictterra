@@ -14,7 +14,7 @@ function gadget:GetInfo()
 
         license = ";;;",
 
-        layer   = 82, --82 fo life?! --wtf is that?
+        layer   = 82, --82 fo life?! --wtf is that??
 
         version = "unversioned",
 
