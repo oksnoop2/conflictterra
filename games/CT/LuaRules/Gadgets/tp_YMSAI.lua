@@ -178,8 +178,6 @@ stages[9]= {
 
 	["unitNumbers"]={
 
-		["ktridroneroller"] =1,
-
 		["kdronewarrior"]=100, 
 
 		["kdiairdrone"]=100,
@@ -1255,7 +1253,7 @@ end
 --2         3        4   5   6   7   
 
 --playerID, cmdType, px, py, pz, label
-s
+
 function gadget:RecvLuaMsg(msg, playerID)
 
 	--Spring.Echo ("AI: look what i got " .. msg)
