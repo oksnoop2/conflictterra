@@ -102,7 +102,7 @@ stages[4]= {
 
 		["kdroneminingtower"]=4,
 
---		["kdroneminer"]=3, --spread fire drone
+		["kdroneminer"]=3, --AA drone
 
 		},
 
@@ -163,6 +163,8 @@ stages[8]= {
 		["kdronewarrior"] =10,
 
 		["ktriairdrone"] = 10,
+		
+		["kdroneminer"] = 8,
 
 		["kdroneminingtower"] = 17,
 
@@ -536,7 +538,7 @@ end
 
 myTeam = {} --enthält alle teamids für die wir spielen, [1]=3, [2]=7 etc
 
-teamsData = {} --to be used later, when new feature added
+teamsData = {} --stores data for each team. Example: the rosters of each team's squad live here.
 
 
 
@@ -626,13 +628,13 @@ function gadget:UnitDestroyed(unitID, unitDefID, unitTeam, attackerID)
 
 	unitOnMission[unitID] = nil
 
-	
-
 	if (  (isTeamCBM (unitTeam)) and (attackerID ~= nil)) then --it should ignore tower morphs now, because attackerID=nil when it's a morph
 
 		local goto_x, goto_y, goto_z = Spring.GetUnitPosition (unitID)
 
-		machTargetArea(unitTeam, goto_x, goto_z)
+		squadThatWillGo = math.random(1,4)
+
+		machTargetArea(unitTeam, goto_x, goto_z, squadThatWillGo) --just sq1 for now
 
 		Spring.Echo(attackerID)
 
@@ -750,25 +752,6 @@ end
 
 function machPatrol (teamID) --alle rushen mit
 
-	Spring.Echo ("machPatrol --- ACTIVE")
-
-	Spring.Echo ("machPatrol --- ACTIVE")
-
-	Spring.Echo ("machPatrol --- ACTIVE") 
-
-	Spring.Echo ("machPatrol --- ACTIVE") --- fill up display screen
-
-	Spring.Echo ("machPatrol --- ACTIVE")
-
-	Spring.Echo ("machPatrol --- ACTIVE")
-
-	Spring.Echo ("machPatrol --- ACTIVE")
-
-	Spring.Echo ("machPatrol --- ACTIVE")
-
-	Spring.Echo ("machPatrol --- ACTIVE")
-
-	Spring.Echo ("machPatrol --- ACTIVE")
 
 	local all_units = Spring.GetTeamUnits (teamID)
 
@@ -796,20 +779,20 @@ end
 
 
 
-function machTargetArea (teamID, x, z) --alle rushen mit
+function machTargetArea (teamID, x, z, squadGo) --alle rushen mit
 
-	Spring.Echo ("Targeting Area ---- Charge!")
+	Spring.Echo ("Squad " .. squadGo .. "of team " .. teamID .. " responding to incident at x=" .. x .. " z=" .. z)
 
 
 
-	local all_units = Spring.GetTeamUnits (teamID)
+--	local all_units = Spring.GetTeamUnits (teamID)
 
-	if (all_units == nil) then return end		
+	if (teamsData[teamID].squads[squadGo] == nil) then return end
 
-	for i,unitID in pairs(all_units) do
+	for i,unitID in pairs(teamsData[teamID].squads[squadGo]) do
 
 		if ( ( unitName (unitID) ~= "kdroneengineer" ) and (Spring.ValidUnitID (unitID)) ) then
-
+			
 			Spring.GiveOrderToUnit(unitID, CMD.FIGHT , {x, Spring.GetGroundHeight (x,z), z  }, {})
 
 			unitOnMission[unitID] = 60
