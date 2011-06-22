@@ -68,10 +68,10 @@ local function SpawnStartUnit(teamID)
 			and ((x>Game.mapSizeX/2) and "west" or "east")
 			or ((z>Game.mapSizeZ/2) and "north" or "south")
 		local unitID = Spring.CreateUnit(startUnit, x, y, z, facing, teamID)
-		if unitID then
+--		if unitID then
 			-- set the *team's* lineage root
-			Spring.SetUnitLineage(unitID, teamID, true)
-		end
+			--Spring.SetUnitLineage(unitID, teamID, true)
+--		end
 	end
 
 	-- set start resources, either from mod options or custom team keys
@@ -101,9 +101,9 @@ end
 
 
 function gadget:GameStart()
-	if getfenv(0).AllowUnsafeChanges then
-		getfenv(0).AllowUnsafeChanges("USE AT YOUR OWN PERIL")
-	end
+--	if getfenv(0).AllowUnsafeChanges then
+--		getfenv(0).AllowUnsafeChanges("USE AT YOUR OWN PERIL")
+--	end
 	local gaiaTeamID = Spring.GetGaiaTeamID()
 	for _,teamID in ipairs(Spring.GetTeamList()) do
 		if teamID~=gaiaTeamID then -- don't spawn a start unit for the Gaia team
@@ -113,7 +113,7 @@ function gadget:GameStart()
 		end
 	end
 	
-	if getfenv(0).AllowUnsafeChanges then
-		getfenv(0).AllowUnsafeChanges("Any string to turn it off")
-	end
+--	if getfenv(0).AllowUnsafeChanges then
+--		getfenv(0).AllowUnsafeChanges("Any string to turn it off")
+--	end
 end
