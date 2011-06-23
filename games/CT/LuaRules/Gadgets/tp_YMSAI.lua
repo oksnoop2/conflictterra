@@ -542,7 +542,7 @@ teamsData = {} --stores data for each team. Example: the rosters of each team's 
 
 
 
-local data = {} -- [teamID].threatmap etc
+-- local data = {} -- [teamID].threatmap etc
 
  
 
@@ -566,15 +566,23 @@ function gadget:Initialize()
 
 			myTeam[t] = t
 
-			teamsData[t] = { squads={} } --squads! 4 per team. a way of grouping units.
+			teamsData[t] = { squads={}, squadTargets={} } --squads! 4 per team. a way of grouping units.
 
 			teamsData[t].squads[1] = {}
-
+			
+			teamsData[t].squadTargets[1]={x=nil,z=nil}
+			
 			teamsData[t].squads[2] = {}
 
-			teamsData[t].squads[3] = {}
+			teamsData[t].squadTargets[2]={x=nil,z=nil}
 
-			teamsData[t].squads[4] = {}  
+			teamsData[t].squads[3] = {}
+			
+			teamsData[t].squadTargets[3]={x=nil,z=nil}
+
+			teamsData[t].squads[4] = {}
+			
+			teamsData[t].squadTargets[4]={x=nil,z=nil}  
 
 			Spring.Echo ("Schwarm AI will play for team  " .. t .." GetTeamLuaAI: " ..  Spring.GetTeamLuaAI(t))        
 
@@ -634,7 +642,7 @@ function gadget:UnitDestroyed(unitID, unitDefID, unitTeam, attackerID)
 
 		squadThatWillGo = math.random(1,4)
 
-		machTargetArea(unitTeam, goto_x, goto_z, squadThatWillGo) --just sq1 for now
+		machTargetArea(unitTeam, goto_x, goto_z, squadThatWillGo) 
 
 		Spring.Echo(attackerID)
 
@@ -779,13 +787,17 @@ end
 
 
 
-function machTargetArea (teamID, x, z, squadGo) --alle rushen mit
+function machTargetArea (teamID, x, z, squadGo) 
 
-	Spring.Echo ("Squad " .. squadGo .. "of team " .. teamID .. " responding to incident at x=" .. x .. " z=" .. z)
+	teamsData[teamID].squadTargets[squadGo].x = x
+	teamsData[teamID].squadTargets[squadGo].z = z
 
-
-
---	local all_units = Spring.GetTeamUnits (teamID)
+	for index,data in pairs(teamsData) do
+		for squad, targettable in pairs(data) do
+			Spring.Echo(targettable.x)
+			Spring.Echo(targettable.z)
+		end
+	end
 
 	if (teamsData[teamID].squads[squadGo] == nil) then return end
 

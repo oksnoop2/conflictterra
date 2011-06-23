@@ -77,7 +77,7 @@ local ktriairdrone = {
 	    Laser = {
 	      name                    = [[Burst Laser]],
 	      areaOfEffect            = 8,
-	      coreThickness           = 0.5,
+	      coreThickness           = 1,
 	      collideFriendly         = false,
 	      craterMult              = 0.25,
 	
@@ -97,7 +97,7 @@ local ktriairdrone = {
 		Spare3 = 50,
 	      },
 
-	      beamTime                = 0.2,
+	      beamTime                = 0.1,
 	      duration                = 5,
 	      energypershot           = 0,
 	      interceptedByShieldType = 1,
