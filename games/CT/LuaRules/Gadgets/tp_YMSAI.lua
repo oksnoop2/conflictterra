@@ -566,23 +566,21 @@ function gadget:Initialize()
 
 			myTeam[t] = t
 
-			teamsData[t] = { squads={}, squadTargets={} } --squads! 4 per team. a way of grouping units.
+			teamsData[t] = { squads={},  squadBusy={} } --squads! 4 per team. a way of grouping units.
 
-			teamsData[t].squads[1] = {}
 			
-			teamsData[t].squadTargets[1]={x=nil,z=nil}
+			teamsData[t].squads[1] = {}
+			teamsData[t].squadBusy[1] = 0
 			
 			teamsData[t].squads[2] = {}
-
-			teamsData[t].squadTargets[2]={x=nil,z=nil}
-
+			teamsData[t].squadBusy[2] = 0
+			
 			teamsData[t].squads[3] = {}
+			teamsData[t].squadBusy[3] = 0
 			
-			teamsData[t].squadTargets[3]={x=nil,z=nil}
-
 			teamsData[t].squads[4] = {}
-			
-			teamsData[t].squadTargets[4]={x=nil,z=nil}  
+			teamsData[t].squadBusy[4] = 0
+
 
 			Spring.Echo ("Schwarm AI will play for team  " .. t .." GetTeamLuaAI: " ..  Spring.GetTeamLuaAI(t))        
 
@@ -660,6 +658,15 @@ function gadget:GameFrame(frame)
 
 		if (unitOnMission[i] < 0) then unitOnMission[i] = 0 end
 
+	end
+	
+	for i,v in ipairs(teamsData) do
+		for count = 1,4 do
+			
+			v.squadBusy[count] = v.squadBusy[count] - 1
+			
+			if (v.squadBusy[count] < 0) then v.squadBusy[count] = 0 end
+		end
 	end
 
 
@@ -789,15 +796,6 @@ end
 
 function machTargetArea (teamID, x, z, squadGo) 
 
-	teamsData[teamID].squadTargets[squadGo].x = x
-	teamsData[teamID].squadTargets[squadGo].z = z
-
-	for index,data in pairs(teamsData) do
-		for squad, targettable in pairs(data) do
-			Spring.Echo(targettable.x)
-			Spring.Echo(targettable.z)
-		end
-	end
 
 	if (teamsData[teamID].squads[squadGo] == nil) then return end
 
