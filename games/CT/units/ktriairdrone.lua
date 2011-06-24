@@ -84,11 +84,11 @@ local ktriairdrone = {
 	      damage                  = {
 		Cruiser = 50,
 		Building = 25,
-		Mech = 50,
-		Tank = 50,
+		Mech = 30,
+		Tank = 30,
 		Aircraft = 50,
-		Ship = 50,
-		Sub = 50,
+		Ship = 30,
+		Sub = 30,
 
 		Meteor = 0,
 		Drone = 50,
