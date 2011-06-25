@@ -82,7 +82,7 @@ local ktriairdrone = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		Cruiser = 50,
+		Cruiser = 30,
 		Building = 25,
 		Mech = 30,
 		Tank = 30,
@@ -91,10 +91,10 @@ local ktriairdrone = {
 		Sub = 30,
 
 		Meteor = 0,
-		Drone = 50,
-		Spare1 = 50,
-		Spare2 = 50,
-		Spare3 = 50,
+		Drone = 30,
+		Spare1 = 30,
+		Spare2 = 30,
+		Spare3 = 30,
 	      },
 
 	      beamTime                = 0.1,
