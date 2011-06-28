@@ -566,20 +566,20 @@ function gadget:Initialize()
 
 			myTeam[t] = t
 
-			teamsData[t] = { squads={},  squadBusy={} } --squads! 4 per team. a way of grouping units.
-
+			teamsData[t] = { squads={} } --squads! 4 per team. a way of grouping units.
+			
 			
 			teamsData[t].squads[1] = {}
-			teamsData[t].squadBusy[1] = 0
+--			teamsData[t].squadBusy[1] = 0
 			
 			teamsData[t].squads[2] = {}
-			teamsData[t].squadBusy[2] = 0
+--			teamsData[t].squadBusy[2] = 0
 			
 			teamsData[t].squads[3] = {}
-			teamsData[t].squadBusy[3] = 0
+--			teamsData[t].squadBusy[3] = 0
 			
 			teamsData[t].squads[4] = {}
-			teamsData[t].squadBusy[4] = 0
+--			teamsData[t].squadBusy[4] = 0
 
 
 			Spring.Echo ("Schwarm AI will play for team  " .. t .." GetTeamLuaAI: " ..  Spring.GetTeamLuaAI(t))        
@@ -660,14 +660,14 @@ function gadget:GameFrame(frame)
 
 	end
 	
-	for i,v in ipairs(teamsData) do
-		for count = 1,4 do
-			
-			v.squadBusy[count] = v.squadBusy[count] - 1
-			
-			if (v.squadBusy[count] < 0) then v.squadBusy[count] = 0 end
-		end
-	end
+--	for i,v in ipairs(teamsData) do
+--		for count = 1,4 do
+--			
+--			v.squadBusy[count] = v.squadBusy[count] - 1
+--			
+--			if (v.squadBusy[count] < 0) then v.squadBusy[count] = 0 end
+--		end
+--	end
 
 
 
