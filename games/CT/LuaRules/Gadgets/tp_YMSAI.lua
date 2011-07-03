@@ -1,4 +1,5 @@
---Testing SVN
+--SVN TESTING....
+--TODO - goto line 307 and fix the system that doesn't make unit if you dont have enough.
 
 function gadget:GetInfo()
 
@@ -130,9 +131,9 @@ stages[6]= {
 
 	["unitNumbers"]={
 
-		["kdronestructure"] = 4,
+		["kdronestructure"] = 1,
 
-		["kairdronefactory"]=3,
+		["kairdronefactory"]=1,
 
 		},
 
@@ -303,6 +304,14 @@ if (all_units == nil) then return end
 			if (assigned >= amount) then break end
 
 			local canDo = canUnitBuildThis (unitName (unitID), name)
+			
+			--if ( (name == "kdroneminer") or (name == "kdroneminingtower")) then
+			--	Spring.Echo(name)
+			--end
+			
+			
+			-----was gonna add some "do we have enough materials to make this unit?" thing, but i figured another way to regulate spending - 
+			-----using the stages system.
 
 			if (canDo) then 
 
@@ -348,7 +357,7 @@ function canUnitBuildThis (parentName, childName)
 
 	----NOTICE: ON THE FOLLOWING LINE, I (YANOM) CHANGED THE RETURN FROM true TO false, TO DISABLE CLONING
 
-	if (parentName == childName and not (parentName == "kdronestructure" or parentName == "kairdronefactory")) then return false end--everything can clone itself, except the structure (disabled)
+	if (parentName == childName and not (parentName == "kdronestructure" or parentName == "kairdronefactory")) then return true end--everything can clone itself, except the structure (disabled)
 
 	if (parentName == "kdroneengineer" and childName == "kdronestructure") then return true end
 
@@ -642,7 +651,7 @@ function gadget:UnitDestroyed(unitID, unitDefID, unitTeam, attackerID)
 
 		machTargetArea(unitTeam, goto_x, goto_z, squadThatWillGo) 
 
-		Spring.Echo(attackerID)
+		--Spring.Echo(attackerID)
 
 	end
 
@@ -681,7 +690,7 @@ function gadget:GameFrame(frame)
 
 		local h, missing = getHighestCompleteStage (myTeam[t])
 
-		--Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
+		Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
 
 		if (missing) then
 
@@ -1034,7 +1043,7 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 			if ( (unitName(unitID) ~= "kdroneengineer") and (unitName(unitID) ~= "kdroneminingtower") and (unitName(unitID) ~= "kdronestructure") and (unitName(unitID) ~= "kdroneairfactory") ) then
 				squadassign = math.random(1,4)
 				table.insert(teamsData[teamID].squads[squadassign], unitID) --random squad
-				Spring.Echo("Unit " .. unitID .. " was assigned to squad " .. squadassign .. " on team" .. teamID)
+				--Spring.Echo("Unit " .. unitID .. " was assigned to squad " .. squadassign .. " on team" .. teamID)
 			end
 
 		
