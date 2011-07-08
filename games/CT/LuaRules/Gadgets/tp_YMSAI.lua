@@ -131,9 +131,9 @@ stages[6]= {
 
 	["unitNumbers"]={
 
-		["kdronestructure"] = 1,
+		["kdronestructure"] = 2,
 
-		["kairdronefactory"]=1,
+		["kairdronefactory"]=2,
 
 		},
 
@@ -147,7 +147,7 @@ stages[7]= {
 
 	["unitNumbers"]={
 
-		["kdroneminingtower"] = 12,
+		["kdronewarrior"] = 6,
 
 		},
 
@@ -161,13 +161,13 @@ stages[8]= {
 
 	["unitNumbers"]={
 
-		["kdronewarrior"] =10,
+		["kdronewarrior"] =5,
 
-		["ktriairdrone"] = 10,
+		["ktriairdrone"] = 5,
 		
-		["kdroneminer"] = 8,
+		["kdroneminer"] = 4,
 
-		["kdroneminingtower"] = 17,
+		["kdroneminingtower"] = 10,
 
 		},
 
@@ -175,19 +175,19 @@ stages[8]= {
 
 	}
 
-		
-
 stages[9]= {
 
 	["unitNumbers"]={
 
-		["kdronewarrior"]=100, 
+		["kdronewarrior"] =10,
 
-		["kdiairdrone"]=100,
+		["ktriairdrone"] = 10,
+		
+		["kdroneminer"] = 5,
 
-		["kdroneminingtower"]=40,
-
-
+		["kdroneminingtower"] = 12,
+		
+		["kdroneengineer"]=5
 
 		},
 
@@ -355,7 +355,7 @@ function canUnitBuildThis (parentName, childName)
 
   
 
-	----NOTICE: ON THE FOLLOWING LINE, I (YANOM) CHANGED THE RETURN FROM true TO false, TO DISABLE CLONING
+	
 
 	if (parentName == childName and not (parentName == "kdronestructure" or parentName == "kairdronefactory")) then return true end--everything can clone itself, except the structure (disabled)
 
@@ -457,7 +457,7 @@ function buildUnit (unitID, jobname)
 
 		Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {}, {}) --bauen
 
-		moveAway (unitID, 500)	--waypoint
+		moveAway (unitID, 500)	--this makes the kdronestructure move away! lol!
 
 		return
 
@@ -839,6 +839,8 @@ end
 function moveAway (unitID, r, keys)
 
 	local x,y,z = Spring.GetUnitPosition (unitID)
+	
+	
 
 	if (x and y and z) then
 
@@ -1048,7 +1050,7 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 
 		
 
-		if ((unitName (unitID) ~= "kdroneengineer") or (unitName (unitID) ~= "ktridroneroller")) then
+		if ((unitName (unitID) ~= "kdroneengineer") and (unitName (unitID) ~= "ktridroneroller")) then
 
 			local x = math.random(Game.mapSizeX)
 
