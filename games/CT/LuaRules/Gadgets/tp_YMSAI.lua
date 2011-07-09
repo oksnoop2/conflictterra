@@ -328,6 +328,14 @@ if (all_units == nil) then return end
 					assigned = assigned +1					
 
 					buildUnit (unitID, name)
+					
+					if (teamsData[teamID].unitsInProgress[name] == nil) then--not yet initialized!
+						teamsData[teamID].unitsInProgress[name] = 0 --happy now, Lua?
+					else
+						teamsData[teamID].unitsInProgress[name] = teamsData[teamID].unitsInProgress[name]+1
+					end
+					
+					--Spring.Echo(name .. "     " .. teamsData[teamID].unitsInProgress[name])
 
 					if (assigned >= amount) then break end
 
@@ -551,8 +559,6 @@ teamsData = {} --stores data for each team. Example: the rosters of each team's 
 
 
 
--- local data = {} -- [teamID].threatmap etc
-
  
 
 function gadget:Initialize() 
@@ -575,7 +581,7 @@ function gadget:Initialize()
 
 			myTeam[t] = t
 
-			teamsData[t] = { squads={} } --squads! 4 per team. a way of grouping units.
+			teamsData[t] = { squads={}, unitsInProgress={} } --squads! 4 per team. a way of grouping units.
 			
 			
 			teamsData[t].squads[1] = {}
@@ -690,7 +696,7 @@ function gadget:GameFrame(frame)
 
 		local h, missing = getHighestCompleteStage (myTeam[t])
 
-		Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
+		--Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
 
 		if (missing) then
 
@@ -733,22 +739,6 @@ end
 
 
 function machGo (teamID) --alle rushen mit
-
-	Spring.Echo ("machGO")
-
-	Spring.Echo ("machGO")
-
-	Spring.Echo ("machGO")
-
-	Spring.Echo ("machGO")
-
-	Spring.Echo ("machGO")
-
-	Spring.Echo ("machGO") --- fill up display screen
-
-	Spring.Echo ("machGO")
-
-	Spring.Echo ("machGO")
 
 	Spring.Echo ("machGO")
 
@@ -1046,11 +1036,25 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 				squadassign = math.random(1,4)
 				table.insert(teamsData[teamID].squads[squadassign], unitID) --random squad
 				--Spring.Echo("Unit " .. unitID .. " was assigned to squad " .. squadassign .. " on team" .. teamID)
+				
+				
+				
+				if (teamsData[teamID].unitsInProgress[unitName(unitID)] == nil) then--not yet initialized!
+					teamsData[teamID].unitsInProgress[unitName(unitID)] = 0 --happy now, Lua?
+				
+				elseif (teamsData[teamID].unitsInProgress[unitName(unitID)] < 0) then
+					teamsData[teamID].unitsInProgress[unitName(unitID)] = 0
+				
+				else
+					teamsData[teamID].unitsInProgress[unitName(unitID)] = teamsData[teamID].unitsInProgress[unitName(unitID)]-1
+				end
+				
+				--Spring.Echo(name .. "     " .. teamsData[teamID].unitsInProgress[name])
 			end
 
 		
 
-		if ((unitName (unitID) ~= "kdroneengineer") and (unitName (unitID) ~= "ktridroneroller")) then
+		if ((unitName (unitID) ~= "kdroneengineer") and (unitName (unitID) ~= "ktridroneroller")) then -- go some random place!
 
 			local x = math.random(Game.mapSizeX)
 
@@ -1059,6 +1063,8 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 			Spring.GiveOrderToUnit(unitID, CMD.FIGHT , {x, Spring.GetGroundHeight (x,z), z  }, {})
 
 		end
+		
+		
 
 	else
 
