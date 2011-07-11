@@ -42,7 +42,7 @@ local function SpawnResource (sx,sz)
 		Spring.Echo ("tp_resourcespawner: sx or sz was NIL in SpawnResource (sx,sz)")
 		return
 	end
-	Spring.Echo ("tp_resourcespawner: spawning resource at " .. sx ..":"..sz)
+	--Spring.Echo ("tp_resourcespawner: spawning resource at " .. sx ..":"..sz)
 	local sh = Spring.GetGroundHeight(sx, sz)
 	local res = Spring.CreateUnit(resource_name, sx, sh, sz, math.random(0,3), Spring.GetGaiaTeamID())
 	Spring.GiveOrderToUnit(res, CMD.ONOFF, { 0 }, {} )
