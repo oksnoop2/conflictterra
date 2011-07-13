@@ -1,4 +1,4 @@
---SVN TESTING....
+
 --TODO - goto line 307 and fix the system that doesn't make unit if you dont have enough.
 
 function gadget:GetInfo()
@@ -44,14 +44,12 @@ stages = {}
 --kdronewarrior kdronestructure kdroneengineer kairdronefactory kdroneminer
 
 
-
+--[Yanom's Questionable Edits] as of revision 1467 stages only applies to economy units and factories.
 stages[1]= {
 
 	["unitNumbers"]={
-
+		
 		["kdronestructure"]=1,
-
-		["kdroneengineer"]=2,
 
 		},
 
@@ -65,7 +63,7 @@ stages[2]= {
 
 	["unitNumbers"]={
 
-		["kdroneengineer"]=2,
+		["kdroneengineer"]=3,
 
 		["kdroneminingtower"]=2,
 
@@ -82,8 +80,8 @@ stages[3]= {
 	["unitNumbers"]={
 
 		["kdroneminingtower"]=3,
-
-		["kdronewarrior"]=3,
+		
+		["kdroneengineer"]=2,
 
 		},
 
@@ -99,11 +97,7 @@ stages[4]= {
 
 		["kairdronefactory"]=1,
 
-		["kdiairdrone"]=4,
-
 		["kdroneminingtower"]=4,
-
-		["kdroneminer"]=3, --AA drone
 
 		},
 
@@ -131,9 +125,9 @@ stages[6]= {
 
 	["unitNumbers"]={
 
-		["kdronestructure"] = 2,
+		["kdronestructure"] = 1,
 
-		["kairdronefactory"]=2,
+		["kairdronefactory"]=1,
 
 		},
 
@@ -146,8 +140,7 @@ stages[6]= {
 stages[7]= {
 
 	["unitNumbers"]={
-
-		["kdronewarrior"] = 6,
+			--nothing here, lol
 
 		},
 
@@ -161,12 +154,6 @@ stages[8]= {
 
 	["unitNumbers"]={
 
-		["kdronewarrior"] =5,
-
-		["ktriairdrone"] = 5,
-		
-		["kdroneminer"] = 4,
-
 		["kdroneminingtower"] = 10,
 
 		},
@@ -179,11 +166,6 @@ stages[9]= {
 
 	["unitNumbers"]={
 
-		["kdronewarrior"] =10,
-
-		["ktriairdrone"] = 10,
-		
-		["kdroneminer"] = 5,
 
 		["kdroneminingtower"] = 12,
 		
@@ -241,7 +223,7 @@ function stageComplete (teamID, stage)
 
 		--Spring.Echo (unitDefID)
 
-		local have = Spring.GetTeamUnitDefCount (teamID, unitDefID)
+		local have = Spring.GetTeamUnitDefCount(teamID, unitDefID)
 
 		local shouldHave = stage["unitNumbers"][name]
 
@@ -305,13 +287,7 @@ if (all_units == nil) then return end
 
 			local canDo = canUnitBuildThis (unitName (unitID), name)
 			
-			--if ( (name == "kdroneminer") or (name == "kdroneminingtower")) then
-			--	Spring.Echo(name)
-			--end
-			
-			
-			-----was gonna add some "do we have enough materials to make this unit?" thing, but i figured another way to regulate spending - 
-			-----using the stages system.
+			-----was gonna add some "do we have enough materials to make this unit?" thing
 
 			if (canDo) then 
 
@@ -329,14 +305,6 @@ if (all_units == nil) then return end
 
 					buildUnit (unitID, name)
 					
-					if (teamsData[teamID].unitsInProgress[name] == nil) then--not yet initialized!
-						teamsData[teamID].unitsInProgress[name] = 0 --happy now, Lua?
-					else
-						teamsData[teamID].unitsInProgress[name] = teamsData[teamID].unitsInProgress[name]+1
-					end
-					
-					--Spring.Echo(name .. "     " .. teamsData[teamID].unitsInProgress[name])
-
 					if (assigned >= amount) then break end
 
 				else
@@ -667,6 +635,7 @@ end
 
 function gadget:GameFrame(frame)
 
+
 	for i in pairs(unitOnMission) do
 
 		unitOnMission[i] = unitOnMission[i] -1
@@ -684,14 +653,23 @@ function gadget:GameFrame(frame)
 --		end
 --	end
 
+	
 
 
-	if (frame % 30 ~=0) then return end
-
-	--Spring.Echo ("läuft")
+	if (frame % 30 ~=0) then return end 
 
 	for _,t in pairs(myTeam) do
+	
+		if (frame % 450 == 0 ) then --every 15 seconds
+			local makeThis = {}
+			makeThis["kdronewarrior"] = 1
+			makeSomeUnits(t, makeThis)
+		end
 
+
+		--local all_units = Spring.GetTeamUnits (t)
+		
+		
 		--Spring.Echo ("SchwarmAI is playing for team " .. myTeam[t])		
 
 		local h, missing = getHighestCompleteStage (myTeam[t])
@@ -708,7 +686,7 @@ function gadget:GameFrame(frame)
 
 		makeSomeUnits (myTeam[t], missing)
 
-		undeployEmptyMiningTowers (myTeam[t])
+		
 
 		--if (not missing["kdronestructure"] and not missing["kairdronefactory"]) then
 
@@ -717,8 +695,8 @@ function gadget:GameFrame(frame)
 		--end
 
 		end
-
 		
+		undeployEmptyMiningTowers (myTeam[t])
 
 	--data = think (teamID, data[teamID]
 
@@ -787,9 +765,6 @@ function machPatrol (teamID) --alle rushen mit
 
 end
 
-
-
----yanom's added function is below
 
 
 
@@ -899,6 +874,7 @@ end
 function undeploy (unitID)
 
 	Spring.GiveOrderToUnit(unitID, 31210,{UnitDefNames["kdroneengineer"].id},{})
+	
 
 end
 
@@ -1037,19 +1013,6 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 				table.insert(teamsData[teamID].squads[squadassign], unitID) --random squad
 				--Spring.Echo("Unit " .. unitID .. " was assigned to squad " .. squadassign .. " on team" .. teamID)
 				
-				
-				
-				if (teamsData[teamID].unitsInProgress[unitName(unitID)] == nil) then--not yet initialized!
-					teamsData[teamID].unitsInProgress[unitName(unitID)] = 0 --happy now, Lua?
-				
-				elseif (teamsData[teamID].unitsInProgress[unitName(unitID)] < 0) then
-					teamsData[teamID].unitsInProgress[unitName(unitID)] = 0
-				
-				else
-					teamsData[teamID].unitsInProgress[unitName(unitID)] = teamsData[teamID].unitsInProgress[unitName(unitID)]-1
-				end
-				
-				--Spring.Echo(name .. "     " .. teamsData[teamID].unitsInProgress[name])
 			end
 
 		
