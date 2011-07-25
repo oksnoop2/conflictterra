@@ -1,5 +1,5 @@
+--TODO - line 636 - make it so paralyzed units don't try to be moved
 
---TODO - goto line 307 and fix the system that doesn't make unit if you dont have enough.
 
 function gadget:GetInfo()
 
@@ -11,7 +11,7 @@ function gadget:GetInfo()
 
         author  = "knorke and yanom, et al.",
 
-        date    = "Jun 2011",
+        date    = "g2011",
 
         license = ";;;",
 
@@ -267,6 +267,47 @@ end
 
 --braucht also ein inProgress array.
 
+function makeOneUnit (teamID, name)
+
+local all_units = Spring.GetTeamUnits (teamID)
+
+if (all_units == nil) then return end
+
+	for i,unitID in pairs(all_units) do
+
+		local canDo = canUnitBuildThis (unitName (unitID), name)
+
+		if (canDo) then 
+
+			local msg = unitID .. " can do it"
+
+			local wantDo = doesUnitWantBuildJob (unitID, name)
+
+			if (wantDo) then
+
+				msg = msg .. " and wants to do it!"
+
+			--job[name] = job[name] -1
+
+				buildUnit (unitID, name)
+				
+				break
+				
+			else
+				msg = msg .. " but is busy!"
+			end
+				--Spring.Echo (msg)
+		end
+end
+
+
+end
+
+
+
+
+
+
 function makeSomeUnits (teamID, job)
 
 local all_units = Spring.GetTeamUnits (teamID)
@@ -286,8 +327,7 @@ if (all_units == nil) then return end
 			if (assigned >= amount) then break end
 
 			local canDo = canUnitBuildThis (unitName (unitID), name)
-			
-			-----was gonna add some "do we have enough materials to make this unit?" thing
+		
 
 			if (canDo) then 
 
@@ -391,7 +431,7 @@ function doesUnitWantBuildJob (unitID, childname)
 
 	if (unitName (unitID) == "kdroneminingtower") then
 
-		if (#Spring.GetTeamUnitsByDefs (Spring.GetUnitTeam (unitID), {UnitDefNames["kdroneengineer"].id}) > 0) then return false end ---uhhh... wth is this? -yanom
+		if (#Spring.GetTeamUnitsByDefs (Spring.GetUnitTeam (unitID), {UnitDefNames["kdroneengineer"].id}) > 0) then return false end 
 
 	end
 
@@ -458,7 +498,7 @@ function buildUnit (unitID, jobname)
 		--unitOnMission[unitID] = true
 
 		--moveAway (unitID, 2000)
-
+		
 		unitOnMission[unitID] = 100
 
 		deployNearRes (unitID)
@@ -479,8 +519,7 @@ function buildUnit (unitID, jobname)
 
 		return
 
-	end	
-
+	end
 end
 
 
@@ -587,7 +626,7 @@ end
 
 
 
-function think (teamID, data)
+function think (teamID, data) --this is the most Lol function ever.
 
 	return data
 
@@ -598,7 +637,10 @@ end
 function gadget:UnitIdle(unitID, unitDefID, teamID)
 
 	unitOnMission[unitID] = nil
-
+	if ( unitName(unitID) == "kdronewarrior" ) then
+		moveAway (unitID, 3000) -- go skedattle off somewhere
+	end	
+		
 end
 
 
@@ -640,7 +682,12 @@ function gadget:GameFrame(frame)
 
 		unitOnMission[i] = unitOnMission[i] -1
 
-		if (unitOnMission[i] < 0) then unitOnMission[i] = 0 end
+		if (unitOnMission[i] < 0) then 
+			if (unitName(i) == "kdroneengineer") then
+				Spring.Echo("we has an engineer here!")
+				deployNearRes(i)
+			end
+		end
 
 	end
 	
@@ -653,38 +700,27 @@ function gadget:GameFrame(frame)
 --		end
 --	end
 
-	
-
-
 	if (frame % 30 ~=0) then return end 
 
 	for _,t in pairs(myTeam) do
 	
 		if (frame % 450 == 0 ) then --every 15 seconds
-			local makeThis = {}
-			makeThis["kdronewarrior"] = 1
-			makeSomeUnits(t, makeThis)
+			makeOneUnit(t, "kdroneengineer")
 		end
+		
+		undeployEmptyMiningTowers (myTeam[t])
 
 
 		--local all_units = Spring.GetTeamUnits (t)
-		
-		
 		--Spring.Echo ("SchwarmAI is playing for team " .. myTeam[t])		
-
-		local h, missing = getHighestCompleteStage (myTeam[t])
-
+		--local h, missing = getHighestCompleteStage (myTeam[t])
 		--Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
+		--if (missing) then
+		--	if (unitCount (myTeam[t], "kdroneengineer") < (missing["kdroneminingtower"] or 0) ) then
+		--		missing["kdroneengineer"] = (missing["kdroneengineer"] or 0) +  (missing["kdroneminingtower"] -unitCount (myTeam[t], "kdroneengineer"))
+		--	end
 
-		if (missing) then
-
-			if (unitCount (myTeam[t], "kdroneengineer") < (missing["kdroneminingtower"] or 0) ) then
-
-				missing["kdroneengineer"] = (missing["kdroneengineer"] or 0) +  (missing["kdroneminingtower"] -unitCount (myTeam[t], "kdroneengineer"))
-
-			end
-
-		makeSomeUnits (myTeam[t], missing)
+		--makeSomeUnits (myTeam[t], missing)
 
 		
 
@@ -694,16 +730,10 @@ function gadget:GameFrame(frame)
 
 		--end
 
-		end
+		--end
 		
-		undeployEmptyMiningTowers (myTeam[t])
-
-	--data = think (teamID, data[teamID]
-
-		--
-
 		
-
+		
 		--clonetest(myTeam[t])
 
 	end
@@ -914,7 +944,7 @@ end
 
 
 
-----------TICK TACK LOGIC (gets executed check every nth frame)------
+----------TICK TACK LOGIC (gets executed every frame)------
 
 function undeployEmptyMiningTowers (teamID)
 
