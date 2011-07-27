@@ -1,6 +1,6 @@
 local kdroneminer = {
 	name                = [[AA Cannon Drone]],
-	description         = [[This drone is armed with a flak cannon, making it ideal for destroying aircraft and cruisers.]],
+	description         = [[This drone is armed with an AA cannon, making it ideal for destroying aircraft and cruisers.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdroneminer.png]],
@@ -72,11 +72,11 @@ local kdroneminer = {
 	
 	      damage                  = {
 		default = 16,
-		Cruiser = 16,
+		Cruiser = 15,
 		Building =0,
 		Mech = 0,
 		Tank = 0,
-		Aircraft = 16,
+		Aircraft = 13,
 		Ship = 0,
 		Sub = 0,
 
@@ -104,7 +104,7 @@ local kdroneminer = {
 	      soundStart              = [[argh/Argh_heavy_machinegun]],
 	      turret                  = true,
 	      weaponType              = [[Cannon]],
-	      weaponVelocity          = 1500,
+	      weaponVelocity          = 3000,
 	    },
 	
 	  },
