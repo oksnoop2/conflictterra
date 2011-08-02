@@ -1,5 +1,5 @@
 --TODO - line 636 - make it so paralyzed units don't try to be moved
---TeStInG SvN!!!
+--testing SVN: 94032895342-890-45320584-032854-3208543-0285430-285-4302
 
 function gadget:GetInfo()
 
