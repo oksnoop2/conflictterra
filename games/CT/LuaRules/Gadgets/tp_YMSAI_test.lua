@@ -1,5 +1,5 @@
 --TODO - line 636 - make it so paralyzed units don't try to be moved
---testing SVN: 94032895342-890-45320584-032854-3208543-0285430-285-4302
+--testing SVN: 
 
 function gadget:GetInfo()
 
@@ -632,27 +632,6 @@ function think (teamID, data) --this is the most Lol function ever.
 
 end
 
-
-
-function gadget:UnitIdle(unitID, unitDefID, teamID)
-
-	unitOnMission[unitID] = nil
-	if ( unitName(unitID) == "kdronewarrior" ) then
-		moveAway (unitID, 3000) -- go skedattle off somewhere
-	end	
-		
-end
-
-
-
-	
-
-
-
-
-
-
-
 function gadget:UnitDestroyed(unitID, unitDefID, unitTeam, attackerID)
 
 	
@@ -700,7 +679,9 @@ function gadget:GameFrame(frame)
 			local energy = Spring.GetTeamResources (t, "energy")
 			
 			local unitsWeMake = round( metal/500, 0)
-			Spring.Echo(unitsWeMake)
+			for iii=1,unitsWeMake do
+				makeOneUnit(t, "kdronewarrior")
+			end
 		end
 		
 		--below here is the economy section! above it is the making war units.
@@ -1362,5 +1343,3 @@ else ------UNSYNCED--------
 --end
 
 end	--end unsynced
-
-
