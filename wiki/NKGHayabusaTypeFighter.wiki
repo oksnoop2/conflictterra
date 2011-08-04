@@ -1,0 +1,44 @@
+#summary Hayabusa Type Fighter
+#labels Phase-Guide
+
+WIP!
+
+[http://img405.imageshack.us/img405/6048/hattorititle.png]
+
+----
+
+== Role ==
+
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bfightermkii.png]||Fast, light fighter armed with two air cannons.||
+
+The Hayabusa Type Fighter fulfills one role and it fulfills well:  it is an air-superiority fighter.  Inexpensive, fast, and armed with a pair of aircraft-to-aircraft cannons, a squad of Hayabusa can make quick work of most aircraft.  Most players will find it prudent to have a handful of these units to help protect their airspace, and to possibly scout the enemy.  They are not the toughest aircraft out there, but they excel offensively.
+
+They are only effective against aircraft and the flying mechs.  They do little damage to cruisers, requiring the use of [http://code.google.com/p/conflictterra/wiki/NKGSuzakuTypeFighter Suzaku Type Fighter MkIIIs].  However, they do well when mixed in with the Suzaku Type Fighter MkIIIs because they will be able to counter any other air-superiority fighters.
+
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bfighter.lua Link to Unit Definition.  This will display its current stats.]||
+
+||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Aircraft||
+||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Strong Against Aircraft||
+|| ||Weak Against Cruisers||
+
+||Built From||[http://code.google.com/p/conflictterra/wiki/NKGHeikeClassCruiser Heike Class Cruiser Airport]||
+
+----
+
+== Story ==
+Coming soon!
+
+----
+
+== History ==
+The original fighter for the NKG was among the first units modeled and textured.  The initial design was an odd yet iconic one; it resembled the [http://en.wikipedia.org/wiki/Core_Fighter#FF-X7_Core_Fighter Core Fighter] from [http://en.wikipedia.org/wiki/Mobile_Suit_Gundam Mobile Suit Gundam], in addition to relying on the [http://en.wikipedia.org/wiki/Canard_(aeronautics) canard] wing design used in early aircraft.
+
+||[]||
+||The original texture for the fighter, before any real color scheme was picked out.||
+
+
+
+----
+
+== Name ==
+Named after the infamous [http://en.wikipedia.org/wiki/Hattori_Hanzō Hattori Hanzō] of the Hattori clan, the reason for giving this name was that the Hattori would be the ultimate in "special warfare".  Able to fly over any terrain, and deliver immense damage, the Hattori is much like the legends of its namesake.  The several Hattori Hanzōs of history have cultivated an immense cultural significance that persists to this day in [http://en.wikipedia.org/wiki/Hattori_Hanzo_(Kill_Bill) movies], [http://en.wikipedia.org/wiki/List_of_Samurai_Shodown_characters#Hanzo_Hattori video games], and [http://en.wikipedia.org/wiki/Path_of_the_Assassin comic books].
