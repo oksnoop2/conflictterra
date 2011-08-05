@@ -36,7 +36,16 @@ The original fighter for the NKG was among the first units modeled and textured.
 ||[]||
 ||The original texture for the fighter, before any real color scheme was picked out.||
 
+The first texture for the unit was among the first five textures I did for any units that would eventually be in CT.  Not yet deciding on a definitive color scheme, I purposely gave it a strong Core Fighter aesthetic just to see how it looked.  In the end, however, I was both not happy with it and not wanting to get too close to any particular mecha franchise in style.  After some time the color scheme for aircraft was decided to be a combination of light greys and white, and so the unit was retextured.
 
+||[]||
+||An example of early sketches for the design of the unit.||
+
+The bfighter proceeded to serve faithfully for a long time.  In time, however, I began to grow weary of the appearance of a lot of the aircraft for the NKG.  Eventually a massive overhaul of the aircraft began, and the bfighter couldn't escape it.
+
+Despite the iconic design of the fighter, it was decided it too would receive a remodeling.  The biggest reason for this was simply that the canard wing design is apparently not a very maneuverable one, and so it would be stupid for the design of the workhorse anti-aircraft fighter to not be agile, regardless of the fact that it would have no bearing on actual gameplay.
+
+However, finding a suitable replacement design was tough.  I tried looking for other unique aircraft designs in the real world, and didn't really find any that struck me as satsifying.  Ultimately I modeled a rather ordinary looking jet aircraft, incorporating a turbine on each wing and extra
 
 ----
 
