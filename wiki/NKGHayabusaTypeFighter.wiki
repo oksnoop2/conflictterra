@@ -1,7 +1,7 @@
 #summary Hayabusa Type Fighter
 #labels Phase-Guide
 
-[http://img818.imageshack.us/img818/592/hayabusale.png]
+[http://img163.imageshack.us/img163/592/hayabusale.png]
 
 ----
 
@@ -9,7 +9,7 @@
 
 ||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bfightermkii.png]||Fast, light fighter armed with two air cannons.||
 
-The Hayabusa Type Fighter fulfills one role and it fulfills well:  it is an air-superiority fighter.  Inexpensive, fast, and armed with a pair of aircraft-to-aircraft cannons, a squad of Hayabusa can make quick work of most aircraft.  Most players will find it prudent to have a handful of these units to help protect their airspace, and to possibly scout the enemy.  They are not the toughest aircraft out there, but they excel offensively.
+The Hayabusa Type Fighter MkII fulfills one role and it fulfills well:  it is an air-superiority fighter.  Inexpensive, fast, and armed with a pair of aircraft-to-aircraft cannons, a squad of Hayabusa can make quick work of most aircraft.  Most players will find it prudent to have a handful of these units to help protect their airspace, and to possibly scout the enemy.  They are not the toughest aircraft out there, but they excel offensively.
 
 They are only effective against aircraft and the flying mechs.  They do little damage to cruisers, requiring the use of [http://code.google.com/p/conflictterra/wiki/NKGSuzakuTypeFighter Suzaku Type Fighter MkIIIs].  However, they do well when mixed in with the Suzaku Type Fighter MkIIIs because they will be able to counter any other air-superiority fighters.
 
@@ -50,6 +50,6 @@ The overall look of the new model was strongly reminiscent of the earlier jet ai
 ----
 
 == Name ==
-The unit's original name was the Tori Type Fighter.  This was a painfully unoriginal name for the aircraft, as tori is the Japanese word for bird.  When the unit was remodeled and given a stylistic overhaul, along with the rest of the aircraft, it was decided to give it a new name.  Hayabusa is the Japanese word for falcon, a much more precise and intimidating name for the aircraft.  Unfortunately, a rather famous [http://en.wikipedia.org/wiki/Ryu_Hayabusa fictional ninja] shares the name Hayabusa, a character from the video game series' [http://en.wikipedia.org/wiki/Dead_or_Alive_(series) Dead or Alive] and [http://en.wikipedia.org/wiki/Ninja_Gaiden Ninja Gaiden].
+The unit's original name was the Tori Type Fighter.  This was a painfully unoriginal name for the aircraft, as tori is the Japanese word for bird.  When the unit was remodeled and given a stylistic overhaul, along with the rest of the aircraft, it was decided to give it a new name.  Hayabusa is the Japanese word for falcon, a much more precise and intimidating name for the aircraft.  Unfortunately, a rather famous [http://en.wikipedia.org/wiki/Ryu_Hayabusa fictional ninja] shares the name Hayabusa, a character from the video game series' [http://en.wikipedia.org/wiki/Dead_or_Alive_(series) Dead or Alive] and [http://en.wikipedia.org/wiki/Ninja_Gaiden Ninja Gaiden].  It's true, the unit was not named after the video game character.
 
-Its true, the unit was not named after the video game character.
+The unit was given the designation Mark 2, or MkII, because it was the second version of the unit.
