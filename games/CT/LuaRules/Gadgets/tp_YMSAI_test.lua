@@ -1,5 +1,4 @@
---TODO - line 636 - make it so paralyzed units don't try to be moved
---testing SVN: 
+--TODO - goto line 307 and fix the system that doesn't make unit if you dont have enough.
 
 function gadget:GetInfo()
 
@@ -11,7 +10,7 @@ function gadget:GetInfo()
 
         author  = "knorke and yanom, et al.",
 
-        date    = "2011",
+        date    = "Jun 2011",
 
         license = ";;;",
 
@@ -63,7 +62,7 @@ stages[2]= {
 
 	["unitNumbers"]={
 
-		["kdroneengineer"]=2,
+		["kdroneengineer"]=3,
 
 		["kdroneminingtower"]=2,
 
@@ -125,7 +124,7 @@ stages[6]= {
 
 	["unitNumbers"]={
 
-		["kdronestructure"] = 2,
+		["kdronestructure"] = 1,
 
 		["kairdronefactory"]=1,
 
@@ -175,7 +174,7 @@ stages[9]= {
 
 	skipMetal = math.huge,
 
-}
+	}
 
 	
 
@@ -263,50 +262,9 @@ end
 
 --job: ["unitname"] = amount
 
---***problem: es wird alles mehrfach gebaut weil es im nächsten frame%30 wieder vergeben wird
+--***problem: es wird alles mehrfach gebaut weil es im nÃ¤chsten frame%30 wieder vergeben wird
 
 --braucht also ein inProgress array.
-
-function makeOneUnit (teamID, name)
-
-local all_units = Spring.GetTeamUnits (teamID)
-
-if (all_units == nil) then return end
-
-	for i,unitID in pairs(all_units) do
-
-		local canDo = canUnitBuildThis (unitName (unitID), name)
-
-		if (canDo) then 
-
-			local msg = unitID .. " can do it"
-
-			local wantDo = doesUnitWantBuildJob (unitID, name)
-
-			if (wantDo) then
-
-				msg = msg .. " and wants to do it!"
-
-			--job[name] = job[name] -1
-
-				buildUnit (unitID, name)
-				
-				break
-				
-			else
-				msg = msg .. " but is busy!"
-			end
-				--Spring.Echo (msg)
-		end
-end
-
-
-end
-
-
-
-
-
 
 function makeSomeUnits (teamID, job)
 
@@ -327,7 +285,8 @@ if (all_units == nil) then return end
 			if (assigned >= amount) then break end
 
 			local canDo = canUnitBuildThis (unitName (unitID), name)
-		
+			
+			-----was gonna add some "do we have enough materials to make this unit?" thing
 
 			if (canDo) then 
 
@@ -409,7 +368,7 @@ function canUnitBuildThis (parentName, childName)
 
 	end	
 
-	--falls sich gar niemand findet, kann sich auch ein mining tower zum engineer zurück morphen:
+	--falls sich gar niemand findet, kann sich auch ein mining tower zum engineer zurÃ¼ck morphen:
 
 	if (parentName == "kdroneminingtower" and childName == "kdroneengineer") then return true end
 
@@ -431,7 +390,7 @@ function doesUnitWantBuildJob (unitID, childname)
 
 	if (unitName (unitID) == "kdroneminingtower") then
 
-		if (#Spring.GetTeamUnitsByDefs (Spring.GetUnitTeam (unitID), {UnitDefNames["kdroneengineer"].id}) > 0) then return false end 
+		if (#Spring.GetTeamUnitsByDefs (Spring.GetUnitTeam (unitID), {UnitDefNames["kdroneengineer"].id}) > 0) then return false end ---uhhh... wth is this? -yanom
 
 	end
 
@@ -498,7 +457,7 @@ function buildUnit (unitID, jobname)
 		--unitOnMission[unitID] = true
 
 		--moveAway (unitID, 2000)
-		
+
 		unitOnMission[unitID] = 100
 
 		deployNearRes (unitID)
@@ -519,7 +478,8 @@ function buildUnit (unitID, jobname)
 
 		return
 
-	end
+	end	
+
 end
 
 
@@ -560,7 +520,7 @@ end
 
 
 
-myTeam = {} --enthält alle teamids für die wir spielen, [1]=3, [2]=7 etc
+myTeam = {} --enthÃ¤lt alle teamids fÃ¼r die wir spielen, [1]=3, [2]=7 etc
 
 teamsData = {} --stores data for each team. Example: the rosters of each team's squad live here.
 
@@ -626,11 +586,29 @@ end
 
 
 
-function think (teamID, data) --this is the most Lol function ever.
+function think (teamID, data)
 
 	return data
 
 end
+
+
+
+function gadget:UnitIdle(unitID, unitDefID, teamID)
+
+	unitOnMission[unitID] = nil
+
+end
+
+
+
+	
+
+
+
+
+
+
 
 function gadget:UnitDestroyed(unitID, unitDefID, unitTeam, attackerID)
 
@@ -658,7 +636,11 @@ function gadget:GameFrame(frame)
 
 
 	for i in pairs(unitOnMission) do
+
 		unitOnMission[i] = unitOnMission[i] -1
+
+		if (unitOnMission[i] < 0) then unitOnMission[i] = 0 end
+
 	end
 	
 --	for i,v in ipairs(teamsData) do
@@ -670,43 +652,57 @@ function gadget:GameFrame(frame)
 --		end
 --	end
 
-	if (frame % 30 ~=0) then return end --past this point, code executes only every second.
+	
+
+
+	if (frame % 30 ~=0) then return end 
 
 	for _,t in pairs(myTeam) do
 	
 		if (frame % 450 == 0 ) then --every 15 seconds
-			local metal = Spring.GetTeamResources (t, "metal")
-			local energy = Spring.GetTeamResources (t, "energy")
-			
-			local unitsWeMake = round( metal/500, 0)
-			for iii=1,unitsWeMake do
-				makeOneUnit(t, "kdronewarrior")
-			end
+			local makeThis = {}
+			makeThis["kdronewarrior"] = 1
+			makeSomeUnits(t, makeThis)
 		end
-		
-		--below here is the economy section! above it is the making war units.
-		
-		undeployEmptyMiningTowers (myTeam[t])
+
+
+		--local all_units = Spring.GetTeamUnits (t)
 		
 		
 		--Spring.Echo ("SchwarmAI is playing for team " .. myTeam[t])		
+
 		local h, missing = getHighestCompleteStage (myTeam[t])
+
 		--Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
+
 		if (missing) then
+
 			if (unitCount (myTeam[t], "kdroneengineer") < (missing["kdroneminingtower"] or 0) ) then
+
 				missing["kdroneengineer"] = (missing["kdroneengineer"] or 0) +  (missing["kdroneminingtower"] -unitCount (myTeam[t], "kdroneengineer"))
+
 			end
 
-			makeSomeUnits (myTeam[t], missing)
+		makeSomeUnits (myTeam[t], missing)
 
-			if (not missing["kdronestructure"] and not missing["kairdronefactory"]) then
-				sendOutIdleEngineers (myTeam[t])
-			end
+		
+
+		--if (not missing["kdronestructure"] and not missing["kairdronefactory"]) then
+
+			--sendOutIdleEngineers (myTeam[t])
+
+		--end
 
 		end
 		
+		undeployEmptyMiningTowers (myTeam[t])
+
+	--data = think (teamID, data[teamID]
+
+		--
+
 		
-		
+
 		--clonetest(myTeam[t])
 
 	end
@@ -917,7 +913,7 @@ end
 
 
 
-----------TICK TACK LOGIC (gets executed every frame)------
+----------TICK TACK LOGIC (gets executed check every nth frame)------
 
 function undeployEmptyMiningTowers (teamID)
 
@@ -937,7 +933,7 @@ end
 
 
 
-
+--[[
 
 function sendOutIdleEngineers (teamID)
 
@@ -967,7 +963,7 @@ function sendOutIdleEngineers (teamID)
 
 end
 
-
+--]]
 
 
 
@@ -1080,10 +1076,6 @@ function isTeamCBM (teamID)
 
 end
 
-function round(num, idp)
-  local mult = 10^(idp or 0)
-  return math.floor(num * mult + 0.5) / mult
-end
 
 
 function unitIsMobile(unitID)
@@ -1343,3 +1335,5 @@ else ------UNSYNCED--------
 --end
 
 end	--end unsynced
+
+

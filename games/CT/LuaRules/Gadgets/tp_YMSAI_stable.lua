@@ -1,4 +1,4 @@
---Testing SVN
+--TODO - goto line 307 and fix the system that doesn't make unit if you dont have enough.
 
 function gadget:GetInfo()
 
@@ -43,14 +43,12 @@ stages = {}
 --kdronewarrior kdronestructure kdroneengineer kairdronefactory kdroneminer
 
 
-
+--[Yanom's Questionable Edits] as of revision 1467 stages only applies to economy units and factories.
 stages[1]= {
 
 	["unitNumbers"]={
-
+		
 		["kdronestructure"]=1,
-
-		["kdroneengineer"]=2,
 
 		},
 
@@ -64,7 +62,7 @@ stages[2]= {
 
 	["unitNumbers"]={
 
-		["kdroneengineer"]=2,
+		["kdroneengineer"]=3,
 
 		["kdroneminingtower"]=2,
 
@@ -81,8 +79,8 @@ stages[3]= {
 	["unitNumbers"]={
 
 		["kdroneminingtower"]=3,
-
-		["kdronewarrior"]=3,
+		
+		["kdroneengineer"]=2,
 
 		},
 
@@ -98,11 +96,7 @@ stages[4]= {
 
 		["kairdronefactory"]=1,
 
-		["kdiairdrone"]=4,
-
 		["kdroneminingtower"]=4,
-
-		["kdroneminer"]=3, --AA drone
 
 		},
 
@@ -130,9 +124,9 @@ stages[6]= {
 
 	["unitNumbers"]={
 
-		["kdronestructure"] = 4,
+		["kdronestructure"] = 1,
 
-		["kairdronefactory"]=3,
+		["kairdronefactory"]=1,
 
 		},
 
@@ -145,8 +139,7 @@ stages[6]= {
 stages[7]= {
 
 	["unitNumbers"]={
-
-		["kdroneminingtower"] = 12,
+			--nothing here, lol
 
 		},
 
@@ -160,13 +153,7 @@ stages[8]= {
 
 	["unitNumbers"]={
 
-		["kdronewarrior"] =10,
-
-		["ktriairdrone"] = 10,
-		
-		["kdroneminer"] = 8,
-
-		["kdroneminingtower"] = 17,
+		["kdroneminingtower"] = 10,
 
 		},
 
@@ -174,19 +161,14 @@ stages[8]= {
 
 	}
 
-		
-
 stages[9]= {
 
 	["unitNumbers"]={
 
-		["kdronewarrior"]=100, 
 
-		["kdiairdrone"]=100,
-
-		["kdroneminingtower"]=40,
-
-
+		["kdroneminingtower"] = 12,
+		
+		["kdroneengineer"]=5
 
 		},
 
@@ -240,7 +222,7 @@ function stageComplete (teamID, stage)
 
 		--Spring.Echo (unitDefID)
 
-		local have = Spring.GetTeamUnitDefCount (teamID, unitDefID)
+		local have = Spring.GetTeamUnitDefCount(teamID, unitDefID)
 
 		local shouldHave = stage["unitNumbers"][name]
 
@@ -280,7 +262,7 @@ end
 
 --job: ["unitname"] = amount
 
---***problem: es wird alles mehrfach gebaut weil es im nächsten frame%30 wieder vergeben wird
+--***problem: es wird alles mehrfach gebaut weil es im nÃ¤chsten frame%30 wieder vergeben wird
 
 --braucht also ein inProgress array.
 
@@ -303,6 +285,8 @@ if (all_units == nil) then return end
 			if (assigned >= amount) then break end
 
 			local canDo = canUnitBuildThis (unitName (unitID), name)
+			
+			-----was gonna add some "do we have enough materials to make this unit?" thing
 
 			if (canDo) then 
 
@@ -319,7 +303,7 @@ if (all_units == nil) then return end
 					assigned = assigned +1					
 
 					buildUnit (unitID, name)
-
+					
 					if (assigned >= amount) then break end
 
 				else
@@ -346,9 +330,9 @@ function canUnitBuildThis (parentName, childName)
 
   
 
-	----NOTICE: ON THE FOLLOWING LINE, I (YANOM) CHANGED THE RETURN FROM true TO false, TO DISABLE CLONING
+	
 
-	if (parentName == childName and not (parentName == "kdronestructure" or parentName == "kairdronefactory")) then return false end--everything can clone itself, except the structure (disabled)
+	if (parentName == childName and not (parentName == "kdronestructure" or parentName == "kairdronefactory")) then return true end--everything can clone itself, except the structure (disabled)
 
 	if (parentName == "kdroneengineer" and childName == "kdronestructure") then return true end
 
@@ -384,7 +368,7 @@ function canUnitBuildThis (parentName, childName)
 
 	end	
 
-	--falls sich gar niemand findet, kann sich auch ein mining tower zum engineer zurück morphen:
+	--falls sich gar niemand findet, kann sich auch ein mining tower zum engineer zurÃ¼ck morphen:
 
 	if (parentName == "kdroneminingtower" and childName == "kdroneengineer") then return true end
 
@@ -448,7 +432,7 @@ function buildUnit (unitID, jobname)
 
 		Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {}, {}) --bauen
 
-		moveAway (unitID, 500)	--waypoint
+		moveAway (unitID, 500)	--this makes the kdronestructure move away! lol!
 
 		return
 
@@ -536,13 +520,11 @@ end
 
 
 
-myTeam = {} --enthält alle teamids für die wir spielen, [1]=3, [2]=7 etc
+myTeam = {} --enthÃ¤lt alle teamids fÃ¼r die wir spielen, [1]=3, [2]=7 etc
 
 teamsData = {} --stores data for each team. Example: the rosters of each team's squad live here.
 
 
-
--- local data = {} -- [teamID].threatmap etc
 
  
 
@@ -566,7 +548,7 @@ function gadget:Initialize()
 
 			myTeam[t] = t
 
-			teamsData[t] = { squads={} } --squads! 4 per team. a way of grouping units.
+			teamsData[t] = { squads={}, unitsInProgress={} } --squads! 4 per team. a way of grouping units.
 			
 			
 			teamsData[t].squads[1] = {}
@@ -610,7 +592,27 @@ function think (teamID, data)
 
 end
 
+
+
+function gadget:UnitIdle(unitID, unitDefID, teamID)
+
+	unitOnMission[unitID] = nil
+
+end
+
+
+
+	
+
+
+
+
+
+
+
 function gadget:UnitDestroyed(unitID, unitDefID, unitTeam, attackerID)
+
+	
 
 	unitOnMission[unitID] = nil
 
@@ -622,6 +624,8 @@ function gadget:UnitDestroyed(unitID, unitDefID, unitTeam, attackerID)
 
 		machTargetArea(unitTeam, goto_x, goto_z, squadThatWillGo) 
 
+		--Spring.Echo(attackerID)
+
 	end
 
 end	
@@ -629,6 +633,7 @@ end
 	
 
 function gadget:GameFrame(frame)
+
 
 	for i in pairs(unitOnMission) do
 
@@ -647,14 +652,23 @@ function gadget:GameFrame(frame)
 --		end
 --	end
 
+	
 
 
-	if (frame % 30 ~=0) then return end
-
-	--Spring.Echo ("läuft")
+	if (frame % 30 ~=0) then return end 
 
 	for _,t in pairs(myTeam) do
+	
+		if (frame % 450 == 0 ) then --every 15 seconds
+			local makeThis = {}
+			makeThis["kdronewarrior"] = 1
+			makeSomeUnits(t, makeThis)
+		end
 
+
+		--local all_units = Spring.GetTeamUnits (t)
+		
+		
 		--Spring.Echo ("SchwarmAI is playing for team " .. myTeam[t])		
 
 		local h, missing = getHighestCompleteStage (myTeam[t])
@@ -671,7 +685,7 @@ function gadget:GameFrame(frame)
 
 		makeSomeUnits (myTeam[t], missing)
 
-		undeployEmptyMiningTowers (myTeam[t])
+		
 
 		--if (not missing["kdronestructure"] and not missing["kairdronefactory"]) then
 
@@ -680,8 +694,8 @@ function gadget:GameFrame(frame)
 		--end
 
 		end
-
 		
+		undeployEmptyMiningTowers (myTeam[t])
 
 	--data = think (teamID, data[teamID]
 
@@ -702,6 +716,8 @@ end
 
 
 function machGo (teamID) --alle rushen mit
+
+	Spring.Echo ("machGO")
 
 	local all_units = Spring.GetTeamUnits (teamID)
 
@@ -750,9 +766,6 @@ end
 
 
 
----yanom's added function is below
-
-
 
 function machTargetArea (teamID, x, z, squadGo) 
 
@@ -790,6 +803,8 @@ end
 function moveAway (unitID, r, keys)
 
 	local x,y,z = Spring.GetUnitPosition (unitID)
+	
+	
 
 	if (x and y and z) then
 
@@ -858,6 +873,7 @@ end
 function undeploy (unitID)
 
 	Spring.GiveOrderToUnit(unitID, 31210,{UnitDefNames["kdroneengineer"].id},{})
+	
 
 end
 
@@ -995,11 +1011,12 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 				squadassign = math.random(1,4)
 				table.insert(teamsData[teamID].squads[squadassign], unitID) --random squad
 				--Spring.Echo("Unit " .. unitID .. " was assigned to squad " .. squadassign .. " on team" .. teamID)
+				
 			end
 
 		
 
-		if ((unitName (unitID) ~= "kdroneengineer") or (unitName (unitID) ~= "ktridroneroller")) then
+		if ((unitName (unitID) ~= "kdroneengineer") and (unitName (unitID) ~= "ktridroneroller")) then -- go some random place!
 
 			local x = math.random(Game.mapSizeX)
 
@@ -1008,6 +1025,8 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 			Spring.GiveOrderToUnit(unitID, CMD.FIGHT , {x, Spring.GetGroundHeight (x,z), z  }, {})
 
 		end
+		
+		
 
 	else
 
@@ -1316,3 +1335,5 @@ else ------UNSYNCED--------
 --end
 
 end	--end unsynced
+
+
