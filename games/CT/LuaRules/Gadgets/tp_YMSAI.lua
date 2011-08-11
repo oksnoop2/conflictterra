@@ -633,26 +633,6 @@ function think (teamID, data) --this is the most Lol function ever.
 end
 
 
-
-function gadget:UnitIdle(unitID, unitDefID, teamID)
-
-	unitOnMission[unitID] = nil
-	if ( unitName(unitID) == "kdronewarrior" ) then
-		moveAway (unitID, 3000) -- go skedattle off somewhere
-	end	
-		
-end
-
-
-
-	
-
-
-
-
-
-
-
 function gadget:UnitDestroyed(unitID, unitDefID, unitTeam, attackerID)
 
 	

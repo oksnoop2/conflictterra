@@ -530,6 +530,10 @@ teamsData = {} --stores data for each team. Example: the rosters of each team's 
 
 function gadget:Initialize() 
 
+	Spring.Echo("YMSAI (experimental branch) drone intelligence...")
+	Spring.Echo("---ACTIVE---")
+	
+
 	counter = 0
 
     -- Initialise AI for all teams that are set to use it
@@ -591,24 +595,6 @@ function think (teamID, data)
 	return data
 
 end
-
-
-
-function gadget:UnitIdle(unitID, unitDefID, teamID)
-
-	unitOnMission[unitID] = nil
-
-end
-
-
-
-	
-
-
-
-
-
-
 
 function gadget:UnitDestroyed(unitID, unitDefID, unitTeam, attackerID)
 

@@ -593,23 +593,6 @@ function think (teamID, data)
 end
 
 
-
-function gadget:UnitIdle(unitID, unitDefID, teamID)
-
-	unitOnMission[unitID] = nil
-
-end
-
-
-
-	
-
-
-
-
-
-
-
 function gadget:UnitDestroyed(unitID, unitDefID, unitTeam, attackerID)
 
 	
