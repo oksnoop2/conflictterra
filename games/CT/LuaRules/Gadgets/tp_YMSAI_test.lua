@@ -1,4 +1,4 @@
---comment
+--TODO - reinstate makeOneUnit(team,unitname)
 
 function gadget:GetInfo()
 
@@ -82,8 +82,6 @@ stages[3]= {
 
 		["kdroneminingtower"]=3,
 
-		["kdronewarrior"]=3,
-
 		},
 
 	skipMetal = 1000,
@@ -98,11 +96,8 @@ stages[4]= {
 
 		["kairdronefactory"]=1,
 
-		["kdiairdrone"]=4,
-
 		["kdroneminingtower"]=4,
 
-		["kdroneminer"]=3, --AA drone
 
 		},
 
@@ -130,9 +125,9 @@ stages[6]= {
 
 	["unitNumbers"]={
 
-		["kdronestructure"] = 4,
+		["kdronestructure"] = 2,
 
-		["kairdronefactory"]=3,
+		["kairdronefactory"]=1,
 
 		},
 
@@ -161,10 +156,6 @@ stages[8]= {
 	["unitNumbers"]={
 
 		["kdronewarrior"] =10,
-
-		["ktriairdrone"] = 10,
-		
-		["kdroneminer"] = 8,
 
 		["kdroneminingtower"] = 17,
 
@@ -344,11 +335,8 @@ end
 
 function canUnitBuildThis (parentName, childName)
 
-  
 
-	----NOTICE: ON THE FOLLOWING LINE, I (YANOM) CHANGED THE RETURN FROM true TO false, TO DISABLE CLONING
-
-	if (parentName == childName and not (parentName == "kdronestructure" or parentName == "kairdronefactory")) then return false end--everything can clone itself, except the structure (disabled)
+	if (parentName == childName and not (parentName == "kdronestructure" or parentName == "kairdronefactory")) then return true end--everything can clone itself, except the structure (disabled)
 
 	if (parentName == "kdroneengineer" and childName == "kdronestructure") then return true end
 
@@ -668,14 +656,28 @@ function gadget:GameFrame(frame)
 --			if (v.squadBusy[count] < 0) then v.squadBusy[count] = 0 end
 --		end
 --	end
-
+	
 
 
 	if (frame % 30 ~=0) then return end
+	
+	
 
 	--Spring.Echo ("lÃ¤uft")
 
 	for _,t in pairs(myTeam) do
+	
+		if (frame % 450 ==0) then --every 15 secs
+			local costofunit = 375 --about what a drone costs.
+			
+			local ourmetal = Spring.GetTeamResources (myTeam[t], "metal")
+			local unitsWeMakeRaw = ourmetal/costofunit
+			local unitsWeMake = round(unitsWeMakeRaw,0)
+			Spring.Echo(unitsWeMake)
+			for i=1,unitsWeMake do
+				makeSomeUnits(myTeam[t], {["kdronewarrior"]=1} )
+			end
+		end
 
 		--Spring.Echo ("SchwarmAI is playing for team " .. myTeam[t])		
 
@@ -1080,12 +1082,23 @@ function isTeamCBM (teamID)
 
 end
 
-function round(num, idp) --mathmatical rounding
+function round(num, idp) --mathematical rounding
   if idp and idp>0 then
     local mult = 10^idp
     return math.floor(num * mult + 0.5) / mult
   end
   return math.floor(num + 0.5)
+end
+
+function unweighted_choice ( inputTable )
+	local numchoices = 0
+	for i,v in ipairs(inputTable) do
+		numchoices = numchoices+1
+	end
+	
+	local x = math.random(1, numchoices)
+	
+	return inputTable[x]
 end
 
 

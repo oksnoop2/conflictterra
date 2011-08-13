@@ -19,7 +19,7 @@ function gadget:GetInfo()
 
         version = "unversioned",
 
-		enabled = true
+		enabled = false
 
     }
 
