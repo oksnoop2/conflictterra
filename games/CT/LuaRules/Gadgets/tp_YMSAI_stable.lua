@@ -1059,6 +1059,24 @@ function isTeamCBM (teamID)
 
 end
 
+function round(num, idp)
+  if idp and idp>0 then
+    local mult = 10^idp
+    return math.floor(num * mult + 0.5) / mult
+  end
+  return math.floor(num + 0.5)
+end
+
+function unweighted_choice ( inputTable )
+	local numchoices = 0
+	for i,v in ipairs(inputTable) do
+		numchoices = numchoices+1
+	end
+	
+	local x = math.random(1, numchoices)
+	
+	return inputTable[x]
+end
 
 
 function unitIsMobile(unitID)
