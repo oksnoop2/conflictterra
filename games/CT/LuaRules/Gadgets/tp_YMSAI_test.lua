@@ -50,7 +50,7 @@ stages[1]= {
 
 		["kdronestructure"]=1,
 
-		["kdroneengineer"]=2,
+		["kdroneengineer"]=1,
 
 		},
 
@@ -167,23 +167,6 @@ stages[8]= {
 
 		
 
-stages[9]= {
-
-	["unitNumbers"]={
-
-		["kdronewarrior"]=100, 
-
-		["kdiairdrone"]=100,
-
-		["kdroneminingtower"]=40,
-
-
-
-		},
-
-	skipMetal = math.huge,
-
-	}
 
 	
 
@@ -675,7 +658,8 @@ function gadget:GameFrame(frame)
 			local unitsWeMake = round(unitsWeMakeRaw,0)
 			Spring.Echo(unitsWeMake)
 			for i=1,unitsWeMake do
-				makeSomeUnits(myTeam[t], {["kdronewarrior"]=1} )
+				unitWeWillMake = unweighted_choice( {"kdronewarrior", "kdroneminer", "kdronewarrior", "kdroneminer","kdronewarrior", "kdroneminer", "kdronewarrior", "kdroneminer", "kdiairdrone", "kdiaridrone", "ktriairdrone", "ktriairdrone", "ktriairdrone" } )
+				makeSomeUnits(myTeam[t], {[unitWeWillMake]=1} )
 			end
 		end
 
