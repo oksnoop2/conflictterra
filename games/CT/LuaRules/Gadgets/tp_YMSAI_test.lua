@@ -37,9 +37,6 @@ local unitOnMission = {} --[unitID] = wieviele frames in ruhe gelassen werden
 stages = {}
 
 --skipMetal: if we have that much metal, then this stage is autocomplete/skipped
-
-
-
 --kdronewarrior kdronestructure kdroneengineer kairdronefactory kdroneminer
 
 
@@ -656,7 +653,6 @@ function gadget:GameFrame(frame)
 			local ourmetal = Spring.GetTeamResources (myTeam[t], "metal")
 			local unitsWeMakeRaw = ourmetal/costofunit
 			local unitsWeMake = round(unitsWeMakeRaw,0)
-			Spring.Echo(unitsWeMake)
 			for i=1,unitsWeMake do
 				unitWeWillMake = unweighted_choice( {"kdronewarrior", "kdroneminer", "kdronewarrior", "kdroneminer","kdronewarrior", "kdroneminer", "kdronewarrior", "kdroneminer", "kdiairdrone", "kdiaridrone", "ktriairdrone", "ktriairdrone", "ktriairdrone" } )
 				makeSomeUnits(myTeam[t], {[unitWeWillMake]=1} )
