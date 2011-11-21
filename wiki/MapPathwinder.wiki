@@ -6,7 +6,7 @@
 ----
 
 == Quick Facts ==
-  * [http://conflictterra.googlecode.com/files/CT_PathWinderv2.sd7 Download]
+  * [http://conflictterra.googlecode.com/files/CT_PathWinderv3.sd7 Download]
   * Supports up to 11 players
   * 20 x 20
   * Map Options:  Invert Height Map
