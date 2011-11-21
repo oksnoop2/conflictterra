@@ -4,6 +4,11 @@
 = Why Use Our Maps? =
 Conflict Terra has its own selection of specially made maps, to both fit the graphical style and gameplay of our unique game.  While the game can be played on most any map made for Spring, we feel the game plays and looks its best on what we've made.
 
+= Download the Map Pack =
+With the closing of Conflict Terra, we are going to release a map pack for all of our officially completed maps.  We figure this could be our best legacy to leave, so we hope they can be enjoyed.  You can of course still download each map if you choose!
+
+[http://conflictterra.googlecode.com/files/CT_Map_Pack.7z Download]
+
 = "Official" Conflict Terra Maps =
 
 ||[http://code.google.com/p/conflictterra/wiki/MapEureka http://img6.imageshack.us/img6/9195/eurekale.png]||
