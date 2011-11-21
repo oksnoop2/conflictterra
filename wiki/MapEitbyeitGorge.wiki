@@ -6,7 +6,7 @@
 ----
 
 == Quick Facts ==
-  * [http://conflictterra.googlecode.com/files/CT_Eitbyeit_Gorgev2.sd7 Download]
+  * [http://conflictterra.googlecode.com/files/CT_Eitbyeit_Gorgev3.sd7 Download]
   * Supports up to 2 players
   * 8 x 8
   * Map Options:  Invert Height Map
