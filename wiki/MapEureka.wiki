@@ -6,7 +6,7 @@
 ----
 
 == Quick Facts ==
-  * [http://conflictterra.googlecode.com/files/CT_Eurekav9.sd7 Download]
+  * [http://conflictterra.googlecode.com/files/CT_Eurekav10.sd7 Download]
   * Supports up to 8 players
   * 16 x 16
   * Map Options:  Invert Height Map
