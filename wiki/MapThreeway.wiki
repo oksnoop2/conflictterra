@@ -6,7 +6,7 @@
 ----
 
 == Quick Facts ==
-  * [http://conflictterra.googlecode.com/files/CT_Threewayv2.sd7 Download]
+  * [http://conflictterra.googlecode.com/files/CT_Threewayv3.sd7 Download]
   * Supports up to 3 players
   * 14 x 14
   * Map Option:  Invert Height Map
