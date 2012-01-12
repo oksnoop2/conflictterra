@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bsnipermech]],
 	  name                = [[Saiga Combat Support Mech]],
-	  description         = [[Sniper Mech - Long range SM that does heavy damage to units.]],
+	  description         = [[Sniper Mech - Long range SM that does heavy damage to units.  Invisible to radar and able to cloak.]],
 	  acceleration        = 0.12,
 	  brakeRate           = 0.19,
 	  buildCostEnergy     = 500,
@@ -16,6 +16,10 @@
 	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
+
+	  cloakCost           = 5,
+	  cloakCostMoving     = 5,
+	  init_Cloaked        = false,
           reclaimable         = false,
 	
 	  explodeAs           = [[MEDIUM_UNIT]],
@@ -57,6 +61,7 @@
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,
+	  stealth             = true,
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  upright             = true,

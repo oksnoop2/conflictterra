@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bantitankmech]],
 	  name                = [[Enkei Combat Support Mech]],
-	  description         = [[Anti-Tank Mech - Slightly old cloakable SM model built to destroy tanks.  Fires two armor piercing rounds.]],
+	  description         = [[Anti-Tank Mech - Slightly old SM model built to destroy tanks.  Fires two armor piercing rounds.]],
 	  acceleration        = 0.12,
 	  brakeRate           = 0.19,
 	  buildCostEnergy     = 325,
@@ -16,10 +16,6 @@
 	  canstop             = [[1]],
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
-
-	  cloakCost           = 5,
-	  cloakCostMoving     = 5,
-	  init_Cloaked        = false,
           reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_UNIT]],
