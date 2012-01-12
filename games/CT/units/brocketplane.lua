@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[brocketplane]],
 	  name                = [[Tonbo Type Warplane MkIII]],
-	  description         = [[Rocket Warplane - Versatile anti-land aircraft.  Fires four missiles that do little damage to buildings.]],
+	  description         = [[Rocket Warplane - Versatile anti-land aircraft.  Fires four rockets that do little damage to buildings.]],
           amphibious          = false,
 	  buildCostEnergy     = 175,
 	  buildCostMetal      = 175,
@@ -78,7 +78,7 @@
 	  weaponDefs          = {
 	
 	    Rocket = {
-	      name                    = [[Small Missiles]],
+	      name                    = [[Small Rockets]],
 	      areaOfEffect            = 48,
 	      burst                   = 4,
 	      burstrate               = 0.5,
