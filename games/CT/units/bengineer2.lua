@@ -22,7 +22,6 @@ local bengineer2 = {
 		[[badvairturret]],
 		[[badvlandturret]],
 --		[[badvlandnavalturret]],
---		[[badvmechturret]],
 		[[blanddefship]],
 		[[bairdefship]],
 --		[[bnavydefship]],
