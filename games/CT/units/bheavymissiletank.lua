@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bheavymissiletank]],
 	  name                = [[Okuma Type Tank]],
-	  description         = [[Heavy Anti-Mech Tank - Hardy tank that shoots multiple anti-mech missiles. - Build Limit: 10]],
+	  description         = [[Heavy Anti-Mech Tank - Hardy tank that shoots multiple anti-mech rockets. - Build Limit: 10]],
 	  acceleration        = 0.01,
 	  brakeRate           = 0.02,
 	  buildCostEnergy     = 600,
@@ -93,7 +93,7 @@
 	  weaponDefs          = {
 	
 	    Large = {
-	      name                    = [[Large Missile]],
+	      name                    = [[Large Anti-Mech Rocket]],
 	      areaOfEffect            = 160,
 	      cegTag                  = [[ct_missiletail_big]],
 	      craterMult              = 0.25,
@@ -139,7 +139,7 @@
 	    },
 
 	    Anti_Mech = {
-	      name                    = [[Anti-Mech Missile]],
+	      name                    = [[Anti-Mech Rocket]],
 	      areaOfEffect            = 48,
 	      cegTag                  = [[ct_missiletail_small]],
 	      craterMult              = 0.25,

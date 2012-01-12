@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bmissilemech]],
 	  name                = [[Ueda Combat Support Mech]],
-	  description         = [[Anti-Mech Mech - Light SM built to combat other mechs.  Fires two bursts of anti-mech missiles.]],
+	  description         = [[Anti-Mech Mech - Light SM built to combat other mechs.  Fires two bursts of anti-mech rockets.]],
 	  acceleration        = 0.12,
 	  brakeRate           = 0.19,
 	  buildCostEnergy     = 325,
@@ -87,7 +87,7 @@
 	  weaponDefs          = {
 	
 	    Anti_Mech = {
-	      name                    = [[Anti-Mech Missile]],
+	      name                    = [[Anti-Mech Rocket]],
 	      areaOfEffect            = 48,
 	      burst                   = 3,
 	      burstrate               = 0.08,

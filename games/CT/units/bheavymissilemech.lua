@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bheavymissilemech]],
 	  name                = [[Shibata Combat Support Mech MkII]],
-	  description         = [[Heavy Anti-Mech Mech - Heavy SM armed to the teeth with anti-mech missiles. - Build Limit: 10]],
+	  description         = [[Heavy Anti-Mech Mech - Heavy SM armed to the teeth with anti-mech rockets. - Build Limit: 10]],
 	  acceleration        = 0.1,
 	  brakeRate           = 0.24,
 	  buildCostEnergy     = 975,
@@ -87,7 +87,7 @@
 	  weaponDefs          = {
 	
 	    Anti_Mech = {
-	      name                    = [[Anti-Mech Missile]],
+	      name                    = [[Anti-Mech Rocket]],
 	      areaOfEffect            = 56,
 	      burst                   = 5,
 	      burstrate               = 0.08,

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bmissiletank]],
 	  name                = [[Kuma Type Tank]],
-	  description         = [[Anti-Mech Tank - Fires two anti-mech missiles.]],
+	  description         = [[Anti-Mech Tank - Fires two anti-mech rockets.]],
 	  acceleration        = 0.03,
 	  brakeRate           = 0.01,
 	  buildCostEnergy     = 300,
@@ -81,7 +81,7 @@
 	  weaponDefs          = {
 	
 	    Anti_Mech = {
-	      name                    = [[Anti-Mech Missile]],
+	      name                    = [[Anti-Mech Rocket]],
 	      areaOfEffect            = 48,
 	      craterMult              = 0.25,
 	      cegTag                  = [[ct_missiletail_small]],
