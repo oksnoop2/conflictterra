@@ -20,9 +20,9 @@
           collisionVolumeType    = [[box]],
 
 	  reclaimable         = false,
-	  radarDistance       =  300,
+	  radarDistance       = 300,
 	  damageModifier      = 0.25,
-	      energyMake          = 1,
+	  energyMake          = 1,
 	  explodeAs           = [[SMALL_BUILDING]],
 	  fireState           = 2,
           footprintx          = 3,
@@ -43,6 +43,14 @@
 	  side                = [[NKG]],
 	  sightDistance       = 450,
 
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:ct_mininglaser",
+	    },
+	
+	  },
+
 	  sounds			= {
 	      select = {
 		"evolutionRTS/turretselect",
@@ -60,7 +68,7 @@
 	  weapons             = {
         
             {
-              def                = [[Rock_Drill]],
+              def                = [[Rock_Laser]],
               onlyTargetCategory = [[MINERALS]],
             },
         
@@ -69,15 +77,13 @@
 	
 	            weaponDefs          = {
         
-            Rock_Drill = {
-              name                    = [[Rock Drill]],
+            Rock_Laser = {
+              name                    = [[Rock Laser]],
               areaOfEffect            = 8,
               avoidFriendly           = 0,
-	      beamTime                = 0.2,
               craterMult              = 0.25,
               accuracy                = 0,
 	      collideFriendly         = false,
-	      energypershot           = 0,
         
               damage                  = {
 		default = 1,
@@ -96,15 +102,14 @@
 		Spare3 = 1,
               },
         
-              explosionGenerator      = [[custom:resmining]],
+              explosionGenerator      = [[custom:resmining_green]],
               interceptedByShieldType = 1,
+	      impulseFactor           = 0,
               lineOfSight             = true,
               range                   = 130,
               reloadtime              = 0.2,
-              rgbColor                = [[0 1 0]],
+              rgbColor                = [[1 0.95 0.4]],
               separation              = 2,
-	      thickness               = 1,
-	      minIntensity            = 1,
               size                    = 0.4,
               soundStart              = [[tp/swoosh]],
               soundStartVolume        = 0.5,
@@ -113,8 +118,8 @@
               targetBorder            = 1,
               tolerance               = 8000,
               turret                  = true,
-              weaponType              = [[BeamLaser]],
-              weaponVelocity          = 2500,
+              weaponType              = [[Cannon]],
+              weaponVelocity          = 7500,
 
 
 			},
