@@ -1,8 +1,8 @@
 unitDef = {
 
   unitname                      = [[bmeteorimpact_big]],
-  name                          = [[Big Meteorite]],
-  description                   = [[Big Meteorite]],
+  name                          = [[Large Meteorite]],
+  description                   = [[Contains valuable metal used to construct units.  Use a mining unit to extract the metal.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
   brakeRate                     = 0,

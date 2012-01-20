@@ -70,8 +70,7 @@ local armorDefs = {
   },
 
   Mech  =  {
-    "bengineer1",
-    "bminer",
+    "bengineer",
     "bscoutmech",
     "bbasicmech",
     "bsnipermech",
@@ -94,6 +93,7 @@ local armorDefs = {
   },
 
   Tank = {
+    "bminer",
     "bassaulttank",
     "bmissiletank",
     "bartillery",
@@ -107,7 +107,7 @@ local armorDefs = {
     "baatruck",
     "baatruckturret",
     "kdroneroller",
-	"ktridroneroller",
+    "ktridroneroller",
   },
 
   Aircraft = {

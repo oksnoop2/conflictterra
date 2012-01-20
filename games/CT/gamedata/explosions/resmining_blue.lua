@@ -1,8 +1,8 @@
---mining effect by knorke
+--mining effect by knorke, edited by Sanada
 --flying dirt + ground flash
 
 return {
-  ["resmining"] = {
+  ["resmining_blue"] = {
     resdropoff = {
       air                = true,
       class              = [[CSimpleParticleSystem]],

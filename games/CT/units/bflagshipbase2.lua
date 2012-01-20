@@ -13,6 +13,7 @@ unitDef = {
 
   buildoptions                  = {
 
+	[[bengineer]],
 	[[bminer]],
 	[[breztank]],
 	[[bsupplydepotmobile]],

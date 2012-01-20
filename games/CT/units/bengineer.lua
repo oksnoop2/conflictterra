@@ -1,27 +1,40 @@
-local bminer = {
-        name                = [[Mining Truck]],
-        description         = [[Mining equipment whose single role is to mine metal from meteorites.]],
+local bengineer = {
+        name                = [[Construction Mech]],
+        description         = [[Utilitarian vehicle able to build structures.   Unarmed.]],
         acceleration        = 0.06,
         brakerate           = 1.5,
-        buildpic            = [[bminer.png]],
+        buildpic            = [[bengineermkii.png]],
         buildCostEnergy     = 100,
         buildCostMetal      = 100,
-        builder             = false,
-        buildTime           = 10,
+        buildDistance       = 220,
+        builder             = true,
 
+        buildoptions            = {
+		[[bsupplydepot]],
+                [[bpowerplant]],
+		[[badvpowerplant]],
+		[[bbeacon]],
+--                [[bshipyard]],
+--                [[bsubpens]],
+                [[bradartower]],
+                [[bjammertower]],
+                [[bgatlingturret]],
+                [[bairturret]],
+                [[blandturret]],
+--                [[blandnavalturret]],
+        },
+
+        buildTime           = 10,
+        canAssist           = false,
         canFight            = false,
         canGuard            = true,
         canMove             = true,
         canPatrol           = true,
+        canReclaim          = true,
 	canStop             = true,
         category            = [[LAND]],
         corpse              = [[DEAD]],
         reclaimable         = false,
-
-	customParams = {
-		is_miner=1,	--used by minig: if the unit can mine is_mineable=1 ressources
-		max_cargo=25,	--used by mining: how much metal the unit can carry at once before having to return to a drop off
-	},
 
         energyMake          = 0,
         explodeAs           = [[SMALL_UNIT]],
@@ -38,7 +51,7 @@ local bminer = {
         minCloakDistance    = 75,
         movementClass       = [[Engineer2x2]],
         noChaseCategory     = [[LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
-        objectName          = "bminer.s3o",
+        objectName          = "bengineermkii.s3o",
         onoffable           = false,
         seismicSignature    = 4,
         selfDestructAs      = [[SMALL_UNIT]],
@@ -57,12 +70,15 @@ local bminer = {
           sfxtypes            = {
         
             explosiongenerators = {
-                "custom:ct_mininglaser_blue",
+                "custom:buildersparks",
             },
         
           },
 
         smoothAnim          = true,
+        terraformSpeed      = 300,
+        reclaimSpeed        = 300,
+	repairSpeed         = 0.5,
         trackOffset         = 12,
         trackStrength       = 5,
         trackStretch        = 1,
@@ -70,74 +86,14 @@ local bminer = {
         trackWidth          = 15,
         turnInPlace         = 1,
         turnRate            = 1000,
-        script              = "bminer2.lua",
-
-          weapons             = {
-        
-            {
-              def                = [[Mining_Laser]],
-              mainDir            = [[0 0 1]],
-              maxAngleDif        = 180,
-              onlyTargetCategory = [[MINERALS]],
-            },
-        
-          },
-        
-        
-          weaponDefs          = {
-        
-            Mining_Laser = {
-              name                    = [[Mining Laser]],
-              areaOfEffect            = 8,
-              avoidFriendly           = 0,
-              craterMult              = 0.25,
-              accuracy                = 0,
-	      collideFriendly         = false,
-        
-              damage                  = {
-                Cruiser = 1,
-                Building = 1,
-                Mech = 1,
-                Tank = 1,
-                Aircraft = 1,
-                Ship = 1,
-                Sub = 1,
-
-		Meteor = 1,
-		Drone = 1,
-		Spare1 = 1,
-		Spare2 = 1,
-		Spare3 = 1,
-              },
-        
-              explosionGenerator      = [[custom:resmining_blue]],
-              interceptedByShieldType = 1,
-	      impulseFactor           = 0,
-              lineOfSight             = true,
-              range                   = 90,
-              reloadtime              = 0.2,
-              rgbColor                = [[1 0.95 0.4]],
-              separation              = 2,
-              size                    = 0.4,
-              soundStart              = [[tp/swoosh]],
-              soundStartVolume        = 0.5,
-              soundTrigger            = true,
-              stages                  = 50,
-              targetBorder            = 1,
-              tolerance               = 8000,
-              turret                  = true,
-              weaponType              = [[Cannon]],
-              weaponVelocity          = 7500,
-
-
-			},
-        
-          },
+        showNanospray       = 0,
+        workerTime          = 1,
+        script              = "bengineermkii.lua",
 
           featureDefs         = {
         
             DEAD  = {
-              description      = [[Wreckage - Engineer Support Mech]],
+              description      = [[Wreckage - Construction Mech]],
               blocking         = true,
               category         = [[corpses]],
               damage           = 175,
@@ -153,7 +109,7 @@ local bminer = {
         
         
             DEAD2 = {
-              description      = [[Debris - Engineer Support Mech]],
+              description      = [[Debris - Construction Mech]],
               blocking         = false,
               category         = [[heaps]],
               damage           = 87,
@@ -172,4 +128,4 @@ local bminer = {
         }
 
 
-return lowerkeys({ ["bminer"] = bminer })
+return lowerkeys({ ["bengineer"] = bengineer })

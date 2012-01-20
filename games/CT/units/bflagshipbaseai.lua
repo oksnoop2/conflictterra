@@ -12,13 +12,13 @@ unitDef = {
   reclaimable                   = false,
 
   buildoptions                  = {
-
+	[[bengineer]],
 	[[bminer]],
 	[[breztank]],
 	-- [[bmechcruiser]],
 	-- [[btankcruiser]],
 	-- [[baircruiser]],
-	[[bengineer1]],
+
   },
 
 
