@@ -1,4 +1,4 @@
-#summary Engineer Support Mech
+#summary Construction Mech
 #labels Phase-Guide
 
 [http://img59.imageshack.us/img59/8833/bengititle.png]
@@ -7,7 +7,7 @@
 
 == Role ==
 
-||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bengineermkii.png]||Utilitarian vehicle able to build structures and mine meteorites for metal.  Unarmed.||
+||[http://conflictterra.googlecode.com/svn/games/CT/unitpics/bengineermkii.png]||Utilitarian vehicle able to build structures.   Unarmed.||
 
 The Engineer Support Mech has two main roles:  it is one of the two "builders" for the NKG, and it is the only "miner" for the NKG.
 
@@ -26,7 +26,7 @@ There is another important thing to remember about the Engineer Support Mech.  D
 ||Maneuver||The miner will seek out and mine nearby meteorites, but will not search the whole map.||
 ||Roam||The miner will seek out any meteorites on the map to mine.||
 
-||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bminer.lua Link to Unit Definition.  This will display its current stats.]||
+||[http://code.google.com/p/conflictterra/source/browse/games/CT/units/bengineer.lua Link to Unit Definition.  This will display its current stats.]||
 
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Armor Class]||Mech||
 ||[http://code.google.com/p/conflictterra/wiki/ArmorSystem Attack Bonus]||Unarmed||
@@ -46,7 +46,6 @@ There is another important thing to remember about the Engineer Support Mech.  D
 || ||[http://code.google.com/p/conflictterra/wiki/NKGGatlingTurret Gatling Turret]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGAntiAirMissileTurret Anti-Air Missile Turret]||
 || ||[http://code.google.com/p/conflictterra/wiki/NKGDualCannonTurret Dual Cannon Turret]||
-|| ||[http://code.google.com/p/conflictterra/wiki/NKGAntiMechMissileTurret Anti-Mech Missile Turret]||
 
 ----
 
