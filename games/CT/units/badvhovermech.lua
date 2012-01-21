@@ -104,7 +104,7 @@
 	      lineOfSight             = true,
 	      range                   = 600,
 	      reloadtime              = 1.5,
-	      rgbColor                = [[1 0 0]],
+	      rgbColor                = [[0 0 1]],
 	      soundStart              = [[ct/pew1]],
 	      targetMoveError         = 0.15,
 	      thickness               = 3,

@@ -99,7 +99,7 @@
               lineOfSight             = true,
               range                   = 500,
               reloadtime              = 0.2,
-              rgbColor                = [[1 0 0]],
+              rgbColor                = [[0 0 1]],
               separation              = 2,
 	      thickness               = 1,
 	      minIntensity            = 1,

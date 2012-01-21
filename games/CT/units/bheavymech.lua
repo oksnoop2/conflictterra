@@ -129,7 +129,7 @@
 	      minIntensity            = 1,
 	      range                   = 600,
 	      reloadtime              = 4,
-	      rgbColor                = [[1 0 0]],
+	      rgbColor                = [[0 0 1]],
 	      soundStart              = [[argh/Argh_PlasmaBreach]],
 	      targetMoveError         = 0.3,
 	      thickness               = 10,
