@@ -1,6 +1,6 @@
 local kdroneminer = {
-	name                = [[AA Cannon Drone]],
-	description         = [[This drone is armed with an AA cannon, making it ideal for destroying aircraft and cruisers.]],
+	name                = [[Anti-Air Cannon Drone]],
+	description         = [[This drone is armed with an Anti-Air cannon, making it ideal for destroying aircraft and cruisers.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdroneminer.png]],
@@ -121,7 +121,7 @@ local kdroneminer = {
 	featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Spread Shot Drone]],
+	      description      = [[Wreckage - Anti-Air Cannon Drone]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 350,
@@ -137,7 +137,7 @@ local kdroneminer = {
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Spread Shot Drone]],
+	      description      = [[Debris - Anti-Air Cannon Drone]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 175,

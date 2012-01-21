@@ -1,7 +1,7 @@
 unitDef = {
 
   unitname                      = [[kairdronefactory]],
-  name                          = [[Drone Air Structure]],
+  name                          = [[Air Drone Structure]],
   description                   = [[This structure produces energy and creates air Drones.]],
   amphibious                    = false,
   acceleration                  = 0,
@@ -11,14 +11,21 @@ unitDef = {
   builder                       = true,
   buildoptions                  = {
 
-    [[kairdrone]],
-    [[kdiairdrone]],
+	[[kairdrone]],
+	[[kdiairdrone]],
 	[[ktriairdrone]],
 
   },
   
   buildPic                      = [[kairdronefactory.png]],
   buildTime                     = 45,
+
+  useBuildingGroundDecal	= true,
+  buildingGroundDecalType	= "grounddecals/kdroneairstructuregrounddecal.png",
+  buildingGroundDecalSizeX	= 10,
+  buildingGroundDecalSizeY	= 10,
+  buildingGroundDecalDecaySpeed	= 0.1,
+
   canMove                       = true,
   canPatrol                     = true,
   canStop                       = true,

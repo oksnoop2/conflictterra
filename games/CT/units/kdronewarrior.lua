@@ -1,6 +1,6 @@
 local kdronewarrior = {
-	name                = [[Drone Warrior]],
-	description         = [[The Drone Warrior is a powerful attacking unit.]],
+	name                = [[Warrior Drone]],
+	description         = [[The Warrior Drone is a powerful attacking unit.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdronewarrior.png]],

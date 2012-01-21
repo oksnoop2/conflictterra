@@ -11,15 +11,22 @@ unitDef = {
   builder                       = true,
   buildoptions                  = {
 
-    [[kdroneengineer]],
+	[[kdroneengineer]],
 	[[kdronewarrior]],
 	[[kdroneroller]],
-    [[ktridroneroller]],
+	[[ktridroneroller]],
 	[[kdroneminer]],
   },
   
   buildPic                      = [[kdronestructure.png]],
   buildTime                     = 45,
+
+  useBuildingGroundDecal	= true,
+  buildingGroundDecalType	= "grounddecals/kdronegroundstructuregrounddecal.png",
+  buildingGroundDecalSizeX	= 10,
+  buildingGroundDecalSizeY	= 10,
+  buildingGroundDecalDecaySpeed	= 0.1,
+
   canMove                       = true,
   canPatrol                     = true,
   canStop                       = true,

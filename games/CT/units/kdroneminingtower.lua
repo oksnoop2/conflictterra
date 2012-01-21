@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[kdroneminingtower]],
 	  name                = [[Drone Mining Tower]],
-	  description         = [[A tower for Mining.]],
+	  description         = [[A tower for mining metal from meteorites.]],
 	  acceleration        = 0,
 	  brakeRate           = 0,
 	  buildCostEnergy     = 100,
@@ -18,6 +18,12 @@
           collisionVolumeScales  = [[48 100 48]],
           collisionVolumeTest    = 1,
           collisionVolumeType    = [[box]],
+
+	  useBuildingGroundDecal	= true,
+	  buildingGroundDecalType	= "grounddecals/kdronemininggrounddecal.png",
+	  buildingGroundDecalSizeX	= 5,
+	  buildingGroundDecalSizeY	= 5,
+	  buildingGroundDecalDecaySpeed	= 0.1,
 
 	  reclaimable         = false,
 	  radarDistance       = 300,
