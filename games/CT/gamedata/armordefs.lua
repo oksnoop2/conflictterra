@@ -97,7 +97,7 @@ local armorDefs = {
 -----
     "kdroneengineer",
     "kdronewarrior",
-    "kdroneminer",
+    "klightdrone",
     "kdronebehemoth",
 	
 

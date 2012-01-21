@@ -11,6 +11,7 @@ local cloneDefs = {
     metal = 100,
     energy = 100,
   },
+
   kdronewarrior = {
     into = 'kdronewarrior',
     tech = 0,
@@ -18,6 +19,7 @@ local cloneDefs = {
     metal = 300,
     energy = 300,
   },
+
   kairdrone = {
     into = 'kairdrone',
     tech = 0,
@@ -34,8 +36,8 @@ local cloneDefs = {
     energy = 250,
   },
 
-    kdroneminer = {
-    into = 'kdroneminer',
+    klightdrone = {
+    into = 'klightdrone',
     tech = 0,
     time = 15,
     metal = 150,

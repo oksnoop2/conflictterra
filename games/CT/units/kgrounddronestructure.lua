@@ -15,7 +15,7 @@ unitDef = {
 	[[kdronewarrior]],
 	[[kdroneroller]],
 	[[ktridroneroller]],
-	[[kdroneminer]],
+	[[klightdrone]],
   },
   
   buildPic                      = [[kgrounddronestructure.png]],

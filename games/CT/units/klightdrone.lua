@@ -1,9 +1,9 @@
-local kdroneminer = {
+local klightdrone = {
 	name                = [[Anti-Air Cannon Drone]],
 	description         = [[This drone is armed with an Anti-Air cannon, making it ideal for destroying aircraft and cruisers.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
-    buildpic            = [[kdroneminer.png]],
+    buildpic            = [[klightdrone.png]],
 	buildCostEnergy     = 150,
 	buildCostMetal      = 150,
     buildDistance       = 150,
@@ -38,7 +38,7 @@ local kdroneminer = {
 	minCloakDistance    = 75,
 	movementClass       = [[kdrone]],
     noChaseCategory     = [[SWIM LAND SHIP SINK FLOAT HOVER MINERALS SUB]],
-	objectName          = "kdroneminer.s3o",
+	objectName          = "klightdrone.s3o",
     onoffable           = false,
     seismicSignature    = 4,
     selfDestructAs      = [[SMALL_UNIT]],
@@ -116,7 +116,7 @@ local kdroneminer = {
 	showNanospray	    = 1,
 	Resurrectspeed      = 100,
 	workerTime          = 1,
-	script		    = "kdroneminer.lua",
+	script		    = "klightdrone.lua",
 
 	featureDefs         = {
 	
@@ -155,4 +155,4 @@ local kdroneminer = {
 	}
 
 
-return lowerkeys({ ["kdroneminer"] = kdroneminer })
+return lowerkeys({ ["klightdrone"] = klightdrone })
