@@ -70,7 +70,7 @@ local bminer = {
         trackWidth          = 15,
         turnInPlace         = 1,
         turnRate            = 1000,
-        script              = "bminer2.lua",
+        script              = "bminer.lua",
 
           weapons             = {
         

@@ -22,6 +22,10 @@
 
 - Huge thanks to Knorke who revealed the simple way to animate flying units!  Flying Mech and Heavy Flying Mech look awesome now!
 
+- More thanks to Knorke for his moving tank tread script, it is great!  A tutorial on how to do it can be found here:
+
+http://answers.springlobby.info/questions/503/howto-animated-tank-tracks-with-actually-moving-track-elements
+
 - Many others in the days before this was documented.
 
 *Other contributions will hopefully be remembered/added as time progresses.*
