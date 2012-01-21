@@ -1,6 +1,6 @@
 unitDef = {
 
-  unitname                      = [[kdronestructure]],
+  unitname                      = [[kgrounddronestructure]],
   name                          = [[Ground Drone Structure]],
   description                   = [[This structure produces energy and creates ground Drones.]],
   amphibious                    = false,
@@ -18,7 +18,7 @@ unitDef = {
 	[[kdroneminer]],
   },
   
-  buildPic                      = [[kdronestructure.png]],
+  buildPic                      = [[kgrounddronestructure.png]],
   buildTime                     = 45,
 
   useBuildingGroundDecal	= true,
@@ -48,7 +48,7 @@ unitDef = {
   metalMake                     = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
-  objectName                    = [[kdronestructure.s3o]],
+  objectName                    = [[kgrounddronestructure.s3o]],
   
   seismicSignature              = 4,
   selfDestructAs                = [[LARGE_BUILDING]],
@@ -69,7 +69,7 @@ unitDef = {
   turnRate                      = 0,
   workerTime                    = 1,
   yardMap                       = [[occcccco cccccccc cccccccc cccccccc cccccccc cccccccc cccccccc occcccco]],
-  script                        = [[kdronestructure.lua]],
+  script                        = [[kgrounddronestructure.lua]],
 
 
 
@@ -114,4 +114,4 @@ unitDef = {
 
 
 
-return lowerkeys({ kdronestructure = unitDef })
+return lowerkeys({ kgrounddronestructure = unitDef })

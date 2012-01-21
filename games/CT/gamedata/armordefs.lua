@@ -72,7 +72,7 @@ local armorDefs = {
     "bnavydefmobileship",
     "bsupplydepotai",
 -----
-    "kdronestructure",	
+    "kgrounddronestructure",	
     "kmex",
     "kdroneminingtower",
     "kairdronestructure",	
