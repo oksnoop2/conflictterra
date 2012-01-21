@@ -287,7 +287,7 @@ local function FinishClone(unitID, cloneData)
 
   --copy command queue
   local cmds = Spring.GetUnitCommands(unitID)
-  for i = 2, cmds.n do  -- skip the first command (CMD_CLONE)
+  for i = 2, #cmds do  -- skip the first command (CMD_CLONE)
     local cmd = cmds[i]
     Spring.GiveOrderToUnit(newUnit, cmd.id, cmd.params, cmd.options.coded)
   end
