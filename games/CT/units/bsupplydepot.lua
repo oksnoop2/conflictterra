@@ -20,6 +20,12 @@ unitDef = {
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
 
+  useBuildingGroundDecal	= true,
+  buildingGroundDecalType	= "grounddecals/resourcedropzone.png",
+  buildingGroundDecalSizeX	= 20,
+  buildingGroundDecalSizeY	= 20,
+  buildingGroundDecalDecaySpeed	= 1,
+
   reclaimable                   = false,
 
   explodeAs                     = [[MEDIUM_UNIT]],

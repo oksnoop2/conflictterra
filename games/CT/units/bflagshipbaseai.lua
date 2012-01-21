@@ -25,6 +25,13 @@ unitDef = {
 
   buildPic                      = [[bflagshipbase2.png]],
   buildTime                     = 60,
+
+  useBuildingGroundDecal	= true,
+  buildingGroundDecalType	= "grounddecals/resourcedropzone.png",
+  buildingGroundDecalSizeX	= 31,
+  buildingGroundDecalSizeY	= 31,
+  buildingGroundDecalDecaySpeed	= 1,
+
   canAttack                     = true,
   canMove                       = true,
   canPatrol                     = true,
