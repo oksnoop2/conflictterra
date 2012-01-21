@@ -132,7 +132,7 @@
 	      heightMod               = 0.5,
 	      range                   = 750,
 	      reloadtime              = 1,
-	      rgbColor                = [[1 0 0]],
+	      rgbColor                = [[0 0 1]],
 	      soundStart              = [[ct/pew1]],
 	      targetMoveError         = 0.07,
 	      thickness               = 4,
