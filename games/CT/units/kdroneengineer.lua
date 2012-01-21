@@ -1,6 +1,6 @@
 local kdroneengineer = {
-	name                = [[Drone Engineer]],
-	description         = [[The Drone Engineer is unarmed building unit.]],
+	name                = [[Drone Builder]],
+	description         = [[The Drone Builder is an unarmed construction unit.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdroneengineer.png]],
@@ -11,10 +11,7 @@ local kdroneengineer = {
 	buildoptions		= {
         
  		[[kdronestructure]],
-		[[kairdronefactory]],
-		
-
-               
+		[[kairdronestructure]],
 	},
 
 	buildTime           = 15,
@@ -83,7 +80,7 @@ local kdroneengineer = {
 	featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Drone Engineer]],
+	      description      = [[Wreckage - Drone Builder]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 250,
@@ -99,7 +96,7 @@ local kdroneengineer = {
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Drone Engineer]],
+	      description      = [[Debris - Drone Builder]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 125,

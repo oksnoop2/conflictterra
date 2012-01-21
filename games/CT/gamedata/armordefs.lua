@@ -5,7 +5,9 @@ local armorDefs = {
     "bbattleflagship",
     "bbattlecruiser",
     "btransportcarrier2",
+-----
     "bsupplydepotmobile",
+-----
     "bmechcruiser",
     "btankcruiser",
     "baircruiser",
@@ -17,11 +19,13 @@ local armorDefs = {
   Building  =  {
     "bflagshipbase2",
     "bflagshipbaseai",
+-----
     "bsupplydepot",
     "bmex",
     "bpowerplant",
     "bseamex",
     "bseapowerplant",
+-----
     "bcameratower",
     "bradartower",
     "bjammertower",
@@ -32,8 +36,10 @@ local armorDefs = {
     "bmechturret",
     "bsearadartower",
     "btorpedoturret",
+-----
     "badvmex",
     "badvpowerplant",
+-----
     "badvradartower",
     "badvjammertower",
     "badvlandturret",
@@ -43,6 +49,7 @@ local armorDefs = {
     "badvmechturret",
     "badvsearadartower",
     "badvtorpedoturret",
+-----
     "bbeacon",
     "bmechcruiserfactory",
     "btankcruiserfactory",
@@ -56,6 +63,7 @@ local armorDefs = {
     "badvsubpens",
     "badvbeacon",
     "bexperimentalpad",
+-----
     "blanddefship",
     "blanddefmobileship",
     "bairdefship",
@@ -63,10 +71,11 @@ local armorDefs = {
     "bnavydefship",
     "bnavydefmobileship",
     "bsupplydepotai",
+-----
     "kdronestructure",	
     "kmex",
     "kdroneminingtower",
-    "kairdronefactory",	
+    "kairdronestructure",	
   },
 
   Mech  =  {
@@ -77,6 +86,7 @@ local armorDefs = {
     "bsiegemech",
     "bmissilemech",
     "bantitankmech",
+-----
     "bengineer2",
     "bheavymech",
     "bheavysiegemech",
@@ -84,6 +94,7 @@ local armorDefs = {
     "bhovermech",
     "badvhovermech",
     "bheavyassaultmech",
+-----
     "kdroneengineer",
     "kdronewarrior",
     "kdroneminer",
@@ -100,12 +111,14 @@ local armorDefs = {
     "baabuggy",
     "bscoutvehicle",
     "breztank",
+-----
     "bheavyassaulttank",
     "bvhsa",
     "bheavymissiletank",
     "bempcannon",
     "baatruck",
     "baatruckturret",
+-----
     "kdroneroller",
     "ktridroneroller",
   },
@@ -113,17 +126,21 @@ local armorDefs = {
   Aircraft = {
     "bflyingmech",
     "bheavyflyingmech",
+-----
     "bfighter",
     "bbomber",
     "brocketplane",
     "bscoutplane",
+-----
     "badvfighter",
     "badvbomber",
     "badvrocketplane",
     "blaserplane",
+-----
     "kairdrone",
     "kdiairdrone",
     "ktriairdrone",
+-----
     "pnfighter",		
   },
 
@@ -135,6 +152,7 @@ local armorDefs = {
     "bartilleryship",
     "baaship",
     "bradarship",
+-----
     "bseaengineer2",
     "badvbattleship",
     "badvrocketbattleship",
@@ -146,6 +164,7 @@ local armorDefs = {
   Sub = {
     "bsubmarine",
     "baasub",
+-----
     "badvsubmarine",
     "badvaasub",
   },

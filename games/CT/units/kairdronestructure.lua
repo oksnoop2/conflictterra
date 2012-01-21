@@ -1,6 +1,6 @@
 unitDef = {
 
-  unitname                      = [[kairdronefactory]],
+  unitname                      = [[kairdronestructure]],
   name                          = [[Air Drone Structure]],
   description                   = [[This structure produces energy and creates air Drones.]],
   amphibious                    = false,
@@ -17,7 +17,7 @@ unitDef = {
 
   },
   
-  buildPic                      = [[kairdronefactory.png]],
+  buildPic                      = [[kairdronestructure.png]],
   buildTime                     = 45,
 
   useBuildingGroundDecal	= true,
@@ -47,7 +47,7 @@ unitDef = {
   metalMake                     = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
-  objectName                    = [[kairdronefactory.s3o]],
+  objectName                    = [[kairdronestructure.s3o]],
   
   seismicSignature              = 4,
   selfDestructAs                = [[LARGE_BUILDING]],
@@ -67,7 +67,7 @@ unitDef = {
   smoothAnim                    = true,
   workerTime                    = 1,
   yardMap                       = [[c]],
-  script                        = [[kairdronefactory.lua]],
+  script                        = [[kairdronestructure.lua]],
 
 
 
@@ -114,4 +114,4 @@ unitDef = {
 
 
 
-return lowerkeys({ kairdronefactory = unitDef })
+return lowerkeys({ kairdronestructure = unitDef })
