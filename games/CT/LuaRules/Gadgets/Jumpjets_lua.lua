@@ -217,7 +217,7 @@ local function Jump(unitID, goal, cmdTag)
   spSetUnitRulesParam(unitID,"jumpReload",0)
   
   mcEnable(unitID)
-  mcSetLeaveTracks(unitID, false)
+  --mcSetLeaveTracks(unitID, false)  --commented out to fix an error
   mcSetRotation(unitID, 0, (startHeading - 2^15)/rotUnit, 0) -- keep current heading
   mcSetRotationVelocity(unitID, 0, turn/rotUnit*step, 0)
   
