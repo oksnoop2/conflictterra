@@ -137,30 +137,30 @@ local bminer = {
           featureDefs         = {
         
             DEAD  = {
-              description      = [[Wreckage - Engineer Support Mech]],
+              description      = [[Wreckage - Mining Truck]],
               blocking         = true,
               category         = [[corpses]],
               damage           = 175,
               energy           = 0,
               featureDead      = [[DEAD2]],
-              footprintX       = 3,
-              footprintZ       = 3,
+              footprintX       = 2,
+              footprintZ       = 2,
               metal            = 50,
-              object           = [[wrecks/bengineermkiiwreck.s3o]],
+              object           = [[wrecks/bminerwreck.s3o]],
               reclaimable      = true,
               reclaimTime      = 1500,
             },
         
         
             DEAD2 = {
-              description      = [[Debris - Engineer Support Mech]],
+              description      = [[Debris - Mining Truck]],
               blocking         = false,
               category         = [[heaps]],
               damage           = 87,
               energy           = 0,
               featurereclamate = [[SMUDGE01]],
-              footprintX       = 3,
-              footprintZ       = 3,
+              footprintX       = 2,
+              footprintZ       = 2,
               metal            = 25,
               object           = [[b3x3heap.s3o]],
               reclaimable      = true,
