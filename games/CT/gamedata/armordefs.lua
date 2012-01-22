@@ -21,9 +21,10 @@ local armorDefs = {
     "bflagshipbaseai",
 -----
     "bsupplydepot",
+    "bsupplydepotai",
     "bmex",
     "bpowerplant",
-    "bseamex",
+    "badvpowerplant",
     "bseapowerplant",
 -----
     "bcameratower",
@@ -36,9 +37,6 @@ local armorDefs = {
     "bmechturret",
     "bsearadartower",
     "btorpedoturret",
------
-    "badvmex",
-    "badvpowerplant",
 -----
     "badvradartower",
     "badvjammertower",
@@ -57,10 +55,8 @@ local armorDefs = {
     "badvmechcruiserfactory",
     "badvtankcruiserfactory",
     "badvaircruiserfactory",
+-----
     "bshipyard",
-    "badvshipyard",
-    "bsubpens",
-    "badvsubpens",
     "badvbeacon",
     "bexperimentalpad",
 -----
@@ -70,7 +66,6 @@ local armorDefs = {
     "bairdefmobileship",
     "bnavydefship",
     "bnavydefmobileship",
-    "bsupplydepotai",
 -----
     "kgrounddronestructure",	
     "kmex",
@@ -146,7 +141,6 @@ local armorDefs = {
 
   Ship = {
     "bseaengineer1",
-    "benergysupplyboat",
     "bbattleship",
     "brocketbattleship",
     "bartilleryship",
@@ -154,19 +148,10 @@ local armorDefs = {
     "bradarship",
 -----
     "bseaengineer2",
-    "badvbattleship",
-    "badvrocketbattleship",
-    "blras",
-    "badvaaship",
-    "badvradarship",
   },
 
   Sub = {
     "bsubmarine",
-    "baasub",
------
-    "badvsubmarine",
-    "badvaasub",
   },
 
   Meteor = {

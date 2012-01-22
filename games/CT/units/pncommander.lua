@@ -10,11 +10,7 @@ local pncommander = {
     builder             = true,
 	buildoptions		= {
         
- 		[[kdronestructure]],
-		[[kdroneminingtower]],
-		
-
-               
+ 		[[pnminer]],
 	},
 
 	buildTime           = 15,

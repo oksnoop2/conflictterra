@@ -10,8 +10,6 @@ local bseaengineer2 = {
 
 	buildoptions		= {
 		[[bseapowerplant]],
-		[[badvshipyard]],
-		[[badvsubpens]],
 		[[badvsearadartower]],
 		[[badvtorpedoturret]],
 		[[bnavydefship]],

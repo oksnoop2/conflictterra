@@ -20,6 +20,7 @@ unitDef = {
     [[baaship]],
 
     [[bradarship]],
+    [[bsubmarine]],
   },
 
 

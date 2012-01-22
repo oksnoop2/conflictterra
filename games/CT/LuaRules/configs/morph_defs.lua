@@ -25,6 +25,8 @@ local morphDefs = {
       time = 5,
     },
   },
+
+-----
  
   baatruck = {
     {
@@ -43,6 +45,8 @@ local morphDefs = {
       time = 2,
     },
   },
+
+-----
  
   bsupplydepot = {
     {
@@ -61,6 +65,8 @@ local morphDefs = {
       time = 4,
     },
   },
+
+-----
  
   bmechcruiser = {
     {
@@ -91,6 +97,8 @@ local morphDefs = {
       time = 60,
     },
   },
+
+-----
  
   btankcruiser = {
     {
@@ -121,6 +129,8 @@ local morphDefs = {
       time = 60,
     },
   },
+
+-----
  
   baircruiser = {
     {
@@ -129,12 +139,6 @@ local morphDefs = {
       energy = 100,
       time = 5,
     },
---    {
---      into = 'badvaircruiser',
---      metal = 600,
---     energy = 600,
---      time = 45,
---    },
   },
  
   baircruiserfactory = {
@@ -144,13 +148,9 @@ local morphDefs = {
       energy = 100,
       time = 5,
     },
---    {
---      into = 'badvaircruiserfactory',
---      metal = 600,
---      energy = 600,
---      time = 45,
---    },
   },
+
+-----
  
   badvmechcruiser = {
     {
@@ -169,6 +169,8 @@ local morphDefs = {
       time = 5,
     },
   },
+
+-----
  
   badvtankcruiser = {
     {
@@ -187,6 +189,8 @@ local morphDefs = {
       time = 5,
     },
   },
+
+-----
  
   badvaircruiser = {
     {
@@ -205,33 +209,8 @@ local morphDefs = {
       time = 5,
     },
   },
- 
---  bbeacon = {
---    {
---      into = 'badvbeacon',
---      metal = 800,
---      energy = 800,
---      time = 60,
---    },
---  },
- 
-  bshipyard = {
-    {
-      into = 'badvshipyard',
-      metal = 800,
-      energy = 800,
-      time = 60,
-    },
-  },
- 
-  bsubpens = {
-    {
-      into = 'badvsubpens',
-      metal = 800,
-      energy = 800,
-      time = 60,
-    },
-  },
+
+-----
  
   blanddefship = {
     {
@@ -250,6 +229,8 @@ local morphDefs = {
       time = 5,
     },
   },
+
+-----
  
   bairdefship = {
     {
@@ -268,6 +249,8 @@ local morphDefs = {
       time = 5,
     },
   },
+
+-----
  
   bnavydefship = {
     {
@@ -286,6 +269,9 @@ local morphDefs = {
       time = 5,
     },
   },
+
+-----
+
   kdroneengineer = {
     {
       into = 'kdroneminingtower',
