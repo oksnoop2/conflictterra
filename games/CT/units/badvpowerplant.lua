@@ -11,7 +11,7 @@ unitDef = {
   buildCostMetal                = 500,
   builder                       = false,
 
-  buildPic                      = [[badvpowerplant2.png]],
+  buildPic                      = [[badvpowerplant.png]],
   buildTime                     = 30,
   category                      = [[SINK]],
   corpse                        = [[DEAD]],

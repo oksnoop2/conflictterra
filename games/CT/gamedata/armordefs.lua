@@ -126,10 +126,6 @@ local armorDefs = {
     "bbomber",
     "brocketplane",
     "bscoutplane",
------
-    "badvfighter",
-    "badvbomber",
-    "badvrocketplane",
     "blaserplane",
 -----
     "kairdrone",

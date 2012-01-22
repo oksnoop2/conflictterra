@@ -11,10 +11,6 @@ unitDef = {
   builder                       = true,
 
   buildoptions                  = {
-    [[badvfighter]],
-    [[badvrocketplane]],
-
-    [[badvbomber]],
     [[bscoutplane]],
     [[bfighter]],
     [[blaserplane]],
