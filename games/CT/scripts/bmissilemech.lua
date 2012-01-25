@@ -1,4 +1,5 @@
-	-- by KR
+	--Ueda Combat Support mech animation script by Sanada
+	--Spring code by Carrepairer
 	
 	--pieces
         local waist = piece "waist"
@@ -6,9 +7,13 @@
 	local body = piece "body"
 
 	local lpod = piece "lpod"
+	local lpistons = piece "lpistons"
+	local lrockets = piece "lrockets"
 	local flare1 = piece "flare1"
 
 	local rpod = piece "rpod"
+	local rpistons = piece "rpistons"
+	local rrockets = piece "rrockets"
 	local flare2 = piece "flare2"
 
         local lthigh = piece "lthigh"
@@ -20,24 +25,33 @@
         local rfoot = piece "rfoot"
 
 
-	--signals
-	local SIG_AIM = 1
-	local SIG_AIM_SEC = 2
-	local walk_go = 4
-	local walk_stop = 8
-        local ct_missile_smokecloud = SFX.CEG
-	
-	function script.Create()
-	       
-	end
-
----------- Sprint code
-	local SIG_SPRINT = 16
+	--variables
 	local speedFactor = 4
+
+	--locals
 	local myOrigSpeed = UnitDefs[unitDefID].speed
 	local myOrigAcc = UnitDefs[unitDefID].maxAcc
 	local myOrigTurnRate = UnitDefs[unitDefID].turnRate
 
+	--signals
+	local SIG_AIM = 1
+	local SIG_AIM_SEC = 2
+	local walk_go = 4
+	local SIG_SPRINT = 8
+
+
+	--CEGs
+        local ct_missile_smokecloud = SFX.CEG
+	
+
+	--script
+	function script.Create()
+		--legs spread
+		Turn( lthigh, y_axis, -0.2, 2 )
+		Turn( rthigh, y_axis, 0.2, 2 )
+	end
+
+	--Sprint code
 	local function SprintEffects()
 		Signal(SIG_SPRINT)
 		SetSignalMask(SIG_SPRINT)
@@ -60,57 +74,115 @@
     		})
     		Signal(SIG_SPRINT)
 	end
----------- End sprint code
+	--End sprint code
 
 	local function walk()
 		SetSignalMask(walk_go)
-		Move (waist, y_axis, 4, 2)
 		while (true) do
-	                Turn( lshin, x_axis, -0.75, 3 )
-	                Turn( lthigh, x_axis, 0.5, 3 )
-			Turn( lfoot, x_axis, 0, 3 )
-	               
-	                Turn( rshin, x_axis, 2, 3 )
-	                Turn( rthigh, x_axis, -1, 3 )
-			Turn( rfoot, x_axis, 0, 2 )
-	               
-	                WaitForTurn( lshin, x_axis )
-	                WaitForTurn( lthigh, x_axis )
-	                WaitForTurn( lfoot, x_axis )
-	                WaitForTurn( rshin, x_axis )
-	                WaitForTurn( rthigh, x_axis )
-	                WaitForTurn( rfoot, x_axis )
-	                Sleep(1)
-	               
-	                Turn( lshin, x_axis, 2, 3 )
-	                Turn( lthigh, x_axis, -1, 3 )
-			Turn( lfoot, x_axis, 0, 3 )
-	               
-	                Turn( rshin, x_axis, -0.75, 3 )
-	                Turn( rthigh, x_axis, 0.5, 3 )
-			Turn( rfoot, x_axis, 0, 3 )
 
-	                WaitForTurn( lshin, x_axis )
+			--left leg backward
+	                Turn( lthigh, x_axis, 1, 4 )
+	                Turn( lshin, x_axis, -1, 4 )
+			Turn( lfoot, x_axis, 0.5, 4 )
+	               
+			--right leg forward
+	                Turn( rthigh, x_axis, -0.5, 4 )
+	                Turn( rshin, x_axis, 1.5, 4 )
+			Turn( rfoot, x_axis, -1, 4 )
+
+			--left leg drop
+			Move( lthigh, y_axis, 0, 10 )
+
+			--right leg lift
+			Move( rthigh, y_axis, 5, 10 )
+
+			--body turn
+			Turn( body, z_axis, -0.05, 1 )
+	               
+			--left leg wait
 	                WaitForTurn( lthigh, x_axis )
+	                WaitForTurn( lshin, x_axis )
 	                WaitForTurn( lfoot, x_axis )
-	                WaitForTurn( rshin, x_axis )
+
+			--right leg wait
 	                WaitForTurn( rthigh, x_axis )
+	                WaitForTurn( rshin, x_axis )
 	                WaitForTurn( rfoot, x_axis )
+
+			--left leg drop wait
+			WaitForMove( lthigh, y_axis )
+
+			--right leg lift wait
+			WaitForMove( rthigh, y_axis )
+
+			--body wait
+			WaitForTurn( body, z_axis )
+	                Sleep(1)
+
+			--cycle
+	               
+			--left leg forward
+	                Turn( lthigh, x_axis, -0.5, 4 )
+	                Turn( lshin, x_axis, 1.5, 4 )
+			Turn( lfoot, x_axis, -1, 4 )
+	               
+			--right leg back
+	                Turn( rthigh, x_axis, 1, 4 )
+	                Turn( rshin, x_axis, -1, 4 )
+			Turn( rfoot, x_axis, 0.5, 4 )
+
+			--left leg lift
+			Move( lthigh, y_axis, 5, 10 )
+
+			--right leg drop
+			Move( rthigh, y_axis, 0, 10 )
+
+			--body turn
+			Turn( body, z_axis, 0.05, 1 )
+
+			--left leg wait
+	                WaitForTurn( lthigh, x_axis )
+	                WaitForTurn( lshin, x_axis )
+	                WaitForTurn( lfoot, x_axis )
+
+			--right leg wait
+	                WaitForTurn( rthigh, x_axis )
+	                WaitForTurn( rshin, x_axis )
+	                WaitForTurn( rfoot, x_axis )
+
+			--left leg lift wait
+			WaitForMove( lthigh, y_axis )
+
+			--right leg drop wait
+			WaitForMove( rthigh, y_axis )
+
+			--body wait
+			WaitForTurn( body, z_axis )
 	                Sleep(1)
 	        end
 	end
 
 	local function stop_walk()
 	        Signal(walk_go)
-		Move( waist, y_axis, 0, 4 )
 
-		Turn( lshin, x_axis, 0, 3 )
-		Turn( lthigh, x_axis, 0, 3 )
-		Turn( lfoot, x_axis, 0, 3 )
-	       
-	        Turn( rshin, x_axis, 0, 3 )
-	        Turn( rthigh, x_axis, 0, 3 )
-		Turn( rfoot, x_axis, 0, 3 )
+		--left leg stop
+		Turn( lthigh, x_axis, 0, 4 )
+		Turn( lshin, x_axis, 0, 4 )
+		Turn( lfoot, x_axis, 0, 4 )
+
+		--right leg stop
+	        Turn( rthigh, x_axis, 0, 4 )
+	        Turn( rshin, x_axis, 0, 4 )
+		Turn( rfoot, x_axis, 0, 4 )
+
+		--left leg drop
+		Move( lthigh, y_axis, 0, 10 )
+
+		--right leg drop
+		Move( rthigh, y_axis, 0, 10 )
+
+		--body stop
+		Turn( body, z_axis, 0, 1 )
 
 	end
 	
@@ -123,7 +195,7 @@
 	end
 	
 	local function RestoreAfterDelay(unitID)
-		Sleep(2500)
+		Sleep(1000)
 		Turn(body, y_axis, 0, math.rad(150))
         	Turn(lpod, x_axis, 0, math.rad(100))
         	Turn(rpod, x_axis, 0, math.rad(100))
@@ -161,10 +233,24 @@
 	
 	function script.FireWeapon1()
 		EmitSfx(flare1, ct_missile_smokecloud)
+		Hide(lrockets)
+		Move(lpistons, z_axis, -4.8, 8)
+		WaitForMove(lpistons, z_axis)
+		Sleep(1000)
+		Move(lpistons, z_axis, 0, 8)
+		WaitForMove(lpistons, z_axis)
+		Show(lrockets)
 	end
 
 	function script.FireWeapon2()
 		EmitSfx(flare2, ct_missile_smokecloud)
+		Hide(rrockets)
+		Move(rpistons, z_axis, -4.8, 8)
+		WaitForMove(rpistons, z_axis)
+		Sleep(1000)
+		Move(rpistons, z_axis, 0, 8)
+		WaitForMove(rpistons, z_axis)
+		Show(rrockets)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
