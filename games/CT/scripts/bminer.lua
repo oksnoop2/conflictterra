@@ -1,3 +1,7 @@
+	--Mining Truck animation script by Sanada
+	--Track and driving script segment by Knorke
+
+	--pieces
 	local base = piece "base"
 	local body = piece "body"
 	local bed = piece "bed"
@@ -8,24 +12,30 @@
 	local rnozzle = piece "rnozzle"
 	local flare2 = piece "flare2"
 
-	local currBarrel = 1
-
 	local rfrontwheel = piece "rfrontwheel"
 	local rbackwheel = piece "rbackwheel"
 
 	local lfrontwheel = piece "lfrontwheel"
 	local lbackwheel = piece "lbackwheel"
 
-	local driving = true
 
+	--variables
+	local currBarrel = 1
+
+
+	--signals
 	local SIG_AIM = 1
 	local SIG_Drive = 2
 	local SIG_RESTORE = 4
 
+
+	--CEGs
 	local ct_mininglaser_blue = SFX.CEG
 
-	local track = {}			--holds the track pieces, filled by gettracks()
+
 	--TRACK CONFIGS--
+	local driving = true
+	local track = {}			--holds the track pieces, filled by gettracks()
 	local trackn = 19
 	local trackspeed = 10
 	local trackheightoffset = 2
@@ -53,6 +63,8 @@
 	local lastheading = 0
 	local deltaheading = 0
 
+
+	--script
 	function script.Create()	
 		--Spring.Echo ("unit " .. unitID .. " was created!")
 		get_tracks ()	
@@ -78,7 +90,7 @@
 		StartThread (drive)			--put track pieces into position even if tank does not instantly move after creation
 	end
 
-	-----DRIVING------
+	--Driving code
 	function get_tracks ()
 		for i=1,40 do 
 		local tname = "t" .. i	
@@ -194,10 +206,11 @@
 		StopSpin (rfrontwheel, x_axis)
 		StopSpin (rbackwheel, x_axis)
 		StopSpin (lfrontwheel, x_axis)
-		StopSpin (rbackwheel, x_axis)
+		StopSpin (lbackwheel, x_axis)
 	end
 
-	-----NOT DRIVING-----
+	--End Driving code
+
 
 	local function RestoreAfterDelay(unitID)
 		Sleep(1000)

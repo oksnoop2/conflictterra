@@ -51,6 +51,7 @@
 		Turn( rthigh, y_axis, 0.2, 2 )
 	end
 
+
 	--Sprint code
 	local function SprintEffects()
 		Signal(SIG_SPRINT)
@@ -75,6 +76,7 @@
     		Signal(SIG_SPRINT)
 	end
 	--End sprint code
+
 
 	local function walk()
 		SetSignalMask(walk_go)
