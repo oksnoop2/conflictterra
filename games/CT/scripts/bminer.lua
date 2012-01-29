@@ -64,32 +64,6 @@
 	local deltaheading = 0
 
 
-	--script
-	function script.Create()	
-		--Spring.Echo ("unit " .. unitID .. " was created!")
-		get_tracks ()	
-		--distrubute track pieces to left and right wheels
-		for i=1,table.getn (track) do
-			Move (track[i], x_axis, trackoffsetx)
-			Move (track[i], z_axis, 0)
-			Move (track[i], y_axis, 100)
-			--Spring.Echo ("moving trackpiece " .. i)
-		end
-		for i=trackn+1,trackn*2 do 
-			Move (track[i], x_axis, -trackoffsetx)
-			Move (track[i], z_axis, 0)
-			Move (track[i], y_axis, 100)		
-		end	
-		--Hide unusued trackpieces
-		for i=(trackn*2)+1,table.getn (track) do 
-			Hide (track[i])
-		end
-		movetracks()
-		updateheading()
-		driving=true
-		StartThread (drive)			--put track pieces into position even if tank does not instantly move after creation
-	end
-
 	--Driving code
 	function get_tracks ()
 		for i=1,40 do 
@@ -212,6 +186,7 @@
 	--End Driving code
 
 
+	--local functions
 	local function RestoreAfterDelay(unitID)
 		Sleep(1000)
 		Turn(body, y_axis, 0, math.rad(90))
@@ -221,13 +196,39 @@
 		Turn(rnozzle, x_axis, 0, math.rad(90))
 	end
 
-		function script.QueryWeapon1()
-			if (currBarrel == 1) then 
-				return flare1
-			else 
-				return flare2
-			end
+	--script
+	function script.Create()	
+		--Spring.Echo ("unit " .. unitID .. " was created!")
+		get_tracks ()	
+		--distrubute track pieces to left and right wheels
+		for i=1,table.getn (track) do
+			Move (track[i], x_axis, trackoffsetx)
+			Move (track[i], z_axis, 0)
+			Move (track[i], y_axis, 100)
+			--Spring.Echo ("moving trackpiece " .. i)
 		end
+		for i=trackn+1,trackn*2 do 
+			Move (track[i], x_axis, -trackoffsetx)
+			Move (track[i], z_axis, 0)
+			Move (track[i], y_axis, 100)		
+		end	
+		--Hide unusued trackpieces
+		for i=(trackn*2)+1,table.getn (track) do 
+			Hide (track[i])
+		end
+		movetracks()
+		updateheading()
+		driving=true
+		StartThread (drive)			--put track pieces into position even if tank does not instantly move after creation
+	end
+
+	function script.QueryWeapon1()
+		if (currBarrel == 1) then 
+			return flare1
+		else 
+			return flare2
+		end
+	end
 	
 	function script.AimFromWeapon1() return body end
 	

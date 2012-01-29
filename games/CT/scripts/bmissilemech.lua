@@ -1,5 +1,5 @@
-	--Ueda Combat Support mech animation script by Sanada
-	--Spring code by Carrepairer
+	--Ueda Combat Support Mech animation script by Sanada
+	--Sprint code by Carrepairer
 	
 	--pieces
         local waist = piece "waist"
@@ -44,14 +44,6 @@
         local ct_missile_smokecloud = SFX.CEG
 	
 
-	--script
-	function script.Create()
-		--legs spread
-		Turn( lthigh, y_axis, -0.2, 2 )
-		Turn( rthigh, y_axis, 0.2, 2 )
-	end
-
-
 	--Sprint code
 	local function SprintEffects()
 		Signal(SIG_SPRINT)
@@ -78,6 +70,7 @@
 	--End sprint code
 
 
+	--local functions
 	local function walk()
 		SetSignalMask(walk_go)
 		while (true) do
@@ -187,6 +180,21 @@
 		Turn( body, z_axis, 0, 1 )
 
 	end
+
+	local function RestoreAfterDelay(unitID)
+		Sleep(1000)
+		Turn(body, y_axis, 0, math.rad(150))
+        	Turn(lpod, x_axis, 0, math.rad(100))
+        	Turn(rpod, x_axis, 0, math.rad(100))
+	end
+
+
+	--script
+	function script.Create()
+		--legs spread
+		Turn( lthigh, y_axis, -0.2, 2 )
+		Turn( rthigh, y_axis, 0.2, 2 )
+	end
 	
 	function script.StartMoving()
 	        StartThread(walk)
@@ -194,13 +202,6 @@
 	
 	function script.StopMoving()
 	        StartThread(stop_walk)
-	end
-	
-	local function RestoreAfterDelay(unitID)
-		Sleep(1000)
-		Turn(body, y_axis, 0, math.rad(150))
-        	Turn(lpod, x_axis, 0, math.rad(100))
-        	Turn(rpod, x_axis, 0, math.rad(100))
 	end
 
 	function script.QueryWeapon1() return flare1 end

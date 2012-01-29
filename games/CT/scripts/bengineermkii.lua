@@ -67,33 +67,6 @@
 	local deltaheading = 0
 
 
-	--script
-	function script.Create()
-		--Spring.Echo ("unit " .. unitID .. " was created!")
-		get_tracks ()	
-		--distrubute track pieces to left and right wheels
-		for i=1,table.getn (track) do
-			Move (track[i], x_axis, trackoffsetx)
-			Move (track[i], z_axis, 0)
-			Move (track[i], y_axis, 100)
-			--Spring.Echo ("moving trackpiece " .. i)
-		end
-		for i=trackn+1,trackn*2 do 
-			Move (track[i], x_axis, -trackoffsetx)
-			Move (track[i], z_axis, 0)
-			Move (track[i], y_axis, 100)		
-		end	
-		--Hide unusued trackpieces
-		for i=(trackn*2)+1,table.getn (track) do 
-			Hide (track[i])
-		end
-		movetracks()
-		updateheading()
-		driving=true
-		StartThread (drive)			--put track pieces into position even if tank does not instantly move after creation
-		StartThread (arms_ready)
-	end
-
 	--Driving code
 	function get_tracks ()
 		for i=1,40 do 
@@ -215,6 +188,7 @@
 	--End Driving Code
 
 
+	--local functions
 	local function sparks()
 		while true do
 			EmitSfx(fxflare1, buildersparks)
@@ -294,6 +268,34 @@
 		Turn(ruparm, x_axis, -0.75, 2)
 		Turn(rforarm, x_axis, 1.5, 2)
 		Turn(rhand, x_axis, 0.75, 2)
+	end
+
+
+	--script
+	function script.Create()
+		--Spring.Echo ("unit " .. unitID .. " was created!")
+		get_tracks ()	
+		--distrubute track pieces to left and right wheels
+		for i=1,table.getn (track) do
+			Move (track[i], x_axis, trackoffsetx)
+			Move (track[i], z_axis, 0)
+			Move (track[i], y_axis, 100)
+			--Spring.Echo ("moving trackpiece " .. i)
+		end
+		for i=trackn+1,trackn*2 do 
+			Move (track[i], x_axis, -trackoffsetx)
+			Move (track[i], z_axis, 0)
+			Move (track[i], y_axis, 100)		
+		end	
+		--Hide unusued trackpieces
+		for i=(trackn*2)+1,table.getn (track) do 
+			Hide (track[i])
+		end
+		movetracks()
+		updateheading()
+		driving=true
+		StartThread (drive)			--put track pieces into position even if tank does not instantly move after creation
+		StartThread (arms_ready)
 	end
 
 	function script.QueryNanoPiece() return nano end

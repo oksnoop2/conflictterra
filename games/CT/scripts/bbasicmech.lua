@@ -39,27 +39,7 @@
 	local jumpjetsfx = SFX.CEG + 1
 	
 
-	--script
-	function script.Create()
-		--guns forward
-	        Turn( leftgun, x_axis, -0.5, 2 )
-	        Turn( rightgun, x_axis, -0.5, 2 )
-
-		--legs spread
-		Turn( leftthigh, y_axis, -0.15, 2 )
-		Turn( rightthigh, y_axis, 0.15, 2 )
-
-		--muzzle flare positioning
-		Turn( flare1, x_axis, 1.55, 2 )
-		Turn( flare2, x_axis, 1.55, 2 )
-
-		--jumpjetsfx positioning
-		Turn( fxflare1, x_axis, 2, 2 )
-		Turn( fxflare2, x_axis, 2, 2 )
-		Turn( fxflare1, y_axis, 0.5, 2 )
-		Turn( fxflare2, y_axis, -0.5, 2 )
-	end
-
+	--local functions
 	local function walk()
 		SetSignalMask(walk_go)
 		while (true) do
@@ -186,6 +166,37 @@
 			Sleep(1)
 		end
 	end
+
+	local function RestoreAfterDelay(unitID)
+		Sleep(1000)
+		Turn(body, y_axis, 0, math.rad(200))
+        	Turn(leftarm, x_axis, 0, math.rad(160))
+        	Turn(leftgun, x_axis, -0.5, math.rad(160))
+        	Turn(rightarm, x_axis, 0, math.rad(160))
+        	Turn(rightgun, x_axis, -0.5, math.rad(160))
+	end
+
+
+	--script
+	function script.Create()
+		--guns forward
+	        Turn( leftgun, x_axis, -0.5, 2 )
+	        Turn( rightgun, x_axis, -0.5, 2 )
+
+		--legs spread
+		Turn( leftthigh, y_axis, -0.15, 2 )
+		Turn( rightthigh, y_axis, 0.15, 2 )
+
+		--muzzle flare positioning
+		Turn( flare1, x_axis, 1.55, 2 )
+		Turn( flare2, x_axis, 1.55, 2 )
+
+		--jumpjetsfx positioning
+		Turn( fxflare1, x_axis, 2, 2 )
+		Turn( fxflare2, x_axis, 2, 2 )
+		Turn( fxflare1, y_axis, 0.5, 2 )
+		Turn( fxflare2, y_axis, -0.5, 2 )
+	end
 	
 	function script.StartMoving()
 	        StartThread(walk)
@@ -244,15 +255,6 @@
 
 		--body stop
 		Turn( body, x_axis, 0, 2 )
-	end
-	
-	local function RestoreAfterDelay(unitID)
-		Sleep(1000)
-		Turn(body, y_axis, 0, math.rad(200))
-        	Turn(leftarm, x_axis, 0, math.rad(160))
-        	Turn(leftgun, x_axis, -0.5, math.rad(160))
-        	Turn(rightarm, x_axis, 0, math.rad(160))
-        	Turn(rightgun, x_axis, -0.5, math.rad(160))
 	end
 
 	function script.QueryWeapon1()
