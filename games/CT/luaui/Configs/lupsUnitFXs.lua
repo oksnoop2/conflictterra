@@ -9,11 +9,6 @@ effectUnitDefs = {
                 {class='AirJet',        options={color={0,0,0.75,0},    width =  15, length=50, piece="fxflare6", onActive=true}},
         },
         
-        bbasicmech = {
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  15, length=50, piece="fxflare1", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  15, length=50, piece="fxflare2", onActive=true}},
-        },
-
         bbattleflagship = {
                 {class='AirJet',        options={color={0,0,0.75,0},    width =  15, length=35, piece="fxflare1", onActive=true}},
                 {class='AirJet',        options={color={0,0,0.75,0},    width =  15, length=35, piece="fxflare2", onActive=true}},
@@ -38,11 +33,6 @@ effectUnitDefs = {
                 {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  15, length=35, piece="fxflare4", onActive=true}},
                 {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  15, length=35, piece="fxflare5", onActive=true}},
                 {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  15, length=35, piece="fxflare6", onActive=true}},
-        },
-
-        benergysupplyship = {
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  15, length=35, piece="fxflare1", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  15, length=35, piece="fxflare2", onActive=true}},
         },
 
         btransportcarrier2 = {
@@ -91,14 +81,11 @@ effectUnitDefs = {
                 {class='AirJet',        options={color={0,0,0.75,0},    width =  25, length=55, piece="fxflare3", onActive=true}},
         },
 
-        
-
         bflyingmech = {
                 {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  4, length=30, piece="fxflare1", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  4, length=30, piece="fxflare2", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  8, length=15, piece="fxflare3", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  8, length=15, piece="fxflare4", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,0.75,-0.5},  width =  4, length=35, piece="fxflare5", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  4, length=20, piece="fxflare2", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  4, length=30, piece="fxflare3", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  4, length=20, piece="fxflare4", onActive=true}},
         },
 
         bheavyflyingmech = {
@@ -112,7 +99,10 @@ effectUnitDefs = {
                 {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  8, length=60, piece="fxflarebig2", onActive=true}},
         },
 
-
+        bscoutplane = {
+                {class='AirJet',        options={color={0,0,0.75,0},    width =  2, length=20, piece="fxflare1", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    width =  2, length=20, piece="fxflare2", onActive=true}},
+        },
 
         bfighter = {
                 {class='AirJet',        options={color={0,0,0.75,0},    width =  4, length=35, piece="fxflare1", onActive=true}},
@@ -128,46 +118,18 @@ effectUnitDefs = {
                 {class='AirJet',        options={color={0,0,0.75,0},    width =  2, length=20, piece="fxflare2", onActive=true}},
         },
 
-        bscoutplane = {
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  2, length=20, piece="fxflare1", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  2, length=20, piece="fxflare2", onActive=true}},
-        },
-
-
-
-        badvfighter = {
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  2, length=20, piece="fxflare", onActive=true}},
-        },
-
-        badvbomber = {
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  3, length=25, piece="fxflare1", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  3, length=25, piece="fxflare2", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  3, length=25, piece="fxflare3", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  3, length=25, piece="fxflare4", onActive=true}},
-        },
-
-        badvrocketplane = {
-                {class='AirJet',        options={color={0,0,0.25,0},    width =  1, length=15, piece="fxflare1", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.25,0},    width =  1, length=15, piece="fxflare2", onActive=true}},
-        },
-
-        badvradarplane = {
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  4, length=35, piece="fxflare1", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  4, length=35, piece="fxflare2", onActive=true}},
-        },
-
         blaserplane = {
                 {class='AirJet',        options={color={0,0,0.75,0},    width =  6, length=50, piece="fxflare1", onActive=true}},
         },
 
 
         kairdrone = {
-                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {0,-1,0},       width =  4, length=15, piece="fxflare1", onActive=true}},
-                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {0,1,0},        width =  4, length=15, piece="fxflare2", onActive=true}},
-                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {.5,0,-.5},     width =  4, length=15, piece="fxflare3", onActive=true}},
-                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {-.5,0,.5},     width =  4, length=15, piece="fxflare4", onActive=true}},
-                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {.5,0,.5}, width =  4, length=15, piece="fxflare5", onActive=true}},
-                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {-.5,0,-.5},    width =  4, length=15, piece="fxflare6", onActive=true}},
+                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {0,-1,0},	width =  4, length=15, piece="fxflare1", onActive=true}},
+                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {0,1,0},	width =  4, length=15, piece="fxflare2", onActive=true}},
+                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {0.5,0,-0.5},	width =  4, length=15, piece="fxflare3", onActive=true}},
+                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {-0.5,0,0.5},	width =  4, length=15, piece="fxflare4", onActive=true}},
+                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {0.5,0,0.5},	width =  4, length=15, piece="fxflare5", onActive=true}},
+                {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {-0.5,0,-0.5},	width =  4, length=15, piece="fxflare6", onActive=true}},
         },
         
      --   ktriairdrone = {
@@ -188,10 +150,10 @@ effectUnitDefs = {
              --   {class='AirJet',        options={color={0,0.75,0,0},    emitVector    = {.5,0,.5}, 		width =  4, length=15, piece="fxflare5", onActive=true}},		
 	--	},
 
-		        pnfighter = {
+	pnfighter = {
                 {class='AirJet',        options={color={0.75,0.75,0,0},    width =  4, length=35, piece="fxflare1", onActive=true}},
                 {class='AirJet',        options={color={0.75,0.75,0,0},    width =  4, length=35, piece="fxflare2", onActive=true}},
-				{class='AirJet',        options={color={0.75,0.75,0,0},    width =  4, length=35, piece="fxflare3", onActive=true}},
+		{class='AirJet',        options={color={0.75,0.75,0,0},    width =  4, length=35, piece="fxflare3", onActive=true}},
         },
 
 

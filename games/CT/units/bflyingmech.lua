@@ -24,8 +24,8 @@
 	
 	  explodeAs           = [[MEDIUM_UNIT]],
 	  floater             = false,
-          footprintx          = 3,
-	  footprintZ          = 3,
+          footprintx          = 4,
+	  footprintZ          = 4,
           hoverAttack         = true,
 	  idleAutoHeal        = 0,
 	  mass                = 125,
