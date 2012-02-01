@@ -1,181 +1,234 @@
-local armorDefs = {
+	--Armor Defs
 
-  Cruiser  =  {
-    "bflagship2",
-    "bbattleflagship",
-    "bbattlecruiser",
-    "btransportcarrier2",
------
-    "bsupplydepotmobile",
------
-    "bmechcruiser",
-    "btankcruiser",
-    "baircruiser",
-    "badvmechcruiser",
-    "badvtankcruiser",
-    "badvaircruiser",
-  },
 
-  Building  =  {
-    "bflagshipbase2",
-    "bflagshipbaseai",
------
-    "bsupplydepot",
-    "bsupplydepotai",
-    "bmex",
-    "bpowerplant",
-    "badvpowerplant",
-    "bseapowerplant",
------
-    "bcameratower",
-    "bradartower",
-    "bjammertower",
-    "blandturret",
-    "bairturret",
-    "blandnavalturret",
-    "bgatlingturret",
-    "bmechturret",
-    "bsearadartower",
-    "btorpedoturret",
------
-    "badvradartower",
-    "badvjammertower",
-    "badvlandturret",
-    "badvairturret",
-    "badvlandnavalturret",
-    "badvgatlingturret",
-    "badvmechturret",
-    "badvsearadartower",
-    "badvtorpedoturret",
------
-    "bbeacon",
-    "bmechcruiserfactory",
-    "btankcruiserfactory",
-    "baircruiserfactory",
-    "badvmechcruiserfactory",
-    "badvtankcruiserfactory",
-    "badvaircruiserfactory",
------
-    "bshipyard",
-    "badvbeacon",
-    "bexperimentalpad",
------
-    "blanddefship",
-    "blanddefmobileship",
-    "bairdefship",
-    "bairdefmobileship",
-    "bnavydefship",
-    "bnavydefmobileship",
------
-    "kgrounddronestructure",	
-    "kmex",
-    "kdroneminingtower",
-    "kairdronestructure",	
-  },
+	local armorDefs = {
 
-  Mech  =  {
-    "bengineer",
-    "bscoutmech",
-    "bbasicmech",
-    "bsnipermech",
-    "bsiegemech",
-    "bmissilemech",
-    "bantitankmech",
------
-    "bengineer2",
-    "bheavymech",
-    "bheavysiegemech",
-    "bheavymissilemech",
-    "bhovermech",
-    "badvhovermech",
-    "bheavyassaultmech",
------
-    "kdroneengineer",
-    "kdronewarrior",
-    "klightdrone",
-    "kdronebehemoth",
-	
+		Cruiser  =  {
+			--NKG--
 
-  },
 
-  Tank = {
-    "bminer",
-    "bassaulttank",
-    "bmissiletank",
-    "bartillery",
-    "baabuggy",
-    "bscoutvehicle",
-    "breztank",
------
-    "bheavyassaulttank",
-    "bvhsa",
-    "bheavymissiletank",
-    "bempcannon",
-    "baatruck",
-    "baatruckturret",
------
-    "kdroneroller",
-    "ktridroneroller",
-  },
+			--combat cruisers
+			"bflagship2",
+			"bbattleflagship",
+			"bbattlecruiser",
+			"btransportcarrier2",
 
-  Aircraft = {
-    "bflyingmech",
-    "bheavyflyingmech",
------
-    "bfighter",
-    "bbomber",
-    "brocketplane",
-    "bscoutplane",
-    "blaserplane",
------
-    "kairdrone",
-    "kdiairdrone",
-    "ktriairdrone",
------
-    "pnfighter",		
-  },
+			--economy cruisers
+			"bsupplydepotmobile",
 
-  Ship = {
-    "bseaengineer1",
-    "bbattleship",
-    "brocketbattleship",
-    "bartilleryship",
-    "baaship",
-    "bradarship",
------
-    "bseaengineer2",
-  },
+			--factory cruisers
+			"bmechcruiser",
+			"btankcruiser",
+			"baircruiser",
+			"badvmechcruiser",
+			"badvtankcruiser",
+  		},
 
-  Sub = {
-    "bsubmarine",
-  },
 
-  Meteor = {
-    "bmeteorimpact",
-    "bmeteorimpact_big",
-    "bminerals",
-  },
+		Building  =  {
+			--NKG--
 
-  Drone = {
-  },
 
-  Spare1 = {
-  },
+			--landed cruisers
+			--T1
+			"bflagshipbase2",
+			"bflagshipbaseai",
+			"bsupplydepot",
+			"bsupplydepotai",
+			"bmechcruiserfactory",
+			"btankcruiserfactory",
+			"baircruiserfactory",
+			--T2
+			"badvmechcruiserfactory",
+			"badvtankcruiserfactory",
 
-  Spare2 = {
-  },
+			--economy buildings
+			"bmex",
+			"bpowerplant",
+			"badvpowerplant",
+			"bseapowerplant",
 
-  Spare3 = {
-  },
+			--defenses
+			--T1
+			"bcameratower",
+			"bradartower",
+			"bjammertower",
+			"blandturret",
+			"bairturret",
+			"blandnavalturret",
+			"bgatlingturret",
+			"bsearadartower",
+			"btorpedoturret",
+			--T2
+			"badvradartower",
+			"badvjammertower",
+			"badvlandturret",
+			"badvairturret",
+			"badvlandnavalturret",
+			"badvgatlingturret",
+			"badvsearadartower",
+			"badvtorpedoturret",
 
-}
+			--factory
+			--T1
+			"bbeacon",
+			"bshipyard",
+			--T2
+			"badvbeacon",
+			"bexperimentalpad",
 
-for categoryName, categoryTable in pairs(armorDefs) do
-  local t = {}
-  for _, unitName in pairs(categoryTable) do
-    t[unitName] = 1
-  end
-  armorDefs[categoryName] = t
-end
+			--defense ships
+			"blanddefship",
+			"blanddefmobileship",
+			"bairdefship",
+			"bairdefmobileship",
+			"bnavydefship",
+			"bnavydefmobileship",
 
-return armorDefs
+
+			--DRONE--
+
+
+			"kmex",
+			"kgrounddronestructure",
+			"kdroneminingtower",
+			"kairdronestructure",	
+		},
+
+		Mech  =  {
+			--NKG--
+
+
+			--T1
+			"bengineer",
+			"bscoutmech",
+			"bbasicmech",
+			"bmissilemech",
+			"bantitankmech",
+			"bhovermech",
+			"bsiegemech",
+			"bsnipermech",
+			--T2
+			"bengineer2",
+			"bheavymech",
+			"bheavymissilemech",
+			"bheavysiegemech",
+			"badvhovermech",
+			"bheavyassaultmech",
+
+
+			--DRONE--
+
+
+			"kdroneengineer",
+			"kdronewarrior",
+			"klightdrone",
+		},
+
+		Tank = {
+			--NKG--
+
+
+			--T1
+			"bminer",
+			"bscoutvehicle",
+			"bassaulttank",
+			"bmissiletank",
+			"baabuggy",
+			"breztank",
+			"bartillery",
+			--T2
+			"bheavyassaulttank",
+			"bheavymissiletank",
+			"baatruck",
+			"baatruckturret",
+			"bvhsa",
+			"bempcannon",
+
+
+			--DRONE--
+
+
+			"kdroneroller",
+			"ktridroneroller",
+		},
+
+		Aircraft = {
+			--NKG--
+
+
+			--flying mechs
+			"bflyingmech",
+			"bheavyflyingmech",
+
+			--aircraft
+			"bscoutplane",
+			"bfighter",
+			"blaserplane",
+			"brocketplane",
+			"bbomber",
+
+
+			--DRONE--
+
+
+			"kairdrone",
+			"kdiairdrone",
+			"ktriairdrone",
+
+
+			--PNF--
+
+			--T1
+			"pnfighter",		
+		},
+
+		Ship = {
+			--NKG--
+
+
+			"bseaengineer1",
+			"bseaengineer2",
+			"bbattleship",
+			"brocketbattleship",
+			"bartilleryship",
+			"baaship",
+			"bradarship",
+		},
+
+		Sub = {
+			--NKG--
+
+
+			"bsubmarine",
+		},
+
+		Meteor = {
+			"bmeteorimpact",
+			"bmeteorimpact_big",
+			"bminerals",
+		},
+
+		Drone = {
+		},
+
+		Spare1 = {
+		},
+
+		Spare2 = {
+		},
+
+		Spare3 = {
+		},
+
+	}
+
+	for categoryName, categoryTable in pairs(armorDefs) do
+		local t = {}
+		for _, unitName in pairs(categoryTable) do
+			t[unitName] = 1
+		end
+		armorDefs[categoryName] = t
+	end
+
+	return armorDefs

@@ -7,7 +7,7 @@
 
 	--signals
 	local SIG_AIM = 1
-        local ct_mininglaser = SFX.CEG
+        local ct_mininglaser_green = SFX.CEG
 	
 	function script.Create()
 	       
@@ -34,7 +34,7 @@
 	end
 	
 	function script.FireWeapon1()
-		EmitSfx(barrel, ct_mininglaser)	
+		EmitSfx(barrel, ct_mininglaser_green)	
 	end
 	
 function script.Killed(recentDamage, maxHealth)

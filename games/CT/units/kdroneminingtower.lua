@@ -52,7 +52,7 @@
 	  sfxtypes            = {
 	
 	    explosiongenerators = {
-		"custom:ct_mininglaser",
+		"custom:ct_mininglaser_green",
 	    },
 	
 	  },

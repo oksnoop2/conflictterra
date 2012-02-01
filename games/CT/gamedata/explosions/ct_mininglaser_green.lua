@@ -1,9 +1,9 @@
-	--ct_jumpjet
-	--Jumpjet CEG for jumpjet mechs
+	--ct_mininglaser_green
+	--Green mining laser
 	--by Sanada
 
 	return {
-		["ct_jumpjet"] = {
+		["ct_mininglaser_green"] = {
 			bitmapmuzzleflame = {
 				ground             = true,
 				air                = true,
@@ -12,15 +12,15 @@
 				count              = 1,
 				underwater         = 1,
 				properties = {
-					colormap           = [[0 0 0.85 1	    0 0.85 0.85 1     0 0.5 1 1]], --Colour map progress from one to next. Colors in RGBA
+					colormap           = [[0 1 0 1		0 1 0 1]], --Colour map progress from one to next. Colors in RGBA
 					dir                = [[dir]],
 					frontoffset        = 0,
-					fronttexture       = [[ct_jumpjet_front]],
-					length             = 15,
-					sidetexture        = [[ct_jumpjet_side]],
-					size               = 3,
+					fronttexture       = [[ct_machinegun_front]],
+					length             = 80,
+					sidetexture        = [[ct_bigbeam]],
+					size               = 1,
 					sizegrowth         = 1,
-					ttl                = 1,
+					ttl                = 6,
 				},
 			},
 
@@ -32,12 +32,12 @@
 				circlegrowth       = 0,
 				flashalpha         = 0.2,
 				flashsize          = 10,
-				ttl                = 17, --Time To Live
+				ttl                = 8, --Time To Live
 				--Red Green Blue
 				color = {
 					[1]  = 0,
-					[2]  = 0,
-					[3]  = 1,
+					[2]  = 0.8,
+					[3]  = 0,
 				},
 			},
 		},
