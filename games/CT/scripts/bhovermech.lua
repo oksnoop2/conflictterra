@@ -1,4 +1,4 @@
-	-- by KR
+	--Ukita Hover Combat Mech animation script by Sanada
 	
 	--pieces
 	local waist = piece "waist"
@@ -26,7 +26,6 @@
 	local flare4 = piece "flare4"
 
 
-
 	--signals
 	local SIG_AIM = 1
 	local SIG_AIM_SEC = 2
@@ -34,26 +33,13 @@
 	local SIG_AIM_FOUR = 8
 	local SIG_go = 16
 	local SIG_stop = 32
-        local ct_missile_smokecloud = SFX.CEG
-	
-	function script.Create()
-		Turn(flthigh, x_axis, 0.25, 1)
-		Turn(frthigh, x_axis, 0.25, 1)
-		Turn(blthigh, x_axis, -0.25, 1)
-		Turn(brthigh, x_axis, -0.25, 1)
-		WaitForTurn(flthigh, x_axis)
-		WaitForTurn(frthigh, x_axis)
-		WaitForTurn(blthigh, x_axis)
-		WaitForTurn(brthigh, x_axis)
-	end
-	
-	local function RestoreAfterDelay(unitID)
-		Sleep(2500)
-		Turn(body, y_axis, 0, math.rad(90))
-        	Turn(lpod, x_axis, 0, math.rad(50))
-        	Turn(rpod, x_axis, 0, math.rad(50))
-	end
 
+
+	--CEGs
+        local ct_missile_smokecloud = SFX.CEG
+
+	
+	--local functions
 	local function go()
 		SetSignalMask(SIG_go)
 		Turn(flthigh, x_axis, 0, 1)
@@ -82,6 +68,26 @@
 		Turn(brthigh, x_axis, -0.25, 1)
 	end
 
+	local function RestoreAfterDelay(unitID)
+		Sleep(1000)
+		Turn(body, y_axis, 0, math.rad(90))
+        	Turn(lpod, x_axis, 0, math.rad(50))
+        	Turn(rpod, x_axis, 0, math.rad(50))
+	end
+
+
+	--script	
+	function script.Create()
+		Turn(flthigh, x_axis, 0.25, 1)
+		Turn(frthigh, x_axis, 0.25, 1)
+		Turn(blthigh, x_axis, -0.25, 1)
+		Turn(brthigh, x_axis, -0.25, 1)
+		WaitForTurn(flthigh, x_axis)
+		WaitForTurn(frthigh, x_axis)
+		WaitForTurn(blthigh, x_axis)
+		WaitForTurn(brthigh, x_axis)
+	end
+	
 	function script.StartMoving()
 		StartThread(go)
 	end

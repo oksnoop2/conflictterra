@@ -1,4 +1,4 @@
-	-- by KR
+	--Enkei Combat Support Mech animation script by Sanada
 	
 	--pieces
 	local waist = piece "waist"
@@ -21,29 +21,23 @@
 	local forrthigh = piece "rfthigh"
 	local forrshin = piece "rfshin"
 
+
+	--variables
 	local currBarrel = 1
 
 
 	--signals
 	local SIG_AIM = 1
 	local walk_go = 2
-	local walk_stop = 4
+
+
+	--CEGs
         local ct_cannon_narrow = SFX.CEG
 	
-	function script.Create()
-	       
-	end
-	
-	local function RestoreAfterDelay(unitID)
-		Sleep(2500)
-		Turn(body, y_axis, 0, math.rad(150))
-		Turn(lgun, x_axis, 0, math.rad(100))	
-		Turn(rgun, x_axis, 0, math.rad(100))	
-	end
 
+	--local functions
 	local function Walk()
 	        SetSignalMask( walk_go )
-                Sleep(30)
 	        while ( true ) do
 	                Turn( forrthigh, x_axis, 0, 1 )
 	                Turn( baclthigh, x_axis, 0, 1 )
@@ -66,7 +60,7 @@
 	                WaitForTurn( forlshin, x_axis )
                         WaitForTurn( forrshin, x_axis )
    	                WaitForTurn( baclshin, x_axis )
-	                Sleep(30)
+	                Sleep(1)
 	               
 	                Turn( bacrthigh, x_axis, 0, 1 )
 	                Turn( forlthigh, x_axis, 0, 1 )
@@ -89,7 +83,7 @@
 	                WaitForTurn( forlshin, x_axis )
                         WaitForTurn( forrshin, x_axis )
    	                WaitForTurn( baclshin, x_axis )
-	                Sleep(30)
+	                Sleep(1)
 	        end
 	end
 	
@@ -107,7 +101,20 @@
 	        Turn( forlshin, x_axis, 0, 1 )
 	        Turn( bacrshin, x_axis, 0, 1 )
 	end
-	
+
+	local function RestoreAfterDelay(unitID)
+		Sleep(1000)
+		Turn(body, y_axis, 0, math.rad(150))
+		Turn(lgun, x_axis, 0, math.rad(100))	
+		Turn(rgun, x_axis, 0, math.rad(100))	
+	end
+
+
+	--script
+	function script.Create()
+	       
+	end
+		
 	function script.StartMoving()
 	        StartThread( Walk )
 	end
