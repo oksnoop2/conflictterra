@@ -1,4 +1,4 @@
-	-- by KR
+	--Shimazu Combat Mech animation script by Sanada
 	
 	--pieces
 	local waist = piece "waist"
@@ -31,39 +31,22 @@
 	local forrshin = piece "forrshin"
 	local forrfoot = piece "forrfoot"
 
+
+	--variables
 	local currBarrel = 1
 
 
 	--signals
 	local SIG_AIM = 1
 	local walk_go = 2
-	local walk_stop = 4
+
+
+	--CEGs
 	local ct_cannon_artillery = SFX.CEG
 	local ct_cannon_artillery_side_small = SFX.CEG + 1
 	
-	function script.Create()
-	       Turn(fxflare1, x_axis, -1.5, 10)
-	       Turn(fxflare2, y_axis, 1.5, 10)
-	       Turn(fxflare3, y_axis, -1.5, 10)
-
-	       Turn(fxflare2, x_axis, 0.5, 10)
-	       Turn(fxflare3, x_axis, 0.5, 10)
-
-	       Turn(fxflare4, x_axis, -1.5, 10)
-	       Turn(fxflare5, y_axis, 1.5, 10)
-	       Turn(fxflare6, y_axis, -1.5, 10)
-
-	       Turn(fxflare5, x_axis, 0.5, 10)
-	       Turn(fxflare6, x_axis, 0.5, 10)
-	end
 	
-	local function RestoreAfterDelay(unitID)
-		Sleep(2500)
-		Turn(body, y_axis, 0, math.rad(150))
-		Turn(lgun, x_axis, 0, math.rad(100))	
-		Turn(rgun, x_axis, 0, math.rad(100))	
-	end
-
+	--local functions
 	local function Walk()
 	        SetSignalMask( walk_go )
 	        while ( true ) do
@@ -129,7 +112,32 @@
 	        Turn( forlshin, x_axis, 0, 0.5 )
 	        Turn( bacrshin, x_axis, 0, 0.5 )
 	end
-	
+
+	local function RestoreAfterDelay(unitID)
+		Sleep(1000)
+		Turn(body, y_axis, 0, math.rad(150))
+		Turn(lgun, x_axis, 0, math.rad(100))	
+		Turn(rgun, x_axis, 0, math.rad(100))	
+	end
+
+
+	--script
+	function script.Create()
+	       Turn(fxflare1, x_axis, -1.5, 10)
+	       Turn(fxflare2, y_axis, 1.5, 10)
+	       Turn(fxflare3, y_axis, -1.5, 10)
+
+	       Turn(fxflare2, x_axis, 0.5, 10)
+	       Turn(fxflare3, x_axis, 0.5, 10)
+
+	       Turn(fxflare4, x_axis, -1.5, 10)
+	       Turn(fxflare5, y_axis, 1.5, 10)
+	       Turn(fxflare6, y_axis, -1.5, 10)
+
+	       Turn(fxflare5, x_axis, 0.5, 10)
+	       Turn(fxflare6, x_axis, 0.5, 10)
+	end
+		
 	function script.StartMoving()
 	        StartThread( Walk )
 	end
