@@ -1,4 +1,4 @@
-	-- by KR
+	--Tri Air Drone animation script by Oksnoop2 and Sanada
 	
 	--pieces
 	local link = piece "link"
@@ -7,17 +7,22 @@
 	local rbody = piece "rbody"
 	local tbody = piece "tbody"
 
+
 	--signals
 	local SIG_AIM = 1
 
-	function script.Create(unitID)
-		Spin(link, z_axis, 0.5)
-	end
-	
+
+	--local functions
 	local function RestoreAfterDelay(unitID)
 		Sleep(2500)
 		Turn(link, y_axis, 0, math.rad(1500))
 		Turn(link, x_axis, 0, math.rad(1500))
+	end
+
+
+	--script
+	function script.Create(unitID)
+		Spin(link, z_axis, 0.5)
 	end
 
 	function script.QueryWeapon1() return flare end
@@ -38,6 +43,6 @@
 	function script.FireWeapon1()
 	end
 	
-function script.Killed(recentDamage, maxHealth)
-   return 0
-end
+	function script.Killed(recentDamage, maxHealth)
+		return 0
+	end

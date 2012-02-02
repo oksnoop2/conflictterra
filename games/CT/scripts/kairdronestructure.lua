@@ -1,8 +1,12 @@
+	--Air Drone Structure animation script by Oksnoop2 and Sanada
 
+	--pieces
 	local base = piece "base"
 	local nano = piece "nano"
 	local pad = piece "pad"
 
+
+	--script
 	function script.Create(unitID)
 	end
 

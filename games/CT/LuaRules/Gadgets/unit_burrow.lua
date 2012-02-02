@@ -12,12 +12,8 @@ function gadget:GetInfo()
 end
 ------------------------------------------------------------------------
 local Burrowers = {
---	[UnitDefNames.kdroneminer.id] = "kdroneminer",
---	[UnitDefNames.tc_ghoul.id] = "tc_ghoul",
---	[UnitDefNames.tc_gunner.id] = "tc_gunner",
---	[UnitDefNames.tc_enforcer.id] = "tc_enforcer",
---	[UnitDefNames.tc_mage.id] = "tc_mage",	
---	[UnitDefNames.tc_pestilence.id] = "tc_pestilence",
+	--[UnitDefNames.klightdrone.id] = "klightdrone",
+
 }
 
 local CMD_BURROW = 32630
@@ -36,7 +32,7 @@ Burrow = {
 		id=CMD_BURROW,
 		type=CMDTYPE.ICON,
 		name="Burrow",
-		texture="&.9x.9&bitmaps/icons/blank.tif&bitmaps/icons/burrow.png",
+		--texture="&.9x.9&bitmaps/icons/blank.tif&bitmaps/icons/burrow.png",
 		tooltip="Burrow/Unborrow.\r\nHint: Burrowed units are hidden and unable to move or attack.",
 		action="borrow"
 		}

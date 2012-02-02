@@ -1,4 +1,4 @@
-	-- by KR
+	--Tri Roller Drone animation script by Oksnoop2 and Sanada
 	
 	--pieces
 	local body = piece "body"
@@ -9,14 +9,12 @@
 	local leftwheel = piece "w2"
 	local rightwheel = piece "w3"
 
+
 	--signals
 	local SIG_AIM = 1
 
-	function script.Create(unitID)
-		Turn(leftwheel, y_axis, 0.75, 10)
-		Turn(rightwheel, y_axis, -0.75, 10)
-	end
-
+	
+	--local functions
 	local function walk()
 		Spin( body, y_axis, -2 )
 	        Spin( frontwheel, z_axis, 2 )
@@ -30,7 +28,21 @@
 	        StopSpin( leftwheel, x_axis, 2 )
 		StopSpin( rightwheel, x_axis, 2 )
 	end
-	
+
+	local function RestoreAfterDelay(unitID)
+		Sleep(1000)
+		Move(turret, y_axis, 0, math.rad(150))
+		Turn(turret, y_axis, 0, math.rad(150))
+		Turn(turret, x_axis, 0, math.rad(150))
+	end
+
+
+	--script
+	function script.Create(unitID)
+		Turn(leftwheel, y_axis, 0.75, 10)
+		Turn(rightwheel, y_axis, -0.75, 10)
+	end
+
 	function script.StartMoving()
 	        StartThread(walk)
 	end
@@ -39,13 +51,6 @@
 	        StartThread(stop_walk)
 	end
 	
-	local function RestoreAfterDelay(unitID)
-		Sleep(2500)
-		Move(turret, y_axis, 0, math.rad(150))
-		Turn(turret, y_axis, 0, math.rad(150))
-		Turn(turret, x_axis, 0, math.rad(150))
-	end
-
 	function script.QueryWeapon1() return flare end
 	
 	function script.AimFromWeapon1() return turret end

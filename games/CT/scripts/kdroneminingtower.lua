@@ -1,21 +1,27 @@
-	-- by KR
+	--Drone Mining Tower animation script by Oksnoop2 and Sanada
 	
 	--pieces
 	local base = piece "base"
 	local turret = piece "turret"
 	local barrel = piece "barrel"
 
+
 	--signals
 	local SIG_AIM = 1
+
+
+	--CEGs
         local ct_mininglaser_green = SFX.CEG
 	
-	function script.Create()
-	       
-	end
-	
+
+	--local functions
 	local function RestoreAfterDelay(unitID)
-		Sleep(2500)
+		Sleep(1000)
         	Turn(turret, x_axis, 0, math.rad(50))
+	end
+
+	--script
+	function script.Create()
 	end
 
 	function script.QueryWeapon1() return barrel end
@@ -37,6 +43,6 @@
 		EmitSfx(barrel, ct_mininglaser_green)	
 	end
 	
-function script.Killed(recentDamage, maxHealth)
-   return 0
-end
+	function script.Killed(recentDamage, maxHealth)
+		return 0
+	end

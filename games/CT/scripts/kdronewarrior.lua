@@ -1,4 +1,4 @@
-	-- by KR
+	--Warrior Drone animation script by Oksnoop2 and Sanada
 	
 	--pieces
 	local body = piece "body"
@@ -28,17 +28,9 @@
 	--signals
 	local SIG_AIM = 1
 	local walk_go = 2
-	local walk_stop = 4
 
-	function script.Create(unitID)
-	end
-	
-	local function RestoreAfterDelay(unitID)
-		Sleep(2500)
-		Turn(barrel, y_axis, 0, math.rad(150))
-		Turn(barrel, x_axis, 0, math.rad(150))
-	end
 
+	--local functions
 	local function Walk()
 	        SetSignalMask( walk_go )
 		Turn( rfthigh, x_axis, -0.25, 2 )
@@ -84,6 +76,17 @@
 
 			Turn (rfthigh, x_axis, 0, 2)
 			Turn (lbthigh, x_axis, 0, 2)
+	end
+
+	local function RestoreAfterDelay(unitID)
+		Sleep(1000)
+		Turn(barrel, y_axis, 0, math.rad(150))
+		Turn(barrel, x_axis, 0, math.rad(150))
+	end
+
+
+	--script
+	function script.Create(unitID)
 	end
 	
 	function script.StartMoving()

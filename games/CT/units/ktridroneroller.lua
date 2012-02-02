@@ -71,7 +71,7 @@
 	
 
 	
- weapons             = {
+	  weapons             = {
 
 		--	{
 		--	  def                = [[AA]],

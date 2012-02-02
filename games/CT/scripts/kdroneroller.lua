@@ -1,4 +1,4 @@
-	-- by KR
+	--Roller Drone animation script by Oksnoop2 and Sanada
 	
 	--pieces
 	local body = piece "body"
@@ -9,36 +9,33 @@
 	local flare1 = piece "flare1"
 	local flare2 = piece "flare2"
 
+
 	--signals
 	local SIG_AIM = 1
 
-	function script.Create(unitID)
-	end
 
-	local function walk()
-	        Spin( lwheel, x_axis, 5 )
-		Spin( rwheel, x_axis, 5 )
-	end
-
-	local function stop_walk()
-	        StopSpin( lwheel, x_axis, 5 )
-		StopSpin( rwheel, x_axis, 5 )
-	end
-	
-	function script.StartMoving()
-	        StartThread(walk)
-	end
-	
-	function script.StopMoving()
-	        StartThread(stop_walk)
-	end
-	
+	--local functions
 	local function RestoreAfterDelay(unitID)
-		Sleep(2500)
+		Sleep(1000)
 		Turn(body, y_axis, 0, math.rad(150))
 		Turn(body, x_axis, 0, math.rad(150))
 	end
 
+
+	--script
+	function script.Create(unitID)
+	end
+
+	function script.StartMoving()
+	        Spin( lwheel, x_axis, 5 )
+		Spin( rwheel, x_axis, 5 )
+	end
+	
+	function script.StopMoving()
+	        StopSpin( lwheel, x_axis, 5 )
+		StopSpin( rwheel, x_axis, 5 )
+	end
+	
 	function script.QueryWeapon1() return flare1 end
 	
 	function script.AimFromWeapon1() return body end

@@ -1,4 +1,4 @@
-	-- by KR
+	--Drone Builder animation script by Oksnoop2 and Sanada
 	
 	--pieces
 	local body = piece "body"
@@ -21,49 +21,12 @@
 	--signals
 	local SIG_AIM = 1
 	local walk_go = 2
-	local walk_stop = 4
-	local SIG_BUILD = 8
+	local SIG_BUILD = 4
 
-	function script.Create(unitID)
-	end
 
-	function script.StartBuilding(heading, pitch)
-		Signal(SIG_BUILD)
-		SetSignalMask(SIG_BUILD)
-        	Turn(body, y_axis, heading, math.rad(90))
-        	WaitForTurn(body, y_axis)
-		SetUnitValue(COB.INBUILDSTANCE, 1)
-		return 1
-	end
-
-	function script.Querybody() return buildflare end
-
-	function script.AimFromWeapon() return body end
-
-	function script.StopBuilding()
-		Signal(SIG_BUILD)
-		SetSignalMask(SIG_BUILD)
-		SetUnitValue(COB.INBUILDSTANCE, 0)
-		Turn(body, y_axis, 0, math.rad(90))
-		WaitForTurn(body, y_axis)
-		Sleep(1)
-		return 0
-	end
-
-	function script.AimFromWeapon() return buildflare end
-
-	function script.QueryWeapon() return buildflare end
-
-	function script.QueryNanoPiece() return buildflare end
-	
-	local function RestoreAfterDelay(unitID)
-		Sleep(2500)
-		Turn(body, y_axis, 0, math.rad(150))
-	end
-
+	--local functions
 	local function Walk()
 	        SetSignalMask( walk_go )
-                Sleep(30)
 	        while ( true ) do
 	                Turn( forrthigh, x_axis, 0, 2 )
 	                Turn( baclthigh, x_axis, 0, 2 )
@@ -86,7 +49,7 @@
 	                WaitForTurn( forlshin, x_axis )
                         WaitForTurn( forrshin, x_axis )
    	                WaitForTurn( baclshin, x_axis )
-	                Sleep(30)
+	                Sleep(1)
 	               
 	                Turn( bacrthigh, x_axis, 0, 2 )
 	                Turn( forlthigh, x_axis, 0, 2 )
@@ -109,7 +72,7 @@
 	                WaitForTurn( forlshin, x_axis )
                         WaitForTurn( forrshin, x_axis )
    	                WaitForTurn( baclshin, x_axis )
-	                Sleep(30)
+	                Sleep(1)
 	        end
 	end
 	
@@ -127,7 +90,12 @@
 	        Turn( forlshin, x_axis, 0, 2 )
 	        Turn( bacrshin, x_axis, 0, 2 )
 	end
-	
+
+
+	--script
+	function script.Create(unitID)
+	end
+
 	function script.StartMoving()
 	        StartThread( Walk )
 	end
@@ -136,21 +104,25 @@
 	        StartThread( StopWalk )
 	end
 
-	function script.QueryWeapon1() return buildflare end
-	
-	function script.AimFromWeapon1() return body end
-	
-	function script.AimWeapon1( heading, pitch )
-                Signal(SIG_AIM)
-		SetSignalMask(SIG_AIM)
-        	Turn(body, y_axis, heading, math.rad(150))
+	function script.QueryNanoPiece() return buildflare end
+
+	function script.StartBuilding(heading, pitch)
+		Signal(SIG_BUILD)
+		SetSignalMask(SIG_BUILD)
+        	Turn(body, y_axis, heading, math.rad(90))
         	WaitForTurn(body, y_axis)
-		StartThread(RestoreAfterDelay)
-		return true
+		SetUnitValue(COB.INBUILDSTANCE, 1)
+		return 1
 	end
-	
-	function script.FireWeapon1()
-	       Sleep(30)
+
+	function script.StopBuilding()
+		Signal(SIG_BUILD)
+		SetSignalMask(SIG_BUILD)
+		SetUnitValue(COB.INBUILDSTANCE, 0)
+		Turn(body, y_axis, 0, math.rad(90))
+		WaitForTurn(body, y_axis)
+		Sleep(1)
+		return 0
 	end
 	
 	function script.Killed(recentDamage, maxHealth)

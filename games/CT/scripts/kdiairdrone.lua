@@ -1,4 +1,4 @@
-	-- by KR
+	--Di Air Drone animation script by Oksnoop2 and Sanada
 	
 	--pieces
 	local link = piece "link"
@@ -11,11 +11,17 @@
 	local binderbeampiece = piece "binderbeam"
 	local binderbeampiece2 = piece "binderbeam2"
 
+
 	--signals
 	local SIG_AIM = 1
 	local SIG_AIM_SEC = 2
+
+
+	--CEGs
 	local ct_binderbeam = SFX.CEG
 
+
+	--local functions
 	local function binderbeam()
 		Turn(binderbeampiece, y_axis, 1.5, 10)
 		Turn(binderbeampiece2, y_axis, 1.5, 10)
@@ -26,6 +32,16 @@
 		end
 	end
 
+	local function RestoreAfterDelay(unitID)
+		Sleep(1000)
+		Turn(lflare1, y_axis, 0, math.rad(90))
+		Turn(rflare1, y_axis, 0, math.rad(90))
+        	Turn(lflare1, x_axis, 0, math.rad(50))
+        	Turn(rflare1, x_axis, 0, math.rad(50))
+	end
+
+
+	--script
 	function script.Create(unitID)
 		StartThread(binderbeam)
 		while (true) do
@@ -43,14 +59,6 @@
 			WaitForMove(rbody, y_axis)
 			Sleep(1)
 		end
-	end
-
-	local function RestoreAfterDelay(unitID)
-		Sleep(2500)
-		Turn(lflare1, y_axis, 0, math.rad(90))
-		Turn(rflare1, y_axis, 0, math.rad(90))
-        	Turn(lflare1, x_axis, 0, math.rad(50))
-        	Turn(rflare1, x_axis, 0, math.rad(50))
 	end
 
 	function script.QueryWeapon1() return lflare1 end
@@ -89,6 +97,6 @@
 	function script.FireWeapon2()
 	end
 	
-function script.Killed(recentDamage, maxHealth)
-   return 0
-end
+	function script.Killed(recentDamage, maxHealth)
+		return 0
+	end
