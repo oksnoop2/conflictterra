@@ -28,26 +28,6 @@ local morphDefs = {
 
 -----
  
-  baatruck = {
-    {
-      into = 'baatruckturret',
-      metal = 0,
-      energy = 0,
-      time = 2,
-    },
-  },
- 
-  baatruckturret = {
-    {
-      into = 'baatruck',
-      metal = 0,
-      energy = 0,
-      time = 2,
-    },
-  },
-
------
- 
   bsupplydepot = {
     {
       into = 'bsupplydepotmobile',
@@ -191,82 +171,22 @@ local morphDefs = {
   },
 
 -----
- 
-  badvaircruiser = {
-    {
-      into = 'badvaircruiserfactory',
-      metal = 0,
-      energy = 0,
-      time = 5,
-    },
-  },
- 
-  badvaircruiserfactory = {
-    {
-      into = 'badvaircruiser',
-      metal = 0,
-      energy = 0,
-      time = 5,
-    },
-  },
 
------
- 
-  blanddefship = {
+  baatruck = {
     {
-      into = 'blanddefmobileship',
+      into = 'baatruckturret',
       metal = 0,
       energy = 0,
-      time = 5,
+      time = 2,
     },
   },
  
-  blanddefmobileship = {
+  baatruckturret = {
     {
-      into = 'blanddefship',
+      into = 'baatruck',
       metal = 0,
       energy = 0,
-      time = 5,
-    },
-  },
-
------
- 
-  bairdefship = {
-    {
-      into = 'bairdefmobileship',
-      metal = 0,
-      energy = 0,
-      time = 5,
-    },
-  },
- 
-  bairdefmobileship = {
-    {
-      into = 'bairdefship',
-      metal = 0,
-      energy = 0,
-      time = 5,
-    },
-  },
-
------
- 
-  bnavydefship = {
-    {
-      into = 'bnavydefmobileship',
-      metal = 0,
-      energy = 0,
-      time = 5,
-    },
-  },
- 
-  bnavydefmobileship = {
-    {
-      into = 'bnavydefship',
-      metal = 0,
-      energy = 0,
-      time = 5,
+      time = 2,
     },
   },
 

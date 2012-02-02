@@ -77,14 +77,6 @@
 			"badvbeacon",
 			"bexperimentalpad",
 
-			--defense ships
-			"blanddefship",
-			"blanddefmobileship",
-			"bairdefship",
-			"bairdefmobileship",
-			"bnavydefship",
-			"bnavydefmobileship",
-
 
 			--DRONE--
 
