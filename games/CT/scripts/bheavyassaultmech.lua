@@ -1,4 +1,4 @@
-	-- by KR
+	--Izanagi Assault Mech animation script by Sanada
 	
 	--pieces
         local waist = piece "waist"
@@ -31,6 +31,8 @@
 	local tflare5 = piece "tflare5"
         local tflare6 = piece "tflare6"
 
+
+	--variables
 	local currBarrel = 1
 	local currBarrel2 = 1
 	local currBarrel3 = 1
@@ -41,83 +43,159 @@
 	local SIG_AIM_SEC = 2
 	local SIG_AIM_THIR = 4
 	local walk_go = 8
-	local walk_stop = 16
+
+
+	--CEGs
         local ct_cannon_tank = SFX.CEG
 	local ct_cannon_artillery = SFX.CEG + 1
 	local ct_cannon_artillery_side = SFX.CEG + 2	
 	
-	function script.Create()
-		Turn(fxflare1, y_axis, -1.5, 10)
-		Turn(fxflare2, y_axis, 1.5, 10)
-		Turn(fxflare3, y_axis, -1.5, 10)
-		Turn(fxflare4, y_axis, 1.5, 10)
-	end
 
+	--local functions
 	local function walk()
 		SetSignalMask(walk_go)
-		Move (waist, y_axis, 15, 10)
+		--Move (waist, y_axis, 15, 10)
 		while (true) do
-	                Turn( lshin, x_axis, -0.75, 2.5 )
-	                Turn( lthigh, x_axis, 0.5, 2.5 )
-			Turn( lfoot, x_axis, 0, 2.5 )
-	               
-	                Turn( rshin, x_axis, 1.5, 2.5 )
-	                Turn( rthigh, x_axis, -1, 2.5 )
-			Turn( rfoot, x_axis, 0, 2.5 )
 
-	                WaitForTurn( lshin, x_axis )
+			--left leg backward
+	                Turn( lthigh, x_axis, 1, 3 )
+	                Turn( lshin, x_axis, -1, 3 )
+			Turn( lfoot, x_axis, 0.5, 3 )
+	               
+			--right leg forward
+	                Turn( rthigh, x_axis, -0.5, 3 )
+	                Turn( rshin, x_axis, 1.5, 3 )
+			Turn( rfoot, x_axis, -0.5, 3 )
+
+			--left leg drop
+			Move( lthigh, y_axis, 0, 15 )
+
+			--right leg lift
+			Move( rthigh, y_axis, 10, 15 )
+
+			--body turn
+			Turn( body, z_axis, -0.05, 1 )
+	               
+			--left leg wait
 	                WaitForTurn( lthigh, x_axis )
+	                WaitForTurn( lshin, x_axis )
 	                WaitForTurn( lfoot, x_axis )
-	                WaitForTurn( rshin, x_axis )
+
+			--right leg wait
 	                WaitForTurn( rthigh, x_axis )
+	                WaitForTurn( rshin, x_axis )
 	                WaitForTurn( rfoot, x_axis )
+
+			--left leg drop wait
+			WaitForMove( lthigh, y_axis )
+
+			--right leg lift wait
+			WaitForMove( rthigh, y_axis )
+
+			--body wait
+			WaitForTurn( body, z_axis )
 	                Sleep(1)
-	               
-	                Turn( lshin, x_axis, 1.5, 2.5 )
-	                Turn( lthigh, x_axis, -1, 2.5 )
-			Turn( lfoot, x_axis, 0, 2.5 )
-	               
-	                Turn( rshin, x_axis, -0.75, 2.5 )
-	                Turn( rthigh, x_axis, 0.5, 2.5 )
-			Turn( rfoot, x_axis, 0, 2.5 )
 
-	                WaitForTurn( lshin, x_axis )
+			--cycle
+	               
+			--left leg forward
+	                Turn( lthigh, x_axis, -0.5, 3 )
+	                Turn( lshin, x_axis, 1.5, 3 )
+			Turn( lfoot, x_axis, -0.5, 3 )
+	               
+			--right leg back
+	                Turn( rthigh, x_axis, 1, 3 )
+	                Turn( rshin, x_axis, -1, 3 )
+			Turn( rfoot, x_axis, 0.5, 3 )
+
+			--left leg lift
+			Move( lthigh, y_axis, 10, 15 )
+
+			--right leg drop
+			Move( rthigh, y_axis, 0, 15 )
+
+			--body turn
+			Turn( body, z_axis, 0.05, 1 )
+
+			--left leg wait
 	                WaitForTurn( lthigh, x_axis )
+	                WaitForTurn( lshin, x_axis )
 	                WaitForTurn( lfoot, x_axis )
-	                WaitForTurn( rshin, x_axis )
+
+			--right leg wait
 	                WaitForTurn( rthigh, x_axis )
+	                WaitForTurn( rshin, x_axis )
 	                WaitForTurn( rfoot, x_axis )
+
+			--left leg lift wait
+			WaitForMove( lthigh, y_axis )
+
+			--right leg drop wait
+			WaitForMove( rthigh, y_axis )
+
+			--body wait
+			WaitForTurn( body, z_axis )
 	                Sleep(1)
 	        end
 	end
 
 	local function stop_walk()
 	        Signal(walk_go)
-		Move( waist, y_axis, 0, 10 )
 
-		Turn( lshin, x_axis, 0, 2.5 )
-		Turn( lthigh, x_axis, 0, 2.5 )
-		Turn( lfoot, x_axis, 0, 2.5 )
-	       
-	        Turn( rshin, x_axis, 0, 2.5 )
-	        Turn( rthigh, x_axis, 0, 2.5 )
-		Turn( rfoot, x_axis, 0, 2.5 )
+		--left leg stop
+		Turn( lthigh, x_axis, 0, 3 )
+		Turn( lshin, x_axis, 0, 3 )
+		Turn( lfoot, x_axis, 0, 3 )
+
+		--right leg stop
+	        Turn( rthigh, x_axis, 0, 3 )
+	        Turn( rshin, x_axis, 0, 3 )
+		Turn( rfoot, x_axis, 0, 3 )
+
+		--left leg drop
+		Move( lthigh, y_axis, 0, 15 )
+
+		--right leg drop
+		Move( rthigh, y_axis, 0, 15 )
+
+		--body stop
+		Turn( body, z_axis, 0, 1 )
 
 	end
-	
+
+        local function recoil()
+               Move (bbarrel, z_axis, -12, 400)
+               WaitForMove (bbarrel, z_axis)
+               Move (bbarrel, z_axis, 0, 20)
+        end
+
+	local function RestoreAfterDelay(unitID)
+		Sleep(1000)
+		Turn(body, y_axis, 0, math.rad(150))
+        	Turn(bturret, x_axis, 0, math.rad(100))
+        	Turn(tturret, x_axis, 0, math.rad(100))
+	end
+
+
+	--script
+	function script.Create()
+		--legs spread
+		Turn( lthigh, y_axis, -0.2, 2 )
+		Turn( rthigh, y_axis, 0.2, 2 )
+
+		--muzzle flares positioning
+		Turn(fxflare1, y_axis, -1.5, 10)
+		Turn(fxflare2, y_axis, 1.5, 10)
+		Turn(fxflare3, y_axis, -1.5, 10)
+		Turn(fxflare4, y_axis, 1.5, 10)
+	end
+
 	function script.StartMoving()
 	        StartThread(walk)
 	end
 	
 	function script.StopMoving()
 	        StartThread(stop_walk)
-	end
-	
-	local function RestoreAfterDelay(unitID)
-		Sleep(2500)
-		Turn(body, y_axis, 0, math.rad(150))
-        	Turn(bturret, x_axis, 0, math.rad(100))
-        	Turn(tturret, x_axis, 0, math.rad(100))
 	end
 
 	function script.QueryWeapon1()
@@ -238,12 +316,6 @@
 		if currBarrel3 == 4 then currBarrel3 = 1 end
 	end
 
-        function recoil()
-               Move (bbarrel, z_axis, -12, 400)
-               WaitForMove (bbarrel, z_axis)
-               Move (bbarrel, z_axis, 0, 20)
-        end
-	
 	function script.Killed(recentDamage, maxHealth)
 		return 0
 	end
