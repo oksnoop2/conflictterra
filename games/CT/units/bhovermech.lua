@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bhovermech]],
 	  name                = [[Ukita Hover Combat Mech]],
-	  description         = [[Hover Assault Mech - Hover-equipped "mech" that is able to instantly move between land and sea.  Armed with both rockets and torpedoes.]],
+	  description         = [[Hover Assault Mech - Hover-equipped half-mech that is able to instantly move between land and sea.  Armed with both rockets and torpedoes.]],
 	  acceleration        = 0.08,
 	  brakeRate           = 0.11,
 	  buildCostEnergy     = 350,
