@@ -22,9 +22,6 @@ local bengineer2 = {
 		[[badvairturret]],
 		[[badvlandturret]],
 --		[[badvlandnavalturret]],
-		[[blanddefship]],
-		[[bairdefship]],
---		[[bnavydefship]],
 	},
 
 	buildTime           = 25,

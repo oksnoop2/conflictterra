@@ -12,7 +12,6 @@ local bseaengineer2 = {
 		[[bseapowerplant]],
 		[[badvsearadartower]],
 		[[badvtorpedoturret]],
-		[[bnavydefship]],
 	},
 
         buildpic            = [[bseaengineer2.png]],
