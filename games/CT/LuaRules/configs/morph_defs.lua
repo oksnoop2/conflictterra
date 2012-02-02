@@ -2,9 +2,9 @@
  
 local morphDefs = {
  
-  bflagship2 = {
+  bflagship = {
     {
-      into = 'bflagshipbase2',
+      into = 'bflagshipbase',
       metal = 0,
       energy = 0,
       time = 5,
@@ -17,9 +17,9 @@ local morphDefs = {
     }
   },
  
-  bflagshipbase2 = {
+  bflagshipbase = {
     {
-      into = 'bflagship2',
+      into = 'bflagship',
       metal = 0,
       energy = 0,
       time = 5,

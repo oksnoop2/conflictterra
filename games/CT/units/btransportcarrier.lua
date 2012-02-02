@@ -1,5 +1,5 @@
 	unitDef = {
-	  unitname            = [[btransportcarrier2]],
+	  unitname            = [[btransportcarrier]],
 	  name                = [[Maeda Class Cruiser]],
 	  description         = [[Transport Cruiser - Transport aircraft used to ferry units through the air.  Lightly armed with missiles.]],
 	  acceleration        = 0.16,
@@ -9,7 +9,7 @@
 	  buildCostEnergy     = 2000,
 	  buildCostMetal      = 2000,
 	  builder             = false,
-	  buildPic            = [[btransportcarrier2.png]],
+	  buildPic            = [[btransportcarrier.png]],
 	  buildTime           = 45,
 	  canAttack           = true,
           canFly              = true,
@@ -74,7 +74,7 @@
 	  verticalSpeed       = 30,
 	  transportUnloadMethod = 2,
 	  upright             = true,
-          script              = [[btransportcarrier2.lua]],
+          script              = [[btransportcarrier.lua]],
 
 	
 	  weapons             = {
@@ -235,4 +235,4 @@
 	
 	}
 	
-	return lowerkeys({ btransportcarrier2 = unitDef })
+	return lowerkeys({ btransportcarrier = unitDef })

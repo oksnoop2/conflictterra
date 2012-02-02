@@ -1,5 +1,5 @@
 	unitDef = {
-	  unitname            = [[bflagship2]],
+	  unitname            = [[bflagship]],
 	  name                = [[Oda Class Cruiser]],
 	  description         = [[Flagship - Centerpiece of NKG fleet.  Able to unload and become a Mobile Headquarters.  Can also upgrade once into a Battle Flagship.  Fires powerful missiles. - Build Limit: 1]],
 	  acceleration        = 0.16,
@@ -12,7 +12,7 @@
 	  builder             = false,
 	  reclaimable         = false,
 
-	  buildPic            = [[bflagship2.png]],
+	  buildPic            = [[bflagship.png]],
           buildRange3D        = false,
 	  buildTime           = 60,
 	  canAttack           = true,
@@ -79,7 +79,7 @@
 	  turnRate            = 250,
 	  upright             = true,
 	  unitRestricted      = 1,
-          script              = [[bflagship2.lua]],
+          script              = [[bflagship.lua]],
 
 
 	  weapons             = {
@@ -242,4 +242,4 @@
 	
 	}
 	
-	return lowerkeys({ bflagship2 = unitDef })
+	return lowerkeys({ bflagship = unitDef })

@@ -8,7 +8,7 @@ local
 
     name      = 'NKG',
 
-    startunit = 'bflagship2',
+    startunit = 'bflagship',
 
   },
 

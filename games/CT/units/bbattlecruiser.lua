@@ -10,7 +10,7 @@
 	  buildCostEnergy     = 2000,
 	  buildCostMetal      = 2000,
 	  builder             = false,
-	  buildPic            = [[bbattlecruiser2.png]],
+	  buildPic            = [[bbattlecruiser.png]],
 	  buildTime           = 60,
 	  canAttack           = true,
           canFly              = true,

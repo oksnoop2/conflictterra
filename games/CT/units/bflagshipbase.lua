@@ -1,6 +1,6 @@
 unitDef = {
 
-  unitname                      = [[bflagshipbase2]],
+  unitname                      = [[bflagshipbase]],
   name                          = [[Mobile Headquarters]],
   description                   = [[Docked Oda Class Cruiser.  Acts as a temporary base, providing defence and unit production. - Build Limit: 1]],
   amphibious                    = false,
@@ -24,7 +24,7 @@ unitDef = {
 
 
 
-  buildPic                      = [[bflagshipbase2.png]],
+  buildPic                      = [[bflagshipbase.png]],
   buildTime                     = 60,
 
   useBuildingGroundDecal	= true,
@@ -91,7 +91,7 @@ unitDef = {
 
   workerTime                    = 1,
   yardMap                       = [[cccccccccccccccooooooo cccccccccccccccooooooo cccccccccccccccooooooo oocccccccooccccooooooo oocccccccooccccooooooo oocccccccooccccooooooo oocccccccooccccooooooo oocccccccoocccccoooooc oocccccccoocccccoooooc oocccccccoocccccoooooc oocccccccoocccccoooooc oocccccccoocccccoooooc oocccccccooccccccooocc oocccccccooccccccooocc oocccccccooccccccooocc oocccccccooccccccooocc oocccccccooccooccooocc oocccccccooccoocccoccc oocccccccoocccccccoccc ccccccccccccccccccoccc cccccccccccccccccccccc cccccccccccccccccccccc]],
-  script                        = [[bflagshipbase2.lua]],
+  script                        = [[bflagshipbase.lua]],
 
 	  weapons             = {
 	
@@ -236,4 +236,4 @@ unitDef = {
 
 
 
-return lowerkeys({ bflagshipbase2 = unitDef })
+return lowerkeys({ bflagshipbase = unitDef })

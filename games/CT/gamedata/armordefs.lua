@@ -8,10 +8,10 @@
 
 
 			--combat cruisers
-			"bflagship2",
+			"bflagship",
 			"bbattleflagship",
 			"bbattlecruiser",
-			"btransportcarrier2",
+			"btransportcarrier",
 
 			--economy cruisers
 			"bsupplydepotmobile",
@@ -31,7 +31,7 @@
 
 			--landed cruisers
 			--T1
-			"bflagshipbase2",
+			"bflagshipbase",
 			"bflagshipbaseai",
 			"bsupplydepot",
 			"bsupplydepotai",
