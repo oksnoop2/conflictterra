@@ -81,7 +81,6 @@
 			--DRONE--
 
 
-			"kmex",
 			"kgrounddronestructure",
 			"kdroneminingtower",
 			"kairdronestructure",	
