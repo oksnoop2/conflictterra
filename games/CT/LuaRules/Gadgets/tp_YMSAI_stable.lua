@@ -40,7 +40,7 @@ stages = {}
 
 
 
---kdronewarrior kdronestructure kdroneengineer kairdronefactory kdroneminer
+--kdronewarrior kgrounddronestructure kdroneengineer kairdronestructure klightdrone
 
 
 
@@ -48,7 +48,7 @@ stages[1]= {
 
 	["unitNumbers"]={
 
-		["kdronestructure"]=1,
+		["kgrounddronestructure"]=1,
 
 		["kdroneengineer"]=1,
 
@@ -94,7 +94,7 @@ stages[4]= {
 
 	["unitNumbers"]={
 
-		["kairdronefactory"]=1,
+		["kairdronestructure"]=1,
 
 		["kdroneminingtower"]=4,
 
@@ -125,9 +125,9 @@ stages[6]= {
 
 	["unitNumbers"]={
 
-		["kdronestructure"] = 2,
+		["kgrounddronestructure"] = 2,
 
-		["kairdronefactory"]=1,
+		["kairdronestructure"]=1,
 
 		},
 
@@ -319,17 +319,17 @@ end
 function canUnitBuildThis (parentName, childName)
 
 
-	if (parentName == childName and not (parentName == "kdronestructure" or parentName == "kairdronefactory")) then return true end--everything can clone itself, except the structure (disabled)
+	if (parentName == childName and not (parentName == "kgrounddronestructure" or parentName == "kairdronestructure")) then return true end--everything can clone itself, except the structure (disabled)
 
-	if (parentName == "kdroneengineer" and childName == "kdronestructure") then return true end
+	if (parentName == "kdroneengineer" and childName == "kgrounddronestructure") then return true end
 
 	if (parentName == "kdroneengineer" and childName == "kdroneminingtower") then return true end
 
-	if (parentName == "kdroneengineer" and childName == "kairdronefactory") then return true end
+	if (parentName == "kdroneengineer" and childName == "kairdronestructure") then return true end
 
 	----land factory----
 
-	if (parentName == "kdronestructure") then
+	if (parentName == "kgrounddronestructure") then
 
 		if (childName == "kdroneengineer") then return true end
 
@@ -339,13 +339,13 @@ function canUnitBuildThis (parentName, childName)
 
 		if (childName == "ktridroneroller") then return true end		
 
-		if (childName == "kdroneminer") then return true end
+		if (childName == "klightdrone") then return true end
 
 	end
 
 	----air factory----
 
-	if (parentName == "kairdronefactory") then
+	if (parentName == "kairdronestructure") then
 
 		if (childName == "kairdrone") then return true end
 
@@ -415,7 +415,7 @@ function buildUnit (unitID, jobname)
 
 	
 
-	if (unitName (unitID) == "kdronestructure") then --land factory builds
+	if (unitName (unitID) == "kgrounddronestructure") then --land factory builds
 
 		Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {}, {}) --bauen
 
@@ -427,7 +427,7 @@ function buildUnit (unitID, jobname)
 
 	
 
-	if (unitName (unitID) == "kairdronefactory") then --air factory builds
+	if (unitName (unitID) == "kairdronestructure") then --air factory builds
 
 		Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {}, {}) --bauen
 
@@ -657,7 +657,7 @@ function gadget:GameFrame(frame)
 			local unitsWeMakeRaw = ourmetal/costofunit
 			local unitsWeMake = round(unitsWeMakeRaw,0)
 			for i=1,unitsWeMake do
-				unitWeWillMake = unweighted_choice( {"kdronewarrior", "kdroneminer", "kdronewarrior", "kdroneminer","kdronewarrior", "kdroneminer", "kdronewarrior", "kdroneminer", "kdiairdrone", "kdiaridrone", "ktriairdrone", "ktriairdrone", "ktriairdrone" } )
+				unitWeWillMake = unweighted_choice( {"kdronewarrior", "klightdrone", "kdronewarrior", "klightdrone","kdronewarrior", "klightdrone", "kdronewarrior", "klightdrone", "kdiairdrone", "kdiaridrone", "ktriairdrone", "ktriairdrone", "ktriairdrone" } )
 				makeSomeUnits(myTeam[t], {[unitWeWillMake]=1} )
 			end
 		end
@@ -680,7 +680,7 @@ function gadget:GameFrame(frame)
 
 		undeployEmptyMiningTowers (myTeam[t])
 
-		--if (not missing["kdronestructure"] and not missing["kairdronefactory"]) then
+		--if (not missing["kgrounddronestructure"] and not missing["kairdronestructure"]) then
 
 			--sendOutIdleEngineers (myTeam[t])
 
@@ -1000,7 +1000,7 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 
 			unitOnMission [unitID] = 30
 
-			if ( (unitName(unitID) ~= "kdroneengineer") and (unitName(unitID) ~= "kdroneminingtower") and (unitName(unitID) ~= "kdronestructure") and (unitName(unitID) ~= "kdroneairfactory") ) then
+			if ( (unitName(unitID) ~= "kdroneengineer") and (unitName(unitID) ~= "kdroneminingtower") and (unitName(unitID) ~= "kgrounddronestructure") and (unitName(unitID) ~= "kdroneairfactory") ) then
 				squadassign = math.random(1,4)
 				table.insert(teamsData[teamID].squads[squadassign], unitID) --random squad
 			end

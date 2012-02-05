@@ -18,11 +18,11 @@ local unitOnMission = {} --[unitID] = wieviele frames in ruhe gelassen werden
 stages = {}
 --skipMetal: if we have that much metal, then this stage is autocomplete/skipped
 
---kdronewarrior kdronestructure kdroneengineer kairdronefactory kdroneminer
+--kdronewarrior kgrounddronestructure kdroneengineer kairdronestructure klightdrone
 
 stages[1]= {
 	["unitNumbers"]={
-		["kdronestructure"]=1,
+		["kgrounddronestructure"]=1,
 		["kdroneengineer"]=2,
 		},
 	skipMetal = math.huge,
@@ -46,9 +46,9 @@ stages[3]= {
 	
 stages[4]= {
 	["unitNumbers"]={
-		["kairdronefactory"]=1,
+		["kairdronestructure"]=1,
 		["kdroneminingtower"]=4,
---		["kdroneminer"]=3, --spread fire drone
+--		["klightdrone"]=3, --spread fire drone
 		},
 	skipMetal = 1000,
 	}
@@ -62,7 +62,7 @@ stages[5]= {
 	
 stages[6]= {
 	["unitNumbers"]={
-		["kdronestructure"] = 3,
+		["kgrounddronestructure"] = 3,
 		},
 	skipMetal = math.huge,
 	}
@@ -84,7 +84,7 @@ stages[8]= {
 	
 stages[9]= {
 	["unitNumbers"]={
-		["kdroneminer"] =10,
+		["klightdrone"] =10,
 		},
 	skipMetal = math.huge,
 	}
@@ -170,20 +170,20 @@ end
 
 --naja
 function canUnitBuildThis (parentName, childName)
-	if (parentName == childName and not (parentName == "kdronestructure" or parentName == "kairdronefactory")) then return true end--everything can clone itself, except the structure
-	if (parentName == "kdroneengineer" and childName == "kdronestructure") then return true end
+	if (parentName == childName and not (parentName == "kgrounddronestructure" or parentName == "kairdronestructure")) then return true end--everything can clone itself, except the structure
+	if (parentName == "kdroneengineer" and childName == "kgrounddronestructure") then return true end
 	if (parentName == "kdroneengineer" and childName == "kdroneminingtower") then return true end
-	if (parentName == "kdroneengineer" and childName == "kairdronefactory") then return true end
+	if (parentName == "kdroneengineer" and childName == "kairdronestructure") then return true end
 	----land factory----
-	if (parentName == "kdronestructure") then
+	if (parentName == "kgrounddronestructure") then
 		if (childName == "kdroneengineer") then return true end
 		if (childName == "kdronewarrior") then return true end
 		if (childName == "kdroneroller") then return true end
 		if (childName == "ktridroneroller") then return true end		
-		if (childName == "kdroneminer") then return true end
+		if (childName == "klightdrone") then return true end
 	end
 	----air factory----
-	if (parentName == "kairdronefactory") then
+	if (parentName == "kairdronestructure") then
 		if (childName == "kairdrone") then return true end
 		if (childName == "kdiairdrone") then return true end
 		if (childName == "ktriairdrone") then return true end		
@@ -218,13 +218,13 @@ function buildUnit (unitID, jobname)
 		return
 	end
 	
-	if (unitName (unitID) == "kdronestructure") then --land factory builds
+	if (unitName (unitID) == "kgrounddronestructure") then --land factory builds
 		Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {}, {}) --bauen
 		moveAway (unitID, 500)	--waypoint
 		return
 	end
 	
-	if (unitName (unitID) == "kairdronefactory") then --air factory builds
+	if (unitName (unitID) == "kairdronestructure") then --air factory builds
 		Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {}, {}) --bauen
 		moveAway (unitID, 1000)	--waypoint
 		return
@@ -318,7 +318,7 @@ function gadget:GameFrame(frame)
 			end
 		makeSomeUnits (myTeam[t], missing)
 		undeployEmptyMiningTowers (myTeam[t])
-		--if (not missing["kdronestructure"] and not missing["kairdronefactory"]) then
+		--if (not missing["kgrounddronestructure"] and not missing["kairdronestructure"]) then
 			--sendOutIdleEngineers (myTeam[t])
 		--end
 		end
