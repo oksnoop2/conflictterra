@@ -745,7 +745,7 @@ do
       glTexGen(GL_S, GL_TEXTURE_GEN_MODE, GL_EYE_LINEAR)
       v = cvs.forward
       glTexGen(GL_S, GL_EYE_PLANE, v[1]*0.008,v[2]*0.008,v[3]*0.008, shift)
-      glTexture("LuaUI/Images/paralyzed.png")
+      --glTexture("LuaUI/Images/paralyzed.png")
 
       glColor(0,1,1,alpha*1.1)
       for i=1,#paraUnits do
