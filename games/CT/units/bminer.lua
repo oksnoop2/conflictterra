@@ -1,8 +1,8 @@
 local bminer = {
         name                = [[Mining Truck]],
         description         = [[Mining equipment whose single role is to mine metal from meteorites.]],
-        acceleration        = 0.06,
-        brakerate           = 1.5,
+        acceleration        = 1,
+        brakerate           = 0.1,
         buildpic            = [[bminer.png]],
         buildCostEnergy     = 100,
         buildCostMetal      = 100,

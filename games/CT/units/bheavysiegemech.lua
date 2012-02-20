@@ -2,7 +2,7 @@
 	  unitname            = [[bheavysiegemech]],
 	  name                = [[Shimazu Combat Mech]],
 	  description         = [[Heavy Siege Mech - Heavily armed SM that fires a salvo of inaccurate shells that are strong against buildings. - Build Limit: 15]],
-	  acceleration        = 0.02,
+	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 1125,
 	  buildCostMetal      = 1125,
