@@ -26,8 +26,10 @@ local name
 
   
 jumpCategory = { 
-	baseclass = {
-		range = 400, height = 200, speed = 6,  reload = 10,  aaShootMe = false, delay = 0, cobscript = true,rotateMidAir = true},	
+	normalclass = {
+		range = 500, height = 200, speed = 8,  reload = 5,  aaShootMe = false, delay = 0, cobscript = true,rotateMidAir = true},	
+	longclass = {
+		range = 1000, height = 200, speed = 12,  reload = 5,  aaShootMe = false, delay = 0, cobscript = true,rotateMidAir = true},	
 	-- category containining only optional tags for testing error code only.
 	-- iammissingstuff ={
 	-- 	reload	= 10, aaShootMe	= false, },	
@@ -35,8 +37,11 @@ jumpCategory = {
 
 jumpClassGroups = {
 
-	baseclass = { 
+	normalclass = { 
 	"bbasicmech",
+	},
+	
+	longclass = {
 	"bassaultmech",
 	"bacemech",
 	},
@@ -53,15 +58,6 @@ jumpClassGroups = {
 --		reload
 ------------------------------------------------------------------------------------------------------------------------------------------------	
 overCategory = {
-	
- bbasicmech = {
-    height = 150, speed = 8,  reload = 5,  aaShootMe = false,  },
-
- bassaultmech = {
-    range = 750,  height = 200, speed = 12,  reload = 5,  aaShootMe = false,  },
-
- bacemech = {
-    range = 750,  height = 200, speed = 12,  reload = 5,  aaShootMe = false,  },
 		
 }
 ------------------------------------------------------------------------------------------------------------------------------------------------
