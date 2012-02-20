@@ -2,24 +2,18 @@
  
 local morphDefs = {
  
-  bflagship = {
+  bprimarycruiser = {
     {
-      into = 'bflagshipbase',
+      into = 'bprimarycruiserbase',
       metal = 0,
       energy = 0,
       time = 5,
     },
-    {
-      into = 'bbattleflagship',
-      metal = 4000,
-      energy = 4000,
-      time = 120,
-    }
   },
  
-  bflagshipbase = {
+  bprimarycruiserbase = {
     {
-      into = 'bflagship',
+      into = 'bprimarycruiser',
       metal = 0,
       energy = 0,
       time = 5,
@@ -55,12 +49,6 @@ local morphDefs = {
       energy = 100,
       time = 5,
     },
-    {
-      into = 'badvmechcruiser',
-      metal = 1200,
-      energy = 1200,
-      time = 60,
-    },
   },
  
   bmechcruiserfactory = {
@@ -69,12 +57,6 @@ local morphDefs = {
       metal = 0,
       energy = 100,
       time = 5,
-    },
-    {
-      into = 'badvmechcruiserfactory',
-      metal = 1200,
-      energy = 1200,
-      time = 60,
     },
   },
 
@@ -87,12 +69,6 @@ local morphDefs = {
       energy = 100,
       time = 5,
     },
-    {
-      into = 'badvtankcruiser',
-      metal = 1200,
-      energy = 1200,
-      time = 60,
-    },
   },
  
   btankcruiserfactory = {
@@ -101,12 +77,6 @@ local morphDefs = {
       metal = 0,
       energy = 100,
       time = 5,
-    },
-    {
-      into = 'badvtankcruiserfactory',
-      metal = 1200,
-      energy = 1200,
-      time = 60,
     },
   },
 
@@ -126,46 +96,6 @@ local morphDefs = {
       into = 'baircruiser',
       metal = 0,
       energy = 100,
-      time = 5,
-    },
-  },
-
------
- 
-  badvmechcruiser = {
-    {
-      into = 'badvmechcruiserfactory',
-      metal = 0,
-      energy = 0,
-      time = 5,
-    },
-  },
- 
-  badvmechcruiserfactory = {
-    {
-      into = 'badvmechcruiser',
-      metal = 0,
-      energy = 0,
-      time = 5,
-    },
-  },
-
------
- 
-  badvtankcruiser = {
-    {
-      into = 'badvtankcruiserfactory',
-      metal = 0,
-      energy = 0,
-      time = 5,
-    },
-  },
- 
-  badvtankcruiserfactory = {
-    {
-      into = 'badvtankcruiser',
-      metal = 0,
-      energy = 0,
       time = 5,
     },
   },

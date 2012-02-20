@@ -1,6 +1,6 @@
 	unitDef = {
 	  unitname            = [[bradarship]],
-	  name                = [[Shiru Class Radar Ship]],
+	  name                = [[Date Class Radar Ship]],
 	  description         = [[Radar Ship - Seaworthy radar and sonar unit.]],
 	  acceleration        = 0.05,
 	  brakeRate           = 0.06,

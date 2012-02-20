@@ -43,7 +43,7 @@ function gadget:GameFrame(f)
 			local team = spGetUnitTeam(u)
 			local newUnit
 
-			if spGetUnitDefID(u) == UnitDefNames.bflagship2.id then
+			if spGetUnitDefID(u) == UnitDefNames.bprimarycruiser.id then
 
 				if type == "bengineer2" then
 					newUnit = spCreateUnit("bengineer2",x,y,z,0,team)
@@ -51,7 +51,7 @@ function gadget:GameFrame(f)
 			
 					
 				elseif type == "base" then
-					newUnit = spCreateUnit("bflagshipbase",x,y,z,0,team)
+					newUnit = spCreateUnit("bprimarycruiserbase",x,y,z,0,team)
 
 					
 				end

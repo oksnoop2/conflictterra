@@ -17,6 +17,10 @@
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
+
+	  customParams = {
+	  	RequireTech   = [[Ace Pilot's Presence, General's Presence]],
+	  },
 	
 	  explodeAs           = [[BIG_UNIT]],
 	  footprintX          = 6,

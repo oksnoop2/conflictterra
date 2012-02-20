@@ -1,8 +1,8 @@
 unitDef = {
 
   unitname                      = [[baircruiserfactory]],
-  name                          = [[Heike Class Cruiser Airport]],
-  description                   = [[Produces aircraft.  Can morph back into the Heike Class Cruiser.]],
+  name                          = [[Deployed Azai Class Cruiser]],
+  description                   = [[Produces aircraft.  Can morph back into the Azai Class Cruiser.]],
   amphibious                    = false,
   acceleration                  = 0,
   brakeRate                     = 0,
@@ -29,7 +29,7 @@ unitDef = {
   canBeAssisted                 = false,
   category                      = [[SINK]],
   collisionVolumeOffsets        = [[0 0 0]],
-  collisionVolumeScales         = [[176 120 256]],
+  collisionVolumeScales         = [[160 160 288]],
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
   corpse                        = [[DEAD]],
@@ -38,10 +38,10 @@ unitDef = {
   energyMake                    = 0,
   energyUse                     = 0,
   explodeAs                     = [[LARGE_BUILDING]],
-  footprintX                    = 11,
-  footprintZ                    = 16,
+  footprintX                    = 10,
+  footprintZ                    = 18,
   idleAutoHeal                  = 0,
-  isAirBase                     = true,
+  isAirBase                     = false,
   mass                          = 275,
   maxDamage                     = 4500,
   maxSlope                      = 15,
@@ -58,18 +58,27 @@ unitDef = {
   side                          = [[NKG]],
   sightDistance                 = 250,
 
-	  sounds			= {
+  sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",
 		},
 	      ok = {
 		"golgotha/vehicle_done_44khz",
 		},
-	  },
+  },
+
+  sfxtypes            		= {
+	
+	    explosiongenerators = {
+		"custom:ct_buildlight_green",
+		"custom:ct_buildlight_red",
+	    },
+	
+  },
 
   smoothAnim                    = true,
   workerTime                    = 1,
-  yardMap                       = [[ooooooooooo ooooooooooo ooooooooooo ooooooooooo coooooooooc coooooooooc coooooooooc coooooooooc ccooooooocc ccooooooocc cccoooooccc cccoooooccc cccoooooccc ccccooocccc cccccoccccc cccccoccccc]],
+  yardMap                       = [[oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo ccoooooocc ccoooooocc ccoooooocc ccoooooocc ccoooooocc ccoooooocc ccoooooocc]],
   script                        = [[baircruiserfactory.lua]],
 
 
@@ -77,7 +86,7 @@ unitDef = {
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Heike Class Cruiser Airport]],
+      description      = [[Wreckage - Deployed Azai Class Cruiser]],
       blocking         = true,
       category         = [[corpses]],
       damage           = 2250,
@@ -94,7 +103,7 @@ unitDef = {
 
 
     DEAD2 = {
-      description      = [[Debris - Heike Class Cruiser Airport]],
+      description      = [[Debris - Deployed Azai Class Cruiser]],
       blocking         = false,
 
       category         = [[heaps]],

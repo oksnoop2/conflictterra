@@ -1,26 +1,180 @@
+	--Cruiser Beacon animation script by Sanada
 
+	--pieces
 	local base = piece "base"
-	local arms = piece "arms"
-
-	local spinner1 = piece "spinner1"
-	local spinner2 = piece "spinner2"
-	local spinner3 = piece "spinner3"
-	local spinner4 = piece "spinner4"
-
-	local nano = piece "nano"
 	local pad = piece "pad"
 
+	local fxflare1 = piece "fxflare1"
+	local fxflare2 = piece "fxflare2"
+	local fxflare3 = piece "fxflare3"
+	local fxflare4 = piece "fxflare4"
+
+	local fxflare5 = piece "fxflare5"
+	local fxflare6 = piece "fxflare6"
+	local fxflare7 = piece "fxflare7"
+	local fxflare8 = piece "fxflare8"
+
+
+	--signals
+	local SIG_LIGHTS = 1
+	local SIG_LIGHTS_2 = 2
+
+
+	--CEGs
+        local ct_buildlight_green = SFX.CEG
+        local ct_buildlight_red = SFX.CEG + 1
+
+
+	--local functions
+	local function lights_red()
+		Signal(SIG_LIGHTS_2)
+		SetSignalMask(SIG_LIGHTS_2)
+		while (true) do
+			EmitSfx(fxflare1, ct_buildlight_red)
+			EmitSfx(fxflare2, ct_buildlight_red)
+			EmitSfx(fxflare3, ct_buildlight_red)
+			EmitSfx(fxflare4, ct_buildlight_red)
+			Sleep(1000)
+		end
+	end
+
+	local function lights()
+		Signal(SIG_LIGHTS)
+		Signal(SIG_LIGHTS_2)
+		SetSignalMask(SIG_LIGHTS)
+		EmitSfx(fxflare1, ct_buildlight_green)
+		EmitSfx(fxflare2, ct_buildlight_green)
+		EmitSfx(fxflare3, ct_buildlight_green)
+		EmitSfx(fxflare4, ct_buildlight_green)
+		Sleep(1000)
+		EmitSfx(fxflare5, ct_buildlight_green)
+		EmitSfx(fxflare6, ct_buildlight_green)
+		EmitSfx(fxflare7, ct_buildlight_green)
+		EmitSfx(fxflare8, ct_buildlight_green)
+		Sleep(1000)
+
+		-- 2 seconds
+
+		EmitSfx(fxflare1, ct_buildlight_green)
+		EmitSfx(fxflare2, ct_buildlight_green)
+		EmitSfx(fxflare3, ct_buildlight_green)
+		EmitSfx(fxflare4, ct_buildlight_green)
+		Sleep(1000)
+		EmitSfx(fxflare5, ct_buildlight_green)
+		EmitSfx(fxflare6, ct_buildlight_green)
+		EmitSfx(fxflare7, ct_buildlight_green)
+		EmitSfx(fxflare8, ct_buildlight_green)
+		Sleep(1000)
+
+		-- 4 seconds
+
+		EmitSfx(fxflare1, ct_buildlight_green)
+		EmitSfx(fxflare2, ct_buildlight_green)
+		EmitSfx(fxflare3, ct_buildlight_green)
+		EmitSfx(fxflare4, ct_buildlight_green)
+		Sleep(1000)
+		EmitSfx(fxflare5, ct_buildlight_green)
+		EmitSfx(fxflare6, ct_buildlight_green)
+		EmitSfx(fxflare7, ct_buildlight_green)
+		EmitSfx(fxflare8, ct_buildlight_green)
+		Sleep(1000)
+
+		-- 6 seconds
+
+		EmitSfx(fxflare1, ct_buildlight_green)
+		EmitSfx(fxflare2, ct_buildlight_green)
+		EmitSfx(fxflare3, ct_buildlight_green)
+		EmitSfx(fxflare4, ct_buildlight_green)
+		Sleep(1000)
+		EmitSfx(fxflare5, ct_buildlight_green)
+		EmitSfx(fxflare6, ct_buildlight_green)
+		EmitSfx(fxflare7, ct_buildlight_green)
+		EmitSfx(fxflare8, ct_buildlight_green)
+		Sleep(1000)
+
+		-- 8 seconds
+
+		EmitSfx(fxflare1, ct_buildlight_green)
+		EmitSfx(fxflare2, ct_buildlight_green)
+		EmitSfx(fxflare3, ct_buildlight_green)
+		EmitSfx(fxflare4, ct_buildlight_green)
+		Sleep(1000)
+		EmitSfx(fxflare5, ct_buildlight_green)
+		EmitSfx(fxflare6, ct_buildlight_green)
+		EmitSfx(fxflare7, ct_buildlight_green)
+		EmitSfx(fxflare8, ct_buildlight_green)
+		Sleep(1000)
+
+		-- 10 seconds
+
+		EmitSfx(fxflare1, ct_buildlight_green)
+		EmitSfx(fxflare2, ct_buildlight_green)
+		EmitSfx(fxflare3, ct_buildlight_green)
+		EmitSfx(fxflare4, ct_buildlight_green)
+		Sleep(1000)
+		EmitSfx(fxflare5, ct_buildlight_green)
+		EmitSfx(fxflare6, ct_buildlight_green)
+		EmitSfx(fxflare7, ct_buildlight_green)
+		EmitSfx(fxflare8, ct_buildlight_green)
+		Sleep(1000)
+
+		-- 12 seconds
+
+		EmitSfx(fxflare1, ct_buildlight_green)
+		EmitSfx(fxflare2, ct_buildlight_green)
+		EmitSfx(fxflare3, ct_buildlight_green)
+		EmitSfx(fxflare4, ct_buildlight_green)
+		Sleep(1000)
+		EmitSfx(fxflare5, ct_buildlight_green)
+		EmitSfx(fxflare6, ct_buildlight_green)
+		EmitSfx(fxflare7, ct_buildlight_green)
+		EmitSfx(fxflare8, ct_buildlight_green)
+		Sleep(1000)
+
+		-- 14 seconds
+
+		EmitSfx(fxflare1, ct_buildlight_green)
+		EmitSfx(fxflare2, ct_buildlight_green)
+		EmitSfx(fxflare3, ct_buildlight_green)
+		EmitSfx(fxflare4, ct_buildlight_green)
+		Sleep(1000)
+		EmitSfx(fxflare5, ct_buildlight_green)
+		EmitSfx(fxflare6, ct_buildlight_green)
+		EmitSfx(fxflare7, ct_buildlight_green)
+		EmitSfx(fxflare8, ct_buildlight_green)
+		Sleep(1000)
+
+		-- 16 seconds
+
+		EmitSfx(fxflare1, ct_buildlight_green)
+		EmitSfx(fxflare2, ct_buildlight_green)
+		EmitSfx(fxflare3, ct_buildlight_green)
+		EmitSfx(fxflare4, ct_buildlight_green)
+		Sleep(1000)
+		EmitSfx(fxflare5, ct_buildlight_green)
+		EmitSfx(fxflare6, ct_buildlight_green)
+		EmitSfx(fxflare7, ct_buildlight_green)
+		EmitSfx(fxflare8, ct_buildlight_green)
+		Sleep(1000)
+		StartThread(lights_red)
+	end
+
+	--script
 	function script.Create(unitID)
-		Move (arms, y_axis, -15)
-		Move (spinner1, y_axis, -20)
-		Move (spinner2, y_axis, -20)
-		Move (spinner3, y_axis, -20)
-		Move (spinner4, y_axis, -20)
+		Move( pad, y_axis, 1800, 5000 )
+		Turn( fxflare1, x_axis, -1.55 )
+		Turn( fxflare2, x_axis, -1.55 )
+		Turn( fxflare3, x_axis, -1.55 )
+		Turn( fxflare4, x_axis, -1.55 )
+		Turn( fxflare5, x_axis, -1.55 )
+		Turn( fxflare6, x_axis, -1.55 )
+		Turn( fxflare7, x_axis, -1.55 )
+		Turn( fxflare8, x_axis, -1.55 )
 	end
 
 	function script.QueryBuildInfo() return pad end
 
-	function script.QueryNanoPiece() return nano end
+	function script.QueryNanoPiece() return base end
 
 	function script.Activate()
 		SetUnitValue(COB.YARD_OPEN, 1)
@@ -37,29 +191,15 @@
 	end
 
 	function script.StartBuilding()
-		Move (arms, y_axis, 0, 10)
-		WaitForMove(arms, y_axis)
-		Move (spinner1, y_axis, 0, 10)
-		Move (spinner2, y_axis, 0, 10)
-		Move (spinner3, y_axis, 0, 10)
-		Move (spinner4, y_axis, 0, 10)
-
-		Spin (spinner1, y_axis, -1)
-		Spin (spinner2, y_axis, -1)
-		Spin (spinner3, y_axis, 1)
-		Spin (spinner4, y_axis, 1)
+		StartThread(lights)
+		Sleep(10000)
+		Move( pad, y_axis, 0, 150 )
 	end
 
 	function script.StopBuilding()
-		Move (arms, y_axis, -15)
-		Move (spinner1, y_axis, -20)
-		Move (spinner2, y_axis, -20)
-		Move (spinner3, y_axis, -20)
-		Move (spinner4, y_axis, -20)
-		StopSpin (spinner1, y_axis)
-		StopSpin (spinner2, y_axis)
-		StopSpin (spinner3, y_axis)
-		StopSpin (spinner4, y_axis)
+		Signal(SIG_LIGHTS)
+		Signal(SIG_LIGHTS_2)
+		Move( pad, y_axis, 1800, 5000 )
 	end
 
 	function script.Killed(recentDamage, maxHealth)

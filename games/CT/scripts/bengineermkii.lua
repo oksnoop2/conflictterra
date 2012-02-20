@@ -38,26 +38,25 @@
 
 	--TRACK CONFIGS--
 	local driving = true
-	local track = {}			--holds the track pieces, filled by gettracks()
-	local trackn = 18
-	local trackspeed = 10
-	local trackheightoffset = 3
+	local track = {}					--holds the track pieces, filled by gettracks()
+	local trackn = 18					--number of tracks per side
+	local trackspeed = 0.3				--how fast the track revolves
+	local trackheightoffset = 3			--move the whole track up or down
 	local wheel1x = 0
 	local wheel2x = 45
-	local wheelr = 3			--wheel radius
-	local trackoffsetx = 9			--gauge of the tank, how far apart the tracks run
-	local D = 24				--distance between center of wheels
+	local wheelr = 3					--wheel radius
+	local trackoffsetx = 9				--gauge of the tank, how far apart the tracks run
+	local D = 24						--distance between center of wheels
 	local U = (2*math.pi*wheelr) + D+D	--total perimeter/length of track per side
-	local ort = "nirgends"			--debug
+	local ort = "nirgends"				--debug
 	local ut = 1
-	local u1 = D / 2			--several lengths to divide the track into certain parts
+	local u1 = D / 2					--several lengths to divide the track into certain parts
 	local u2 = u1 + (math.pi*wheelr)
 	local u3 = u2 + D
 	local u4 = u3 + (math.pi*wheelr)
 
-	local trackspeed = 0.5			--how fast the track revolves
-	local ut_left = 0			--track rotation counter
-	local ut_leftstep = 0			--how much the track rotation counter is increased.  can be changed when steering, ie negative for turning in place
+	local ut_left = 0					--track rotation counter
+	local ut_leftstep = 0				--how much the track rotation counter is increased.  can be changed when steering, ie negative for turning in place
 	local ut_right = 0
 	local ut_rightstep = 0
 

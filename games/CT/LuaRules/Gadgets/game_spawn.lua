@@ -56,8 +56,8 @@ local function SpawnStartUnit(teamID)
 	if (startUnit and startUnit ~= "") then
 		local teamNum,leader,isDead,isAiTeam,side,allyTeam = Spring.GetTeamInfo(teamID)
 		if isAiTeam then
-			if startUnit=="bflagship" then
-				startUnit="bflagshipbaseai"
+			if startUnit=="bprimarycruiser" then
+				startUnit="bprimarycruiserbaseai"
 			end
 		end
 		-- spawn the specified start unit

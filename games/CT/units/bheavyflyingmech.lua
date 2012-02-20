@@ -22,6 +22,10 @@
 	  corpse              = [[DEAD]],
           cruiseAlt           = 75,
           reclaimable         = false,
+
+	  customParams = {
+	  	RequireTech   = [[Ace Pilot's Presence]],
+	  },
 	
 	  explodeAs           = [[BIG_UNIT]],
 	  floater             = false,

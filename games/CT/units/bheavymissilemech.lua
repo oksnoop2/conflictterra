@@ -17,6 +17,10 @@
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
+
+	  customParams = {
+	  	RequireTech   = [[Ace Pilot's Presence]],
+	  },
 	
 	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[BIG_UNIT]],

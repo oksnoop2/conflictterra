@@ -8,20 +8,18 @@
 
 
 			--combat cruisers
+			"bprimarycruiser",
 			"bflagship",
-			"bbattleflagship",
 			"bbattlecruiser",
-			"btransportcarrier",
+			"btransportcruiser",
 
 			--economy cruisers
 			"bsupplydepotmobile",
 
 			--factory cruisers
-			"bmechcruiser",
+			"bmechcruiser2",
 			"btankcruiser",
 			"baircruiser",
-			"badvmechcruiser",
-			"badvtankcruiser",
   		},
 
 
@@ -31,16 +29,13 @@
 
 			--landed cruisers
 			--T1
-			"bflagshipbase",
-			"bflagshipbaseai",
+			"bprimarycruiserbase",
+			"bprimarycruiserbaseai",
 			"bsupplydepot",
 			"bsupplydepotai",
 			"bmechcruiserfactory",
 			"btankcruiserfactory",
 			"baircruiserfactory",
-			--T2
-			"badvmechcruiserfactory",
-			"badvtankcruiserfactory",
 
 			--economy buildings
 			"bmex",
@@ -73,9 +68,6 @@
 			--T1
 			"bbeacon",
 			"bshipyard",
-			--T2
-			"badvbeacon",
-			"bexperimentalpad",
 
 
 			--DRONE--
@@ -99,9 +91,10 @@
 			"bhovermech",
 			"bsiegemech",
 			"bsnipermech",
+			"bacemech",
 			--T2
 			"bengineer2",
-			"bheavymech",
+			"bassaultmech",
 			"bheavymissilemech",
 			"bheavysiegemech",
 			"badvhovermech",
@@ -128,6 +121,7 @@
 			"baabuggy",
 			"breztank",
 			"bartillery",
+			"bgeneraltank",
 			--T2
 			"bheavyassaulttank",
 			"bheavymissiletank",

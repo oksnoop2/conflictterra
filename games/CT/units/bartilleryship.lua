@@ -1,6 +1,6 @@
 	unitDef = {
 	  unitname            = [[bartilleryship]],
-	  name                = [[Akechi Class Battleship]],
+	  name                = [[Miyamoto Class Battleship]],
 	  description         = [[Artillery Battleship - Battleship armed with a single, large gun.  Does more damage to buildings.]],
 	  acceleration        = 0.03,
           activateWhenBuilt   = true,

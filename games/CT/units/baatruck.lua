@@ -17,6 +17,10 @@
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
 	  reclaimable         = false,
+
+	  customParams = {
+	  	RequireTech   = [[General's Presence]],
+	  },
 	
 	  explodeAs           = [[SMALL_UNIT]],
           footprintx          = 2,

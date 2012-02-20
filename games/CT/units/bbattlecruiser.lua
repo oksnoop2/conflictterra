@@ -28,6 +28,10 @@
 	  corpse              = [[DEAD]],
           cruiseAlt           = 175,
           reclaimable         = false,
+
+	  customParams = {
+	  	RequireTech   = [[Commander's Presence]],
+	  },
 	
 	  explodeAs           = [[LARGE_UNIT]],
 	  floater             = true,
@@ -44,7 +48,7 @@
 	  objectName          = [[bbattlecruiser2.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[LARGE_UNIT]],
-
+	  showNanoFrame       = false,
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,

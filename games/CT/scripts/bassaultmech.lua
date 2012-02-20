@@ -5,41 +5,30 @@
 
         local body = piece "body"
 
-	local booster = piece "booster"
-	local boosterflare1 = piece "boosterflare1"
-	local boosterflare2 = piece "boosterflare2"
-	local boosterflare3 = piece "boosterflare3"
-	local boosterflare4 = piece "boosterflare4"
-
-	local leftarm = piece "larm"
-	local leftgun = piece "lgun"
+	local leftarm = piece "leftarm"
+	local fxflare1 = piece "fxflare1"
+	local leftgun = piece "leftgun"
 	local flare1 = piece "flare1"
 
-	local leftlaser = piece "llaser"
-	local leftbotarm = piece "lbotarm"
-	local leftbotfinger = piece "lbotfinger"
-	local lefttoparm = piece "ltoparm"
-	local lefttopfinger = piece "ltopfinger"
-	local laserflare1 = piece "laserflare1"
-
-	local rightarm = piece "rarm"
-	local rightgun = piece "rgun"
+	local rightarm = piece "rightarm"
+	local fxflare3 = piece "fxflare3"
+	local rightgun = piece "rightgun"
 	local flare2 = piece "flare2"
 
-	local rightlaser = piece "rlaser"
-	local rightbotarm = piece "rbotarm"
-	local rightbotfinger = piece "rbotfinger"
-	local righttoparm = piece "rtoparm"
-	local righttopfinger = piece "rtopfinger"
-	local laserflare2 = piece "laserflare2"
+        local leftthigh = piece "leftthigh"
+        local leftshin = piece "leftshin"
+	local fxflare2 = piece "fxflare2"
+        local leftfoot = piece "leftfoot"
 
-        local leftthigh = piece "lthigh"
-        local leftshin = piece "lshin"
-        local leftfoot = piece "lfoot"
+        local rightthigh = piece "rightthigh"
+        local rightshin = piece "rightshin"
+	local fxflare4 = piece "fxflare4"
+        local rightfoot = piece "rightfoot"
 
-        local rightthigh = piece "rthigh"
-        local rightshin = piece "rshin"
-        local rightfoot = piece "rfoot"
+	local lfrontflap = piece "lfrontflap"
+	local rfrontflap = piece "rfrontflap"
+	local lbackflap = piece "lbackflap"
+	local rbackflap = piece "rbackflap"
         
 
 	--variables
@@ -48,13 +37,11 @@
 
 	--signals
 	local SIG_AIM = 1
-	local SIG_AIM_2 = 2
-	local SIG_AIM_3 = 4
-	local walk_go = 8
-	local jumpjet_SIG = 16
+	local walk_go = 2
+	local jumpjet_SIG = 4
 
 	--CEGs
-        local ct_cannon_narrow = SFX.CEG
+        local ct_machinegun_blue = SFX.CEG
 	local jumpjetsfx = SFX.CEG + 1
 	
 
@@ -65,11 +52,15 @@
 
 			--left leg backward
 	                Turn( leftthigh, x_axis, 0.5, 2 )
+	                Turn( lfrontflap, x_axis, 0.5, 2 )
+	                Turn( lbackflap, x_axis, 0.5, 2 )
 	                Turn( leftshin, x_axis, 0, 2 )
 	                Turn( leftfoot, x_axis, -0.25, 2 )
 
 			--right leg forward
 	                Turn( rightthigh, x_axis, -1, 2 )
+	                Turn( rfrontflap, x_axis, -1, 2 )
+	                Turn( rbackflap, x_axis, -1, 2 )
 	                Turn( rightshin, x_axis, 1, 2 )
 	                Turn( rightfoot, x_axis, 0, 2 )
 
@@ -86,11 +77,15 @@
 
 			--left leg wait
 	                WaitForTurn( leftthigh, x_axis )
+	                WaitForTurn( lfrontflap, x_axis )
+	                WaitForTurn( lbackflap, x_axis )
 	                WaitForTurn( leftshin, x_axis )
 	                WaitForTurn( leftfoot, x_axis )
 
 			--right leg wait
 	                WaitForTurn( rightthigh, x_axis )
+	                WaitForTurn( rfrontflap, x_axis )
+	                WaitForTurn( rbackflap, x_axis )
 	                WaitForTurn( rightshin, x_axis )
 	                WaitForTurn( rightfoot, x_axis )
 
@@ -109,11 +104,15 @@
 
 			--left leg forward
 	                Turn( leftthigh, x_axis, -1, 2 )
+	                Turn( lfrontflap, x_axis, -1, 2 )
+	                Turn( lbackflap, x_axis, -1, 2 )
 	                Turn( leftshin, x_axis, 1, 2 )
 	                Turn( leftfoot, x_axis, 0, 2 )
 
 			--right leg backward
 	                Turn( rightthigh, x_axis, 0.5, 2 )
+	                Turn( rfrontflap, x_axis, 0.5, 2 )
+	                Turn( rbackflap, x_axis, 0.5, 2 )
 	                Turn( rightshin, x_axis, 0, 2 )
 	                Turn( rightfoot, x_axis, -0.25, 2 )
 	               
@@ -130,11 +129,15 @@
 	               
 			--left leg wait
 	                WaitForTurn( leftthigh, x_axis )
+	                WaitForTurn( lfrontflap, x_axis )
+	                WaitForTurn( lbackflap, x_axis )
 	                WaitForTurn( leftshin, x_axis )
 	                WaitForTurn( leftfoot, x_axis )
 
 			--right leg wait
 	                WaitForTurn( rightthigh, x_axis )
+	                WaitForTurn( rfrontflap, x_axis )
+	                WaitForTurn( rbackflap, x_axis )
 	                WaitForTurn( rightshin, x_axis )
 	                WaitForTurn( rightfoot, x_axis )
 
@@ -157,11 +160,15 @@
 
 		--left leg stop
 		Turn( leftthigh, x_axis, 0, 2 )
+	        Turn( lfrontflap, x_axis, 0, 2 )
+	        Turn( lbackflap, x_axis, 0, 2 )
 		Turn( leftshin, x_axis, 0, 2 )
 		Turn( leftfoot, x_axis, 0, 2)
 	       
 		--right leg stop
 	        Turn( rightthigh, x_axis, 0, 2 )
+	        Turn( rfrontflap, x_axis, 0, 2 )
+	        Turn( rbackflap, x_axis, 0, 2 )
 	        Turn( rightshin, x_axis, 0, 2 )
 		Turn( rightfoot, x_axis, 0, 2)
 
@@ -180,29 +187,21 @@
 	local function jumpjetaction()
 		SetSignalMask(jumpjet_SIG)
 		while (true) do
-			EmitSfx(boosterflare1, jumpjetsfx)
-			EmitSfx(boosterflare2, jumpjetsfx)
-			EmitSfx(boosterflare3, jumpjetsfx)
-			EmitSfx(boosterflare4, jumpjetsfx)
+			EmitSfx(fxflare1, jumpjetsfx)
+			EmitSfx(fxflare2, jumpjetsfx)
+			EmitSfx(fxflare3, jumpjetsfx)
+			EmitSfx(fxflare4, jumpjetsfx)
 			Sleep(1)
 		end
 	end
 
 	local function RestoreAfterDelay(unitID)
 		Sleep(1000)
-                Turn(body, y_axis, 0, math.rad(150))
-		Turn(leftarm, x_axis, 0, math.rad(100))
-        	Turn(leftgun, x_axis, -0.5, math.rad(100))
-		Turn(rightarm, x_axis, 0, math.rad(100))
-        	Turn(rightgun, x_axis, -0.5, math.rad(100))
-		Move(lefttoparm, z_axis, 0, 20)
-		Move(leftbotarm, z_axis, 0, 20)
-		Move(lefttopfinger, y_axis, 0, 20)
-		Move(leftbotfinger, y_axis, 0, 20)
-		Move(righttoparm, z_axis, 0, 20)
-		Move(rightbotarm, z_axis, 0, 20)
-		Move(righttopfinger, y_axis, 0, 20)
-		Move(rightbotfinger, y_axis, 0, 20)
+		Turn(body, y_axis, 0, math.rad(200))
+        	Turn(leftarm, x_axis, 0, math.rad(160))
+        	Turn(leftgun, x_axis, -0.5, math.rad(160))
+        	Turn(rightarm, x_axis, 0, math.rad(160))
+        	Turn(rightgun, x_axis, -0.5, math.rad(160))
 	end
 
 
@@ -213,22 +212,23 @@
 	        Turn( rightgun, x_axis, -0.5, 2 )
 
 		--legs spread
-		Turn( leftthigh, y_axis, -0.15, 2 )
-		Turn( rightthigh, y_axis, 0.15, 2 )
+		Turn( leftthigh, y_axis, 0.15, 2 )
+		Turn( rightthigh, y_axis, -0.15, 2 )
 
 		--muzzle flare positioning
 		Turn( flare1, x_axis, 1.55, 2 )
 		Turn( flare2, x_axis, 1.55, 2 )
 
-		--laser forward
-		Turn(leftlaser, x_axis, -0.5, 100)
-		Turn(rightlaser,x_axis, -0.5, 100)
-
 		--jumpjetsfx positioning
-		Turn( boosterflare1, x_axis, 2, 2 )
-		Turn( boosterflare2, x_axis, 2, 2 )
-		Turn( boosterflare3, x_axis, 2, 2 )
-		Turn( boosterflare4, x_axis, 2, 2 )
+		Turn( fxflare1, x_axis, 1.55, 2 )
+		Turn( fxflare2, x_axis, 1.55, 2 )
+		Turn( fxflare3, x_axis, 1.55, 2 )
+		Turn( fxflare4, x_axis, 1.55, 2 )
+
+		Turn( fxflare1, y_axis, -1, 2 )
+		Turn( fxflare2, y_axis, -1, 2 )
+		Turn( fxflare3, y_axis, -1, 2 )
+		Turn( fxflare4, y_axis, -1, 2 )
 	end
 	
 	function script.StartMoving()
@@ -245,17 +245,19 @@
 
 		--left leg crouch
 		Turn( leftthigh, x_axis, -1, 2 )
-		Turn( leftthigh, y_axis, -0.5, 2 )
+	        Turn( lfrontflap, x_axis, -1, 2 )
+		Turn( leftthigh, y_axis, 0.5, 2 )
 		Turn( leftshin, x_axis, 1, 2 )
 
 		--right leg crouch
 		Turn( rightthigh, x_axis, -1, 2 )
-		Turn( rightthigh, y_axis, 0.5, 2 )
+	        Turn( rfrontflap, x_axis, -1, 2 )
+		Turn( rightthigh, y_axis, -0.5, 2 )
 		Turn( rightshin, x_axis, 1, 2 )
 
 		--arms spread
-		Turn( leftarm, z_axis, -0.5, 2 )
-		Turn( rightarm, z_axis, 0.5, 2 )
+		Turn( leftarm, z_axis, 0.5, 2 )
+		Turn( rightarm, z_axis, -0.5, 2 )
 
 		--body forward
 		Turn( body, x_axis, 0.5, 2 )
@@ -274,12 +276,14 @@
 
 		--left leg stop
 		Turn( leftthigh, x_axis, 0, 2 )
-		Turn( leftthigh, y_axis, -0.15, 2 )
+	        Turn( lfrontflap, x_axis, 0, 2 )
+		Turn( leftthigh, y_axis, 0.15, 2 )
 		Turn( leftshin, x_axis, 0, 2 )
 
 		--right leg stop
 		Turn( rightthigh, x_axis, 0, 2 )
-		Turn( rightthigh, y_axis, 0.15, 2 )
+	        Turn( lfrontflap, x_axis, 0, 2 )
+		Turn( rightthigh, y_axis, -0.15, 2 )
 		Turn( rightshin, x_axis, 0, 2 )
 
 		--arms stop
@@ -290,11 +294,7 @@
 		Turn( body, x_axis, 0, 2 )
 	end
 
-	function script.QueryWeapon1() return laserflare1 end
-
-	function script.QueryWeapon2() return laserflare2 end
-
-	function script.QueryWeapon3()
+	function script.QueryWeapon1()
 		if (currBarrel == 1) then 
 			return flare1
 		else 
@@ -303,65 +303,15 @@
 	end
 	
 	function script.AimFromWeapon1() return body end
-
-	function script.AimFromWeapon2() return body end
-
-	function script.AimFromWeapon3() return body end
 	
 	function script.AimWeapon1( heading, pitch )
-		Signal(SIG_AIM)
+                Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(body, y_axis, heading, math.rad(150))
-        	Turn(leftarm, x_axis, -0.55, math.rad(100))
-        	Turn(leftlaser, x_axis, -1, math.rad(100))
-		Move(lefttoparm, z_axis, 1, 20)
-		Move(leftbotarm, z_axis, -1, 20)
-		WaitForMove(lefttoparm, z_axis)
-		WaitForMove(leftbotarm, z_axis)
-		Move(lefttopfinger, y_axis, -10, 20)
-		Move(leftbotfinger, y_axis, -10, 20)
-        	WaitForTurn(body, y_axis)
-        	WaitForTurn(leftarm, x_axis)
-        	WaitForTurn(leftlaser, x_axis)
-		WaitForMove(lefttoparm, z_axis)
-		WaitForMove(leftbotarm, z_axis)
-		WaitForMove(lefttopfinger, y_axis)
-		WaitForMove(leftbotfinger, y_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
-
-	function script.AimWeapon2( heading, pitch )
-		Signal(SIG_AIM_2)
-		SetSignalMask(SIG_AIM_2)
-        	Turn(body, y_axis, heading, math.rad(150))
-        	Turn(rightarm, x_axis, -0.55, math.rad(100))
-        	Turn(rightlaser, x_axis, -1, math.rad(100))
-		Move(righttoparm, z_axis, 1, 20)
-		Move(rightbotarm, z_axis, -1, 20)
-		WaitForMove(righttoparm, z_axis)
-		WaitForMove(rightbotarm, z_axis)
-		Move(righttopfinger, y_axis, -10, 20)
-		Move(rightbotfinger, y_axis, -10, 20)
-        	WaitForTurn(body, y_axis)
-        	WaitForTurn(rightarm, x_axis)
-        	WaitForTurn(rightlaser, x_axis)
-		WaitForMove(righttoparm, z_axis)
-		WaitForMove(rightbotarm, z_axis)
-		WaitForMove(righttopfinger, y_axis)
-		WaitForMove(rightbotfinger, y_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
-
-	function script.AimWeapon3( heading, pitch )
-		Signal(SIG_AIM_3)
-		SetSignalMask(SIG_AIM_3)
-        	Turn(body, y_axis, heading, math.rad(150))
-        	Turn(leftarm, x_axis, -0.55, math.rad(100))
-        	Turn(leftgun, x_axis, -1, math.rad(100))
-        	Turn(rightarm, x_axis, -0.55, math.rad(100))
-        	Turn(rightgun, x_axis, -1, math.rad(100))
+        	Turn(body, y_axis, heading, math.rad(200))
+        	Turn(leftarm, x_axis, -0.75, math.rad(160))
+                Turn(leftgun, x_axis, -0.85, math.rad(160))
+        	Turn(rightarm, x_axis, -0.75, math.rad(160))
+                Turn(rightgun, x_axis, -0.85, math.rad(160))
         	WaitForTurn(body, y_axis)
         	WaitForTurn(leftarm, x_axis)
         	WaitForTurn(leftgun, x_axis)
@@ -371,20 +321,15 @@
 		return true
 	end
 	
-	function script.FireWeapon1()
-	end
-
-	function script.FireWeapon2()
-	end
-
-	function script.FireWeapon3()
+	function script.Shot1()
 		if currBarrel == 1 then
-			EmitSfx(flare2, ct_cannon_narrow)
+			EmitSfx(flare2, ct_machinegun_blue)	
 		end
 		if currBarrel == 2 then
-			EmitSfx(flare1, ct_cannon_narrow)
+			EmitSfx(flare1, ct_machinegun_blue)	
 		end
 		currBarrel = currBarrel + 1
+		if currBarrel == 2 then currBarrel = 2 end
 		if currBarrel == 3 then currBarrel = 1 end
 	end
 	

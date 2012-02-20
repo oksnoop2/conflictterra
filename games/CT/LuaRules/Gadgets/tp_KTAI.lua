@@ -59,11 +59,11 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 	
 	
 
-	if (unitDef.name == "bflagship2") then
+	if (unitDef.name == "bprimarycruiser") then
 		--Spring.GiveOrderToUnit(unitID, UnitDefNames["bminer"].id, {1,2,3}, {})  -- bauen
 		local resid, tx, ty,tz,d = nearest_res_from_unit (unitID)
 		if (tx and ty and tz) then 
-		--	Spring.GiveOrderToUnit(unitID,31210,{UnitDefNames["bflagshipbase2"].id},{})	-- morphen
+		--	Spring.GiveOrderToUnit(unitID,31210,{UnitDefNames["bprimarycruiserbase"].id},{})	-- morphen
 		--	Spring.Echo ("moving to" .. tx .. " " .. tz)	
 		--	Spring.GiveOrderToUnit(unitID, CMD.MOVE , {tx+100, ty, tz  }, {}) -- bewegen
 			---Spring.GiveOrderToUnit(unitID, CMD.MOVE , {tx+100, ty+400, tz  }, {"shift"}) -- bewegen
@@ -101,11 +101,11 @@ function gadget:GameFrame(frame)
 				if (udID) then
 				--	Spring.Echo ("GameFrame  udID="..udID)
 					local uDef = UnitDefs [udID]
-					if (uDef.name == "bflagshipbase2") then
+					if (uDef.name == "bprimarycruiserbase") then
 						local resid, tx, ty,tz,d = nearest_res_from_unit (unit)	
 						if (d > 500) then
-							--Spring.Echo ("GameFrame  flagship near minerals wurde zum ->" .. UnitDefNames["bflagshipbase2"].id)
-							Spring.GiveOrderToUnit(unit,31210,{UnitDefNames["bflagship2"].id},{})	-- morphen
+							--Spring.Echo ("GameFrame  flagship near minerals wurde zum ->" .. UnitDefNames["bprimarycruiserbase"].id)
+							Spring.GiveOrderToUnit(unit,31210,{UnitDefNames["bprimarycruiser"].id},{})	-- morphen
 							Spring.GiveOrderToUnit(unit, CMD.MOVE , {tx+100, ty, tz  }, {"shift"}) -- bewegen
 						else
 							if (myMinerCount < 25) then
@@ -114,13 +114,13 @@ function gadget:GameFrame(frame)
 						end
 					end					
 					
-					if (uDef.name == "bflagship2") then
+					if (uDef.name == "bprimarycruiser") then
 						--Spring.Echo ("iam a flagship")
 						local resid, tx, ty,tz,d = nearest_res_from_unit (unit)	
 						if (d < 500) then
-							--Spring.Echo ("GameFrame  flagship near minerals wurde zum ->" .. UnitDefNames["bflagshipbase2"].id)
+							--Spring.Echo ("GameFrame  flagship near minerals wurde zum ->" .. UnitDefNames["bprimarycruiserbase"].id)
 							--Spring.Echo ("flagship landing")
-							Spring.GiveOrderToUnit(unit,31210,{UnitDefNames["bflagshipbase2"].id},{})	-- morphen
+							Spring.GiveOrderToUnit(unit,31210,{UnitDefNames["bprimarycruiserbase"].id},{})	-- morphen
 						else
 							--Spring.Echo ("flagship moving")
 							Spring.GiveOrderToUnit(unit, CMD.MOVE , {tx+100, ty, tz  }, {}) -- bewegen
@@ -136,10 +136,10 @@ end
 --	if (teamID ~= myTeam) then return end
 --	local unitDef = UnitDefs[unitDefID]
 --	Spring.Echo ("unit idle:" .. unitID .. "   " .. unitDef.name)
---	if (unitDef.name == "bflagship2") then
+--	if (unitDef.name == "bprimarycruiser") then
 --		local resid, tx, ty,tz,d = nearest_res_from_unit (unitID)	
 --		if (d < 500) then
---		Spring.GiveOrderToUnit(unitID,31210,{UnitDefNames["bflagshipbase2"].id},{})	-- morphen		
+--		Spring.GiveOrderToUnit(unitID,31210,{UnitDefNames["bprimarycruiserbase"].id},{})	-- morphen		
 --		end
 --	end	
 --end

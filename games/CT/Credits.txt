@@ -26,6 +26,10 @@
 
 http://answers.springlobby.info/questions/503/howto-animated-tank-tracks-with-actually-moving-track-elements
 
+- Yet another thank you to Knorke for helping in getting the bprimarycruiserbase to have two build pads.  Flozi was also the one to suggest how to have separate animations for each build pad group.  Woo hoo!
+
+- Although he did not write the gadget specifically for us (it is, as of now, 3 years old!), a huge thanks to zwzsg for writing the Multi_Tech gadget which enables locking and unlocking of units.  This helped move CT forward with a better unit tree!
+
 - Many others in the days before this was documented.
 
 *Other contributions will hopefully be remembered/added as time progresses.*

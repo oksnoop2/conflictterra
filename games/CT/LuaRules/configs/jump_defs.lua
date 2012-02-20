@@ -37,7 +37,8 @@ jumpClassGroups = {
 
 	baseclass = { 
 	"bbasicmech",
-	"bheavymech",
+	"bassaultmech",
+	"bacemech",
 	},
 
 
@@ -56,7 +57,10 @@ overCategory = {
  bbasicmech = {
     height = 150, speed = 8,  reload = 5,  aaShootMe = false,  },
 
- bheavymech = {
+ bassaultmech = {
+    range = 750,  height = 200, speed = 12,  reload = 5,  aaShootMe = false,  },
+
+ bacemech = {
     range = 750,  height = 200, speed = 12,  reload = 5,  aaShootMe = false,  },
 		
 }

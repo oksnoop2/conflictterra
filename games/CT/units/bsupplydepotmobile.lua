@@ -54,6 +54,7 @@
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[BIG_UNIT]],
           showNanospray       = 0,
+	  showNanoFrame       = false,
 	  side                = [[NKG]],
 	  sightDistance       = 600,
 	  smoothAnim          = true,

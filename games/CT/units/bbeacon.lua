@@ -13,10 +13,13 @@ unitDef = {
 
   buildoptions                  = {
 	[[bsupplydepotmobile]],
-	[[bflagship]],
+	[[bprimarycruiser]],
 	[[bmechcruiser]],
 	[[btankcruiser]],
 	[[baircruiser]],
+	[[btransportcruiser]],
+	[[bflagship]],
+	[[bbattlecruiser]],
   },
 
 
@@ -29,7 +32,7 @@ unitDef = {
   canBeAssisted                 = false,
   category                      = [[SINK]],
   collisionVolumeOffsets        = [[0 0 0]],
-  collisionVolumeScales         = [[224 200 224]],
+  collisionVolumeScales         = [[192 64 224]],
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
   corpse                        = [[DEAD]],
@@ -38,7 +41,7 @@ unitDef = {
   energyMake                    = 0,
   energyUse                     = 0,
   explodeAs                     = [[LARGE_BUILDING]],
-  footprintX                    = 14,
+  footprintX                    = 12,
   footprintZ                    = 14,
   idleAutoHeal                  = 0,
   mass                          = 275,
@@ -58,7 +61,7 @@ unitDef = {
   sightDistance                 = 250,
   smoothAnim                    = true,
 
-	  sounds			= {
+  sounds			= {
 	      select = {
 		"ct/cruiserengine",
 		},
@@ -67,8 +70,17 @@ unitDef = {
 		},
   },
 
+  sfxtypes            		= {
+	
+	    explosiongenerators = {
+		"custom:ct_buildlight_green",
+		"custom:ct_buildlight_red",
+	    },
+	
+  },
+
   workerTime                    = 1,
-  yardMap                       = [[ooccccccccccoo ooccccccccccoo cccccccccccccc cccccccccccccc cccccccccccccc cccccccccccccc cccccccccccccc cccccccccccccc cccccccccccccc cccccccccccccc cccccccccccccc cccccccccccccc ooccccccccccoo ooccccccccccoo]],
+  yardMap                       = [[cooooooooooc oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo cooooooooooc]],
   script                        = [[bbeacon.lua]],
 
 
@@ -83,7 +95,7 @@ unitDef = {
       damage           = 4250,
       energy           = 0,
       featureDead      = [[DEAD2]],
-      footprintX       = 14,
+      footprintX       = 12,
       footprintZ       = 14,
       metal            = 200,
       object           = [[wrecks/bbeaconwreck.s3o]],
@@ -99,7 +111,7 @@ unitDef = {
       category         = [[heaps]],
       damage           = 2125,
       energy           = 0,
-      footprintX       = 14,
+      footprintX       = 12,
       footprintZ       = 14,
       metal            = 100,
       object           = [[b14x14heap.s3o]],

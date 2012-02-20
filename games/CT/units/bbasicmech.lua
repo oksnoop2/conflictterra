@@ -2,7 +2,7 @@
 	  unitname            = [[bbasicmech]],
 	  name                = [[Hojo Combat Mech]],
 	  description         = [[Skirmish Mech - Light, fast, rapid fire SM.  Built for skirmishing as opposed to holding the line.]],
-	  acceleration        = 0.36,
+	  acceleration        = 1,
 	  brakeRate           = 0.2,
 	  buildCostEnergy     = 275,
 	  buildCostMetal      = 275,

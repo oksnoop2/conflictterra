@@ -18,6 +18,10 @@
 	  category            = [[HOVER]],
 	  corpse              = [[DEAD]],
 	  reclaimable         = false,
+
+	  customParams = {
+	  	RequireTech   = [[Ace Pilot's Presence]],
+	  },
 	
 	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 4,

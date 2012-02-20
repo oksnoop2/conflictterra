@@ -1,7 +1,7 @@
 unitDef = {
 
   unitname                      = [[bmechcruiserfactory]],
-  name                          = [[Saito Class Cruiser Mech Factory]],
+  name                          = [[Deployed Saito Class Cruiser]],
   description                   = [[Produces combat and support mechs.  Can morph back into the Saito Class Cruiser.]],
   amphibious                    = false,
   acceleration                  = 0,
@@ -12,17 +12,24 @@ unitDef = {
 
   buildoptions                  = {
 
-    [[bengineer]],
-    [[bminer]],
-    [[bscoutmech]],
-    [[bbasicmech]],
-    [[bmissilemech]],
-    [[bantitankmech]],
-    [[bhovermech]],
-    [[bsiegemech]],
+	[[bengineer]],
+	[[bminer]],
+	[[bscoutmech]],
+	[[bbasicmech]],
+	[[bmissilemech]],
+	[[bantitankmech]],
+	[[bhovermech]],
+	[[bsiegemech]],
 
-    [[bflyingmech]],
-    [[bsnipermech]],
+	[[bflyingmech]],
+	[[bsnipermech]],
+	[[bacemech]],
+	[[bassaultmech]],
+	[[bheavymissilemech]],
+        [[badvhovermech]],
+	[[bheavysiegemech]],
+	[[bheavyflyingmech]],
+	[[bheavyassaultmech]],
   },
 
 
@@ -35,7 +42,7 @@ unitDef = {
   canBeAssisted                 = false,
   category                      = [[SINK]],
   collisionVolumeOffsets        = [[0 0 0]],
-  collisionVolumeScales         = [[256 100 272]],
+  collisionVolumeScales         = [[192 160 288]],
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
   corpse                        = [[DEAD]],
@@ -44,8 +51,8 @@ unitDef = {
   energyMake                    = 0,
   energyUse                     = 0,
   explodeAs                     = [[LARGE_BUILDING]],
-  footprintX                    = 16,
-  footprintZ                    = 17,
+  footprintX                    = 12,
+  footprintZ                    = 18,
   idleAutoHeal                  = 0,
   mass                          = 275,
   maxDamage                     = 4500,
@@ -55,7 +62,7 @@ unitDef = {
   metalMake                     = 0,
   minCloakDistance              = 150,
   noAutoFire                    = false,
-  objectName                    = [[bmechcruiserfactory.s3o]],
+  objectName                    = [[bmechcruiser.s3o]],
 
   seismicSignature              = 4,
   selfDestructAs                = [[LARGE_BUILDING]],
@@ -63,18 +70,27 @@ unitDef = {
   side                          = [[NKG]],
   sightDistance                 = 250,
 
-	  sounds			= {
+  sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",
 		},
 	      ok = {
 		"golgotha/vehicle_done_44khz",
 		},
-	  },
+  },
+
+  sfxtypes            		= {
+	
+	    explosiongenerators = {
+		"custom:ct_buildlight_green",
+		"custom:ct_buildlight_red",
+	    },
+	
+  },
 
   smoothAnim                    = true,
   workerTime                    = 1,
-  yardMap                       = [[oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc oooooooccccccccc ccccccccccccccc]],
+  yardMap                       = [[oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo oooooooooooo cccccccccccc cccccccccccc cccccccccccc cccccccccccc cccccccccccc cccccccccccc]],
   script                        = [[bmechcruiserfactory.lua]],
 
 
@@ -82,7 +98,7 @@ unitDef = {
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Saito Class Cruiser Mech Factory]],
+      description      = [[Wreckage - Deployed Saito Class Cruiser]],
       blocking         = true,
       category         = [[corpses]],
       damage           = 2250,
@@ -99,7 +115,7 @@ unitDef = {
 
 
     DEAD2 = {
-      description      = [[Debris - Saito Class Cruiser Mech Factory]],
+      description      = [[Debris - Deployed Saito Class Cruiser]],
       blocking         = false,
 
       category         = [[heaps]],
