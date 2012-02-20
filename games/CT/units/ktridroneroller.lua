@@ -127,7 +127,7 @@
 	      smokedelay              = [[0.1]],
 	      smokeTrail              = false,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
-	      soundStart              = [[evolutionRTS/aircraft_missile_01]],
+	      soundStart              = [[]],
 	      startVelocity           = 200,
 	      tolerance               = 22000,
 	      tracks                  = true,

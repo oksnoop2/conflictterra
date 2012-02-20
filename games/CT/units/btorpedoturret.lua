@@ -37,11 +37,11 @@
 
 	  sounds			= {
 	      select = {
-		"evolutionRTS/turretselect",
+		"",
 		},
 
 	      ok = {
-		"evolutionRTS/turretselect",
+		"",
 		},
 	  },
 
@@ -100,7 +100,7 @@
 	      range                   = 500,
 	      reloadtime              = 3,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
-	      soundStart              = [[evolutionRTS/torpedolaunch]],
+	      soundStart              = [[]],
 	      startVelocity           = 140,
 	      tolerance               = 42767,
 	      tracks                  = true,

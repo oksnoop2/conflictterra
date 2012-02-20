@@ -177,7 +177,7 @@
 	      reloadtime              = 6,
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
-	      soundStart              = [[evolutionRTS/aircraft_missile_01]],
+	      soundStart              = [[]],
 	      startVelocity           = 200,
 	      texture2		      = [[ct_smoketrail]],
 	      tolerance               = 22000,

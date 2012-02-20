@@ -37,11 +37,11 @@
 
 	  sounds			= {
 	      select = {
-		"evolutionRTS/turretselect",
+		"",
 		},
 
 	      ok = {
-		"evolutionRTS/turretselect",
+		"",
 		},
 	  },
 
