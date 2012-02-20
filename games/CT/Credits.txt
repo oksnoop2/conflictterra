@@ -30,6 +30,8 @@ http://answers.springlobby.info/questions/503/howto-animated-tank-tracks-with-ac
 
 - Although he did not write the gadget specifically for us (it is, as of now, 3 years old!), a huge thanks to zwzsg for writing the Multi_Tech gadget which enables locking and unlocking of units.  This helped move CT forward with a better unit tree!
 
+- Credit goes to Forboding Angel for his research on how to optimize pathfinding.  His findings were implemented (mostly) to the units :)
+
 - Many others in the days before this was documented.
 
 *Other contributions will hopefully be remembered/added as time progresses.*
