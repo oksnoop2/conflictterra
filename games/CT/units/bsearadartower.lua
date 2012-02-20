@@ -63,14 +63,6 @@ unitDef = {
   yardMap                       = [[o o]],
   script                        = [[bsearadartower.lua]],
 
-  sounds			= {
-      select = {
-	"ct/chatter2",
-	},
-  },
-
-
-
   featureDefs                   = {
 
     DEAD  = {
