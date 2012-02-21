@@ -13,10 +13,10 @@ unitDef = {
 
   buildoptions                  = {
 	[[bsupplydepotmobile]],
-	[[bprimarycruiser]],
 	[[bmechcruiser]],
 	[[btankcruiser]],
 	[[baircruiser]],
+	[[bprimarycruiser]],
 	[[btransportcruiser]],
 	[[bflagship]],
 	[[bbattlecruiser]],

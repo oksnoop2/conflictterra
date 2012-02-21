@@ -6,8 +6,8 @@ unitDef = {
   amphibious                    = false,
   acceleration                  = 0,
   brakeRate                     = 0,
-  buildCostEnergy               = 1800,
-  buildCostMetal                = 1440,
+  buildCostEnergy               = 500,
+  buildCostMetal                = 500,
   builder                       = true,
   reclaimable                   = false,
 
@@ -24,7 +24,7 @@ unitDef = {
 
 
   buildPic                      = [[bprimarycruiserbase.png]],
-  buildTime                     = 60,
+  buildTime                     = 30,
 
   useBuildingGroundDecal	= true,
   buildingGroundDecalType	= "grounddecals/resourcedropzone.png",
@@ -249,7 +249,7 @@ unitDef = {
       footprintX       = 24,
       footprintZ       = 23,
       mass             = 2000,
-      metal            = 500,
+      metal            = 250,
       object           = [[wrecks/bprimarycruiserwreck.s3o]],
       reclaimable      = true,
       reclaimTime      = 15000,
@@ -266,7 +266,7 @@ unitDef = {
       footprintX       = 24,
       footprintZ       = 23,
       mass             = 750,
-      metal            = 250,
+      metal            = 125,
       object           = [[b17x16heap.s3o]],
       reclaimable      = true,
       reclaimTime      = 7500,

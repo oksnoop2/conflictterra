@@ -7,14 +7,14 @@
           airStrafe           = 0,
           amphibious          = true,
 	  brakeRate           = 1.88,
-	  buildCostEnergy     = 4000,
-	  buildCostMetal      = 4000,
+	  buildCostEnergy     = 2000,
+	  buildCostMetal      = 2000,
 	  builder             = false,
 	  reclaimable         = false,
 
 	  buildPic            = [[bflagship.png]],
           buildRange3D        = false,
-	  buildTime           = 120,
+	  buildTime           = 60,
 	  canAttack           = true,
 	  canDGun             = true,
           canFly              = true,
@@ -36,7 +36,6 @@
 
 	  customParams = {
 	  	ProvideTech   = [[Commander's Presence]],
-	  	RequireTech   = [[Ace Pilot's Presence, General's Presence]],
 	  },
 	
           energyMake          = 5,
@@ -49,7 +48,7 @@
 	  hoverAttack         = true,
 	  idleAutoHeal        = 0,
 	  mass                = 2500,
-	  maxDamage           = 15000,
+	  maxDamage           = 10000,
 	  maxVelocity         = 4,
           metalMake           = 0,
 	  metalStorage        = 0,
