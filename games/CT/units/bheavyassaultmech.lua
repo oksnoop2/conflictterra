@@ -19,7 +19,7 @@
           reclaimable         = false,
 
 	  customParams = {
-	  	RequireTech   = [[Ace Pilot's Presence, General's Presence]],
+	  	RequireTech   = [[Ace Pilot's Presence]],
 	  },
 	
 	  explodeAs           = [[BIG_UNIT]],
