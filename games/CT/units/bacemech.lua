@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bacemech]],
 	  name                = [[Maeda Combat Mech]],
-	  description         = [[Ace Mech - High powered SM armed with dual cannons and powerful beam weapons.  Unlocks Advanced Combat Mechs. - Build Limit: 1]],
+	  description         = [[Ace Mech - High powered SM armed with dual cannons and powerful beam weapons.  Unlocks Advanced Combat Mechs. - Build Limit: 3]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 1000,
@@ -64,7 +64,7 @@
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  upright             = true,
-	  unitRestricted      = 1,
+	  unitRestricted      = 3,
           script              = [[bacemech.lua]],
 	
 	  weapons             = {
@@ -185,7 +185,7 @@
 	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Honda Combat Mech MkII]],
+	      description      = [[Wreckage - Maeda Combat Mech]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 625,
@@ -201,7 +201,7 @@
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Honda Combat Mech MkII]],
+	      description      = [[Debris - Maeda Combat Mech]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 312,
