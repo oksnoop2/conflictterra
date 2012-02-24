@@ -1,15 +1,16 @@
+-- $Id: unit_jumpjets.lua 4056 2009-03-11 02:59:18Z quantum $
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
 function gadget:GetInfo()
   return {
-    name      = "Jumpjets-lua",
-    desc      = "Gives units the jump ability - luascript version",
-    author    = "quantum", -- CarRepairer's Luascript version, won't work with cob scripts.
+    name      = "Jumpjets",
+    desc      = "Gives units the jump ability",
+    author    = "quantum",
     date      = "May 14, 2008",
     license   = "GNU GPL, v2 or later",
     layer     = 0,
-    enabled   = true,
+    enabled   = true  --  loaded by default?
   }
 end
 
@@ -32,9 +33,8 @@ Spring.SetGameRulesParam("jumpJets",1)
 --   30000 - 39999:  LuaRules
 --
 
-local CMD_JUMP = 38521
+include("LuaRules/Configs/customcmds.h.lua")
 -- needed for checks
-local CMD_MORPH = 31210
 
 local Spring      = Spring
 local MoveCtrl    = Spring.MoveCtrl
@@ -71,14 +71,13 @@ local spGetUnitTeam        = Spring.GetUnitTeam
 local spDestroyUnit        = Spring.DestroyUnit
 local spCreateUnit         = Spring.CreateUnit
 
-local echo = Spring.Echo
-
 local mcSetRotationVelocity = MoveCtrl.SetRotationVelocity
-local mcSetLeaveTracks      = MoveCtrl.SetLeaveTracks
 local mcSetPosition         = MoveCtrl.SetPosition
 local mcSetRotation         = MoveCtrl.SetRotation
 local mcDisable             = MoveCtrl.Disable
 local mcEnable              = MoveCtrl.Enable
+
+local SetLeaveTracks      = Spring.SetUnitLeaveTracks or MoveCtrl.SetLeaveTracks	--0.82 compatiblity
 
 local emptyTable = {}
 
@@ -87,6 +86,7 @@ local lastJump    = {}
 local landBoxSize = 60
 local jumps       = {}
 local jumping     = {}
+local goalSet	  = {}
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -103,7 +103,7 @@ local jumpCmdDesc = {
   id      = CMD_JUMP,
   type    = CMDTYPE.ICON_MAP,
   name    = 'Jump',
-  cursor  = 'Attack',  -- add with LuaUI?
+  cursor  = 'Jump',  -- add with LuaUI?
   action  = 'jump',
   tooltip = 'Jump to selected position.',
 }
@@ -111,9 +111,6 @@ local jumpCmdDesc = {
   
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-local function CallUnitScript(unitID, funcName, ...)
-   Spring.UnitScript.CallAsUnit(unitID, Spring.UnitScript.GetScriptEnv(unitID).script[funcName], ...)
-end  
 
 local function GetDist3(a, b)
   local x, y, z = (a[1] - b[1]), (a[2] - b[2]), (a[3] - b[3])
@@ -128,7 +125,7 @@ end
 
 
 local function Approach(unitID, cmdParams, range)
-  spSetUnitMoveGoal(unitID, cmdParams[1],cmdParams[2],cmdParams[3], range)
+	spSetUnitMoveGoal(unitID, cmdParams[1],cmdParams[2],cmdParams[3], range)
 end
 
 
@@ -143,9 +140,16 @@ local function ReloadQueue(unitID, queue, cmdTag)
     return
   end
 
+    local re = Spring.GetUnitStates(unitID)["repeat"]
+	local storeParams
   --// remove finished command
-  local start = 1
-  if (queue[1])and(cmdTag == queue[1].tag) then start = 2 end
+	local start = 1
+	if (queue[1])and(cmdTag == queue[1].tag) then
+		start = 2 
+		 if re then
+			storeParams = queue[1].params
+		end
+	end
 
   spGiveOrderToUnit(unitID, CMD_STOP, emptyTable, emptyTable)
   for i=start,#queue do
@@ -157,8 +161,12 @@ local function ReloadQueue(unitID, queue, cmdTag)
     if (cmdOpt.right) then opts[#opts+1] = "right" end
     spGiveOrderToUnit(unitID, cmd.id, cmd.params, opts)
   end
+  
+  if re and start == 2 then
+	spGiveOrderToUnit(unitID, CMD_JUMP, {storeParams[1],Spring.GetGroundHeight(storeParams[1],storeParams[3]),storeParams[3]}, {"shift"} )
+  end
+  
 end
-
 
 local function Jump(unitID, goal, cmdTag)
   goal[2]             = spGetGroundHeight(goal[1],goal[3])
@@ -168,9 +176,14 @@ local function Jump(unitID, goal, cmdTag)
   local unitDefID     = spGetUnitDefID(unitID)
   local jumpDef       = jumpDefs[unitDefID]
   local speed         = jumpDef.speed
+  local delay    	  = jumpDef.delay
   local height        = jumpDef.height
   local reloadTime    = (jumpDef.reload or 0)*30
   local teamID        = spGetUnitTeam(unitID)
+  
+  local rotateMidAir  = jumpDef.rotateMidAir
+  local cob 	 	  = jumpDef.cobscript
+  local env
 
   local vector        = {goal[1] - start[1],
                          goal[2] - start[2],
@@ -182,6 +195,7 @@ local function Jump(unitID, goal, cmdTag)
                          start[3] + vector[3]*0.5}
   
   local lineDist      = GetDist3(start, goal)
+  if lineDist == 0 then lineDist = 0.00001 end
   local flightDist    = GetDist3(start, vertex) + GetDist3(vertex, goal)
   
   local speed         = speed * lineDist/flightDist
@@ -210,28 +224,60 @@ local function Jump(unitID, goal, cmdTag)
   
   jumping[unitID] = true
 
-  --spCallCOBScript(unitID, "BeginJump", 0)
-  CallUnitScript(unitID, "BeginJump")
-  
-  
-  spSetUnitRulesParam(unitID,"jumpReload",0)
-  
   mcEnable(unitID)
-  --mcSetLeaveTracks(unitID, false)  --commented out to fix an error
-  mcSetRotation(unitID, 0, (startHeading - 2^15)/rotUnit, 0) -- keep current heading
-  mcSetRotationVelocity(unitID, 0, turn/rotUnit*step, 0)
-  
-  if (jumpDef.aaShootMe) then
-    fakeUnitID = spCreateUnit(
-      "fakeunit_aatarget", start[1], start[2], start[3], "n", teamID)
-    mcEnable(fakeUnitID)
-    spSetUnitNoSelect(fakeUnitID, true)
-    spSetUnitBlocking(fakeUnitID, false)
-    spSetUnitNoDraw(fakeUnitID, true)
-    spSetUnitNoMinimap(fakeUnitID, true)
+  Spring.SetUnitVelocity(unitID,0,0,0)
+  SetLeaveTracks(unitID, false)
+
+  if not cob then
+    env = Spring.UnitScript.GetScriptEnv(unitID)
   end
+  
+  if (delay == 0) then
+	if cob then
+		spCallCOBScript( unitID, "BeginJump", 0)
+      else
+	    Spring.UnitScript.CallAsUnit(unitID,env.beginJump)
+	  end
+	if rotateMidAir then
+	  mcSetRotation(unitID, 0, (startHeading - 2^15)/rotUnit, 0) -- keep current heading
+      mcSetRotationVelocity(unitID, 0, turn/rotUnit*step, 0)
+	end
+  else
+	if cob then
+		spCallCOBScript( unitID, "PreJump", 0)
+      else
+		Spring.UnitScript.CallAsUnit(unitID,env.preJump,turn,lineDist,flightDist)
+	  end
+  end
+  spSetUnitRulesParam(unitID,"jumpReload",0)
 
   local function JumpLoop()
+  
+    if delay > 0 then
+      for i=delay, 1, -1 do
+	    Sleep()
+	  end
+	  
+	  if cob then
+		spCallCOBScript( unitID, "BeginJump", 0)
+      else
+		Spring.UnitScript.CallAsUnit(unitID,env.beginJump)
+	  end
+
+	  if rotateMidAir then
+	    mcSetRotation(unitID, 0, (startHeading - 2^15)/rotUnit, 0) -- keep current heading
+        mcSetRotationVelocity(unitID, 0, turn/rotUnit*step, 0)
+	  end
+	  
+	  fakeUnitID = spCreateUnit(
+	  "fakeunit_aatarget", start[1], start[2], start[3], "n", teamID)
+	  mcEnable(fakeUnitID)
+	  spSetUnitNoSelect(fakeUnitID, true)
+	  spSetUnitBlocking(fakeUnitID, false)
+	  spSetUnitNoDraw(fakeUnitID, true)
+	  spSetUnitNoMinimap(fakeUnitID, true)
+	end
+  
     local halfJump
     for i=0, 1, step do
       if ((not spGetUnitTeam(unitID)) and fakeUnitID) then
@@ -242,27 +288,41 @@ local function Jump(unitID, goal, cmdTag)
       local y = start[2] + vector[2]*i + (1-(2*i-1)^2)*height -- parabola
       local z = start[3] + vector[3]*i
       mcSetPosition(unitID, x, y, z)
-     --spCallCOBScript(unitID, "Jumping", 1, i * 100)
-     CallUnitScript(unitID, "Jumping", i * 100)
-     if (fakeUnitID) then mcSetPosition(fakeUnitID, x, y, z) end
-      if (not halfJump and step > 0.5) then
-        --spCallCOBScript(unitID, "HalfJump", 0)
-        CallUnitScript(unitID, "HalfJump")
+	  
+	  if cob then
+		spCallCOBScript(unitID, "Jumping", 1, i * 100)
+	  else
+		Spring.UnitScript.CallAsUnit(unitID,env.jumping)
+	  end
+	  
+	  if (fakeUnitID) then mcSetPosition(fakeUnitID, x, y, z) end
+      if (not halfJump and i > 0.5) then
+		  if cob then
+			spCallCOBScript( unitID, "HalfJump", 0)
+		  else
+		    Spring.UnitScript.CallAsUnit(unitID,env.halfJump)
+		  end
         halfJump = true
       end
       Sleep()
     end
 
     if (fakeUnitID) then spDestroyUnit(fakeUnitID, false, true) end
-    --spCallCOBScript(unitID, "EndJump", 0)
-    CallUnitScript(unitID, "EndJump")
+    if cob then
+	  spCallCOBScript( unitID, "EndJump", 0)
+	else
+	   Spring.UnitScript.CallAsUnit(unitID,env.endJump)
+	end
     lastJump[unitID] = spGetGameSeconds()
     jumping[unitID] = false
-
+    SetLeaveTracks(unitID, true)
+	mcDisable(unitID)
+	
+		--mcSetPosition(unitID, start[1] + vector[1],start[2] + vector[2]-6,start[3] + vector[3])
     local oldQueue = spGetCommandQueue(unitID)
-    mcDisable(unitID)
+	
     ReloadQueue(unitID, oldQueue, cmdTag)
-
+	
     local reloadTimeInv = 1/reloadTime
     for i=1, reloadTime do
       spSetUnitRulesParam(unitID,"jumpReload",i*reloadTimeInv)
@@ -291,12 +351,12 @@ local function UpdateCoroutines()
   end
 end
 
-
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
 function gadget:Initialize()
-  Spring.SetCustomCommandDrawData(CMD_JUMP, "Attack", {0, 1, 0, 1})
+  Spring.SetCustomCommandDrawData(CMD_JUMP, "Jump", {0, 1, 0, 1})
+  Spring.AssignMouseCursor("Jump", "cursorJump", true, true)
   gadgetHandler:RegisterCMDID(CMD_JUMP)
   for _, unitID in pairs(Spring.GetAllUnits()) do
     gadget:UnitCreated(unitID, Spring.GetUnitDefID(unitID))
@@ -308,8 +368,8 @@ function gadget:UnitCreated(unitID, unitDefID, unitTeam)
   if (not jumpDefs[unitDefID]) then
     return
   end 
-  local t = spGetGameSeconds()
-  lastJump[unitID] = t
+  --local t = spGetGameSeconds()
+  lastJump[unitID] = -200
   spInsertUnitCmdDesc(unitID, jumpCmdDesc)
 end
 
@@ -341,8 +401,17 @@ end
 
 function gadget:CommandFallback(unitID, unitDefID, teamID,    -- keeps getting 
                                 cmdID, cmdParams, cmdOptions) -- called until
-  if (cmdID ~= CMD_JUMP)or(not jumpDefs[unitDefID]) then      -- you remove the
-    return false  -- command was not used                     -- order
+  if (not jumpDefs[unitDefID]) then
+	return false
+  end
+  
+  if (cmdID ~= CMD_JUMP) then      -- you remove the
+	goalSet[unitID] = false
+	return false  -- command was not used                     -- order
+  end
+  
+  if not Spring.ValidUnitID(unitID) then
+    return true, true
   end
 
   if (jumping[unitID]) then
@@ -358,7 +427,7 @@ function gadget:CommandFallback(unitID, unitDefID, teamID,    -- keeps getting
 
   if (distSqr < (range*range)) then
     local cmdTag = spGetCommandQueue(unitID,1)[1].tag
-    if ((t - lastJump[unitID]) >= reload) then
+    if (lastJump[unitID] and (t - lastJump[unitID]) >= reload) then
       local coords = table.concat(cmdParams)
       if (not jumps[coords]) then
         if (not Jump(unitID, cmdParams, cmdTag)) then
@@ -380,7 +449,10 @@ function gadget:CommandFallback(unitID, unitDefID, teamID,    -- keeps getting
       end
     end
   else
-    Approach(unitID, cmdParams, range)
+	if not goalSet[unitID] then
+      Approach(unitID, cmdParams, range)
+	  goalSet[unitID] = true
+	end
   end
   
   return true, false -- command was used but don't remove it

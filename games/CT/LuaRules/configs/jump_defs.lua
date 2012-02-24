@@ -27,9 +27,9 @@ local name
   
 jumpCategory = { 
 	normalclass = {
-		range = 500, height = 200, speed = 8,  reload = 5,  aaShootMe = false, delay = 0, cobscript = true,rotateMidAir = true},	
+		range = 500, height = 200, speed = 8,  reload = 5,  aaShootMe = false, delay = 0, cobscript = false,rotateMidAir = true},	
 	longclass = {
-		range = 1000, height = 200, speed = 12,  reload = 5,  aaShootMe = false, delay = 0, cobscript = true,rotateMidAir = true},	
+		range = 1000, height = 200, speed = 12,  reload = 5,  aaShootMe = false, delay = 0, cobscript = false,rotateMidAir = true},	
 	-- category containining only optional tags for testing error code only.
 	-- iammissingstuff ={
 	-- 	reload	= 10, aaShootMe	= false, },	
@@ -48,6 +48,13 @@ jumpClassGroups = {
 
 
 }
+
+for name,data in pairs(UnitDefNames) do
+	if data.customParams.jumpclass then
+		local class = jumpClassGroups[data.customParams.jumpclass]
+		class[#class+1] = name
+	end
+end
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 -- Unit overrides
@@ -95,13 +102,11 @@ for groupId,groupcluster in pairs(jumpClassGroups) do
 					Spring.Echo("   Jump Jet Defs error: (Unit: " .. name .. " missing required parameter delay)")	
 					IsBadDef = true			
 				end
-				
-				if ( not jumpCategory[groupId].cobscript ) then
+				if ( jumpCategory[groupId].cobscript == nil ) then
 					Spring.Echo("   Jump Jet Defs error: (Unit: " .. name .. " missing required parameter cobscript)")	
 					IsBadDef = true			
 				end
-				
-				if ( not jumpCategory[groupId].rotateMidAir ) then
+				if ( jumpCategory[groupId].rotateMidAir == nil ) then
 					Spring.Echo("   Jump Jet Defs error: (Unit: " .. name .. " missing required parameter rotateMidAir)")	
 					IsBadDef = true			
 				end

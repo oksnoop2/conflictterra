@@ -206,7 +206,7 @@
 	        StartThread(stop_walk)
 	end
 
-	function script.BeginJump()
+	function beginJump()
 		StartThread(jumpjetaction)
 		Signal(walk_go)
 
@@ -228,15 +228,15 @@
 		Turn( body, x_axis, 0.5, 2 )
 	end
 
-	function script.Jumping()
+	function jumping()
 
 	end
 
-	function script.HalfJump()
+	function halfJump()
 
 	end
 
-	function script.EndJump()
+	function endJump()
 		Signal(jumpjet_SIG)
 
 		--left leg stop
