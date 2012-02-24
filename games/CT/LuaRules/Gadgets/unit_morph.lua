@@ -24,11 +24,6 @@ function gadget:GetInfo()
   }
 end
 
--- Note for Conflict Terra:
--- Edited to have custom names, line 475 contains an old line that puts "Stop" on the morph button.
--- Removed because it wouldn't go away if a player canceled the morph.
--- Would really like it to be fixed
-
 -- Changes for "The Cursed"
 --    CarRepairer: may add a customized texture in the morphdefs, otherwise uses original behavior (unit buildicon and the word Morph). Break changes made in CA.
 --    aZaremoth: may add a customized text in the morphdefs
