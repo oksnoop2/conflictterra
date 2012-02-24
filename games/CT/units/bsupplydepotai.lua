@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bsupplydepotai]],
   name                          = [[Resource Drop Zone (AI)]],
-  description                   = [[Drop-off point for mined metal from meteorites.  Can Pack Up into a mobile form to Deploy elsewhere.]],
+  description                   = [[Drop-off point for mined metal from meteorites.  Can Mobilize into a mobile form to Deploy elsewhere.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
   brakeRate                     = 0,

@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[btankcruiserfactory]],
   name                          = [[Deployed Mori Class Cruiser]],
-  description                   = [[Produces tanks.  Can Pack Up into the Mori Class Cruiser.]],
+  description                   = [[Produces tanks.  Can Mobilize into the Mori Class Cruiser.]],
   amphibious                    = false,
   acceleration                  = 0,
   brakeRate                     = 0,

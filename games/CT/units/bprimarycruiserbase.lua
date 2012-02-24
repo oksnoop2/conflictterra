@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bprimarycruiserbase]],
   name                          = [[Mobile Headquarters]],
-  description                   = [[Docked Oda Class Cruiser.  Builds the essentials to establishing a base.  Can Pack Up into the Oda Class Cruiser.]],
+  description                   = [[Docked Oda Class Cruiser.  Builds the essentials to establishing a base.  Can Mobilize into the Oda Class Cruiser.]],
   amphibious                    = false,
   acceleration                  = 0,
   brakeRate                     = 0,
