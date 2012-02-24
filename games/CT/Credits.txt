@@ -32,6 +32,8 @@ http://answers.springlobby.info/questions/503/howto-animated-tank-tracks-with-ac
 
 - Credit goes to Forboding Angel for his research on how to optimize pathfinding.  His findings were implemented (mostly) to the units :)
 
+- Thanks Flozi for suggesting to look in Spring 1944's morph gadget to get customized button names for morph!
+
 - Many others in the days before this was documented.
 
 *Other contributions will hopefully be remembered/added as time progresses.*

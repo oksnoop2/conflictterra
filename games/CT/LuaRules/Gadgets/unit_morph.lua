@@ -382,12 +382,7 @@ local function AddMorphCmdDesc(unitID, unitDefID, teamID, morphDef, teamTech)
   local unitRank = GetUnitRank(unitID)
   local teamOwnsReqUnit = UnitReqCheck(teamID,morphDef.require)
   morphCmdDesc.tooltip = GetMorphToolTip(unitID, unitDefID, teamID, morphDef, teamTech, unitXP, unitRank, teamOwnsReqUnit)
-
-  if morphDef.name then
-    morphCmdDesc.name = ''.. morphDef.name
-  else
-    morphCmdDesc.name = '#' .. morphDef.into   --//only works with a patched layout.lua or the TweakedLayout widget!
-  end
+  morphCmdDesc.name = morphDef.name or "Deploy"
   
   if morphDef.texture then
     morphCmdDesc.texture = "LuaRules/Images/Morph/".. morphDef.texture
@@ -411,7 +406,6 @@ local function AddMorphCmdDesc(unitID, unitDefID, teamID, morphDef, teamTech)
   morphCmdDesc.tooltip = nil
   morphCmdDesc.texture = nil
   morphCmdDesc.text = nil
-  morphCmdDesc.name = nil
 end
 
 
@@ -471,9 +465,7 @@ local function StartMorph(unitID, unitDefID, teamID, morphDef)
 
   local cmdDescID = Spring.FindUnitCmdDesc(unitID, morphDef.cmd)
   if (cmdDescID) then
-    Spring.EditUnitCmdDesc(unitID, cmdDescID, {id=morphDef.stopCmd})
---Spring.EditUnitCmdDesc(unitID, cmdDescID, {id=morphDef.stopCmd, name=RedStr.."Stop"})
---the old line that included "Stop", removed because it wouldn't go away when you canceled the morph
+    Spring.EditUnitCmdDesc(unitID, cmdDescID, {id=morphDef.stopCmd, name=RedStr.."Stop"})
   end
 
   SendToUnsynced("unit_morph_start", unitID, unitDefID, morphDef.cmd)
