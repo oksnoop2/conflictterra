@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[kdroneminingtower]],
 	  name                = [[Drone Mining Tower]],
-	  description         = [[A tower for mining metal from meteorites.]],
+	  description         = [[A tower for mining metal from meteorites.  Can Transform into a Drone Builder.]],
 	  acceleration        = 0,
 	  brakeRate           = 0,
 	  buildCostEnergy     = 100,

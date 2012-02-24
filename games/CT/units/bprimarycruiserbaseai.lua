@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bprimarycruiserbaseai]],
   name                          = [[Mobile Headquarters (AI)]],
-  description                   = [[Docked Oda Class Cruiser.  Builds the essentials to establishing a base.  Can morph back into the Oda Class Cruiser to move.]],
+  description                   = [[Docked Oda Class Cruiser.  Builds the essentials to establishing a base.  Can Pack Up into the Oda Class Cruiser.]],
   amphibious                    = false,
   acceleration                  = 0,
   brakeRate                     = 0,

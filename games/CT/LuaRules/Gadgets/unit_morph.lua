@@ -16,13 +16,18 @@ function gadget:GetInfo()
   return {
     name      = "UnitMorph",
     desc      = "Adds unit morphing",
-    author    = "trepan (improved by jK, Licho, aegis, CarRepairer)",
+    author    = "trepan (improved by jK, Licho, aegis, CarRepairer) (tampered with by Sanada)",
     date      = "Jan, 2008",
     license   = "GNU GPL, v2 or later",
     layer     = -1,
     enabled   = true
   }
 end
+
+-- Note for Conflict Terra:
+-- Edited to have custom names, line 475 contains an old line that puts "Stop" on the morph button.
+-- Removed because it wouldn't go away if a player canceled the morph.
+-- Would really like it to be fixed
 
 -- Changes for "The Cursed"
 --    CarRepairer: may add a customized texture in the morphdefs, otherwise uses original behavior (unit buildicon and the word Morph). Break changes made in CA.
@@ -278,6 +283,7 @@ local function BuildMorphDef(udSrc, morphData)
 
     newData.texture = morphData.texture
     newData.text = morphData.text
+	newData.name = morphData.name
     return newData
   end
 end
@@ -377,9 +383,15 @@ local function AddMorphCmdDesc(unitID, unitDefID, teamID, morphDef, teamTech)
   local teamOwnsReqUnit = UnitReqCheck(teamID,morphDef.require)
   morphCmdDesc.tooltip = GetMorphToolTip(unitID, unitDefID, teamID, morphDef, teamTech, unitXP, unitRank, teamOwnsReqUnit)
 
+  if morphDef.name then
+    morphCmdDesc.name = ''.. morphDef.name
+  else
+    morphCmdDesc.name = '#' .. morphDef.into   --//only works with a patched layout.lua or the TweakedLayout widget!
+  end
+  
   if morphDef.texture then
     morphCmdDesc.texture = "LuaRules/Images/Morph/".. morphDef.texture
-    morphCmdDesc.name = ''
+    --morphCmdDesc.name = ''
   else
     morphCmdDesc.texture = "#" .. morphDef.into   --//only works with a patched layout.lua or the TweakedLayout widget!
   end
@@ -399,6 +411,7 @@ local function AddMorphCmdDesc(unitID, unitDefID, teamID, morphDef, teamTech)
   morphCmdDesc.tooltip = nil
   morphCmdDesc.texture = nil
   morphCmdDesc.text = nil
+  morphCmdDesc.name = nil
 end
 
 
@@ -458,7 +471,9 @@ local function StartMorph(unitID, unitDefID, teamID, morphDef)
 
   local cmdDescID = Spring.FindUnitCmdDesc(unitID, morphDef.cmd)
   if (cmdDescID) then
-    Spring.EditUnitCmdDesc(unitID, cmdDescID, {id=morphDef.stopCmd, name=RedStr.."Stop"})
+    Spring.EditUnitCmdDesc(unitID, cmdDescID, {id=morphDef.stopCmd})
+--Spring.EditUnitCmdDesc(unitID, cmdDescID, {id=morphDef.stopCmd, name=RedStr.."Stop"})
+--the old line that included "Stop", removed because it wouldn't go away when you canceled the morph
   end
 
   SendToUnsynced("unit_morph_start", unitID, unitDefID, morphDef.cmd)

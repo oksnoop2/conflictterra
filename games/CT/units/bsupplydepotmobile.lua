@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bsupplydepotmobile]],
 	  name                = [[Mobilized Resource Ship]],
-	  description         = [[Able to deploy Resource Drop Zone elsewhere.  Must morph to do so.]],
+	  description         = [[Able to Deploy into the Resource Drop Zone, which is vital to accumulating metal.]],
 	  acceleration        = 0.16,
 	  activateWhenBuilt   = true,
           airStrafe           = 0,

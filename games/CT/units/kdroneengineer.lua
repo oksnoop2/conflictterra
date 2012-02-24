@@ -1,6 +1,6 @@
 local kdroneengineer = {
 	name                = [[Drone Builder]],
-	description         = [[The Drone Builder is an unarmed construction unit.]],
+	description         = [[The Drone Builder is an unarmed construction unit.  Can Transform into a Drone Mining Tower to accumulate metal.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdroneengineer.png]],

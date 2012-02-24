@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[baatruck]],
 	  name                = [[Taka Type Armored Truck]],
-	  description         = [[Anti-Air Truck - Light truck armed with an anti-air missile.  Can morph into a more powerful anti-air turret. - Build Limit: 20]],
+	  description         = [[Anti-Air Truck - Light truck armed with an anti-air missile.  Can Deploy into a more powerful anti-air turret. - Build Limit: 20]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 600,

@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bmechcruiserfactory]],
   name                          = [[Deployed Saito Class Cruiser]],
-  description                   = [[Produces combat and support mechs.  Can morph back into the Saito Class Cruiser.]],
+  description                   = [[Produces combat and support mechs.  Can Pack Up  into the Saito Class Cruiser.]],
   amphibious                    = false,
   acceleration                  = 0,
   brakeRate                     = 0,

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[baircruiser]],
 	  name                = [[Azai Class Cruiser]],
-	  description         = [[Cruiser that is able to contruct aircraft.  Must morph into the Deployed Azai Class Cruiser in order to build aircraft.]],
+	  description         = [[Cruiser that is able to contruct aircraft.  Must Deploy into the Deployed Azai Class Cruiser in order to build aircraft.]],
 	  acceleration        = 0.15,
 	  activateWhenBuilt   = true,
           airStrafe           = 0,
