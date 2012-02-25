@@ -108,7 +108,7 @@
 	      },
 	
 	      model                   = [[projectiles/bshell.s3o]],
-	      explosionGenerator      = [[custom:LRPC_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_artillery]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      myGravity               = 0.1,
