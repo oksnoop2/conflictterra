@@ -103,7 +103,7 @@
 	      },
 	
 	      model                   = [[projectiles/bshell.s3o]],
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_cannon]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      range                   = 400,
