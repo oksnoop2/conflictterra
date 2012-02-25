@@ -97,7 +97,7 @@
 	
 	      dropped                 = true,
 	      edgeEffectiveness       = 0.7,
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_bombs]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      manualBombSettings      = true,
