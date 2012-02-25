@@ -220,7 +220,7 @@ unitDef = {
 	      },
 	
 	      edgeEffectiveness       = 0.85,
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_flak]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      range                   = 1000,
