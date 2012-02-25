@@ -111,7 +111,7 @@
                 Sub = 1,
               },
         
-              explosionGenerator      = [[custom:resmining]],
+              --explosionGenerator      = [[custom:resmining]],
               interceptedByShieldType = 1,
               lineOfSight             = true,
               range                   = 130,
