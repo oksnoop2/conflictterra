@@ -136,7 +136,7 @@
 	      },
 	
 	      energypershot           = 300,
-	      explosionGenerator      = [[custom:megapartgun]],
+	      explosionGenerator      = [[]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      noExplode               = true,

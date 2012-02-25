@@ -18,7 +18,7 @@ end
 
 
 local replis = {}
-local reproduce_effect = "firetrail2"
+local reproduce_effect = "ct_firetrail"
 
 function gadget:Initialize()
 	make_repli_table()

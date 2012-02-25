@@ -42,22 +42,15 @@ unitDef = {
   side                          = [[NKG]],
   sightDistance                 = 0,
 
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-		"custom:digdig",
-	    },
-	
-	  },
 
-	  sounds			= {
+  sounds			= {
 	      select = {
 		"ct/mexthump",
 		},
 	      ok = {
 		"ct/mexthump",
 		},
-	  },
+  },
 
   smoothAnim                    = true,
   turnRate                      = 0,
