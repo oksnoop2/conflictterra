@@ -36,6 +36,8 @@
 				tpsmoke 			= 'tpsmoke.png',
 				tpsmoke2			= 'tpsmoke2.png',
 				tpdollar			= 'tpdollar.png',
+				dirt				= 'dirt.png',
+				explodeheat                     = 'ExplodeHeat.tga',
 				ct_machinegun_front		= 'ct_machinegun_front.png',
 				ct_machinegun_side		= 'ct_machinegun_side.png',
 				ct_bigbeam			= 'ct_bigbeam.png',

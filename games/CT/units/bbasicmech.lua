@@ -92,7 +92,7 @@
 		Spare3 = 15,
 	      },
 	
-	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_machinegun]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      lineOfSight             = true,
