@@ -121,7 +121,7 @@
 	
 	      model                   = [[projectiles/blargemissile.s3o]],
 	      edgeEffectiveness       = 0.5,
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_missile_large]],
 	      flightTime              = 4,
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
