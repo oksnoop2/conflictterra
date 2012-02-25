@@ -124,7 +124,7 @@
 	      },
 	
 	      energypershot           = 0,
-	      explosionGenerator      = [[custom:megapartgun]],
+	      explosionGenerator      = [[custom:ct_impact_beam_blue]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      largeBeamLaser          = true,

@@ -87,7 +87,7 @@
 	      },
 	
 	      energypershot           = 0,
-	      explosionGenerator      = [[custom:megapartgun]],
+	      explosionGenerator      = [[custom:ct_impact_beam_blue]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      largeBeamLaser          = true,
@@ -96,7 +96,7 @@
 	      minIntensity            = 1,
 	      range                   = 600,
 	      reloadtime              = 10,
-	      rgbColor                = [[1 0 0]],
+	      rgbColor                = [[0 0 1]],
 	      soundStart              = [[argh/Argh_PlasmaBreach]],
 	      targetMoveError         = 0.3,
 	      thickness               = 10,
