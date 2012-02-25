@@ -53,14 +53,6 @@ local ktriairdrone = {
 		},
 	  },
 
-	sfxtypes            = {
-	
-	    explosiongenerators = {
-		"custom:buildersparks",
-	    },
-	
-	  },
-
 	weapons             = {
 	
 	    {

@@ -59,14 +59,6 @@ local kdronemine = {
 		},
 	  },
 
-	sfxtypes            = {
-	
-	    explosiongenerators = {
-		"custom:buildersparks",
-	    },
-	
-	  },
-
 	weapons             = {
 	
 	    {

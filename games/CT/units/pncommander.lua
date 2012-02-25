@@ -56,14 +56,6 @@ local pncommander = {
 		},
 	  },
 
-	sfxtypes            = {
-	
-	    explosiongenerators = {
-		"custom:buildersparks",
-	    },
-	
-	  },
-
 	weapons             = {
 	
 	    {

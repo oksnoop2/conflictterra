@@ -53,14 +53,6 @@ local kdronewarrior = {
 		},
 	  },
 
-	sfxtypes            = {
-	
-	    explosiongenerators = {
-		"custom:buildersparks",
-	    },
-	
-	  },
-
 	weapons             = {
 	
 	    {

@@ -56,14 +56,6 @@ local kairdrone = {
 		},
 	  },
 
-	sfxtypes            = {
-	
-	    explosiongenerators = {
-		"custom:buildersparks",
-	    },
-	
-	  },
-
 	weapons             = {
 	
 	    {

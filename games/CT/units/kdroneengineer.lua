@@ -56,16 +56,6 @@ local kdroneengineer = {
 		"golgotha/vehicle_done_44khz",
 		},
 	  },
-
-	sfxtypes            = {
-	
-	    explosiongenerators = {
-		"custom:buildersparks",
-	    },
-	
-	  },
-
-
 	  
 	smoothAnim          = true,
     terraformSpeed      = 300,
