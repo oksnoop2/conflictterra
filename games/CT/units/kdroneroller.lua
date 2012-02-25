@@ -111,7 +111,7 @@
 	
 	   -- model                   = [[bshell.s3o]],
 		  cegtag                  = [[VULCANFX]],	     
-		  explosionGenerator      = [[custom:LRPC_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_beamshot_green_big]],
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,
 	      range                   = 1250,

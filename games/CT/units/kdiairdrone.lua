@@ -101,7 +101,7 @@ local kdiairdrone = {
 		Spare3 = 20,
 	      },
 	
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_beamshot_green]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,

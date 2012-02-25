@@ -89,7 +89,7 @@ local klightdrone = {
 	
 	    --model                   = [[bshell.s3o]],
 		  cegtag                  = [[VULCANFX]],
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_beamshot_green]],
 		  projectiles             =1,
 		  -- groundbounce            =1,
 		 -- numbounce               =3,

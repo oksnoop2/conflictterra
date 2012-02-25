@@ -98,6 +98,7 @@ local ktriairdrone = {
 	      },
 
 	      beamTime                = 0.1,
+	      explosionGenerator      = [[custom:ct_impact_beam_green]],		  
 	      duration                = 5,
 	      energypershot           = 0,
 	      interceptedByShieldType = 1,

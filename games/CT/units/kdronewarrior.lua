@@ -98,7 +98,8 @@ local kdronewarrior = {
 		Spare3 = 300,
 	      },
 
-	      beamTime                = .5,
+	      beamTime                = 0.5,
+	      explosionGenerator      = [[custom:ct_impact_beam_green]],
 	      duration                = 5,
 	      energypershot           = 0,
 	      interceptedByShieldType = 1,
