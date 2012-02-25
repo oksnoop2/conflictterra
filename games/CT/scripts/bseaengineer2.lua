@@ -9,12 +9,12 @@
 	local SIG_AIM = 2
 	local SIG_BUILD = 4
 
-	local buildersparks = SFX.CEG
+	local ct_weldingsparks = SFX.CEG
 
 	local function sparks()
 		while true do
-			EmitSfx(fxflare1, buildersparks)
-			EmitSfx(fxflare2, buildersparks)
+			EmitSfx(fxflare1, ct_weldingsparks)
+			EmitSfx(fxflare2, ct_weldingsparks)
 			Sleep(1)
 		end
 	end

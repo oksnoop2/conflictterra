@@ -69,7 +69,7 @@ local bengineer = {
           sfxtypes            = {
         
             explosiongenerators = {
-                "custom:buildersparks",
+                "custom:ct_weldingsparks",
             },
         
           },

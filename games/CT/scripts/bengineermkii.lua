@@ -33,7 +33,7 @@
 
 
 	--CEGs
-	local buildersparks = SFX.CEG
+	local ct_weldingsparks = SFX.CEG
 
 
 	--TRACK CONFIGS--
@@ -190,8 +190,8 @@
 	--local functions
 	local function sparks()
 		while true do
-			EmitSfx(fxflare1, buildersparks)
-			EmitSfx(fxflare2, buildersparks)
+			EmitSfx(fxflare1, ct_weldingsparks)
+			EmitSfx(fxflare2, ct_weldingsparks)
 			Sleep(1)
 		end
 	end

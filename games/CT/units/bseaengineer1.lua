@@ -65,7 +65,7 @@ local bseaengineer1 = {
 	  sfxtypes            = {
 	
 	    explosiongenerators = {
-		"custom:buildersparks",
+		"custom:ct_weldingsparks",
 	    },
 	
 	  },
