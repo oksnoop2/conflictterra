@@ -132,7 +132,7 @@
 	
 	      duration                = 0.02,
 	      energypershot           = 0,
-	      explosionGenerator      = [[custom:megapartgun]],
+	      explosionGenerator      = [[custom:ct_impact_beamshot_blue]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      heightMod               = 0.5,

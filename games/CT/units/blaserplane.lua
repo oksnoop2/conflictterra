@@ -76,6 +76,7 @@
 	      canattackground         = false,
 	      collideFriendly         = false,
 	      energypershot           = 0,
+	      explosionGenerator      = [[custom:ct_impact_beamshot_blue]],
         
               damage                  = {
 		default = 10,
