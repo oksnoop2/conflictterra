@@ -104,7 +104,7 @@
 	      },
 	
 	      model                   = [[projectiles/bantimechmissile.s3o]],
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_rocket]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,

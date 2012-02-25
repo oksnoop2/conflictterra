@@ -119,7 +119,7 @@
 	      model                   = [[projectiles/bantimechmissile.s3o]],
 	      dance                   = 75,
 	      wobble                  = 2000,
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_rocket]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
