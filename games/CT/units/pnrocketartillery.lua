@@ -107,7 +107,7 @@
 	      dance                   = 20,
 	      wobble                  = 7000,
 	      edgeEffectiveness       = 0.5,
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_rocket]],
 	      flightTime              = 2.5,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,

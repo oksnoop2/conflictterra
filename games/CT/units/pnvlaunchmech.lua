@@ -104,7 +104,7 @@
 	      },
 	
 	      model                   = [[projectiles/bshell.s3o]],
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_cannon]],
 	      interceptedByShieldType = 1,
 	      range                   = 400,
 	      reloadtime              = 3,
@@ -131,7 +131,7 @@
 		Sub = 50,
 	      },
 	
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_missile_large]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      model                   = [[projectiles/blargemissile.s3o]],

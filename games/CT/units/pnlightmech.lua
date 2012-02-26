@@ -98,7 +98,7 @@
 	
 	      lineOfSight             =1,
 		  renderType              =5,
-	      explosionGenerator      = [[custom:LRPC_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_artillery]],
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,
 	      range                   = 300,

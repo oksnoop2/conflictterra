@@ -130,7 +130,7 @@
 	
 	      model                   = [[projectiles/bsmallmissile.s3o]],
 	      edgeEffectiveness       = 0.5,
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_rocket]],
 	      flightTime              = 4,
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,

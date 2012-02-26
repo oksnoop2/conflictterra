@@ -111,7 +111,7 @@
 		Spare3 = 7,
 	      },
 	
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_missile_aa]],
 	      flightTime              = 4,
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,

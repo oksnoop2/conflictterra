@@ -87,7 +87,7 @@
 	      },
 	
 	      edgeEffectiveness       = 1,
-	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_fighter]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      pitchtolerance          = [[18000]],

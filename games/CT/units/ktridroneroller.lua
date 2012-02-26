@@ -116,7 +116,7 @@
 		Spare3 = 20,
 	      },
 	
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      --explosionGenerator      = [[custom:PLASMA_Expl]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,

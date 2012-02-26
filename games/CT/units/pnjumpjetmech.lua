@@ -107,7 +107,7 @@
 	      },
 	
 	      model                   = [[projectiles/bshell.s3o]],
-	      explosionGenerator      = [[custom:LRPC_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_artillery]],
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,
 	      range                   = 750,
@@ -137,7 +137,7 @@
 		Sub = 15,
 	      },
 	
-	      explosionGenerator      = [[custom:FLAK_BURST_Expl]],
+	      explosionGenerator      = [[custom:ct_impact_machinegun]],
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
 	      range                   = 200,

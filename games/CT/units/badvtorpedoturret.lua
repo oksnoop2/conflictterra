@@ -87,7 +87,7 @@
 		Spare3 = 500,
 	      },
 	
-	      explosionGenerator      = [[custom:PLASMA_Expl]],
+	      --explosionGenerator      = [[custom:PLASMA_Expl]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      lineOfSight             = true,
