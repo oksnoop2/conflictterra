@@ -5,6 +5,7 @@
 	local base = piece "base"
 	local body = piece "body"
 	local bed = piece "bed"
+	local mainflare = piece "mainflare"
 
 	local lnozzle = piece "lnozzle"
 	local flare1 = piece "flare1"
@@ -221,13 +222,7 @@
 		StartThread (drive)			--put track pieces into position even if tank does not instantly move after creation
 	end
 
-	function script.QueryWeapon1()
-		if (currBarrel == 1) then 
-			return flare1
-		else 
-			return flare2
-		end
-	end
+	function script.QueryWeapon1() return mainflare end
 	
 	function script.AimFromWeapon1() return body end
 	
@@ -249,15 +244,8 @@
 	end
 	
 	function script.Shot1()
-		if currBarrel == 1 then
-			EmitSfx(flare2, ct_mininglaser_blue)	
-		end
-		if currBarrel == 2 then
 			EmitSfx(flare1, ct_mininglaser_blue)	
-		end
-		currBarrel = currBarrel + 1
-		if currBarrel == 2 then currBarrel = 2 end
-		if currBarrel == 3 then currBarrel = 1 end
+			EmitSfx(flare2, ct_mininglaser_blue)	
 	end
 
 	function script.Killed(recentDamage, maxHealth)
