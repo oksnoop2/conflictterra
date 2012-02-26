@@ -39,8 +39,8 @@
 	  sfxtypes            = {
 	
 	    explosiongenerators = {
-		"custom:orc_machinegun_flash",
-		"custom:orc_machinegun_muzzle",
+		--"custom:orc_machinegun_flash",
+		--"custom:orc_machinegun_muzzle",
 	    },
 	
 	  },

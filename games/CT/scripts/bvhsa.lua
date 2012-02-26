@@ -16,10 +16,9 @@
 	--signals
 	local SIG_AIM = 1
 	local SIG_AIM_SEC = 2
-        local orc_machinegun_flash = SFX.CEG
-        local orc_machinegun_muzzle = SFX.CEG + 1
-	local ct_cannon_artillery = SFX.CEG + 2
-	local ct_cannon_artillery_side_long = SFX.CEG + 3	
+    local ct_machinegun = SFX.CEG
+	local ct_cannon_artillery = SFX.CEG + 1
+	local ct_cannon_artillery_side_long = SFX.CEG + 2	
 	
 	function script.Create()
 		Turn(fxflare1, y_axis, 1.5, 10)
@@ -76,8 +75,7 @@
 	end
 
 	function script.FireWeapon2()
-		EmitSfx(flare, orc_machinegun_flash)
-		EmitSfx(flare, orc_machinegun_muzzle)	 
+		EmitSfx(flare, ct_machinegun)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)

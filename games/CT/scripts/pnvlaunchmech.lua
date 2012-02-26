@@ -29,8 +29,8 @@
 	local SIG_AIM_THIR = 4
 	local walk_go = 8
 	local walk_stop = 16
-        local orc_machinegun_flash = SFX.CEG
-        local orc_machinegun_muzzle = SFX.CEG + 1
+        --local orc_machinegun_flash = SFX.CEG
+        --local orc_machinegun_muzzle = SFX.CEG + 1
 	
 	function script.Create()
 	       
@@ -146,18 +146,18 @@
 	end
 	
 	function script.FireWeapon1()
-		EmitSfx(flare1, orc_machinegun_flash)
-		EmitSfx(flare1, orc_machinegun_muzzle)	
+		--EmitSfx(flare1, orc_machinegun_flash)
+		--EmitSfx(flare1, orc_machinegun_muzzle)	
 	end
 
 	function script.FireWeapon2()
-		EmitSfx(flare2, orc_machinegun_flash)
-		EmitSfx(flare2, orc_machinegun_muzzle)	
+		--EmitSfx(flare2, orc_machinegun_flash)
+		--EmitSfx(flare2, orc_machinegun_muzzle)	
 	end
 
 	function script.FireWeapon3()
-		EmitSfx(flare3, orc_machinegun_flash)
-		EmitSfx(flare3, orc_machinegun_muzzle)	
+		--EmitSfx(flare3, orc_machinegun_flash)
+		--EmitSfx(flare3, orc_machinegun_muzzle)	
 	end
 	
 	function script.Killed(recentDamage, maxHealth)

@@ -39,14 +39,14 @@
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[MEDIUM_UNIT]],
 
-	  sfxtypes            = {
+	  --sfxtypes            = {
 	
-	    explosiongenerators = {
-		"custom:orc_machinegun_flash",
-		"custom:orc_machinegun_muzzle",
-	    },
+	    --explosiongenerators = {
+		--"custom:orc_machinegun_flash",
+		--"custom:orc_machinegun_muzzle",
+	    --},
 	
-	  },
+	  --},
 
 	  sounds			= {
 	      select = {

@@ -29,13 +29,6 @@
 		StopSpin( rightwheel, x_axis, 2 )
 	end
 
-	local function RestoreAfterDelay(unitID)
-		Sleep(1000)
-		Move(turret, y_axis, 0, math.rad(150))
-		Turn(turret, y_axis, 0, math.rad(150))
-		Turn(turret, x_axis, 0, math.rad(150))
-	end
-
 
 	--script
 	function script.Create(unitID)
@@ -49,26 +42,6 @@
 	
 	function script.StopMoving()
 	        StartThread(stop_walk)
-	end
-	
-	function script.QueryWeapon1() return flare end
-	
-	function script.AimFromWeapon1() return turret end
-	
-	function script.AimWeapon1( heading, pitch )
-                Signal(SIG_AIM)
-		SetSignalMask(SIG_AIM)
-		Move(turret, y_axis, 15, 10)
-		WaitForMove(turret, y_axis)
-        	Turn(turret, y_axis, heading, math.rad(150))
-        	Turn(turret, x_axis, -pitch, math.rad(150))
-        	WaitForTurn(turret, y_axis)
-        	WaitForTurn(turret, x_axis)
-		StartThread(RestoreAfterDelay)
-		return true
-	end
-	
-	function script.FireWeapon1()
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
