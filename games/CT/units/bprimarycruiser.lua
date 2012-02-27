@@ -48,7 +48,7 @@
 	  metalStorage        = 0,
 	  minCloakDistance    = 100,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS SUB]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[bprimarycruiser.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[BIG_UNIT]],
