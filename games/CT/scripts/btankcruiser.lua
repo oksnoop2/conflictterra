@@ -95,17 +95,6 @@
 
 	--script
 	function script.Create(unitID)
-		--front gear extend
-		Turn( lfrontgear, z_axis, -0.5, 1 )
-		Turn( rfrontgear, z_axis, 0.5, 1 )
-		Move( lfrontgear, x_axis, 30, 20 )
-		Move( rfrontgear, x_axis, -30, 20 )
-
-		--back gear extend
-		Move( lbackgear, y_axis, -20, 20 )
-		Move( rbackgear, y_axis, -20, 20 )
-		Move( lbackgear, x_axis, 20, 20 )
-		Move( rbackgear, x_axis, -20, 20 )
 	end
 
 	function script.Activate()

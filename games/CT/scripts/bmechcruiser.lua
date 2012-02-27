@@ -91,10 +91,6 @@
 
 	--script
 	function script.Create(unitID)
-		Turn(leftgear, z_axis, -1.55, 1)
-		Turn(rightgear, z_axis, 1.55, 1)
-		Move(leftgear, y_axis, -2, 1)
-		Move(rightgear, y_axis, -2, 1)
 	end
 
 	function script.Activate()

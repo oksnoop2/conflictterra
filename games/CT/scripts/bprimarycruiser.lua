@@ -83,13 +83,6 @@
 
 	--script
 	function script.Create(unitID)
-		Turn( frontgear, x_axis, 1, 2 )
-		Turn( lmidgear, z_axis, -1, 2 )
-		Turn( rmidgear, z_axis, 1, 2 )
-		Move( frontgear, z_axis, 15, 25 )
-		Move( lmidgear, x_axis, 15, 25 )
-		Move( rmidgear, x_axis, -15, 25 )
-		Move( reargear, y_axis, -15, 25 )
 	end
 
 	function script.Activate()

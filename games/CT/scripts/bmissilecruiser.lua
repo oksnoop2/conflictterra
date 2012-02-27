@@ -38,9 +38,9 @@
 		Turn(flare1, y_axis, 0, math.rad(90))
 		Turn(flare2, y_axis, 0, math.rad(90))
 		Turn(flare3, y_axis, 0, math.rad(90))
-        Turn(flare1, x_axis, 0, math.rad(50))
-        Turn(flare2, x_axis, 0, math.rad(50))
-        Turn(flare3, x_axis, 0, math.rad(50))
+		Turn(flare1, x_axis, 0, math.rad(50))
+		Turn(flare2, x_axis, 0, math.rad(50))
+		Turn(flare3, x_axis, 0, math.rad(50))
 	end
 
 	local function RestoreAfterDelay2(unitID)
@@ -48,20 +48,14 @@
 		Turn(flare4, y_axis, 0, math.rad(90))
 		Turn(flare5, y_axis, 0, math.rad(90))
 		Turn(flare6, y_axis, 0, math.rad(90))
-        Turn(flare4, x_axis, 0, math.rad(50))
-        Turn(flare5, x_axis, 0, math.rad(50))
-        Turn(flare6, x_axis, 0, math.rad(50))
+		Turn(flare4, x_axis, 0, math.rad(50))
+		Turn(flare5, x_axis, 0, math.rad(50))
+		Turn(flare6, x_axis, 0, math.rad(50))
 	end
 
 
 	--script
 	function script.Create(unitID)
-		Move( frontgear, y_axis, -10, 25 )
-		Move( frontgear, z_axis, 5, 25 )		
-		Turn( leftgear, z_axis, -0.5, 2 )
-		Turn( rightgear, z_axis, 0.5, 2 )
-		Move( leftgear, x_axis, 15, 25 )
-		Move( rightgear, x_axis, -15, 25 )
 	end
 
 	function script.Activate()
