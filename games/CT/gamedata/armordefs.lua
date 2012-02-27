@@ -10,6 +10,7 @@
 			--combat cruisers
 			"bprimarycruiser",
 			"bflagship",
+			"bmissilecruiser",
 			"bbattlecruiser",
 			"btransportcruiser",
 

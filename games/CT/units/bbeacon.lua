@@ -17,6 +17,7 @@ unitDef = {
 	[[btankcruiser]],
 	[[baircruiser]],
 	[[bprimarycruiser]],
+	[[bmissilecruiser]],
 	[[btransportcruiser]],
 	[[bflagship]],
 	[[bbattlecruiser]],

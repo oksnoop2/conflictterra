@@ -26,6 +26,11 @@ effectUnitDefs = {
                 {class='AirJet',        options={color={0,0,0.75,0},    width =  15, length=35, piece="fxflare5", onActive=true}},
         },
 
+        bmissilecruiser = {
+                {class='AirJet',        options={color={0,0,0.75,0},    width =  40, length=60, piece="fxflare1", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    width =  40, length=60, piece="fxflare2", onActive=true}},
+        },
+
         bsupplydepotmobile = {
                 {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  15, length=35, piece="fxflare1", onActive=true}},
                 {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  15, length=35, piece="fxflare2", onActive=true}},
