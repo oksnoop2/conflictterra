@@ -22,8 +22,8 @@ unitDef = {
 
   useBuildingGroundDecal	= true,
   buildingGroundDecalType	= "grounddecals/resourcedropzone.png",
-  buildingGroundDecalSizeX	= 20,
-  buildingGroundDecalSizeY	= 20,
+  buildingGroundDecalSizeX	= 18,
+  buildingGroundDecalSizeY	= 18,
   buildingGroundDecalDecaySpeed	= 1,
 
   reclaimable                   = false,
@@ -56,6 +56,15 @@ unitDef = {
 	"ct/generator_chatter",
 	},
   },
+  
+  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:ct_buildlight_green",
+		"custom:ct_buildlight_red",
+	    },
+	
+  },  
 
   smoothAnim                    = true,
   yardMap                       = [[cooooc cooooc cooooc cooooc cooooc cooooc cooooc cooooc cooooc cooooc]],
@@ -73,7 +82,7 @@ unitDef = {
       energy           = 0,
       featureDead      = [[DEAD2]],
       footprintX       = 6,
-      footprintZ       = 10,
+      footprintZ       = 6,
       mass             = 2000,
       metal            = 100,
       object           = [[wrecks/bsupplydepotwreck.s3o]],
