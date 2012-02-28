@@ -6,6 +6,7 @@
 			},
 			projectiletextures = {
 				circularthingy			= 'circularthingy.tga',
+				uglynovaexplo                   = 'uglynovaexplo.tga',
 				laserend			= 'laserend.tga',
 				laserfalloff			= 'laserfalloff.tga',
 				randdots			= 'randdots.tga',
@@ -19,6 +20,7 @@
 				muzzleside			= 'muzzlefront.tga',
 				muzzlefront			= 'muzzleside.tga',
 				largebeam			= 'largelaserfalloff.tga',
+				flashside1			= 'flashside1.tga',
 				tpsmoke 			= 'tpsmoke.png',
 				tpsmoke2			= 'tpsmoke2.png',
 				tpdollar			= 'tpdollar.png',
