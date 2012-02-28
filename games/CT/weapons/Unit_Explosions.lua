@@ -23,6 +23,12 @@ CAMERA_EXPLOSION = {
 		Aircraft = 10,
 		Ship = 10,
 		Sub = 10,
+
+		Meteor = 0,
+		Drone = 10,
+		Spare1 = 10,
+		Spare2 = 10,
+		Spare3 = 10,		
 	      },
   },
 
@@ -47,6 +53,12 @@ SMALL_BUILDING = {
 		Aircraft = 100,
 		Ship = 100,
 		Sub = 100,
+
+		Meteor = 0,
+		Drone = 100,
+		Spare1 = 100,
+		Spare2 = 100,
+		Spare3 = 100,		
 	      },
   },
 
@@ -71,6 +83,12 @@ MEDIUM_BUILDING = {
 		Aircraft = 150,
 		Ship = 150,
 		Sub = 150,
+
+		Meteor = 0,
+		Drone = 150,
+		Spare1 = 150,
+		Spare2 = 150,
+		Spare3 = 150,		
 	      },
   },
 
@@ -96,6 +114,12 @@ LARGE_BUILDING = {
 		Aircraft = 200,
 		Ship = 200,
 		Sub = 200,
+
+		Meteor = 0,
+		Drone = 200,
+		Spare1 = 200,
+		Spare2 = 200,
+		Spare3 = 200,		
 	      },
   },
 
@@ -120,6 +144,12 @@ VOLATILE_BUILDING = {
 		Aircraft = 1000,
 		Ship = 1000,
 		Sub = 1000,
+
+		Meteor = 0,
+		Drone = 1000,
+		Spare1 = 1000,
+		Spare2 = 1000,
+		Spare3 = 1000,		
 	      },
   },
 
@@ -145,6 +175,12 @@ SMALL_UNIT = {
 		Aircraft = 50,
 		Ship = 50,
 		Sub = 50,
+
+		Meteor = 0,
+		Drone = 50,
+		Spare1 = 50,
+		Spare2 = 50,
+		Spare3 = 50,		
 	      },
   },
 
@@ -171,6 +207,12 @@ MEDIUM_UNIT = {
 		Aircraft = 100,
 		Ship = 100,
 		Sub = 100,
+
+		Meteor = 0,
+		Drone = 100,
+		Spare1 = 100,
+		Spare2 = 100,
+		Spare3 = 100,		
 	      },
   },
 
@@ -198,6 +240,12 @@ BIG_UNIT = {
 		Aircraft = 150,
 		Ship = 150,
 		Sub = 150,
+
+		Meteor = 0,
+		Drone = 150,
+		Spare1 = 150,
+		Spare2 = 150,
+		Spare3 = 150,		
 	      },
   },
 
@@ -224,6 +272,12 @@ BIG_UNIT = {
 		Aircraft = 50,
 		Ship = 50,
 		Sub = 50,
+
+		Meteor = 0,
+		Drone = 50,
+		Spare1 = 50,
+		Spare2 = 50,
+		Spare3 = 50,		
 	      },
   },
 
@@ -250,6 +304,12 @@ ROCK_IMPACT_BIG = {
 		Aircraft = 200,
 		Ship = 200,
 		Sub = 200,
+
+		Meteor = 0,
+		Drone = 200,
+		Spare1 = 200,
+		Spare2 = 200,
+		Spare3 = 200,		
 	      },
   },
   
@@ -276,6 +336,12 @@ ROCK_IMPACT_BIG = {
 		Aircraft = 100,
 		Ship = 100,
 		Sub = 100,
+
+		Meteor = 0,
+		Drone = 100,
+		Spare1 = 100,
+		Spare2 = 100,
+		Spare3 = 100,		
 	      },
   },
   
@@ -303,6 +369,12 @@ ROCK_IMPACT_BIG = {
 		Aircraft = 10,
 		Ship = 10,
 		Sub = 10,
+
+		Meteor = 0,
+		Drone = 10,
+		Spare1 = 10,
+		Spare2 = 10,
+		Spare3 = 10,		
 	      },
   },
 }
