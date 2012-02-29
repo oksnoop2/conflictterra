@@ -135,7 +135,7 @@
 		Spare3 = 99999,
 	      },
 	
-	      energypershot           = 300,
+	      energypershot           = 500,
 	      explosionGenerator      = [[]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
