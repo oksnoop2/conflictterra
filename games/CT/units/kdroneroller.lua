@@ -2,8 +2,8 @@
 	  unitname            = [[kdroneroller]],
 	  name                = [[Roller Drone]],
 	  description         = [[Artillery troop ablity to fire from a great distance away.]],
-	  acceleration        = 0.04,
-	  brakeRate           = 0.02,
+	  acceleration        = 1,
+	  brakeRate           = 0.1,
 	  buildCostEnergy     = 250,
 	  buildCostMetal      = 250,
 	  builder             = false,
@@ -55,7 +55,7 @@
 	  trackType           = [[StdTank]],
 	  trackWidth          = 24,
 	  turnInPlace         = 1,
-	  turnRate            = 550,
+	  turnRate            = 1000,
 	  script              = [[kdroneroller.lua]],
 	
 

@@ -2,8 +2,8 @@
 	  unitname            = [[ktridroneroller]],
 	  name                = [[Tri Roller Drone]],
 	  description         = [[Shield Generating Unit costs 20 energy to maintain shield.]],
-	  acceleration        = 0.04,
-	  brakeRate           = 0.02,
+	  acceleration        = 1,
+	  brakeRate           = 0.1,
 	  buildCostEnergy     = 400,
 	  buildCostMetal      = 400,
 	  builder             = false,
@@ -55,8 +55,9 @@
 	  trackStretch        = 1,
 	  trackType           = [[StdTank]],
 	  trackWidth          = 24,
-	  turnInPlace         = 1,
-	  turnRate            = 550,
+	  turnInPlace         = 0,
+	  turnInPlaceSpeedLimit= 1,	  
+	  turnRate            = 500,
       script              = [[ktridroneroller.lua]],
 	
 	  weapons             = {

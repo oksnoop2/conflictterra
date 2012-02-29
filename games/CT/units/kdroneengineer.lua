@@ -1,8 +1,8 @@
 local kdroneengineer = {
 	name                = [[Drone Builder]],
 	description         = [[The Drone Builder is an unarmed construction unit.  Can Transform into a Drone Mining Tower to accumulate metal.]],
-    acceleration        = 0.06,
-    brakerate           = 1.5,
+    acceleration        = 1,
+    brakerate           = 0.1,
     buildpic            = [[kdroneengineer.png]],
 	buildCostEnergy     = 100,
 	buildCostMetal      = 100,
@@ -60,9 +60,9 @@ local kdroneengineer = {
     terraformSpeed      = 300,
 	reclaimSpeed        = 300,
 	turnInPlace         = 1,
-	turnRate            = 560,
+	turnRate            = 1000,
 	showNanospray	    = 1,
-	Resurrectspeed      =100,
+	Resurrectspeed      = 100,
 	workerTime          = 1,
 	script		    = "kdroneengineer.lua",
 
