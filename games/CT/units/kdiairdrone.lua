@@ -101,7 +101,7 @@ local kdiairdrone = {
 		Spare3 = 20,
 	      },
 	
-	      explosionGenerator      = [[custom:ct_impact_beamshot_green]],
+	      explosionGenerator      = [[custom:ct_impact_beamshot_green_aa]],
 	      flightTime              = 3,
 	      interceptedByShieldType = 1,
 	      lineOfSight             = true,
