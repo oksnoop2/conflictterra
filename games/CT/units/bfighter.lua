@@ -58,10 +58,10 @@
 	
 	    {
 	      def                = [[Machine_Gun]],
-	      badTargetCategory  = [[GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP CRUISER]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 60,
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 	
 	  },

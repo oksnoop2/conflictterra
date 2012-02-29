@@ -61,7 +61,7 @@ local kairdrone = {
 	    {
 	      def                = [[AA]],
 	      badTargetCategory  = [[FIXEDWING]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 	
 	  },

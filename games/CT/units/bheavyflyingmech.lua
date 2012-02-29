@@ -11,7 +11,7 @@
 	  buildPic            = [[bheavyflyingmech.png]],
 	  buildTime           = 75,
 	  canAttack           = true,
-          canFly              = true,
+	  canFly              = true,
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
@@ -20,8 +20,8 @@
 	  category            = [[GUNSHIP]],
 	  collide             = false,
 	  corpse              = [[DEAD]],
-          cruiseAlt           = 75,
-          reclaimable         = false,
+	  cruiseAlt           = 75,
+	  reclaimable         = false,
 
 	  customParams = {
 	  	RequireTech   = [[Ace Pilot's Presence]],
@@ -29,9 +29,9 @@
 	
 	  explodeAs           = [[BIG_UNIT]],
 	  floater             = false,
-          footprintx          = 4,
+	  footprintx          = 4,
 	  footprintZ          = 4,
-          hoverAttack         = true,
+	  hoverAttack         = true,
 	  idleAutoHeal        = 0,
 	  mass                = 500,
 	  maxDamage           = 1300,
@@ -57,7 +57,7 @@
 	  smoothAnim          = true,
 	  turnRate            = 750,
 	  unitRestricted      = 10,
-          script              = [[bheavyflyingmech.lua]],
+	  script              = [[bheavyflyingmech.lua]],
 	
 	  weapons             = {
 	
@@ -65,7 +65,7 @@
 	      def                = [[Laser]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[GUNSHIP]],
+	      onlyTargetCategory = [[CRUISER]],
 	    },
 	
 	  },

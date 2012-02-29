@@ -14,10 +14,10 @@
 	  category            = [[SINK]],
 	  corpse              = [[DEAD]],
 
-          collisionVolumeOffsets = [[0 0 0]],
-          collisionVolumeScales  = [[48 100 48]],
-          collisionVolumeTest    = 1,
-          collisionVolumeType    = [[box]],
+	  collisionVolumeOffsets = [[0 0 0]],
+	  collisionVolumeScales  = [[48 100 48]],
+	  collisionVolumeTest    = 1,
+	  collisionVolumeType    = [[box]],
 
 	  useBuildingGroundDecal	= true,
 	  buildingGroundDecalType	= "grounddecals/kdronemininggrounddecal.png",
@@ -31,18 +31,18 @@
 	  energyMake          = 1,
 	  explodeAs           = [[SMALL_BUILDING]],
 	  fireState           = 2,
-          footprintx          = 3,
+	  footprintx          = 3,
 	  footprintZ          = 3,
 	  idleAutoHeal        = 0,
 	  levelGround         = false,
 	  mass                = 1300,
 	  maxDamage           = 1000,
-          maxSlope            = 18,
+	  maxSlope            = 18,
 	  maxVelocity         = 0,
-          maxWaterDepth       = 0,
+	  maxWaterDepth       = 0,
 	  minCloakDistance    = 150,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[LAND SINK HOVER SHIP FLOAT FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[LAND SINK HOVER SHIP FLOAT FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[kdroneminingtower.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_BUILDING]],
@@ -69,7 +69,7 @@
 
 	  smoothAnim          = true,
 	  yardMap             = [[ooooo ooooo ooooo ooooo ooooo]],
-          script              = [[kdroneminingtower.lua]],
+	  script              = [[kdroneminingtower.lua]],
 	
 	  weapons             = {
         

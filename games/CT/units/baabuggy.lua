@@ -16,7 +16,7 @@
 	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 	
 	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 2,
@@ -66,13 +66,13 @@
 	  turnInPlaceSpeedLimit= 1.5,
 	  turnRate            = 500,
 	  workerTime          = 0,
-          script              = [[baabuggy.lua]],
+	  script              = [[baabuggy.lua]],
 	
 	  weapons             = {
 	
 	    {
 	      def                = [[AA]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 	
 	  },

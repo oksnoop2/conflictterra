@@ -17,18 +17,18 @@
 	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_BUILDING]],
-          footprintx          = 5,
+	  footprintx          = 5,
 	  footprintZ          = 5,
 	  idleAutoHeal        = 0,
 	  levelGround         = false,
 	  mass                = 1300,
 	  maxDamage           = 5000,
-          maxSlope            = 18,
+	  maxSlope            = 18,
 	  maxVelocity         = 0,
-          maxWaterDepth       = 0,
+	  maxWaterDepth       = 0,
 	  minCloakDistance    = 150,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[badvlandturret.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_BUILDING]],
@@ -48,7 +48,7 @@
 	  smoothAnim          = true,
 	  workerTime          = 0,
 	  yardMap             = [[ooooo ooooo ooooo ooooo ooooo]],
-          script              = [[badvlandturret.lua]],
+	  script              = [[badvlandturret.lua]],
 	
 	  weapons             = {
 	

@@ -16,7 +16,7 @@
 	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 
 	  customParams = {
 	  	RequireTech   = [[General's Presence]],
@@ -36,7 +36,7 @@
 	  movementClass       = [[TANK4x4]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bheavymissiletank.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],
@@ -69,7 +69,7 @@
 	  turnInPlace         = 1,
 	  turnRate            = 500,
 	  unitRestricted      = 10,
-          script              = [[bheavymissiletank.lua]],
+	  script              = [[bheavymissiletank.lua]],
 	
 	  weapons             = {
 	

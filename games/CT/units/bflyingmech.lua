@@ -11,7 +11,7 @@
 	  buildPic            = [[bflyingmech.png]],
 	  buildTime           = 25,
 	  canAttack           = true,
-          canFly              = true,
+	  canFly              = true,
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
@@ -19,14 +19,14 @@
 	  category            = [[GUNSHIP]],
 	  collide             = false,
 	  corpse              = [[DEAD]],
-          cruiseAlt           = 50,
-          reclaimable         = false,
+	  cruiseAlt           = 50,
+	  reclaimable         = false,
 	
 	  explodeAs           = [[MEDIUM_UNIT]],
 	  floater             = false,
-          footprintx          = 4,
+	  footprintx          = 4,
 	  footprintZ          = 4,
-          hoverAttack         = true,
+	  hoverAttack         = true,
 	  idleAutoHeal        = 0,
 	  mass                = 125,
 	  maxDamage           = 500,
@@ -59,7 +59,7 @@
 	  sightDistance       = 500,
 	  smoothAnim          = true,
 	  turnRate            = 750,
-          script              = [[bflyingmech.lua]],
+	  script              = [[bflyingmech.lua]],
 	
 	  weapons             = {
 	
@@ -67,14 +67,14 @@
 	      def                = [[Laser]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[GUNSHIP]],
+	      onlyTargetCategory = [[CRUISER]],
 	    },
 
 	    {
 	      def                = [[Laser]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 180,
-	      onlyTargetCategory = [[GUNSHIP]],
+	      onlyTargetCategory = [[CRUISER]],
 	    },
 
 	    {

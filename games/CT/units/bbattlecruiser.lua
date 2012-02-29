@@ -19,7 +19,7 @@
 	  canPatrol           = true,
 	  canStop             = true,
 	  canSubmerge         = false,
-	  category            = [[GUNSHIP]],
+	  category            = [[CRUISER]],
 	  collide             = false,
 	  collisionVolumeOffsets = [[0 0 0]],
 	  collisionVolumeScales  = [[112 100 240]],
@@ -71,34 +71,34 @@
 	
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
 	      mainDir            = [[0 1 0]],
 	      maxAngleDif        = 200,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
 	    },
 
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
 	      mainDir            = [[1 0 0]],
 	      maxAngleDif        = 200,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
 	    },
 
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
 	      mainDir            = [[0 -1 0]],
 	      maxAngleDif        = 200,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
 	    },
 
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
 	      mainDir            = [[-1 0 0]],
 	      maxAngleDif        = 200,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
 	    },
 	
 	  },

@@ -16,7 +16,7 @@
 	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_UNIT]],
 	  footprintX          = 2,
@@ -32,9 +32,9 @@
 	  movementClass       = [[TANK2x2]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bmissiletank.s3o]],
-          pushResistant       = 1,
+	  pushResistant       = 1,
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_UNIT]],
 
@@ -65,7 +65,7 @@
 	  trackWidth          = 30,
 	  turnInPlace         = 1,
 	  turnRate            = 500,
-          script              = [[bmissiletank.lua]],
+	  script              = [[bmissiletank.lua]],
 	
 	  weapons             = {
 	

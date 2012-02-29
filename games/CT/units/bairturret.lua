@@ -13,18 +13,18 @@
 	  canStop             = true,
 	  category            = [[SINK]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_BUILDING]],
-          footprintx          = 4,
+	  footprintx          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
 	  levelGround         = true,
 	  mass                = 40,
 	  maxDamage           = 950,
-          maxSlope            = 18,
+	  maxSlope            = 18,
 	  maxVelocity         = 0,
-          maxWaterDepth       = 0,
+	  maxWaterDepth       = 0,
 	  minCloakDistance    = 150,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
@@ -54,13 +54,13 @@
 	  sightDistance       = 530,
 	  smoothAnim          = true,
 	  yardMap             = [[oooo oooo oooo oooo]],
-          script              = [[bairturret.lua]],
+	  script              = [[bairturret.lua]],
 	
 	  weapons             = {
 	
 	    {
 	      def                = [[AA]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 	
 	  },

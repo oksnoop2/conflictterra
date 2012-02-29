@@ -3,7 +3,7 @@
 	  name                = [[Shima Class Battleclass]],
 	  description         = [[Missile Battleship - Specialized navy vessel built to fire four missiles.]],
 	  acceleration        = 0.03,
-          activateWhenBuilt   = true,
+	  activateWhenBuilt   = true,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 700,
 	  buildCostMetal      = 560,
@@ -17,17 +17,17 @@
 	  canStop             = true,
 	  category            = [[SHIP]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 
 	
 	  explodeAs           = [[MEDIUM_UNIT]],
-          floater             = true,
+	  floater             = true,
 	  footprintX          = 5,
 	  footprintZ          = 5,
-          collisionVolumeOffsets = [[0 -16 0]],
-          collisionVolumeScales  = [[74 74 240]],
-          collisionVolumeTest    = 1,
-          collisionVolumeType    = [[box]],
+	  collisionVolumeOffsets = [[0 -16 0]],
+	  collisionVolumeScales  = [[74 74 240]],
+	  collisionVolumeTest    = 1,
+	  collisionVolumeType    = [[box]],
 	  idleAutoHeal        = 0,
 	  mass                = 350,
 	  maxDamage           = 4000,
@@ -36,7 +36,7 @@
 	  movementClass       = [[SHIP5x5]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[brocketbattleship.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[MEDIUM_UNIT]],
@@ -64,8 +64,8 @@
 	  --},
 
 	  turnRate            = 193,
-          waterline           = 5,
-          script              = [[brocketbattleship.lua]],
+	  waterline           = 5,
+	  script              = [[brocketbattleship.lua]],
 	
 	  weapons             = {
 	

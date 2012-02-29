@@ -16,14 +16,14 @@
 	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_BUILDING]],
-          footprintx          = 5,
+	  footprintx          = 5,
 	  footprintZ          = 5,
 	  idleAutoHeal        = 0,
 	  levelGround         = false,
 	  mass                = 140,
 	  maxDamage           = 5000,
-          maxSlope            = 18,
-          maxWaterDepth       = 0,
+	  maxSlope            = 18,
+	  maxWaterDepth       = 0,
 	  minCloakDistance    = 60,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
@@ -52,20 +52,20 @@
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  yardMap             = [[ooooo ooooo ooooo ooooo ooooo]],
-          script              = [[badvairturret.lua]],
+	  script              = [[badvairturret.lua]],
 	
 	  weapons             = {
 	
 	    {
 	      def                = [[Flak]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP CRUISER]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 
 	    {
 	      def                = [[Flak]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP CRUISER]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 	
 	  },

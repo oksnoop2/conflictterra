@@ -17,7 +17,7 @@
 	  canStop             = true,
 	  category            = [[HOVER]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_UNIT]],
 	  footprintX          = 2,
@@ -30,14 +30,14 @@
 	  minCloakDistance    = 75,
 	  movementClass       = [[HOVER2x2]],
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER]],
 	  objectName          = [[bhovermech.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_UNIT]],
 
 	  side                = [[NKG]],
 	  sightDistance       = 600,
-          sonarDistance       = 600,
+	  sonarDistance       = 600,
 	  smoothAnim          = true,
 
 	  sounds			= {
@@ -59,7 +59,7 @@
 
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
-          script              = [[bhovermech.lua]],
+	  script              = [[bhovermech.lua]],
 	
 	  weapons             = {
 	

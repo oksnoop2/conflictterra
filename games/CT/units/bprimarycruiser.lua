@@ -23,7 +23,7 @@
 	  canReclaim          = true,
 	  canStop             = true,
 	  canSubmerge         = false,
-	  category            = [[GUNSHIP]],
+	  category            = [[CRUISER]],
 	  collisionVolumeOffsets = [[0 0 0]],
 	  collisionVolumeScales  = [[160 100 300]],
 	  collisionVolumeTest    = 1,
@@ -87,21 +87,21 @@
 	      def                = [[Laser]],
 	      mainDir            = [[1 0 0]],
 	      maxAngleDif        = 200,
-	      onlyTargetCategory = [[GUNSHIP]],
+	      onlyTargetCategory = [[CRUISER]],
 	    },
 
 	    {
 	      def                = [[Laser]],
 	      mainDir            = [[-1 0 0]],
 	      maxAngleDif        = 200,
-	      onlyTargetCategory = [[GUNSHIP]],
+	      onlyTargetCategory = [[CRUISER]],
 	    },
 
 	    {
 	      def                = [[AA]],
 	      mainDir            = [[0 1 0]],
 	      maxAngleDif        = 220,
-	      onlyTargetCategory = [[FIXEDWING]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 	
 	  },

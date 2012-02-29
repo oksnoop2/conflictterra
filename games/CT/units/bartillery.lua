@@ -17,7 +17,7 @@
 	  canHover            = true,
 	  category            = [[HOVER]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_UNIT]],
 	  footprintX          = 2,
@@ -33,7 +33,7 @@
 	  movementClass       = [[HOVER2x2]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bartillery.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_UNIT]],
@@ -62,7 +62,7 @@
 	  smoothAnim          = true,
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
-          script              = [[bartillery.lua]],
+	  script              = [[bartillery.lua]],
 	
 	  weapons             = {
 	

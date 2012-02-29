@@ -19,7 +19,7 @@
 	  canPatrol           = true,
 	  canStop             = true,
 	  canSubmerge         = false,
-	  category            = [[GUNSHIP]],
+	  category            = [[CRUISER]],
 	  collide             = false,
 	  collisionVolumeOffsets = [[0 0 0]],
 	  collisionVolumeScales  = [[160 160 240]],
@@ -40,7 +40,7 @@
 	  maxVelocity         = 3,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS SUB]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[baircruiser.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[LARGE_UNIT]],
@@ -76,21 +76,21 @@
 	      def                = [[Laser]],
 	      mainDir            = [[1 0 0]],
 	      maxAngleDif        = 200,
-	      onlyTargetCategory = [[GUNSHIP]],
+	      onlyTargetCategory = [[CRUISER]],
 	    },
 
 	    {
 	      def                = [[Laser]],
 	      mainDir            = [[-1 0 0]],
 	      maxAngleDif        = 200,
-	      onlyTargetCategory = [[GUNSHIP]],
+	      onlyTargetCategory = [[CRUISER]],
 	    },
 
 	    {
 	      def                = [[AA]],
 	      mainDir            = [[0 1 0]],
 	      maxAngleDif        = 220,
-	      onlyTargetCategory = [[FIXEDWING]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 	
 	  },

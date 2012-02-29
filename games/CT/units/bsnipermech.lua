@@ -20,7 +20,7 @@
 	  cloakCost           = 5,
 	  cloakCostMoving     = 5,
 	  init_Cloaked        = false,
-          reclaimable         = false,
+	  reclaimable         = false,
 	
 	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 4,
@@ -35,7 +35,7 @@
 	  movementClass       = [[Mech4x4]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bsnipermech.s3o]],
 	  seismicSignature    = 16,
 	  selfDestructAs      = [[MEDIUM_UNIT]],
@@ -65,7 +65,7 @@
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  upright             = true,
-          script              = [[bsnipermech.lua]],
+	  script              = [[bsnipermech.lua]],
 	
 	  weapons             = {
 	

@@ -1,12 +1,12 @@
 local bseaengineer2 = {
 	name                = [[Advanced Naval Engineer Support Ship]],
 	description         = [[Larger seaworthy construction vessel with more advanced build options.]],
-        acceleration        = 0.05,
-        brakerate           = 0.5,
+	acceleration        = 0.05,
+	brakerate           = 0.5,
 	buildCostEnergy     = 280,
 	buildCostMetal      = 224,
-        buildDistance       = 300,
-        builder             = true,
+	buildDistance       = 300,
+	builder             = true,
 
 	buildoptions		= {
 		[[bseapowerplant]],
@@ -14,61 +14,60 @@ local bseaengineer2 = {
 		[[badvtorpedoturret]],
 	},
 
-        buildpic            = [[bseaengineer2.png]],
+	buildpic            = [[bseaengineer2.png]],
 	buildTime           = 25,
-        canAssist           = false,
-        canGuard            = true,
+	canAssist           = false,
+	canGuard            = true,
 	canFight            = false,
-	canMove		    = true,
+	canMove		        = true,
 	canPatrol           = true,
-        canReclaim          = true,
+	canReclaim          = true,
 	canStop             = true,
 	category            = [[SHIP]],
-        corpse              = [[DEAD]],
-        reclaimable         = false,
+	corpse              = [[DEAD]],
+	reclaimable         = false,
 
-        energyMake          = 0,
+	energyMake          = 0,
 	energyUse           = 0,
 	explodeAs           = [[SMALL_UNIT]],
 	floater             = true,
-        footprintx          = 5,
+	footprintx          = 5,
 	footprintZ          = 5,
 	idleAutoHeal        = 0,
 	mass                = 120,
 	maxDamage           = 500,
 	maxVelocity         = 2.5,
-        metalMake           = 0,
+	metalMake           = 0,
 	minCloakDistance    = 75,
-        minWaterDepth       = 5,
+	minWaterDepth       = 5,
 	movementClass       = [[SHIP5x5]],
 	noAutoFire          = false,
-        noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
 	objectName          = "bseaengineer2.s3o",
-        seismicSignature    = 4,
-        selfDestructAs      = [[SMALL_UNIT]],
+	seismicSignature    = 4,
+	selfDestructAs      = [[SMALL_UNIT]],
 	showNanoSpray       = false,
-        side                = [[NKG]],
-        sightDistance       = 500,
+	side                = [[NKG]],
+	sightDistance       = 500,
 	smoothAnim          = true,
 
-	  sounds			= {
+	sounds			= {
 	      select = {
 		"ct/shipbell",
 		},
 	      ok = {
 		"ct/shipbell",
 		},
-	  },
+	},
 
-	  sfxtypes            = {
+	sfxtypes            = {
 	
 	    explosiongenerators = {
 		"custom:ct_weldingsparks",
 	    },
 	
-	  },
+	},
 
-        terraformSpeed      = 600,
+	terraformSpeed      = 600,
 	reclaimSpeed        = 300,
 	repairSpeed         = 0.5,
 	turnRate            = 448,

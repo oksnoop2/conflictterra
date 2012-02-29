@@ -19,14 +19,14 @@
 	  reclaimable         = false,
 
 	  explodeAs           = [[MEDIUM_UNIT]],
-          floater             = true,
+	  floater             = true,
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
-          collisionVolumeOffsets = [[0 0 0]],
-          collisionVolumeScales  = [[38 32 104]],
-          collisionVolumeTest    = 1,
-          collisionVolumeType    = [[box]],
+	  collisionVolumeOffsets = [[0 0 0]],
+	  collisionVolumeScales  = [[38 32 104]],
+	  collisionVolumeTest    = 1,
+	  collisionVolumeType    = [[box]],
 	  mass                = 375,
 	  maxDamage           = 3500,
 	  maxVelocity         = 2.25,
@@ -63,22 +63,22 @@
 	  smoothAnim          = true,
 	  turnRate            = 416,
 	  workerTime          = 0,
-          waterline           = 4,
-          script              = [[baaship.lua]],
+	  waterline           = 4,
+	  script              = [[baaship.lua]],
 	
 	  weapons             = {
 	
 	
 	    {
 	      def                = [[AA]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP CRUISER]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 
 	    {
 	      def                = [[AA]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP CRUISER]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 	
 	  },

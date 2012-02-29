@@ -130,26 +130,26 @@ unitDef = {
 
 	    {
 	      def                = [[Flak]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP CRUISER]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 
 	    {
 	      def                = [[Flak]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP CRUISER]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 
 	    {
 	      def                = [[Flak]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP CRUISER]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 
 	    {
 	      def                = [[Flak]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP CRUISER]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 	
 	  },

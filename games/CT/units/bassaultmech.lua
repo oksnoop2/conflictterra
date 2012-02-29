@@ -16,7 +16,7 @@
 	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 
 	  customParams = {
 	  	RequireTech   = [[Ace Pilot's Presence]],
@@ -34,7 +34,7 @@
 	  minCloakDistance    = 75,
 	  movementClass       = [[Mech4x4]],
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bassaultmech.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],
@@ -65,7 +65,7 @@
 	  turnRate            = 1000,
 	  upright             = true,
 	  unitRestricted      = 10,
-          script              = [[bassaultmech.lua]],
+	  script              = [[bassaultmech.lua]],
 	
 	  weapons             = {
 	

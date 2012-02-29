@@ -14,21 +14,21 @@
 	  canStop             = true,
 	  category            = [[SINK]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_BUILDING]],
-          footprintx          = 3,
+	  footprintx          = 3,
 	  footprintZ          = 3,
 	  idleAutoHeal        = 0,
 	  levelGround         = false,
 	  mass                = 125,
 	  maxDamage           = 875,
-          maxSlope            = 36,
+	  maxSlope            = 36,
 	  maxVelocity         = 0,
-          maxWaterDepth       = 0,
+	  maxWaterDepth       = 0,
 	  minCloakDistance    = 150,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[blandnavalturret.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_BUILDING]],
@@ -56,7 +56,7 @@
 	  },
 
 
-          script              = [[blandnavalturret.lua]],
+	  script              = [[blandnavalturret.lua]],
 	
 	  weapons             = {
 	

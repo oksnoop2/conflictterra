@@ -14,22 +14,22 @@
 	  canStop             = true,
 	  category            = [[FLOAT]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_BUILDING]],
-          footprintx          = 4,
+	  footprintx          = 4,
 	  footprintZ          = 4,
 	  floater             = true,
 	  idleAutoHeal        = 0,
 	  levelGround         = true,
 	  mass                = 125,
 	  maxDamage           = 9300,
-          maxSlope            = 36,
+	  maxSlope            = 36,
 	  maxVelocity         = 0,
-          minWaterDepth       = 0,
+	  minWaterDepth       = 0,
 	  minCloakDistance    = 150,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP CRUISER]],
 	  objectName          = [[badvtorpedoturret.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_BUILDING]],
@@ -48,7 +48,7 @@
 	  },
 
 	  yardMap             = [[ooo ooo ooo]],
-          script              = [[badvtorpedoturret.lua]],
+	  script              = [[badvtorpedoturret.lua]],
 	
 	  weapons             = {
 	

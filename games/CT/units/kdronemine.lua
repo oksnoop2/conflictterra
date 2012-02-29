@@ -9,16 +9,14 @@ local kdronemine = {
     buildDistance       = 220,
     builder             = 1,
 	buildoptions		= {
-                [[kdronemine]],
-
-               
+		[[kdronemine]],
 	},
 	buildTime           = 15,
     canAssist           = true,
 	CanAttack = 1,
 	CanCapture = false,
     canGuard            = true,
-	canMove		    = false,
+	canMove		        = false,
 	canPatrol           = true,
     canReclaim          = true,
 	canStop             = true,
@@ -63,8 +61,8 @@ local kdronemine = {
 	
 	    {
 	      def                = [[Mine]],
-	      badTargetCategory  = [[GUNSHIP SINK FLOAT]],
-	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP HOVER]],
+	      badTargetCategory  = [[GUNSHIP CRUISER SINK FLOAT]],
+	      onlyTargetCategory = [[SWIM LAND SHIP SINK FLOAT GUNSHIP CRUISER HOVER]],
 	    },
 	
 	  },

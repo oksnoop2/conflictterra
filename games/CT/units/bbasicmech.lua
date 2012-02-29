@@ -16,7 +16,7 @@
 	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 	
 	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 3,
@@ -30,7 +30,7 @@
 	  minCloakDistance    = 75,
 	  movementClass       = [[Mech3x3]],
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bbasicmech.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[MEDIUM_UNIT]],
@@ -50,7 +50,7 @@
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  upright             = true,
-          script              = [[bbasicmech.lua]],
+	  script              = [[bbasicmech.lua]],
 	
 	  weapons             = {
 	

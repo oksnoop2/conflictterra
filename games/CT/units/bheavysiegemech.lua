@@ -16,7 +16,7 @@
 	  canStop             = true,
 	  category            = [[LAND]],
  	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 
 	  customParams = {
 	  	RequireTech   = [[Ace Pilot's Presence]],
@@ -36,7 +36,7 @@
 	  movementClass       = [[Mech4x4]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bheavysiegemech.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],
@@ -65,7 +65,7 @@
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  unitRestricted      = 15,
-          script              = [[bheavysiegemech.lua]],
+	  script              = [[bheavysiegemech.lua]],
 	
 	  weapons             = {
 

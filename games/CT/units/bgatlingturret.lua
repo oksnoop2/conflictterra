@@ -13,21 +13,21 @@
 	  canStop             = true,
 	  category            = [[SINK]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_BUILDING]],
-          footprintx          = 3,
+	  footprintx          = 3,
 	  footprintZ          = 3,
 	  idleAutoHeal        = 0,
 	  levelGround         = false,
 	  mass                = 35,
 	  maxDamage           = 1125,
-          maxSlope            = 36,
+	  maxSlope            = 36,
 	  maxVelocity         = 0,
-          maxWaterDepth       = 0,
+	  maxWaterDepth       = 0,
 	  minCloakDistance    = 150,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bgatlingturret.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_BUILDING]],
@@ -54,7 +54,7 @@
 
 	  smoothAnim          = true,
 	  yardMap             = [[ooo ooo ooo]],
-          script              = [[bgatlingturret.lua]],
+	  script              = [[bgatlingturret.lua]],
 	
 	  weapons             = {
 	

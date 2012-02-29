@@ -24,7 +24,7 @@
 	  canReclaim          = true,
 	  canStop             = true,
 	  canSubmerge         = false,
-	  category            = [[GUNSHIP]],
+	  category            = [[CRUISER]],
 	  collisionVolumeOffsets = [[0 0 0]],
 	  collisionVolumeScales  = [[125 150 300]],
 	  collisionVolumeTest    = 1,
@@ -90,18 +90,18 @@
 	
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
 	      mainDir            = [[1 0 0]],
 	      maxAngleDif        = 200,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
 	    },
 
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP SINK FLOAT]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
 	      mainDir            = [[1 0 0]],
 	      maxAngleDif        = 200,
-	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP HOVER]],
+	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
 	    },
 	
 	  },

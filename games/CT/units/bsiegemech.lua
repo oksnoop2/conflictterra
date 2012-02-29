@@ -16,7 +16,7 @@
 	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 	
 	  explodeAs           = [[MEDIUM_UNIT]],
 	  footprintX          = 3,
@@ -32,7 +32,7 @@
 	  movementClass       = [[Mech3x3]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bsiegemech.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNITEX]],
@@ -64,7 +64,7 @@
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  upright             = true,
-          script              = [[bsiegemech.lua]],
+	  script              = [[bsiegemech.lua]],
 	
 	  weapons             = {
 

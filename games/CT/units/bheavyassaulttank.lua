@@ -16,7 +16,7 @@
 	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 
 	  customParams = {
 	  	RequireTech   = [[General's Presence]],
@@ -35,7 +35,7 @@
 	  minCloakDistance    = 75,
 	  movementClass       = [[TANK3x3]],
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bheavyassaulttank.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],
@@ -70,7 +70,7 @@
 	  turnInPlace         = 1,
 	  turnRate            = 500,
 	  unitRestricted      = 20,
-          script              = [[bheavyassaulttank.lua]],
+	  script              = [[bheavyassaulttank.lua]],
 	
 	  weapons             = {
 	

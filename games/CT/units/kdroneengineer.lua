@@ -41,7 +41,6 @@ local kdroneengineer = {
     metalMake           = 0,
 	minCloakDistance    = 75,
 	movementClass       = [[kdrone]],
-    noChaseCategory     = [[MINERALS SHIP FLOAT SUB FIXEDWING GUNSHIP]],
 	objectName          = "kdroneengineer.s3o",
     onoffable           = false,
     seismicSignature    = 4,

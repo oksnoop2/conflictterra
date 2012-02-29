@@ -18,10 +18,10 @@ local bminer = {
         corpse              = [[DEAD]],
         reclaimable         = false,
 
-	customParams = {
-		is_miner=1,	--used by minig: if the unit can mine is_mineable=1 ressources
-		max_cargo=25,	--used by mining: how much metal the unit can carry at once before having to return to a drop off
-	},
+        customParams = {
+		  is_miner=1,	--used by minig: if the unit can mine is_mineable=1 ressources
+		  max_cargo=25,	--used by mining: how much metal the unit can carry at once before having to return to a drop off
+        },
 
         energyMake          = 0,
         explodeAs           = [[SMALL_UNIT]],
@@ -37,7 +37,7 @@ local bminer = {
         metalMake           = 0,
         minCloakDistance    = 75,
         movementClass       = [[Engineer2x2]],
-        noChaseCategory     = [[LAND SINK HOVER FIXEDWING GUNSHIP SHIP FLOAT SUB]],
+        noChaseCategory     = [[LAND SINK HOVER FIXEDWING GUNSHIP CRUISER SHIP FLOAT SUB]],
         objectName          = "bminer.s3o",
         onoffable           = false,
         seismicSignature    = 4,

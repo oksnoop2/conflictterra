@@ -23,15 +23,15 @@
 	  },
 	
 	  explodeAs           = [[SMALL_UNIT]],
-          footprintx          = 2,
+	  footprintx          = 2,
 	  footprintZ          = 2,
 	  idleAutoHeal        = 0,
 	  leaveTracks         = true,
 	  mass                = 110,
 	  maxDamage           = 2100,
-          maxSlope            = 18,
+	  maxSlope            = 18,
 	  maxVelocity         = 2,
-          maxWaterDepth       = 22,
+	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
 	  movementClass       = [[TANK2x2]],
 	  moveState           = 0,
@@ -70,14 +70,14 @@
 	  turnRate            = 500,
 	  workerTime          = 0,
 	  unitRestricted      = 20,
-          script              = [[baatruck.lua]],
+	  script              = [[baatruck.lua]],
 	
 	  weapons             = {
 	
 	    {
 	      def                = [[AA]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP CRUISER]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 	
 	  },

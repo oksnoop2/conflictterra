@@ -56,8 +56,8 @@ local klightdrone = {
 	
 	    {
 	      def                = [[Cannon]],
-	      badTargetCategory  = [[BUILDING SWIM LAND SHIP SINK FLOAT HOVER]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[CRUISER]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 	
 	  },

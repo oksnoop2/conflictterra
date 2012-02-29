@@ -28,7 +28,7 @@
 	  frontToSpeed        = 0.5,
 	  idleAutoHeal        = 0,
 	  mass                = 150,
-          maxAcc              = 0.3,
+	  maxAcc              = 0.3,
 	  maxDamage           = 750,
 	  maxVelocity         = 10,
 	  minCloakDistance    = 75,
@@ -58,7 +58,7 @@
 	
 	    {
 	      def                = [[Laser]],
-	      onlyTargetCategory = [[GUNSHIP]],
+	      onlyTargetCategory = [[CRUISER]],
 	    },
 	
 	  },

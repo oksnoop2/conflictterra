@@ -16,7 +16,7 @@
 	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 
 	  customParams = {
 	  	ProvideTech   = [[General's Presence]],
@@ -35,7 +35,7 @@
 	  minCloakDistance    = 75,
 	  movementClass       = [[TANK4x4]],
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bgeneraltank.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],
@@ -70,7 +70,7 @@
 	  turnInPlace         = 1,
 	  turnRate            = 500,
 	  unitRestricted      = 1,
-          script              = [[bgeneraltank.lua]],
+	  script              = [[bgeneraltank.lua]],
 	
 	  weapons             = {
 	

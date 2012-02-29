@@ -23,7 +23,6 @@
 	  highTrajectory      = 2,
 	  idleAutoHeal        = 0,
 	  leaveTracks         = true,
-	  maneuverleashlength = [[640]],
 	  mass                = 90,
 	  maxDamage           = 2000,
       maxSlope            = 18,
@@ -33,7 +32,7 @@
 	  movementClass       = [[TANK2x2]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[kdroneroller.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_UNIT]],
@@ -57,7 +56,7 @@
 	  trackWidth          = 24,
 	  turnInPlace         = 1,
 	  turnRate            = 550,
-          script              = [[kdroneroller.lua]],
+	  script              = [[kdroneroller.lua]],
 	
 
 	

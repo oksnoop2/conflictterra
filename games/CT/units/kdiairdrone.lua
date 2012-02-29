@@ -65,10 +65,10 @@ local kdiairdrone = {
 	
 	    {
 	      def                = [[AA]],
-	      badTargetCategory  = [[GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP CRUISER]],
 	      mainDir            = [[0 0 1]],
 	      maxAngleDif        = 90,
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 	
 	  },

@@ -16,15 +16,15 @@
 	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_UNIT]],
-          footprintx          = 2,
+	  footprintx          = 2,
 	  footprintZ          = 2,
 	  levelground         = false,
 	  idleAutoHeal        = 0,
 	  mass                = 110,
 	  maxDamage           = 2100,
-          maxSlope            = 18,
+	  maxSlope            = 18,
 	  maxVelocity         = 0,
-          maxWaterDepth       = 22,
+	  maxWaterDepth       = 22,
 	  minCloakDistance    = 75,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
@@ -55,14 +55,14 @@
 	  smoothAnim          = true,
 	  workerTime          = 0,
 	  unitRestricted      = 20,
-          script              = [[baatruckturret.lua]],
+	  script              = [[baatruckturret.lua]],
 	
 	  weapons             = {
 	
 	    {
 	      def                = [[Flak]],
-	      badTargetCategory  = [[GUNSHIP]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[GUNSHIP CRUISER]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
 	    },
 	
 	  },

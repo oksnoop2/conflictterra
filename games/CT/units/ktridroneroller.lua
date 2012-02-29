@@ -33,7 +33,7 @@
 	  movementClass       = [[TANK4x4]],
 	  moveState           = 0,
 	  noAutoFire          = false,
-	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP SUB]],
+	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP CRUISER SHIP FLOAT SUB]],
 	  objectName          = [[ktridroneroller.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_UNIT]],
@@ -59,8 +59,6 @@
 	  turnRate            = 550,
       script              = [[ktridroneroller.lua]],
 	
-
-	
 	  weapons             = {
  
             {
@@ -68,9 +66,6 @@
             },
 			
 	  },
-        
-
-        
         
           weaponDefs          = {
 			
