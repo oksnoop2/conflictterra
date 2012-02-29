@@ -13,7 +13,7 @@ return {
 	  properties		= {
 		dir				= [[-10 r20,-10 r20,-10 r20]],
 		width			= 22,
-		length			= 1, --60,
+		length			= 1,
 		alpha			= 1,
 		alphadecay		= 0.35,
 		color			= [[0, 1, 0]],
@@ -48,7 +48,7 @@ return {
         pos                = [[0, 1, 0]],
         sizegrowth         = 0.16,
         sizemod            = 1,
-        texture            = [[smoke]],
+        texture            = [[]],
       },
 	},
 
@@ -80,8 +80,8 @@ return {
         pos                = [[0, 1, 0]],
         sizegrowth         = 0.16,
         sizemod            = 1,
-        texture            = [[smoke]],
+        texture            = [[]],
       },
 	},
-},
+  },
 }
