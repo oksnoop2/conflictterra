@@ -19,7 +19,7 @@
 	  reclaimable         = false,
 
 	  customParams = {
-	  	ProvideTech   = [[General's Presence]],
+	  	ProvideTech   = [[General's Presence, Raised Strategic Importance]],
 	  },
 	
 	  explodeAs           = [[BIG_UNIT]],

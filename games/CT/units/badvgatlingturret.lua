@@ -14,7 +14,11 @@
 	  category            = [[SINK]],
 	  corpse              = [[DEAD]],
           reclaimable         = false,
-	
+
+	  customParams = {
+	  	RequireTech   = [[Raised Strategic Importance]],
+	  },
+		  
 	  explodeAs           = [[SMALL_BUILDING]],
           footprintx          = 5,
 	  footprintZ          = 5,

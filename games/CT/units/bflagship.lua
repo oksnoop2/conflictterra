@@ -35,6 +35,7 @@
 	  cruiseAlt           = 100,
 
 	  customParams = {
+	  	RequireTech   = [[Raised Strategic Importance]],
 	  	ProvideTech   = [[Commander's Presence]],
 	  },
 	

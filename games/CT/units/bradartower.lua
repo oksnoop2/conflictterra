@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bradartower]],
   name                          = [[Radar Outpost]],
-  description                   = [[Temporary radar installation.  Provides a steady, but close-reaching, range of radar.  Uses 10 energy per second to operate.]],
+  description                   = [[Detects units, even cloaked enemies.  Uses 10 energy per second to operate.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,
@@ -40,7 +40,7 @@ unitDef = {
   objectName                    = [[bradartower.s3o]],
 
   onoffable                     = true,
-  radarDistance                 = 1500,
+  radarDistance                 = 2000, --3000 (adv range...)
   seismicSignature              = 4,
   selfDestructAs                = [[SMALL_BUILDING]],
   side                          = [[NKG]],

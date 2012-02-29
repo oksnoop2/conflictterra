@@ -56,8 +56,6 @@
 			"bsearadartower",
 			"btorpedoturret",
 			--T2
-			"badvradartower",
-			"badvjammertower",
 			"badvlandturret",
 			"badvairturret",
 			"badvlandnavalturret",
@@ -94,7 +92,6 @@
 			"bsnipermech",
 			"bacemech",
 			--T2
-			"bengineer2",
 			"bassaultmech",
 			"bheavymissilemech",
 			"bheavysiegemech",

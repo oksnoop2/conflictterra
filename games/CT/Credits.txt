@@ -1,6 +1,6 @@
-- Virtually all modelling, texturing, unit def creation and animation for the NKG is done by Sanada.  badvjammertower.s3o was modeled by Oksnoop2, and various balance changes were also done by him.
+- Virtually all modelling, texturing, unit def creation and animation for the NKG is done by Sanada.
 
-- Credit for work on refining elements of the game (gadgets, and widgets) along with creating maps, and a general liason with the Spring Community goes to Oksnoop2.
+- Credit for work on refining elements of the game (gadgets, and widgets) along with creating maps, and a general liason with the Spring Community goes to Oksnoop2.  Various balance changes were also done by him.
 
 - Thanks to Flozi and Forboding Angel for helping to get alternating fire figured out for the units.
 
