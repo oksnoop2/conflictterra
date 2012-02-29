@@ -100,7 +100,7 @@
 	      },
 	
 	   -- model                   = [[bshell.s3o]],
-		  cegtag                  = [[VULCANFX]],	     
+		  cegtag                  = [[ct_drone_energyshot]],	     
 	      explosionGenerator      = [[custom:ct_impact_beamshot_green_big]],
 	      interceptedByShieldType = 1,
 	      myGravity               = 0.1,

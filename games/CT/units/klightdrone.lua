@@ -89,7 +89,7 @@ local klightdrone = {
 		Spare3 = 2,
 	      },
 	
-		  cegtag                  = [[VULCANFX]],
+		  cegtag                  = [[ct_drone_energyshot]],
 	      explosionGenerator      = [[custom:ct_impact_beamshot_green_aa]],
 		  projectiles             = 1,
 		  sprayangle              = 500,
