@@ -15,7 +15,8 @@
 ||HOVER||Hover units.||
 ||SWIM||True amphibious units, that travel on the seafloor.  Currently non exist.||
 ||FIXEDWING||Normal aircraft that are constantly moving.||
-||GUNSHIP||Aircraft that hover.  Cruisers, and the flying mechs.||
+||GUNSHIP||Aircraft and other units that hover in the air.  Mostly the flying mechs and flying Drones.||
+||CRUISER||Cruisers, all of which hover like GUNSHIP but are specifically cruiser units.||
 ||SHIP||All of the naval units.  Mobile!||
 ||FLOAT||Floating buildings.||
 ||SUB||Submarines||
