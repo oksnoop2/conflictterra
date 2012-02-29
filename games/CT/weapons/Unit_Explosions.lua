@@ -32,6 +32,7 @@ CAMERA_EXPLOSION = {
 	      },
   },
 
+  
 SMALL_BUILDING = {
    name					= "Small building",
    rendertype			= 4,
@@ -62,6 +63,7 @@ SMALL_BUILDING = {
 	      },
   },
 
+  
 MEDIUM_BUILDING = {
    name					= "Medium building",
    rendertype			= 4,
@@ -92,6 +94,7 @@ MEDIUM_BUILDING = {
 	      },
   },
 
+  
 LARGE_BUILDING = {
 
    name					= "Large building",
@@ -123,6 +126,7 @@ LARGE_BUILDING = {
 	      },
   },
 
+  
 VOLATILE_BUILDING = {
    name					= "Volatile building",
    rendertype			= 4,
@@ -153,6 +157,7 @@ VOLATILE_BUILDING = {
 	      },
   },
 
+  
 SMALL_UNIT = {
 
    name					= "Small Unit",
@@ -217,7 +222,6 @@ MEDIUM_UNIT = {
   },
 
 
-
 BIG_UNIT = {
 
    name					= "Big Unit",
@@ -249,9 +253,10 @@ BIG_UNIT = {
 	      },
   },
 
-  ROCK_IMPACT_SMALL = {
+  
+ROCK_IMPACT_SMALL = {
 
-   name					= "Small Unit",
+   name					= "Small Rock Impact",
    craterMult			= 1000,
    rendertype			= 4,
    ballistic			= 1,
@@ -281,9 +286,10 @@ BIG_UNIT = {
 	      },
   },
 
+  
 ROCK_IMPACT_BIG = {
 
-   name					= "Large building",
+   name					= "Large Rock Impact",
    rendertype			= 4,
    craterMult			= 4000,
    ballistic			= 1,
@@ -312,8 +318,75 @@ ROCK_IMPACT_BIG = {
 		Spare3 = 200,		
 	      },
   },
+
+
+ROCK_MINEDOUT = {
+
+   name					= "Rock Mined Out",
+   craterMult			= 0,
+   rendertype			= 4,
+   ballistic			= 1,
+   turret				= 1,
+   impulseFactor		= 0,
+   range				= 480,
+   reloadtime			= 3.6,
+   weaponvelocity		= 250,
+   areaofeffect			= 8,
+   --soundstart			= "golgotha/old_generic.wav",
+   --soundhit			= "golgotha/old_generic.wav",
+   explosiongenerator	= "custom:ct_meteor_destruction",
+	      damage                  = {
+		Cruiser = 0,
+		Building = 0,
+		Mech = 0,
+		Tank = 0,
+		Aircraft = 0,
+		Ship = 0,
+		Sub = 0,
+
+		Meteor = 0,
+		Drone = 0,
+		Spare1 = 0,
+		Spare2 = 0,
+		Spare3 = 0,		
+	      },
+  },
   
-  LIGHT_MINE = {
+  
+ROCK_MINEDOUT_BIG = {
+
+   name					= "Rock Mined Out",
+   craterMult			= 0,
+   rendertype			= 4,
+   ballistic			= 1,
+   turret				= 1,
+   impulseFactor		= 0,
+   range				= 480,
+   reloadtime			= 3.6,
+   weaponvelocity		= 250,
+   areaofeffect			= 8,
+   --soundstart			= "golgotha/old_generic.wav",
+   --soundhit			= "golgotha/old_generic.wav",
+   explosiongenerator	= "custom:ct_meteor_destruction_big",
+	      damage                  = {
+		Cruiser = 0,
+		Building = 0,
+		Mech = 0,
+		Tank = 0,
+		Aircraft = 0,
+		Ship = 0,
+		Sub = 0,
+
+		Meteor = 0,
+		Drone = 0,
+		Spare1 = 0,
+		Spare2 = 0,
+		Spare3 = 0,		
+	      },
+  },  
+
+  
+LIGHT_MINE = {
 
    name					= "Small Unit",
    craterMult			= 2000,
@@ -344,8 +417,9 @@ ROCK_IMPACT_BIG = {
 		Spare3 = 100,		
 	      },
   },
+
   
-    DRONE_PETARD = {
+DRONE_PETARD = {
 
    name					= "Drone Petard",
    collideFriendly		= 0,
