@@ -56,8 +56,8 @@ local klightdrone = {
 	
 	    {
 	      def                = [[Cannon]],
-	      badTargetCategory = [[BUILDING SWIM LAND SHIP SINK FLOAT HOVER]],
-	      onlyTargetCategory  = [[FIXEDWING GUNSHIP]],
+	      badTargetCategory  = [[BUILDING SWIM LAND SHIP SINK FLOAT HOVER]],
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
 	    },
 	
 	  },
@@ -66,7 +66,7 @@ local klightdrone = {
 	  weaponDefs          = {
 	
 	    Cannon = {
-	      name                    = [[Light Cannon]],
+	      name                    = [[Anti-Air Plasma]],
 	      areaOfEffect            = 64,
 		  burnBlow                = true,
 		  canattackground         = false,
@@ -74,11 +74,11 @@ local klightdrone = {
 	
 	      damage                  = {
 		default = 2,
-		Cruiser = 10,
+		Cruiser = 15,
 		Building = 2,
 		Mech = 2,
 		Tank = 2,
-		Aircraft = 10,
+		Aircraft = 15,
 		Ship = 2,
 		Sub = 2,
 
@@ -89,14 +89,13 @@ local klightdrone = {
 		Spare3 = 2,
 	      },
 	
-          --model                 = [[bshell.s3o]],
 		  cegtag                  = [[VULCANFX]],
 	      explosionGenerator      = [[custom:ct_impact_beamshot_green]],
 		  projectiles             = 1,
 		  sprayangle              = 500,
 	      interceptedByShieldType = 1,
 	      range                   = 600,
-	      reloadtime              = 0.5,
+	      reloadtime              = 1,
 	      rgbColor                = [[1 0.95 0.4]],
 	      separation              = 2,
 	      size                    = 0.4,		  
