@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bsiegemech]],
 	  name                = [[Ishida Combat Mech]],
-	  description         = [[Siege Mech - Medium SM designed to take out enemy structures.  Armed with a heavy gun and two rapid fire cannons.]],
+	  description         = [[Siege Mech - Medium SM armed with an anti-building heavy gun and a pair of rapid fire cannons.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 375,

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[baaship]],
-	  name                = [[Taira Class Battleclass]],
-	  description         = [[Anti-Air Battleship - Battleship designed to only shoot down enemy aircraft.  Armed with two anti-air missile launchers.]],
+	  name                = [[Taira Class Battleship]],
+	  description         = [[Anti-Air Battleship - Fires two homing AA missiles]],
 	  acceleration        = 0.05,
 	  brakeRate           = 0.06,
 	  buildCostEnergy     = 400,

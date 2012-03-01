@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bartillery]],
 	  name                = [[Uma Type Hover Truck]],
-	  description         = [[Artillery Hover Truck - Light mobile artillery.  Stronger against buildings than units.]],
+	  description         = [[Artillery Hover Truck - Light mobile artillery. Stronger against buildings than units.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 350,

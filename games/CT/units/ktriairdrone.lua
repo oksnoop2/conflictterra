@@ -1,6 +1,6 @@
 local ktriairdrone = {
 	name                = [[Tri Air Drone]],
-	description         = [[The Tri Air Drone is a long range flying siege unit. Can only attack ground.]],
+	description         = [[Shoots a long range beam of deadly plasma at ground units.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[ktriairdrone.png]],

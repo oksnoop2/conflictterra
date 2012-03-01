@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[ktridroneroller]],
 	  name                = [[Tri Roller Drone]],
-	  description         = [[Shield Generating Unit costs 20 energy to maintain shield.]],
+	  description         = [[Produces a weapon deflecting Shield that costs 20 energy to maintain.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 400,

@@ -1,6 +1,6 @@
 local breztank = {
 	name                = [[Resurrection Truck]],
-	description         = [[Mobile resurrection unit.  Unarmed.]],
+	description         = [[Unarmed resurrection unit to revive fallen units, friend and foe alike]],
 	acceleration        = 1,
 	brakerate           = 0.1,
 	buildpic            = [[bmetaltruck.png]],

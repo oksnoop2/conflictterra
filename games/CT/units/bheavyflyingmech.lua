@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bheavyflyingmech]],
 	  name                = [[Hattori Aerial Combat Mech]],
-	  description         = [[Cruiser Destroyer Mech - Fires a powerful beam to deal heavy damage to Cruisers. - Build Limit: 10]],
+	  description         = [[Cruiser Destroyer Mech - Fires a powerful beam specifically to destroy Cruisers. - Build Limit: 10]],
 	  acceleration        = 0.24,
 	  amphibious          = false,
 	  brakeRate           = 4.41,

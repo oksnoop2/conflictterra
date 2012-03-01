@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bairturret]],
 	  name                = [[Anti-Air Flak Turret]],
-	  description         = [[Fires explosive flak at flying enemies.  Cheap and easy to build.]],
+	  description         = [[Fires explosive flak at flying enemies. Cheap and easy to build.]],
 	  buildCostEnergy     = 250,
 	  buildCostMetal      = 250,
 	  builder             = false,

@@ -1,6 +1,6 @@
 local bminer = {
         name                = [[Mining Truck]],
-        description         = [[Mining equipment whose single role is to mine metal from meteorites.]],
+        description         = [[Mining vehicle whose single role is to mine metal from meteorites.]],
         acceleration        = 1,
         brakerate           = 0.1,
         buildpic            = [[bminer.png]],

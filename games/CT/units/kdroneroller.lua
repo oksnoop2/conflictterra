@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[kdroneroller]],
 	  name                = [[Roller Drone]],
-	  description         = [[Artillery troop ablity to fire from a great distance away.]],
+	  description         = [[Heavily armored Drone which fires a long range blob of plasma which destroys buildings.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 250,

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[btransportcruiser]],
 	  name                = [[Takeda Class Cruiser]],
-	  description         = [[Transport Cruiser - Transport aircraft used to ferry units through the air.  Lightly armed with missiles.]],
+	  description         = [[Transport Cruiser - Ferries units through the air. Set to Repeat to establish ferry routes.]],
 	  acceleration        = 0.16,
 	  airStrafe           = 0,
 	  amphibious          = false,

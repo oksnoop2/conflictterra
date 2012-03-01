@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bflyingmech]],
 	  name                = [[Fuma Aerial Combat Mech]],
-	  description         = [[Cruiser Destroyer Mech - Airborne half-mech designed to destroy cruisers.  Fires beam weapons and two AA missiles.  Cannot attack ground.]],
+	  description         = [[Cruiser Destroyer Mech - Airborne half-mech armed with Cruiser destroying beam cannons and two AA missiles.]],
 	  acceleration        = 0.154,
 	  amphibious          = false,
 	  brakeRate           = 3.75,

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bscoutvehicle]],
 	  name                = [[Shika Type Vehicle]],
-	  description         = [[Recon Vehicle - Quick, cheap, unarmed reconnaissance vehicle.  Radar equipped.]],
+	  description         = [[Recon Vehicle - Quick, cheap, unarmed reconnaissance vehicle. Radar equipped.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 75,

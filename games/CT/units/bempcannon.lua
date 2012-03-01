@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bempcannon]],
 	  name                = [[Kizetsu Type Tank]],
-	  description         = [[EMP Cannon Tank - Tank armed with a long range, very slow firing EMP beam that can pierce shields. Must build ammo, 1000 energy per shot.  Must be told to fire. - Build Limit: 10]],
+	  description         = [[EMP Cannon Tank - Fires a long range EMP beam that can pierce shields. Must build ammo, 1000 energy per shot. Must be told to fire. - Build Limit: 10]],
 	  acceleration        = 0.5,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 700,

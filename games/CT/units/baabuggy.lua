@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[baabuggy]],
 	  name                = [[Yumi Type Jeep]],
-	  description         = [[Anti-Air Jeep - Mobile anti-air jeep that fires two homing missiles.]],
+	  description         = [[Anti-Air Jeep - Fires two homing AA missiles.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 300,

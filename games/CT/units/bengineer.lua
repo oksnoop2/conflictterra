@@ -1,6 +1,6 @@
 local bengineer = {
         name                = [[Construction Mech]],
-        description         = [[Utilitarian vehicle able to build structures.   Unarmed.]],
+        description         = [[Utilitarian half-mech able to build structures. Unarmed.]],
         acceleration        = 1,
         brakerate           = 0.1,
         buildpic            = [[bengineermkii.png]],

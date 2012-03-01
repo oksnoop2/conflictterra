@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bcameratower]],
   name                          = [[Camera Tower]],
-  description                   = [[Temporary line of sight outpost.  Stealth and cloaked.  Self-destructs after 60 seconds.]],
+  description                   = [[Temporary line of sight outpost. Stealth and cloaked. Self-destructs after 60 seconds.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,

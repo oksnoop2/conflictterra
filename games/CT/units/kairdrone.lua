@@ -1,6 +1,6 @@
 local kairdrone = {
 	name                = [[Air Drone]],
-	description         = [[The Air Drone is a weak kamikaze stealth cloaking unit used for scouting and air defense Can only attack air.]],
+	description         = [[Blows itself up to destroy large aircraft such as Cruisers. Can cloak and doesn't appear on radar.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kairdrone.png]],
@@ -56,64 +56,6 @@ local kairdrone = {
 		"golgotha/vehicle_done_44khz",
 		},
 	  },
-
-	weapons             = {
-	
-	    {
-	      def                = [[AA]],
-	      badTargetCategory  = [[FIXEDWING]],
-	      onlyTargetCategory = [[FIXEDWING GUNSHIP CRUISER]],
-	    },
-	
-	  },
-	
-	
-	weaponDefs             = {
-	
-	    AA         = {
-	      name                    = [[Homing AA Missile]],
-	      areaOfEffect            = 48,
-	      avoidFriendly           = true,
-	      canattackground         = false,
-	      cylinderTargetting      = 1,
-	      craterMult              = 0.25,
-	
-	      damage                  = {
-		default = 0,
-		Cruiser = 0,
-		Building = 0,
-		Mech = 0,
-		Tank = 0,
-		Aircraft = 0,
-		Ship = 0,
-		Sub = 0,
-
-		Meteor = 0,
-		Drone = 0,
-		Spare1 = 0,
-		Spare2 = 0,
-		Spare3 = 0,
-	      },
-	
-	      flightTime              = 3,
-	      interceptedByShieldType = 1,
-	      lineOfSight             = true,
-	      range                   = 100,
-	      reloadtime              = 1,
-	      smokedelay              = [[0.1]],
-	      smokeTrail              = false,
-	      startVelocity           = 200,
-	      tolerance               = 22000,
-	      tracks                  = true,
-	      turnRate                = 30000,
-	      turret                  = true,
-	      weaponAcceleration      = 550,
-	      weaponTimer             = 5,
-	      weaponType              = [[MissileLauncher]],
-	      weaponVelocity          = 750,
-	    },
-	
-	  },
 	  
 	smoothAnim          = true,
     terraformSpeed      = 300,
@@ -123,7 +65,7 @@ local kairdrone = {
 	showNanospray	    = 1,
 	Resurrectspeed      = 100,
 	workerTime          = 1,
-	script		    = "kairdrone.lua",
+	script              = "kairdrone.lua",
 
 	featureDefs         = {
 	

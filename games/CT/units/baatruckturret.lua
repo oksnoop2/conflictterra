@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[baatruckturret]],
 	  name                = [[Taka Type Anti-Air Turret]],
-	  description         = [[Anti-Air Truck Turret Mode - Immobile flak turret.  Can Mobilize into an Anti-Air Truck.]],
+	  description         = [[Anti-Air Truck Turret Mode - Immobile flak turret. Can Mobilize into an Anti-Air Truck.]],
 	  acceleration        = 0,
 	  brakeRate           = 0,
 	  buildCostEnergy     = 600,

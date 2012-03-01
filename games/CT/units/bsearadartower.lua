@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bsearadartower]],
   name                          = [[Floating Radar Outpost]],
-  description                   = [[Temporary floating radar and sonar installation.]],
+  description                   = [[Water-bound radar and sonar installation.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,

@@ -1,7 +1,7 @@
 unitDef = {
 	  unitname                      = [[bmeteorimpact]],
 	  name                          = [[Meteorite]],
-	  description                   = [[Contains valuable metal used to construct units.  Use a mining unit to extract the metal.]],
+	  description                   = [[Contains valuable metal used to construct units. Use a mining unit to extract the metal.]],
 	  acceleration                  = 0,
 	  activateWhenBuilt             = true,
 	  brakeRate                     = 0,

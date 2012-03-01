@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bartilleryship]],
 	  name                = [[Miyamoto Class Battleship]],
-	  description         = [[Artillery Battleship - Battleship armed with a single, large gun.  Does more damage to buildings.]],
+	  description         = [[Artillery Battleship - Long range, powerful anti-building bombardment.]],
 	  acceleration        = 0.03,
 	  activateWhenBuilt   = true,
 	  brakeRate           = 0.13,

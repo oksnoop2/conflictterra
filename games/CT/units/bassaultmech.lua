@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bassaultmech]],
 	  name                = [[Honda Combat Mech MkII]],
-	  description         = [[Assault Mech - Improved SM armed with dual rapid fire beam cannons. - Build Limit: 10]],
+	  description         = [[Assault Mech - Improved SM armed with dual rapid fire beam cannons. Can Jump. - Build Limit: 10]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 825,

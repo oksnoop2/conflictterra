@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bprimarycruiser]],
 	  name                = [[Oda Class Cruiser]],
-	  description         = [[Expeditionary Cruiser -  Exploratory figurehead of the NKG Air Fleet.  Able to Deploy into the Mobile Headquarters. - Build Limit: 1]],
+	  description         = [[Expeditionary Cruiser - First NKG vessel on the scene. Able to Deploy into the Mobile Headquarters. - Build Limit: 1]],
 	  acceleration        = 0.16,
 	  activateWhenBuilt   = true,
 	  airStrafe           = 0,

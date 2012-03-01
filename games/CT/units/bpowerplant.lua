@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bpowerplant]],
   name                          = [[Stirling Power Generator]],
-  description                   = [[Uses heat from the sun to run a generator.  Requires no energy to build.  Adds +2 energy.]],
+  description                   = [[Uses heat from the sun to run a generator. Requires no energy to build. Adds +2 energy.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,

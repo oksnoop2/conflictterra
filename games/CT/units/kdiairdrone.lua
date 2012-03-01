@@ -1,6 +1,6 @@
 local kdiairdrone = {
 	name                = [[Di Air Drone]],
-	description         = [[Drone Fighter]],
+	description         = [[Pair of flying Drones which fire a homing ball of plasma to attack flying units.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kdiairdrone.png]],

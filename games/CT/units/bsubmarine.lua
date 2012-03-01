@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bsubmarine]],
 	  name                = [[Akechi Class Submarine]],
-	  description         = [[Submarine - Stealthy submersible.  Fires two torpedoes.]],
+	  description         = [[Submarine - Stealthy submersible. Fires two torpedoes.]],
 	  acceleration        = 0.02,
 	  activateWhenBuilt   = true,
 	  brakeRate           = 0.23,

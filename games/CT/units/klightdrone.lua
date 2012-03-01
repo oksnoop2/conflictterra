@@ -1,6 +1,6 @@
 local klightdrone = {
-	name                = [[Anti-Air Cannon Drone]],
-	description         = [[This drone is armed with an Anti-Air cannon, making it ideal for destroying aircraft and cruisers.]],
+	name                = [[Skyward Drone]],
+	description         = [[Fires a blob of plasma into the sky, destroying aircraft and flying units.]],
     acceleration        = 1,
     brakerate           = 0.1,
     buildpic            = [[klightdrone.png]],

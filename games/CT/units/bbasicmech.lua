@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bbasicmech]],
 	  name                = [[Hojo Combat Mech]],
-	  description         = [[Skirmish Mech - Light, fast, rapid fire SM.  Built for skirmishing as opposed to holding the line.]],
+	  description         = [[Skirmish Mech - Light, fast, rapid fire SM. Better at hit-and-run. Can Jump.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 275,

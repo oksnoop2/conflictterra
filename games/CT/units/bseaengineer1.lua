@@ -1,6 +1,6 @@
 local bseaengineer1 = {
 	name                = [[Naval Engineer Support Ship]],
-	description         = [[Seaworthy construction vessel.  Can build floating economy buildings, factories, and defences.]],
+	description         = [[Seaworthy construction vessel. Can build floating economy buildings, factories, and defences.]],
 	acceleration        = 0.05,
 	brakerate           = 0.5,
 	buildCostEnergy     = 140,

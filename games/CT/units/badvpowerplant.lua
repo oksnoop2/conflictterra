@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[badvpowerplant]],
   name                          = [[High-Tech Power Plant]],
-  description                   = [[Easy to install power station capable of giving a good boost to energy.  Adds +15 energy.]],
+  description                   = [[More advanced power station giving a good boost to energy. Adds +15 energy.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = true,

@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bbeacon]],
   name                          = [[Cruiser Beacon]],
-  description                   = [[Beacon used to call in Cruisers.]],
+  description                   = [[Beacon used to call in specialized Cruisers.]],
   amphibious                    = false,
   acceleration                  = 0,
   activateWhenBuilt             = false,

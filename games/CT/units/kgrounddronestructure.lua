@@ -1,5 +1,4 @@
 unitDef = {
-
   unitname                      = [[kgrounddronestructure]],
   name                          = [[Ground Drone Structure]],
   description                   = [[This structure produces energy and creates ground Drones.]],
@@ -10,12 +9,11 @@ unitDef = {
   buildCostMetal                = 400,
   builder                       = true,
   buildoptions                  = {
-
 	[[kdroneengineer]],
+	[[klightdrone]],	
 	[[kdronewarrior]],
 	[[kdroneroller]],
 	[[ktridroneroller]],
-	[[klightdrone]],
   },
   
   buildPic                      = [[kgrounddronestructure.png]],

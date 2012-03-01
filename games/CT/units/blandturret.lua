@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[blandturret]],
 	  name                = [[Dual Cannon Turret]],
-	  description         = [[Cheap, mildly effective turret that fires on terrestrial units.  Fires two cannons.]],
+	  description         = [[Longer ranged pair of cannons to defend your base.]],
 	  acceleration        = 0,
 	  brakeRate           = 0,
 	  buildCostEnergy     = 275,

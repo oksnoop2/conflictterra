@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bmex]],
   name                          = [[Drone Metal Extractor]],
-  description                   = [[Extracts usable metal resources from below the ground.  Must be built over a metal deposit.]],
+  description                   = [[Extracts usable metal resources from below the ground. Must be built over a metal deposit.]],
   acceleration                  = 0,
   activateWhenBuilt             = true,
   brakeRate                     = 0,

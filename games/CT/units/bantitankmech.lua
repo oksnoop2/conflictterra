@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bantitankmech]],
 	  name                = [[Enkei Combat Support Mech]],
-	  description         = [[Anti-Tank Mech - Slightly old SM model built to destroy tanks.  Fires two armor piercing rounds.]],
+	  description         = [[Anti-Tank Mech - Fires two armor piercing rounds that are strong against tanks and vehicles.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 325,

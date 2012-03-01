@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvlandturret]],
 	  name                = [[High-Power Beam Turret]],
-	  description         = [[A powerful beam weapon emplacement.]],
+	  description         = [[Fires a powerful beam cannon. Slow to reload.]],
 	  acceleration        = 0,
 	  brakeRate           = 0,
 	  buildCostEnergy     = 550,
