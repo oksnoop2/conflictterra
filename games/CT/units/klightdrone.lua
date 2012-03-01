@@ -24,7 +24,7 @@ local klightdrone = {
     reclaimable         = false,
 
     energyMake          = 0,
-	explodeAs           = [[SMALL_UNIT]],
+	explodeAs           = [[DRONE_GROUND_UNIT]],
     footprintx          = 3,
 	footprintZ          = 3,
 	idleAutoHeal        = 1,
@@ -41,7 +41,7 @@ local klightdrone = {
 	objectName          = "klightdrone.s3o",
     onoffable           = false,
     seismicSignature    = 4,
-    selfDestructAs      = [[SMALL_UNIT]],
+    selfDestructAs      = [[DRONE_GROUND_UNIT]],
     side                = [[Drone]],
     sightDistance       = 400,
 	sounds			= {

@@ -17,13 +17,12 @@
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
       reclaimable         = false,
-	  explodeAs           = [[SMALL_UNIT]],
+	  explodeAs           = [[DRONE_GROUND_UNIT]],
       footprintx          = 4,
 	  footprintZ          = 4,
 	  highTrajectory      = 2,
 	  idleAutoHeal        = 0,
 	  leaveTracks         = true,
-	  maneuverleashlength = [[640]],
 	  mass                = 90,
 	  maxDamage           = 1000,
       maxSlope            = 18,
@@ -36,7 +35,7 @@
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER FIXEDWING GUNSHIP CRUISER SHIP FLOAT SUB]],
 	  objectName          = [[ktridroneroller.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[SMALL_UNIT]],
+	  selfDestructAs      = [[DRONE_GROUND_UNIT]],
 
 	  sounds			= {
 	      select = {

@@ -434,7 +434,7 @@ DRONE_PETARD = {
    areaofeffect			= 400,
    soundstart			= "golgotha/old_generic.wav",
    soundhit				= "golgotha/old_generic.wav",
-   explosiongenerator	= "custom:SMALL_UNIT_Expl",
+   explosiongenerator	= "custom:ct_drone_explosion_air",
 	      damage                  = {
 		Cruiser = 300,
 		Building = 10,
@@ -451,6 +451,99 @@ DRONE_PETARD = {
 		Spare3 = 10,		
 	      },
   },
+  
+DRONE_AIR_UNIT = {
+
+   name					= "Drone Air Unit",
+   rendertype			= 4,
+   ballistic			= 1,
+   turret				= 1,
+   impulseFactor		= 0,
+   range				= 480,
+   reloadtime			= 3.6,
+   weaponvelocity		= 250,
+   areaofeffect			= 75,
+   soundstart			= "golgotha/old_generic.wav",
+   soundhit				= "golgotha/old_generic.wav",
+   explosiongenerator	= "custom:ct_drone_explosion_air",
+	      damage                  = {
+		Cruiser = 50,
+		Building = 50,
+		Mech = 50,
+		Tank = 50,
+		Aircraft = 50,
+		Ship = 50,
+		Sub = 50,
+
+		Meteor = 0,
+		Drone = 50,
+		Spare1 = 50,
+		Spare2 = 50,
+		Spare3 = 50,		
+	      },
+  },
+
+
+DRONE_GROUND_UNIT = {
+
+   name					= "Drone Ground Unit",
+   rendertype			= 4,
+   ballistic			= 1,
+   turret				= 1,
+   impulseFactor		= 0,
+   range				= 480,
+   reloadtime			= 3.6,
+   weaponvelocity		= 250,
+   areaofeffect			= 95,
+   soundstart			= "golgotha/old_generic.wav",
+   soundhit				= "golgotha/old_generic.wav",
+   explosiongenerator	= "custom:ct_drone_explosion_ground",
+	      damage                  = {
+		Cruiser = 100,
+		Building = 100,
+		Mech = 100,
+		Tank = 100,
+		Aircraft = 100,
+		Ship = 100,
+		Sub = 100,
+
+		Meteor = 0,
+		Drone = 100,
+		Spare1 = 100,
+		Spare2 = 100,
+		Spare3 = 100,		
+	      },
+  },  
+  
+DRONE_BUILDING = {
+   name					= "Drone building",
+   rendertype			= 4,
+   ballistic			= 1,
+   turret				= 1,
+   impulseFactor		= 0,
+   range				= 480,
+   reloadtime			= 3.6,
+   weaponvelocity		= 250,
+   areaofeffect			= 325,
+   soundstart			= "golgotha/generic.wav",
+   soundhit				= "golgotha/generic.wav",
+   explosiongenerator	= "custom:ct_drone_explosion_building",
+	      damage                  = {
+		Cruiser = 150,
+		Building = 150,
+		Mech = 150,
+		Tank = 150,
+		Aircraft = 150,
+		Ship = 150,
+		Sub = 150,
+
+		Meteor = 0,
+		Drone = 150,
+		Spare1 = 150,
+		Spare2 = 150,
+		Spare3 = 150,		
+	      },
+  },  
 }
 
 return lowerkeys(unitDeaths)

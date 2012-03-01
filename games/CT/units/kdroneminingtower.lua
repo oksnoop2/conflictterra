@@ -29,7 +29,7 @@
 	  radarDistance       = 300,
 	  damageModifier      = 0.25,
 	  energyMake          = 1,
-	  explodeAs           = [[SMALL_BUILDING]],
+	  explodeAs           = [[DRONE_BUILDING]],
 	  fireState           = 2,
 	  footprintx          = 3,
 	  footprintZ          = 3,
@@ -45,7 +45,7 @@
 	  noChaseCategory     = [[LAND SINK HOVER SHIP FLOAT FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[kdroneminingtower.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[SMALL_BUILDING]],
+	  selfDestructAs      = [[DRONE_BUILDING]],
 	  side                = [[NKG]],
 	  sightDistance       = 450,
 

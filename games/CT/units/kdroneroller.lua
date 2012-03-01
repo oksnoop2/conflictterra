@@ -17,7 +17,7 @@
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
       reclaimable         = false,
-	  explodeAs           = [[SMALL_UNIT]],
+	  explodeAs           = [[DRONE_GROUND_UNIT]],
       footprintx          = 2,
 	  footprintZ          = 2,
 	  highTrajectory      = 2,
@@ -35,7 +35,7 @@
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[kdroneroller.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[SMALL_UNIT]],
+	  selfDestructAs      = [[DRONE_GROUND_UNIT]],
 
 	  sounds			= {
 	      select = {

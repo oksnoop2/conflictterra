@@ -24,7 +24,7 @@ local ktriairdrone = {
 	reclaimable         = false,
 
     energyMake          = 1,
-	explodeAs           = [[SMALL_UNIT]],
+	explodeAs           = [[DRONE_AIR_UNIT]],
     footprintx          = 2,
 	footprintZ          = 2,
 	hoverAttack         = true,
@@ -41,7 +41,7 @@ local ktriairdrone = {
 	objectName          = "ktriairdrone.s3o",
     onoffable           = false,
     seismicSignature    = 4,
-    selfDestructAs      = [[SMALL_UNIT]],
+    selfDestructAs      = [[DRONE_AIR_UNIT]],
     side                = [[Drone]],
     sightDistance       = 500,
 	sounds			= {
