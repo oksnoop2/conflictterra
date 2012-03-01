@@ -18,7 +18,7 @@
 	  canStop             = true,
 	  canSubmerge         = false,
 	  category            = [[GUNSHIP]],
-	  collide             = false,
+	  collide             = true,
 	  corpse              = [[DEAD]],
 	  cruiseAlt           = 75,
 	  reclaimable         = false,

@@ -22,7 +22,7 @@ local kdiairdrone = {
 	corpse              = [[DEAD]],
     cruiseAlt           = 50,
 	reclaimable         = false,
-    collide             = false,
+    collide             = true,
     energyMake          = 1,
 	explodeAs           = [[DRONE_AIR_UNIT]],
     footprintx          = 3,
@@ -82,6 +82,7 @@ local kdiairdrone = {
 	      avoidFriendly           = true,
 	      canattackground         = false,
 	      cylinderTargetting      = 1,
+		  collideFriendly         = false,
 	      craterMult              = 0.25,
 	
 	      damage                  = {

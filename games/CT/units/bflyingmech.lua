@@ -17,7 +17,7 @@
 	  canPatrol           = true,
 	  canStop             = true,
 	  category            = [[GUNSHIP]],
-	  collide             = false,
+	  collide             = true,
 	  corpse              = [[DEAD]],
 	  cruiseAlt           = 50,
 	  reclaimable         = false,

@@ -19,6 +19,7 @@ local kairdrone = {
 	canStop             = true,
 	category            = [[GUNSHIP]],
     canFly              = true,
+	collide             = true,
 	corpse              = [[DEAD]],
     cruiseAlt           = 50,
 	cloakCost           = 10,
