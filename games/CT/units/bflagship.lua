@@ -13,7 +13,6 @@
 	  reclaimable         = false,
 
 	  buildPic            = [[bflagship.png]],
-	  buildRange3D        = false,
 	  buildTime           = 60,
 	  canAttack           = true,
 	  canDGun             = true,
@@ -30,7 +29,6 @@
 	  collisionVolumeTest    = 1,
 	  collisionVolumeType    = [[box]],
 	  collide             = false,
-	  commander           = true,
 	  corpse              = [[DEAD]],
 	  cruiseAlt           = 100,
 
@@ -61,7 +59,6 @@
 	  selfDestructAs      = [[LARGE_UNIT]],
 	  showNanospray       = 0,
 	  showNanoFrame       = false,
-	  showPlayerName      = true,
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 
