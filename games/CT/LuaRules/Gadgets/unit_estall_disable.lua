@@ -47,9 +47,7 @@ local disabledUnits = {}
 local changeStateDelay = 3 -- delay in seconds before state of unit can be changed. Do not set it below 2 seconds, because it takes 2 seconds before enabled unit reaches full energy use
 local radarDefs = {
   [ UnitDefNames['bradartower'].id ] = true,
-  [ UnitDefNames['badvradartower'].id ] = true,
   [ UnitDefNames['bjammertower'].id ] = true,
-  [ UnitDefNames['badvjammertower'].id ] = true,
 }
 
 
