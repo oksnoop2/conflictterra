@@ -25,8 +25,8 @@ local ktriairdrone = {
 
     energyMake          = 1,
 	explodeAs           = [[DRONE_AIR_UNIT]],
-    footprintx          = 2,
-	footprintZ          = 2,
+    footprintx          = 3,
+	footprintZ          = 3,
 	hoverAttack         = true,
 	idleAutoHeal        = 1,
 	leaveTracks         = false,
