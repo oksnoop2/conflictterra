@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[pntank]],
 	  name                = [[tank]],
-	  description         = [[fill with text]],
+	  description         = [[fill with text - I shoot stuff!]],
 	  acceleration        = 0.02,
 	  brakeRate           = 0.03,
 	  buildCostEnergy     = 700,
