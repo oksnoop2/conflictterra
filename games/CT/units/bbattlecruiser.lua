@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bbattlecruiser]],
 	  name                = [[Uesugi Class Cruiser]],
-	  description         = [[Battle Cruiser - Pride of the NKG, the battle cruiser is able to punch through even the hardiest of lines. - Build Limit: 8]],
+	  description         = [[Battle Cruiser - Pride of the NKG, the battle cruiser is able to punch through even the hardiest of lines.]],
 	  acceleration        = 0.15,
 	  activateWhenBuilt   = true,
 	  airStrafe           = 0,
@@ -64,7 +64,6 @@
 
 	  turnRate            = 250,
 	  upright             = true,
-	  unitRestricted      = 8,
 	  script              = [[bbattlecruiser.lua]],
 	
 	  weapons                = {

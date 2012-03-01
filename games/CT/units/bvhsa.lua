@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bvhsa]],
 	  name                = [[Sekai Type Tank]],
-	  description         = [[Very Heavy Siege Artillery - Very long range anti-building artillery. Has secondary gun. Must turn to aim. - Build Limit: 5]],
+	  description         = [[Very Heavy Siege Artillery - Very long range anti-building artillery. Has secondary gun. Must turn to aim.]],
 	  acceleration        = 0.5,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 700,
@@ -73,7 +73,6 @@
 	  trackWidth          = 45,
 	  turnInPlace         = 1,
 	  turnRate            = 500,
-	  unitRestricted      = 5,
 	  script              = [[bvhsa.lua]],
 	
 	  weapons             = {

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bheavyassaulttank]],
 	  name                = [[Ogami Type Tank]],
-	  description         = [[Heavy Tank - Hardier battle tank. Fires heavier shells. - Build Limit: 20]],
+	  description         = [[Heavy Tank - Hardier battle tank. Fires heavier shells.]],
 	  acceleration        = 0.5,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 500,
@@ -69,7 +69,6 @@
 	  trackWidth          = 40,
 	  turnInPlace         = 1,
 	  turnRate            = 500,
-	  unitRestricted      = 20,
 	  script              = [[bheavyassaulttank.lua]],
 	
 	  weapons             = {

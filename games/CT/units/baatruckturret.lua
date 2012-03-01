@@ -54,7 +54,6 @@
 	  sightDistance       = 750,
 	  smoothAnim          = true,
 	  workerTime          = 0,
-	  unitRestricted      = 20,
 	  script              = [[baatruckturret.lua]],
 	
 	  weapons             = {

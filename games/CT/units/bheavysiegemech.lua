@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bheavysiegemech]],
 	  name                = [[Shimazu Combat Mech]],
-	  description         = [[Heavy Siege Mech - Slow SM that fires a salvo of inaccurate anti-building shells. - Build Limit: 15]],
+	  description         = [[Heavy Siege Mech - Slow SM that fires a salvo of inaccurate anti-building shells.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 1125,
@@ -64,7 +64,6 @@
 
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
-	  unitRestricted      = 15,
 	  script              = [[bheavysiegemech.lua]],
 	
 	  weapons             = {

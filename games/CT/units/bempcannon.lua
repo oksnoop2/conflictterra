@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bempcannon]],
 	  name                = [[Kizetsu Type Tank]],
-	  description         = [[EMP Cannon Tank - Fires a long range EMP beam that can pierce shields. Must build ammo, 1000 energy per shot. Must be told to fire. - Build Limit: 10]],
+	  description         = [[EMP Cannon Tank - Fires a long range EMP beam that can pierce shields. Must build ammo, 1000 energy per shot. Must be told to fire.]],
 	  acceleration        = 0.5,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 700,
@@ -60,7 +60,6 @@
 	  trackWidth          = 45,
 	  turnInPlace         = 1,
 	  turnRate            = 500,
-	  unitRestricted      = 10,
 	  script              = [[bempcannon.lua]],
 	
 	  weapons             = {

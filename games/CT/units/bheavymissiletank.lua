@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bheavymissiletank]],
 	  name                = [[Okuma Type Tank]],
-	  description         = [[Heavy Anti-Mech Tank - Hardy tank that shoots multiple anti-mech rockets. - Build Limit: 10]],
+	  description         = [[Heavy Anti-Mech Tank - Hardy tank that shoots multiple anti-mech rockets.]],
 	  acceleration        = 0.5,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 600,
@@ -68,7 +68,6 @@
 	  trackWidth          = 42,
 	  turnInPlace         = 1,
 	  turnRate            = 500,
-	  unitRestricted      = 10,
 	  script              = [[bheavymissiletank.lua]],
 	
 	  weapons             = {

@@ -2,7 +2,7 @@ unitDef = {
 
   unitname                      = [[bprimarycruiserbase]],
   name                          = [[Mobile Headquarters]],
-  description                   = [[Deployed Oda Class Cruiser. Builds the essentials to establishing a base. Can Mobilize into the Oda Class Cruiser.]],
+  description                   = [[Deployed Oda Class Cruiser. Builds the essentials to establishing a base. Can Mobilize into the Oda Class Cruiser. - Build Limit: 1]],
   amphibious                    = false,
   acceleration                  = 0,
   brakeRate                     = 0,
@@ -92,6 +92,7 @@ unitDef = {
 	  },
 
   workerTime                    = 1,
+  unitRestricted                = 1,  
   yardMap                       = [[cooocccccoooooocccccoooc cooocccccoooooocccccoooc cccccccccooooooccccccccc cccccccccooooooccccccccc cccccccccooooooccccccccc cccccccccooooooooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo cccccccccccooccooooooooo cccccccccccooccooooooooo cccccccccccooccooooooooo cccccccccccooccccccccccc cccccccccccooccccccccccc cccccccccccooccccccccccc cooocccccccoocccccccoooc cooocccccccoocccccccoooc]],
   script                        = [[bprimarycruiserbase.lua]],
 

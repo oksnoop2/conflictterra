@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[baatruck]],
 	  name                = [[Taka Type Armored Truck]],
-	  description         = [[Anti-Air Truck - Light truck armed with an anti-air missile. Can Deploy into an immobile flak cannon. - Build Limit: 20]],
+	  description         = [[Anti-Air Truck - Light truck armed with an anti-air missile. Can Deploy into an immobile flak cannon.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 600,
@@ -69,7 +69,6 @@
 	  turnInPlaceSpeedLimit= 1,
 	  turnRate            = 500,
 	  workerTime          = 0,
-	  unitRestricted      = 20,
 	  script              = [[baatruck.lua]],
 	
 	  weapons             = {
