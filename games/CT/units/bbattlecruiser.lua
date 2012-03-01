@@ -20,7 +20,7 @@
 	  canStop             = true,
 	  canSubmerge         = false,
 	  category            = [[CRUISER]],
-	  collide             = false,
+	  collide             = true,
 	  collisionVolumeOffsets = [[0 0 0]],
 	  collisionVolumeScales  = [[112 100 240]],
 	  collisionVolumeTest    = 1,

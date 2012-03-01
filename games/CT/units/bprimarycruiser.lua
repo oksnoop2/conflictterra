@@ -28,7 +28,7 @@
 	  collisionVolumeScales  = [[160 100 300]],
 	  collisionVolumeTest    = 1,
 	  collisionVolumeType    = [[box]],
-	  collide             = false,
+	  collide             = true,
 	  corpse              = [[DEAD]],
 	  cruiseAlt           = 175,
 	
@@ -161,6 +161,7 @@
 	      burst                   = 2,
 	      burstrate               = 0.01,
 	      canattackground         = false,
+	      collideFriendly         = false,		  
 	      cegtag                  = [[ct_missiletail_aa]],
 	      cylinderTargetting      = 1,
 	      craterMult              = 0.25,

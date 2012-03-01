@@ -20,7 +20,7 @@
 	  canStop             = true,
 	  canSubmerge         = false,
 	  category            = [[CRUISER]],
-	  collide             = false,
+	  collide             = true,
 	  collisionVolumeOffsets = [[0 0 0]],
 	  collisionVolumeScales  = [[96 96 200]],
 	  collisionVolumeTest    = 1,
@@ -99,6 +99,7 @@
 	      areaOfEffect            = 140,
 		  burst                   = 3,
 		  burstrate               = 0.5,
+	      collideFriendly         = false,		  
 	      cegTag                  = [[ct_missiletail_big]],
 	      craterMult              = 0.25,
 	

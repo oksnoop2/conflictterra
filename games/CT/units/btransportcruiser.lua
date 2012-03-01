@@ -26,7 +26,7 @@
 	  collisionVolumeTest    = 1,
 	  collisionVolumeType    = [[box]],
 
-	  collide             = false,
+	  collide             = true,
 	  corpse              = [[DEAD]],
 	  cruiseAlt           = 175,
 	

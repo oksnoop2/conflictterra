@@ -13,6 +13,7 @@ unitDef = {
   buildPic                      = [[bsupplydepot.png]],
   buildTime                     = 20,
   category                      = [[SINK]],
+  collide                       = true,
   corpse                        = [[DEAD]],
 
   collisionVolumeOffsets        = [[0 0 0]],
@@ -20,10 +21,10 @@ unitDef = {
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
 
-  useBuildingGroundDecal	= true,
-  buildingGroundDecalType	= "grounddecals/resourcedropzone.png",
-  buildingGroundDecalSizeX	= 18,
-  buildingGroundDecalSizeY	= 18,
+  useBuildingGroundDecal        = true,
+  buildingGroundDecalType       = "grounddecals/resourcedropzone.png",
+  buildingGroundDecalSizeX      = 18,
+  buildingGroundDecalSizeY      = 18,
   buildingGroundDecalDecaySpeed	= 1,
 
   reclaimable                   = false,
