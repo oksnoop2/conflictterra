@@ -18,16 +18,13 @@
 
 
 	--CEGs
-	local ct_binderbeam = SFX.CEG
+	local ct_drone_binder_di = SFX.CEG
 
 
 	--local functions
 	local function binderbeam()
-		Turn(binderbeampiece, y_axis, 1.5, 10)
-		Turn(binderbeampiece2, y_axis, 1.5, 10)
 		while (true) do
-			EmitSfx(binderbeampiece, ct_binderbeam)
-			EmitSfx(binderbeampiece2, ct_binderbeam)			
+			EmitSfx(link, ct_drone_binder_di)		
 			Sleep(1)
 		end
 	end
@@ -36,8 +33,8 @@
 		Sleep(1000)
 		Turn(lflare1, y_axis, 0, math.rad(90))
 		Turn(rflare1, y_axis, 0, math.rad(90))
-        	Turn(lflare1, x_axis, 0, math.rad(50))
-        	Turn(rflare1, x_axis, 0, math.rad(50))
+        Turn(lflare1, x_axis, 0, math.rad(50))
+        Turn(rflare1, x_axis, 0, math.rad(50))
 	end
 
 
@@ -70,23 +67,23 @@
 	function script.AimFromWeapon2() return rflare1 end
 	
 	function script.AimWeapon1( heading, pitch )
-                Signal(SIG_AIM)
+		Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(lflare1, y_axis, heading, math.rad(90))
-        	Turn(lflare1, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(lflare1, y_axis)
-        	WaitForTurn(lflare1, x_axis)
+        Turn(lflare1, y_axis, heading, math.rad(90))
+        Turn(lflare1, x_axis, -pitch, math.rad(50))
+        WaitForTurn(lflare1, y_axis)
+        WaitForTurn(lflare1, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
 
 	function script.AimWeapon2( heading, pitch )
-                Signal(SIG_AIM_SEC)
+        Signal(SIG_AIM_SEC)
 		SetSignalMask(SIG_AIM_SEC)
-        	Turn(rflare1, y_axis, heading, math.rad(90))
-        	Turn(rflare1, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(rflare1, y_axis)
-        	WaitForTurn(rflare1, x_axis)
+        Turn(rflare1, y_axis, heading, math.rad(90))
+        Turn(rflare1, x_axis, -pitch, math.rad(50))
+        WaitForTurn(rflare1, y_axis)
+        WaitForTurn(rflare1, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end

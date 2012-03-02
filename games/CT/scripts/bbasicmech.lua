@@ -1,15 +1,15 @@
 	--Hojo Combat Mech animation script by Sanada
 	
 	--pieces
-        local waist = piece "waist"
+	local waist = piece "waist"
 
-        local rightthigh = piece "rightthigh"
-        local rightshin = piece "rightshin"
-        local rightfoot = piece "rightfoot"
+	local rightthigh = piece "rightthigh"
+	local rightshin = piece "rightshin"
+	local rightfoot = piece "rightfoot"
 
-        local leftthigh = piece "leftthigh"
-        local leftshin = piece "leftshin"
-        local leftfoot = piece "leftfoot"
+	local leftthigh = piece "leftthigh"
+	local leftshin = piece "leftshin"
+	local leftfoot = piece "leftfoot"
 
 	local body = piece "body"
 	local fxflare1 = piece "fxflare1"
@@ -17,7 +17,7 @@
 
 	local rightarm = piece "rightarm"
 	local rightgun = piece "rightgun"
-        local flare2 = piece "flare2"
+	local flare2 = piece "flare2"
 
 	local leftarm = piece "leftarm"
 	local leftgun = piece "leftgun"
@@ -35,7 +35,7 @@
 
 
 	--CEGs
-        local ct_machinegun = SFX.CEG
+	local ct_machinegun = SFX.CEG
 	local jumpjetsfx = SFX.CEG + 1
 	
 
@@ -63,7 +63,7 @@
 	                Turn( rightgun, x_axis, -0.5, 2 )
 
 			--body turn right
-			Turn( body, z_axis, 0.05, 1 )
+					Turn( body, z_axis, 0.05, 1 )
 
 			--left leg wait
 	                WaitForTurn( leftthigh, x_axis )
@@ -84,7 +84,7 @@
 	                WaitForTurn( rightgun, x_axis )
 
 			--body wait
-			WaitForTurn( body, z_axis )
+					WaitForTurn( body, z_axis )
 	                Sleep(1)
 	               
 
@@ -107,7 +107,7 @@
 	                Turn( rightgun, x_axis, -0.5, 2 )
 
 			--body turn left
-			Turn( body, z_axis, -0.05, 1 )
+					Turn( body, z_axis, -0.05, 1 )
 	               
 			--left leg wait
 	                WaitForTurn( leftthigh, x_axis )
@@ -128,7 +128,7 @@
 	                WaitForTurn( rightgun, x_axis )
 
 			--body wait
-			WaitForTurn( body, z_axis )
+					WaitForTurn( body, z_axis )
 	                Sleep(1)
 	        end
 	end

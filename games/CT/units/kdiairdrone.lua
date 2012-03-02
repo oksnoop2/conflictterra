@@ -44,7 +44,7 @@ local kdiairdrone = {
     selfDestructAs      = [[DRONE_AIR_UNIT]],
     side                = [[Drone]],
     sightDistance       = 700,
-	sounds			= {
+	sounds              = {
 	      select = {
 		"golgotha/vehicle_done_44khz",
 		},
@@ -56,7 +56,7 @@ local kdiairdrone = {
 	sfxtypes            = {
 	
 	    explosiongenerators = {
-		"custom:ct_binderbeam",
+		"custom:ct_drone_binder_di",
 	    },
 	
 	  },

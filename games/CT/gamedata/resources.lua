@@ -23,6 +23,7 @@
 				flashside1					= 'flashside1.tga',
 				tpsmoke 					= 'tpsmoke.png',
 				tpsmoke2					= 'tpsmoke2.png',
+				tpsmoke_green				= 'tpsmoke_green.png',				
 				tpdollar					= 'tpdollar.png',
 				dirt						= 'dirt.png',
 				explodeheat					= 'ExplodeHeat.tga',

@@ -53,6 +53,14 @@ local ktriairdrone = {
 		"golgotha/vehicle_done_44khz",
 		},
 	  },
+	  
+	  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:ct_drone_binder_tri",
+	    },
+	
+	  },	  
 
 	weapons             = {
 	
