@@ -19,7 +19,7 @@
 	  category            = [[GUNSHIP]],
 	  collide             = true,
 	  corpse              = [[DEAD]],
-	  cruiseAlt           = 50,
+	  cruiseAlt           = 350,
 	  reclaimable         = false,
 	
 	  explodeAs           = [[MEDIUM_UNIT]],

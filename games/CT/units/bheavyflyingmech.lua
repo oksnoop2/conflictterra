@@ -20,7 +20,7 @@
 	  category            = [[GUNSHIP]],
 	  collide             = true,
 	  corpse              = [[DEAD]],
-	  cruiseAlt           = 75,
+	  cruiseAlt           = 350,
 	  reclaimable         = false,
 
 	  customParams = {

@@ -17,7 +17,7 @@
 	  category            = [[FIXEDWING]],
 	  collide             = false,
 	  corpse              = [[DEAD]],
-	  cruiseAlt           = 200,
+	  cruiseAlt           = 300,
 	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_UNIT]],

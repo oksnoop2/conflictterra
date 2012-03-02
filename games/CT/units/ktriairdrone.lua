@@ -20,7 +20,7 @@ local ktriairdrone = {
 	category            = [[GUNSHIP]],
     canFly              = true,
 	corpse              = [[DEAD]],
-    cruiseAlt           = 50,
+    cruiseAlt           = 200,
 	collide             = true,
 	reclaimable         = false,
 

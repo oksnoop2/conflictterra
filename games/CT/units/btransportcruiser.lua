@@ -29,7 +29,7 @@
 
 	  collide             = true,
 	  corpse              = [[DEAD]],
-	  cruiseAlt           = 175,
+	  cruiseAlt           = 300,
 	
 	  explodeAs           = [[BIG_UNIT]],
 	  floater             = true,

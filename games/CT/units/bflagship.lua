@@ -30,7 +30,7 @@
 	  collisionVolumeType    = [[box]],
 	  collide             = true,
 	  corpse              = [[DEAD]],
-	  cruiseAlt           = 100,
+	  cruiseAlt           = 300,
 
 	  customParams = {
 	  	RequireTech   = [[Raised Strategic Importance]],

@@ -30,7 +30,7 @@
 	  collisionVolumeType    = [[box]],
 	  collide             = true,
 	  corpse              = [[DEAD]],
-	  cruiseAlt           = 175,
+	  cruiseAlt           = 400,
 	
 	  energyMake          = 5,
 	  energyStorage       = 0,
