@@ -20,6 +20,10 @@
 	  corpse              = [[DEAD]],
 	  cruiseAlt           = 300,
 	  reclaimable         = false,
+	  
+	  customParams = {
+		  nofriendlyfire = true,
+	  },
 	
 	  explodeAs           = [[SMALL_UNIT]],
 	  fireState           = 0,
@@ -76,7 +80,7 @@
 	      burstrate               = 0.07,
 	      commandfire             = true,
 	      craterMult              = 0.25,
-	      collideFriendly         = true,
+	      collideFriendly         = false,
 	
 	      damage                  = {
 		default = 25,
