@@ -34,6 +34,10 @@ http://answers.springlobby.info/questions/503/howto-animated-tank-tracks-with-ac
 
 - Thanks Flozi for suggesting to look in Spring 1944's morph gadget to get customized button names for morph!
 
+- The music track Desert by Yoni Luria was created by Yoni Luria.  He makes great stuff, check out his modDB profile to listen to some of his other tracks:
+
+http://www.moddb.com/members/yoniluria
+
 - Many others in the days before this was documented.
 
 *Other contributions will hopefully be remembered/added as time progresses.*
