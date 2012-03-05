@@ -297,7 +297,7 @@ LARGE_UNIT = {
 ROCK_IMPACT_SMALL = {
 
    name					= "Small Rock Impact",
-   craterMult			= 1000,
+   craterMult			= 5,
    rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
@@ -332,7 +332,7 @@ ROCK_IMPACT_BIG = {
 
    name					= "Large Rock Impact",
    rendertype			= 4,
-   craterMult			= 4000,
+   craterMult			= 5,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
