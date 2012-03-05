@@ -4,7 +4,6 @@ unitDeaths = {
 
 CAMERA_EXPLOSION = {
    name					= "Camera Tower Explosion",
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -36,7 +35,6 @@ CAMERA_EXPLOSION = {
   
 SMALL_BUILDING = {
    name					= "Small building",
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -68,7 +66,6 @@ SMALL_BUILDING = {
   
 MEDIUM_BUILDING = {
    name					= "Medium building",
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -101,7 +98,6 @@ MEDIUM_BUILDING = {
 LARGE_BUILDING = {
 
    name					= "Large building",
-   rendertype			= 4,
    ballisti				= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -133,7 +129,6 @@ LARGE_BUILDING = {
   
 VOLATILE_BUILDING = {
    name					= "Volatile building",
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -166,7 +161,6 @@ VOLATILE_BUILDING = {
 SMALL_UNIT = {
 
    name					= "Small Unit",
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -199,7 +193,6 @@ SMALL_UNIT = {
 MEDIUM_UNIT = {
 
    name					= "Medium Unit",
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -232,7 +225,6 @@ MEDIUM_UNIT = {
 BIG_UNIT = {
 
    name					= "Big Unit",
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -264,7 +256,6 @@ BIG_UNIT = {
 LARGE_UNIT = {
 
    name					= "Large Unit",
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -298,7 +289,6 @@ ROCK_IMPACT_SMALL = {
 
    name					= "Small Rock Impact",
    craterMult			= 5,
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -331,7 +321,6 @@ ROCK_IMPACT_SMALL = {
 ROCK_IMPACT_BIG = {
 
    name					= "Large Rock Impact",
-   rendertype			= 4,
    craterMult			= 5,
    ballistic			= 1,
    turret				= 1,
@@ -366,7 +355,6 @@ ROCK_MINEDOUT = {
 
    name					= "Rock Mined Out",
    craterMult			= 0,
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -400,7 +388,6 @@ ROCK_MINEDOUT_BIG = {
 
    name					= "Rock Mined Out",
    craterMult			= 0,
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -428,13 +415,42 @@ ROCK_MINEDOUT_BIG = {
 		Spare3 = 0,		
 	      },
   },  
+  
+  ANTI_TANK_MINE = {
+   name					= "Anti-Tank Mine",
+   ballistic			= 1,
+   turret				= 1,
+   impulseFactor		= 0,
+   range				= 480,
+   reloadtime			= 3.6,
+   weaponvelocity		= 250,
+   areaofeffect			= 256,
+   soundstart			= "golgotha/generic.wav",
+   soundhit				= "golgotha/generic.wav",
+   explosiongenerator	= "custom:SMALL_UNIT_Expl",
+	      damage                  = {
+		default = 75,  		  
+		Cruiser = 75,
+		Building = 0,
+		Mech = 75,
+		Tank = 750,
+		Aircraft = 75,
+		Ship = 75,
+		Sub = 75,
+
+		Meteor = 0,
+		Drone = 75,
+		Spare1 = 75,
+		Spare2 = 75,
+		Spare3 = 75,		
+	      },
+  },
 
   
 LIGHT_MINE = {
 
    name					= "Small Unit",
    craterMult			= 2000,
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -469,7 +485,6 @@ DRONE_PETARD = {
    name					= "Drone Petard",
    collideFriendly		= 0,
    craterMult			= 1,
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 1,
@@ -501,7 +516,6 @@ DRONE_PETARD = {
 DRONE_AIR_UNIT = {
 
    name					= "Drone Air Unit",
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -534,7 +548,6 @@ DRONE_AIR_UNIT = {
 DRONE_GROUND_UNIT = {
 
    name					= "Drone Ground Unit",
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -565,7 +578,6 @@ DRONE_GROUND_UNIT = {
   
 DRONE_BUILDING = {
    name					= "Drone building",
-   rendertype			= 4,
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,

@@ -46,6 +46,7 @@
 
 			--defenses
 			--T1
+			"bantitankmine",
 			"bcameratower",
 			"bradartower",
 			"bjammertower",

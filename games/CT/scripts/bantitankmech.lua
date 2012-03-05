@@ -29,10 +29,11 @@
 	--signals
 	local SIG_AIM = 1
 	local walk_go = 2
+	local SIG_BUILD = 4
 
 
 	--CEGs
-        local ct_cannon_narrow = SFX.CEG
+	local ct_cannon_narrow = SFX.CEG
 	
 
 	--local functions
@@ -53,12 +54,12 @@
 
 	                WaitForTurn( bacrthigh, x_axis )
 	                WaitForTurn( forlthigh, x_axis )
-                        WaitForTurn( forrthigh, x_axis )
+                    WaitForTurn( forrthigh, x_axis )
    	                WaitForTurn( baclthigh, x_axis )
 
 	                WaitForTurn( bacrshin, x_axis )
 	                WaitForTurn( forlshin, x_axis )
-                        WaitForTurn( forrshin, x_axis )
+                    WaitForTurn( forrshin, x_axis )
    	                WaitForTurn( baclshin, x_axis )
 	                Sleep(1)
 	               
@@ -76,30 +77,30 @@
 
 	                WaitForTurn( bacrthigh, x_axis )
 	                WaitForTurn( forlthigh, x_axis )
-                        WaitForTurn( forrthigh, x_axis )
+                    WaitForTurn( forrthigh, x_axis )
    	                WaitForTurn( baclthigh, x_axis )
 
 	                WaitForTurn( bacrshin, x_axis )
 	                WaitForTurn( forlshin, x_axis )
-                        WaitForTurn( forrshin, x_axis )
+                    WaitForTurn( forrshin, x_axis )
    	                WaitForTurn( baclshin, x_axis )
 	                Sleep(1)
 	        end
 	end
 	
 	local function StopWalk()
-	        Signal( walk_go )
+	    Signal( walk_go )
 		Turn( forrthigh, x_axis, 0, 1 )
 		Turn( baclthigh, x_axis, 0, 1 )
 	       
-	        Turn( forlthigh, x_axis, 0, 1 )
-	        Turn( bacrthigh, x_axis, 0, 1 )
+	    Turn( forlthigh, x_axis, 0, 1 )
+	    Turn( bacrthigh, x_axis, 0, 1 )
 
 		Turn( forrshin, x_axis, 0, 1 )
 		Turn( baclshin, x_axis, 0, 1 )
 	       
-	        Turn( forlshin, x_axis, 0, 1 )
-	        Turn( bacrshin, x_axis, 0, 1 )
+	    Turn( forlshin, x_axis, 0, 1 )
+	    Turn( bacrshin, x_axis, 0, 1 )
 	end
 
 	local function RestoreAfterDelay(unitID)
@@ -116,12 +117,28 @@
 	end
 		
 	function script.StartMoving()
-	        StartThread( Walk )
+	    StartThread( Walk )
 	end
 	
 	function script.StopMoving()
-	        StartThread( StopWalk )
+	    StartThread( StopWalk )
 	end
+	
+	function script.QueryNanoPiece() return body end
+
+	function script.StartBuilding(heading, pitch)
+		Signal(SIG_BUILD)
+		SetSignalMask(SIG_BUILD)
+		SetUnitValue(COB.INBUILDSTANCE, 1)
+		return 1
+	end
+
+	function script.StopBuilding()
+		Signal(SIG_BUILD)
+		SetSignalMask(SIG_BUILD)
+		SetUnitValue(COB.INBUILDSTANCE, 0)
+		return 0
+	end	
 
 	function script.QueryWeapon1()
 		if (currBarrel == 1) then 
@@ -134,14 +151,14 @@
 	function script.AimFromWeapon1() return body end
 	
 	function script.AimWeapon1( heading, pitch )
-                Signal(SIG_AIM)
+        Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(body, y_axis, heading, math.rad(150))
-        	Turn(lgun, x_axis, -pitch, math.rad(100))
-        	Turn(rgun, x_axis, -pitch, math.rad(100))
-        	WaitForTurn(body, y_axis)
-        	WaitForTurn(lgun, x_axis)
-        	WaitForTurn(rgun, x_axis)
+        Turn(body, y_axis, heading, math.rad(150))
+        Turn(lgun, x_axis, -pitch, math.rad(100))
+        Turn(rgun, x_axis, -pitch, math.rad(100))
+        WaitForTurn(body, y_axis)
+        WaitForTurn(lgun, x_axis)
+        WaitForTurn(rgun, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
@@ -158,7 +175,6 @@
 		if currBarrel == 3 then currBarrel = 1 end
 	end
 
-	
 	function script.Killed(recentDamage, maxHealth)
 		return 0
 	end

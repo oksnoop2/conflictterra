@@ -6,16 +6,30 @@
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 325,
 	  buildCostMetal      = 325,
-	  builder             = false,
+	  buildDistance       = 220,
+	  builder             = true,
+	  
+      buildoptions            = {
+		-- [[bantitankmine]],
+      },	  
+	  
 	  buildPic            = [[bantitankmech.png]],
 	  buildTime           = 17,
 	  canAttack           = true,
+	  canAssist           = false,
+	  canRepair           = false,
+	  canReclaim          = false,
+	  canRestore          = false,
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
-	  canstop             = [[1]],
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
+	  
+      customParams = {
+		is_minelayer = true,
+      },	  
+	  
 	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_UNIT]],
@@ -59,6 +73,8 @@
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  upright             = true,
+	  showNanoSpray       = 0,
+	  workerTime          = 1,
 	  script              = [[bantitankmech.lua]],
 	
 	  weapons             = {

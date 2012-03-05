@@ -19,7 +19,7 @@ unitDef = {
 
   cloakCost                     = 0,
   cloakCostMoving               = 0,
-  initCloaked                  = true,
+  initCloaked                   = true,
 
   collisionVolumeOffsets        = [[0 0 0]],
   collisionVolumeScales         = [[16 64 16]],
