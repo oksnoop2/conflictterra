@@ -72,6 +72,7 @@
 	      areaOfEffect            = 20,
 	      beamTime                = 1,
 	      craterMult              = 0.25,
+		  collideFriendly         = false,		  
 	
 	      damage                  = {
 		default = 2000,

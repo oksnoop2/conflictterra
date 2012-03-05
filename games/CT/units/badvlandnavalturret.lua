@@ -85,6 +85,7 @@
 	      name                    = [[Light Cannon]],
 	      areaOfEffect            = 32,
 	      craterMult              = 0.25,
+		  collideFriendly         = false,		  
 	
 	      damage                  = {
 		default = 5,

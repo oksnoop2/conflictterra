@@ -75,6 +75,7 @@
 	      burst                   = 2,
 	      burstrate               = 0.001,
 	      craterMult              = 0.25,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 200,

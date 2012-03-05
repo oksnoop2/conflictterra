@@ -13,22 +13,22 @@
 	  canStop             = true,
 	  category            = [[SINK]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 
 	  customParams = {
 	  	RequireTech   = [[Raised Strategic Importance]],
 	  },
 		  
 	  explodeAs           = [[SMALL_BUILDING]],
-          footprintx          = 5,
+	  footprintx          = 5,
 	  footprintZ          = 5,
 	  idleAutoHeal        = 0,
 	  levelGround         = false,
 	  mass                = 35,
 	  maxDamage           = 5000,
-          maxSlope            = 36,
+	  maxSlope            = 36,
 	  maxVelocity         = 0,
-          maxWaterDepth       = 0,
+	  maxWaterDepth       = 0,
 	  minCloakDistance    = 150,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
@@ -59,7 +59,7 @@
 	  smoothAnim          = true,
 	  workerTime          = 0,
 	  yardMap             = [[ooooo ooooo ooooo ooooo ooooo]],
-          script              = [[badvgatlingturret.lua]],
+	  script              = [[badvgatlingturret.lua]],
 	
 	  weapons             = {
 	
@@ -80,6 +80,7 @@
 	      burst                   = 2,
 	      burstrate               = 0.001,
 	      craterMult              = 0.25,
+		  collideFriendly         = false,		  
 	
 	      damage                  = {
 		default = 50,
@@ -106,7 +107,7 @@
 	      reloadtime              = 0.2,
 	      rgbColor                = [[1 0.95 0.4]],
 	      separation              = 2,
-              size                    = 1.25,
+	      size                    = 1.25,
 	      soundStart              = [[ct/machine_gun]],
 	      soundStartVolume        = 0.5,
 	      soundTrigger            = true,

@@ -73,6 +73,7 @@
 	      name                    = [[Rapid Fire Cannon]],
 	      areaOfEffect            = 8,
 	      craterMult              = 0.25,
+		  collideFriendly         = false,		  
 	
 	      damage                  = {
 		default = 30,
