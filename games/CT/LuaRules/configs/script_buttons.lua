@@ -13,7 +13,7 @@ return {
     -- },
   -- },
   
---[[
+
   	bmissilemech = {
 		{
 			name		= "Sprint",
@@ -26,5 +26,5 @@ return {
 			texture     = 'buttons/sprint.png',
 		},
 	},
-]]
+
 }

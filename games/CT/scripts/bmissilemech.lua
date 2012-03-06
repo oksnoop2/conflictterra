@@ -1,8 +1,8 @@
 	--Ueda Combat Support Mech animation script by Sanada
-	--Sprint code by Carrepairer
+	--Sprint code by CarRepairer
 	
 	--pieces
-        local waist = piece "waist"
+	local waist = piece "waist"
 
 	local body = piece "body"
 
@@ -16,17 +16,18 @@
 	local rrockets = piece "rrockets"
 	local flare2 = piece "flare2"
 
-        local lthigh = piece "lthigh"
-        local lshin = piece "lshin"
-        local lfoot = piece "lfoot"
+	local lthigh = piece "lthigh"
+	local lshin = piece "lshin"
+	local lfoot = piece "lfoot"
 
-        local rthigh = piece "rthigh"
-        local rshin = piece "rshin"
-        local rfoot = piece "rfoot"
+	local rthigh = piece "rthigh"
+	local rshin = piece "rshin"
+	local rfoot = piece "rfoot"
 
 
 	--variables
 	local speedFactor = 4
+	local normalFactor = 4
 
 	--locals
 	local myOrigSpeed = UnitDefs[unitDefID].speed
@@ -38,10 +39,12 @@
 	local SIG_AIM_SEC = 2
 	local walk_go = 4
 	local SIG_SPRINT = 8
+	local SIG_SPEED_BOOST = 16
+	local SIG_NORMAL_SPEED = 32
 
 
 	--CEGs
-        local ct_missile_smokecloud = SFX.CEG
+	local ct_missile_smokecloud = SFX.CEG
 	
 
 	--Sprint code
@@ -51,19 +54,21 @@
 	end
 
 	function StartSprint()
+		Spring.Echo("Goooo!")
 		Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {
-        		maxSpeed    = myOrigSpeed*speedFactor,
-        		accRate     = myOrigAcc*speedFactor,
-        		turnRate    = myOrigTurnRate*speedFactor,
+        		maxSpeed    = myOrigSpeed,
+        		accRate     = myOrigAcc,
+        		turnRate    = myOrigTurnRate,
         	})
 		StartThread(SprintEffects)
 	end
 
 	function StopSprint()
+		Spring.Echo("Whoooa nessy!")
 		Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {
-			maxSpeed    = myOrigSpeed,
-			accRate     = myOrigAcc,
-			turnRate    = myOrigTurnRate,
+			maxSpeed    = myOrigSpeed/normalFactor,
+			accRate     = myOrigAcc/normalFactor,
+			turnRate    = myOrigTurnRate/normalFactor,
     		})
     		Signal(SIG_SPRINT)
 	end
@@ -191,6 +196,13 @@
 
 	--script
 	function script.Create()
+		--set "normal" speed
+		Spring.MoveCtrl.SetGroundMoveTypeData(unitID, {
+        		maxSpeed    = myOrigSpeed/normalFactor,
+        		accRate     = myOrigAcc/normalFactor,
+        		turnRate    = myOrigTurnRate/normalFactor,
+        	})	
+
 		--legs spread
 		Turn( lthigh, y_axis, -0.2, 2 )
 		Turn( rthigh, y_axis, 0.2, 2 )
