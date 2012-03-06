@@ -2,8 +2,10 @@
 	
 	--pieces
 	local waist = piece "waist"
+	
+	local fxflare1 = piece "fxflare1"
 
-        local body = piece "body"
+	local body = piece "body"
 
 	local booster = piece "booster"
 	local boosterflare1 = piece "boosterflare1"
@@ -33,13 +35,13 @@
 	local righttopfinger = piece "rtopfinger"
 	local laserflare2 = piece "laserflare2"
 
-        local leftthigh = piece "lthigh"
-        local leftshin = piece "lshin"
-        local leftfoot = piece "lfoot"
+	local leftthigh = piece "lthigh"
+	local leftshin = piece "lshin"
+	local leftfoot = piece "lfoot"
 
-        local rightthigh = piece "rthigh"
-        local rightshin = piece "rshin"
-        local rightfoot = piece "rfoot"
+	local rightthigh = piece "rthigh"
+	local rightshin = piece "rshin"
+	local rightfoot = piece "rfoot"
         
 
 	--variables
@@ -54,8 +56,9 @@
 	local jumpjet_SIG = 16
 
 	--CEGs
-        local ct_cannon_narrow = SFX.CEG
-	local jumpjetsfx = SFX.CEG + 1
+	local ct_cannon_narrow = SFX.CEG
+	local ct_jumpjet = SFX.CEG + 1
+	local ct_jumpjet_land = SFX.CEG + 2		
 	
 
 	--local functions
@@ -180,10 +183,10 @@
 	local function jumpjetaction()
 		SetSignalMask(jumpjet_SIG)
 		while (true) do
-			EmitSfx(boosterflare1, jumpjetsfx)
-			EmitSfx(boosterflare2, jumpjetsfx)
-			EmitSfx(boosterflare3, jumpjetsfx)
-			EmitSfx(boosterflare4, jumpjetsfx)
+			EmitSfx(boosterflare1, ct_jumpjet)
+			EmitSfx(boosterflare2, ct_jumpjet)
+			EmitSfx(boosterflare3, ct_jumpjet)
+			EmitSfx(boosterflare4, ct_jumpjet)
 			Sleep(1)
 		end
 	end
@@ -288,6 +291,9 @@
 
 		--body stop
 		Turn( body, x_axis, 0, 2 )
+		
+		--dirt poof
+		EmitSfx(fxflare1, ct_jumpjet_land)			
 	end
 
 	function script.QueryWeapon1() return laserflare1 end

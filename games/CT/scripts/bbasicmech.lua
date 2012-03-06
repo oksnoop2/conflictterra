@@ -2,6 +2,8 @@
 	
 	--pieces
 	local waist = piece "waist"
+	
+	local fxflare3 = piece "fxflare3"
 
 	local rightthigh = piece "rightthigh"
 	local rightshin = piece "rightshin"
@@ -36,7 +38,8 @@
 
 	--CEGs
 	local ct_machinegun = SFX.CEG
-	local jumpjetsfx = SFX.CEG + 1
+	local ct_jumpjet = SFX.CEG + 1
+	local ct_jumpjet_land = SFX.CEG + 2	
 	
 
 	--local functions
@@ -161,8 +164,8 @@
 	local function jumpjetaction()
 		SetSignalMask(jumpjet_SIG)
 		while (true) do
-			EmitSfx(fxflare1, jumpjetsfx)
-			EmitSfx(fxflare2, jumpjetsfx)
+			EmitSfx(fxflare1, ct_jumpjet)
+			EmitSfx(fxflare2, ct_jumpjet)
 			Sleep(1)
 		end
 	end
@@ -255,6 +258,9 @@
 
 		--body stop
 		Turn( body, x_axis, 0, 2 )
+		
+		--dirt poof
+		EmitSfx(fxflare3, ct_jumpjet_land)		
 	end
 
 	function script.QueryWeapon1()

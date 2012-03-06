@@ -57,6 +57,7 @@
 	    explosiongenerators = {
 		"custom:ct_cannon_narrow",
 		"custom:ct_jumpjet",
+		"custom:ct_jumpjet_land",		
 	    },
 	
 	  },

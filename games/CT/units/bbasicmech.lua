@@ -40,6 +40,7 @@
 	    explosiongenerators = {
 		"custom:ct_machinegun",
 		"custom:ct_jumpjet",
+		"custom:ct_jumpjet_land",
 	    },
 	
 	  },
