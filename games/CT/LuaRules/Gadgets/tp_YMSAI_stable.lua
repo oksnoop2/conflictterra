@@ -174,23 +174,23 @@ stages[8]= {
 
 function printStages ()
 
-	Spring.Echo ("--printing stages table *START*--")
+	--Spring.Echo ("--printing stages table *START*--")
 
 	for i=1, #stages do
 
-		Spring.Echo ("stages [" .. i  .. "]")
+		--Spring.Echo ("stages [" .. i  .. "]")
 
-		Spring.Echo ("skipMetal=" .. stages[i].skipMetal)
+		--Spring.Echo ("skipMetal=" .. stages[i].skipMetal)
 
 		for name, amount in pairs (stages[i]["unitNumbers"]) do
 
-			Spring.Echo ("unitNumbers:" .. name .. " - " .. stages[i]["unitNumbers"][name])
+			--Spring.Echo ("unitNumbers:" .. name .. " - " .. stages[i]["unitNumbers"][name])
 
 		end
 
 	end
 
-	Spring.Echo ("--printing stages table *DONE*--")
+	--Spring.Echo ("--printing stages table *DONE*--")
 
 end
 
@@ -613,7 +613,7 @@ function gadget:UnitDestroyed(unitID, unitDefID, unitTeam, attackerID)
 
 		machTargetArea(unitTeam, goto_x, goto_z, squadThatWillGo) 
 
-		Spring.Echo(attackerID)
+		--Spring.Echo(attackerID)
 
 	end
 
