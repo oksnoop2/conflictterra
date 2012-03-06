@@ -2,12 +2,12 @@
 function gadget:GetInfo()
 	return {
 		name      = 'Mine Laying',
-		desc      = '',
-		author    = 'Niobium',
+		desc      = 'Mine layer gadget; Limits amount of mines dispersed per unit.',
+		author    = 'Niobium, minelayer_type and mine_type added by Sanada',
 		date      = 'April 2011',
 		license   = 'GNU GPL, v2 or later',
 		layer     = 0,
-		enabled   = false
+		enabled   = true
 	}
 end
 
@@ -23,19 +23,22 @@ end
 ----------------------------------------------------------------
 local CMD_LAYMINES = 35192
 local laidMineCount = {} -- laidMineCount[uId] = nil / #
-local MINELIMIT = 4
+local MINELIMIT = 4														--Limit of mines laid per unit
+local minelayer_type = {[UnitDefNames["bantitankmech"].id] = true,}		--Unit(s) which can lay mines
+local mine_type = "bantitankmine"										--Mine unit name
+local mine_texture = 'unitpics/bantitankmine.png'						--Button texture for "Mines"
 
 ----------------------------------------------------------------
 -- Functions
 ----------------------------------------------------------------
-local function GetCanUnitLayMines(uDefId)
-	if UnitDefs[unitDefID].customParams.is_minelayer then 
+local function GetCanUnitLayMines(unitDefID)
+	if minelayer_type[unitDefID] then 
     return true
 	end
 end
 
-local function CreateUnitOnGround(uDefId, x, z, facing, teamId)
-    Spring.CreateUnit(uDefId, x, Spring.GetGroundHeight(x, z), z, facing, teamId)
+local function CreateUnitOnGround(unitDefID, x, z, facing, teamId)
+    Spring.CreateUnit(mine_type, x, Spring.GetGroundHeight(x, z), z, facing, teamId)
 end
 
 ----------------------------------------------------------------
@@ -55,8 +58,8 @@ function gadget:UnitCreated(uId, uDefId, teamId)
             name = 'Mines',
             cursor = 'Mines',
             action = 'mines',
-            tooltip = 'Deploys mines at target location',
-            texture = '#' .. uDefId, -- Use mines buildpic as the command background
+            tooltip = 'Deploys a mine at target location',
+            texture = mine_texture
         })
     end
 end
@@ -82,9 +85,9 @@ function gadget:CommandFallback(uId, uDefId, teamId, cmdId, cmdParams, cmdOpts)
         
         if math.sqrt(dx * dx + dz * dz) <= 20 then
             -- Unit is close enough, deploy the mines
-            CreateUnitOnGround(uDefId, tx,       tz - 10, 0, teamId)
-            CreateUnitOnGround(uDefId, tx - 8.5, tz + 5 , 0, teamId)
-            CreateUnitOnGround(uDefId, tx + 8.5, tz + 5 , 0, teamId)
+            CreateUnitOnGround(mine_type, tx,       tz - 10, 0, teamId)
+            --CreateUnitOnGround(mine_type, tx - 8.5, tz + 5 , 0, teamId)
+            --CreateUnitOnGround(mine_type, tx + 8.5, tz + 5 , 0, teamId)
             laidMineCount[uId] = alreadyLaid + 1
             return true, true -- Mines have been laid, remove command from queue
         else
