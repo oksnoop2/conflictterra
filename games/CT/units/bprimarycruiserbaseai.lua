@@ -250,7 +250,7 @@ unitDef = {
       footprintZ       = 23,
       mass             = 2000,
       metal            = 250,
-      object           = [[wrecks/bprimarycruiserwreck.s3o]],
+      object           = [[wrecks/bprimarycruiserbasewreck.s3o]],
       reclaimable      = true,
       reclaimTime      = 15000,
     },
