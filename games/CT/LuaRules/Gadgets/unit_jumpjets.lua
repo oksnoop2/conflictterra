@@ -36,6 +36,8 @@ Spring.SetGameRulesParam("jumpJets",1)
 include("LuaRules/Configs/customcmds.h.lua")
 -- needed for checks
 
+local button_tex  = 'buttons/jump.png'
+
 local Spring      = Spring
 local MoveCtrl    = Spring.MoveCtrl
 local coroutine   = coroutine
@@ -106,6 +108,7 @@ local jumpCmdDesc = {
   cursor  = 'Jump',  -- add with LuaUI?
   action  = 'jump',
   tooltip = 'Jump to selected position.',
+  texture = button_tex,
 }
 
   
