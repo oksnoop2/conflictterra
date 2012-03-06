@@ -58,6 +58,7 @@ for unit, cmds in pairs(buttonDefs) do
 			action  = string.lower(cmd.name),
 			type    = cmd.type or CMDTYPE.ICON,
 			tooltip = cmd.tooltip,
+			texture = cmd.texture,
 		}
 	end
 end

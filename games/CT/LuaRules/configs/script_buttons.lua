@@ -23,6 +23,7 @@ return {
 			reload		= 20,
 			duration	= 10,
 			position	= 500,
+			texture     = 'buttons/sprint.png',
 		},
 	},
 
