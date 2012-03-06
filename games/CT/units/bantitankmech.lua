@@ -1,35 +1,21 @@
 	unitDef = {
 	  unitname            = [[bantitankmech]],
 	  name                = [[Enkei Combat Support Mech]],
-	  description         = [[Anti-Tank Mech - Fires two armor piercing rounds that are strong against tanks and vehicles.]],
+	  description         = [[Anti-Tank Mech - Deals heavy damage to tanks and vehicles.  Able to drop up to 4 anti-tank mines.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 325,
 	  buildCostMetal      = 325,
 	  buildDistance       = 220,
-	  builder             = true,
-	  
-      buildoptions            = {
-		-- [[bantitankmine]],
-      },	  
 	  
 	  buildPic            = [[bantitankmech.png]],
 	  buildTime           = 17,
 	  canAttack           = true,
-	  canAssist           = false,
-	  canRepair           = false,
-	  canReclaim          = false,
-	  canRestore          = false,
 	  canGuard            = true,
 	  canMove             = true,
 	  canPatrol           = true,
 	  category            = [[LAND]],
-	  corpse              = [[DEAD]],
-	  
-      customParams = {
-		is_minelayer = true,
-      },	  
-	  
+	  corpse              = [[DEAD]],	  
 	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_UNIT]],
@@ -73,8 +59,6 @@
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  upright             = true,
-	  showNanoSpray       = 0,
-	  workerTime          = 1,
 	  script              = [[bantitankmech.lua]],
 	
 	  weapons             = {

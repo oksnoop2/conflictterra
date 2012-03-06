@@ -29,7 +29,6 @@
 	--signals
 	local SIG_AIM = 1
 	local walk_go = 2
-	local SIG_BUILD = 4
 
 
 	--CEGs
@@ -123,22 +122,6 @@
 	function script.StopMoving()
 	    StartThread( StopWalk )
 	end
-	
-	function script.QueryNanoPiece() return body end
-
-	function script.StartBuilding(heading, pitch)
-		Signal(SIG_BUILD)
-		SetSignalMask(SIG_BUILD)
-		SetUnitValue(COB.INBUILDSTANCE, 1)
-		return 1
-	end
-
-	function script.StopBuilding()
-		Signal(SIG_BUILD)
-		SetSignalMask(SIG_BUILD)
-		SetUnitValue(COB.INBUILDSTANCE, 0)
-		return 0
-	end	
 
 	function script.QueryWeapon1()
 		if (currBarrel == 1) then 
