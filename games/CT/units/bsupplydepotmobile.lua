@@ -13,9 +13,9 @@
 	  reclaimable         = false,
 
 	  collisionVolumeOffsets = [[0 0 0]],
-	  collisionVolumeScales  = [[96 96 160]],
+	  collisionVolumeScales  = [[76 76 160]],
 	  collisionVolumeTest    = 1,
-	  collisionVolumeType    = [[box]],
+	  collisionVolumeType    = [[ellipsoid]],
 
 	  buildPic            = [[bsupplydepotmobile.png]],
 	  buildTime           = 20,

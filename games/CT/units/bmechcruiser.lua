@@ -21,10 +21,12 @@
 	  canSubmerge         = false,
 	  category            = [[CRUISER]],
 	  collide             = true,
+	  
 	  collisionVolumeOffsets = [[0 0 0]],
-	  collisionVolumeScales  = [[160 160 250]],
+	  collisionVolumeScales  = [[110 140 290]],
 	  collisionVolumeTest    = 1,
-	  collisionVolumeType    = [[box]],
+	  collisionVolumeType    = [[ellipsoid]],
+	  
 	  corpse              = [[DEAD]],
 	  cruiseAlt           = 400,
 	  reclaimable         = false,

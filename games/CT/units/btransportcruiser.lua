@@ -23,9 +23,9 @@
 	  reclaimable         = false,
 
 	  collisionVolumeOffsets = [[0 0 0]],
-	  collisionVolumeScales  = [[112 80 172]],
+	  collisionVolumeScales  = [[192 100 302]],
 	  collisionVolumeTest    = 1,
-	  collisionVolumeType    = [[box]],
+	  collisionVolumeType    = [[ellipsoid]],
 
 	  collide             = true,
 	  corpse              = [[DEAD]],
