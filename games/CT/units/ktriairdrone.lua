@@ -4,11 +4,11 @@ local ktriairdrone = {
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[ktriairdrone.png]],
-	buildCostEnergy     = 400,
-	buildCostMetal      = 400,
+	buildCostEnergy     = 500,
+	buildCostMetal      = 500,
     buildDistance       = 150,
     builder             = false,
-	buildTime           = 15,
+	buildTime           = 20,
     canAssist           = true,
 	CanAttack 			= true,
 	CanCapture			= false,
@@ -32,7 +32,7 @@ local ktriairdrone = {
 	idleAutoHeal        = 1,
 	leaveTracks         = false,
 	mass                = 80,
-	maxDamage           = 1000,
+	maxDamage           = 800,
     maxSlope            = 99999999,
 	maxVelocity         = 4,
     maxWaterDepth       = 10000,
@@ -44,7 +44,8 @@ local ktriairdrone = {
     selfDestructAs      = [[DRONE_AIR_UNIT]],
     side                = [[Drone]],
     sightDistance       = 500,
-	sounds			= {
+	
+	sounds              = {
 	      select = {
 		"golgotha/vehicle_done_44khz",
 		},
@@ -53,13 +54,23 @@ local ktriairdrone = {
 		},
 	  },
 	  
-	  sfxtypes            = {
+	  sfxtypes          = {
 	
 	    explosiongenerators = {
 		"custom:ct_drone_binder_tri",
 	    },
 	
 	  },	  
+
+	smoothAnim          = true,
+    terraformSpeed      = 300,
+	reclaimSpeed        = 300,
+	turnInPlace         = 1,
+	turnRate            = 800,
+	showNanospray	    = 1,
+	Resurrectspeed      = 100,
+	workerTime          = 1,
+	script		    = "ktriairdrone.lua",
 
 	weapons             = {
 	
@@ -69,8 +80,7 @@ local ktriairdrone = {
 	      onlyTargetCategory = [[SWIM LAND SINK FLOAT SHIP HOVER]],
 	    },
 	
-	  },
-	
+	  },	
 	
 	weaponDefs             = {
 	
@@ -104,7 +114,7 @@ local ktriairdrone = {
 	      interceptedByShieldType = 1,
 	      heightMod               = 0.5,
 	      lineOfSight             = true,
-	      range                   = 800,
+	      range                   = 700,
 	      reloadtime              = 0.1,
 	      rgbColor                = [[0 1 0]],
 	      soundStart              = [[ct/pew1]],
@@ -117,33 +127,23 @@ local ktriairdrone = {
 	      weaponVelocity          = 2000,
 	    },
 	
-	  },
-	  
-	smoothAnim          = true,
-    terraformSpeed      = 300,
-	reclaimSpeed        = 300,
-	turnInPlace         = 1,
-	turnRate            = 800,
-	showNanospray	    = 1,
-	Resurrectspeed      = 100,
-	workerTime          = 1,
-	script		    = "ktriairdrone.lua",
-
+	  },	
+	
 	featureDefs         = {
 	
 	    DEAD  = {
 	      description      = [[Wreckage - Tri Air Drone]],
 	      blocking         = true,
 	      category         = [[corpses]],
-	      damage           = 500,
+	      damage           = 400,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
 	      footprintX       = 2,
 	      footprintZ       = 2,
-	      metal            = 200,
+	      metal            = 250,
 	      object           = [[wrecks/ktriairdronewreck.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 6000,
+	      reclaimTime      = 7500,
 	    },
 	
 	
@@ -151,14 +151,14 @@ local ktriairdrone = {
 	      description      = [[Debris - Tri Air Drone]],
 	      blocking         = false,
 	      category         = [[heaps]],
-	      damage           = 250,
+	      damage           = 200,
 	      energy           = 0,
 	      footprintX       = 2,
 	      footprintZ       = 2,
-	      metal            = 100,
+	      metal            = 125,
 	      object           = [[b2x2heap.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 3000,
+	      reclaimTime      = 3750,
 	    },
 
   	  },
