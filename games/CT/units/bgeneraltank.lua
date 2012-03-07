@@ -2,8 +2,8 @@
 	  unitname            = [[bgeneraltank]],
 	  name                = [[Taisho Type Tank]],
 	  description         = [[General's Tank - Tough, dual-cannon tank. Unlocks stronger units. - Build Limit: 1]],
-	  acceleration        = 0.03,
-	  brakeRate           = 0.07,
+	  acceleration        = 0.5,
+	  brakeRate           = 0.1,
 	  buildCostEnergy     = 1000,
 	  buildCostMetal      = 1000,
 	  builder             = false,
@@ -32,7 +32,6 @@
 	  maxSlope            = 18,
 	  maxVelocity         = 1.5,
 	  maxWaterDepth       = 22,
-	  minCloakDistance    = 75,
 	  movementClass       = [[TANK4x4]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
@@ -43,13 +42,10 @@
 	  sightDistance       = 480,
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_cannon_tank",
 	    },
-	
 	  },
-
 
 	  smoothAnim          = true,
 

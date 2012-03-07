@@ -32,7 +32,6 @@
 	  maxAcc              = 1,
 	  maxDamage           = 200,
 	  maxVelocity         = 8,
-	  minCloakDistance    = 75,
 	  noAutoFire          = false,
 	  objectName          = [[bscoutplane.s3o]],
 	  radarDistance       = 750,

@@ -28,7 +28,6 @@
 	  maxSlope            = 36,
 	  maxVelocity         = 3,
 	  maxWaterDepth       = 22,
-	  minCloakDistance    = 75,
 	  movementClass       = [[Mech3x3]],
 	  moveState           = 0,
 	  noAutoFire          = false,

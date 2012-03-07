@@ -37,7 +37,6 @@ local ktriairdrone = {
 	maxVelocity         = 4,
     maxWaterDepth       = 10000,
     metalMake           = 0,
-	minCloakDistance    = 75,
     noChaseCategory     = [[MINERALS GUNSHIP FIXEDWING CRUISER SUB]],
 	objectName          = "ktriairdrone.s3o",
     onoffable           = false,

@@ -4,9 +4,7 @@ unitDef = {
   name                          = [[Cruiser Beacon]],
   description                   = [[Beacon used to call in specialized Cruisers.]],
   amphibious                    = false,
-  acceleration                  = 0,
   activateWhenBuilt             = false,
-  brakeRate                     = 0,
   buildCostEnergy               = 400,
   buildCostMetal                = 400,
   builder                       = true,
@@ -22,8 +20,6 @@ unitDef = {
 	[[bflagship]],
 	[[bbattlecruiser]],
   },
-
-
 
   buildPic                      = [[bbeacon.png]],
   buildTime                     = 45,
@@ -48,10 +44,8 @@ unitDef = {
   mass                          = 275,
   maxDamage                     = 8500,
   maxSlope                      = 15,
-  maxVelocity                   = 0,
   maxWaterDepth                 = 0,
   metalMake                     = 0,
-  minCloakDistance              = 150,
   noAutoFire                    = false,
   objectName                    = [[bbeacon.s3o]],
 

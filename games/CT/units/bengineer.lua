@@ -51,7 +51,6 @@ local bengineer = {
         maxVelocity         = 2,
         maxWaterDepth       = 22,
         metalMake           = 0,
-        minCloakDistance    = 75,
         movementClass       = [[Engineer3x3]],
         objectName          = "bengineermkii.s3o",
         onoffable           = false,

@@ -36,7 +36,6 @@ local kdiairdrone = {
 	maxVelocity         = 8,
     maxWaterDepth       = 10000,
     metalMake           = 0,
-	minCloakDistance    = 75,
     noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	objectName          = "kdiairdrone.s3o",
     onoffable           = false,

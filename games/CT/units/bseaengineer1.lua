@@ -39,7 +39,6 @@ local bseaengineer1 = {
 	maxDamage           = 350,
 	maxVelocity         = 2,
 	metalMake           = 0,
-	minCloakDistance    = 75,
 	minWaterDepth       = 5,
 	movementClass       = [[SHIP3x3]],
 	noAutoFire          = false,

@@ -31,7 +31,6 @@
 	  maxAcc              = 0.5,
 	  maxDamage           = 350,
 	  maxVelocity         = 10,
-	  minCloakDistance    = 75,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[bfightermkii.s3o]],

@@ -31,7 +31,6 @@
 	  maxAcc              = 0.3,
 	  maxDamage           = 750,
 	  maxVelocity         = 10,
-	  minCloakDistance    = 75,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[blaserplanemkiii.s3o]],
 	  seismicSignature    = 0,

@@ -35,7 +35,6 @@ local bminer = {
         maxVelocity         = 2,
         maxWaterDepth       = 22,
         metalMake           = 0,
-        minCloakDistance    = 75,
         movementClass       = [[Engineer2x2]],
         noChaseCategory     = [[LAND SINK HOVER FIXEDWING GUNSHIP CRUISER SHIP FLOAT SUB]],
         objectName          = "bminer.s3o",

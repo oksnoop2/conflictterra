@@ -32,7 +32,6 @@
 	  maxSlope            = 18,
 	  maxVelocity         = 2,
 	  maxWaterDepth       = 22,
-	  minCloakDistance    = 75,
 	  movementClass       = [[TANK4x4]],
 	  moveState           = 0,
 	  noAutoFire          = false,

@@ -1,12 +1,9 @@
 unitDef = {
-
   unitname                      = [[bseapowerplant]],
   name                          = [[Floating Solar Panels]],
   description                   = [[Provide a small but decent supply of power. Adds +15 energy.]],
   amphibious                    = false,
-  acceleration                  = 0,
   activateWhenBuilt             = true,
-  brakeRate                     = 0,
   buildCostEnergy               = 115,
   buildCostMetal                = 92,
   builder                       = false,
@@ -27,9 +24,7 @@ unitDef = {
   mass                          = 35,
   maxDamage                     = 1500,
   maxSlope                      = 18,
-  maxVelocity                   = 0,
   minWaterDepth                 = 0,
-  minCloakDistance              = 150,
   noAutoFire                    = false,
   objectName                    = [[bseapowerplant.s3o]],
 

@@ -4,19 +4,15 @@ unitDef = {
   name                          = [[Deployed Mori Class Cruiser]],
   description                   = [[Produces tanks and vehicles. Can Mobilize into the Mori Class Cruiser.]],
   amphibious                    = false,
-  acceleration                  = 0,
-  brakeRate                     = 0,
   buildCostEnergy               = 450,
   buildCostMetal                = 450,
   builder                       = true,
 
   buildoptions                  = {
-
 	[[bengineer]],
 	[[bminer]],
 	[[bscoutvehicle]],
 	[[bassaulttank]],
-
 	[[bmissiletank]],
 	[[baabuggy]],
 	[[breztank]],
@@ -54,10 +50,8 @@ unitDef = {
   mass                          = 275,
   maxDamage                     = 4500,
   maxSlope                      = 15,
-  maxVelocity                   = 0,
   maxWaterDepth                 = 0,
   metalMake                     = 0,
-  minCloakDistance              = 150,
   noAutoFire                    = false,
   objectName                    = [[btankcruiser.s3o]],
 

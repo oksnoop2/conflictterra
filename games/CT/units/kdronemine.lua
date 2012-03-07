@@ -1,8 +1,6 @@
 local kdronemine = {
 	name                = [[Replicator]],
 	description         = [[The Replicator will replicate.]],
-    acceleration        = 0.06,
-    brakerate           = 1.5,
     buildpic            = [[kdronemine.png]],
 	buildCostEnergy     = 0,
 	buildCostMetal      = 100,
@@ -33,7 +31,6 @@ local kdronemine = {
 	mass                = 70,
 	maxDamage           = 350,
     maxSlope            = 90,
-	maxVelocity         = 2,
     maxWaterDepth       = 10000,
     metalMake           = 10,
 	minCloakDistance    = 5,

@@ -27,7 +27,6 @@
 	  maxDamage           = 550,
 	  maxSlope            = 36,
 	  maxVelocity         = 1.75,
-	  minCloakDistance    = 75,
 	  movementClass       = [[HOVER2x2]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER]],

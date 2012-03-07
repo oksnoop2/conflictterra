@@ -1,14 +1,11 @@
 unitDef = {
-
   unitname                      = [[bmeteor]],
   name                          = [[Meteor]],
   description                   = [[Meteor]],
-  acceleration                  = 0,
   activateWhenBuilt             = true,
-  brakeRate                     = 0,
   buildCostEnergy               = 1,
   buildCostMetal                = 1,
-  iconType           		= "meteor",
+  iconType                      = "meteor",
   builder                       = false,
   buildPic                      = [[bmex.png]],
   buildTime                     = 1,
@@ -16,7 +13,7 @@ unitDef = {
   category                      = [[MINERALS]],
 
   reclaimable                   = false,
-  repairable			= false,
+  repairable                    = false,
   energyUse                     = 0,
   explodeAs                     = [[ROCK_IMPACT_SMALL]],
   extractsMetal                 = 0.000,
@@ -28,9 +25,7 @@ unitDef = {
   mass                          = 37.5,
   maxDamage                     = 500,
   maxSlope                      = 255,
-  maxVelocity                   = 0,
   maxWaterDepth                 = 0,
-  minCloakDistance              = 150,
   noAutoFire                    = false,
   objectName                    = [[bmeteor.s3o]],
 

@@ -46,8 +46,6 @@
 	  maxDamage           = 1150,
 	  maxVelocity         = 3,
 	  metalMake           = 0,
-	  metalStorage        = 0,
-	  minCloakDistance    = 100,
 	  noAutoFire          = false,
 	  objectName          = [[bsupplydepot.s3o]],
 	  seismicSignature    = 0,

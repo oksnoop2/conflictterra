@@ -30,7 +30,6 @@
 	  maxAcc              = 0.5,
 	  maxDamage           = 325,
 	  maxVelocity         = 7,
-	  minCloakDistance    = 75,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[brocketplanemkiii.s3o]],

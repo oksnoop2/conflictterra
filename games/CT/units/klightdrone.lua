@@ -35,7 +35,6 @@ local klightdrone = {
 	maxVelocity         = 4,
     maxWaterDepth       = 10000,
     metalMake           = 0,
-	minCloakDistance    = 75,
 	movementClass       = [[kdrone]],
     noChaseCategory     = [[SWIM LAND SHIP SINK FLOAT HOVER MINERALS SUB]],
 	objectName          = "klightdrone.s3o",

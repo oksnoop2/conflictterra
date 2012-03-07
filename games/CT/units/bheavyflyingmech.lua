@@ -36,7 +36,6 @@
 	  mass                = 500,
 	  maxDamage           = 1300,
 	  maxVelocity         = 4,
-	  minCloakDistance    = 75,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB FIXEDWING]],
 	  objectName          = [[bheavyflyingmech.s3o]],

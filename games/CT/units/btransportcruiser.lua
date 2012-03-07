@@ -40,7 +40,6 @@
 	  mass                = 1500,
 	  maxDamage           = 2500,
 	  maxVelocity         = 8,
-	  minCloakDistance    = 75,
 	  noAutoFire          = false,
 	  objectName          = [[btransportcarrier2.s3o]],
 	  releaseHeld         = true,

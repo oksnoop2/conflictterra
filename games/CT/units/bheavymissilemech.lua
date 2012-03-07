@@ -32,7 +32,6 @@
 	  maxSlope            = 36,
 	  maxVelocity         = 3,
 	  maxWaterDepth       = 22,
-	  minCloakDistance    = 75,
 	  movementClass       = [[Mech4x4]],
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],

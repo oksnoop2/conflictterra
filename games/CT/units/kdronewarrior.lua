@@ -34,7 +34,6 @@ local kdronewarrior = {
 	maxVelocity         = 3,
     maxWaterDepth       = 10000,
     metalMake           = 0,
-	minCloakDistance    = 75,
 	movementClass       = [[kdrone]],
     noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	objectName          = "kdronewarrior.s3o",

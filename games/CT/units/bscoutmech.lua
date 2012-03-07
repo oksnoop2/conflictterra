@@ -9,15 +9,15 @@ local bscoutmech = {
 	buildDistance       = 220,
 	builder             = true,
 
-	buildoptions            = {
-                [[bcameratower]],	                
-        },
+	buildoptions        = {
+		[[bcameratower]],	                
+	},
 
 	buildTime           = 10,
 	canAssist           = false,
 	canFight            = false,
 	canGuard            = true,
-	canMove		    = true,
+	canMove             = true,
 	canPatrol           = true,
 	canReclaim          = false,
 	canRepair           = false,
@@ -39,7 +39,6 @@ local bscoutmech = {
 	maxVelocity         = 7,
 	maxWaterDepth       = 22,
 	metalMake           = 0,
-	minCloakDistance    = 75,
 	movementClass       = [[Mech3x3]],
 	objectName          = "bscoutmech.s3o",
 	seismicSignature    = 4,

@@ -38,7 +38,6 @@
 	  mass                = 2500,
 	  maxDamage           = 3000,
 	  maxVelocity         = 3,
-	  minCloakDistance    = 75,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[baircruiser.s3o]],

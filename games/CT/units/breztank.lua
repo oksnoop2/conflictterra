@@ -35,7 +35,6 @@ local breztank = {
 	maxVelocity         = 2,
 	maxWaterDepth       = 22,
 	metalMake           = 0,
-	minCloakDistance    = 75,
 	movementClass       = [[TANK2x2]],
 	objectName          = "bmetaltruck.s3o",
 	onoffable           = false,

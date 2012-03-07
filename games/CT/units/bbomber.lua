@@ -35,7 +35,6 @@
 	  maxAcc              = 0.5,
 	  maxDamage           = 500,
 	  maxVelocity         = 9,
-	  minCloakDistance    = 75,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bbombermkii.s3o]],

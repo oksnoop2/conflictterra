@@ -22,9 +22,11 @@ local kairdrone = {
 	collide             = true,
 	corpse              = [[DEAD]],
     cruiseAlt           = 400,
+	
 	cloakCost           = 10,
     cloakCostMoving     = 10,
     init_Cloaked        = false,
+	
 	reclaimable         = false,
 	stealth             = true,
     energyMake          = 1,

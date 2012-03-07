@@ -38,7 +38,6 @@
 	  mass                = 2500,
 	  maxDamage           = 3000,
 	  maxVelocity         = 4,
-	  minCloakDistance    = 75,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS SUB FIXEDWING GUNSHIP CRUISER]],
 	  objectName          = [[bmissilecruiser.s3o]],

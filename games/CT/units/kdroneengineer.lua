@@ -9,7 +9,6 @@ local kdroneengineer = {
     buildDistance       = 150,
     builder             = true,
 	buildoptions		= {
-        
  		[[kgrounddronestructure]],
 		[[kairdronestructure]],
 	},
@@ -39,7 +38,6 @@ local kdroneengineer = {
 	maxVelocity         = 4,
     maxWaterDepth       = 10000,
     metalMake           = 0,
-	minCloakDistance    = 75,
 	movementClass       = [[kdrone]],
 	objectName          = "kdroneengineer.s3o",
     onoffable           = false,

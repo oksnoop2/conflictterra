@@ -17,7 +17,7 @@
 	  canStop             = true,
 	  category            = [[LAND]],
 	  corpse              = [[DEAD]],
-          reclaimable         = false,
+	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_UNIT]],
 	  footprintX          = 2,
@@ -29,7 +29,6 @@
 	  maxSlope            = 18,
 	  maxVelocity         = 5,
 	  maxWaterDepth       = 22,
-	  minCloakDistance    = 75,
 	  movementClass       = [[TANK2x2]],
 	  moveState           = 0,
 	  noAutoFire          = false,
@@ -50,7 +49,7 @@
 	  side                = [[NKG]],
 	  sightDistance       = 500,
 	  smoothAnim          = true,
-          radarDistance       = 500,
+	  radarDistance       = 500,
 	  trackOffset         = 3,
 	  trackStrength       = 6,
 	  trackStretch        = 1,
@@ -60,7 +59,7 @@
 	  turnInPlaceSpeedLimit= 2.5,
 	  turnRate            = 500,
 	  workerTime          = 0,
-          script              = [[bscoutvehicle.lua]],
+	  script              = [[bscoutvehicle.lua]],
 
 	  featureDefs         = {
 	

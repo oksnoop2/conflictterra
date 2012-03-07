@@ -32,7 +32,6 @@
 	  mass                = 350,
 	  maxDamage           = 3750,
 	  maxVelocity         = 1.8,
-	  minCloakDistance    = 75,
 	  minWaterDepth       = 10,
 	  movementClass       = [[SHIP4x4]],
 	  moveState           = 0,

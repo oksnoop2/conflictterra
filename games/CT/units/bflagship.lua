@@ -51,7 +51,6 @@
 	  maxVelocity         = 4,
 	  metalMake           = 0,
 	  metalStorage        = 0,
-	  minCloakDistance    = 100,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS SUB]],
 	  objectName          = [[bbattleflagship.s3o]],

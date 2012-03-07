@@ -26,7 +26,6 @@
 	  maxDamage           = 5000,
 	  maxSlope            = 18,
 	  maxWaterDepth       = 0,
-	  minCloakDistance    = 60,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[bairturret.s3o]],
