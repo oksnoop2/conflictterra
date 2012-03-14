@@ -4,8 +4,8 @@ local bengineer = {
         acceleration        = 1,
         brakerate           = 0.1,
         buildpic            = [[bengineermkii.png]],
-        buildCostEnergy     = 100,
-        buildCostMetal      = 100,
+        buildCostEnergy     = 50, --100
+        buildCostMetal      = 50, --100
         buildDistance       = 220,
         builder             = true,
 

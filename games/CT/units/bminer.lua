@@ -4,8 +4,8 @@ local bminer = {
         acceleration        = 1,
         brakerate           = 0.1,
         buildpic            = [[bminer.png]],
-        buildCostEnergy     = 100,
-        buildCostMetal      = 100,
+        buildCostEnergy     = 50, --100
+        buildCostMetal      = 50, --100
         builder             = false,
         buildTime           = 10,
 
