@@ -2,8 +2,8 @@
 	  unitname            = [[bmissilemech]],
 	  name                = [[Ueda Combat Support Mech]],
 	  description         = [[Anti-Mech Mech - Fast SM that fires two bursts of anti-mech rockets.]],
-	  acceleration        = 4,  --1 while normal
-	  brakeRate           = 0.4,  --0.1 while normal
+	  acceleration        = 1,  --1 while normal, 4 while fast
+	  brakeRate           = 0.1,  --0.1 while normal, 0.4 while fast
 	  buildCostEnergy     = 325,
 	  buildCostMetal      = 325,
 	  builder             = false,
@@ -26,7 +26,7 @@
 	  mass                = 45,
 	  maxDamage           = 600,
 	  maxSlope            = 36,
-	  maxVelocity         = 15,  --3.5 while normal
+	  maxVelocity         = 3.5,  --3.5 while normal, 15 while fast
 	  maxWaterDepth       = 22,
 	  movementClass       = [[Mech3x3]],
 	  moveState           = 0,
