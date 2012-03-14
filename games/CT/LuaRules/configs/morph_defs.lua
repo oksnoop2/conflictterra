@@ -68,7 +68,7 @@ local morphDefs = {
     {
       into = 'bmechcruiserfactory',
       metal = 0,
-      energy = 100,
+      energy = 0,
       time = 5,
 	  text = 'Deploy the Saito Class Cruiser',
       name = 'Deploy',	  
@@ -79,7 +79,7 @@ local morphDefs = {
     {
       into = 'bmechcruiser',
       metal = 0,
-      energy = 100,
+      energy = 0,
       time = 5,
 	  text = 'Mobilize into the Saito Class Cruiser',
       name = 'Mobilize',	  
@@ -92,7 +92,7 @@ local morphDefs = {
     {
       into = 'btankcruiserfactory',
       metal = 0,
-      energy = 100,
+      energy = 0,
       time = 5,
 	  text = 'Deploy the Mori Class Cruiser',
       name = 'Deploy',	  
@@ -103,7 +103,7 @@ local morphDefs = {
     {
       into = 'btankcruiser',
       metal = 0,
-      energy = 100,
+      energy = 0,
       time = 5,
 	  text = 'Mobilize into the Mori Class Cruiser',
       name = 'Mobilize',	  
@@ -116,7 +116,7 @@ local morphDefs = {
     {
       into = 'baircruiserfactory',
       metal = 0,
-      energy = 100,
+      energy = 0,
       time = 5,
 	  text = 'Deploy the Azai Class Cruiser',
       name = 'Deploy',	  
@@ -127,7 +127,7 @@ local morphDefs = {
     {
       into = 'baircruiser',
       metal = 0,
-      energy = 100,
+      energy = 0,
       time = 5,
 	  text = 'Mobilize into the Azai Class Cruiser',
       name = 'Mobilize',	  
