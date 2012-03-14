@@ -7,11 +7,11 @@
 	  airStrafe           = 0,
 	  amphibious          = false,
 	  brakeRate           = 3.75,
-	  buildCostEnergy     = 450,
-	  buildCostMetal      = 450,
+	  buildCostEnergy     = 300, --450
+	  buildCostMetal      = 300, --450
 	  builder             = false,
 	  buildPic            = [[btankcruiser.png]],
-	  buildTime           = 40,
+	  buildTime           = 30, --40
 	  canAttack           = true,
 	  canFly              = true,
 	  canGuard            = true,

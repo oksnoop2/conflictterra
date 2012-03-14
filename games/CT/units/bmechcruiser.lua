@@ -7,11 +7,11 @@
 	  airStrafe           = 0,
 	  amphibious          = false,
 	  brakeRate           = 3.75,
-	  buildCostEnergy     = 600,
-	  buildCostMetal      = 600,
+	  buildCostEnergy     = 300, --600
+	  buildCostMetal      = 300, --600
 	  builder             = false,
 	  buildPic            = [[bmechcruiser.png]],
-	  buildTime           = 45,
+	  buildTime           = 30, --45
 	  canAttack           = true,
 	  canFly              = true,
 	  canGuard            = true,

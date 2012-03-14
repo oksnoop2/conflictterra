@@ -14,10 +14,7 @@ unitDef = {
     [[blaserplane]],
     [[brocketplane]],
     [[bbomber]],
-
   },
-
-
 
   buildPic                      = [[baircruiserfactory.png]],
   buildTime                     = 30,

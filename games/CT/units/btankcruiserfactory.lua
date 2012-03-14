@@ -4,8 +4,8 @@ unitDef = {
   name                          = [[Deployed Mori Class Cruiser]],
   description                   = [[Produces tanks and vehicles. Can Mobilize into the Mori Class Cruiser.]],
   amphibious                    = false,
-  buildCostEnergy               = 450,
-  buildCostMetal                = 450,
+  buildCostEnergy               = 300, --450
+  buildCostMetal                = 300, --450
   builder                       = true,
 
   buildoptions                  = {
@@ -25,10 +25,8 @@ unitDef = {
 	[[bempcannon]],
   },
 
-
-
   buildPic                      = [[btankcruiserfactory.png]],
-  buildTime                     = 40,
+  buildTime                     = 30, --40
   canMove                       = true,
   canPatrol                     = true,
   canStop                       = true,

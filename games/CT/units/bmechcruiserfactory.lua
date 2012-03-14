@@ -4,8 +4,8 @@ unitDef = {
   name                          = [[Deployed Saito Class Cruiser]],
   description                   = [[Produces combat and support mechs. Can mobilize  into the Saito Class Cruiser.]],
   amphibious                    = false,
-  buildCostEnergy               = 600,
-  buildCostMetal                = 600,
+  buildCostEnergy               = 300, --600
+  buildCostMetal                = 300, --600
   builder                       = true,
 
   buildoptions                  = {
@@ -18,7 +18,6 @@ unitDef = {
 	[[bantitankmech]],
 	[[bhovermech]],
 	[[bsiegemech]],
-
 	[[bflyingmech]],
 	[[bsnipermech]],
 	[[bacemech]],
@@ -30,10 +29,8 @@ unitDef = {
 	[[bheavyassaultmech]],
   },
 
-
-
   buildPic                      = [[bmechcruiserfactory.png]],
-  buildTime                     = 45,
+  buildTime                     = 30, --45
   canMove                       = true,
   canPatrol                     = true,
   canStop                       = true,
