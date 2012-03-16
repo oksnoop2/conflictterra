@@ -9,7 +9,6 @@ local klightdrone = {
     buildDistance       = 150,
     builder             = false,
 
-
 	buildTime           = 15,
     canAssist           = true,
 	CanAttack 			= 1,
@@ -23,6 +22,11 @@ local klightdrone = {
     corpse              = [[DEAD]],
     reclaimable         = false,
 
+	cloakCost           = 1,
+    cloakCostMoving     = 1,
+	cloakTimeout        = 0,
+    init_Cloaked        = false,	
+	
     energyMake          = 0,
 	explodeAs           = [[DRONE_GROUND_UNIT]],
     footprintx          = 3,
@@ -43,6 +47,15 @@ local klightdrone = {
     selfDestructAs      = [[DRONE_GROUND_UNIT]],
     side                = [[Drone]],
     sightDistance       = 400,
+	
+	sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:ct_dirt",
+	    },
+	
+	},	
+	
 	sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",
@@ -51,7 +64,18 @@ local klightdrone = {
 		"golgotha/vehicle_done_44khz",
 		},
 	  },
-	 weapons             = {
+
+	smoothAnim          = true,
+    terraformSpeed      = 300,
+	reclaimSpeed        = 300,
+	turnInPlace         = 1,
+	turnRate            = 1000,
+	showNanospray	    = 1,
+	Resurrectspeed      = 100,
+	workerTime          = 1,
+	script		    = "klightdrone.lua",
+
+	weapons             = {
 	
 	    {
 	      def                = [[Cannon]],
@@ -60,7 +84,6 @@ local klightdrone = {
 	    },
 	
 	  },
-	
 	
 	  weaponDefs          = {
 	
@@ -106,17 +129,8 @@ local klightdrone = {
 	      weaponVelocity          = 2000,
 	    },
 	
-	  },
-	smoothAnim          = true,
-    terraformSpeed      = 300,
-	reclaimSpeed        = 300,
-	turnInPlace         = 1,
-	turnRate            = 1000,
-	showNanospray	    = 1,
-	Resurrectspeed      = 100,
-	workerTime          = 1,
-	script		    = "klightdrone.lua",
-
+	  },	
+	
 	featureDefs         = {
 	
 	    DEAD  = {

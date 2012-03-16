@@ -12,8 +12,7 @@ function gadget:GetInfo()
 end
 ------------------------------------------------------------------------
 local Burrowers = {
-	--[UnitDefNames.klightdrone.id] = "klightdrone",
-
+	[UnitDefNames.klightdrone.id] = "klightdrone",
 }
 
 local CMD_BURROW = 32630
@@ -32,8 +31,8 @@ Burrow = {
 		id=CMD_BURROW,
 		type=CMDTYPE.ICON,
 		name="Burrow",
-		--texture="&.9x.9&bitmaps/icons/blank.tif&bitmaps/icons/burrow.png",
-		tooltip="Burrow/Unborrow.\r\nHint: Burrowed units are hidden and unable to move or attack.",
+		texture="buttons/burrow.png",
+		tooltip="Burrow/Unburrow.\r\nHint: Burrowed units are hidden and unable to move or attack.",
 		action="borrow"
 		}
 
