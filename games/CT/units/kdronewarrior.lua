@@ -1,6 +1,6 @@
 local kdronewarrior = {
 	name                = [[Warrior Drone]],
-	description         = [[Fires a powerful beam of plasma at ground units.]],
+	description         = [[Fires a powerful beam of plasma at ground units. Can Burrow.]],
     acceleration        = 1,
     brakerate           = 0.1,
     buildpic            = [[kdronewarrior.png]],
@@ -8,7 +8,6 @@ local kdronewarrior = {
 	buildCostMetal      = 300,
     buildDistance       = 150,
     builder             = false,
-
 
 	buildTime           = 15,
     canAssist           = true,
@@ -22,6 +21,12 @@ local kdronewarrior = {
 	category            = [[LAND]],
     corpse              = [[DEAD]],
     reclaimable         = false,
+	
+	cloakCost           = 2,
+    cloakCostMoving     = 2,
+	cloakTimeout        = 0,
+    init_Cloaked        = false,	
+	
     energyMake          = 0,
 	explodeAs           = [[DRONE_GROUND_UNIT]],
     footprintx          = 3,
@@ -42,6 +47,13 @@ local kdronewarrior = {
     selfDestructAs      = [[DRONE_GROUND_UNIT]],
     side                = [[Drone]],
     sightDistance       = 400,
+	
+	sfxtypes            = {
+	    explosiongenerators = {
+		"custom:ct_dirt",
+	    },
+	},	
+	
 	sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",

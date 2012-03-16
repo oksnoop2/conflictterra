@@ -30,6 +30,10 @@
 	local walk_go = 2
 
 
+	--CEGs
+	local ct_dirt = SFX.CEG	
+
+
 	--local functions
 	local function Walk()
 	        SetSignalMask( walk_go )
@@ -78,6 +82,64 @@
 			Turn (lbthigh, x_axis, 0, 2)
 	end
 
+	local function BurrowAnim()
+		--Stop Movement
+		Signal(SIG_WALK)
+		moving = false
+		Spring.MoveCtrl.Enable(unitID)
+		attacking = false
+		
+		--Set Cloak
+		Spring.SetUnitCloak(unitID, 1)		
+		Sleep(200)
+		
+		--Play sound
+		local x, y, z = Spring.GetUnitPosition(unitID)
+		--Spring.PlaySoundFile("sounds/digin.wav", 30, x, y, z)
+		
+		--Animation
+		Move( body, y_axis, -38, 50 )
+		EmitSfx(body, ct_dirt)
+		Sleep(100)
+		EmitSfx(body, ct_dirt)
+		
+		--??
+		Spring.SetUnitRulesParam(unitID,'burrowed',1)
+		burrowed = true
+		return(1)
+	end
+
+	local function UnBurrowAnim()
+		--Allow Movement
+		Signal(SIG_WALK)
+		moving = true
+		Spring.MoveCtrl.Disable(unitID)
+		attacking = true
+		
+		--Turn off cloak
+		Spring.SetUnitCloak(unitID, 0)
+		Sleep(200)
+		
+		--Play sound
+		local x, y, z = Spring.GetUnitPosition(unitID)
+		--Spring.PlaySoundFile("sounds/digout.wav", 30, x, y, z)
+		
+		--Animation
+		Move( body, y_axis, 0, 50 )		
+		Sleep(100)
+		StartThread( Walk )
+		EmitSfx(body, ct_dirt)
+		Sleep(100)
+		EmitSfx(body, ct_dirt)		
+		Sleep(1000)
+		StartThread( StopWalk)
+		
+		--??
+		Spring.SetUnitRulesParam(unitID,'burrowed',0)
+		burrowed = false
+		return(1)
+	end	
+	
 	local function RestoreAfterDelay(unitID)
 		Sleep(1000)
 		Turn(barrel, y_axis, 0, math.rad(150))
@@ -88,7 +150,15 @@
 	--script
 	function script.Create(unitID)
 	end
-	
+
+	function script.Burrow()
+		if burrowed then
+			StartThread( UnBurrowAnim )
+		else
+			StartThread( BurrowAnim )	
+		end
+	end
+
 	function script.StartMoving()
 	        StartThread( Walk )
 	end
@@ -102,14 +172,17 @@
 	function script.AimFromWeapon1() return body end
 	
 	function script.AimWeapon1( heading, pitch )
-                Signal(SIG_AIM)
+		Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(barrel, y_axis, heading, math.rad(150))
-        	Turn(barrel, x_axis, -pitch, math.rad(100))
-        	WaitForTurn(barrel, y_axis)
-        	WaitForTurn(barrel, x_axis)
+		Turn(barrel, y_axis, heading, math.rad(150))
+		Turn(barrel, x_axis, -pitch, math.rad(100))
+		WaitForTurn(barrel, y_axis)
+		WaitForTurn(barrel, x_axis)
 		StartThread(RestoreAfterDelay)
+		if burrowed then return false
+		else
 		return true
+		end
 	end
 	
 	function script.FireWeapon1()
@@ -117,5 +190,4 @@
 	
 	function script.Killed(recentDamage, maxHealth)
 		return 0
-
 	end

@@ -13,6 +13,8 @@ end
 ------------------------------------------------------------------------
 local Burrowers = {
 	[UnitDefNames.klightdrone.id] = "klightdrone",
+	[UnitDefNames.kdroneengineer.id] = "kdroneengineer",
+	[UnitDefNames.kdronewarrior.id] = "kdronewarrior",
 }
 
 local CMD_BURROW = 32630
@@ -32,7 +34,7 @@ Burrow = {
 		type=CMDTYPE.ICON,
 		name="Burrow",
 		texture="buttons/burrow.png",
-		tooltip="Burrow/Unburrow.\r\nHint: Burrowed units are hidden and unable to move or attack.",
+		tooltip="Burrow/Unburrow.\r\nBurrowed units are hidden and unable to move or attack.",
 		action="borrow"
 		}
 

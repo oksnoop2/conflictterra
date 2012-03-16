@@ -1,6 +1,6 @@
 local kdroneengineer = {
 	name                = [[Drone Builder]],
-	description         = [[Unarmed construction unit.  Can Transform into a Drone Mining Tower to accumulate metal.]],
+	description         = [[Unarmed construction unit. Can Transform into a Drone Mining Tower to accumulate metal. Can Burrow.]],
     acceleration        = 1,
     brakerate           = 0.1,
     buildpic            = [[kdroneengineer.png]],
@@ -26,6 +26,12 @@ local kdroneengineer = {
     corpse              = [[DEAD]],
     commander           = true,    
 	reclaimable         = false,
+	
+	cloakCost           = 2,
+    cloakCostMoving     = 2,
+	cloakTimeout        = 0,
+    init_Cloaked        = false,	
+	
     energyMake          = 1,
 	explodeAs           = [[DRONE_GROUND_UNIT]],
     footprintx          = 3,
@@ -45,6 +51,13 @@ local kdroneengineer = {
     selfDestructAs      = [[DRONE_GROUND_UNIT]],
     side                = [[Drone]],
     sightDistance       = 300,
+	
+	sfxtypes            = {
+	    explosiongenerators = {
+		"custom:ct_dirt",
+	    },
+	},
+	
 	sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",

@@ -1,6 +1,6 @@
 local klightdrone = {
 	name                = [[Skyward Drone]],
-	description         = [[Fires a blob of plasma into the sky, destroying aircraft and flying units.]],
+	description         = [[Fires a blob of plasma into the sky, destroying aircraft and flying units. Can Burrow.]],
     acceleration        = 1,
     brakerate           = 0.1,
     buildpic            = [[klightdrone.png]],
@@ -22,10 +22,10 @@ local klightdrone = {
     corpse              = [[DEAD]],
     reclaimable         = false,
 
-	cloakCost           = 1,
-    cloakCostMoving     = 1,
+	cloakCost           = 2,
+    cloakCostMoving     = 2,
 	cloakTimeout        = 0,
-    init_Cloaked        = false,	
+    init_Cloaked        = false,
 	
     energyMake          = 0,
 	explodeAs           = [[DRONE_GROUND_UNIT]],
@@ -49,11 +49,9 @@ local klightdrone = {
     sightDistance       = 400,
 	
 	sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_dirt",
 	    },
-	
 	},	
 	
 	sounds			= {
