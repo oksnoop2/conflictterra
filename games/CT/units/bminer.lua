@@ -62,11 +62,13 @@ local bminer = {
           },
 
         smoothAnim          = true,
+		
         trackOffset         = 12,
         trackStrength       = 5,
         trackStretch        = 1,
         trackType           = [[StdTank]],
-        trackWidth          = 15,
+        trackWidth          = 20,
+		
         turnInPlace         = 1,
         turnRate            = 1000,
         script              = "bminer.lua",

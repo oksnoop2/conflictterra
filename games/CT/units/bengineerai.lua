@@ -83,11 +83,13 @@ local bengineerai = {
         terraformSpeed      = 300,
         reclaimSpeed        = 300,
         repairSpeed         = 0.5,
+		
         trackOffset         = 12,
         trackStrength       = 5,
         trackStretch        = 1,
         trackType           = [[StdTank]],
-        trackWidth          = 15,
+        trackWidth          = 22,
+		
         turnInPlace         = 1,
         turnRate            = 1000,
         showNanospray       = 0,
