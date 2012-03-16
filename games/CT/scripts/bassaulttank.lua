@@ -213,6 +213,7 @@
 		updateheading()
 		driving=true
 		StartThread (drive)			--put track pieces into position even if tank does not instantly move after creation
+		Turn(flare1, x_axis, 1.55)
 	end
 
 	function script.QueryWeapon1() return flare1 end
