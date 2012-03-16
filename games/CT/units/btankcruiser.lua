@@ -40,6 +40,7 @@
 	  mass                = 2500,
 	  maxDamage           = 4000,
 	  maxVelocity         = 3,
+	  verticalSpeed       = 30,	  
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[btankcruiser.s3o]],

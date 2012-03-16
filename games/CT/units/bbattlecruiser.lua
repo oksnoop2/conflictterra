@@ -44,6 +44,7 @@
 	  mass                = 2500,
 	  maxDamage           = 5500,
 	  maxVelocity         = 3,
+	  verticalSpeed       = 30,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS SUB]],
 	  objectName          = [[bbattlecruiser2.s3o]],

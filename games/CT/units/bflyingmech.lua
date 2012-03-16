@@ -31,6 +31,7 @@
 	  mass                = 125,
 	  maxDamage           = 500,
 	  maxVelocity         = 5,
+	  verticalSpeed       = 30,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[bflyingmech.s3o]],

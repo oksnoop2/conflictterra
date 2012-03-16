@@ -45,6 +45,7 @@
 	  mass                = 2000,
 	  maxDamage           = 1150,
 	  maxVelocity         = 3,
+	  verticalSpeed       = 20,
 	  metalMake           = 0,
 	  noAutoFire          = false,
 	  objectName          = [[bsupplydepot.s3o]],
