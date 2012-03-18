@@ -8,9 +8,9 @@ function gadget:GetInfo()
 
         desc    = "plays drones only",
 
-        author  = "knorke and yanom, et al.",
+        author  = "knorke and yanom",
 
-        date    = "Jun 2011",
+        date    = "2011-2012",
 
         license = ";;;",
 
@@ -18,7 +18,7 @@ function gadget:GetInfo()
 
         version = "unversioned",
 
-		enabled = true
+        enabled = true
 
     }
 
@@ -37,157 +37,119 @@ local unitOnMission = {} --[unitID] = wieviele frames in ruhe gelassen werden
 stages = {}
 
 --skipMetal: if we have that much metal, then this stage is autocomplete/skipped
+
+
+
 --kdronewarrior kgrounddronestructure kdroneengineer kairdronestructure klightdrone
 
 
 
 stages[1]= {
 
-	["unitNumbers"]={
+    ["unitNumbers"]={
 
-		["kgrounddronestructure"]=1,
+        ["kgrounddronestructure"]=1,
 
-		["kdroneengineer"]=1,
+        ["kdroneengineer"]=1,
 
-		},
+        },
 
-	skipMetal = math.huge,
+    skipMetal = math.huge,
 
-	}
+    }
 
 
 
 stages[2]= {
 
-	["unitNumbers"]={
+    ["unitNumbers"]={
 
-		["kdroneengineer"]=2,
+        ["kdroneengineer"]=2,
 
-		["kdroneminingtower"]=2,
+        ["kdroneminingtower"]=2,
 
-		},
+        },
 
-	skipMetal = 500,
+    skipMetal = 500,
 
-	}
+    }
 
 
 
 stages[3]= {
 
-	["unitNumbers"]={
+    ["unitNumbers"]={
 
-		["kdroneminingtower"]=3,
+        ["kdroneminingtower"]=3,
 
-		},
+        },
 
-	skipMetal = 1000,
+    skipMetal = 1000,
 
-	}
+    }
 
-	
+    
 
 stages[4]= {
 
-	["unitNumbers"]={
+    ["unitNumbers"]={
 
-		["kairdronestructure"]=1,
+        ["kairdronestructure"]=1,
 
-		["kdroneminingtower"]=4,
+        ["kdroneminingtower"]=4,
 
 
-		},
+        },
 
-	skipMetal = 1000,
+    skipMetal = 1000,
 
-	}
+    }
 
-	
+    
 
 stages[5]= { --mining boom phase
 
-	["unitNumbers"]={
+    ["unitNumbers"]={
 
-		["kdroneminingtower"]=10,
+        ["kdroneminingtower"]=10,
 
-		},
+        },
 
-	skipMetal = 2770,
+    skipMetal = 2770,
 
-	}
+    }
 
-	
-
-stages[6]= {
-
-	["unitNumbers"]={
-
-		["kgrounddronestructure"] = 2,
-
-		["kairdronestructure"]=1,
-
-		},
-
-	skipMetal = math.huge,
-
-	}
-
-	
-
-stages[7]= {
-
-	["unitNumbers"]={
-
-		["kdroneminingtower"] = 12,
-
-		},
-
-	skipMetal = math.huge,
-
-	}
-
-	
-
-stages[8]= {
-
-	["unitNumbers"]={
-
-		["kdronewarrior"] =10,
-
-		["kdroneminingtower"] = 17,
-
-		},
-
-	skipMetal = math.huge,
-
-	}
-
-		
-
-
-	
+for iii=6,100 do
+    stages[iii] = {
+    ["unitNumbers"]={
+        ["kdroneminingtower"]=iii,
+        ["kdroneengineer"]=iii,
+    },
+    skipMetal = math.huge
+    }
+end
 
 --funzt!
 
 function printStages ()
 
-	Spring.Echo ("--printing stages table *START*--")
+    --Spring.Echo ("--printing stages table *START*--")
 
-	for i=1, #stages do
+    for i=1, #stages do
 
-		Spring.Echo ("stages [" .. i  .. "]")
+        --Spring.Echo ("stages [" .. i  .. "]")
 
-		Spring.Echo ("skipMetal=" .. stages[i].skipMetal)
+        --Spring.Echo ("skipMetal=" .. stages[i].skipMetal)
 
-		for name, amount in pairs (stages[i]["unitNumbers"]) do
+        for name, amount in pairs (stages[i]["unitNumbers"]) do
 
-			Spring.Echo ("unitNumbers:" .. name .. " - " .. stages[i]["unitNumbers"][name])
+            --Spring.Echo ("unitNumbers:" .. name .. " - " .. stages[i]["unitNumbers"][name])
 
-		end
+        end
 
-	end
+    end
 
-	Spring.Echo ("--printing stages table *DONE*--")
+    --Spring.Echo ("--printing stages table *DONE*--")
 
 end
 
@@ -197,35 +159,35 @@ end
 
 --return: isComplete, missing table
 
-function stageComplete (teamID, stage)		
+function stageComplete (teamID, stage)      
 
-	--alle einheiten da die wir brauchen?
+    --alle einheiten da die wir brauchen?
 
-	local missing = {}	--[unitname] = wie viele davon noch gebraucht werden
+    local missing = {}  --[unitname] = wie viele davon noch gebraucht werden
 
-	for name, amount in pairs (stage["unitNumbers"]) do
+    for name, amount in pairs (stage["unitNumbers"]) do
 
-		--Spring.Echo ("enough " .. name .. "?")
+        --Spring.Echo ("enough " .. name .. "?")
 
-		local unitDefID =UnitDefNames[name].id
+        local unitDefID =UnitDefNames[name].id
 
-		--Spring.Echo (unitDefID)
+        --Spring.Echo (unitDefID)
 
-		local have = Spring.GetTeamUnitDefCount (teamID, unitDefID)
+        local have = Spring.GetTeamUnitDefCount (teamID, unitDefID)
 
-		local shouldHave = stage["unitNumbers"][name]
+        local shouldHave = stage["unitNumbers"][name]
 
-		if (have < shouldHave) then missing[name] = shouldHave-have end
+        if (have < shouldHave) then missing[name] = shouldHave-have end
 
-	end
+    end
 
-	if (next(missing) == nil) then return true end
+    if (next(missing) == nil) then return true end
 
-	--genug metal da? dann autocomplete!
+    --genug metal da? dann autocomplete!
 
-	if (Spring.GetTeamResources (teamID, "metal") > stage.skipMetal) then return true, missing end	--ich kauf den ganzen laden!
+    if (Spring.GetTeamResources (teamID, "metal") > stage.skipMetal) then return true, missing end  --ich kauf den ganzen laden!
 
-	return false, missing
+    return false, missing
 
 end
 
@@ -233,17 +195,17 @@ end
 
 --return: stagei, missing table
 
-function getHighestCompleteStage (teamID)	
+function getHighestCompleteStage (teamID)   
 
-	for i=1, #stages do
+    for i=1, #stages do
 
-		local complete, missing = stageComplete (teamID, stages[i])
+        local complete, missing = stageComplete (teamID, stages[i])
 
-		if (complete == false) then return i-1,missing end
+        if (complete == false) then return i-1,missing end
 
-	end
+    end
 
-	return #stages, nil
+    return #stages, nil
 
 end
 
@@ -261,51 +223,51 @@ local all_units = Spring.GetTeamUnits (teamID)
 
 if (all_units == nil) then return end
 
-	for name, amount in pairs (job) do
+    for name, amount in pairs (job) do
 
-		--Spring.Echo ("team " .. teamID .." wants to build " .. amount .. "x " ..name)
+        --Spring.Echo ("team " .. teamID .." wants to build " .. amount .. "x " ..name)
 
-		local assigned = 0
+        local assigned = 0
 
-		for i,unitID in pairs(all_units) do
+        for i,unitID in pairs(all_units) do
 
-			--if (job[name] <= 0) then break end --if the job is already split between builders, break
+            --if (job[name] <= 0) then break end --if the job is already split between builders, break
 
-			if (assigned >= amount) then break end
+            if (assigned >= amount) then break end
 
-			local canDo = canUnitBuildThis (unitName (unitID), name)
+            local canDo = canUnitBuildThis (unitName (unitID), name)
 
-			if (canDo) then 
+            if (canDo) then 
 
-				local msg = unitID .. " can do it"
+                local msg = unitID .. " can do it"
 
-				local wantDo = doesUnitWantBuildJob (unitID, name)
+                local wantDo = doesUnitWantBuildJob (unitID, name)
 
-				if (wantDo) then
+                if (wantDo) then
 
-					msg = msg .. " and wants to do it!"
+                    msg = msg .. " and wants to do it!"
 
-					--job[name] = job[name] -1
+                    --job[name] = job[name] -1
 
-					assigned = assigned +1					
+                    assigned = assigned +1                  
 
-					buildUnit (unitID, name)
+                    buildUnit (unitID, name)
 
-					if (assigned >= amount) then break end
+                    if (assigned >= amount) then break end
 
-				else
+                else
 
-					msg = msg .. " but is busy!"
+                    msg = msg .. " but is busy!"
 
-				end
+                end
 
-				--Spring.Echo (msg)
+                --Spring.Echo (msg)
 
-			end
+            end
 
-		end
+        end
 
-	end
+    end
 
 end
 
@@ -316,47 +278,47 @@ end
 function canUnitBuildThis (parentName, childName)
 
 
-	if (parentName == childName and not (parentName == "kgrounddronestructure" or parentName == "kairdronestructure")) then return true end--everything can clone itself, except the structure (disabled)
+    if (parentName == childName and not (parentName == "kgrounddronestructure" or parentName == "kairdronestructure")) then return true end--everything can clone itself, except the structure (disabled)
 
-	if (parentName == "kdroneengineer" and childName == "kgrounddronestructure") then return true end
+    if (parentName == "kdroneengineer" and childName == "kgrounddronestructure") then return true end
 
-	if (parentName == "kdroneengineer" and childName == "kdroneminingtower") then return true end
+    if (parentName == "kdroneengineer" and childName == "kdroneminingtower") then return true end
 
-	if (parentName == "kdroneengineer" and childName == "kairdronestructure") then return true end
+    if (parentName == "kdroneengineer" and childName == "kairdronestructure") then return true end
 
-	----land factory----
+    ----land factory----
 
-	if (parentName == "kgrounddronestructure") then
+    if (parentName == "kgrounddronestructure") then
 
-		if (childName == "kdroneengineer") then return true end
+        if (childName == "kdroneengineer") then return true end
 
-		if (childName == "kdronewarrior") then return true end
+        if (childName == "kdronewarrior") then return true end
 
-		if (childName == "kdroneroller") then return true end
+        if (childName == "kdroneroller") then return true end
 
-		if (childName == "ktridroneroller") then return true end		
+        if (childName == "ktridroneroller") then return true end        
 
-		if (childName == "klightdrone") then return true end
+        if (childName == "klightdrone") then return true end
 
-	end
+    end
 
-	----air factory----
+    ----air factory----
 
-	if (parentName == "kairdronestructure") then
+    if (parentName == "kairdronestructure") then
 
-		if (childName == "kairdrone") then return true end
+        if (childName == "kairdrone") then return true end
 
-		if (childName == "kdiairdrone") then return true end
+        if (childName == "kdiairdrone") then return true end
 
-		if (childName == "ktriairdrone") then return true end		
+        if (childName == "ktriairdrone") then return true end       
 
-	end	
+    end 
 
-	--falls sich gar niemand findet, kann sich auch ein mining tower zum engineer zurÃ¼ck morphen:
+    --falls sich gar niemand findet, kann sich auch ein mining tower zum engineer zurÃ¼ck morphen:
 
-	if (parentName == "kdroneminingtower" and childName == "kdroneengineer") then return true end
+    if (parentName == "kdroneminingtower" and childName == "kdroneengineer") then return true end
 
-	return false
+    return false
 
 end
 
@@ -364,33 +326,33 @@ end
 
 function doesUnitWantBuildJob (unitID, childname)
 
-	local _, _, _, _, buildProg = Spring.GetUnitHealth(unitID)
+    local _, _, _, _, buildProg = Spring.GetUnitHealth(unitID)
 
-	if buildProg < 1 then return false end
+    if buildProg < 1 then return false end
 
 
 
-	--mining tower haben keinen bock sich abzubauen wenn es noch engineers gibt
+    --mining tower haben keinen bock sich abzubauen wenn es noch engineers gibt
 
-	if (unitName (unitID) == "kdroneminingtower") then
+    if (unitName (unitID) == "kdroneminingtower") then
 
-		if (#Spring.GetTeamUnitsByDefs (Spring.GetUnitTeam (unitID), {UnitDefNames["kdroneengineer"].id}) > 0) then return false end ---uhhh... wth is this? -yanom
+        if (#Spring.GetTeamUnitsByDefs (Spring.GetUnitTeam (unitID), {UnitDefNames["kdroneengineer"].id}) > 0) then return false end ---uhhh... wth is this? -yanom
 
-	end
+    end
 
-	
+    
 
-	--if ((unitOnMission[unitID] and unitOnMission[unitID] >0) and unitIsMobile(unitID)) then return false end
+    --if ((unitOnMission[unitID] and unitOnMission[unitID] >0) and unitIsMobile(unitID)) then return false end
 
-	if ((unitOnMission[unitID] and unitOnMission[unitID] >0) ) then return false end
+    if ((unitOnMission[unitID] and unitOnMission[unitID] >0) ) then return false end
 
-	
+    
 
-	if (#Spring.GetFullBuildQueue  (unitID) == 0) then return true end --nur eine sache pro fabrik gleichzeitig bauen
+    if (#Spring.GetFullBuildQueue  (unitID) == 0) then return true end --nur eine sache pro fabrik gleichzeitig bauen
 
-	
+    
 
-	return false
+    return false
 
 end
 
@@ -398,71 +360,71 @@ end
 
 function buildUnit (unitID, jobname)
 
-	if (unitName (unitID) ==  "kdroneminingtower" and jobname == "kdroneengineer") then undeploy (unitID) end
+    if (unitName (unitID) ==  "kdroneminingtower" and jobname == "kdroneengineer") then undeploy (unitID) end
 
-	
+    
 
-	if (unitName (unitID) == jobname) then --same units can just clone each other
+    if (unitName (unitID) == jobname) then --same units can just clone each other
 
-		cloneUnit (unitID, UnitDefNames[jobname].id)		
+        cloneUnit (unitID, UnitDefNames[jobname].id)        
 
-		return
+        return
 
-	end
+    end
 
-	
+    
 
-	if (unitName (unitID) == "kgrounddronestructure") then --land factory builds
+    if (unitName (unitID) == "kgrounddronestructure") then --land factory builds
 
-		Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {}, {}) --bauen
+        Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {}, {}) --bauen
 
-		moveAway (unitID, 500)	--waypoint
+        moveAway (unitID, 500)  --waypoint
 
-		return
+        return
 
-	end
+    end
 
-	
+    
 
-	if (unitName (unitID) == "kairdronestructure") then --air factory builds
+    if (unitName (unitID) == "kairdronestructure") then --air factory builds
 
-		Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {}, {}) --bauen
+        Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {}, {}) --bauen
 
-		moveAway (unitID, 1000)	--waypoint
+        moveAway (unitID, 1000) --waypoint
 
-		return
+        return
 
-	end
+    end
 
-	
+    
 
-	if (not unitOnMission[unitID] and unitName (unitID) ==  "kdroneengineer" and jobname == "kdroneminingtower") then
+    if (not unitOnMission[unitID] and unitName (unitID) ==  "kdroneengineer" and jobname == "kdroneminingtower") then
 
-		--unitOnMission[unitID] = true
+        --unitOnMission[unitID] = true
 
-		--moveAway (unitID, 2000)
+        --moveAway (unitID, 2000)
 
-		unitOnMission[unitID] = 100
+        unitOnMission[unitID] = 100
 
-		deployNearRes (unitID)
+        deployNearRes (unitID)
 
-		return
+        return
 
-	end
+    end
 
-	
+    
 
-	if (unitName (unitID) == "kdroneengineer") then --engineer building whatever building
+    if (unitName (unitID) == "kdroneengineer") then --engineer building whatever building
 
-			local ux,uy,uz = Spring.GetUnitPosition (unitID)
+            local ux,uy,uz = Spring.GetUnitPosition (unitID)
 
-			local x,y,z = getBuildSpot (ux,uy,uz, jobname, 200, 50)
+            local x,y,z = getBuildSpot (ux,uy,uz, jobname, 200, 50)
 
-			Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {x,y,z}, {}) --bauen
+            Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {x,y,z}, {}) --bauen
 
-		return
+        return
 
-	end	
+    end 
 
 end
 
@@ -470,13 +432,13 @@ end
 
 function unitName (unitID)
 
-	if (not Spring.ValidUnitID (unitID)) then return "!invalid unitID in unitName()!" end
+    if (not Spring.ValidUnitID (unitID)) then return "!invalid unitID in unitName()!" end
 
-	local udID =Spring.GetUnitDefID(unitID)
+    local udID =Spring.GetUnitDefID(unitID)
 
-	local uDef = UnitDefs [udID]
+    local uDef = UnitDefs [udID]
 
-	return uDef.name
+    return uDef.name
 
 end
 
@@ -486,7 +448,7 @@ end
 
 function countTowersAndEngineer (teamID)
 
-	return #Spring.GetTeamUnitsByDefs (teamID, {UnitDefNames["kdroneminingtower"].id}) + Spring.GetTeamUnitsByDefs (teamID, {UnitDefNames["kdroneengineer"].id})
+    return #Spring.GetTeamUnitsByDefs (teamID, {UnitDefNames["kdroneminingtower"].id}) + Spring.GetTeamUnitsByDefs (teamID, {UnitDefNames["kdroneengineer"].id})
 
 end
 
@@ -494,7 +456,7 @@ end
 
 function unitCount (teamID, unitName)
 
-	return #Spring.GetTeamUnitsByDefs (teamID, {UnitDefNames[unitName].id}) or 0
+    return #Spring.GetTeamUnitsByDefs (teamID, {UnitDefNames[unitName].id}) or 0
 
 end
 
@@ -516,7 +478,7 @@ teamsData = {} --stores data for each team. Example: the rosters of each team's 
 
 function gadget:Initialize() 
 
-	counter = 0
+    counter = 0
 
     -- Initialise AI for all teams that are set to use it
 
@@ -532,39 +494,39 @@ function gadget:Initialize()
 
             local home_x,home_y,home_z = Spring.GetTeamStartPosition(t)
 
-			myTeam[t] = t
+            myTeam[t] = t
 
-			teamsData[t] = { squads={} } --squads! 4 per team. a way of grouping units.
-			
-			
-			teamsData[t].squads[1] = {}
---			teamsData[t].squadBusy[1] = 0
-			
-			teamsData[t].squads[2] = {}
---			teamsData[t].squadBusy[2] = 0
-			
-			teamsData[t].squads[3] = {}
---			teamsData[t].squadBusy[3] = 0
-			
-			teamsData[t].squads[4] = {}
---			teamsData[t].squadBusy[4] = 0
+            teamsData[t] = { squads={} } --squads! 4 per team. a way of grouping units.
+            
+            
+            teamsData[t].squads[1] = {}
+--          teamsData[t].squadBusy[1] = 0
+            
+            teamsData[t].squads[2] = {}
+--          teamsData[t].squadBusy[2] = 0
+            
+            teamsData[t].squads[3] = {}
+--          teamsData[t].squadBusy[3] = 0
+            
+            teamsData[t].squads[4] = {}
+--          teamsData[t].squadBusy[4] = 0
 
 
-			Spring.Echo ("Schwarm AI will play for team  " .. t .." GetTeamLuaAI: " ..  Spring.GetTeamLuaAI(t))        
+            Spring.Echo ("Schwarm AI will play for team  " .. t .." GetTeamLuaAI: " ..  Spring.GetTeamLuaAI(t))        
 
-		end
+        end
 
     end
 
-	if (myTeam == nil) then 
+    if (myTeam == nil) then 
 
-		Spring.Echo ("Schwarm AI: not used, byebye.")
+        Spring.Echo ("Schwarm AI: not used, byebye.")
 
-		gadgetHandler:RemoveGadget()
+        gadgetHandler:RemoveGadget()
 
-	end
+    end
 
-	printStages ()
+    printStages ()
 
 end
 
@@ -574,7 +536,7 @@ end
 
 function think (teamID, data)
 
-	return data
+    return data
 
 end
 
@@ -582,13 +544,13 @@ end
 
 function gadget:UnitIdle(unitID, unitDefID, teamID)
 
-	unitOnMission[unitID] = nil
+    unitOnMission[unitID] = nil
 
 end
 
 
 
-	
+    
 
 
 
@@ -598,104 +560,106 @@ end
 
 function gadget:UnitDestroyed(unitID, unitDefID, unitTeam, attackerID)
 
-	
+    
 
-	unitOnMission[unitID] = nil
+    unitOnMission[unitID] = nil
 
-	if (  (isTeamCBM (unitTeam)) and (attackerID ~= nil)) then --it should ignore tower morphs now, because attackerID=nil when it's a morph
+    if (  (isTeamCBM (unitTeam)) and (attackerID ~= nil)) then --it should ignore tower morphs now, because attackerID=nil when it's a morph
 
-		local goto_x, goto_y, goto_z = Spring.GetUnitPosition (unitID)
+        local goto_x, goto_y, goto_z = Spring.GetUnitPosition (unitID)
 
-		squadThatWillGo = math.random(1,4)
+        squadThatWillGo = math.random(1,4)
 
-		machTargetArea(unitTeam, goto_x, goto_z, squadThatWillGo) 
+        machTargetArea(unitTeam, goto_x, goto_z, squadThatWillGo) 
 
-		Spring.Echo(attackerID)
+        --Spring.Echo(attackerID)
 
-	end
+    end
 
-end	
+end 
 
-	
+    
 
 function gadget:GameFrame(frame)
 
-	for i in pairs(unitOnMission) do
+    for i in pairs(unitOnMission) do
 
-		unitOnMission[i] = unitOnMission[i] -1
+        unitOnMission[i] = unitOnMission[i] -1
 
-		if (unitOnMission[i] < 0) then unitOnMission[i] = 0 end
+        if (unitOnMission[i] < 0) then unitOnMission[i] = 0 end
 
-	end
-	
---	for i,v in ipairs(teamsData) do
---		for count = 1,4 do
---			
---			v.squadBusy[count] = v.squadBusy[count] - 1
---			
---			if (v.squadBusy[count] < 0) then v.squadBusy[count] = 0 end
---		end
---	end
-	
+    end
+    
+--  for i,v in ipairs(teamsData) do
+--      for count = 1,4 do
+--          
+--          v.squadBusy[count] = v.squadBusy[count] - 1
+--          
+--          if (v.squadBusy[count] < 0) then v.squadBusy[count] = 0 end
+--      end
+--  end
+    
 
 
-	if (frame % 30 ~=0) then return end
-	
-	
+    if (frame % 30 ~=0) then return end
+    
+    
 
-	--Spring.Echo ("lÃ¤uft")
+    --Spring.Echo ("lÃ¤uft")
 
-	for _,t in pairs(myTeam) do
-	
-		if (frame % 450 ==0) then --every 15 secs
-			local costofunit = 375 --about what a drone costs.
-			
-			local ourmetal = Spring.GetTeamResources (myTeam[t], "metal")
-			local unitsWeMakeRaw = ourmetal/costofunit
-			local unitsWeMake = round(unitsWeMakeRaw,0)
-			for i=1,unitsWeMake do
-				unitWeWillMake = unweighted_choice( {"kdronewarrior", "klightdrone", "kdronewarrior", "klightdrone","kdronewarrior", "klightdrone", "kdronewarrior", "klightdrone", "kdiairdrone", "kdiaridrone", "ktriairdrone", "ktriairdrone", "ktriairdrone" } )
-				makeSomeUnits(myTeam[t], {[unitWeWillMake]=1} )
-			end
-		end
+    for _,t in pairs(myTeam) do
+    
+        if (frame % 450 ==0) then --every 15 secs
+            local costofunit = 375 --about what a drone costs.
+            
+            local ourmetal = Spring.GetTeamResources (myTeam[t], "metal")
+            local unitsWeMakeRaw = ourmetal/costofunit
+            local unitsWeMake = round(unitsWeMakeRaw,0)
+            for i=1,unitsWeMake do
+                unitWeWillMake = unweighted_choice( {"kdronewarrior", "klightdrone", "kdronewarrior", "klightdrone","kdronewarrior", "klightdrone", "kdronewarrior", "klightdrone", "kdiairdrone", "kdiaridrone", "ktriairdrone", "ktriairdrone", "ktriairdrone" } )
+                makeSomeUnits(myTeam[t], {[unitWeWillMake]=1} )
+                --Spring.Echo("made a unit via unitsWeMake algorithm!")
+                --Spring.Echo(unitWeWillMake)
+            end
+        end
 
-		--Spring.Echo ("SchwarmAI is playing for team " .. myTeam[t])		
+        --Spring.Echo ("SchwarmAI is playing for team " .. myTeam[t])       
 
-		local h, missing = getHighestCompleteStage (myTeam[t])
+        local h, missing = getHighestCompleteStage (myTeam[t])
 
-		--Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
+        Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
 
-		if (missing) then
+        if (missing) then
 
-			if (unitCount (myTeam[t], "kdroneengineer") < (missing["kdroneminingtower"] or 0) ) then
+            if (unitCount (myTeam[t], "kdroneengineer") < (missing["kdroneminingtower"] or 0) ) then
 
-				missing["kdroneengineer"] = (missing["kdroneengineer"] or 0) +  (missing["kdroneminingtower"] -unitCount (myTeam[t], "kdroneengineer"))
+                missing["kdroneengineer"] = (missing["kdroneengineer"] or 0) +  (missing["kdroneminingtower"] -unitCount (myTeam[t], "kdroneengineer"))
 
-			end
+            end
 
-		makeSomeUnits (myTeam[t], missing)
+        makeSomeUnits (myTeam[t], missing)
 
-		undeployEmptyMiningTowers (myTeam[t])
+        undeployEmptyMiningTowers (myTeam[t])
 
-		--if (not missing["kgrounddronestructure"] and not missing["kairdronestructure"]) then
+        --if (not missing["kgrounddronestructure"] and not missing["kairdronestructure"]) then
 
-			--sendOutIdleEngineers (myTeam[t])
+            --sendOutIdleEngineers (myTeam[t])
 
-		--end
+        --end
 
-		end
+        end
 
-		
+        
 
-	--data = think (teamID, data[teamID]
+    --data = think (teamID, data[teamID]
 
-		--
+        --
 
-		
+        
 
-		--clonetest(myTeam[t])
+        --clonetest(myTeam[t])
 
-	end
+    end
 
 end
 
@@ -709,23 +673,23 @@ function machGo (teamID) --alle rushen mit
 
 
 
-	local all_units = Spring.GetTeamUnits (teamID)
+    local all_units = Spring.GetTeamUnits (teamID)
 
-	if (all_units == nil) then return end		
+    if (all_units == nil) then return end       
 
-	for i,unitID in pairs(all_units) do
+    for i,unitID in pairs(all_units) do
 
-		if (Spring.ValidUnitID (unitID)) then
+        if (Spring.ValidUnitID (unitID)) then
 
-			local x = math.random(Game.mapSizeX)
+            local x = math.random(Game.mapSizeX)
 
-			local z = math.random(Game.mapSizeZ)
+            local z = math.random(Game.mapSizeZ)
 
-			Spring.GiveOrderToUnit(unitID, CMD.FIGHT , {x, Spring.GetGroundHeight (x,z), z  }, {})
+            Spring.GiveOrderToUnit(unitID, CMD.FIGHT , {x, Spring.GetGroundHeight (x,z), z  }, {})
 
-		end
+        end
 
-	end
+    end
 
 end
 
@@ -734,23 +698,23 @@ end
 function machPatrol (teamID) --alle rushen mit
 
 
-	local all_units = Spring.GetTeamUnits (teamID)
+    local all_units = Spring.GetTeamUnits (teamID)
 
-	if (all_units == nil) then return end		
+    if (all_units == nil) then return end       
 
-	for i,unitID in pairs(all_units) do
+    for i,unitID in pairs(all_units) do
 
-		if (Spring.ValidUnitID (unitID)) then
+        if (Spring.ValidUnitID (unitID)) then
 
-			local x = math.random(Game.mapSizeX)
+            local x = math.random(Game.mapSizeX)
 
-			local z = math.random(Game.mapSizeZ)
+            local z = math.random(Game.mapSizeZ)
 
-			Spring.GiveOrderToUnit(unitID, CMD.PATROL , {x, Spring.GetGroundHeight (x,z), z  }, {})
+            Spring.GiveOrderToUnit(unitID, CMD.PATROL , {x, Spring.GetGroundHeight (x,z), z  }, {})
 
-		end
+        end
 
-	end
+    end
 
 end
 
@@ -763,19 +727,19 @@ end
 function machTargetArea (teamID, x, z, squadGo) 
 
 
-	if (teamsData[teamID].squads[squadGo] == nil) then return end
+    if (teamsData[teamID].squads[squadGo] == nil) then return end
 
-	for i,unitID in pairs(teamsData[teamID].squads[squadGo]) do
+    for i,unitID in pairs(teamsData[teamID].squads[squadGo]) do
 
-		if ( ( unitName (unitID) ~= "kdroneengineer" ) and (Spring.ValidUnitID (unitID)) ) then
-			
-			Spring.GiveOrderToUnit(unitID, CMD.FIGHT , {x, Spring.GetGroundHeight (x,z), z  }, {})
+        if ( ( unitName (unitID) ~= "kdroneengineer" ) and (Spring.ValidUnitID (unitID)) ) then
+            
+            Spring.GiveOrderToUnit(unitID, CMD.FIGHT , {x, Spring.GetGroundHeight (x,z), z  }, {})
 
-			unitOnMission[unitID] = 60
+            unitOnMission[unitID] = 60
 
-		end
+        end
 
-	end
+    end
 
 end
 
@@ -785,7 +749,7 @@ end
 
 function moveTo (unitID, tx, tz, keys)
 
-	Spring.GiveOrderToUnit(unitID, CMD.MOVE , {tx, Spring.GetGroundHeight (tx,tz), tz  }, {keys})
+    Spring.GiveOrderToUnit(unitID, CMD.MOVE , {tx, Spring.GetGroundHeight (tx,tz), tz  }, {keys})
 
 end
 
@@ -795,19 +759,19 @@ end
 
 function moveAway (unitID, r, keys)
 
-	local x,y,z = Spring.GetUnitPosition (unitID)
+    local x,y,z = Spring.GetUnitPosition (unitID)
 
-	if (x and y and z) then
+    if (x and y and z) then
 
-		local a = math.rad (math.random (0,360))
+        local a = math.rad (math.random (0,360))
 
-		x = x + (math.sin (a) * r)
+        x = x + (math.sin (a) * r)
 
-		z = z + (math.cos (a) * r) 
+        z = z + (math.cos (a) * r) 
 
-		moveTo (unitID, x, z, keys)
+        moveTo (unitID, x, z, keys)
 
-	end
+    end
 
 end
 
@@ -815,19 +779,19 @@ end
 
 function patrolAway (unitID, r, keys)
 
-	local x,y,z = Spring.GetUnitPosition (unitID)
+    local x,y,z = Spring.GetUnitPosition (unitID)
 
-	if (x and y and z) then
+    if (x and y and z) then
 
-		local a = math.rad (math.random (0,360))
+        local a = math.rad (math.random (0,360))
 
-		x = x + (math.sin (a) * r)
+        x = x + (math.sin (a) * r)
 
-		z = z + (math.cos (a) * r) 
+        z = z + (math.cos (a) * r) 
 
-		Spring.GiveOrderToUnit(unitID, CMD.PATROL , {tx, Spring.GetGroundHeight (tx,tz), tz  }, {keys})
+        Spring.GiveOrderToUnit(unitID, CMD.PATROL , {tx, Spring.GetGroundHeight (tx,tz), tz  }, {keys})
 
-	end
+    end
 
 end
 
@@ -835,13 +799,13 @@ end
 
 function deployNearRes (unitID, keys)
 
-	local nearest_resID, rx,ry,rz, nearest_res_distance  = nearestResFromUnit (unitID)
+    local nearest_resID, rx,ry,rz, nearest_res_distance  = nearestResFromUnit (unitID)
 
-	--local ux,uy,uz = Spring.GetUnitPosition (unitID)
+    --local ux,uy,uz = Spring.GetUnitPosition (unitID)
 
-	local x,y,z = getBuildSpot (rx,ry,rz, "kdroneminingtower", 20, 5)
+    local x,y,z = getBuildSpot (rx,ry,rz, "kdroneminingtower", 20, 5)
 
-	deployAt (unitID,  x,z , keys)
+    deployAt (unitID,  x,z , keys)
 
 end
 
@@ -853,9 +817,9 @@ end
 
 function deployAt (unitID, tx,tz, keys)
 
-	Spring.GiveOrderToUnit(unitID, CMD.FIGHT , {tx, Spring.GetGroundHeight (tx,tz), tz  }, {keys})
+    Spring.GiveOrderToUnit(unitID, CMD.FIGHT , {tx, Spring.GetGroundHeight (tx,tz), tz  }, {keys})
 
-	Spring.GiveOrderToUnit(unitID, 31210,{UnitDefNames["kdroneminingtower"].id},{"shift"})
+    Spring.GiveOrderToUnit(unitID, 31210,{UnitDefNames["kdroneminingtower"].id},{"shift"})
 
 end
 
@@ -863,7 +827,7 @@ end
 
 function undeploy (unitID)
 
-	Spring.GiveOrderToUnit(unitID, 31210,{UnitDefNames["kdroneengineer"].id},{})
+    Spring.GiveOrderToUnit(unitID, 31210,{UnitDefNames["kdroneengineer"].id},{})
 
 end
 
@@ -871,13 +835,13 @@ end
 
 function do_attacknearest (unitID)
 
-	local enemy = Spring.GetUnitNearestEnemy (unitID)
+    local enemy = Spring.GetUnitNearestEnemy (unitID)
 
-	if (enemy) then 
+    if (enemy) then 
 
-		Spring.GiveOrderToUnit(unitID, CMD.ATTACK  , { enemy  }, {}) 
+        Spring.GiveOrderToUnit(unitID, CMD.ATTACK  , { enemy  }, {}) 
 
-	end
+    end
 
 end
 
@@ -885,11 +849,11 @@ end
 
 function cloneUnit (unitID, cloneDef)
 
-	if Spring.ValidUnitID (unitID) then
+    if Spring.ValidUnitID (unitID) then
 
-		Spring.GiveOrderToUnit(unitID, 33333,{cloneDef},{})
+        Spring.GiveOrderToUnit(unitID, 33333,{cloneDef},{})
 
-	end
+    end
 
 end
 
@@ -907,17 +871,17 @@ end
 
 function undeployEmptyMiningTowers (teamID)
 
-	local mtowers = Spring.GetTeamUnitsByDefs (teamID, {UnitDefNames["kdroneminingtower"].id})
+    local mtowers = Spring.GetTeamUnitsByDefs (teamID, {UnitDefNames["kdroneminingtower"].id})
 
-	--Spring.Echo ("#mtowers:" .. #mtowers)
+    --Spring.Echo ("#mtowers:" .. #mtowers)
 
-	for i in pairs (mtowers) do
+    for i in pairs (mtowers) do
 
-		local nearest_resID, rx,ry,rz, nearest_res_distance  = nearestResFromUnit (mtowers[i])
+        local nearest_resID, rx,ry,rz, nearest_res_distance  = nearestResFromUnit (mtowers[i])
 
-		if ((nearest_res_distance or 0) > 150) then undeploy (mtowers[i]) end
+        if ((nearest_res_distance or 0) > 150) then undeploy (mtowers[i]) end
 
-	end
+    end
 
 end
 
@@ -927,29 +891,29 @@ end
 
 function sendOutIdleEngineers (teamID)
 
-	local engs = Spring.GetTeamUnitsByDefs (teamID, {UnitDefNames["kdroneengineer"].id})
+    local engs = Spring.GetTeamUnitsByDefs (teamID, {UnitDefNames["kdroneengineer"].id})
 
-	if (engs == nil) then return end
+    if (engs == nil) then return end
 
-	--Spring.Echo ("#mtowers:" .. #mtowers)
+    --Spring.Echo ("#mtowers:" .. #mtowers)
 
-	for i in pairs (engs) do
+    for i in pairs (engs) do
 
-		if (Spring.ValidUnitID (engs[i])) then		
+        if (Spring.ValidUnitID (engs[i])) then      
 
-			if (not Spring.GetCommandQueue(engs[i])) then 
+            if (not Spring.GetCommandQueue(engs[i])) then 
 
-				Spring.Echo ("engineer " .. engs[i] .. " has nothing to do and runs away, lol")
+                Spring.Echo ("engineer " .. engs[i] .. " has nothing to do and runs away, lol")
 
-				moveAway (engs[i], 1000)
+                moveAway (engs[i], 1000)
 
-				deployNearRes (engs[i], "shift")
+                deployNearRes (engs[i], "shift")
 
-			end
+            end
 
-		end
+        end
 
-	end
+    end
 
 end
 
@@ -959,13 +923,13 @@ end
 
 function clonetest (teamID)
 
-	local munits = Spring.GetTeamUnitsByDefs (teamID, {UnitDefNames["kdroneengineer"].id})
+    local munits = Spring.GetTeamUnitsByDefs (teamID, {UnitDefNames["kdroneengineer"].id})
 
-	for i in pairs (munits) do
+    for i in pairs (munits) do
 
-		cloneUnit (munits[i], UnitDefNames["kdroneengineer"].id)
+        cloneUnit (munits[i], UnitDefNames["kdroneengineer"].id)
 
-	end
+    end
 
 end
 
@@ -973,70 +937,70 @@ end
 
 --function gadget:UnitFromFactory(unitID, unitDefID, unitTeam, factID, factDefID, userOrders)
 
---	if (factID) then unitOnMission [unitID] = 30 end
+--  if (factID) then unitOnMission [unitID] = 30 end
 
 --end
 
 
 
-function gadget:UnitFinished(unitID, unitDefID, teamID)	
+function gadget:UnitFinished(unitID, unitDefID, teamID) 
 
-	--moveAway (unitID, 200)
+    --moveAway (unitID, 200)
 
-	if (isTeamCBM (teamID)) then
+    if (isTeamCBM (teamID)) then
 
-		--Spring.Echo ("den controll ich!")
+        --Spring.Echo ("den controll ich!")
 
-		--Spring.GiveOrderToUnit(unitID, CMD.IDLEMODE,{0},{})	--always fly
+        --Spring.GiveOrderToUnit(unitID, CMD.IDLEMODE,{0},{})   --always fly
 
-		--if (unitIsMobile (unitID) == true) then
+        --if (unitIsMobile (unitID) == true) then
 
-			--Spring.Echo ("ich bin da und renn weg")
+            --Spring.Echo ("ich bin da und renn weg")
 
-			moveAway (unitID, 200)
+            moveAway (unitID, 200)
 
-			unitOnMission [unitID] = 30
+            unitOnMission [unitID] = 30
 
-			if ( (unitName(unitID) ~= "kdroneengineer") and (unitName(unitID) ~= "kdroneminingtower") and (unitName(unitID) ~= "kgrounddronestructure") and (unitName(unitID) ~= "kdroneairfactory") ) then
-				squadassign = math.random(1,4)
-				table.insert(teamsData[teamID].squads[squadassign], unitID) --random squad
-			end
+            if ( (unitName(unitID) ~= "kdroneengineer") and (unitName(unitID) ~= "kdroneminingtower") and (unitName(unitID) ~= "kgrounddronestructure") and (unitName(unitID) ~= "kdroneairfactory") ) then
+                squadassign = math.random(1,4)
+                table.insert(teamsData[teamID].squads[squadassign], unitID) --random squad
+            end
 
-		
+        
 
-		if ((unitName (unitID) ~= "kdroneengineer") or (unitName (unitID) ~= "ktridroneroller")) then
+        if ((unitName (unitID) ~= "kdroneengineer") or (unitName (unitID) ~= "ktridroneroller")) then
 
-			local x = math.random(Game.mapSizeX)
+            local x = math.random(Game.mapSizeX)
 
-			local z = math.random(Game.mapSizeZ)
+            local z = math.random(Game.mapSizeZ)
 
-			Spring.GiveOrderToUnit(unitID, CMD.FIGHT , {x, Spring.GetGroundHeight (x,z), z  }, {})
+            Spring.GiveOrderToUnit(unitID, CMD.FIGHT , {x, Spring.GetGroundHeight (x,z), z  }, {})
 
-		end
+        end
 
-	else
+    else
 
-		--Spring.Echo ("den controll ich NICHT!")
+        --Spring.Echo ("den controll ich NICHT!")
 
-	end
+    end
 
-	--if (teamID ~= myTeam) then return end
+    --if (teamID ~= myTeam) then return end
 
-	--Spring.Echo ("SchwarmAI: hab ne neue unit!")
+    --Spring.Echo ("SchwarmAI: hab ne neue unit!")
 
-	--local unitDef = UnitDefs[unitDefID]
+    --local unitDef = UnitDefs[unitDefID]
 
-	--if (unitDef.name == "kdroneengineer") then 
+    --if (unitDef.name == "kdroneengineer") then 
 
-		--local nearest_resID, rx,ry,rz, nearest_res_distance  = nearestResFromUnit (unitID)
+        --local nearest_resID, rx,ry,rz, nearest_res_distance  = nearestResFromUnit (unitID)
 
-		--Spring.Echo ("going to " .. rx .. ":" .. rz)
+        --Spring.Echo ("going to " .. rx .. ":" .. rz)
 
-		--deployAt (unitID,  rx+math.random(-50,50), rz+math.random(-50,50))		
+        --deployAt (unitID,  rx+math.random(-50,50), rz+math.random(-50,50))        
 
-	--end	
+    --end   
 
-	--if (isResourceType (unitDefID)) then Spring.Echo ("its a resource!") end 
+    --if (isResourceType (unitDefID)) then Spring.Echo ("its a resource!") end 
 
 end
 
@@ -1052,13 +1016,13 @@ end
 
 function isTeamCBM (teamID)
 
-	for t in pairs(myTeam) do
+    for t in pairs(myTeam) do
 
-		if (teamID == myTeam[t]) then return true end
+        if (teamID == myTeam[t]) then return true end
 
-	end
+    end
 
-	return false
+    return false
 
 end
 
@@ -1071,60 +1035,60 @@ function round(num, idp) --mathematical rounding
 end
 
 function unweighted_choice ( inputTable )
-	local numchoices = 0
-	for i,v in ipairs(inputTable) do
-		numchoices = numchoices+1
-	end
-	
-	local x = math.random(1, numchoices)
-	
-	return inputTable[x]
+    local numchoices = 0
+    for i,v in ipairs(inputTable) do
+        numchoices = numchoices+1
+    end
+    
+    local x = math.random(1, numchoices)
+    
+    return inputTable[x]
 end
 
 
 function unitIsMobile(unitID)
 
-	local udID =Spring.GetUnitDefID(unitID)
+    local udID =Spring.GetUnitDefID(unitID)
 
-	local uDef = UnitDefs [udID]	
+    local uDef = UnitDefs [udID]    
 
-	return (uDef.maxVelocity or 0) > 0
+    return (uDef.maxVelocity or 0) > 0
 
 end
 
 
 
-function getBuildSpot (ux, uy, uz, buildingname, r, rgrow)	
+function getBuildSpot (ux, uy, uz, buildingname, r, rgrow)  
 
-	--Spring.MarkerAddPoint (ux,uy,uz, "trying to find a spot here")
+    --Spring.MarkerAddPoint (ux,uy,uz, "trying to find a spot here")
 
-	local blocked = 0
+    local blocked = 0
 
-	if (r == nil) then r = 200 end
+    if (r == nil) then r = 200 end
 
-	if (rgrow == nil) then rgrow = 200 end
+    if (rgrow == nil) then rgrow = 200 end
 
-	try = 0
+    try = 0
 
-	while (blocked ~=2 and try < 20) do
+    while (blocked ~=2 and try < 20) do
 
-		x = ux + math.random (-r, r)
+        x = ux + math.random (-r, r)
 
-		z = uz + math.random (-r, r)
+        z = uz + math.random (-r, r)
 
-		y = Spring.GetGroundHeight (x,z)
+        y = Spring.GetGroundHeight (x,z)
 
-		--blocked =Spring.TestBuildOrder (UnitDefNames[buildingname].id, x,y,z,0)
+        --blocked =Spring.TestBuildOrder (UnitDefNames[buildingname].id, x,y,z,0)
 
-		r = r +rgrow
+        r = r +rgrow
 
-		try = try +1
+        try = try +1
 
-	end	
+    end 
 
-	--Spring.MarkerAddPoint (x,y,z, "found this after " .. try .. " tries")
+    --Spring.MarkerAddPoint (x,y,z, "found this after " .. try .. " tries")
 
-	return x,y,z
+    return x,y,z
 
 end
 
@@ -1132,7 +1096,7 @@ end
 
 function units_allied (unitID1, unitID2)
 
-	return Spring.GetUnitAllyTeam (unitID1) == Spring.GetUnitAllyTeam (unitID2)
+    return Spring.GetUnitAllyTeam (unitID1) == Spring.GetUnitAllyTeam (unitID2)
 
 end
 
@@ -1142,57 +1106,57 @@ end
 
 function nearestResFromUnit (uID)
 
-	local nearest_resID = nil
+    local nearest_resID = nil
 
-	local nearest_res_distance = 9999999999
+    local nearest_res_distance = 9999999999
 
-	local x,y,z = Spring.GetUnitPosition(uID)
+    local x,y,z = Spring.GetUnitPosition(uID)
 
-	if (not x or not z) then return end
+    if (not x or not z) then return end
 
-	res=Spring.GetUnitsInCylinder (x,z, 5000, Spring.GetGaiaTeamID())
+    res=Spring.GetUnitsInCylinder (x,z, 5000, Spring.GetGaiaTeamID())
 
-	if (res == nil) then return nil end	--no near units at all :/
+    if (res == nil) then return nil end --no near units at all :/
 
-	--Spring.Echo ("#res:" .. #res)
+    --Spring.Echo ("#res:" .. #res)
 
-	for i in pairs (res) do
+    for i in pairs (res) do
 
-		if Spring.ValidUnitID (res[i]) then
+        if Spring.ValidUnitID (res[i]) then
 
-			--Spring.Echo ("jo:"..res[i])
+            --Spring.Echo ("jo:"..res[i])
 
-			--Spring.Echo ("vergleiche" .. res[i])
+            --Spring.Echo ("vergleiche" .. res[i])
 
-			--if (isResourceType (Spring.GetUnitDefID(res[i])) == true) then			
+            --if (isResourceType (Spring.GetUnitDefID(res[i])) == true) then            
 
-			if (true) then
+            if (true) then
 
-				local d = Spring.GetUnitSeparation (uID, res[i])
+                local d = Spring.GetUnitSeparation (uID, res[i])
 
-				if (d < nearest_res_distance) then
+                if (d < nearest_res_distance) then
 
-					nearest_res_distance = d
+                    nearest_res_distance = d
 
-					nearest_resID = res[i]
+                    nearest_resID = res[i]
 
-				end
+                end
 
-			end
+            end
 
-		end
+        end
 
-	end
+    end
 
-	if (nearest_resID~=nil) then 		
+    if (nearest_resID~=nil) then        
 
-		local rx,ry,rz=Spring.GetUnitPosition(nearest_resID)
+        local rx,ry,rz=Spring.GetUnitPosition(nearest_resID)
 
-		return nearest_resID, rx,ry,rz, nearest_res_distance 
+        return nearest_resID, rx,ry,rz, nearest_res_distance 
 
-		else return 666,666,666,666,666,666,666 --lol! -yanom
+        else return 666,666,666,666,666,666,666 --lol! -yanom
 
-	end
+    end
 
 end
 
@@ -1200,25 +1164,25 @@ end
 
 --funzt!
 
-function isResourceType (unitDefID)	
+function isResourceType (unitDefID) 
 
-	if (UnitDefID == nil) then return false end
+    if (UnitDefID == nil) then return false end
 
-	local udef = UnitDefs[unitDefID]
+    local udef = UnitDefs[unitDefID]
 
-	if (udef) then
+    if (udef) then
 
-		local cp = udef.customParams
+        local cp = udef.customParams
 
-		if (cp) then
+        if (cp) then
 
-			if (cp.is_mineable) then return true end
+            if (cp.is_mineable) then return true end
 
-		end
+        end
 
-	end
+    end
 
-	return false
+    return false
 
 end
 
@@ -1232,27 +1196,27 @@ end
 
 function gadget:RecvLuaMsg(msg, playerID)
 
-	--Spring.Echo ("AI: look what i got " .. msg)
+    --Spring.Echo ("AI: look what i got " .. msg)
 
-	if (msg:find("MapDrawCmd",1,true)) then
+    if (msg:find("MapDrawCmd",1,true)) then
 
-		local p = explode ("|", msg)
+        local p = explode ("|", msg)
 
-		if (p[3] == "point") then
+        if (p[3] == "point") then
 
-			local x = p[4]
+            local x = p[4]
 
-			local y = p[5]
+            local y = p[5]
 
-			local z = p[6]
+            local z = p[6]
 
-			local label = p[7]
+            local label = p[7]
 
-		end
+        end
 
-	end
+    end
 
-	
+    
 
 end
 
@@ -1276,25 +1240,25 @@ function explode(d,p)
 
   if(#p == 1) then return {p} end
 
-	while true do
+    while true do
 
-	  l=string.find(p,d,ll,true) -- find the next d in the string
+      l=string.find(p,d,ll,true) -- find the next d in the string
 
-	  if l~=nil then -- if "not not" found then..
+      if l~=nil then -- if "not not" found then..
 
-		table.insert(t, string.sub(p,ll,l-1)) -- Save it in our array.
+        table.insert(t, string.sub(p,ll,l-1)) -- Save it in our array.
 
-		ll=l+1 -- save just after where we found it for searching next time.
+        ll=l+1 -- save just after where we found it for searching next time.
 
-	  else
+      else
 
-		table.insert(t, string.sub(p,ll)) -- Save what's left in our array.
+        table.insert(t, string.sub(p,ll)) -- Save what's left in our array.
 
-		break -- Break at end, as it should be, according to the lua manual.
+        break -- Break at end, as it should be, according to the lua manual.
 
-	  end
+      end
 
-	end
+    end
 
   return t
 
@@ -1310,9 +1274,9 @@ else ------UNSYNCED--------
 
 
 
---function gadget:AddConsoleLine(msg,priority)							--does not work
+--function gadget:AddConsoleLine(msg,priority)                          --does not work
 
---	Spring.Echo ("i hear you man")
+--  Spring.Echo ("i hear you man")
 
 --end
 
@@ -1322,9 +1286,9 @@ else ------UNSYNCED--------
 
 
 
---function gadget:KeyPress(key) 										--this works!
+--function gadget:KeyPress(key)                                         --this works!
 
-	--Spring.Echo ("pressed key in gadget: " .. key)
+    --Spring.Echo ("pressed key in gadget: " .. key)
 
 --end
 
@@ -1332,12 +1296,12 @@ else ------UNSYNCED--------
 
 --function gadget:MapDrawCmd(playerID, cmdType, px, py, pz, label)
 
---	Spring.Echo ("marker!")
+--  Spring.Echo ("marker!")
 
---	Spring.Echo ("playerID: " .. playerID .. "cmdType:" .. cmdType .. "px:" .. px .. "py:" .. py .. "pz:" .. pz .."label:" .. label)	
+--  Spring.Echo ("playerID: " .. playerID .. "cmdType:" .. cmdType .. "px:" .. px .. "py:" .. py .. "pz:" .. pz .."label:" .. label)    
 
 --end
 
-end	--end unsynced
+end --end unsynced
 
 
