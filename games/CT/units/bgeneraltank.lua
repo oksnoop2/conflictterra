@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bgeneraltank]],
 	  name                = [[Taisho Type Tank]],
-	  description         = [[General's Tank - Tough, dual-cannon tank. Unlocks stronger units. - Build Limit: 1]],
+	  description         = [[General's Tank - Heals surrounding units. Unlocks stronger units. - Build Limit: 1]],
 	  acceleration        = 0.5,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 1000,
