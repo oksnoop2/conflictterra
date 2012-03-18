@@ -46,7 +46,7 @@ unitDef = {
   footprintZ                    = 18,
   idleAutoHeal                  = 0,
   mass                          = 275,
-  maxDamage                     = 4500,
+  maxDamage                     = 3000,
   maxSlope                      = 15,
   maxWaterDepth                 = 0,
   metalMake                     = 0,
@@ -90,42 +90,36 @@ unitDef = {
       description      = [[Wreckage - Deployed Mori Class Cruiser]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 2250,
+      damage           = 1500,
       energy           = 0,
       featureDead      = [[DEAD2]],
       footprintX       = 13,
       footprintZ       = 18,
       mass             = 2000,
-      metal            = 225,
+      metal            = 150,
       object           = [[wrecks/btankcruiserfactorywreck.s3o]],
       reclaimable      = true,
-      reclaimTime      = 6600,
+      reclaimTime      = 4500,
     },
 
 
     DEAD2 = {
       description      = [[Debris - Deployed Mori Class Cruiser]],
       blocking         = false,
-
       category         = [[heaps]],
-      damage           = 1125,
+      damage           = 750,
       energy           = 0,
       footprintX       = 13,
       footprintZ       = 18,
       mass             = 750,
-      metal            = 112,
+      metal            = 75,
       object           = [[b7x7heap.s3o]],
       reclaimable      = true,
-      reclaimTime      = 3300,
+      reclaimTime      = 2250,
     },
-
-
+	
   },
 
-
-
 }
-
-
 
 return lowerkeys({ btankcruiserfactory = unitDef })

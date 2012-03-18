@@ -50,7 +50,7 @@ unitDef = {
   footprintZ                    = 18,
   idleAutoHeal                  = 0,
   mass                          = 275,
-  maxDamage                     = 4500,
+  maxDamage                     = 3000,
   maxSlope                      = 15,
   maxWaterDepth                 = 0,
   metalMake                     = 0,
@@ -94,42 +94,36 @@ unitDef = {
       description      = [[Wreckage - Deployed Saito Class Cruiser]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 2250,
+      damage           = 1500,
       energy           = 0,
       featureDead      = [[DEAD2]],
       footprintX       = 16,
       footprintZ       = 17,
       mass             = 2000,
-      metal            = 300,
+      metal            = 150,
       object           = [[wrecks/bmechcruiserfactorywreck.s3o]],
       reclaimable      = true,
-      reclaimTime      = 9000,
+      reclaimTime      = 4500,
     },
 
 
     DEAD2 = {
       description      = [[Debris - Deployed Saito Class Cruiser]],
       blocking         = false,
-
       category         = [[heaps]],
-      damage           = 1125,
+      damage           = 750,
       energy           = 0,
       footprintX       = 16,
       footprintZ       = 16,
       mass             = 750,
-      metal            = 150,
+      metal            = 75,
       object           = [[b16x16heap.s3o]],
       reclaimable      = true,
-      reclaimTime      = 4500,
+      reclaimTime      = 2250,
     },
-
 
   },
 
-
-
 }
-
-
 
 return lowerkeys({ bmechcruiserfactory = unitDef })

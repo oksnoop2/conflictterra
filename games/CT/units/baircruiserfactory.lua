@@ -38,7 +38,7 @@ unitDef = {
   idleAutoHeal                  = 0,
   isAirBase                     = false,
   mass                          = 275,
-  maxDamage                     = 4500,
+  maxDamage                     = 3000,
   maxSlope                      = 15,
   maxWaterDepth                 = 0,
   metalMake                     = 0,
@@ -82,7 +82,7 @@ unitDef = {
       description      = [[Wreckage - Deployed Azai Class Cruiser]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 2250,
+      damage           = 1500,
       energy           = 0,
       featureDead      = [[DEAD2]],
       footprintX       = 7,
@@ -98,9 +98,8 @@ unitDef = {
     DEAD2 = {
       description      = [[Debris - Deployed Azai Class Cruiser]],
       blocking         = false,
-
       category         = [[heaps]],
-      damage           = 1125,
+      damage           = 750,
       energy           = 0,
       footprintX       = 7,
       footprintZ       = 7,
@@ -111,13 +110,8 @@ unitDef = {
       reclaimTime      = 2250,
     },
 
-
   },
 
-
-
 }
-
-
 
 return lowerkeys({ baircruiserfactory = unitDef })
