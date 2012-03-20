@@ -68,8 +68,5 @@ return {
         texture            = [[ct_smoke]],
       },
     },	
-  
   },
-
-
 }
