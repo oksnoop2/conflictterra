@@ -65,7 +65,7 @@
 	  trackWidth          = 40,
 	  turnInPlace         = 1,
 	  turnRate            = 500,
-	  unitRestricted      = 1,
+	  --unitRestricted      = 1,
 	  script              = [[bgeneraltank.lua]],
 	
 	  weapons             = {

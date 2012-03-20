@@ -88,7 +88,7 @@ unitDef = {
 	  },
 
   workerTime                    = 1,
-  unitRestricted                = 1,  
+  --unitRestricted                = 1,  
   yardMap                       = [[cooocccccoooooocccccoooc cooocccccoooooocccccoooc cccccccccooooooccccccccc cccccccccooooooccccccccc cccccccccooooooccccccccc cccccccccooooooooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo ccccccccccoooocooooooooo cccccccccccooccooooooooo cccccccccccooccooooooooo cccccccccccooccooooooooo cccccccccccooccccccccccc cccccccccccooccccccccccc cccccccccccooccccccccccc cooocccccccoocccccccoooc cooocccccccoocccccccoooc]],
   script                        = [[bprimarycruiserbase.lua]],
 

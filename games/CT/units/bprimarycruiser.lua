@@ -79,7 +79,7 @@
 
 	  turnRate            = 250,
 	  upright             = true,
-	  unitRestricted      = 1,
+	  --unitRestricted      = 1,
 	  script              = [[bprimarycruiser.lua]],
 
 
