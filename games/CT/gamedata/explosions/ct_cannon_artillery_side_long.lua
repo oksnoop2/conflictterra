@@ -1,44 +1,39 @@
 	--ct_cannon_artillery_side_long
-	--Long side muzzle flares for artillery
+	--Long side muzzle flares for artillery (bvhsa) (particles)
 	--by Sanada
 
-	return {
-		["ct_cannon_artillery_side_long"] = {
-			bitmapmuzzleflame1 = {
-				ground             = true,
-				air                = true,
-				water              = true,
-				class              = [[CBitmapMuzzleFlame]],
-				count              = 1,
-				underwater         = 1,
-				properties = {
-					colormap           = [[1 1 0 1	    1 1 0 1     1 0.5 0 1]], --Colour map progress from one to next. Colors in RGBA
-					dir                = [[dir]],
-					frontoffset        = 0.5,
-					fronttexture       = [[ct_cannon_tank]],
-					length             = 20,
-					sidetexture        = [[ct_cannon_artillery_side]],
-					size               = 10,
-					sizegrowth         = 1,
-					ttl                = 10,
-				},
-			},
-
-			groundflash = {
-				air                = true,
-				ground             = true,
-				water              = true,
-				circlealpha        = 0.6,
-				circlegrowth       = 0,
-				flashalpha         = 0.2,
-				flashsize          = 20,
-				ttl                = 8, --Time To Live
-				--Red Green Blue
-				color = {
-					[1]  = 1,
-					[2]  = 0.8,
-					[3]  = 0,
-				},
-			},
-		},
-	}
+return {
+  ["ct_cannon_artillery_side_long"] = {
+    poof = {
+      air                = true,
+      class              = [[CSimpleParticleSystem]],
+      count              = 1,
+      ground             = true,
+      underwater         = 1,
+      useairlos          = true,
+      water              = true,
+      alwaysVisible      = true,
+	  properties = {
+        alwaysVisible      = true,
+	    airdrag            = 0.95,
+        colormap           = [[1 1 0 0.25	    1 0.75 0 0.15     1 0.5 0 0.05]],
+        directional        = 1,
+        emitrot            = 10,
+        emitrotspread      = 10,
+        emitvector         = [[dir]],
+        gravity            = [[0, 0, 0]],
+        numparticles       = 9,
+        particlelife       = 10,
+        particlelifespread = 5,
+        particlesize       = 0.85,
+        particlesizespread = 1,
+        particlespeed      = 2,
+        particlespeedspread = 1,
+        pos                = [[0, 0, 0]],
+        sizegrowth         = 1,
+        sizemod            = 1,
+        texture            = [[ct_smoke]],
+      },
+    },	
+  },
+}
