@@ -6,17 +6,11 @@ local klightdrone = {
     buildpic            = [[klightdrone.png]],
 	buildCostEnergy     = 150,
 	buildCostMetal      = 150,
-    buildDistance       = 150,
-    builder             = false,
-
 	buildTime           = 15,
-    canAssist           = true,
-	CanAttack 			= 1,
-	CanCapture			= false,
+	CanAttack 			= true,
     canGuard            = true,
 	canMove		  	    = true,
 	canPatrol           = true,
-    canReclaim          = true,
 	canStop             = true,
 	category            = [[LAND]],
     corpse              = [[DEAD]],
@@ -64,14 +58,9 @@ local klightdrone = {
 	  },
 
 	smoothAnim          = true,
-    terraformSpeed      = 300,
-	reclaimSpeed        = 300,
 	turnInPlace         = 1,
 	turnRate            = 1000,
-	showNanospray	    = 1,
-	Resurrectspeed      = 100,
-	workerTime          = 1,
-	script		    = "klightdrone.lua",
+	script              = "klightdrone.lua",
 
 	weapons             = {
 	
