@@ -34,7 +34,7 @@ local klightdrone = {
 	idleAutoHeal        = 1,
 	leaveTracks         = false,
 	mass                = 80,
-	maxDamage           = 700,
+	maxDamage           = 500,
     maxSlope            = 99999999,
 	maxVelocity         = 4,
     maxWaterDepth       = 10000,
@@ -95,11 +95,11 @@ local klightdrone = {
 	
 	      damage                  = {
 		default = 2,
-		Cruiser = 15,
+		Cruiser = 10,
 		Building = 2,
 		Mech = 2,
 		Tank = 2,
-		Aircraft = 15,
+		Aircraft = 10,
 		Ship = 2,
 		Sub = 2,
 
