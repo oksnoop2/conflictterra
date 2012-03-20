@@ -1,3 +1,6 @@
+--ct_drone_energyshot
+--Green pulsing CEG for Drone shots
+--derived from an effect for CA's Vulcan
 
 return {
   ["ct_drone_energyshot"] = {
