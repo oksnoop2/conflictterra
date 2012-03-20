@@ -34,11 +34,9 @@
 	  yardMap             = [[ooo ooo ooo]],
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_cannon_narrow",
 	    },
-	
 	  },
 
 	  sounds			= {

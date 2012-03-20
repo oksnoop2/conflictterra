@@ -10,7 +10,6 @@ unitDef = {
   reclaimable                   = false,
 
   buildoptions                  = {
-
 	[[bengineer]],
 	[[bminer]],
 	[[breztank]],
@@ -25,11 +24,11 @@ unitDef = {
   buildPic                      = [[bprimarycruiserbase.png]],
   buildTime                     = 30,
 
-  useBuildingGroundDecal	= true,
-  buildingGroundDecalType	= "grounddecals/resourcedropzone.png",
-  buildingGroundDecalSizeX	= 36,
-  buildingGroundDecalSizeY	= 36,
-  buildingGroundDecalDecaySpeed	= 1,
+  useBuildingGroundDecal        = true,
+  buildingGroundDecalType       = "grounddecals/resourcedropzone.png",
+  buildingGroundDecalSizeX      = 36,
+  buildingGroundDecalSizeY      = 36,
+  buildingGroundDecalDecaySpeed = 1,
 
   canAttack                     = true,
   canMove                       = true,
@@ -67,25 +66,22 @@ unitDef = {
   sightDistance                 = 500,
   smoothAnim                    = true,
 
-	  sounds			= {
-	      select = {
-		"",
-		},
+  sounds			= {
+      select = {
+	"",
+	},
+      ok = {
+	"",
+	},
+  },
 
-	      ok = {
-		"",
-		},
-	  },
-
-	  sfxtypes            = {
-	
-	    explosiongenerators = {
-		"custom:ct_cannon_narrow",
-		"custom:ct_buildlight_green",
-		"custom:ct_buildlight_red",
-	    },
-	
-	  },
+  sfxtypes            = {
+    explosiongenerators = {
+	"custom:ct_cannon_narrow",
+	"custom:ct_buildlight_green",
+	"custom:ct_buildlight_red",
+    },
+  },
 
   workerTime                    = 1,
   --unitRestricted                = 1,  

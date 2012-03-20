@@ -52,11 +52,9 @@
 	  },
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_missile_smokecloud",
 	    },
-	
 	  },
 
 	  turnInPlace         = 1,
@@ -96,6 +94,7 @@
 	      cegTag                  = [[ct_missiletail_small]],
 	      craterMult              = 0.25,
 	      accuracy                = 100,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 20,

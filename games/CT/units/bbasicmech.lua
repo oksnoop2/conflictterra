@@ -35,13 +35,11 @@
 	  selfDestructAs      = [[MEDIUM_UNIT]],
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_machinegun",
 		"custom:ct_jumpjet",
 		"custom:ct_jumpjet_land",
 	    },
-	
 	  },
 
 	  side                = [[NKG]],
@@ -74,6 +72,7 @@
 	      burstrate               = 0.001,
 	      craterMult              = 0.25,
 	      accuracy                = 200,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 15,
@@ -100,7 +99,7 @@
 	      reloadtime              = 0.2,
 	      rgbColor                = [[1 0.95 0.4]],
 	      separation              = 2,
-              size                    = 1.25,
+	      size                    = 1.25,
 	      soundStart              = [[ct/machine_gun]],
 	      soundStartVolume        = 0.5,
 	      soundTrigger            = true,

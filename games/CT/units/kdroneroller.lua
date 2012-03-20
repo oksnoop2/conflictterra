@@ -57,9 +57,6 @@
 	  turnRate            = 1000,
 	  script              = [[kdroneroller.lua]],
 	
-
-	
-	
 	  weapons             = {
 	
 	    {
@@ -79,6 +76,7 @@
 	      name                    = [[Artillery Cannon]],
 	      areaOfEffect            = 80,
 	      craterMult              = 0.25,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 200,

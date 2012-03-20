@@ -99,6 +99,7 @@
 	      areaOfEffect            = 160,
 	      cegTag                  = [[ct_missiletail_big]],
 	      craterMult              = 0.25,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 100,
@@ -129,7 +130,7 @@
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[nexuiz/rocket_fire]],
-	      texture2		      = [[ct_smoketrail]],
+	      texture2                = [[ct_smoketrail]],
 	      tolerance               = 8000,
 	      trajectoryHeight        = 0.5,
 	      tracks                  = false,
@@ -145,6 +146,7 @@
 	      areaOfEffect            = 48,
 	      cegTag                  = [[ct_missiletail_small]],
 	      craterMult              = 0.25,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 35,
@@ -174,7 +176,7 @@
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[nexuiz/rocket_fire]],
-	      texture2		      = [[ct_smoketrail]],
+	      texture2                = [[ct_smoketrail]],
 	      tolerance               = 8000,
 	      tracks                  = false,
 	      trajectoryHeight        = 0.5,

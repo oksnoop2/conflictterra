@@ -64,7 +64,7 @@ local bscoutmech = {
 	showNanospray	    = 0,
 	workerTime          = 1,
 	upright             = true,
-	script		    = "bscoutmech.lua",
+	script              = "bscoutmech.lua",
 
 	  featureDefs         = {
 	

@@ -54,11 +54,9 @@ local breztank = {
 	  },
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_weldingsparks",
 	    },
-	
 	  },
 
 	trackOffset         = 3,
@@ -71,11 +69,11 @@ local breztank = {
 	reclaimSpeed        = 300,
 	repairSpeed         = 0.5,
 	turnInPlace         = 0,
-	turnInPlaceSpeedLimit= 1,
+	turnInPlaceSpeedLimit = 1,
 	turnRate            = 500,
 	showNanospray	    = 0,
 	workerTime          = 1,
-	script		    = "breztank.lua",
+	script              = "breztank.lua",
 
 	  featureDefs         = {
 	

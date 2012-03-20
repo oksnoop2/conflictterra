@@ -40,18 +40,15 @@
 	  sightDistance       = 50,
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_machinegun_big",
 	    },
-	
 	  },
 
 	  sounds			= {
 	      select = {
 		"",
 		},
-
 	      ok = {
 		"",
 		},
@@ -61,7 +58,6 @@
 	  smoothAnim          = true,
 	  yardMap             = [[oo oo]],
 	  script              = [[bantitankmine.lua]],
-	
 	}
 	
 	return lowerkeys({ bantitankmine = unitDef })

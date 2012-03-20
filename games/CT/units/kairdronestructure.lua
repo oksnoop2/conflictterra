@@ -8,11 +8,9 @@ unitDef = {
   buildCostMetal                = 400,
   builder                       = true,
   buildoptions                  = {
-
 	[[kairdrone]],
 	[[kdiairdrone]],
 	[[ktriairdrone]],
-
   },
   
   buildPic                      = [[kairdronestructure.png]],
@@ -51,21 +49,19 @@ unitDef = {
   side                          = [[Drone]],
   sightDistance                 = 250,
 
-	  sounds			= {
-	      select = {
-		"golgotha/vehicle_done_44khz",
-		},
-	      ok = {
-		"golgotha/vehicle_done_44khz",
-		},
-	  },
+  sounds			= {
+      select = {
+	"golgotha/vehicle_done_44khz",
+	},
+      ok = {
+	"golgotha/vehicle_done_44khz",
+	},
+  },
 
   smoothAnim                    = true,
   workerTime                    = 1,
   yardMap                       = [[c]],
   script                        = [[kairdronestructure.lua]],
-
-
 
   featureDefs                   = {
 
@@ -82,9 +78,7 @@ unitDef = {
       object           = [[wrecks/kairdronefactorywreck.s3o]],
       reclaimable      = true,
       reclaimTime      = 60000,
-
     },
-
 
     DEAD2 = {
       description      = [[Debris - Drone Air Structure]],
@@ -98,16 +92,8 @@ unitDef = {
       object           = [[b7x7heap.s3o]],
       reclaimable      = true,
       reclaimTime      = 30000,
-
     },
-
-
   },
-
-
-
 }
-
-
 
 return lowerkeys({ kairdronestructure = unitDef })

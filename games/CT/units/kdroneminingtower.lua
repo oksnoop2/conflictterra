@@ -46,18 +46,15 @@
 	  sightDistance       = 450,
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_mininglaser_green",
 	    },
-	
 	  },
 
 	  sounds			= {
 	      select = {
 		"",
 		},
-
 	      ok = {
 		"",
 		},
@@ -77,7 +74,7 @@
           },
 	
 	
-	            weaponDefs          = {
+	  weaponDefs          = {
         
             Rock_Laser = {
               name                    = [[Rock Laser]],
@@ -85,10 +82,10 @@
               avoidFriendly           = 0,
               craterMult              = 0.25,
               accuracy                = 0,
-	      collideFriendly         = false,
+              collideFriendly         = false,
         
               damage                  = {
-		default = 1,
+                default = 1,
                 Cruiser = 1,
                 Building = 1,
                 Mech = 1,
@@ -97,16 +94,16 @@
                 Ship = 1,
                 Sub = 1,
 
-		Meteor = 1,
-		Drone = 1,
-		Spare1 = 1,
-		Spare2 = 1,
-		Spare3 = 1,
+                Meteor = 1,
+                Drone = 1,
+                Spare1 = 1,
+                Spare2 = 1,
+                Spare3 = 1,
               },
         
               explosionGenerator      = [[custom:resmining_green]],
               interceptedByShieldType = 1,
-	      impulseFactor           = 0,
+              impulseFactor           = 0,
               lineOfSight             = true,
               range                   = 130,
               reloadtime              = 0.2,
@@ -126,7 +123,7 @@
 
 			},
         
-          },
+	  },
 	
 	
 	  featureDefs         = {

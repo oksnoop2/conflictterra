@@ -70,11 +70,9 @@
 	  },
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_missile_smokecloud",
 	    },
-	
 	  },
 
 	  turnRate            = 250,

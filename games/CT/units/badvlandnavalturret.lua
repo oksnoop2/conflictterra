@@ -36,11 +36,9 @@
 	  sightDistance       = 750,
 	 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_cannon_narrow",
 	    },
-	
 	  },
 
 	  sounds			= {

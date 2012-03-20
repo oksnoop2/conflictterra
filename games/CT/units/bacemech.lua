@@ -104,6 +104,7 @@
 	      beamTime                = 1,
 	      craterMult              = 0.25,
 	      accuracy                = 100,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 500,
@@ -149,6 +150,7 @@
 	      areaOfEffect            = 32,
 	      craterMult              = 0.25,
 	      accuracy                = 200,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 100,

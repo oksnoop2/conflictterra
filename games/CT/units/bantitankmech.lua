@@ -36,11 +36,9 @@
 	  selfDestructAs      = [[SMALL_UNIT]],
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_cannon_narrow",
 	    },
-	
 	  },
 
 	  sounds			= {
@@ -81,6 +79,7 @@
 	      burst                   = 2,
 	      burstrate               = 0.001,
 	      craterMult              = 0.25,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 100,

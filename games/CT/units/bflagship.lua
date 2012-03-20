@@ -117,6 +117,7 @@
 	      avoidNeutral            = false,
 	      commandfire             = true,
 	      craterMult              = 0.25,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 99999,

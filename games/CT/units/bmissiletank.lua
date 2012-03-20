@@ -47,11 +47,9 @@
 	  },
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_missile_smokecloud",
 	    },
-	
 	  },
 
 	  side                = [[NKG]],
@@ -84,6 +82,7 @@
 	      areaOfEffect            = 48,
 	      craterMult              = 0.25,
 	      cegTag                  = [[ct_missiletail_small]],
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 35,

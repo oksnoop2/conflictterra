@@ -55,11 +55,9 @@ local ktriairdrone = {
 	  },
 	  
 	  sfxtypes          = {
-	
 	    explosiongenerators = {
 		"custom:ct_drone_binder_tri",
 	    },
-	
 	  },	  
 
 	smoothAnim          = true,

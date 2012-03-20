@@ -91,6 +91,7 @@ local klightdrone = {
 		  burnBlow                = true,
 		  canattackground         = false,
 	      craterMult              = 0.25,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 2,

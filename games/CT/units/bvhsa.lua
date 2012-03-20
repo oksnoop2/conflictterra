@@ -40,18 +40,13 @@
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],
 
-
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_machinegun",
 		"custom:ct_cannon_artillery",
 		"custom:ct_cannon_artillery_side_long",
 	    },
-	
 	  },
-
-
 
 	  sounds			= {
 	      select = {
@@ -99,6 +94,7 @@
 	      name                    = [[Heavy Artillery Cannon]],
 	      areaOfEffect            = 32,
 	      crater                  = 0.25,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 1000,
@@ -135,6 +131,7 @@
 	      name                    = [[Light Cannon]],
 	      areaOfEffect            = 32,
 	      craterMult              = 0.25,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 100,

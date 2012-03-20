@@ -50,12 +50,10 @@
 	  },
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_cannon_artillery",
 		"custom:ct_cannon_artillery_side",
 	    },
-	
 	  },
 
 	  side                = [[NKG]],
@@ -88,6 +86,7 @@
 	      areaOfEffect            = 16,
 	      craterMult              = 0.25,
 	      accuracy                = 50,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 600,

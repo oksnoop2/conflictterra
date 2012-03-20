@@ -37,16 +37,12 @@
 	  selfDestructAs      = [[BIG_UNITEX]],
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_cannon_artillery",
 		"custom:ct_cannon_artillery_side",
 		"custom:ct_machinegun",
 	    },
-	
 	  },
-
-
 
 	  sounds			= {
 	      select = {
@@ -91,8 +87,9 @@
 	    Cannon = {
 	      name                    = [[Artillery Cannon]],
 	      areaOfEffect            = 64,
-              craterMult              = 0.25,
+	      craterMult              = 0.25,
 	      accuracy                = 500,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 100,
@@ -132,6 +129,7 @@
 	      burstrate               = 0.001,
 	      craterMult              = 0.25,
 	      accuracy                = 200,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 15,
@@ -158,7 +156,7 @@
 	      reloadtime              = 0.2,
 	      rgbColor                = [[1 0.95 0.4]],
 	      separation              = 2,
-              size                    = 1.25,
+	      size                    = 1.25,
 	      soundStart              = [[ct/machine_gun]],
 	      soundStartVolume        = 0.5,
 	      soundTrigger            = true,

@@ -75,7 +75,7 @@ local kdroneengineer = {
 	showNanospray	    = 1,
 	Resurrectspeed      = 100,
 	workerTime          = 1,
-	script		    = "kdroneengineer.lua",
+	script              = "kdroneengineer.lua",
 
 	featureDefs         = {
 	

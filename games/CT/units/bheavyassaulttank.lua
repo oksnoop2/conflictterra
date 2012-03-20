@@ -42,11 +42,9 @@
 	  sightDistance       = 480,
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_cannon_tank",
 	    },
-	
 	  },
 
 
@@ -87,6 +85,7 @@
 	      name                    = [[Cannon]],
 	      areaOfEffect            = 32,
 	      craterMult              = 0.25,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 300,

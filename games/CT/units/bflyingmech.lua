@@ -39,11 +39,9 @@
 	  selfDestructAs      = [[MEDIUM_UNIT]],
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_missile_smokecloud",
 	    },
-	
 	  },
 
 	  sounds			= {

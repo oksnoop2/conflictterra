@@ -44,18 +44,15 @@
 	      select = {
 		"argh/Argh_Jet.wav",
 		},
-
 	      ok = {
 		"argh/Argh_Jet.wav",
 		},
 	  },
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_missile_smokecloud",
 	    },
-	
 	  },
 
 	  speedToFront        = 0,

@@ -52,13 +52,11 @@
 	  },
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_machinegun_blue",
 		"custom:ct_jumpjet",
 		"custom:ct_jumpjet_land",		
 	    },
-	
 	  },
 
 	  turnInPlace         = 1,
@@ -84,11 +82,12 @@
 	    Laser = {
 	      name                    = [[Burst Laser]],
 	      areaOfEffect            = 8,
-	      burst		      = 2,
-	      burstrate		      = 0.001,
+	      burst                   = 2,
+	      burstrate               = 0.001,
 	      coreThickness           = 0.5,
 	      craterMult              = 0.25,
 	      accuracy                = 200,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 20,

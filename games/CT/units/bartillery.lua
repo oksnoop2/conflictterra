@@ -39,12 +39,10 @@
 
 	  	    
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_cannon_artillery",
 		"custom:ct_cannon_artillery_side",
 	    },
-	
 	  },
 
 	  sounds			= {
@@ -82,6 +80,7 @@
 	      name                    = [[Artillery Cannon]],
 	      areaOfEffect            = 64,
 	      craterMult              = 0.25,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 200,

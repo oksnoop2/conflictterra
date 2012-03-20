@@ -18,10 +18,10 @@ unitDef = {
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
 
-  useBuildingGroundDecal	= true,
-  buildingGroundDecalType	= "grounddecals/resourcedropzone.png",
-  buildingGroundDecalSizeX	= 20,
-  buildingGroundDecalSizeY	= 20,
+  useBuildingGroundDecal        = true,
+  buildingGroundDecalType       = "grounddecals/resourcedropzone.png",
+  buildingGroundDecalSizeX      = 20,
+  buildingGroundDecalSizeY      = 20,
   buildingGroundDecalDecaySpeed	= 1,
 
   reclaimable                   = false,
@@ -47,7 +47,6 @@ unitDef = {
       select = {
 	"ct/generator_chatter",
 	},
-
       ok = {
 	"ct/generator_chatter",
 	},

@@ -40,13 +40,11 @@
 	  selfDestructCountdown = 10,
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_cannon_tank",
 		"custom:ct_cannon_artillery",
 		"custom:ct_cannon_artillery_side",
 	    },
-	
 	  },
 
 	  side                = [[NKG]],
@@ -106,6 +104,7 @@
 	      burstrate               = 0.01,
 	      craterMult              = 0.25,
 	      accuracy                = 500,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 200,
@@ -143,6 +142,7 @@
 	      areaOfEffect            = 32,
 	      craterMult              = 0.25,
 	      accuracy                = 200,
+		  collideFriendly         = false,
 	
 	      damage                  = {
 		default = 100,

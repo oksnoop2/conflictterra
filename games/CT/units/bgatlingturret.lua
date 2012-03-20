@@ -31,11 +31,9 @@
 	  sightDistance       = 400,
 
 	  sfxtypes            = {
-	
 	    explosiongenerators = {
 		"custom:ct_machinegun_big",
 	    },
-	
 	  },
 
 	  sounds			= {
