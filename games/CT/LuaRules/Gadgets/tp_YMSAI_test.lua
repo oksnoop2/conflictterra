@@ -601,7 +601,7 @@ function gadget:GameFrame(frame)
 
     for _,t in pairs(myTeam) do
     
-        if (frame % 450 ==0) then --every 15 secs
+        --[[if (frame % 450 ==0) then --every 15 secs
             local costofunit = 375 --about what a drone costs.
             
             local ourmetal = Spring.GetTeamResources (myTeam[t], "metal")
@@ -611,7 +611,7 @@ function gadget:GameFrame(frame)
                 unitWeWillMake = unweighted_choice( {"kdronewarrior", "klightdrone", "kdronewarrior", "klightdrone","kdronewarrior", "klightdrone", "kdronewarrior", "klightdrone", "kdiairdrone", "kdiaridrone", "ktriairdrone", "ktriairdrone", "ktriairdrone" } )
                 makeSomeUnits(myTeam[t], {[unitWeWillMake]=1} )
             end
-        end
+        end]]--
 
         --Spring.Echo ("SchwarmAI is playing for team " .. myTeam[t])       
 
