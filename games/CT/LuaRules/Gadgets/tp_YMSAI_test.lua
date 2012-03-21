@@ -119,16 +119,6 @@ stages[5]= { --mining boom phase
 
     }
 
-    
-for iii=6,100 do
-    stages[iii] = {
-    ["unitNumbers"]={
-        ["kdroneminingtower"]=iii+1,
-        --["kdroneengineer"]=iii,
-    },
-    skipMetal = math.huge
-    }
-end
 
 
 --funzt!
@@ -628,6 +618,15 @@ function gadget:GameFrame(frame)
         local h, missing = getHighestCompleteStage (myTeam[t])
 
         Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
+        if(stages[h+1] == nil) then
+            stages[h+1] = {
+                ["unitNumbers"]={
+                ["kdroneminingtower"]=h+2,
+                --["kdroneengineer"]=h+2,
+            },
+            skipMetal = math.huge
+            }
+        end
 
         if (missing) then
 
