@@ -6,17 +6,11 @@ local kdronewarrior = {
     buildpic            = [[kdronewarrior.png]],
 	buildCostEnergy     = 300,
 	buildCostMetal      = 300,
-    buildDistance       = 150,
-    builder             = false,
-
 	buildTime           = 15,
-    canAssist           = true,
-	CanAttack 			= 1,
-	CanCapture			= false,
+	CanAttack 			= true,
     canGuard            = true,
 	canMove		  	    = true,
 	canPatrol           = true,
-    canReclaim          = true,
 	canStop             = true,
 	category            = [[LAND]],
     corpse              = [[DEAD]],
@@ -34,7 +28,7 @@ local kdronewarrior = {
 	idleAutoHeal        = 1,
 	leaveTracks         = false,
 	mass                = 80,
-	maxDamage           = 900,
+	maxDamage           = 700,
     maxSlope            = 99999999,
 	maxVelocity         = 3,
     maxWaterDepth       = 10000,
@@ -63,6 +57,11 @@ local kdronewarrior = {
 		},
 	  },
 
+	smoothAnim          = true,
+	turnInPlace         = 1,
+	turnRate            = 1000,
+	script              = "kdronewarrior.lua",
+
 	weapons             = {
 	
 	    {
@@ -84,20 +83,20 @@ local kdronewarrior = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		default = 300,
-		Cruiser = 300,
-		Building = 300,
-		Mech = 300,
-		Tank = 300,
-		Aircraft = 300,
-		Ship = 300,
-		Sub = 300,
+		default = 100,
+		Cruiser = 100,
+		Building = 100,
+		Mech = 100,
+		Tank = 100,
+		Aircraft = 100,
+		Ship = 100,
+		Sub = 100,
 
 		Meteor = 0,
-		Drone = 300,
-		Spare1 = 300,
-		Spare2 = 300,
-		Spare3 = 300,
+		Drone = 100,
+		Spare1 = 100,
+		Spare2 = 100,
+		Spare3 = 100,
 	      },
 
 	      beamTime                = 0.5,
@@ -119,18 +118,8 @@ local kdronewarrior = {
 	      weaponVelocity          = 2000,
 	    },
 	
-	  },
-	  
-	smoothAnim          = true,
-    terraformSpeed      = 300,
-	reclaimSpeed        = 300,
-	turnInPlace         = 1,
-	turnRate            = 1000,
-	showNanospray	    = 1,
-	Resurrectspeed      = 100,
-	workerTime          = 1,
-	script		    = "kdronewarrior.lua",
-
+	  },	
+	
 	featureDefs         = {
 	
 	    DEAD  = {
