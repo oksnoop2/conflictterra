@@ -83,7 +83,7 @@
               shieldAlpha             = 1,
               shieldBadColor          = [[1 0 0]],
               shieldGoodColor         = [[0 0 1]],
-			  shieldforce             =10,
+			  shieldforce             = 10,
               shieldInterceptType     = 1,
               shieldPower             = 800,
               shieldPowerRegen        = 20,
