@@ -215,7 +215,7 @@ end
 
 local function StartClone(unitID, cloneDef)
   -- paralyze the unit
-  Spring.SetUnitHealth(unitID, { health = Spring.GetUnitHealth(unitID) * .5 })
+  Spring.SetUnitHealth(unitID, { health = Spring.GetUnitHealth(unitID) * 1 })           -- set to change health % while cloning
   Spring.SetUnitHealth(unitID, { paralyze = 1.0e9 })    -- turns mexes and mm off
   Spring.SetUnitResourcing(unitID,"e",0)                -- turns solars off
   --Spring.GiveOrderToUnit(unitID, CMD.ONOFF, { 0 }, { }) -- turns radars/jammers off   --knorke: recursion warning blabla?!
