@@ -119,15 +119,17 @@ stages[5]= { --mining boom phase
 
     }
 
+    
 for iii=6,100 do
     stages[iii] = {
     ["unitNumbers"]={
-        ["kdroneminingtower"]=iii,
-        ["kdroneengineer"]=iii,
+        ["kdroneminingtower"]=iii+1,
+        --["kdroneengineer"]=iii,
     },
     skipMetal = math.huge
     }
 end
+
 
 --funzt!
 
@@ -316,7 +318,7 @@ function canUnitBuildThis (parentName, childName)
 
     --falls sich gar niemand findet, kann sich auch ein mining tower zum engineer zurÃ¼ck morphen:
 
-    if (parentName == "kdroneminingtower" and childName == "kdroneengineer") then return true end
+    --if (parentName == "kdroneminingtower" and childName == "kdroneengineer") then return true end
 
     return false
 
@@ -618,8 +620,6 @@ function gadget:GameFrame(frame)
             for i=1,unitsWeMake do
                 unitWeWillMake = unweighted_choice( {"kdronewarrior", "klightdrone", "kdronewarrior", "klightdrone","kdronewarrior", "klightdrone", "kdronewarrior", "klightdrone", "kdiairdrone", "kdiaridrone", "ktriairdrone", "ktriairdrone", "ktriairdrone" } )
                 makeSomeUnits(myTeam[t], {[unitWeWillMake]=1} )
-                --Spring.Echo("made a unit via unitsWeMake algorithm!")
-                --Spring.Echo(unitWeWillMake)
             end
         end
 
