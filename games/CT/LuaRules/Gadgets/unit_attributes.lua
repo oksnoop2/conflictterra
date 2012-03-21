@@ -79,7 +79,7 @@ function gadget:GameFrame(f)
 			local ud = UnitDefs[udid]
 			
 			local burrowed = spGetUnitRulesParam(unitID,"burrowed")
-			
+			--[[
 			-- SLOW --
 			if burrowed ~= 1 then
 				local slowLevel = spGetUnitRulesParam(unitID,"slowState")
@@ -96,9 +96,10 @@ function gadget:GameFrame(f)
 				end
 			end
 			--end slow
-			
+			]]
 			-- AURAS --
 			--- Frenzy ---
+			--[[
 			if burrowed ~= 1 and spGetUnitRulesParam(unitID,"Frenzy Aura") == 1 then
 				for i,w in ipairs(ud.weapons) do
 					local origReload = WeaponDefs[w.weaponDef].reload
@@ -109,6 +110,7 @@ function gadget:GameFrame(f)
 					spSetUnitWeaponState(unitID, i-1, {reloadTime = curReload / 2, accuracy = origAcc * 3 } )
 				end
 			end
+			]]
 			--- Heal --
 			if spGetUnitRulesParam(unitID,"Heal Aura") == 1 then
 				spSetUnitHealth(unitID, spGetUnitHealth(unitID)+50 ) --10
@@ -154,7 +156,7 @@ function gadget:GameFrame(f)
 				end
 			end
 
-			
+			--[[
 			-- BURROWED --
 			if burrowed == 1 then
 			
@@ -226,7 +228,7 @@ function gadget:GameFrame(f)
 									
 			end
 			--end burrowed
-				
+				]]
 			
 		end
 	end
