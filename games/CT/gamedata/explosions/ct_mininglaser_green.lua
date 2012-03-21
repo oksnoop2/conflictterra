@@ -20,7 +20,7 @@
 					sidetexture        = [[ct_bigbeam]],
 					size               = 1,
 					sizegrowth         = 1,
-					ttl                = 6,
+					ttl                = 9, --6
 				},
 			},
 

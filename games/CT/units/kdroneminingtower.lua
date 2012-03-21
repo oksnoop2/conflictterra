@@ -106,7 +106,7 @@
               impulseFactor           = 0,
               lineOfSight             = true,
               range                   = 130,
-              reloadtime              = 0.2,
+              reloadtime              = 0.3,
               rgbColor                = [[1 0.95 0.4]],
               separation              = 2,
               size                    = 0.4,
