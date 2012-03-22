@@ -463,9 +463,6 @@ myTeam = {} --enthÃ¤lt alle teamids fÃ¼r die wir spielen, [1]=3, [2]=7 etc
 teamsData = {} --stores data for each team. Example: the rosters of each team's squad live here.
 
 
-
--- local data = {} -- [teamID].threatmap etc
-
  
 
 function gadget:Initialize() 
@@ -476,7 +473,7 @@ function gadget:Initialize()
 
     for _,t in ipairs(Spring.GetTeamList()) do
 
-        local _,_,_,ai,side = Spring.GetTeamInfo(t)                         --Greek to me (yanom)
+        local _,_,_,ai,side = Spring.GetTeamInfo(t)
 
         if ai and Spring.GetTeamLuaAI(t) == gadget:GetInfo().name then
 
@@ -484,24 +481,18 @@ function gadget:Initialize()
 
             local pos = {}
 
-            local home_x,home_y,home_z = Spring.GetTeamStartPosition(t)
 
             myTeam[t] = t
 
-            teamsData[t] = { squads={} } --squads! 4 per team. a way of grouping units.
+            teamsData[t] = { squads={}, home_x=0, home_y=0, home_z=0 } --squads! 4 per team. a way of grouping units.
             
+            teamsData[t].home_x,teamsData[t].home_y,teamsData[t].home_z = Spring.GetTeamStartPosition(t)
             
             teamsData[t].squads[1] = {}
---          teamsData[t].squadBusy[1] = 0
-            
             teamsData[t].squads[2] = {}
---          teamsData[t].squadBusy[2] = 0
-            
             teamsData[t].squads[3] = {}
---          teamsData[t].squadBusy[3] = 0
-            
             teamsData[t].squads[4] = {}
---          teamsData[t].squadBusy[4] = 0
+
 
 
             Spring.Echo ("Schwarm AI will play for team  " .. t .." GetTeamLuaAI: " ..  Spring.GetTeamLuaAI(t))        
