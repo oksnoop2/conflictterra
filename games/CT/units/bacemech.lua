@@ -64,7 +64,7 @@
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  upright             = true,
-	  --unitRestricted      = 3,
+	  unitRestricted      = 3,
 	  script              = [[bacemech.lua]],
 	
 	  weapons             = {
