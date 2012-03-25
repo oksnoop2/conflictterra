@@ -613,7 +613,7 @@ function gadget:GameFrame(frame)
             stages[h+1] = {
                 ["unitNumbers"]={
                 ["kdroneminingtower"]=h+2,
-                --["kdroneengineer"]=h+2,
+                ["kdronewarrior"]=h-2,
             },
             skipMetal = math.huge
             }
@@ -638,14 +638,6 @@ function gadget:GameFrame(frame)
         --end
 
         end
-
-        
-
-    --data = think (teamID, data[teamID]
-
-        --
-
-        
 
         --clonetest(myTeam[t])
 
@@ -824,15 +816,10 @@ end
 
 
 function do_attacknearest (unitID)
-
     local enemy = Spring.GetUnitNearestEnemy (unitID)
-
     if (enemy) then 
-
         Spring.GiveOrderToUnit(unitID, CMD.ATTACK  , { enemy  }, {}) 
-
     end
-
 end
 
 
@@ -846,14 +833,6 @@ function cloneUnit (unitID, cloneDef)
     end
 
 end
-
-
-
-function undeployRandomMiningTowers (teamID, n)
-
-end
-
----------------------------------
 
 
 
@@ -922,15 +901,6 @@ function clonetest (teamID)
     end
 
 end
-
-------------------------------------------------------
-
---function gadget:UnitFromFactory(unitID, unitDefID, unitTeam, factID, factDefID, userOrders)
-
---  if (factID) then unitOnMission [unitID] = 30 end
-
---end
-
 
 
 function gadget:UnitFinished(unitID, unitDefID, teamID) 
