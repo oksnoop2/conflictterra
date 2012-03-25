@@ -105,20 +105,20 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		default = 125,
-		Cruiser = 125,
-		Building = 100,
-		Mech = 125,
-		Tank = 125,
-		Aircraft = 125,
-		Ship = 125,
-		Sub = 125,
+		--Anti-Land
+		default = 60,
+		Cruiser = 60,
+		Building = 60,
+		Land = 120,
+		Aircraft = 60,
+		Ship = 60,
+		Sub = 60,
 
 		Meteor = 0,
-		Drone = 125,
-		Spare1 = 125,
-		Spare2 = 125,
-		Spare3 = 125,
+		Drone = 60,
+		Spare1 = 60,
+		Spare2 = 60,
+		Spare3 = 60,
 	      },
 	
 	      model                   = [[projectiles/blargemissile.s3o]],

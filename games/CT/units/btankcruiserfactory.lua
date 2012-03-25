@@ -4,8 +4,8 @@ unitDef = {
   name                          = [[Deployed Mori Class Cruiser]],
   description                   = [[Produces tanks and vehicles. Can Mobilize into the Mori Class Cruiser.]],
   amphibious                    = false,
-  buildCostEnergy               = 300, --450
-  buildCostMetal                = 300, --450
+  buildCostEnergy               = 300,
+  buildCostMetal                = 300,
   builder                       = true,
 
   buildoptions                  = {
@@ -13,20 +13,17 @@ unitDef = {
 	[[bminer]],
 	[[bscoutvehicle]],
 	[[bassaulttank]],
-	[[bmissiletank]],
 	[[baabuggy]],
 	[[breztank]],
 	[[bartillery]],
 	[[bgeneraltank]],
 	[[bheavyassaulttank]],
 	[[bheavymissiletank]],
-	[[baatruck]],
 	[[bvhsa]],
-	[[bempcannon]],
   },
 
   buildPic                      = [[btankcruiserfactory.png]],
-  buildTime                     = 30, --40
+  buildTime                     = 30,
   canMove                       = true,
   canPatrol                     = true,
   canStop                       = true,
@@ -69,12 +66,10 @@ unitDef = {
   },
 
   sfxtypes            		= {
-	
 	    explosiongenerators = {
 		"custom:ct_buildlight_green",
 		"custom:ct_buildlight_red",
 	    },
-	
   },
 
   smoothAnim                    = true,

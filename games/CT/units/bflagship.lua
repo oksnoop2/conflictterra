@@ -120,11 +120,11 @@
 		  collideFriendly         = false,
 	
 	      damage                  = {
+		--No Bonus...
 		default = 99999,
 		Cruiser = 99999,
 		Building = 99999,
-		Mech = 99999,
-		Tank = 99999,
+		Land = 99999,
 		Aircraft = 99999,
 		Ship = 99999,
 		Sub = 99999,
@@ -162,11 +162,11 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		--No Bonus
 		default = 100,
 		Cruiser = 100,
 		Building = 100,
-		Mech = 100,
-		Tank = 100,
+		Land = 100,
 		Aircraft = 100,
 		Ship = 100,
 		Sub = 100,

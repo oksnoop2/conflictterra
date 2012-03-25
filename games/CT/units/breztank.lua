@@ -23,7 +23,6 @@ local breztank = {
 	corpse              = [[DEAD]],
 	reclaimable         = false,
 
-
 	energyMake          = 0,
 	explodeAs           = [[SMALL_UNIT]],
 	footprintx          = 2,

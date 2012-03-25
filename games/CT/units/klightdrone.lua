@@ -84,11 +84,11 @@ local klightdrone = {
 		  collideFriendly         = false,
 	
 	      damage                  = {
+		--Anti-Plane
 		default = 2,
 		Cruiser = 10,
 		Building = 2,
-		Mech = 2,
-		Tank = 2,
+		Land = 2,
 		Aircraft = 10,
 		Ship = 2,
 		Sub = 2,

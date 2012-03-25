@@ -18,7 +18,7 @@
 			"bsupplydepotmobile",
 
 			--factory cruisers
-			"bmechcruiser2",
+			"bmechcruiser",
 			"btankcruiser",
 			"baircruiser",
   		},
@@ -78,26 +78,39 @@
 			"kairdronestructure",	
 		},
 
-		Mech  =  {
+		Land  =  {
 			--NKG--
 
 
 			--T1
+			--Mech Cruiser
 			"bengineer",
+			"bengineerai",
+			"bminer",
 			"bscoutmech",
 			"bbasicmech",
 			"bmissilemech",
 			"bantitankmech",
-			"bhovermech",
-			"bsiegemech",
 			"bsnipermech",
 			"bacemech",
+			
+			--Tank Cruiser
+			"bscoutvehicle",
+			"bassaulttank",
+			"baabuggy",
+			"breztank",
+			"bartillery",
+			"bgeneraltank",			
 			--T2
+			--Mech Cruiser
 			"bassaultmech",
 			"bheavymissilemech",
-			"bheavysiegemech",
-			"badvhovermech",
 			"bheavyassaultmech",
+			
+			--Tank Cruiser
+			"bheavyassaulttank",
+			"bheavymissiletank",
+			"bvhsa",		
 
 
 			--DRONE--
@@ -106,33 +119,6 @@
 			"kdroneengineer",
 			"kdronewarrior",
 			"klightdrone",
-		},
-
-		Tank = {
-			--NKG--
-
-
-			--T1
-			"bminer",
-			"bscoutvehicle",
-			"bassaulttank",
-			"bmissiletank",
-			"baabuggy",
-			"breztank",
-			"bartillery",
-			"bgeneraltank",
-			--T2
-			"bheavyassaulttank",
-			"bheavymissiletank",
-			"baatruck",
-			"baatruckturret",
-			"bvhsa",
-			"bempcannon",
-
-
-			--DRONE--
-
-
 			"kdroneroller",
 			"ktridroneroller",
 		},

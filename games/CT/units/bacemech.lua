@@ -108,20 +108,20 @@
 		  collideFriendly         = false,
 	
 	      damage                  = {
-		default = 500,
-		Cruiser = 500,
-		Building = 500,
-		Mech = 500,
-		Tank = 500,
-		Aircraft = 500,
-		Ship = 500,
-		Sub = 500,
+		--Anti-Land
+		default = 250,
+		Cruiser = 250,
+		Building = 250,
+		Land = 500,
+		Aircraft = 250,
+		Ship = 250,
+		Sub = 250,
 
 		Meteor = 0,
-		Drone = 500,
-		Spare1 = 500,
-		Spare2 = 500,
-		Spare3 = 500,
+		Drone = 250,
+		Spare1 = 250,
+		Spare2 = 250,
+		Spare3 = 250,
 
 	      },
 	
@@ -155,20 +155,20 @@
 		  collideFriendly         = false,
 	
 	      damage                  = {
-		default = 100,
-		Cruiser = 100,
-		Building = 100,
-		Mech = 100,
-		Tank = 100,
-		Aircraft = 100,
-		Ship = 100,
-		Sub = 100,
+		--Anti-Land
+		default = 50,
+		Cruiser = 50,
+		Building = 50,
+		Land = 100,
+		Aircraft = 50,
+		Ship = 50,
+		Sub = 50,
 
 		Meteor = 0,
-		Drone = 100,
-		Spare1 = 100,
-		Spare2 = 100,
-		Spare3 = 100,
+		Drone = 50,
+		Spare1 = 50,
+		Spare2 = 50,
+		Spare3 = 50,
 	      },
 	
 	      model                   = [[projectiles/bshell.s3o]],

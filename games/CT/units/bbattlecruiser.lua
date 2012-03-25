@@ -116,20 +116,20 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		default = 120,
-		Cruiser = 120,
-		Building = 60,
-		Mech = 120,
-		Tank = 120,
-		Aircraft = 200,
-		Ship = 120,
-		Sub = 120,
+		--No Bonus
+		default = 100,
+		Cruiser = 100,
+		Building = 100,
+		Land = 100,
+		Aircraft = 100,
+		Ship = 100,
+		Sub = 100,
 
 		Meteor = 0,
-		Drone = 120,
-		Spare1 = 120,
-		Spare2 = 120,
-		Spare3 = 120,
+		Drone = 100,
+		Spare1 = 100,
+		Spare2 = 100,
+		Spare3 = 100,
 	      },
 	
 	      duration                = 0.02,

@@ -83,11 +83,11 @@
 		  collideFriendly         = false,
 	
 	      damage                  = {
+		--No Bonus
 		default = 100,
 		Cruiser = 100,
 		Building = 100,
-		Mech = 100,
-		Tank = 300,
+		Land = 100,
 		Aircraft = 100,
 		Ship = 100,
 		Sub = 100,

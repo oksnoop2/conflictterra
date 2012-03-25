@@ -84,11 +84,11 @@
 		  collideFriendly         = false,
 	
 	      damage                  = {
+		--Anti-Building
 		default = 200,
 		Cruiser = 200,
 		Building = 500,
-		Mech = 200,
-		Tank = 200,
+		Land = 200,
 		Aircraft = 200,
 		Ship = 200,
 		Sub = 200,

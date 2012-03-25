@@ -72,20 +72,20 @@
 		  collideFriendly         = false,		  
 	
 	      damage                  = {
-		default = 2000,
-		Cruiser = 2000,
-		Building = 2000,
-		Mech = 2000,
-		Tank = 2000,
-		Aircraft = 2000,
-		Ship = 2000,
-		Sub = 2000,
+		--Anti-Land
+		default = 1000,
+		Cruiser = 1000,
+		Building = 1000,
+		Land = 2000,
+		Aircraft = 1000,
+		Ship = 1000,
+		Sub = 1000,
 
 		Meteor = 0,
-		Drone = 2000,
-		Spare1 = 2000,
-		Spare2 = 2000,
-		Spare3 = 2000,
+		Drone = 1000,
+		Spare1 = 1000,
+		Spare2 = 1000,
+		Spare3 = 1000,
 	      },
 	
 	      energypershot           = 0,

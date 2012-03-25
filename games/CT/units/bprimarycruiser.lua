@@ -120,11 +120,11 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		--Anti-Cruiser
 		default = 4,
 		Cruiser = 16,
 		Building = 4,
-		Mech = 4,
-		Tank = 4,
+		Land = 4,
 		Aircraft = 4,
 		Ship = 4,
 		Sub = 4,
@@ -169,11 +169,11 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		--Anti-Plane
 		default = 20,
 		Cruiser = 20,
 		Building = 20,
-		Mech = 20,
-		Tank = 20,
+		Land = 20,
 		Aircraft = 125,
 		Ship = 20,
 		Sub = 20,

@@ -91,20 +91,20 @@
 		  collideFriendly         = false,
 	
 	      damage                  = {
-		default = 20,
-		Cruiser = 20,
-		Building = 20,
-		Mech = 20,
-		Tank = 20,
-		Aircraft = 20,
-		Ship = 20,
-		Sub = 20,
+		--Anti-Land
+		default = 10,
+		Cruiser = 10,
+		Building = 10,
+		Land = 20,
+		Aircraft = 10,
+		Ship = 10,
+		Sub = 10,
 
 		Meteor = 0,
-		Drone = 20,
-		Spare1 = 20,
-		Spare2 = 20,
-		Spare3 = 20,
+		Drone = 10,
+		Spare1 = 10,
+		Spare2 = 10,
+		Spare3 = 10,
 	      },
 	
 	      duration                = 0.01,

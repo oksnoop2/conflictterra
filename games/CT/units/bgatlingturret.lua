@@ -71,20 +71,20 @@
 		  collideFriendly         = false,		  
 	
 	      damage                  = {
-		default = 30,
-		Cruiser = 30,
-		Building = 30,
-		Mech = 30,
-		Tank = 30,
-		Aircraft = 30,
-		Ship = 30,
-		Sub = 30,
+		--Anti-Land
+		default = 15,
+		Cruiser = 15,
+		Building = 15,
+		Land = 30,
+		Aircraft = 15,
+		Ship = 15,
+		Sub = 15,
 
 		Meteor = 0,
-		Drone = 30,
-		Spare1 = 30,
-		Spare2 = 30,
-		Spare3 = 30,
+		Drone = 15,
+		Spare1 = 15,
+		Spare2 = 15,
+		Spare3 = 15,
 	      },
 	
 	      explosionGenerator      = [[custom:ct_impact_machinegun]],

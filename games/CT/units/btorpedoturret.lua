@@ -73,20 +73,20 @@
 	      craterMult              = 0.25,
 	
 	      damage                  = {
-		default = 400,
-		Cruiser = 400,
-		Building = 400,
-		Mech = 400,
-		Tank = 400,
-		Aircraft = 400,
+		--Anti-Navy
+		default = 200,
+		Cruiser = 200,
+		Building = 200,
+		Land = 200,
+		Aircraft = 200,
 		Ship = 400,
 		Sub = 400,
 
 		Meteor = 0,
-		Drone = 400,
-		Spare1 = 400,
-		Spare2 = 400,
-		Spare3 = 400,
+		Drone = 200,
+		Spare1 = 200,
+		Spare2 = 200,
+		Spare3 = 200,
 	      },
 	
 	      --explosionGenerator      = [[custom:PLASMA_Expl]],

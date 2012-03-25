@@ -81,11 +81,11 @@ local ktriairdrone = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		--No Bonus
 		default = 10,		  
 		Cruiser = 10,
 		Building = 10,
-		Mech = 10,
-		Tank = 10,
+		Land = 10,
 		Aircraft = 10,
 		Ship = 10,
 		Sub = 10,

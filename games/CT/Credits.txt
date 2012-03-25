@@ -38,6 +38,8 @@ http://answers.springlobby.info/questions/503/howto-animated-tank-tracks-with-ac
 
 http://www.moddb.com/members/yoniluria
 
+- Yanom has spent considerable hours working on his AI, YMSAI, for the Drones.  He has done a great job!
+
 - Many others in the days before this was documented.
 
 *Other contributions will hopefully be remembered/added as time progresses.*

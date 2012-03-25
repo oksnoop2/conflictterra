@@ -103,20 +103,20 @@
 		  collideFriendly         = false,
 	
 	      damage                  = {
-		default = 100,
-		Cruiser = 100,
-		Building = 100,
-		Mech = 350,
-		Tank = 100,
-		Aircraft = 100,
-		Ship = 100,
-		Sub = 100,
+		--Anti-Land
+		default = 50,
+		Cruiser = 50,
+		Building = 50,
+		Land = 100,
+		Aircraft = 50,
+		Ship = 50,
+		Sub = 50,
 
 		Meteor = 0,
-		Drone = 100,
-		Spare1 = 100,
-		Spare2 = 100,
-		Spare3 = 100,
+		Drone = 50,
+		Spare1 = 50,
+		Spare2 = 50,
+		Spare3 = 50,
 	      },
 	
 	      model                   = [[projectiles/blargemissile.s3o]],
@@ -151,11 +151,11 @@
 		  collideFriendly         = false,
 	
 	      damage                  = {
+		--Anti-Land
 		default = 35,
 		Cruiser = 35,
 		Building = 35,
-		Mech = 75,
-		Tank = 35,
+		Land = 35,
 		Aircraft = 35,
 		Ship = 35,
 		Sub = 35,

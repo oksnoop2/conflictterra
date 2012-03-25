@@ -95,11 +95,11 @@
 		  collideFriendly         = false,
 	
 	      damage                  = {
+		--No Bonus
 		default = 10,
 		Cruiser = 10,
 		Building = 10,
-		Mech = 35,
-		Tank = 10,
+		Land = 10,
 		Aircraft = 10,
 		Ship = 10,
 		Sub = 10,
@@ -124,7 +124,7 @@
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[nexuiz/rocket_fire]],
-	      texture2		      = [[ct_smoketrail]],
+	      texture2                = [[ct_smoketrail]],
 	      tolerance               = 8000,
 	      tracks                  = false,
 	      turret                  = true,

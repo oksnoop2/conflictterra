@@ -97,19 +97,19 @@ local bminer = {
               collideFriendly         = false,
         
               damage                  = {
-                Cruiser = 1,
-                Building = 1,
-                Mech = 1,
-                Tank = 1,
-                Aircraft = 1,
-                Ship = 1,
-                Sub = 1,
+			    --Mining
+                Cruiser = 0,
+                Building = 0,
+                Land = 0,
+                Aircraft = 0,
+                Ship = 0,
+                Sub = 0,
 
                 Meteor = 1,
-                Drone = 1,
-                Spare1 = 1,
-                Spare2 = 1,
-                Spare3 = 1,
+                Drone = 0,
+                Spare1 = 0,
+                Spare2 = 0,
+                Spare3 = 0,
               },
         
               explosionGenerator      = [[custom:resmining_blue]],

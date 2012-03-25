@@ -10,13 +10,10 @@ unitDef = {
   buildoptions                  = {
 
     [[bseaengineer1]],
-    [[bhovermech]],
     [[bbattleship]],
-
     [[brocketbattleship]],
     [[bartilleryship]],
     [[baaship]],
-
     [[bradarship]],
     [[bsubmarine]],
   },

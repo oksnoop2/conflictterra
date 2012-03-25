@@ -59,6 +59,16 @@ local kdiairdrone = {
 	    },
 	
 	  },
+	  
+	smoothAnim          = true,
+    terraformSpeed      = 300,
+	reclaimSpeed        = 300,
+	turnInPlace         = 1,
+	turnRate            = 800,
+	showNanospray	    = 1,
+	Resurrectspeed      = 100,
+	workerTime          = 1,
+	script		    = "kdiairdrone.lua",
 
 	weapons             = {
 	
@@ -86,11 +96,11 @@ local kdiairdrone = {
 	      craterMult              = 0.25,
 	
 	      damage                  = {
+		--Anti-Plane
 		default = 20,
 		Cruiser = 100,
 		Building = 20,
-		Mech = 20,
-		Tank = 20,
+		Land = 20,
 		Aircraft = 100,
 		Ship = 20,
 		Sub = 20,
@@ -125,18 +135,9 @@ local kdiairdrone = {
 	      weaponVelocity          = 750,
 	    },
 	
-	  },
-	  
-	smoothAnim          = true,
-    terraformSpeed      = 300,
-	reclaimSpeed        = 300,
-	turnInPlace         = 1,
-	turnRate            = 800,
-	showNanospray	    = 1,
-	Resurrectspeed      = 100,
-	workerTime          = 1,
-	script		    = "kdiairdrone.lua",
-
+	  },	
+	
+	
 	featureDefs         = {
 	
 	    DEAD  = {

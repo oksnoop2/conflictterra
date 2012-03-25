@@ -136,30 +136,6 @@ local morphDefs = {
 
 -----
 
-  baatruck = {
-    {
-      into = 'baatruckturret',
-      metal = 0,
-      energy = 0,
-      time = 2,
-	  text = 'Deploy into the Taka Type Anti-Air Turret',
-      name = 'Deploy',	  
-    },
-  },
- 
-  baatruckturret = {
-    {
-      into = 'baatruck',
-      metal = 0,
-      energy = 0,
-      time = 2,
-	  text = 'Mobilize into the Taka Type Armored Truck',
-      name = 'Mobilize',	  
-    },
-  },
-
------
-
   kdroneengineer = {
     {
       into = 'kdroneminingtower',

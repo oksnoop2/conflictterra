@@ -19,8 +19,6 @@ unitDef = {
 	[[baircruiser]],
   },
 
-
-
   buildPic                      = [[bprimarycruiserbase.png]],
   buildTime                     = 30,
 
@@ -159,20 +157,20 @@ unitDef = {
 	      collideFriendly         = false,
 	
 	      damage                  = {
-		default = 200,
-		Cruiser = 200,
-		Building = 200,
-		Mech = 200,
-		Tank = 200,
-		Aircraft = 200,
-		Ship = 200,
-		Sub = 200,
+		--Anti-Land
+		default = 100,
+		Cruiser = 100,
+		Building = 100,
+		Land = 200,
+		Aircraft = 100,
+		Ship = 100,
+		Sub = 100,
 
 		Meteor = 0,
-		Drone = 200,
-		Spare1 = 200,
-		Spare2 = 200,
-		Spare3 = 200,
+		Drone = 100,
+		Spare1 = 100,
+		Spare2 = 100,
+		Spare3 = 100,
 	      },
 	
 	      model                   = [[projectiles/bshell.s3o]],
@@ -199,11 +197,11 @@ unitDef = {
 	      collideFriendly         = false,
 	
 	      damage                  = {
+		--Anti-Plane
 		default = 5,
 		Cruiser = 25,
 		Building = 5,
-		Mech = 5,
-		Tank = 5,
+		Land = 5,
 		Aircraft = 25,
 		Ship = 5,
 		Sub = 5,

@@ -79,11 +79,11 @@
 	      explosionGenerator      = [[custom:ct_impact_beamshot_blue]],
         
 	      damage                  = {
+		--Anti-Cruiser
 		default = 10,
 		Cruiser = 35,
 		Building = 10,
-		Mech = 10,
-		Tank = 10,
+		Land = 10,
 		Aircraft = 10,
 		Ship = 10,
 		Sub = 10,

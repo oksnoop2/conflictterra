@@ -90,20 +90,20 @@
 		  collideFriendly         = false,
 	
 	      damage                  = {
-		default = 600,
-		Cruiser = 600,
+		--Anti-Land
+		default = 300,
+		Cruiser = 300,
 		Building = 300,
-		Mech = 600,
-		Tank = 600,
-		Aircraft = 600,
-		Ship = 600,
-		Sub = 600,
+		Land = 600,
+		Aircraft = 300,
+		Ship = 300,
+		Sub = 300,
 
 		Meteor = 0,
-		Drone = 600,
-		Spare1 = 600,
-		Spare2 = 600,
-		Spare3 = 600,
+		Drone = 300,
+		Spare1 = 300,
+		Spare2 = 300,
+		Spare3 = 300,
 	      },
 	
 	      explosionGenerator      = [[custom:ct_impact_cannon]],
