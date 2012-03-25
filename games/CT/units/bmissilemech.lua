@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bmissilemech]],
 	  name                = [[Ueda Combat Support Mech]],
-	  description         = [[Anti-Mech Mech - Fast SM that fires two bursts of anti-mech rockets.]],
+	  description         = [[Rocket Mech - Fast SM that fires two bursts of rockets.]],
 	  acceleration        = 1,  --1 while normal, 4 while fast
 	  brakeRate           = 0.1,  --0.1 while normal, 0.4 while fast
 	  buildCostEnergy     = 325,

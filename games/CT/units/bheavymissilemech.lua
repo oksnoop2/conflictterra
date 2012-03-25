@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bheavymissilemech]],
 	  name                = [[Shibata Combat Support Mech MkII]],
-	  description         = [[Heavy Anti-Mech Mech - Armed to the teeth with anti-mech rockets.]],
+	  description         = [[Heavy Rocket Mech - Armed to the teeth with rockets.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 975,

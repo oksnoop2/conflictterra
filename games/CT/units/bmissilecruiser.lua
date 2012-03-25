@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bmissilecruiser]],
 	  name                = [[Sanada Class Cruiser]],
-	  description         = [[Bombardment Cruiser - Offensive cruiser which attacks the ground with a flurry of rockets.]],
+	  description         = [[Bombardment Cruiser - Offensive Anti-Unit cruiser which attacks the ground with a flurry of rockets.]],
 	  acceleration        = 0.15,
 	  activateWhenBuilt   = true,
 	  airStrafe           = 0,

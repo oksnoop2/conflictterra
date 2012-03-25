@@ -1,6 +1,6 @@
 local ktriairdrone = {
 	name                = [[Tri Air Drone]],
-	description         = [[Shoots a long range beam of deadly plasma at ground units.]],
+	description         = [[Shoots a long range beam of deadly plasma at its enemies.]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[ktriairdrone.png]],

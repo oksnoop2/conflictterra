@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[btorpedoturret]],
 	  name                = [[Floating Torpedo Turret]],
-	  description         = [[Fires two torpedoes at nearby naval vessels.]],
+	  description         = [[Fires two Anti-Navy torpedoes.]],
 	  activateWhenBuilt   = true,
 	  buildCostEnergy     = 350,
 	  buildCostMetal      = 280,

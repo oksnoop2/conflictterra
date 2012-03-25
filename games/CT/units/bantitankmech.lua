@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bantitankmech]],
 	  name                = [[Enkei Combat Support Mech]],
-	  description         = [[Anti-Tank Mech - Deals heavy damage to tanks and vehicles.  Able to drop up to 4 anti-tank mines.]],
+	  description         = [[Mine-layer Mech - Able to drop up to 4 mines.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 325,

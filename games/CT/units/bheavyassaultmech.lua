@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bheavyassaultmech]],
 	  name                = [[Izanagi Assault Mech]],
-	  description         = [[Heavy Assault Mech - Prototype SM capable of dealing high damage to buildings and units alike. - Build Limit: 3]],
+	  description         = [[Heavy Assault Mech - Prototype SM capable of dealing high damage to Buildings and Units alike. - Build Limit: 3]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,
 	  buildCostEnergy     = 2000,

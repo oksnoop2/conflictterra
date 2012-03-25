@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[bantitankmine]],
-	  name                = [[Anti-Tank Mine]],
-	  description         = [[Proximity mine that deals extra damage to tanks and vehicles.]],
+	  name                = [[Proximity Mine]],
+	  description         = [[Deals extra damage to Units.]],
 	  buildCostEnergy     = 50,
 	  buildCostMetal      = 50,
 	  builder             = false,

@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvlandnavalturret]],
 	  name                = [[Advanced Anti-Ship Turret]],
-	  description         = [[Fires four powerful anti-ship shells. Should be built near shore.]],
+	  description         = [[Fires four powerful Anti-Navy shells. Should be built near shore.]],
 	  activateWhenBuilt   = true,
 	  buildCostEnergy     = 550,
 	  buildCostMetal      = 550,

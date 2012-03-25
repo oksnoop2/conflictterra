@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvgatlingturret]],
 	  name                = [[Dual Gatling Turret]],
-	  description         = [[Stronger rapid fire cannon designed to take out several units.]],
+	  description         = [[Pair of Anti-Unit rapid fire cannons.]],
 	  buildCostEnergy     = 300,
 	  buildCostMetal      = 300,
 	  builder             = false,

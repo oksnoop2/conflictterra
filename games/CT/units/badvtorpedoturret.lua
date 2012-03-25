@@ -1,7 +1,7 @@
 	unitDef = {
 	  unitname            = [[badvtorpedoturret]],
 	  name                = [[Advanced Floating Torpedo Turret]],
-	  description         = [[Floating torpedo platform that fires at nearby ships.]],
+	  description         = [[Floating Anti-Navy torpedo platform.]],
 	  activateWhenBuilt   = true,
 	  buildCostEnergy     = 1000,
 	  buildCostMetal      = 800,
