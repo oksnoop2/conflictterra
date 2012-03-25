@@ -38,7 +38,7 @@
 	  hoverAttack         = true,
 	  idleAutoHeal        = 0,
 	  mass                = 2500,
-	  maxDamage           = 3000,
+	  maxDamage           = 5000,
 	  maxVelocity         = 3,
 	  verticalSpeed       = 30,	  
 	  noAutoFire          = false,
