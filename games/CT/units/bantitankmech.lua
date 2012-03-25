@@ -76,6 +76,7 @@
 	    AntiTank = {
 	      name                    = [[Armor Piercing Cannon]],
 	      areaOfEffect            = 32,
+		  avoidFeature            = false,
 	      burst                   = 2,
 	      burstrate               = 0.001,
 	      craterMult              = 0.25,

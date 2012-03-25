@@ -76,6 +76,7 @@
 	    Rocket = {
 	      name                    = [[Small Rockets]],
 	      areaOfEffect            = 48,
+		  avoidFeature            = false,
 	      burst                   = 4,
 	      burstrate               = 0.5,
 	      collideFriendly         = false,

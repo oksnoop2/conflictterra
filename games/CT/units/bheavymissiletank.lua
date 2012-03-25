@@ -97,6 +97,7 @@
 	    Large = {
 	      name                    = [[Large Anti-Mech Rocket]],
 	      areaOfEffect            = 160,
+		  avoidFeature            = false,
 	      cegTag                  = [[ct_missiletail_big]],
 	      craterMult              = 0.25,
 		  collideFriendly         = false,
@@ -144,6 +145,7 @@
 	    Anti_Mech = {
 	      name                    = [[Anti-Mech Rocket]],
 	      areaOfEffect            = 48,
+		  avoidFeature            = false,
 	      cegTag                  = [[ct_missiletail_small]],
 	      craterMult              = 0.25,
 		  collideFriendly         = false,

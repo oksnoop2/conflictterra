@@ -71,6 +71,7 @@
 	    Machine_Gun = {
 	      name                    = [[Machine Gun]],
 	      areaOfEffect            = 8,
+		  avoidFeature            = false,
 	      collideFriendly         = false,
 	      craterMult              = 0.25,
 	

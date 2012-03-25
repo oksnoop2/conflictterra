@@ -79,6 +79,7 @@
 	    Cannon = {
 	      name                    = [[Artillery Cannon]],
 	      areaOfEffect            = 64,
+		  avoidFeature            = false,
 	      craterMult              = 0.25,
 		  collideFriendly         = false,
 	

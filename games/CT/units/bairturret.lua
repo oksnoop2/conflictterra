@@ -74,6 +74,7 @@
 	    Flak          = {
 	      name                    = [[Flak Cannon]],
 	      areaOfEffect            = 64,
+		  avoidFeature            = false,
 	      burnblow                = true,
 	      canattackground         = false,
 	      color                   = 1,

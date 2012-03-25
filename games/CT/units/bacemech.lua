@@ -101,6 +101,7 @@
 	   Laser = {
 	      name                    = [[Beam Laser]],
 	      areaOfEffect            = 20,
+		  avoidFeature            = false,
 	      beamTime                = 1,
 	      craterMult              = 0.25,
 	      accuracy                = 100,
@@ -148,6 +149,7 @@
 	    Cannon = {
 	      name                    = [[Light Cannon]],
 	      areaOfEffect            = 32,
+		  avoidFeature            = false,
 	      craterMult              = 0.25,
 	      accuracy                = 200,
 		  collideFriendly         = false,

@@ -66,6 +66,7 @@
 	   Laser = {
 	      name                    = [[Beam Laser]],
 	      areaOfEffect            = 20,
+		  avoidFeature            = false,
 	      beamTime                = 1,
 	      craterMult              = 0.25,
 		  collideFriendly         = false,		  

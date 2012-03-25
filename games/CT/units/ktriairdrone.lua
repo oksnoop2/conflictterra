@@ -75,6 +75,7 @@ local ktriairdrone = {
 	    Laser = {
 	      name                    = [[Burst Laser]],
 	      areaOfEffect            = 8,
+		  avoidFeature            = false,
 	      coreThickness           = 1,
 	      collideFriendly         = false,
 	      craterMult              = 0.25,

@@ -150,6 +150,7 @@ unitDef = {
 	    Cannon = {
 	      name                    = [[Light Cannon]],
 	      areaOfEffect            = 32,
+		  avoidFeature            = false,
 	      craterMult              = 0.25,
 	      collideFriendly         = false,
 	
@@ -186,6 +187,7 @@ unitDef = {
 	    Flak          = {
 	      name                    = [[Flak Cannon]],
 	      areaOfEffect            = 64,
+		  avoidFeature            = false,
 	      burnblow                = true,
 	      canattackground         = false,
 	      color                   = 1,

@@ -98,6 +98,7 @@
 	    Launcher = {
 	      name                    = [[Small Rocket]],
 	      areaOfEffect            = 48,
+		  avoidFeature            = false,
 	      cegTag                  = [[ct_missiletail_small]],
 	      craterMult              = 0.25,
 		  collideFriendly         = false,
@@ -144,6 +145,7 @@
 	    Torpedo = {
 	      name                    = [[Torpedo]],
 	      areaOfEffect            = 16,
+		  avoidFeature            = false,
 	      avoidFriendly           = false,
 	      burnblow                = true,
 	      collideFriendly         = false,

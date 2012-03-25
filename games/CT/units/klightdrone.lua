@@ -77,6 +77,7 @@ local klightdrone = {
 	    Cannon = {
 	      name                    = [[Anti-Air Plasma]],
 	      areaOfEffect            = 64,
+		  avoidFeature            = false,
 		  burnBlow                = true,
 		  canattackground         = false,
 	      craterMult              = 0.25,

@@ -84,6 +84,7 @@
 	    Cannon = {
 	      name                    = [[Cannon]],
 	      areaOfEffect            = 32,
+		  avoidFeature            = false,
 	      burst                   = 2,
 	      burstrate               = 1,
 	      craterMult              = 0.25,

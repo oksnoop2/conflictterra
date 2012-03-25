@@ -76,6 +76,7 @@
 	    Stun = {
 	      name                    = [[Electromagnetic Beam]],
 	      areaOfEffect            = 512,
+		  avoidFeature            = false,
 	      collideFriendly         = false,
 	      commandfire             = true,
 	      craterMult              = 0.25,

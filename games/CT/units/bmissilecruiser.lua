@@ -96,6 +96,7 @@
 	    Large = {
 	      name                    = [[Large Anti-Mech Rocket]],
 		  accuracy                = 400,
+		  avoidFeature            = false,
 	      areaOfEffect            = 140,
 		  burst                   = 3,
 		  burstrate               = 0.5,

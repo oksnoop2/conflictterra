@@ -83,6 +83,7 @@
 	    Artillery             = {
 	      name                    = [[Heavy Artillery Cannon]],
 	      areaOfEffect            = 32,
+		  avoidFeature            = false,
 	      burst                   = 4,
 	      burstrate               = 0.5,
 	      craterMult              = 0.25,

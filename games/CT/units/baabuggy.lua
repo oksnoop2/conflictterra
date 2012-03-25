@@ -82,6 +82,7 @@
 	    AA         = {
 	      name                    = [[Homing AA Missile]],
 	      areaOfEffect            = 48,
+		  avoidFeature            = false,
 	      avoidFriendly           = true,
 	      canattackground         = false,
 	      cegtag                  = [[ct_missiletail_aa]],

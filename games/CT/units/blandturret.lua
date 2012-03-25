@@ -66,6 +66,7 @@
 	    Cannon = {
 	      name                    = [[Light Cannon]],
 	      areaOfEffect            = 32,
+		  avoidFeature            = false,
 	      burst                   = 2,
 	      burstrate               = 0.001,
 	      craterMult              = 0.25,

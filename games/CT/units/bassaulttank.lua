@@ -80,6 +80,7 @@
 	    Cannon = {
 	      name                    = [[Light Cannon]],
 	      areaOfEffect            = 32,
+		  avoidFeature            = false,
 	      craterMult              = 0.25,
 		  collideFriendly         = false,
 	

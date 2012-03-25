@@ -68,7 +68,8 @@
 	    Laser = {
 	      name                    = [[Anti-Cruiser Laser]],
 	      areaOfEffect            = 8,
-	      avoidFriendly           = 0,
+		  avoidFeature            = false,
+	      avoidFriendly           = false,
 	      beamTime                = 0.2,
 	      craterMult              = 0.25,
 	      accuracy                = 0,

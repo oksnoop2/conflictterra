@@ -66,6 +66,7 @@
 	    Machine_Gun = {
 	      name                    = [[Rapid Fire Cannon]],
 	      areaOfEffect            = 8,
+		  avoidFeature            = false,
 	      craterMult              = 0.25,
 		  collideFriendly         = false,		  
 	

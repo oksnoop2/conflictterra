@@ -77,6 +77,7 @@
 	    Laser = {
 	      name                    = [[Burst Laser]],
 	      areaOfEffect            = 8,
+		  avoidFeature            = false,
 	      coreThickness           = 0.5,
 	      craterMult              = 0.25,
 		  collideFriendly         = false,

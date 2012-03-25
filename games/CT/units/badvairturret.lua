@@ -70,6 +70,7 @@
 	      name                    = [[Homing AA Missile]],
 	      areaOfEffect            = 48,
 	      avoidFriendly           = true,
+		  avoidFeature            = false,
 	      burst                   = 3,
 	      burstrate               = 0.5,
 	      canattackground         = false,

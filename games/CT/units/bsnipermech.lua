@@ -84,6 +84,7 @@
 	      name                    = [[Sniper Cannon]],
 	      alphaDecay              = 0.12,
 	      areaOfEffect            = 16,
+		  avoidFeature            = false,
 	      craterMult              = 0.25,
 	      accuracy                = 50,
 		  collideFriendly         = false,

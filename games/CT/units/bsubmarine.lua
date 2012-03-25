@@ -81,6 +81,7 @@
 	    Torpedo = {
 	      name                    = [[Torpedo]],
 	      areaOfEffect            = 16,
+		  avoidFeature            = false,
 	      avoidFriendly           = false,
 	      burnblow                = true,
 	      collideFriendly         = false,

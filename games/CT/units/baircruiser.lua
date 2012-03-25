@@ -103,6 +103,7 @@
 	    Laser = {
 	      name                    = [[Cruiser to Cruiser Beam Cannon]],
 	      areaOfEffect            = 8,
+		  avoidFeature            = false,
 	      burst                   = 4,
 	      burstRate               = 0.25,
 	      coreThickness           = 0.5,
@@ -148,6 +149,7 @@
 	    AA         = {
 	      name                    = [[Homing AA Missile]],
 	      areaOfEffect            = 48,
+		  avoidFeature            = false,
 	      avoidFriendly           = true,
 	      burst                   = 2,
 	      burstrate               = 0.01,

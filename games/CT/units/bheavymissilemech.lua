@@ -89,6 +89,7 @@
 	    Anti_Mech = {
 	      name                    = [[Anti-Mech Rocket]],
 	      areaOfEffect            = 56,
+		  avoidFeature            = false,
 	      burst                   = 5,
 	      burstrate               = 0.08,
 	      cegTag                  = [[ct_missiletail_small]],

@@ -87,6 +87,7 @@
 	    Cannon = {
 	      name                    = [[Artillery Cannon]],
 	      areaOfEffect            = 64,
+		  avoidFeature            = false,
 	      craterMult              = 0.25,
 	      accuracy                = 500,
 		  collideFriendly         = false,
@@ -125,6 +126,7 @@
 	    Machine_Gun = {
 	      name                    = [[Rapid Fire Cannon]],
 	      areaOfEffect            = 8,
+		  avoidFeature            = false,
 	      burst                   = 2,
 	      burstrate               = 0.001,
 	      craterMult              = 0.25,

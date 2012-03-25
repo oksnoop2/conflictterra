@@ -79,7 +79,8 @@
             Rock_Laser = {
               name                    = [[Rock Laser]],
               areaOfEffect            = 8,
-              avoidFriendly           = 0,
+			  avoidFeature            = false,
+              avoidFriendly           = false,
               craterMult              = 0.25,
               accuracy                = 0,
               collideFriendly         = false,

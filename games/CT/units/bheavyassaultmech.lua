@@ -100,6 +100,7 @@
 	    Artillery             = {
 	      name                    = [[Heavy Artillery Cannon]],
 	      areaOfEffect            = 32,
+		  avoidFeature            = false,
 	      burst                   = 2,
 	      burstrate               = 0.01,
 	      craterMult              = 0.25,
@@ -140,6 +141,7 @@
 	    Cannon = {
 	      name                    = [[Light Cannon]],
 	      areaOfEffect            = 32,
+		  avoidFeature            = false,
 	      craterMult              = 0.25,
 	      accuracy                = 200,
 		  collideFriendly         = false,
