@@ -4,11 +4,11 @@
 	  description         = [[Light Tank - Inexpensive, basic tank. Fires light shells.]],
 	  acceleration        = 0.5,
 	  brakeRate           = 0.1,
-	  buildCostEnergy     = 250,
-	  buildCostMetal      = 250,
+	  buildCostEnergy     = 225,
+	  buildCostMetal      = 225,
 	  builder             = false,
 	  buildPic            = [[bassaulttank.png]],
-	  buildTime           = 10,
+	  buildTime           = 12,
 	  canAttack           = true,
 	  canGuard            = true,
 	  canMove             = true,
@@ -24,9 +24,9 @@
 	  idleAutoHeal        = 0,
 	  leaveTracks         = true,
 	  mass                = 90,
-	  maxDamage           = 1150,
+	  maxDamage           = 600,
 	  maxSlope            = 18,
-	  maxVelocity         = 1.5,
+	  maxVelocity         = 2.5,
 	  maxWaterDepth       = 22,
 	  movementClass       = [[TANK3x3]],
 	  moveState           = 0,
@@ -53,13 +53,15 @@
 	  },
 
 	  side                = [[NKG]],
-	  sightDistance       = 340,
+	  sightDistance       = 600,
 	  smoothAnim          = true,
+	  
 	  trackOffset         = 3,
 	  trackStrength       = 6,
 	  trackStretch        = 1,
 	  trackType           = [[StdTank]],
 	  trackWidth          = 24,
+	  
 	  turnInPlace         = 1,
 	  turnRate            = 500,
 	  script              = [[bassaulttank.lua]],
@@ -86,6 +88,7 @@
 	
 	      damage                  = {
 		--No Bonus
+		--25 dps
 		default = 100,
 		Cruiser = 100,
 		Building = 100,
@@ -105,8 +108,8 @@
 	      explosionGenerator      = [[custom:ct_impact_cannon]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
-	      range                   = 400,
-	      reloadtime              = 3,
+	      range                   = 500,
+	      reloadtime              = 4,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_heavy_machinegun]],
 	      turret                  = true,
