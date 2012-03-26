@@ -26,8 +26,8 @@
 
 
 	--variables
-	local speedFactor = 4
-	local normalFactor = 4
+	local speedFactor = 2
+	local normalFactor = 2
 
 	--locals
 	local myOrigSpeed = UnitDefs[unitDefID].speed
