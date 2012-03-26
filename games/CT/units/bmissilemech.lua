@@ -95,6 +95,7 @@
 	
 	      damage                  = {
 		--No Bonus
+		--24 dps
 		default = 12,
 		Cruiser = 12,
 		Building = 12,

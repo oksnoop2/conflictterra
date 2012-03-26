@@ -403,8 +403,8 @@ ROCK_MINEDOUT_BIG = {
 	      },
   },  
   
-  ANTI_TANK_MINE = {
-   name					= "Anti-Tank Mine",
+  NKG_MINE = {
+   name					= "Proximity Mine",
    ballistic			= 1,
    turret				= 1,
    impulseFactor		= 0,
@@ -416,19 +416,19 @@ ROCK_MINEDOUT_BIG = {
    soundhit				= "golgotha/generic.wav",
    explosiongenerator	= "custom:SMALL_UNIT_Expl",
 	      damage                  = {
-		default = 75,  		  
-		Cruiser = 75,
-		Building = 0,
-		Land = 75,
-		Aircraft = 75,
-		Ship = 75,
-		Sub = 75,
+		default = 200,  		  
+		Cruiser = 200,
+		Building = 200,
+		Land = 200,
+		Aircraft = 200,
+		Ship = 200,
+		Sub = 200,
 
 		Meteor = 0,
-		Drone = 75,
-		Spare1 = 75,
-		Spare2 = 75,
-		Spare3 = 75,		
+		Drone = 200,
+		Spare1 = 200,
+		Spare2 = 200,
+		Spare3 = 200,		
 	      },
   },
 
