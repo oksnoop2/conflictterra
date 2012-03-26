@@ -88,20 +88,20 @@
 	
 	      damage                  = {
 		--No Bonus
-		--25 dps
-		default = 100,
-		Cruiser = 100,
-		Building = 100,
-		Land = 100,
-		Aircraft = 100,
-		Ship = 100,
-		Sub = 100,
+		--20 dps
+		default = 60,
+		Cruiser = 60,
+		Building = 60,
+		Land = 60,
+		Aircraft = 60,
+		Ship = 60,
+		Sub = 60,
 
 		Meteor = 0,
-		Drone = 100,
-		Spare1 = 100,
-		Spare2 = 100,
-		Spare3 = 100,
+		Drone = 60,
+		Spare1 = 60,
+		Spare2 = 60,
+		Spare3 = 60,
 	      },
 	
 	      model                   = [[projectiles/bshell.s3o]],
@@ -109,7 +109,7 @@
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      range                   = 500,
-	      reloadtime              = 4,
+	      reloadtime              = 3,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_heavy_machinegun]],
 	      turret                  = true,
