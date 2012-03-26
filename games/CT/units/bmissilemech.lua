@@ -2,13 +2,13 @@
 	  unitname            = [[bmissilemech]],
 	  name                = [[Ueda Combat Support Mech]],
 	  description         = [[Rocket Mech - Fast SM that fires two bursts of rockets.]],
-	  acceleration        = 1,  --1 while normal, 4 while fast
-	  brakeRate           = 0.1,  --0.1 while normal, 0.4 while fast
-	  buildCostEnergy     = 325,
-	  buildCostMetal      = 325,
+	  acceleration        = 1,  --1 while normal, 2 while fast
+	  brakeRate           = 0.1,  --0.1 while normal, 0.2 while fast
+	  buildCostEnergy     = 225,
+	  buildCostMetal      = 225,
 	  builder             = false,
 	  buildPic            = [[bmissilemech.png]],
-	  buildTime           = 17,
+	  buildTime           = 14,
 	  canAttack           = true,
 	  canGuard            = true,
 	  canMove             = true,
@@ -22,11 +22,10 @@
 	  footprintX          = 3,
 	  footprintZ          = 3,
 	  idleAutoHeal        = 0,
-	  maneuverleashlength = [[640]],
 	  mass                = 45,
-	  maxDamage           = 600,
+	  maxDamage           = 400,
 	  maxSlope            = 36,
-	  maxVelocity         = 3.5,  --3.5 while normal, 15 while fast
+	  maxVelocity         = 5,  --5 while normal, 10 while fast
 	  maxWaterDepth       = 22,
 	  movementClass       = [[Mech3x3]],
 	  moveState           = 0,
@@ -52,10 +51,10 @@
 	  },
 
 	  side                = [[NKG]],
-	  sightDistance       = 600,
+	  sightDistance       = 700,
 	  smoothAnim          = true,
 	  turnInPlace         = 1,
-	  turnRate            = 4000,  --1000 while normal
+	  turnRate            = 1000,  --1000 while normal, 2000 while fast
 	  upright             = true,
 	  script              = [[bmissilemech.lua]],
 	
@@ -91,24 +90,24 @@
 	      burstrate               = 0.08,
 	      cegTag                  = [[ct_missiletail_small]],
 	      craterMult              = 0.25,
-	      accuracy                = 100,
+	      accuracy                = 200,
 		  collideFriendly         = false,
 	
 	      damage                  = {
 		--No Bonus
-		default = 10,
-		Cruiser = 10,
-		Building = 10,
-		Land = 10,
-		Aircraft = 10,
-		Ship = 10,
-		Sub = 10,
+		default = 12,
+		Cruiser = 12,
+		Building = 12,
+		Land = 12,
+		Aircraft = 12,
+		Ship = 12,
+		Sub = 12,
 
 		Meteor = 0,
-		Drone = 10,
-		Spare1 = 10,
-		Spare2 = 10,
-		Spare3 = 10,
+		Drone = 12,
+		Spare1 = 12,
+		Spare2 = 12,
+		Spare3 = 12,
 	      },
 	
 	      model                   = [[projectiles/bantimechmissile.s3o]],
@@ -121,7 +120,7 @@
 	      lineOfSight             = true,
 	      range                   = 600,
 	      reloadtime              = 3,
-	      smokeTrail              = true,
+	      smokeTrail              = false,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[nexuiz/rocket_fire]],
 	      texture2                = [[ct_smoketrail]],
