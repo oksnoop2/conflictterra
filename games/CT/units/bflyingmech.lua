@@ -2,14 +2,14 @@
 	  unitname            = [[bflyingmech]],
 	  name                = [[Fuma Aerial Combat Mech]],
 	  description         = [[Cruiser Destroyer Mech - Airborne half-mech armed with Cruiser destroying beam cannons and two AA missiles.]],
-	  acceleration        = 0.154,
+	  acceleration        = 0.15,
 	  amphibious          = false,
 	  brakeRate           = 3.75,
-	  buildCostEnergy     = 450,
-	  buildCostMetal      = 450,
+	  buildCostEnergy     = 300,
+	  buildCostMetal      = 300,
 	  builder             = false,
 	  buildPic            = [[bflyingmech.png]],
-	  buildTime           = 25,
+	  buildTime           = 20,
 	  canAttack           = true,
 	  canFly              = true,
 	  canGuard            = true,
@@ -54,7 +54,7 @@
 	  },
 
 	  side                = [[NKG]],
-	  sightDistance       = 500,
+	  sightDistance       = 850,
 	  smoothAnim          = true,
 	  turnRate            = 750,
 	  script              = [[bflyingmech.lua]],
@@ -106,8 +106,10 @@
 	
 	      damage                  = {
 		--Anti-Cruiser
+		--20 dps
+		--80 dps cruiser
 		default = 10,
-		Cruiser = 50,
+		Cruiser = 40,
 		Building = 10,
 		Land = 10,
 		Aircraft = 10,
@@ -152,8 +154,10 @@
 	
 	      damage                  = {
 		--Anti-Plane
+		--3 dps
+		--66 dps aircraft
 		default = 10,
-		Cruiser = 20,
+		Cruiser = 10,
 		Building = 10,
 		Land = 10,
 		Aircraft = 50,
@@ -173,13 +177,13 @@
 	      impulseFactor           = 0,
 	      lineOfSight             = true,
 	      model                   = [[projectiles/baamissile.s3o]],
-	      range                   = 300,
+	      range                   = 750,
 	      reloadtime              = 6,
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[]],
 	      startVelocity           = 200,
-	      texture2		      = [[ct_smoketrail]],
+	      texture2                = [[ct_smoketrail]],
 	      tolerance               = 22000,
 	      tracks                  = true,
 	      turnRate                = 30000,
