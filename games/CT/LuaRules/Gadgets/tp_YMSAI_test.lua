@@ -608,7 +608,7 @@ function gadget:GameFrame(frame)
 
         local h, missing = getHighestCompleteStage (myTeam[t])
 
-        Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
+        --Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
         if(stages[h+1] == nil) then
             stages[h+1] = {
                 ["unitNumbers"]={
@@ -750,6 +750,8 @@ function moveAway (unitID, r, keys)
         x = x + (math.sin (a) * r)
 
         z = z + (math.cos (a) * r) 
+
+        if(x<=0 || x<=0) then Spring.Echo(x,z) end
 
         moveTo (unitID, x, z, keys)
 
@@ -904,8 +906,6 @@ end
 
 
 function gadget:UnitFinished(unitID, unitDefID, teamID) 
-
-    --moveAway (unitID, 200)
 
     if (isTeamCBM (teamID)) then
 
