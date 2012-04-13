@@ -614,6 +614,8 @@ function gadget:GameFrame(frame)
                 ["unitNumbers"]={
                 ["kdroneminingtower"]=h+2,
                 ["kdronewarrior"]=h-2,
+                ["kdiairdrone"]=h/2,
+                ["ktriairdrone"]=h/1.5,
             },
             skipMetal = math.huge
             }
@@ -751,7 +753,8 @@ function moveAway (unitID, r, keys)
 
         z = z + (math.cos (a) * r) 
 
-        if(x<=0 || x<=0) then Spring.Echo(x,z) end
+        if(x<=0) then x=1 end
+        if(z<=0) then x=1 end
 
         moveTo (unitID, x, z, keys)
 
