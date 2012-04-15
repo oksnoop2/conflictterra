@@ -754,7 +754,10 @@ function moveAway (unitID, r, keys)
         z = z + (math.cos (a) * r) 
 
         if(x<=0) then x=1 end
+        if(x>Game.mapSizeX) then x = Game.mapSizeX-1 end
+        
         if(z<=0) then x=1 end
+        if(z>Game.mapSizeZ) then z = Game.mapSizeZ-1 end
 
         moveTo (unitID, x, z, keys)
 

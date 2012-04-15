@@ -7,7 +7,7 @@
   buildCostMetal                = 400,
   builder                       = true,
     
-  buildPic                      = [[kgrounddronestructure.png]],				--needs to be kdronemininghub.png (I will make the buildpic, but you can set this for now and it won't cause any errors)
+  buildPic                      = [[kdronemininghub.png]],				--needs to be kdronemininghub.png (I will make the buildpic, but you can set this for now and it won't cause any errors)
   buildTime                     = 45,
 
   useBuildingGroundDecal        = true,
@@ -35,7 +35,7 @@
   maxWaterDepth                 = 0,
   metalMake                     = 0,
   noAutoFire                    = false,
-  objectName                    = [[kgrounddronestructure.s3o]],				--this needs to be kdronemininghub.s3o
+  objectName                    = [[kdronemininghub.s3o]],				--this needs to be kdronemininghub.s3o CHECK
   
   seismicSignature              = 4,
   selfDestructAs                = [[DRONE_BUILDING]],
@@ -63,7 +63,7 @@
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - Ground Drone Structure]],					--Ground Drone Structure needs to be Drone Mining Hub
+      description      = [[Wreckage - Drone Mining Hub]],					--Ground Drone Structure needs to be Drone Mining Hub
       blocking         = true,
       category         = [[corpses]],
       damage           = 1250,
@@ -79,7 +79,7 @@
 
 
     DEAD2 = {
-      description      = [[Debris - Ground Drone Structure]],					--Ground Drone Structure needs to be Drone Mining Hub
+      description      = [[Debris - Drone Mining Hub]],					--Ground Drone Structure needs to be CHECK
       blocking         = false,
       category         = [[heaps]],
       damage           = 625,
@@ -101,4 +101,4 @@
 
 
 
-return lowerkeys({ kgrounddronestructure = unitDef })							--kgrounddronestructure needs to be kdronemininghub
+return lowerkeys({ kdronemininghub = unitDef })							--kgrounddronestructure needs to be kdronemininghub
