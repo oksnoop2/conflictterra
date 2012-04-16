@@ -6,6 +6,9 @@
   buildCostEnergy               = 400,
   buildCostMetal                = 400,
   builder                       = true,
+  buildoptions                  = {
+	[[kdroneminerflyer]],
+  },
     
   buildPic                      = [[kdronemininghub.png]],				--needs to be kdronemininghub.png (I will make the buildpic, but you can set this for now and it won't cause any errors)
   buildTime                     = 45,
