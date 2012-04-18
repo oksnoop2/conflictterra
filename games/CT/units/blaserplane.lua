@@ -80,6 +80,8 @@
         
 	      damage                  = {
 		--Anti-Cruiser
+		--50 dps
+		--175 dps cruiser
 		default = 10,
 		Cruiser = 35,
 		Building = 10,
