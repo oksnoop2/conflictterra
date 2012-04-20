@@ -20,18 +20,19 @@
 	  category            = [[GUNSHIP]],
 	  collide             = false,
 	  corpse              = [[DEAD]],
-	  cruiseAlt           = 400,
+	  cruiseAlt           = 100,
 	  reclaimable         = false,
 	
 	  explodeAs           = [[SMALL_UNIT]],
 	  floater             = false,
 	  footprintx          = 2,
 	  footprintZ          = 2,
+	  hoverAttack         = true,
 	  idleAutoHeal        = 0,
 	  mass                = 150,
 	  maxAcc              = 1,
 	  maxDamage           = 200,
-	  maxVelocity         = 8,
+	  maxVelocity         = 2,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[LAND SINK HOVER SHIP FLOAT FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[kdroneminerflyer.s3o]],
@@ -42,6 +43,12 @@
 	  sightDistance       = 750,
 	  smoothAnim          = true,
 
+	  sfxtypes            = {
+	    explosiongenerators = {
+		"custom:ct_mininglaser_green",
+	    },
+	  },	  
+	  
 	  sounds			= {
 	      select = {
 		"argh/Argh_Jet.wav",
@@ -53,6 +60,7 @@
 	  },
 
 	  turnRadius          = 200,
+	  unitRestricted      = 20,
 	  script              = [[kdroneminerflyer.lua]],
 
           weapons             = {
@@ -95,7 +103,7 @@
               interceptedByShieldType = 1,
               impulseFactor           = 0,
               lineOfSight             = true,
-              range                   = 500,
+              range                   = 100,
               reloadtime              = 0.3,
               rgbColor                = [[1 0.95 0.4]],
               separation              = 2,

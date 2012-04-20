@@ -58,7 +58,7 @@ local ktriairdrone = {
 	smoothAnim          = true,
 	turnInPlace         = 1,
 	turnRate            = 800,
-	script		    = "ktriairdrone.lua",
+	script              = "ktriairdrone.lua",
 
 	weapons             = {
 	

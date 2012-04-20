@@ -1,7 +1,8 @@
-	--Ground Drone Structure animation script by Oksnoop2 and Sanada
+	--Drone Mining Hub animation script by Sanada and yanom
 
 	--pieces
 	local body = piece "base"
+	local pad = piece "pad"
 
 
 	--signals
@@ -9,14 +10,13 @@
 	local SIG_CLOSE = 2
 
 
-
 	--script
 	function script.Create(unitID)
 	end
 
-	function script.QueryBuildInfo() return flare1 end
+	function script.QueryBuildInfo() return pad end
 
-	function script.Queryflare1Piece() return flare1 end
+	function script.QueryNanoPiece() return body end
 
 	function script.Activate()
 		SetUnitValue(COB.YARD_OPEN, 1)
@@ -31,7 +31,6 @@
 		SetUnitValue(COB.BUGGER_OFF, 0)
 		return 0
 	end
-
 
 	function script.Killed(recentDamage, maxHealth)
 		return 0

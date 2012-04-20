@@ -11,13 +11,13 @@
 
 
 	--CEGs
-        local ct_mininglaser_green = SFX.CEG
+	local ct_mininglaser_green = SFX.CEG
 	
 
 	--local functions
 	local function RestoreAfterDelay(unitID)
 		Sleep(1000)
-        	Turn(turret, x_axis, 0, math.rad(50))
+		Turn(turret, x_axis, 0, math.rad(50))
 	end
 
 	--script
@@ -31,10 +31,10 @@
 	function script.AimWeapon1( heading, pitch )
 		Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(turret, y_axis, heading, math.rad(90))
-        	Turn(turret, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(turret, y_axis)
-        	WaitForTurn(turret, x_axis)
+		Turn(turret, y_axis, heading, math.rad(90))
+		Turn(turret, x_axis, -pitch, math.rad(50))
+		WaitForTurn(turret, y_axis)
+		WaitForTurn(turret, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
