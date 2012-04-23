@@ -70,6 +70,7 @@ local kdroneengineer = {
 	smoothAnim          = true,
     terraformSpeed      = 300,
 	reclaimSpeed        = 300,
+	repairSpeed         = 0.5,	
 	turnInPlace         = 1,
 	turnRate            = 1000,
 	showNanospray	    = 1,
