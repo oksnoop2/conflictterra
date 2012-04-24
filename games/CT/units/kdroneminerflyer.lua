@@ -60,7 +60,7 @@
 	  },
 
 	  turnRadius          = 200,
-	  unitRestricted      = 20,
+	  --unitRestricted      = 20,
 	  useSmoothMesh       = false,
 	  script              = [[kdroneminerflyer.lua]],
 
