@@ -29,8 +29,8 @@
   energyMake                    = 20,
   energyUse                     = 0,
   explodeAs                     = [[DRONE_BUILDING]],
-  footprintX                    = 4,											--set the footprint's x width
-  footprintZ                    = 4,											--set the footprint's z length
+  footprintX                    = 5,											--set the footprint's x width
+  footprintZ                    = 5,											--set the footprint's z length
   idleAutoHeal                  = 0,
   mass                          = 275,
   maxDamage                     = 2500,
