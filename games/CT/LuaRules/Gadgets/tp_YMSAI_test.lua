@@ -48,7 +48,7 @@ stages[1]= {
 
     ["unitNumbers"]={
 
-        ["kgrounddronestructure"]=1,
+        ["kdronemininghub"]=1,
 
         ["kdroneengineer"]=1,
 
@@ -64,59 +64,29 @@ stages[2]= {
 
     ["unitNumbers"]={
 
-        ["kdroneengineer"]=2,
+        ["kdroneminerflyer"]=2,
 
-        ["kdroneminingtower"]=2,
-
-        },
-
-    skipMetal = 500,
-
-    }
-
-
-
-stages[3]= {
-
-    ["unitNumbers"]={
-
-        ["kdroneminingtower"]=3,
+        ["kgrounddronestructure"]=1,
 
         },
 
-    skipMetal = 1000,
+    skipMetal = math.huge,
 
     }
-
     
-
-stages[4]= {
-
+stages[3] = {
     ["unitNumbers"]={
-
+        ["kdroneminerflyer"]=6,
         ["kairdronestructure"]=1,
-
-        ["kdroneminingtower"]=4,
-
-
-        },
-
-    skipMetal = 1000,
-
+    },
+    skipMetal = math.huge,
     }
 
-    
-
-stages[5]= { --mining boom phase
-
+stages[4] = {
     ["unitNumbers"]={
-
-        ["kdroneminingtower"]=10,
-
-        },
-
-    skipMetal = 2770,
-
+        ["kdroneminerflyer"]=10,
+    },
+    skipMetal = math.huge,
     }
 
 
@@ -211,6 +181,7 @@ end
 
 function makeSomeUnits (teamID, job)
 
+
 local all_units = Spring.GetTeamUnits (teamID)
 
 if (all_units == nil) then return end
@@ -228,10 +199,12 @@ if (all_units == nil) then return end
             if (assigned >= amount) then break end
 
             local canDo = canUnitBuildThis (unitName (unitID), name)
+            
+            --Spring.Echo("Parent:" .. unitName (unitID) .. "  Child:" .. name .. ":::" .. tostring(canDo))
 
             if (canDo) then 
 
-                local msg = unitID .. " can do it"
+                local msg = unitID .. "(" ..unitName(unitID) .. ")" .. " can do it"
 
                 local wantDo = doesUnitWantBuildJob (unitID, name)
 
@@ -270,13 +243,15 @@ end
 function canUnitBuildThis (parentName, childName)
 
 
-    if (parentName == childName and not (parentName == "kgrounddronestructure" or parentName == "kairdronestructure")) then return true end--everything can clone itself, except the structure (disabled)
+    if (parentName == childName and not (parentName == "kgrounddronestructure" or parentName == "kairdronestructure" or parentName == "kdroneminerflyer" or parentName == "kdronemininghub")) then return true end--everything can clone itself, except the structures, miner-flyer, mining hub.
 
     if (parentName == "kdroneengineer" and childName == "kgrounddronestructure") then return true end
 
-    if (parentName == "kdroneengineer" and childName == "kdroneminingtower") then return true end
+    --if (parentName == "kdroneengineer" and childName == "kdroneminingtower") then return true end
 
     if (parentName == "kdroneengineer" and childName == "kairdronestructure") then return true end
+    
+    if (parentName == "kdroneengineer" and childName == "kdronemininghub") then return true end
 
     ----land factory----
 
@@ -303,6 +278,14 @@ function canUnitBuildThis (parentName, childName)
         if (childName == "kdiairdrone") then return true end
 
         if (childName == "ktriairdrone") then return true end       
+
+    end 
+    
+    -- mining hub
+    
+    if (parentName == "kdronemininghub") then
+
+        if (childName == "kdroneminerflyer") then return true end
 
     end 
 
@@ -371,6 +354,16 @@ function buildUnit (unitID, jobname)
         Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {}, {}) --bauen
 
         moveAway (unitID, 500)  --waypoint
+
+        return
+
+    end
+    
+    if (unitName (unitID) == "kdronemininghub") then --mining hub builds
+
+        Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {}, {}) --bauen
+
+        --moveAway (unitID, 500)  --waypoint
 
         return
 
@@ -608,11 +601,11 @@ function gadget:GameFrame(frame)
 
         local h, missing = getHighestCompleteStage (myTeam[t])
 
-        --Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
+        Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
         if(stages[h+1] == nil) then
             stages[h+1] = {
                 ["unitNumbers"]={
-                ["kdroneminingtower"]=h+2,
+                ["kdroneminerflyer"]=h+2,
                 ["kdronewarrior"]=h-2,
                 ["kdiairdrone"]=h/2,
                 ["ktriairdrone"]=h/1.5,
@@ -934,15 +927,6 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 
         
 
-        if ((unitName (unitID) ~= "kdroneengineer") or (unitName (unitID) ~= "ktridroneroller")) then
-
-            local x = math.random(Game.mapSizeX)
-
-            local z = math.random(Game.mapSizeZ)
-
-            Spring.GiveOrderToUnit(unitID, CMD.FIGHT , {x, Spring.GetGroundHeight (x,z), z  }, {})
-
-        end
 
     else
 
