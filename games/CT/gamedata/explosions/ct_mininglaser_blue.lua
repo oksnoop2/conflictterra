@@ -16,7 +16,7 @@
                     dir                = [[dir]],
                     frontoffset        = 0,
                     fronttexture       = [[ct_machinegun_front]],
-                    length             = 1700,
+                    length             = 45,
                     sidetexture        = [[ct_bigbeam]],
                     size               = 0.5,
                     sizegrowth         = 1,
