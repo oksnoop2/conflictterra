@@ -28,7 +28,7 @@
 	  idleAutoHeal        = 0,
 	  leaveTracks         = true,
 	  mass                = 400,
-	  maxDamage           = 2500,
+	  maxDamage           = 1000,
 	  maxSlope            = 18,
 	  maxVelocity         = 1.5,
 	  maxWaterDepth       = 22,
@@ -39,7 +39,7 @@
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],
 	  side                = [[NKG]],
-	  sightDistance       = 480,
+	  sightDistance       = 600,
 
 	  sfxtypes            = {
 	    explosiongenerators = {
@@ -63,6 +63,7 @@
 	  trackStretch        = 1,
 	  trackType           = [[StdTank]],
 	  trackWidth          = 40,
+	  
 	  turnInPlace         = 1,
 	  turnRate            = 500,
 	  unitRestricted      = 1,
@@ -92,6 +93,7 @@
 	
 	      damage                  = {
 		--No Bonus
+		--120 dps
 		default = 300,
 		Cruiser = 300,
 		Building = 300,
@@ -129,7 +131,7 @@
 	      description      = [[Wreckage - Taisho Type Tank]],
 	      blocking         = true,
 	      category         = [[corpses]],
-	      damage           = 1250,
+	      damage           = 500,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
 	      footprintX       = 4,
@@ -145,7 +147,7 @@
 	      description      = [[Debris - Taisho Type Tank]],
 	      blocking         = false,
 	      category         = [[heaps]],
-	      damage           = 625,
+	      damage           = 250,
 	      energy           = 0,
 	      footprintX       = 4,
 	      footprintZ       = 4,
