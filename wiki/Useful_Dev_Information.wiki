@@ -28,7 +28,7 @@
   * metal of Wreck should be half of unit's metalCost.
   * reclaimTime of Wreck should be:
   {{{
-  reclaimTime = (metal / 10) * 300
+  reclaimTime = (metal) * 30
   }}}
 
 == Debris ==
