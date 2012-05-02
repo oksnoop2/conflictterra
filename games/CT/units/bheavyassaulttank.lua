@@ -1,11 +1,11 @@
 	unitDef = {
 	  unitname            = [[bheavyassaulttank]],
 	  name                = [[Ogami Type Tank]],
-	  description         = [[Heavy Tank - Hardier battle tank. Fires heavier shells.]],
+	  description         = [[Heavy Tank - Fires inaccurate, explosive shells. Damages a wide area.]],
 	  acceleration        = 0.5,
 	  brakeRate           = 0.1,
-	  buildCostEnergy     = 500,
-	  buildCostMetal      = 500,
+	  buildCostEnergy     = 400,
+	  buildCostMetal      = 400,
 	  builder             = false,
 	  buildPic            = [[bheavyassaulttank.png]],
 	  buildTime           = 20,
@@ -20,6 +20,7 @@
 
 	  customParams = {
 	  	RequireTech   = [[General's Presence]],
+		nofriendlyfire = true,		
 	  },
 	
 	  explodeAs           = [[BIG_UNIT]],
@@ -28,9 +29,9 @@
 	  idleAutoHeal        = 0,
 	  leaveTracks         = true,
 	  mass                = 400,
-	  maxDamage           = 2500,
+	  maxDamage           = 750,
 	  maxSlope            = 18,
-	  maxVelocity         = 1.5,
+	  maxVelocity         = 2,
 	  maxWaterDepth       = 22,
 	  movementClass       = [[TANK3x3]],
 	  noAutoFire          = false,
@@ -39,7 +40,7 @@
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],
 	  side                = [[NKG]],
-	  sightDistance       = 480,
+	  sightDistance       = 600,
 
 	  sfxtypes            = {
 	    explosiongenerators = {
@@ -63,7 +64,8 @@
 	  trackStrength       = 10,
 	  trackStretch        = 1,
 	  trackType           = [[StdTank]],
-	  trackWidth          = 40,
+	  trackWidth          = 35,
+	  
 	  turnInPlace         = 1,
 	  turnRate            = 500,
 	  script              = [[bheavyassaulttank.lua]],
@@ -83,30 +85,32 @@
 	
 	    Cannon = {
 	      name                    = [[Cannon]],
-	      areaOfEffect            = 32,
+		  accuracy                = 500,
+	      areaOfEffect            = 256,
 		  avoidFeature            = false,
 	      craterMult              = 0.25,
 		  collideFriendly         = false,
 	
 	      damage                  = {
 		--No Bonus
-		default = 300,
-		Cruiser = 300,
-		Building = 300,
-		Land = 300,
-		Aircraft = 300,
-		Ship = 300,
-		Sub = 300,
+		--25 dps
+		default = 75,
+		Cruiser = 75,
+		Building = 75,
+		Land = 75,
+		Aircraft = 75,
+		Ship = 75,
+		Sub = 75,
 
 		Meteor = 0,
-		Drone = 300,
-		Spare1 = 300,
-		Spare2 = 300,
-		Spare3 = 300,
+		Drone = 75,
+		Spare1 = 75,
+		Spare2 = 75,
+		Spare3 = 75,
 	      },
 	
 	      model                   = [[projectiles/bshell.s3o]],
-	      explosionGenerator      = [[custom:ct_impact_cannon]],
+	      explosionGenerator      = [[custom:ct_impact_cannon_explosive]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
 	      range                   = 500,
@@ -127,15 +131,15 @@
 	      description      = [[Wreckage - Ogami Type Tank]],
 	      blocking         = true,
 	      category         = [[corpses]],
-	      damage           = 1250,
+	      damage           = 375,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
 	      footprintX       = 3,
 	      footprintZ       = 3,
-	      metal            = 250,
+	      metal            = 200,
 	      object           = [[wrecks/bheavyassaulttankwreck.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 7500,
+	      reclaimTime      = 6000,
 	    },
 	
 	
@@ -143,14 +147,14 @@
 	      description      = [[Debris - Ogami Type Tank]],
 	      blocking         = false,
 	      category         = [[heaps]],
-	      damage           = 625,
+	      damage           = 187,
 	      energy           = 0,
 	      footprintX       = 3,
 	      footprintZ       = 3,
-	      metal            = 125,
+	      metal            = 100,
 	      object           = [[b3x3heap.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 3750,
+	      reclaimTime      = 3000,
 	    },
 	
 	  },

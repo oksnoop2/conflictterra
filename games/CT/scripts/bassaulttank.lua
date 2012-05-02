@@ -185,7 +185,7 @@
 	local function RestoreAfterDelay(unitID)
 		Sleep(1000)
 		Turn(turret, y_axis, 0, math.rad(90))
-        	Turn(barrel, x_axis, 0, math.rad(50))
+		Turn(barrel, x_axis, 0, math.rad(50))
 	end
 
 
@@ -223,10 +223,10 @@
 	function script.AimWeapon1( heading, pitch )
 		Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(turret, y_axis, heading, math.rad(90))
-        	Turn(barrel, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(turret, y_axis)
-        	WaitForTurn(barrel, x_axis)
+		Turn(turret, y_axis, heading, math.rad(90))
+		Turn(barrel, x_axis, -pitch, math.rad(50))
+		WaitForTurn(turret, y_axis)
+		WaitForTurn(barrel, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
