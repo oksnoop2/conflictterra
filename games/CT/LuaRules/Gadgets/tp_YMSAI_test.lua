@@ -1,4 +1,3 @@
---TODO - reinstate makeOneUnit(team,unitname)
 
 function gadget:GetInfo()
 
@@ -47,10 +46,10 @@ stages = {}
 stages[1]= {
 
     ["unitNumbers"]={
-
-        ["kdronemininghub"]=1,
-
+    
         ["kdroneengineer"]=1,
+
+        ["kdronebigminingtower"]=2,
 
         },
 
@@ -64,8 +63,6 @@ stages[2]= {
 
     ["unitNumbers"]={
 
-        ["kdroneminerflyer"]=2,
-
         ["kgrounddronestructure"]=1,
 
         },
@@ -76,42 +73,33 @@ stages[2]= {
     
 stages[3] = {
     ["unitNumbers"]={
-        ["kdroneminerflyer"]=6,
         ["kairdronestructure"]=1,
     },
     skipMetal = math.huge,
     }
-
-stages[4] = {
-    ["unitNumbers"]={
-        ["kdroneminerflyer"]=10,
-    },
-    skipMetal = math.huge,
-    }
-
 
 
 --funzt!
 
 function printStages ()
 
-    --Spring.Echo ("--printing stages table *START*--")
+    Spring.Echo ("--printing stages table *START*--")
 
     for i=1, #stages do
 
-        --Spring.Echo ("stages [" .. i  .. "]")
+        Spring.Echo ("stages [" .. i  .. "]")
 
-        --Spring.Echo ("skipMetal=" .. stages[i].skipMetal)
+        Spring.Echo ("skipMetal=" .. stages[i].skipMetal)
 
         for name, amount in pairs (stages[i]["unitNumbers"]) do
 
-            --Spring.Echo ("unitNumbers:" .. name .. " - " .. stages[i]["unitNumbers"][name])
+            Spring.Echo ("unitNumbers:" .. name .. " - " .. stages[i]["unitNumbers"][name])
 
         end
 
     end
 
-    --Spring.Echo ("--printing stages table *DONE*--")
+    Spring.Echo ("--printing stages table *DONE*--")
 
 end
 
@@ -243,11 +231,11 @@ end
 function canUnitBuildThis (parentName, childName)
 
 
-    if (parentName == childName and not (parentName == "kgrounddronestructure" or parentName == "kairdronestructure" or parentName == "kdroneminerflyer" or parentName == "kdronemininghub")) then return true end--everything can clone itself, except the structures, miner-flyer, mining hub.
+    if (parentName == childName and (parentName == "kdronewarrior" or parentName == "kdroneengineer" or parentName == "kdroneroller" or parentName == "ktridroneroller")) then return true end--these units can clone themselves
 
     if (parentName == "kdroneengineer" and childName == "kgrounddronestructure") then return true end
 
-    --if (parentName == "kdroneengineer" and childName == "kdroneminingtower") then return true end
+    if (parentName == "kdroneengineer" and childName == "kdronebigminingtower") then return true end
 
     if (parentName == "kdroneengineer" and childName == "kairdronestructure") then return true end
     
@@ -601,15 +589,17 @@ function gadget:GameFrame(frame)
 
         local h, missing = getHighestCompleteStage (myTeam[t])
 
-        Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
+        --Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
+        --printStages()
         if(stages[h+1] == nil) then
             stages[h+1] = {
-                ["unitNumbers"]={
-                ["kdroneminerflyer"]=h+2,
-                ["kdronewarrior"]=h-2,
-                ["kdiairdrone"]=h/2,
-                ["ktriairdrone"]=h/1.5,
-            },
+                    ["unitNumbers"]={
+                    ["kdronebigminingtower"]=h+1,
+                    ["kdroneengineer"]=h,
+                    ["kdronewarrior"]=h-2,
+                    ["kdiairdrone"]=h/2,
+                    ["ktriairdrone"]=h/1.5,
+                },
             skipMetal = math.huge
             }
         end
@@ -1011,6 +1001,7 @@ end
 function getBuildSpot (ux, uy, uz, buildingname, r, rgrow)  
 
     --Spring.MarkerAddPoint (ux,uy,uz, "trying to find a spot here")
+    if(buildingname=="kdronebigminingtower") then Spring.Echo("Building a big mining tower!!!") end
 
     local blocked = 0
 

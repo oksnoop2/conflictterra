@@ -11,7 +11,7 @@
 
 
     --CEGs
-    local ct_mininglaser_green = SFX.CEG
+    --local ct_mininglaser_green = SFX.CEG
     
 
     --local functions
@@ -40,7 +40,7 @@
     end
     
     function script.FireWeapon1()
-        EmitSfx(barrel, ct_mininglaser_green)
+        --EmitSfx(barrel, ct_mininglaser_green)
     end
     
     function script.Killed(recentDamage, maxHealth)

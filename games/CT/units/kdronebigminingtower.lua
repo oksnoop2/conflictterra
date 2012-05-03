@@ -28,6 +28,7 @@
       damageModifier      = 0.25,
       energyMake          = 3,
       explodeAs           = [[DRONE_BUILDING]],
+      noAutoFire          = true, --inhibits a fire state button being formed and makes it always fire
       fireState           = 2,
       footprintx          = 6,
       footprintZ          = 6,
@@ -37,7 +38,6 @@
       maxDamage           = 3000,
       maxSlope            = 18,
       maxWaterDepth       = 0,
-      noAutoFire          = false,
       noChaseCategory     = [[LAND SINK HOVER SHIP FLOAT FIXEDWING GUNSHIP CRUISER SUB]],
       objectName          = [[kdronebigminingtower.s3o]],
       seismicSignature    = 4,
@@ -47,7 +47,7 @@
 
       sfxtypes            = {
         explosiongenerators = {
-        "custom:ct_mininglaser_green_big",
+        "custom:ct_mininglaser_blue", --not used
         },
       },
 
@@ -94,7 +94,7 @@
                 Ship = 0,
                 Sub = 0,
 
-                Meteor = 1,
+                Meteor = 4,
                 Drone = 0,
                 Spare1 = 0,
                 Spare2 = 0,
@@ -107,9 +107,9 @@
               lineOfSight             = true,
               range                   = 1700,
               reloadtime              = 0.3,
-              rgbColor                = [[1 0.95 0.4]],
+              rgbColor                = [[0 1 0.4]],
               separation              = 2,
-              size                    = 0.4,
+              size                    = 1,
               soundStart              = [[tp/swoosh]],
               soundStartVolume        = 0.5,
               soundTrigger            = true,
@@ -117,7 +117,7 @@
               targetBorder            = 1,
               tolerance               = 8000,
               turret                  = true,
-              weaponType              = [[Cannon]],
+              weaponType              = [[BeamLaser]],
               weaponVelocity          = 7500,
 
 
