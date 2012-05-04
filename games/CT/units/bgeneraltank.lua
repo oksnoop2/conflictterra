@@ -20,12 +20,6 @@
 
 	  customParams = {
 	  	ProvideTech   = [[General's Presence, Raised Strategic Importance]],
-		
-		ring1radius = "500",
-		ring1color = "1,0,0,0.5",  
-		ring1thickness = "3", 
-		ring1showselected = "1", 
-		ring1sides = "32", 
 	  },
 	
 	  explodeAs           = [[BIG_UNIT]],
