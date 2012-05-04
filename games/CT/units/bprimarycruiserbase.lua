@@ -41,7 +41,7 @@ unitDef = {
   commander                     = true,
   corpse                        = [[DEAD]],
 
-  energyMake                    = 5,
+  energyMake                    = 0,
   energyStorage                 = 0,
   explodeAs                     = [[LARGE_BUILDING]],
   footprintX                    = 24,

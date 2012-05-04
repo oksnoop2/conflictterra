@@ -34,7 +34,7 @@
 	  corpse              = [[DEAD]],
 	  cruiseAlt           = 400,
 	
-	  energyMake          = 5,
+	  energyMake          = 0,
 	  energyStorage       = 0,
 	  energyUse           = 0,
 	  explodeAs           = [[BIG_UNIT]],
