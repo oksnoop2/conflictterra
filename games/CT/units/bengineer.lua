@@ -39,6 +39,14 @@ local bengineer = {
         corpse              = [[DEAD]],
         reclaimable         = false,
 
+	  customParams = {		
+		ring1radius = "220",
+		ring1color = "1,1,0,0.5",  
+		ring1thickness = "3", 
+		ring1showselected = "1", 
+		ring1sides = "32", 		
+	  },
+		
         energyMake          = 0,
         explodeAs           = [[SMALL_UNIT]],
         footprintx          = 3,

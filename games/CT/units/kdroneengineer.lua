@@ -29,6 +29,14 @@ local kdroneengineer = {
     commander           = true,    
     reclaimable         = false,
     
+	customParams = {		
+		ring1radius = "150",
+		ring1color = "1,1,0,0.5",  
+		ring1thickness = "3", 
+		ring1showselected = "1", 
+		ring1sides = "32", 		
+	},
+	
     cloakCost           = 2,
     cloakCostMoving     = 2,
     cloakTimeout        = 0,

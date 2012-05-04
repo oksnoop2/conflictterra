@@ -20,6 +20,12 @@
 
 	  customParams = {
 	  	ProvideTech   = [[General's Presence, Raised Strategic Importance]],
+		
+		ring1radius = "500",
+		ring1color = "1,0,0,0.5",  
+		ring1thickness = "3", 
+		ring1showselected = "1", 
+		ring1sides = "32", 
 	  },
 	
 	  explodeAs           = [[BIG_UNIT]],
@@ -39,7 +45,7 @@
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[BIG_UNIT]],
 	  side                = [[NKG]],
-	  sightDistance       = 600,
+	  sightDistance       = 700,
 
 	  sfxtypes            = {
 	    explosiongenerators = {
@@ -113,7 +119,7 @@
 	      explosionGenerator      = [[custom:ct_impact_cannon]],
 	      interceptedByShieldType = 1,
 	      impulseFactor           = 0,
-	      range                   = 500,
+	      range                   = 600,
 	      reloadtime              = 5,
 	      soundHit                = [[argh/Argh_MedExplosion]],
 	      soundStart              = [[argh/Argh_heavy_machinegun]],
