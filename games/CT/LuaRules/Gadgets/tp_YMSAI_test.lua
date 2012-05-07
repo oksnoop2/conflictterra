@@ -390,9 +390,13 @@ function buildUnit (unitID, jobname)
     if (unitName (unitID) == "kdroneengineer") then --engineer building whatever building
 
             local ux,uy,uz = Spring.GetUnitPosition (unitID)
-
-            local x,y,z = getBuildSpot (ux,uy,uz, jobname, 200, 50)
-
+            
+            if(jobname=="kdronebigminingtower") then
+                local x,y,z = getMiningTowerSpot (ux,uy,uz, unitID) --builder goes in. to find nearest res.
+            else
+                local x,y,z = getBuildSpot (ux,uy,uz, jobname, 200, 50) --something other than big mining tower
+            end
+            
             Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {x,y,z}, {}) --bauen
 
         return
@@ -1001,7 +1005,8 @@ end
 function getBuildSpot (ux, uy, uz, buildingname, r, rgrow)  
 
     --Spring.MarkerAddPoint (ux,uy,uz, "trying to find a spot here")
-    if(buildingname=="kdronebigminingtower") then Spring.Echo("Building a big mining tower!!!") end
+    
+    --if(buildingname=="kdronebigminingtower") then ux,uy,uz,dist = nearestResFromUnit( end
 
     local blocked = 0
 
@@ -1011,16 +1016,29 @@ function getBuildSpot (ux, uy, uz, buildingname, r, rgrow)
 
     try = 0
 
+    
+
     while (blocked ~=2 and try < 20) do
 
-        x = ux + math.random (-r, r)
+        local randtry = 2
+        
+        local rx,rz,ry = 0,0,0
 
-        z = uz + math.random (-r, r)
+        while(blocked ~=2 and randtry < 20) do
+            rx = ux + math.random (-r, r)
 
-        y = Spring.GetGroundHeight (x,z)
+            rz = uz + math.random (-r, r)
 
-        --blocked =Spring.TestBuildOrder (UnitDefNames[buildingname].id, x,y,z,0)
+            ry = Spring.GetGroundHeight (x,z)
 
+            blocked =Spring.TestBuildOrder (UnitDefNames[buildingname].id, rx,ry,rz,0)
+        
+            randtry = randtry+1
+        
+        end
+        
+        x,y,z = rx,ry,rz
+        
         r = r +rgrow
 
         try = try +1
@@ -1028,6 +1046,46 @@ function getBuildSpot (ux, uy, uz, buildingname, r, rgrow)
     end 
 
     --Spring.MarkerAddPoint (x,y,z, "found this after " .. try .. " tries")
+
+    return x,y,z
+
+end
+
+function getMiningTowerSpot (ux, uy, uz, builder, r, rgrow)  --NOT YET IMPLEMENTED! DO NOT USE!
+
+    local ox,oy,oz = ux,uy,uz
+
+    --Spring.MarkerAddPoint (ux,uy,uz, "trying to find a spot here")
+    Spring.Echo("Building a big mining tower!")
+    ux,uy,uz,dist = nearestResFromUnit(builder) --start building at the nearestResFromUnit 
+
+    local blocked = 0
+
+    if (r == nil) then r = 200 end
+
+    if (rgrow == nil) then rgrow = 200 end
+
+    try = 0
+
+    while (blocked ~=2 --[[and try < 20]]) do
+
+        x = ux + math.random (-r, r)
+
+        z = uz + math.random (-r, r)
+
+        y = Spring.GetGroundHeight (x,z)
+
+        blocked =Spring.TestBuildOrder (UnitDefNames["kdronebigminingtower"].id, x,y,z,0)
+
+        r = r +rgrow
+
+        try = try +1
+        
+        end 
+
+    --Spring.MarkerAddPoint (x,y,z, "found this after " .. try .. " tries")
+    
+    Spring.Echo("Differences:    " .. ox-ux .. "   " ..oy-uy.. "   " ..oz-uz)
 
     return x,y,z
 
