@@ -1053,17 +1053,21 @@ end
 
 function getMiningTowerSpot (ux, uy, uz, builder, r, rgrow)  --NOT YET IMPLEMENTED! DO NOT USE!
 
-    local ox,oy,oz = ux,uy,uz
-
+    local ox,oy,oz = ux,uy,uz --for debugging - holding on to input data
+    
     --Spring.MarkerAddPoint (ux,uy,uz, "trying to find a spot here")
-    Spring.Echo("Building a big mining tower!")
-    ux,uy,uz,dist = nearestResFromUnit(builder) --start building at the nearestResFromUnit 
-
+    
+    id,ux,uy,uz,dist = nearestResFromUnit(builder) --start building at the nearestResFromUnit 
+    
+    --[[Spring.Echo("resXZ   " .. ux .. "     " .. uz)
+    Spring.MarkerAddPoint(ux,uy,uz,"targeting this res")
+    Spring.Echo("Differences:    " .. ox-ux ..  "   " ..oz-uz)]]--
+    
     local blocked = 0
 
-    if (r == nil) then r = 200 end
+    if (r == nil) then r = 0 end
 
-    if (rgrow == nil) then rgrow = 200 end
+    if (rgrow == nil) then rgrow = 20 end
 
     try = 0
 
@@ -1085,7 +1089,7 @@ function getMiningTowerSpot (ux, uy, uz, builder, r, rgrow)  --NOT YET IMPLEMENT
 
     --Spring.MarkerAddPoint (x,y,z, "found this after " .. try .. " tries")
     
-    Spring.Echo("Differences:    " .. ox-ux .. "   " ..oy-uy.. "   " ..oz-uz)
+    
 
     return x,y,z
 
