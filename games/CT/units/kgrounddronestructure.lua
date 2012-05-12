@@ -7,11 +7,11 @@ unitDef = {
   buildCostMetal                = 400,
   builder                       = true,
   buildoptions                  = {
-	[[kdroneengineer]],
-	[[klightdrone]],	
-	[[kdronewarrior]],
-	[[kdroneroller]],
-	[[ktridroneroller]],
+    [[kdroneengineer]],
+    [[klightdrone]],    
+    [[kdronewarrior]],
+    [[kdroneroller]],
+    [[ktridroneroller]],
   },
   
   buildPic                      = [[kgrounddronestructure.png]],
@@ -50,14 +50,14 @@ unitDef = {
   side                          = [[Drone]],
   sightDistance                 = 250,
 
-	  sounds			= {
-	      select = {
-		"golgotha/vehicle_done_44khz",
-		},
-	      ok = {
-		"golgotha/vehicle_done_44khz",
-		},
-	  },
+      sounds            = {
+          select = {
+        "golgotha/vehicle_done_44khz",
+        },
+          ok = {
+        "golgotha/vehicle_done_44khz",
+        },
+      },
 
   smoothAnim                    = true,
   turnRate                      = 0,
@@ -74,6 +74,7 @@ unitDef = {
       blocking         = true,
       category         = [[corpses]],
       damage           = 1250,
+      maxDamage        = 1250,
       energy           = 0,
       featureDead      = [[DEAD2]],
       footprintX       = 8,

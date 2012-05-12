@@ -30,8 +30,8 @@
       explodeAs           = [[DRONE_BUILDING]],
       noAutoFire          = true, --inhibits a fire state button being formed and makes it always fire
       fireState           = 2,
-      footprintx          = 6,
-      footprintZ          = 6,
+      footprintx          = 4,
+      footprintZ          = 4,
       idleAutoHeal        = 0,
       levelGround         = false,
       mass                = 1300,
@@ -95,6 +95,7 @@
                 Sub = 0,
 
                 Meteor = 4,
+                corpses = 1000,
                 Drone = 0,
                 Spare1 = 0,
                 Spare2 = 0,

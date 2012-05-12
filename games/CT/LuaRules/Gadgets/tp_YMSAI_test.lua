@@ -49,7 +49,7 @@ stages[1]= {
     
         ["kdroneengineer"]=1,
 
-        ["kdronebigminingtower"]=2,
+        ["kdronemininghub"]=1,
 
         },
 
@@ -63,7 +63,7 @@ stages[2]= {
 
     ["unitNumbers"]={
 
-        ["kgrounddronestructure"]=1,
+        ["kdroneminerflyer"]=10,
 
         },
 
@@ -73,11 +73,16 @@ stages[2]= {
     
 stages[3] = {
     ["unitNumbers"]={
+        ["kgrounddronestructure"]=1,
+    },
+    skipMetal = math.huge,
+    }
+stages[4] = {
+    ["unitNumbers"]={
         ["kairdronestructure"]=1,
     },
     skipMetal = math.huge,
     }
-
 
 --funzt!
 
@@ -598,8 +603,10 @@ function gadget:GameFrame(frame)
         if(stages[h+1] == nil) then
             stages[h+1] = {
                     ["unitNumbers"]={
-                    ["kdronebigminingtower"]=h+1,
-                    ["kdroneengineer"]=h,
+                    --["kdronebigminingtower"]=h+1,
+                    ["kdronemininghub"] = h/8,
+                    ["kdroneminerflyer"] = h*3,
+                    ["kdroneengineer"]=h/2,
                     ["kdronewarrior"]=h-2,
                     ["kdiairdrone"]=h/2,
                     ["ktriairdrone"]=h/1.5,
@@ -1029,7 +1036,7 @@ function getBuildSpot (ux, uy, uz, buildingname, r, rgrow)
 
             rz = uz + math.random (-r, r)
 
-            ry = Spring.GetGroundHeight (x,z)
+            ry = Spring.GetGroundHeight (rx,rz)
 
             blocked =Spring.TestBuildOrder (UnitDefNames[buildingname].id, rx,ry,rz,0)
         
