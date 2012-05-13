@@ -63,7 +63,7 @@ stages[2]= {
 
     ["unitNumbers"]={
 
-        ["kdroneminerflyer"]=10,
+        ["kdroneminerflyer"]=30,
 
         },
 
@@ -605,7 +605,7 @@ function gadget:GameFrame(frame)
                     ["unitNumbers"]={
                     --["kdronebigminingtower"]=h+1,
                     ["kdronemininghub"] = h/8,
-                    ["kdroneminerflyer"] = h*3,
+                    ["kdroneminerflyer"] = h*10,
                     ["kdroneengineer"]=h/2,
                     ["kdronewarrior"]=h-2,
                     ["kdiairdrone"]=h/2,
