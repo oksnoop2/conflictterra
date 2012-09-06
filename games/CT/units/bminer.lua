@@ -19,8 +19,8 @@ local bminer = {
         reclaimable         = false,
 
         customParams = {
-		  is_miner=1,	--used by minig: if the unit can mine is_mineable=1 ressources
-		  max_cargo=25,	--used by mining: how much metal the unit can carry at once before having to return to a drop off
+          is_miner=1,   --used by minig: if the unit can mine is_mineable=1 ressources
+          max_cargo=25, --used by mining: how much metal the unit can carry at once before having to return to a drop off
         },
 
         energyMake          = 0,
@@ -62,13 +62,13 @@ local bminer = {
           },
 
         smoothAnim          = true,
-		
+        
         trackOffset         = 12,
         trackStrength       = 5,
         trackStretch        = 1,
         trackType           = [[StdTank]],
         trackWidth          = 20,
-		
+        
         turnInPlace         = 1,
         turnRate            = 1000,
         script              = "bminer.lua",
@@ -90,14 +90,14 @@ local bminer = {
             Mining_Laser = {
               name                    = [[Mining Laser]],
               areaOfEffect            = 8,
-			  avoidFeature            = false,
+              avoidFeature            = false,
               avoidFriendly           = false,
               craterMult              = 0.25,
               accuracy                = 0,
               collideFriendly         = false,
         
               damage                  = {
-			    --Mining
+                --Mining
                 Cruiser = 0,
                 Building = 0,
                 Land = 0,
@@ -112,15 +112,15 @@ local bminer = {
                 Spare3 = 0,
               },
         
-              explosionGenerator      = [[custom:resmining_blue]],
+              explosionGenerator      = [[custom:resmining_red]],
               interceptedByShieldType = 1,
               impulseFactor           = 0,
               lineOfSight             = true,
               range                   = 100,
-              reloadtime              = 0.2,
-              rgbColor                = [[1 0.95 0.4]],
+              reloadtime              = 0.1,
+              rgbColor                = [[1 .1 0]],
               separation              = 2,
-              size                    = 0.4,
+              size                    = 0.05,
               soundStart              = [[tp/swoosh]],
               soundStartVolume        = 0.5,
               soundTrigger            = true,
@@ -128,11 +128,11 @@ local bminer = {
               targetBorder            = 1,
               tolerance               = 8000,
               turret                  = true,
-              weaponType              = [[Cannon]],
+              weaponType              = [[BeamLaser]],
               weaponVelocity          = 7500,
 
 
-			},
+            },
         
           },
 

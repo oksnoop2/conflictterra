@@ -31,7 +31,7 @@
       idleAutoHeal        = 0,
       mass                = 15,
       maxAcc              = 1,
-      maxDamage           = 1,
+      maxDamage           = 3,
       maxVelocity         = 1.5,
       noAutoFire          = false,
       noChaseCategory     = [[LAND SINK HOVER SHIP FLOAT FIXEDWING GUNSHIP CRUISER SUB]],
