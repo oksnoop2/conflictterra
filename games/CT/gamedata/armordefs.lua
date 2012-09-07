@@ -3,7 +3,7 @@
 
     local armorDefs = {
 
-        --[[Cruiser  =  {
+        Cruiser  =  {
             --NKG--
 
 
@@ -184,7 +184,7 @@
         },
 
         Spare3 = {
-        },]]--
+        },
 
         Meteor = {
             "bmeteorimpact",

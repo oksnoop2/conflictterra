@@ -1,8 +1,6 @@
     --ct_mininglaser_blue
     --Blue mining laser
     --by Sanada
-    
-    --yanom: this file controls the long thin "laser" beam.
 
     return {
         ["ct_mininglaser_blue"] = {

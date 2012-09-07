@@ -112,15 +112,15 @@ local bminer = {
                 Spare3 = 0,
               },
         
-              explosionGenerator      = [[custom:resmining_red]],
+              explosionGenerator      = [[custom:resmining_blue]],
               interceptedByShieldType = 1,
               impulseFactor           = 0,
               lineOfSight             = true,
               range                   = 100,
-              reloadtime              = 0.1,
-              rgbColor                = [[1 .1 0]],
+              reloadtime              = 0.2,
+              rgbColor                = [[1 0.95 0.4]],
               separation              = 2,
-              size                    = 0.05,
+              size                    = 0.4,
               soundStart              = [[tp/swoosh]],
               soundStartVolume        = 0.5,
               soundTrigger            = true,
@@ -128,7 +128,7 @@ local bminer = {
               targetBorder            = 1,
               tolerance               = 8000,
               turret                  = true,
-              weaponType              = [[BeamLaser]],
+              weaponType              = [[Cannon]],
               weaponVelocity          = 7500,
 
 
