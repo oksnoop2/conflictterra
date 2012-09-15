@@ -1,1 +1,7 @@
- "If not stated anywhere else, content is to be public domain or the least restrictive license allowed in your country." 
+All contents of the following folders are not to be used without permission from the game author.  He can be reached via e-mail at:  sanadaujiosan@gmail.com
+
+* objects3D
+* unitpics
+* unittextures
+
+All scripts and code are considered public domain if not otherwise stated.
