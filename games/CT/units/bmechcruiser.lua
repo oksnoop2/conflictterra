@@ -154,7 +154,7 @@
 	      canattackground         = false,
 	      cegtag                  = [[ct_missiletail_aa]],
 	      collideFriendly         = false,		  
-	      cylinderTargetting      = 1,
+	      cylinderTargeting       = 1,
 	      craterMult              = 0.25,
 	
 	      damage                  = {

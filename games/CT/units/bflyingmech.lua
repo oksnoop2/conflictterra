@@ -147,7 +147,7 @@
 		  avoidFeature            = false,
 	      avoidFriendly           = true,
 	      canattackground         = false,
-	      cylinderTargetting      = 1,
+	      cylinderTargeting       = 1,
 	      cegtag                  = [[ct_missiletail_aa]],
 	      collideFriendly         = false,
 	      craterMult              = 0.25,

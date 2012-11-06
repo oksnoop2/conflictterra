@@ -93,7 +93,7 @@
 	      avoidFriendly           = true,
 	      canattackground         = false,
 	      cegtag                  = [[ct_missiletail_aa]],
-	      cylinderTargetting      = 1,
+	      cylinderTargeting       = 1,
 		  collideFriendly         = false,
 	      craterMult              = 0.25,
 	

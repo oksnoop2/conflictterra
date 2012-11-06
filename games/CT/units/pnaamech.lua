@@ -63,7 +63,7 @@
 	  turnRate            = 500,
 	  upright             = true,
 	  workerTime          = 0,
-          script              = [[pnaamech.lua]],
+	  script              = [[pnaamech.lua]],
 	
 	  weapons             = {
 
@@ -89,7 +89,7 @@
 	      burst                   = 4,
 	      burstrate               = 0.5,
 	      canattackground         = true,
-	      cylinderTargetting      = 1,
+	      cylinderTargeting       = 1,
 	      craterMult              = 0.25,
 	
 	      damage                  = {

@@ -67,7 +67,7 @@
 	  turnInPlace         = 0,
 	  turnRate            = 500,
 	  workerTime          = 0,
-          script              = [[pnarmoredcar.lua]],
+	  script              = [[pnarmoredcar.lua]],
 	
 	  weapons             = {
 	
@@ -86,7 +86,7 @@
 	      areaOfEffect            = 48,
 	      avoidFriendly           = true,
 	      canattackground         = false,
-	      cylinderTargetting      = 1,
+	      cylinderTargeting       = 1,
 	      craterMult              = 0.25,
 	
 	      damage                  = {

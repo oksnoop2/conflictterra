@@ -75,7 +75,7 @@
 	      burstrate               = 0.5,
 	      canattackground         = false,
 	      cegtag                  = [[ct_missiletail_aa]],
-	      cylinderTargetting      = 1,
+	      cylinderTargeting       = 1,
 	      craterMult              = 0.25,
 		  collideFriendly         = false,		  
 	

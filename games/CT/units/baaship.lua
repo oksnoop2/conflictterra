@@ -90,7 +90,7 @@
 	      name                    = [[Vertical Launch AA Missile]],
 	      areaOfEffect            = 64,
 	      canattackground         = true,
-	      cylinderTargetting      = 1,
+	      cylinderTargeting       = 1,
 	      craterMult              = 0.25,
 	
 	      damage                  = {
