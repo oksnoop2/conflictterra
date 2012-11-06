@@ -1,3 +1,4 @@
+--TODO - reinstate makeOneUnit(team,unitname)
 
 function gadget:GetInfo()
 
@@ -46,10 +47,10 @@ stages = {}
 stages[1]= {
 
     ["unitNumbers"]={
-    
-        ["kdroneengineer"]=1,
 
-        ["kdronemininghub"]=1,
+        ["kgrounddronestructure"]=1,
+
+        ["kdroneengineer"]=1,
 
         },
 
@@ -63,48 +64,84 @@ stages[2]= {
 
     ["unitNumbers"]={
 
-        ["kdroneminerflyer"]=30,
+        ["kdroneengineer"]=2,
+
+        ["kdroneminingtower"]=2,
 
         },
 
-    skipMetal = math.huge,
+    skipMetal = 500,
 
     }
+
+
+
+stages[3]= {
+
+    ["unitNumbers"]={
+
+        ["kdroneminingtower"]=3,
+
+        },
+
+    skipMetal = 1000,
+
+    }
+
     
-stages[3] = {
+
+stages[4]= {
+
     ["unitNumbers"]={
-        ["kgrounddronestructure"]=1,
-    },
-    skipMetal = math.huge,
-    }
-stages[4] = {
-    ["unitNumbers"]={
+
         ["kairdronestructure"]=1,
-    },
-    skipMetal = math.huge,
+
+        ["kdroneminingtower"]=4,
+
+
+        },
+
+    skipMetal = 1000,
+
     }
+
+    
+
+stages[5]= { --mining boom phase
+
+    ["unitNumbers"]={
+
+        ["kdroneminingtower"]=10,
+
+        },
+
+    skipMetal = 2770,
+
+    }
+
+
 
 --funzt!
 
 function printStages ()
 
-    Spring.Echo ("--printing stages table *START*--")
+    --Spring.Echo ("--printing stages table *START*--")
 
     for i=1, #stages do
 
-        Spring.Echo ("stages [" .. i  .. "]")
+        --Spring.Echo ("stages [" .. i  .. "]")
 
-        Spring.Echo ("skipMetal=" .. stages[i].skipMetal)
+        --Spring.Echo ("skipMetal=" .. stages[i].skipMetal)
 
         for name, amount in pairs (stages[i]["unitNumbers"]) do
 
-            Spring.Echo ("unitNumbers:" .. name .. " - " .. stages[i]["unitNumbers"][name])
+            --Spring.Echo ("unitNumbers:" .. name .. " - " .. stages[i]["unitNumbers"][name])
 
         end
 
     end
 
-    Spring.Echo ("--printing stages table *DONE*--")
+    --Spring.Echo ("--printing stages table *DONE*--")
 
 end
 
@@ -168,12 +205,11 @@ end
 
 --job: ["unitname"] = amount
 
---***problem: es wird alles mehrfach gebaut weil es im nÃ¤chsten frame%30 wieder vergeben wird
+--***problem: es wird alles mehrfach gebaut weil es im nÃƒÂ¤chsten frame%30 wieder vergeben wird
 
 --braucht also ein inProgress array.
 
 function makeSomeUnits (teamID, job)
-
 
 local all_units = Spring.GetTeamUnits (teamID)
 
@@ -192,12 +228,10 @@ if (all_units == nil) then return end
             if (assigned >= amount) then break end
 
             local canDo = canUnitBuildThis (unitName (unitID), name)
-            
-            --Spring.Echo("Parent:" .. unitName (unitID) .. "  Child:" .. name .. ":::" .. tostring(canDo))
 
             if (canDo) then 
 
-                local msg = unitID .. "(" ..unitName(unitID) .. ")" .. " can do it"
+                local msg = unitID .. " can do it"
 
                 local wantDo = doesUnitWantBuildJob (unitID, name)
 
@@ -236,15 +270,13 @@ end
 function canUnitBuildThis (parentName, childName)
 
 
-    if (parentName == childName and (parentName == "kdronewarrior" or parentName == "kdroneengineer" or parentName == "kdroneroller" or parentName == "ktridroneroller")) then return true end--these units can clone themselves
+    if (parentName == childName and not (parentName == "kgrounddronestructure" or parentName == "kairdronestructure")) then return true end--everything can clone itself, except the structure (disabled)
 
     if (parentName == "kdroneengineer" and childName == "kgrounddronestructure") then return true end
 
-    if (parentName == "kdroneengineer" and childName == "kdronebigminingtower") then return true end
+    if (parentName == "kdroneengineer" and childName == "kdroneminingtower") then return true end
 
     if (parentName == "kdroneengineer" and childName == "kairdronestructure") then return true end
-    
-    if (parentName == "kdroneengineer" and childName == "kdronemininghub") then return true end
 
     ----land factory----
 
@@ -273,16 +305,8 @@ function canUnitBuildThis (parentName, childName)
         if (childName == "ktriairdrone") then return true end       
 
     end 
-    
-    -- mining hub
-    
-    if (parentName == "kdronemininghub") then
 
-        if (childName == "kdroneminerflyer") then return true end
-
-    end 
-
-    --falls sich gar niemand findet, kann sich auch ein mining tower zum engineer zurÃ¼ck morphen:
+    --falls sich gar niemand findet, kann sich auch ein mining tower zum engineer zurÃƒÂ¼ck morphen:
 
     --if (parentName == "kdroneminingtower" and childName == "kdroneengineer") then return true end
 
@@ -351,16 +375,6 @@ function buildUnit (unitID, jobname)
         return
 
     end
-    
-    if (unitName (unitID) == "kdronemininghub") then --mining hub builds
-
-        Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {}, {}) --bauen
-
-        --moveAway (unitID, 500)  --waypoint
-
-        return
-
-    end
 
     
 
@@ -395,13 +409,9 @@ function buildUnit (unitID, jobname)
     if (unitName (unitID) == "kdroneengineer") then --engineer building whatever building
 
             local ux,uy,uz = Spring.GetUnitPosition (unitID)
-            
-            if(jobname=="kdronebigminingtower") then
-                local x,y,z = getMiningTowerSpot (ux,uy,uz, unitID) --builder goes in. to find nearest res.
-            else
-                local x,y,z = getBuildSpot (ux,uy,uz, jobname, 200, 50) --something other than big mining tower
-            end
-            
+
+            local x,y,z = getBuildSpot (ux,uy,uz, jobname, 200, 50)
+
             Spring.GiveOrderToUnit(unitID, -UnitDefNames[jobname].id, {x,y,z}, {}) --bauen
 
         return
@@ -448,7 +458,7 @@ end
 
 
 
-myTeam = {} --enthÃ¤lt alle teamids fÃ¼r die wir spielen, [1]=3, [2]=7 etc
+myTeam = {} --enthÃƒÂ¤lt alle teamids fÃƒÂ¼r die wir spielen, [1]=3, [2]=7 etc
 
 teamsData = {} --stores data for each team. Example: the rosters of each team's squad live here.
 
@@ -578,7 +588,7 @@ function gadget:GameFrame(frame)
     
     
 
-    --Spring.Echo ("lÃ¤uft")
+    --Spring.Echo ("lÃƒÂ¤uft")
 
     for _,t in pairs(myTeam) do
     
@@ -599,18 +609,14 @@ function gadget:GameFrame(frame)
         local h, missing = getHighestCompleteStage (myTeam[t])
 
         --Spring.Echo ("team " .. myTeam[t] .. " is at stage " .. h)
-        --printStages()
         if(stages[h+1] == nil) then
             stages[h+1] = {
-                    ["unitNumbers"]={
-                    --["kdronebigminingtower"]=h+1,
-                    ["kdronemininghub"] = h/8,
-                    ["kdroneminerflyer"] = h*10,
-                    ["kdroneengineer"]=h/2,
-                    ["kdronewarrior"]=h-2,
-                    ["kdiairdrone"]=h/2,
-                    ["ktriairdrone"]=h/1.5,
-                },
+                ["unitNumbers"]={
+                ["kdroneminingtower"]=h+2,
+                ["kdronewarrior"]=h-2,
+                ["kdiairdrone"]=h/2,
+                ["ktriairdrone"]=h/1.5,
+            },
             skipMetal = math.huge
             }
         end
@@ -928,6 +934,15 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 
         
 
+        if ((unitName (unitID) ~= "kdroneengineer") or (unitName (unitID) ~= "ktridroneroller")) then
+
+            local x = math.random(Game.mapSizeX)
+
+            local z = math.random(Game.mapSizeZ)
+
+            Spring.GiveOrderToUnit(unitID, CMD.FIGHT , {x, Spring.GetGroundHeight (x,z), z  }, {})
+
+        end
 
     else
 
@@ -1012,8 +1027,6 @@ end
 function getBuildSpot (ux, uy, uz, buildingname, r, rgrow)  
 
     --Spring.MarkerAddPoint (ux,uy,uz, "trying to find a spot here")
-    
-    --if(buildingname=="kdronebigminingtower") then ux,uy,uz,dist = nearestResFromUnit( end
 
     local blocked = 0
 
@@ -1023,62 +1036,7 @@ function getBuildSpot (ux, uy, uz, buildingname, r, rgrow)
 
     try = 0
 
-    
-
     while (blocked ~=2 and try < 20) do
-
-        local randtry = 2
-        
-        local rx,rz,ry = 0,0,0
-
-        while(blocked ~=2 and randtry < 20) do
-            rx = ux + math.random (-r, r)
-
-            rz = uz + math.random (-r, r)
-
-            ry = Spring.GetGroundHeight (rx,rz)
-
-            blocked =Spring.TestBuildOrder (UnitDefNames[buildingname].id, rx,ry,rz,0)
-        
-            randtry = randtry+1
-        
-        end
-        
-        x,y,z = rx,ry,rz
-        
-        r = r +rgrow
-
-        try = try +1
-
-    end 
-
-    --Spring.MarkerAddPoint (x,y,z, "found this after " .. try .. " tries")
-
-    return x,y,z
-
-end
-
-function getMiningTowerSpot (ux, uy, uz, builder, r, rgrow)  --NOT YET IMPLEMENTED! DO NOT USE!
-
-    local ox,oy,oz = ux,uy,uz --for debugging - holding on to input data
-    
-    --Spring.MarkerAddPoint (ux,uy,uz, "trying to find a spot here")
-    
-    id,ux,uy,uz,dist = nearestResFromUnit(builder) --start building at the nearestResFromUnit 
-    
-    --[[Spring.Echo("resXZ   " .. ux .. "     " .. uz)
-    Spring.MarkerAddPoint(ux,uy,uz,"targeting this res")
-    Spring.Echo("Differences:    " .. ox-ux ..  "   " ..oz-uz)]]--
-    
-    local blocked = 0
-
-    if (r == nil) then r = 0 end
-
-    if (rgrow == nil) then rgrow = 20 end
-
-    try = 0
-
-    while (blocked ~=2 --[[and try < 20]]) do
 
         x = ux + math.random (-r, r)
 
@@ -1086,17 +1044,15 @@ function getMiningTowerSpot (ux, uy, uz, builder, r, rgrow)  --NOT YET IMPLEMENT
 
         y = Spring.GetGroundHeight (x,z)
 
-        blocked =Spring.TestBuildOrder (UnitDefNames["kdronebigminingtower"].id, x,y,z,0)
+        --blocked =Spring.TestBuildOrder (UnitDefNames[buildingname].id, x,y,z,0)
 
         r = r +rgrow
 
         try = try +1
-        
-        end 
+
+    end 
 
     --Spring.MarkerAddPoint (x,y,z, "found this after " .. try .. " tries")
-    
-    
 
     return x,y,z
 
@@ -1313,5 +1269,4 @@ else ------UNSYNCED--------
 --end
 
 end --end unsynced
-
 
