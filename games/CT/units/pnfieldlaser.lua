@@ -47,7 +47,7 @@
 	  },
 
 	  smoothAnim          = true,
-	  yardMap             = [[ooooo ooooo ooooo ooooo ooooo]],
+	  yardMap             = [[oo oo]],
           --script              = [[pnfieldlaser.lua]],
 	
 	  weapons             = {

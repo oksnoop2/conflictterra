@@ -50,7 +50,7 @@ unitDef = {
 	},
   },
 
-  yardMap                       = [[oooo oooo oooo ooooo]],
+  yardMap                       = [[oooo oooo oooo oooo]],
   script                        = [[badvsearadartower.lua]],
 
 

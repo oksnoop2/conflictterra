@@ -56,7 +56,7 @@ unitDef = {
 	},
   },
 
-  yardMap                       = [[o o]],
+  yardMap                       = [[o]],
   script                        = [[bsearadartower.lua]],
 
   featureDefs                   = {

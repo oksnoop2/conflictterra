@@ -43,7 +43,7 @@
 		},
 	  },
 
-	  yardMap             = [[ooo ooo ooo]],
+	  yardMap             = [[oooo oooo oooo oooo]],
 	  script              = [[badvtorpedoturret.lua]],
 	
 	  weapons             = {

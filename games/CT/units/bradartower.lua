@@ -42,7 +42,7 @@ unitDef = {
   side                          = [[NKG]],
   sightDistance                 = 400,
   smoothAnim                    = true,
-  yardMap                       = [[o o]],
+  yardMap                       = [[o]],
   script                        = [[bradartower.lua]],
 
   sounds			= {

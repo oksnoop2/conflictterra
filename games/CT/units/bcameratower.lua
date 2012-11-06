@@ -45,7 +45,7 @@ unitDef = {
   sightDistance                 = 500,
   smoothAnim                    = true,
   stealth                       = true,
-  yardMap                       = [[o o]],
+  yardMap                       = [[o]],
   script                        = [[bcameratower.lua]],
 
   sounds			= {

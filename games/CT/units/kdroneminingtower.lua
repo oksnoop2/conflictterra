@@ -61,7 +61,7 @@
 	  },
 
 	  smoothAnim          = true,
-	  yardMap             = [[ooooo ooooo ooooo ooooo ooooo]],
+	  yardMap             = [[ooo ooo ooo]],
 	  script              = [[kdroneminingtower.lua]],
 	
 	  weapons             = {

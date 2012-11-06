@@ -60,7 +60,7 @@ unitDef = {
 
   smoothAnim                    = true,
   workerTime                    = 1,
-  yardMap                       = [[c]],
+  yardMap                       = [[ccccccc ccccccc ccccccc ccccccc ccccccc ccccccc ccccccc]],
   script                        = [[kairdronestructure.lua]],
 
   featureDefs                   = {
