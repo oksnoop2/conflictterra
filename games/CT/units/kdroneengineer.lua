@@ -11,7 +11,7 @@ local kdroneengineer = {
     buildoptions        = {
         [[kgrounddronestructure]],
         [[kairdronestructure]],
-        [[kdronemininghub]],
+--        [[kdronemininghub]],
 --        [[kdronebigminingtower]],
     },
 
