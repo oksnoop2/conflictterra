@@ -34,30 +34,98 @@ local featureBarWidth  = 10
 local featureBarAlpha  = 0.6
 
 local drawBarTitles = true
+local drawBarPercentages = true 
 local titlesAlpha   = 0.3*barAlpha
 
 local drawFullHealthBars = false
 
-local drawFeatureHealth  = true
+local drawFeatureHealth  = false
 local featureTitlesAlpha = featureBarAlpha * titlesAlpha/barAlpha
 local featureHpThreshold = 0.85
 
 local infoDistance = 700000
-
-local minReloadTime = 4 --// in seconds
 
 local drawStunnedOverlay = true
 local drawUnitsOnFire    = Spring.GetGameRulesParam("unitsOnFire")
 local drawJumpJet        = Spring.GetGameRulesParam("jumpJets")
 
 --// this table is used to shows the hp of perimeter defence, and filter it for default wreckages
-local walls = {dragonsteeth=true,dragonsteeth_core=true,
-		   fortification=true,fortification_core=true,
-		   floatingteeth=true,floatingteeth_core=true,
-		   avdfc=true,avdfcns=true,avdfv=true,avdfvns=true}
+local walls = {dragonsteeth=true,dragonsteeth_core=true,fortification=true,fortification_core=true,spike=true,floatingteeth=true,floatingteeth_core=true,spike=true}
 
 local stockpileH = 24
 local stockpileW = 12
+
+local captureReloadTime = 240
+
+--------------------------------------------------------------------------------
+-- OPTIONS
+--------------------------------------------------------------------------------
+local function OptionsChanged() 
+	drawFeatureHealth = options.drawFeatureHealth.value
+	drawBarPercentages = options.drawBarPercentages.value
+end 
+
+options_path = 'Settings/Interface/Healthbars'
+options_order = { 'showhealthbars', 'drawFeatureHealth', 'drawBarPercentages', 'minReloadTime'}
+options = {
+	
+	showhealthbars = {
+		name = 'Show Healthbars',
+		type = 'bool',
+		value = true,
+		--OnChange = function() Spring.SendCommands{'showhealthbars'} end,
+	},
+	drawFeatureHealth = {
+		name = 'Draw health of features (corpses)',
+		type = 'bool',
+		value = false,
+		desc = 'Shows healthbars on corpses',
+		OnChange = OptionsChanged,
+	},
+	
+	drawBarPercentages = {
+		name = 'Draw percentages',
+		type = 'bool',
+		value = true,
+		desc = 'Shows percentages next to bars',
+		OnChange = OptionsChanged,
+	},
+
+	minReloadTime = {
+		name = 'Min reload time',
+		type = 'number',
+		value = 3,
+		min = 1,
+		max = 10,
+		step = 1,
+		desc = 'Min reload time (sec)',
+		OnChange = OptionsChanged,
+	},	
+	
+
+}
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+local function lowerkeys(t)
+  local tn = {}
+  for i,v in pairs(t) do
+    local typ = type(i)
+    if type(v)=="table" then
+      v = lowerkeys(v)
+    end
+    if typ=="string" then
+      tn[i:lower()] = v
+    else
+      tn[i] = v
+    end
+  end
+  return tn
+end
+
+local paralyzeOnMaxHealth = ((lowerkeys(VFS.Include"gamedata/modrules.lua") or {}).paralyze or {}).paralyzeonmaxhealth
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -80,8 +148,15 @@ local barColors = {
   build   = { 0.75,0.75,0.75,barAlpha },
   stock   = { 0.50,0.50,0.50,barAlpha },
   reload  = { 0.00,0.60,0.60,barAlpha },
-  jump    = { 0.10,0.80,0.50,barAlpha },
+  reload2 = { 1.00,0.60,0.00,barAlpha },
+  jump    = { 0.00,0.60,0.60,barAlpha },
+  sheath  = { 0.00,0.20,1.00,barAlpha },
+  fuel    = { 0.70,0.30,0.00,barAlpha },
+  slow    = { 0.50,0.10,0.70,barAlpha },
+  goo     = { 0.50,0.50,0.50,barAlpha },
   shield  = { 0.20,0.60,0.60,barAlpha },
+  tank    = { 0.10,0.20,0.90,barAlpha },
+  tele    = { 0.00,0.60,0.60,barAlpha },
 
   resurrect = { 1.00,0.50,0.00,featureBarAlpha },
   reclaim   = { 0.75,0.75,0.75,featureBarAlpha },
@@ -127,9 +202,11 @@ do
       deactivated = true
     end
   end
+  options.showhealthbars.OnChange = function(self) showhealthbars(_,_,{self.value and '1' or '0'}) end
 end --//end do
 
 function widget:Initialize()
+
   --// catch f9
   Spring.SendCommands({"showhealthbars 0"})
   Spring.SendCommands({"showrezbars 0"})
@@ -323,7 +400,7 @@ do
 
   local brightClr = {}
   function DrawUnitBar(offsetY,percent,color)
-    if (barShader and percent > 0) then			--do not draw bars that "go to the left"
+    if (barShader) then
       glMultiTexCoord(1,color)
       glMultiTexCoord(2,percent,offsetY)
       glCallList(barDList)
@@ -405,8 +482,10 @@ do
       DrawUnitBar(yoffset,barInfo.progress,barInfo.color)
       if (fullText) then
         if (barShader) then glMyText(1) end
-        glColor(1,1,1,barAlpha)
-        glText(barInfo.text,barStart,yoffset,4,"r")
+        if (drawBarPercentages) then 
+			glColor(1,1,1,barAlpha)
+			glText(barInfo.text,barStart,yoffset,4,"r")
+		end 
         if (drawBarTitles) then
           glColor(1,1,1,titlesAlpha)
           glText(barInfo.title,0,yoffset,2.5,"cd")
@@ -426,8 +505,10 @@ do
       DrawFeatureBar(yoffset,barInfo.progress,barInfo.color)
       if (fullText) then
         if (barShader) then glMyText(1) end
-        glColor(1,1,1,featureBarAlpha)
-        glText(barInfo.text,fBarStart,yoffset,4,"r")
+        if (drawBarPercentages) then 
+			glColor(1,1,1,featureBarAlpha)
+			glText(barInfo.text,fBarStart,yoffset,4,"r")
+		end
         if (drawBarTitles) then
           glColor(1,1,1,featureTitlesAlpha)
           glText(barInfo.title,0,yoffset,2.5,"cd")
@@ -447,6 +528,7 @@ end --//end do
 --------------------------------------------------------------------------------
 
 local DrawUnitInfos
+local JustGetOverlayInfos
 
 do
   --//speedup
@@ -472,6 +554,34 @@ do
 
   local customInfo = {}
   local ci
+  
+  function JustGetOverlayInfos(unitID,unitDefID, ud)
+    
+	ux, uy, uz = GetUnitViewPosition(unitID)
+    dx, dy, dz = ux-cx, uy-cy, uz-cz
+    dist = dx*dx + dy*dy + dz*dz
+	
+	if (dist > 9000000) then
+      return
+    end
+   
+    local empHP = (not paralyzeOnMaxHealth) and health or maxHealth
+    emp = (paralyzeDamage or 0)/empHP
+    hp  = (health or 0)/maxHealth
+    morph = UnitMorphs[unitID]
+  
+    if (drawUnitsOnFire)and(GetUnitRulesParam(unitID,"on_fire")==1) then
+      onFireUnits[#onFireUnits+1]=unitID
+    end
+  
+    --// PARALYZE
+	if (emp>0)and(hp>0)and((not morph) or morph.combatMorph)and(emp<1e8) then
+      local stunned = GetUnitIsStunned(unitID)
+      if (stunned) then
+        paraUnits[#paraUnits+1]=unitID
+      end
+	end
+  end
 
   function DrawUnitInfos(unitID,unitDefID, ud)
     if (not customInfo[unitDefID]) then
@@ -482,6 +592,7 @@ do
         canStockpile  = ud.canStockpile,
         reloadTime    = ud.reloadTime,
         primaryWeapon = ud.primaryWeapon-1,
+		maxWaterTank  = ud.customParams.maxwatertank,
       }
     end
     ci = customInfo[unitDefID]
@@ -499,12 +610,18 @@ do
 
     --// GET UNIT INFORMATION
     health,maxHealth,paralyzeDamage,capture,build = GetUnitHealth(unitID)
-    --if (not health)    then health=-1   elseif(health<1)    then health=1    end
+   --if (not health)    then health=-1   elseif(health<1)    then health=1    end
     if (not maxHealth)or(maxHealth<1) then maxHealth=1 end
     if (not build)     then build=1   end
 
-    emp = (paralyzeDamage or 0)/maxHealth
+    local empHP = (not paralyzeOnMaxHealth) and health or maxHealth
+    emp = (paralyzeDamage or 0)/empHP
     hp  = (health or 0)/maxHealth
+    
+    if hp < 0 then
+        hp = 0
+    end
+    
     morph = UnitMorphs[unitID]
 
     if (drawUnitsOnFire)and(GetUnitRulesParam(unitID,"on_fire")==1) then
@@ -538,7 +655,7 @@ do
       --// MORPHING
       if (morph) then
         local build = morph.progress
-        AddBar("upgrading",build,"build",(fullText and floor(build*100)..'%') or '')
+        AddBar("morph",build,"build",(fullText and floor(build*100)..'%') or '')
       end
 
       --// STOCKPILE
@@ -556,13 +673,13 @@ do
       end
 
       --// PARALYZE
-      if (emp>0.01)and(hp>0.01)and(not morph)and(emp<1e8) then 
+	  if (emp>0)and(hp>0)and((not morph) or morph.combatMorph)and(emp<1e8) then
         local stunned = GetUnitIsStunned(unitID)
         local infotext = ""
         if (stunned) then
           paraUnits[#paraUnits+1]=unitID
           if (fullText) then
-            infotext = floor((paralyzeDamage-maxHealth)/(maxHealth*empDecline)) .. 's'
+            infotext = floor((paralyzeDamage-empHP)/(maxHealth*empDecline)) .. 's'
           end
           emp = 1
         else
@@ -575,22 +692,83 @@ do
         AddBar("paralyze",emp,empcolor_index,infotext)
       end
 
-      --// CAPTURE
+      --// CAPTURE (set by capture gadget)
       if ((capture or -1)>0) then
         AddBar("capture",capture,"capture",(fullText and floor(capture*100)..'%') or '')
       end
+	  
+	  --// CAPTURE RECHARGE
+	  local captureReloadState = GetUnitRulesParam(unitID,"captureRechargeFrame")
+      if (captureReloadState and captureReloadState > 0) then
+		local capture = 1-(captureReloadState-gameFrame)/captureReloadTime
+        AddBar("capture reload",capture,"reload2",(fullText and floor(capture*100)..'%') or '')
+      end
+	  
+	  --// WATER TANK
+	  local waterTank = GetUnitRulesParam(unitID,"watertank")
+      if (ci.maxWaterTank and waterTank) then
+        local prog = waterTank/ci.maxWaterTank
+		if prog < 1 then
+			AddBar("water tank",prog,"tank",(fullText and floor(prog*100)..'%') or '')
+		end
+      end
+	  
+	  --// Teleport progress
+	  local TeleportEnd = GetUnitRulesParam(unitID,"teleportend")
+	  local TeleportCost = GetUnitRulesParam(unitID,"teleportcost")
+      if TeleportEnd and TeleportCost and TeleportEnd ~= 0 then
+        local prog
+		if TeleportEnd > TeleportCost then
+			-- End frame given
+			prog = 1 - (TeleportEnd - gameFrame)/TeleportCost
+		else 
+			-- Same parameters used to display a static progress
+			prog = 1 - TeleportEnd/TeleportCost
+		end
+		if prog < 1 then
+			AddBar("teleport",prog,"tele",(fullText and floor(prog*100)..'%') or '')
+		end
+      end
 
+	  --// SPECIAL WEAPON
+	  --[[
+	  local specialReloadState = GetUnitRulesParam(unitID,"specialReloadFrame")
+      if (specialReloadState and specialReloadState > gameFrame) then
+		local special = 1-(specialReloadState-gameFrame)/(ud.customParams.specialreloadtime or 1*30)
+        AddBar("special reload",special,"reload2",(fullText and floor(special*100)..'%') or '')
+      end	  
+	  ]]--
+	  
       --// RELOAD
-      if (ci.reloadTime>=minReloadTime) then
+      if (ci.reloadTime>=options.minReloadTime.value) then
         _,reloaded,reloadFrame = GetUnitWeaponState(unitID,ci.primaryWeapon)
         if (reloaded==false) then
+		  local slowState = 1-(GetUnitRulesParam(unitID,"slowState") or 0)
+		  local reloadTime = Spring.GetUnitWeaponState(unitID, ci.primaryWeapon , 'reloadTime')
+		  ci.reloadTime = reloadTime
           reload = 1 - ((reloadFrame-gameFrame)/30) / ci.reloadTime;
-          if (reload >= 0) then
-			AddBar("reload",reload,"reload",(fullText and floor(reload*100)..'%') or '')
-		end
+          AddBar("reload",reload,"reload",(fullText and floor(reload*100)..'%') or '')
         end
       end
 
+	  --// SHEATH
+	  local sheathState = GetUnitRulesParam(unitID,"sheathState")
+	  if sheathState and (sheathState < 1) then
+			AddBar("sheath",sheathState,"sheath",(fullText and floor(sheathState*100)..'%') or '')
+	  end
+      	  
+	  --// SLOW
+      local slowState = GetUnitRulesParam(unitID,"slowState")
+      if (slowState and (slowState>0)) then
+        AddBar("slow",slowState,"slow",(fullText and floor(slowState*100)..'%') or '')
+      end
+	  
+	  --// GOO
+      local gooState = GetUnitRulesParam(unitID,"gooState")
+      if (gooState and (gooState>0)) then
+        AddBar("goo",gooState,"goo",(fullText and floor(gooState*100)..'%') or '')
+      end
+	  
       --// JUMPJET
       if (drawJumpJet)and(ci.canJump) then
         local jumpReload = GetUnitRulesParam(unitID,"jumpReload")
@@ -660,12 +838,13 @@ do
     if (not resurrect)   then resurrect=0 end
     if (not reclaimLeft) then reclaimLeft=1 end
 
-    --// filter all walls and none resurrecting features
-    if (not health)or
-       ((resurrect==0)and(reclaimLeft==1)and(not ci.wall))
-    then return end
-
     hp = (health or 0)/(maxHealth or 1)
+
+    --// filter all walls and none resurrecting features
+    if (resurrect == 0) and 
+       (reclaimLeft == 1) and
+       (hp > featureHpThreshold)
+    then return end
 
     --// BARS //-----------------------------------------------------------------------------
       --// HEALTH
@@ -796,54 +975,68 @@ do
   local GetCameraPosition    = Spring.GetCameraPosition
   local GetUnitDefID         = Spring.GetUnitDefID
   local glDepthMask          = gl.DepthMask
+  local glMultiTexCoord      = gl.MultiTexCoord
 
   function widget:DrawWorld()
-    if (#visibleUnits+#visibleFeatures==0) then
-      return
-    end
-
-    --gl.Fog(false)
-    --gl.DepthTest(true)
-    glDepthMask(true)
-
-    cx, cy, cz = GetCameraPosition()
-
-    if (barShader) then gl.UseShader(barShader); glMyText(0); end
-
-    --// draw bars of units
-    local unitID,unitDefID,unitDef
-    for i=1,#visibleUnits do
-      unitID    = visibleUnits[i]
-      unitDefID = GetUnitDefID(unitID)
-      unitDef   = UnitDefs[unitDefID or -1]
-      if (unitDef) then
-        DrawUnitInfos(unitID, unitDefID, unitDef)
+	if not Spring.IsGUIHidden() then 
+      if (#visibleUnits+#visibleFeatures==0) then
+        return
       end
-    end
-
-    --// draw bars for features
-    local wx, wy, wz, dx, dy, dz, dist
-    local featureInfo
-    for i=1,#visibleFeatures do
-      featureInfo = visibleFeatures[i]
-      wx, wy, wz = featureInfo[1],featureInfo[2],featureInfo[3]
-      dx, dy, dz = wx-cx, wy-cy, wz-cz
-      dist = dx*dx + dy*dy + dz*dz
-      if (dist < 6000000) then
-        if (dist < infoDistance) then
-          DrawFeatureInfos(featureInfo[4], featureInfo[5], true, wx,wy,wz)
-        else
-          DrawFeatureInfos(featureInfo[4], featureInfo[5], false, wx,wy,wz)
+      
+      --gl.Fog(false)
+      --gl.DepthTest(true)
+      glDepthMask(true)
+      
+      cx, cy, cz = GetCameraPosition()
+      
+      if (barShader) then gl.UseShader(barShader); glMyText(0); end
+      
+      --// draw bars of units
+      local unitID,unitDefID,unitDef
+      for i=1,#visibleUnits do
+        unitID    = visibleUnits[i]
+        unitDefID = GetUnitDefID(unitID)
+        unitDef   = UnitDefs[unitDefID or -1]
+        if (unitDef) then
+          DrawUnitInfos(unitID, unitDefID, unitDef)
         end
       end
-    end
+      
+      --// draw bars for features
+      local wx, wy, wz, dx, dy, dz, dist
+      local featureInfo
+      for i=1,#visibleFeatures do
+        featureInfo = visibleFeatures[i]
+        wx, wy, wz = featureInfo[1],featureInfo[2],featureInfo[3]
+        dx, dy, dz = wx-cx, wy-cy, wz-cz
+        dist = dx*dx + dy*dy + dz*dz
+        if (dist < 6000000) then
+          if (dist < infoDistance) then
+            DrawFeatureInfos(featureInfo[4], featureInfo[5], true, wx,wy,wz)
+          else
+            DrawFeatureInfos(featureInfo[4], featureInfo[5], false, wx,wy,wz)
+          end
+        end
+      end
+	else
+	  local unitID,unitDefID,unitDef
+      for i=1,#visibleUnits do
+        unitID    = visibleUnits[i]
+        unitDefID = GetUnitDefID(unitID)
+        unitDef   = UnitDefs[unitDefID or -1]
+        if (unitDef) then
+          JustGetOverlayInfos(unitID, unitDefID, unitDef)
+        end
+      end
+	end
 
     if (barShader) then gl.UseShader(0) end
     glDepthMask(false)
-
-    DrawOverlays()
-
+	
+	DrawOverlays()
+    glMultiTexCoord(1,1,1,1)
     glColor(1,1,1,1)
+	
     --gl.DepthTest(false)
   end
 end --//end do
@@ -858,10 +1051,11 @@ do
   local select = select
 
   local sec = 0
-  local sec1 = 0
   local sec2 = 0
+  local sec3 = 0
 
   local videoFrame   = 0
+  local _1GameFrameSecond = 0.033
 
   function widget:Update(dt)
     sec=sec+dt
@@ -870,10 +1064,10 @@ do
     gameFrame = GetGameFrame()
 
     videoFrame = videoFrame+1
-    sec1=sec1+dt
-    if (sec1>1/25) then
-      sec1 = 0
-      visibleUnits = GetVisibleUnits(-1,nil,false)
+    sec3 = sec3 +dt
+    if sec3 > _1GameFrameSecond then
+        sec3 = 0
+        visibleUnits = GetVisibleUnits(-1,nil,false)
     end
 
     sec2=sec2+dt
@@ -927,4 +1121,3 @@ end
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-
