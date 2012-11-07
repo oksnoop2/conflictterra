@@ -18,7 +18,7 @@ unitDef = {
 	[[bartillery]],
 	[[bgeneraltank]],
 	[[bheavyassaulttank]],
-	[[bheavymissiletank]],
+	[[bbarragetank]],
 	[[bvhsa]],
   },
 

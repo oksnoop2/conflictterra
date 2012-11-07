@@ -109,7 +109,7 @@
             
             --Tank Cruiser
             "bheavyassaulttank",
-            "bheavymissiletank",
+            "bbarragetank",
             "bvhsa",        
 
 
