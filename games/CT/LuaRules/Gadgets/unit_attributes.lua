@@ -113,7 +113,7 @@ function gadget:GameFrame(f)
 			]]
 			--- Heal --
 			if spGetUnitRulesParam(unitID,"Heal Aura") == 1 then
-				spSetUnitHealth(unitID, spGetUnitHealth(unitID)+50 ) --10
+				spSetUnitHealth(unitID, spGetUnitHealth(unitID)+25 ) --50
 			end
 			--- Focus --
 			if spGetUnitRulesParam(unitID,"Focus Aura") == 1 then
