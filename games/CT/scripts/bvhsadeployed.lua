@@ -11,17 +11,23 @@
 	
 	local lfrontbrace = piece "lfrontbrace"
 	local lfrontspear = piece "lfrontspear"
+	local fxflare1 = piece "fxflare1"
 	local lmidbrace = piece "lmidbrace"
 	local lmidspear = piece "lmidspear"
+	local fxflare2 = piece "fxflare2"
 	local lrearbrace = piece "lrearbrace"
 	local lrearspear = piece "lfrontspear"
+	local fxflare3 = piece "fxflare3"
 
 	local rfrontbrace = piece "rfrontbrace"
 	local rfrontspear = piece "rfrontspear"
+	local fxflare4 = piece "fxflare4"
 	local rmidbrace = piece "rmidbrace"
 	local rmidspear = piece "rmidspear"
+	local fxflare5 = piece "fxflare5"
 	local rrearbrace = piece "rrearbrace"
 	local rrearspear = piece "rrearspear"
+	local fxflare6 = piece "fxflare6"
 	
 	local lwheel1 = piece "lwheel1"
 	local lwheel2 = piece "lwheel2"
@@ -40,6 +46,7 @@
 	
 	--CEGs
 	local ct_cannon_tank = SFX.CEG
+	local ct_dirt = SFX.CEG + 1
 
 	
 	--local functions
@@ -71,6 +78,22 @@
 		Move(rfrontspear, y_axis, -7, 30)
 		Move(rmidspear, y_axis, -7, 30)
 		Move(rrearspear, y_axis, -7, 30)
+		
+		WaitForMove(lfrontspear, y_axis)
+		WaitForMove(lmidspear, y_axis)
+		WaitForMove(lrearspear, y_axis)
+		
+		WaitForMove(rfrontspear, y_axis)
+		WaitForMove(rmidspear, y_axis)
+		WaitForMove(rrearspear, y_axis)
+		
+		EmitSfx(fxflare1, ct_dirt)
+		EmitSfx(fxflare2, ct_dirt)
+		EmitSfx(fxflare3, ct_dirt)
+		
+		EmitSfx(fxflare4, ct_dirt)
+		EmitSfx(fxflare5, ct_dirt)
+		EmitSfx(fxflare6, ct_dirt)
 	end
 	
 	local function recoil_anim()
@@ -84,10 +107,10 @@
 	
 	--script
 	function script.Create()
-		StartThread (braces)
 		Sleep(500)
 		Turn(barrel, x_axis, -0.4, 2)
 		Move(body, y_axis, -5, 20)
+		StartThread (braces)
 	end
 	
 	function script.QueryWeapon1() return flare1 end
