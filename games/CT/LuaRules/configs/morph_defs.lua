@@ -85,6 +85,30 @@ local morphDefs = {
       name = 'Mobilize',	  
     },
   },
+  
+-----
+
+  bvhsamobile = {
+    {
+      into = 'bvhsadeployed',
+      metal = 0,
+      energy = 0,
+      time = 2,
+	  text = 'Deploy the Sekai Type Tank',
+      name = 'Deploy',	  
+    },
+  },
+ 
+  bvhsadeployed = {
+    {
+      into = 'bvhsamobile',
+      metal = 0,
+      energy = 0,
+      time = 2,
+	  text = 'Mobilize into the Sekai type Tank',
+      name = 'Mobilize',	  
+    },
+  },
 
 -----
  

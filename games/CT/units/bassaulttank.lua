@@ -36,7 +36,6 @@
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[SMALL_UNIT]],
 
-	  	    
 	  sfxtypes            = {
 	    explosiongenerators = {
 		"custom:ct_cannon_tank",

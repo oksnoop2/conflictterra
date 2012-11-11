@@ -110,7 +110,8 @@
             --Tank Cruiser
             "bheavyassaulttank",
             "bbarragetank",
-            "bvhsa",        
+            "bvhsamobile",
+			"bvhsadeployed",
 
 
             --DRONE--

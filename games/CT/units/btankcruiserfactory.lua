@@ -19,7 +19,7 @@ unitDef = {
 	[[bgeneraltank]],
 	[[bheavyassaulttank]],
 	[[bbarragetank]],
-	[[bvhsa]],
+	[[bvhsamobile]],
   },
 
   buildPic                      = [[btankcruiserfactory.png]],
