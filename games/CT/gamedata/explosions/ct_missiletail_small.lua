@@ -22,7 +22,7 @@ return {
         emitrotspread      = 10,
         emitvector         = [[dir]],
         gravity            = [[0, 0, 0]],
-        numparticles       = 8,
+        numparticles       = 5, --8
         particlelife       = 4,
         particlelifespread = 3,
         particlesize       = 3,
