@@ -159,20 +159,20 @@
 	end
 
 	local function stop_walk()
-	        Signal(walk_go)
+		Signal(walk_go)
 
 		--left leg stop
 		Turn( leftthigh, x_axis, 0, 2 )
-	        Turn( lfrontflap, x_axis, 0, 2 )
-	        Turn( lbackflap, x_axis, 0, 2 )
+		Turn( lfrontflap, x_axis, 0, 2 )
+		Turn( lbackflap, x_axis, 0, 2 )
 		Turn( leftshin, x_axis, 0, 2 )
 		Turn( leftfoot, x_axis, 0, 2)
 	       
 		--right leg stop
-	        Turn( rightthigh, x_axis, 0, 2 )
-	        Turn( rfrontflap, x_axis, 0, 2 )
-	        Turn( rbackflap, x_axis, 0, 2 )
-	        Turn( rightshin, x_axis, 0, 2 )
+		Turn( rightthigh, x_axis, 0, 2 )
+		Turn( rfrontflap, x_axis, 0, 2 )
+		Turn( rbackflap, x_axis, 0, 2 )
+		Turn( rightshin, x_axis, 0, 2 )
 		Turn( rightfoot, x_axis, 0, 2)
 
 		--left arm stop
@@ -180,8 +180,8 @@
 		Turn( leftgun, x_axis, -0.5, 2 )
 
 		--right arm stop
-	        Turn( rightarm, x_axis, 0, 2 )
-	        Turn( rightgun, x_axis, -0.5, 2 )
+		Turn( rightarm, x_axis, 0, 2 )
+		Turn( rightgun, x_axis, -0.5, 2 )
 
 		--body stop
 		Turn( body, z_axis, 0, 2 )
@@ -211,8 +211,8 @@
 	--script
 	function script.Create()
 		--guns forward
-	        Turn( leftgun, x_axis, -0.5, 2 )
-	        Turn( rightgun, x_axis, -0.5, 2 )
+		Turn( leftgun, x_axis, -0.5, 2 )
+		Turn( rightgun, x_axis, -0.5, 2 )
 
 		--legs spread
 		Turn( leftthigh, y_axis, 0.15, 2 )
@@ -244,17 +244,18 @@
 
 	function beginJump()
 		StartThread(jumpjetaction)
+		EmitSfx(fxflare5, ct_jumpjet_land)	
 		Signal(walk_go)
 
 		--left leg crouch
 		Turn( leftthigh, x_axis, -1, 2 )
-	        Turn( lfrontflap, x_axis, -1, 2 )
+		Turn( lfrontflap, x_axis, -1, 2 )
 		Turn( leftthigh, y_axis, 0.5, 2 )
 		Turn( leftshin, x_axis, 1, 2 )
 
 		--right leg crouch
 		Turn( rightthigh, x_axis, -1, 2 )
-	        Turn( rfrontflap, x_axis, -1, 2 )
+		Turn( rfrontflap, x_axis, -1, 2 )
 		Turn( rightthigh, y_axis, -0.5, 2 )
 		Turn( rightshin, x_axis, 1, 2 )
 
@@ -279,13 +280,13 @@
 
 		--left leg stop
 		Turn( leftthigh, x_axis, 0, 2 )
-	        Turn( lfrontflap, x_axis, 0, 2 )
+		Turn( lfrontflap, x_axis, 0, 2 )
 		Turn( leftthigh, y_axis, 0.15, 2 )
 		Turn( leftshin, x_axis, 0, 2 )
 
 		--right leg stop
 		Turn( rightthigh, x_axis, 0, 2 )
-	        Turn( lfrontflap, x_axis, 0, 2 )
+		Turn( lfrontflap, x_axis, 0, 2 )
 		Turn( rightthigh, y_axis, -0.15, 2 )
 		Turn( rightshin, x_axis, 0, 2 )
 
@@ -315,9 +316,9 @@
 		SetSignalMask(SIG_AIM)
         	Turn(body, y_axis, heading, math.rad(200))
         	Turn(leftarm, x_axis, -0.75, math.rad(160))
-                Turn(leftgun, x_axis, -0.85, math.rad(160))
+			Turn(leftgun, x_axis, -0.85, math.rad(160))
         	Turn(rightarm, x_axis, -0.75, math.rad(160))
-                Turn(rightgun, x_axis, -0.85, math.rad(160))
+			Turn(rightgun, x_axis, -0.85, math.rad(160))
         	WaitForTurn(body, y_axis)
         	WaitForTurn(leftarm, x_axis)
         	WaitForTurn(leftgun, x_axis)

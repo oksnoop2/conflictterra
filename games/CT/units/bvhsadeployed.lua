@@ -37,6 +37,7 @@
 	    explosiongenerators = {
 		"custom:ct_cannon_tank",
 		"custom:ct_dirt",
+		"custom:ct_jumpjet_land",
 	    },
 	  },
 

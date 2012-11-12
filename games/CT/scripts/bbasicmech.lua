@@ -211,6 +211,7 @@
 
 	function beginJump()
 		StartThread(jumpjetaction)
+		EmitSfx(fxflare3, ct_jumpjet_land)	
 		Signal(walk_go)
 
 		--left leg crouch

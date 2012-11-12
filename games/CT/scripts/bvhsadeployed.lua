@@ -2,6 +2,7 @@
 	
 	--pieces
 	local body = piece "body"
+	local fxflare7 = piece "fxflare7"
 	
 	local turret = piece "turret"
 	local turretbase = piece "turretbase"
@@ -47,6 +48,7 @@
 	--CEGs
 	local ct_cannon_tank = SFX.CEG
 	local ct_dirt = SFX.CEG + 1
+	local ct_jumpjet_land = SFX.CEG + 2
 
 	
 	--local functions
@@ -110,6 +112,7 @@
 		Sleep(500)
 		Turn(barrel, x_axis, -0.4, 2)
 		Move(body, y_axis, -5, 20)
+		Move(fxflare7, y_axis, 5)
 		StartThread (braces)
 	end
 	
@@ -131,6 +134,7 @@
 	function script.FireWeapon1()
 		StartThread(recoil_anim)
 		EmitSfx(flare1, ct_cannon_tank)
+		EmitSfx(fxflare7, ct_jumpjet_land)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)

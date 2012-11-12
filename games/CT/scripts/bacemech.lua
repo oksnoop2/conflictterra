@@ -244,6 +244,7 @@
 
 	function beginJump()
 		StartThread(jumpjetaction)
+		EmitSfx(fxflare1, ct_jumpjet_land)
 		Signal(walk_go)
 
 		--left leg crouch
@@ -293,7 +294,7 @@
 		Turn( body, x_axis, 0, 2 )
 		
 		--dirt poof
-		EmitSfx(fxflare1, ct_jumpjet_land)			
+		EmitSfx(fxflare1, ct_jumpjet_land)
 	end
 
 	function script.QueryWeapon1() return laserflare1 end
