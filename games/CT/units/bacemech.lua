@@ -27,9 +27,9 @@
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
 	  mass                = 175,
-	  maxDamage           = 1250,
+	  maxDamage           = 750,
 	  maxSlope            = 36,
-	  maxVelocity         = 5,
+	  maxVelocity         = 6,
 	  maxWaterDepth       = 22,
 	  movementClass       = [[Mech4x4]],
 	  noAutoFire          = false,
@@ -39,7 +39,7 @@
 	  selfDestructAs      = [[BIG_UNIT]],
 
 	  side                = [[NKG]],
-	  sightDistance       = 600,
+	  sightDistance       = 700,
 	  smoothAnim          = true,
 
 	  sounds			= {
@@ -108,20 +108,21 @@
 		  collideFriendly         = false,
 	
 	      damage                  = {
-		--Anti-Land
-		default = 250,
-		Cruiser = 250,
-		Building = 250,
-		Land = 500,
-		Aircraft = 250,
-		Ship = 250,
-		Sub = 250,
+		--No Bonus
+		--200 dps
+		default = 400,
+		Cruiser = 400,
+		Building = 400,
+		Land = 400,
+		Aircraft = 400,
+		Ship = 400,
+		Sub = 400,
 
 		Meteor = 0,
-		Drone = 250,
-		Spare1 = 250,
-		Spare2 = 250,
-		Spare3 = 250,
+		Drone = 400,
+		Spare1 = 400,
+		Spare2 = 400,
+		Spare3 = 400,
 
 	      },
 	
@@ -155,11 +156,12 @@
 		  collideFriendly         = false,
 	
 	      damage                  = {
-		--Anti-Land
+		--No Bonus
+		--50 dps
 		default = 50,
 		Cruiser = 50,
 		Building = 50,
-		Land = 100,
+		Land = 50,
 		Aircraft = 50,
 		Ship = 50,
 		Sub = 50,
@@ -192,7 +194,7 @@
 	      description      = [[Wreckage - Maeda Combat Mech]],
 	      blocking         = true,
 	      category         = [[corpses]],
-	      damage           = 625,
+	      damage           = 375,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
 	      footprintX       = 4,
@@ -200,7 +202,7 @@
 	      metal            = 500,
 	      object           = [[wrecks/bacemechwreck.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 30000,
+	      reclaimTime      = 15000,
 	    },
 	
 	
@@ -208,14 +210,14 @@
 	      description      = [[Debris - Maeda Combat Mech]],
 	      blocking         = false,
 	      category         = [[heaps]],
-	      damage           = 312,
+	      damage           = 187,
 	      energy           = 0,
 	      footprintX       = 4,
 	      footprintZ       = 4,
 	      metal            = 250,
 	      object           = [[b4x4heap.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15000,
+	      reclaimTime      = 7500,
 	    },
 	
 	  },
