@@ -1,3 +1,6 @@
+	--Hayabusa Type Fighter MkII Unit Def by Sanada
+	--Notes:  Balanced Version 1 (?), except Damage
+
 	unitDef = {
 	  unitname            = [[bfighter]],
 	  name                = [[Hayabusa Type Fighter MkII]],

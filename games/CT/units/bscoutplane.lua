@@ -1,3 +1,6 @@
+	--Suzume Type Plane Unit Def by Sanada
+	--Notes:  Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[bscoutplane]],
 	  name                = [[Suzume Type Plane]],

@@ -1,3 +1,7 @@
+	--Suzaku Type Fighter MkIII Unit Def by Sanada
+	--Notes:  Balanced Version 1, Needs remodeled to add landing gear
+	
+
 	unitDef = {
 	  unitname            = [[blaserplane]],
 	  name                = [[Suzaku Type Fighter MkIII]],

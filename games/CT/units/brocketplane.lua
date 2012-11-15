@@ -1,3 +1,6 @@
+	--Tonbo Type Warplane MkIII Unit Def by Sanada
+	--Notes:  Balanced Version 1 (?), except Damage
+
 	unitDef = {
 	  unitname            = [[brocketplane]],
 	  name                = [[Tonbo Type Warplane MkIII]],
@@ -111,7 +114,7 @@
 	      smokeTrail              = true,
 	      soundHit                = [[argh/Argh_LargeExplosion]],
 	      soundStart              = [[nexuiz/rocket_fire]],
-	      texture2		      = [[ct_smoketrail]],
+	      texture2                = [[ct_smoketrail]],
 	      tolerance               = 8000,
 	      tracks                  = false,
 	      turret                  = true,

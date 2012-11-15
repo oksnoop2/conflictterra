@@ -1,3 +1,6 @@
+	--Fukurou Type Bomber MkII Unit Def by Sanada
+	--Notes:  Balanced Version 1 (?), except Damage
+
 	unitDef = {
 	  unitname            = [[bbomber]],
 	  name                = [[Fukurou Type Bomber MkII]],
