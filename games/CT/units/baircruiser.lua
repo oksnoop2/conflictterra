@@ -1,3 +1,6 @@
+	--Azai Class Cruiser Unit Def by Sanada
+	--Notes:  NOT Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[baircruiser]],
 	  name                = [[Azai Class Cruiser]],

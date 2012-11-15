@@ -1,5 +1,5 @@
 --Mobile Headquarters (AI) Unit Def by Sanada
---Notes:  Weapons need to be Balanced for Version 1
+--Notes:  Balanced Version 1, except Damage
 
 unitDef = {
 

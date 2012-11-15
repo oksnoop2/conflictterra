@@ -1,3 +1,6 @@
+	--Mori Class Cruiser Unit Def by Sanada
+	--Notes:  NOT Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[btankcruiser]],
 	  name                = [[Mori Class Cruiser]],

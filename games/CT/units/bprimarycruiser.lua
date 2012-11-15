@@ -1,3 +1,6 @@
+	--Oda Class Cruiser Unit Def by Sanada
+	--Notes:  Balanced Version 1, except Damage
+
 	unitDef = {
 	  unitname            = [[bprimarycruiser]],
 	  name                = [[Oda Class Cruiser]],

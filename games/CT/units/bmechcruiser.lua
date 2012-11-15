@@ -1,3 +1,6 @@
+	--Saito Class Cruiser Unit Def by Sanada
+	--Notes:  NOT Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[bmechcruiser]],
 	  name                = [[Saito Class Cruiser]],
