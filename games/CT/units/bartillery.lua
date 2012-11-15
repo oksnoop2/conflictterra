@@ -1,3 +1,6 @@
+	--Uma Type Vehicle Unit Def by Sanada
+	--Notes:  Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[bartillery]],
 	  name                = [[Uma Type Vehicle]],
@@ -42,6 +45,7 @@
 	    explosiongenerators = {
 		"custom:ct_cannon_artillery",
 		"custom:ct_cannon_artillery_side",
+		"custom:ct_dust_big",
 	    },
 	  },
 

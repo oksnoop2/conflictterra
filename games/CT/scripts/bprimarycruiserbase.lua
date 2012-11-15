@@ -17,6 +17,10 @@
 	local fxflare8 = piece "fxflare8"
 
 	local turretbase = piece "turretbase"
+	local lfrontfxflare1 = piece "lfrontfxflare1"
+	local rfrontfxflare1 = piece "rfrontfxflare1"
+	local lbackfxflare1 = piece "lbackfxflare1"
+	local rbackfxflare1 = piece "rbackfxflare1"
 
 	local lfrontturret1 = piece "lfrontturret1"
 	local lfrontbarrel1 = piece "lfrontbarrel1"
@@ -85,8 +89,9 @@
 
 	--CEGs
 	local ct_cannon_narrow = SFX.CEG
-        local ct_buildlight_green = SFX.CEG + 1
-        local ct_buildlight_red = SFX.CEG + 2
+	local ct_buildlight_green = SFX.CEG + 1
+	local ct_buildlight_red = SFX.CEG + 2
+	local ct_dust_small = SFX.CEG + 3
 
 
 	--multiple buildspots for certain units
@@ -366,123 +371,131 @@
 	function script.AimFromWeapon8() return rbackturret1 end
 	
 	function script.AimWeapon1( heading, pitch )
-                Signal(SIG_AIM)
+		Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(lfrontturret2, y_axis, heading, math.rad(90))
-        	Turn(lfrontbarrel2, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(lfrontturret2, y_axis)
-        	WaitForTurn(lfrontbarrel2, x_axis)
+		Turn(lfrontturret2, y_axis, heading, math.rad(90))
+		Turn(lfrontbarrel2, x_axis, -pitch, math.rad(50))
+		WaitForTurn(lfrontturret2, y_axis)
+		WaitForTurn(lfrontbarrel2, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
 
 	function script.AimWeapon2( heading, pitch )
-                Signal(SIG_AIM_2)
+		Signal(SIG_AIM_2)
 		SetSignalMask(SIG_AIM_2)
-        	Turn(rfrontturret2, y_axis, heading, math.rad(90))
-        	Turn(rfrontbarrel2, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(rfrontturret2, y_axis)
-        	WaitForTurn(rfrontbarrel2, x_axis)
+		Turn(rfrontturret2, y_axis, heading, math.rad(90))
+		Turn(rfrontbarrel2, x_axis, -pitch, math.rad(50))
+		WaitForTurn(rfrontturret2, y_axis)
+		WaitForTurn(rfrontbarrel2, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
 
 	function script.AimWeapon3( heading, pitch )
-                Signal(SIG_AIM_3)
+		Signal(SIG_AIM_3)
 		SetSignalMask(SIG_AIM_3)
-        	Turn(lbackturret2, y_axis, heading, math.rad(90))
-        	Turn(lbackbarrel2, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(lbackturret2, y_axis)
-        	WaitForTurn(lbackbarrel2, x_axis)
+		Turn(lbackturret2, y_axis, heading, math.rad(90))
+		Turn(lbackbarrel2, x_axis, -pitch, math.rad(50))
+		WaitForTurn(lbackturret2, y_axis)
+		WaitForTurn(lbackbarrel2, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
 
 	function script.AimWeapon4( heading, pitch )
-                Signal(SIG_AIM_4)
+		Signal(SIG_AIM_4)
 		SetSignalMask(SIG_AIM_4)
-        	Turn(rbackturret2, y_axis, heading, math.rad(90))
-        	Turn(rbackbarrel2, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(rbackturret2, y_axis)
-        	WaitForTurn(rbackbarrel2, x_axis)
+		Turn(rbackturret2, y_axis, heading, math.rad(90))
+		Turn(rbackbarrel2, x_axis, -pitch, math.rad(50))
+		WaitForTurn(rbackturret2, y_axis)
+		WaitForTurn(rbackbarrel2, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
 
 	function script.AimWeapon5( heading, pitch )
-                Signal(SIG_AIM_5)
+		Signal(SIG_AIM_5)
 		SetSignalMask(SIG_AIM_5)
-        	Turn(lfrontturret1, y_axis, heading, math.rad(90))
-        	Turn(lfrontbarrel1, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(lfrontturret1, y_axis)
-        	WaitForTurn(lfrontbarrel1, x_axis)
+		Turn(lfrontturret1, y_axis, heading, math.rad(90))
+		Turn(lfrontbarrel1, x_axis, -pitch, math.rad(50))
+		WaitForTurn(lfrontturret1, y_axis)
+		WaitForTurn(lfrontbarrel1, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
 
 	function script.AimWeapon6( heading, pitch )
-                Signal(SIG_AIM_6)
+		Signal(SIG_AIM_6)
 		SetSignalMask(SIG_AIM_6)
-        	Turn(rfrontturret1, y_axis, heading, math.rad(90))
-        	Turn(rfrontbarrel1, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(rfrontturret1, y_axis)
-        	WaitForTurn(rfrontbarrel1, x_axis)
+		Turn(rfrontturret1, y_axis, heading, math.rad(90))
+		Turn(rfrontbarrel1, x_axis, -pitch, math.rad(50))
+		WaitForTurn(rfrontturret1, y_axis)
+		WaitForTurn(rfrontbarrel1, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
 
 	function script.AimWeapon7( heading, pitch )
-                Signal(SIG_AIM_7)
+		Signal(SIG_AIM_7)
 		SetSignalMask(SIG_AIM_7)
-        	Turn(lbackturret1, y_axis, heading, math.rad(90))
-        	Turn(lbackbarrel1, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(lbackturret1, y_axis)
-        	WaitForTurn(lbackbarrel1, x_axis)
+		Turn(lbackturret1, y_axis, heading, math.rad(90))
+		Turn(lbackbarrel1, x_axis, -pitch, math.rad(50))
+		WaitForTurn(lbackturret1, y_axis)
+		WaitForTurn(lbackbarrel1, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
 
 	function script.AimWeapon8( heading, pitch )
-                Signal(SIG_AIM_8)
+		Signal(SIG_AIM_8)
 		SetSignalMask(SIG_AIM_8)
-        	Turn(rbackturret1, y_axis, heading, math.rad(90))
-        	Turn(rbackbarrel1, x_axis, -pitch, math.rad(50))
-        	WaitForTurn(rbackturret1, y_axis)
-        	WaitForTurn(rbackbarrel1, x_axis)
+		Turn(rbackturret1, y_axis, heading, math.rad(90))
+		Turn(rbackbarrel1, x_axis, -pitch, math.rad(50))
+		WaitForTurn(rbackturret1, y_axis)
+		WaitForTurn(rbackbarrel1, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
 	
 	function script.FireWeapon1()
 		EmitSfx(lfrontflare2, ct_cannon_narrow)
+		EmitSfx(lfrontfxflare1, ct_dust_small)
 	end
 
 	function script.FireWeapon2()
 		EmitSfx(rfrontflare2, ct_cannon_narrow)
+		EmitSfx(rfrontfxflare1, ct_dust_small)
 	end
 
 	function script.FireWeapon3()
 		EmitSfx(lbackflare2, ct_cannon_narrow)
+		EmitSfx(lbackfxflare1, ct_dust_small)
 	end
 
 	function script.FireWeapon4()
 		EmitSfx(rbackflare2, ct_cannon_narrow)
+		EmitSfx(rbackfxflare1, ct_dust_small)
 	end
 
 	function script.FireWeapon5()
 		EmitSfx(lfrontflare1, ct_cannon_narrow)
+		EmitSfx(lfrontfxflare1, ct_dust_small)
 	end
 
 	function script.FireWeapon6()
 		EmitSfx(rfrontflare1, ct_cannon_narrow)
+		EmitSfx(rfrontfxflare1, ct_dust_small)
 	end
 
 	function script.FireWeapon7()
 		EmitSfx(lbackflare1, ct_cannon_narrow)
+		EmitSfx(lbackfxflare1, ct_dust_small)
 	end
 
 	function script.FireWeapon8()
 		EmitSfx(rbackflare1, ct_cannon_narrow)
+		EmitSfx(rbackfxflare1, ct_dust_small)
 	end
 
 	function script.QueryBuildInfo()

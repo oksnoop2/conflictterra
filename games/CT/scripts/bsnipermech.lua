@@ -1,7 +1,8 @@
 	--Saiga Combat Support Mech animation script by Sanada
 	
 	--pieces
-        local waist = piece "waist"
+	local waist = piece "waist"
+	local fxflare3 = piece "fxflare3"
 
 	local body = piece "body"
 	local barrel = piece "barrel"
@@ -10,13 +11,13 @@
 	local fxflare1 = piece "fxflare1"
 	local fxflare2 = piece "fxflare2"
 
-        local lthigh = piece "lthigh"
-        local lshin = piece "lshin"
-        local lfoot = piece "lfoot"
+	local lthigh = piece "lthigh"
+	local lshin = piece "lshin"
+	local lfoot = piece "lfoot"
 
-        local rthigh = piece "rthigh"
-        local rshin = piece "rshin"
-        local rfoot = piece "rfoot"
+	local rthigh = piece "rthigh"
+	local rshin = piece "rshin"
+	local rfoot = piece "rfoot"
 
 
 	--signals
@@ -27,7 +28,8 @@
 
 	--CEGs
 	local ct_cannon_artillery = SFX.CEG
-	local ct_cannon_artillery_side = SFX.CEG + 1	
+	local ct_cannon_artillery_side = SFX.CEG + 1
+	local ct_dust_medium = SFX.CEG + 2
 	
 
 	--local functions
@@ -158,6 +160,7 @@
 		EmitSfx(flare1, ct_cannon_artillery)	     
 		EmitSfx(fxflare1, ct_cannon_artillery_side)	
 		EmitSfx(fxflare2, ct_cannon_artillery_side)
+		EmitSfx(fxflare3, ct_dust_medium)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)

@@ -48,7 +48,7 @@
 	--CEGs
 	local ct_cannon_tank = SFX.CEG
 	local ct_dirt = SFX.CEG + 1
-	local ct_jumpjet_land = SFX.CEG + 2
+	local ct_dust_big = SFX.CEG + 2
 
 	
 	--local functions
@@ -134,7 +134,7 @@
 	function script.FireWeapon1()
 		StartThread(recoil_anim)
 		EmitSfx(flare1, ct_cannon_tank)
-		EmitSfx(fxflare7, ct_jumpjet_land)
+		EmitSfx(fxflare7, ct_dust_big)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)

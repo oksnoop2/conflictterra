@@ -4,6 +4,7 @@
 	local center = piece "center"
 	
 	local body = piece "body"
+	local fxflare3 = piece "fxflare3"
 	
 	local turret = piece "turret"
 	local bigbarrel = piece "bigbarrel"
@@ -28,7 +29,8 @@
 	
 	--CEGs
 	local ct_cannon_artillery = SFX.CEG
-	local ct_cannon_artillery_side = SFX.CEG + 1	
+	local ct_cannon_artillery_side = SFX.CEG + 1
+	local ct_dust_big = SFX.CEG + 2
 
 	
 	--local functions
@@ -101,7 +103,8 @@
 		StartThread(recoil)
 		EmitSfx(flare1, ct_cannon_artillery)	     
 		EmitSfx(fxflare1, ct_cannon_artillery_side)	
-		EmitSfx(fxflare2, ct_cannon_artillery_side)	  
+		EmitSfx(fxflare2, ct_cannon_artillery_side)
+		EmitSfx(fxflare3, ct_dust_big)
 	end
 	
 	function script.Killed(recentDamage, maxHealth)

@@ -1,3 +1,6 @@
+	--Saiga Combat Support Mech Unit Def by Sanada
+	--Notes:  Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[bsnipermech]],
 	  name                = [[Saiga Combat Support Mech]],
@@ -53,6 +56,7 @@
 	    explosiongenerators = {
 		"custom:ct_cannon_artillery",
 		"custom:ct_cannon_artillery_side",
+		"custom:ct_dust_medium",
 	    },
 	  },
 

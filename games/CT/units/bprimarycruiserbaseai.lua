@@ -1,3 +1,6 @@
+--Mobile Headquarters (AI) Unit Def by Sanada
+--Notes:  Weapons need to be Balanced for Version 1
+
 unitDef = {
 
   unitname                      = [[bprimarycruiserbaseai]],
@@ -77,6 +80,7 @@ unitDef = {
 	"custom:ct_cannon_narrow",
 	"custom:ct_buildlight_green",
 	"custom:ct_buildlight_red",
+	"custom:ct_dust_small",
     },
   },
 

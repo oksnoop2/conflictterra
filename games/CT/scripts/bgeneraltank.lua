@@ -3,6 +3,7 @@
 	
 	--pieces
 	local body = piece "body"
+	local fxflare1 = piece "fxflare1"
 
 	local turret = piece "turret"
 	local barrel = piece "barrel"
@@ -28,6 +29,7 @@
 
 	--CEGs
 	local ct_cannon_tank = SFX.CEG
+	local ct_dust_medium = SFX.CEG + 1
 
 
 	--TRACK CONFIGS--
@@ -252,10 +254,12 @@
 	function script.Shot1()
 		if currBarrel == 1 then
 			EmitSfx(flare2, ct_cannon_tank)
+			EmitSfx(fxflare1, ct_dust_medium)
 			StartThread(right_recoil)
 		end
 		if currBarrel == 2 then
 			EmitSfx(flare1, ct_cannon_tank)
+			EmitSfx(fxflare1, ct_dust_medium)
 			StartThread(left_recoil)
 		end
 		currBarrel = currBarrel + 1

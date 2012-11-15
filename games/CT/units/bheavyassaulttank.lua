@@ -1,3 +1,6 @@
+	--Ogami Type Tank Unit Def by Sanada
+	--Notes:  Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[bheavyassaulttank]],
 	  name                = [[Ogami Type Tank]],
@@ -45,6 +48,7 @@
 	  sfxtypes            = {
 	    explosiongenerators = {
 		"custom:ct_cannon_tank",
+		"custom:ct_dust_medium",
 	    },
 	  },
 

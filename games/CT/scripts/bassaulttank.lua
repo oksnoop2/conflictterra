@@ -3,6 +3,8 @@
 	
 	--pieces
 	local body = piece "body"
+	
+	local fxflare1 = piece "fxflare1"
 
 	local turret = piece "turret"
 	local barrel = piece "barrel"
@@ -27,6 +29,7 @@
 
 	--CEGs
 	local ct_cannon_tank = SFX.CEG
+	local ct_dust_small = SFX.CEG + 1
 
 
 	--TRACK CONFIGS--
@@ -233,6 +236,7 @@
 	
 	function script.FireWeapon1()
 		EmitSfx(flare1, ct_cannon_tank)
+		EmitSfx(fxflare1, ct_dust_small)
 		Move(movingbarrel, z_axis, -5, 50)
 		WaitForMove(movingbarrel, z_axis)
 		Move(movingbarrel, z_axis, 0, 5)

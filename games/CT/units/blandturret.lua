@@ -1,3 +1,6 @@
+	--Dual Cannon Turret Unit Def by Sanada
+	--Notes:  Not Balanced 
+
 	unitDef = {
 	  unitname            = [[blandturret]],
 	  name                = [[Dual Cannon Turret]],
@@ -35,6 +38,7 @@
 	  sfxtypes            = {
 	    explosiongenerators = {
 		"custom:ct_cannon_tank",
+		"custom:ct_dust_big",
 	    },
 	  },
 
