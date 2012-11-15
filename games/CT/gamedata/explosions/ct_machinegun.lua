@@ -12,7 +12,7 @@ return {
       count              = 1,
       underwater         = 1,
       properties = {
-        colormap           = [[1 1 0 1	    1 1 0 1     1 0.5 0 1]], --Colour map progress from one to next. Colors in RGBA
+        colormap           = [[1 1 0 0.9	    1 1 0 0.8     1 0.5 0 0.7]], --Colour map progress from one to next. Colors in RGBA
         dir                = [[dir]],
         frontoffset        = 0,
         fronttexture       = [[ct_machinegun_front]],
