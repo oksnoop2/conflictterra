@@ -1,3 +1,6 @@
+--Hashiba Scout Mech Unit Def by Sanada
+--Notes:  Balanced Version 1
+
 local bscoutmech = {
 	name                = [[Hashiba Scout Mech]],
 	description         = [[Recon Mech - Very fast, fragile, unarmed reconnaissance mech. Radar equipped. Can build temporary camera towers.]],

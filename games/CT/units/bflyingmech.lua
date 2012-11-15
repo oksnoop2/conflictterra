@@ -1,3 +1,6 @@
+	--Fuma Aerial Combat Mech Unit Def by Sanada
+	--Notes:  Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[bflyingmech]],
 	  name                = [[Fuma Aerial Combat Mech]],

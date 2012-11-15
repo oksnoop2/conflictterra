@@ -1,3 +1,6 @@
+	--Honda Combat Mech MkII Unit Def by Sanada
+	--Notes:  Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[bassaultmech]],
 	  name                = [[Honda Combat Mech MkII]],

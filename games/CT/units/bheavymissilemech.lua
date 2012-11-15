@@ -1,3 +1,6 @@
+	--Shibata Combat Support Mech MkII Unit Def by Sanada
+	--Notes:  Balanced Version 1, Need to make Tackle gadget
+
 	unitDef = {
 	  unitname            = [[bheavymissilemech]],
 	  name                = [[Shibata Combat Support Mech MkII]],

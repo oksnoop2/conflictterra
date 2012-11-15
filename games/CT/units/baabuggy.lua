@@ -1,3 +1,6 @@
+	--Yumi Type Vehicle Unit Def by Sanada
+	--Notes:  Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[baabuggy]],
 	  name                = [[Yumi Type Vehicle]],

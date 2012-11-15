@@ -1,3 +1,6 @@
+	--Okuma Type Tank Unit Def by Sanada
+	--Notes:  Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[bbarragetank]],
 	  name                = [[Okuma Type Tank]],

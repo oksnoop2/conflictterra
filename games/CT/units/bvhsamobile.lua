@@ -1,3 +1,6 @@
+	--Sekai Type Tank Unit Def by Sanada
+	--Notes:  Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[bvhsamobile]],
 	  name                = [[Sekai Type Tank]],

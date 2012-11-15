@@ -1,3 +1,6 @@
+	--Hojo Combat Mech Unit Def by Sanada
+	--Notes:  Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[bbasicmech]],
 	  name                = [[Hojo Combat Mech]],

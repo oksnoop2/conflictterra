@@ -1,3 +1,6 @@
+	--Maeda Combat Mech Unit Def by Sanada
+	--Notes:  Balanced Version 1, Need to get Sprint working
+
 	unitDef = {
 	  unitname            = [[bacemech]],
 	  name                = [[Maeda Combat Mech]],

@@ -1,3 +1,6 @@
+	--Enkei Combat Support Mech Unit Def by Sanada
+	--Notes:  Balanced Version 1, Need to remodel to work with mines
+
 	unitDef = {
 	  unitname            = [[bantitankmech]],
 	  name                = [[Enkei Combat Support Mech]],

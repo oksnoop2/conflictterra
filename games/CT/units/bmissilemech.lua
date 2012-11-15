@@ -1,3 +1,6 @@
+	--Ueda Combat Support Mech Unit Def by Sanada
+	--Notes:  Balanced Version 1,  Need to get Sprint working
+
 	unitDef = {
 	  unitname            = [[bmissilemech]],
 	  name                = [[Ueda Combat Support Mech]],

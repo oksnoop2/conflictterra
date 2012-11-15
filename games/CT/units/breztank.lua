@@ -1,3 +1,6 @@
+--Resurrection Truck Unit Def by Sanada
+--Notes:  Balanced Version 1, Might remodel
+
 local breztank = {
 	name                = [[Resurrection Truck]],
 	description         = [[Unarmed resurrection unit to revive fallen units, friend and foe alike]],

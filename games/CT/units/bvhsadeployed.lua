@@ -1,3 +1,6 @@
+	--Deployed Sekai Type Tank Unit Def by Sanada
+	--Notes:  Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[bvhsadeployed]],
 	  name                = [[Deployed Sekai Type Tank]],
