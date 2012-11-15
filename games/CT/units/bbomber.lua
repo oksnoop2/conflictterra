@@ -1,5 +1,5 @@
 	--Fukurou Type Bomber MkII Unit Def by Sanada
-	--Notes:  Balanced Version 1 (?), except Damage
+	--Notes:  Balanced Version 1
 
 	unitDef = {
 	  unitname            = [[bbomber]],
@@ -44,7 +44,7 @@
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[SMALL_UNIT]],
 	  side                = [[NKG]],
-	  sightDistance       = 500,
+	  sightDistance       = 600,
 	  smoothAnim          = true,
 
 	  sounds			= {
@@ -86,6 +86,8 @@
 	
 	      damage                  = {
 		--Anti-Building
+		--25 dps
+		--100 dps Building
 		default = 25,
 		Cruiser = 25,
 		Building = 100,

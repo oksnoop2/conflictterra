@@ -1,5 +1,5 @@
 	--Tonbo Type Warplane MkIII Unit Def by Sanada
-	--Notes:  Balanced Version 1 (?), except Damage
+	--Notes:  Balanced Version 1, Needs remodeled to add landing gear
 
 	unitDef = {
 	  unitname            = [[brocketplane]],
@@ -40,7 +40,7 @@
 	  selfDestructAs      = [[SMALL_UNIT]],
 
 	  side                = [[NKG]],
-	  sightDistance       = 600,
+	  sightDistance       = 700,
 	  smoothAnim          = true,
 
 	  sounds			= {
@@ -88,6 +88,8 @@
 	
 	      damage                  = {
 		--Anti-Land
+		--12.5 dps
+		--25 dps land
 		default = 25,
 		Cruiser = 25,
 		Building = 25,

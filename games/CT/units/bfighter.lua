@@ -1,5 +1,5 @@
 	--Hayabusa Type Fighter MkII Unit Def by Sanada
-	--Notes:  Balanced Version 1 (?), except Damage
+	--Notes:  Balanced Version 1
 
 	unitDef = {
 	  unitname            = [[bfighter]],
@@ -51,7 +51,7 @@
 	  },
 
 	  side                = [[NKG]],
-	  sightDistance       = 700,
+	  sightDistance       = 800,
 	  smoothAnim          = true,
 	  speedToFront        = 0,
 	  script              = [[bfightermkii.lua]],
@@ -80,6 +80,8 @@
 	
 	      damage                  = {
 		--Anti-Plane
+		--8 dps
+		--40 dps Aircraft
 		default = 2,
 		Cruiser = 2,
 		Building = 2,
