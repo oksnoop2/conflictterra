@@ -1,3 +1,6 @@
+--Resource Drop Zone (AI) Unit Def by Sanada
+--Notes:  Balanced Version 1
+
 unitDef = {
 
   unitname                      = [[bsupplydepotai]],

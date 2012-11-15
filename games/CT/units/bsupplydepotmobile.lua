@@ -1,3 +1,6 @@
+	--Mobilized Resource Ship Unit Def by Sanada
+	--Notes:  Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[bsupplydepotmobile]],
 	  name                = [[Mobilized Resource Ship]],

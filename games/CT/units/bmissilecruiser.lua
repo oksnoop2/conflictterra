@@ -1,3 +1,6 @@
+	--Sanada Class Cruiser Unit Def by Sanada
+	--Notes:  Balanced Version 1, Model needs tweaking to add turrets
+
 	unitDef = {
 	  unitname            = [[bmissilecruiser]],
 	  name                = [[Sanada Class Cruiser]],

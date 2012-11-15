@@ -1,3 +1,6 @@
+	--Ieyasu Class Cruiser Unit Def by Sanada
+	--Notes:  NOT Balanced Version 1, Needs remodeled
+
 	unitDef = {
 	  unitname            = [[bflagship]],
 	  name                = [[Ieyasu Class Cruiser]],

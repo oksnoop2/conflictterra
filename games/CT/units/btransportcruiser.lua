@@ -1,3 +1,6 @@
+	--Takeda Class Cruiser Unit Def by Sanada
+	--Notes:  NOT Balanced 1, Needs everything worked on
+
 	unitDef = {
 	  unitname            = [[btransportcruiser]],
 	  name                = [[Takeda Class Cruiser]],

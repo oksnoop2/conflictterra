@@ -1,3 +1,6 @@
+	--Uesugi Class Cruiser Unit Def by Sanada
+	--Notes:  NOT Balanced Version 1, Needs remodeled
+
 	unitDef = {
 	  unitname            = [[bbattlecruiser]],
 	  name                = [[Uesugi Class Cruiser]],

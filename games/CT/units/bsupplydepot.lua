@@ -1,3 +1,6 @@
+--Resource Drop Zone Unit Def by Sanada
+--Notes:  Balanced Version 1
+
 unitDef = {
 
   unitname                      = [[bsupplydepot]],
