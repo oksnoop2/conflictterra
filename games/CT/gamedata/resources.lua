@@ -7,6 +7,8 @@
 			projectiletextures = {
 				circularthingy				= 'circularthingy.tga',
 				uglynovaexplo				= 'uglynovaexplo.tga',
+				purpleexplo                 = 'purpleexplo.tga',
+				pinknovaexplo               = 'pinknovaexplo.tga',
 				laserend					= 'laserend.tga',
 				laserfalloff				= 'laserfalloff.tga',
 				randdots					= 'randdots.tga',

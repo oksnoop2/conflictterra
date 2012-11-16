@@ -34,7 +34,7 @@
 	  corpse              = [[DEAD]],
 	  cruiseAlt           = 300,
 	
-	  explodeAs           = [[BIG_UNIT]],
+	  explodeAs           = [[CRUISER_EXPLOSION]],
 	  floater             = true,
 	  footprintx          = 12,
 	  footprintZ          = 12,
@@ -48,7 +48,7 @@
 	  objectName          = [[btransportcarrier2.s3o]],
 	  releaseHeld         = true,
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[BIG_UNIT]],
+	  selfDestructAs      = [[CRUISER_EXPLOSION]],
 	  showNanoFrame       = false,
 	  side                = [[NKG]],
 	  sightDistance       = 750,

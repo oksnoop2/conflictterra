@@ -1,3 +1,6 @@
+--Construction Mech (AI) Unit Def by Sanada
+--Notes:  Balanced Version 1
+
 local bengineerai = {
         name                = [[Construction Mech (AI)]],
         description         = [[Utilitarian half-mech able to build structures. Unarmed.]],
@@ -17,6 +20,7 @@ local bengineerai = {
 		[[bmechcruiserfactory]],
 		[[btankcruiserfactory]],
 		[[baircruiserfactory]],
+		-- [[brepairstation]],
 		-- [[bshipyard]],
 		[[bradartower]],
 		[[bjammertower]],
@@ -43,7 +47,7 @@ local bengineerai = {
         reclaimable         = false,
 
         energyMake          = 0,
-        explodeAs           = [[SMALL_UNIT]],
+        explodeAs           = [[TANK_EXPLOSION]],
         footprintx          = 3,
         footprintZ          = 3,
         idleAutoHeal        = 0,
@@ -58,7 +62,7 @@ local bengineerai = {
         objectName          = "bengineermkii.s3o",
         onoffable           = false,
         seismicSignature    = 4,
-        selfDestructAs      = [[SMALL_UNIT]],
+        selfDestructAs      = [[TANK_EXPLOSION]],
         side                = [[NKG]],
         sightDistance       = 500,
 

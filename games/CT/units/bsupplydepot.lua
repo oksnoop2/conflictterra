@@ -30,7 +30,7 @@ unitDef = {
 
   reclaimable                   = false,
 
-  explodeAs                     = [[MEDIUM_UNIT]],
+  explodeAs                     = [[MEDIUM_BUILDING]],
   footprintX                    = 6,
   footprintZ                    = 10,
   idleAutoHeal                  = 0,
@@ -42,7 +42,7 @@ unitDef = {
   noAutoFire                    = false,
   objectName                    = [[bsupplydepot.s3o]],
   seismicSignature              = 4,
-  selfDestructAs                = [[MEDIUM_UNIT]],
+  selfDestructAs                = [[MEDIUM_BUILDING]],
   side                          = [[NKG]],
   sightDistance                 = 300,
 

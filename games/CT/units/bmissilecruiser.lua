@@ -34,7 +34,7 @@
 	  cruiseAlt           = 300,
 	  reclaimable         = false,
 	
-	  explodeAs           = [[LARGE_UNIT]],
+	  explodeAs           = [[CRUISER_EXPLOSION]],
 	  floater             = true,
 	  footprintx          = 6,
 	  footprintZ          = 6,
@@ -48,7 +48,7 @@
 	  noChaseCategory     = [[MINERALS SUB FIXEDWING GUNSHIP CRUISER]],
 	  objectName          = [[bmissilecruiser.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[LARGE_UNIT]],
+	  selfDestructAs      = [[CRUISER_EXPLOSION]],
 	  showNanoFrame       = false,
 	  side                = [[NKG]],
 	  sightDistance       = 750,

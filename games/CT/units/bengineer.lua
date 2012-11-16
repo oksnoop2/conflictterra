@@ -1,3 +1,6 @@
+--Construction Mech Unit Def by Sanada
+--Notes:  Balanced Version 1
+
 local bengineer = {
         name                = [[Construction Mech]],
         description         = [[Utilitarian half-mech able to build structures. Unarmed.]],
@@ -14,6 +17,7 @@ local bengineer = {
 		[[bpowerplant]],
 		[[badvpowerplant]],
 		[[bbeacon]],
+		-- [[brepairstation]],
 		-- [[bshipyard]],
 		[[bradartower]],
 		[[bjammertower]],

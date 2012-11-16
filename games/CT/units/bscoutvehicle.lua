@@ -1,3 +1,6 @@
+	--Shika Type Vehicle Unit Def by Sanada
+	--Notes:  Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[bscoutvehicle]],
 	  name                = [[Shika Type Vehicle]],
@@ -19,7 +22,7 @@
 	  corpse              = [[DEAD]],
 	  reclaimable         = false,
 	
-	  explodeAs           = [[SMALL_UNIT]],
+	  explodeAs           = [[TANK_EXPLOSION]],
 	  footprintX          = 2,
 	  footprintZ          = 2,
 	  idleAutoHeal        = 0,
@@ -35,7 +38,7 @@
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[bscoutvehicle.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[MEDIUM_UNIT]],
+	  selfDestructAs      = [[TANK_EXPLOSION]],
 
 	  sounds			= {
 	      select = {

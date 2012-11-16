@@ -26,7 +26,7 @@
 	  cruiseAlt           = 400,
 	  reclaimable         = false,
 	
-	  explodeAs           = [[SMALL_UNIT]],
+	  explodeAs           = [[AIRCRAFT_EXPLOSION]],
 	  floater             = false,
 	  footprintx          = 2,
 	  footprintZ          = 2,
@@ -39,7 +39,7 @@
 	  objectName          = [[bscoutplane.s3o]],
 	  radarDistance       = 750,
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[SMALL_UNIT]],
+	  selfDestructAs      = [[AIRCRAFT_EXPLOSION]],
 	  side                = [[NKG]],
 	  sightDistance       = 750,
 	  smoothAnim          = true,

@@ -25,7 +25,7 @@
 	  init_Cloaked        = false,
 	  reclaimable         = false,
 	
-	  explodeAs           = [[MEDIUM_UNIT]],
+	  explodeAs           = [[MECH_EXPLOSION]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -41,7 +41,7 @@
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bsnipermech.s3o]],
 	  seismicSignature    = 16,
-	  selfDestructAs      = [[MEDIUM_UNIT]],
+	  selfDestructAs      = [[MECH_EXPLOSION]],
 
 	  sounds			= {
 	      select = {

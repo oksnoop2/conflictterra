@@ -25,7 +25,7 @@
 	  cruiseAlt           = 350,
 	  reclaimable         = false,
 	
-	  explodeAs           = [[MEDIUM_UNIT]],
+	  explodeAs           = [[MECH_EXPLOSION]],
 	  floater             = false,
 	  footprintx          = 4,
 	  footprintZ          = 4,
@@ -39,7 +39,7 @@
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[bflyingmech.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[MEDIUM_UNIT]],
+	  selfDestructAs      = [[MECH_EXPLOSION]],
 
 	  sfxtypes            = {
 	    explosiongenerators = {

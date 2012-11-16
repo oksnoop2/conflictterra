@@ -39,12 +39,6 @@
 	  side                = [[NKG]],
 	  sightDistance       = 50,
 
-	  sfxtypes            = {
-	    explosiongenerators = {
-		"custom:ct_machinegun_big",
-	    },
-	  },
-
 	  sounds			= {
 	      select = {
 		"",

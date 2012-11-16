@@ -23,7 +23,7 @@
 	  cruiseAlt           = 300,
 	  reclaimable         = false,
 	
-	  explodeAs           = [[SMALL_UNIT]],
+	  explodeAs           = [[AIRCRAFT_EXPLOSION]],
 	  floater             = false,
 	  footprintx          = 2,
 	  footprintZ          = 2,
@@ -38,7 +38,7 @@
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[bfightermkii.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[SMALL_UNIT]],
+	  selfDestructAs      = [[AIRCRAFT_EXPLOSION]],
 
 	  sounds			= {
 	      select = {

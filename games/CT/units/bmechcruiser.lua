@@ -34,7 +34,7 @@
 	  cruiseAlt           = 400,
 	  reclaimable         = false,
 
-	  explodeAs           = [[LARGE_UNIT]],
+	  explodeAs           = [[CRUISER_EXPLOSION]],
 	  floater             = true,
 	  footprintx          = 10,
 	  footprintZ          = 10,
@@ -48,7 +48,7 @@
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[bmechcruiser.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[LARGE_UNIT]],
+	  selfDestructAs      = [[CRUISER_EXPLOSION]],
 	  showNanoFrame       = false,
 	  side                = [[NKG]],
 	  sightDistance       = 750,

@@ -38,7 +38,7 @@
 	  	RequireTech   = [[Commander's Presence]],
 	  },
 	
-	  explodeAs           = [[LARGE_UNIT]],
+	  explodeAs           = [[CRUISER_EXPLOSION]],
 	  floater             = true,
 	  footprintx          = 7,
 	  footprintZ          = 7,
@@ -52,7 +52,7 @@
 	  noChaseCategory     = [[MINERALS SUB]],
 	  objectName          = [[bbattlecruiser2.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[LARGE_UNIT]],
+	  selfDestructAs      = [[CRUISER_EXPLOSION]],
 	  showNanoFrame       = false,
 	  side                = [[NKG]],
 	  sightDistance       = 750,

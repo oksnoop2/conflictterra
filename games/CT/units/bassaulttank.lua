@@ -21,7 +21,7 @@
 	  corpse              = [[DEAD]],
 	  reclaimable         = false,
 	
-	  explodeAs           = [[SMALL_UNIT]],
+	  explodeAs           = [[TANK_EXPLOSION]],
 	  footprintx          = 3,
 	  footprintZ          = 3,
 	  idleAutoHeal        = 0,
@@ -37,7 +37,7 @@
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bassaulttank.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[SMALL_UNIT]],
+	  selfDestructAs      = [[TANK_EXPLOSION]],
 
 	  sfxtypes            = {
 	    explosiongenerators = {

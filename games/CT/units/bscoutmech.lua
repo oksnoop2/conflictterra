@@ -31,7 +31,7 @@ local bscoutmech = {
 	reclaimable         = false,
 
 	energyMake          = 0,
-	explodeAs           = [[SMALL_UNIT]],
+	explodeAs           = [[MECH_EXPLOSION]],
 	footprintx          = 3,
 	footprintZ          = 3,
 	idleAutoHeal        = 0,
@@ -45,7 +45,7 @@ local bscoutmech = {
 	movementClass       = [[Mech3x3]],
 	objectName          = "bscoutmech.s3o",
 	seismicSignature    = 4,
-	selfDestructAs      = [[SMALL_UNIT]],
+	selfDestructAs      = [[MECH_EXPLOSION]],
 	side                = [[NKG]],
 	sightDistance       = 750,
 

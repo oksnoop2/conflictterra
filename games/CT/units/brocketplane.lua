@@ -23,7 +23,7 @@
 	  cruiseAlt           = 200,
 	  reclaimable         = false,
 
-	  explodeAs           = [[SMALL_UNIT]],
+	  explodeAs           = [[AIRCRAFT_EXPLOSION]],
 	  floater             = false,
 	  footprintx          = 2,
 	  footprintZ          = 2,
@@ -37,7 +37,7 @@
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[brocketplanemkiii.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[SMALL_UNIT]],
+	  selfDestructAs      = [[AIRCRAFT_EXPLOSION]],
 
 	  side                = [[NKG]],
 	  sightDistance       = 700,

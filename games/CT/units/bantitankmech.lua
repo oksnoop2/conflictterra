@@ -20,7 +20,7 @@
 	  corpse              = [[DEAD]],	  
 	  reclaimable         = false,
 	
-	  explodeAs           = [[SMALL_UNIT]],
+	  explodeAs           = [[MECH_EXPLOSION]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -35,7 +35,7 @@
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bantitankmech.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[SMALL_UNIT]],
+	  selfDestructAs      = [[MECH_EXPLOSION]],
 
 	  sfxtypes            = {
 	    explosiongenerators = {

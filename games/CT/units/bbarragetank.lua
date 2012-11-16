@@ -25,7 +25,7 @@
 	  	RequireTech   = [[General's Presence]],
 	  },
 	
-	  explodeAs           = [[BIG_UNIT]],
+	  explodeAs           = [[TANK_EXPLOSION]],
 	  footprintX          = 3,
 	  footprintZ          = 3,
 	  idleAutoHeal        = 0,
@@ -41,7 +41,7 @@
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bbarragetank.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNIT]],
+	  selfDestructAs      = [[TANK_EXPLOSION]],
 	  side                = [[NKG]],
 	  sightDistance       = 700,
 	  smoothAnim          = true,

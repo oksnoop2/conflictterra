@@ -25,7 +25,7 @@
 	  	ProvideTech   = [[General's Presence, Raised Strategic Importance]],
 	  },
 	
-	  explodeAs           = [[BIG_UNIT]],
+	  explodeAs           = [[TANK_EXPLOSION]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -40,7 +40,7 @@
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bgeneraltank.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNIT]],
+	  selfDestructAs      = [[TANK_EXPLOSION]],
 	  side                = [[NKG]],
 	  sightDistance       = 700,
 

@@ -20,7 +20,7 @@
 	  	RequireTech   = [[General's Presence]],
 	  },
 	
-	  explodeAs           = [[BIG_UNIT]],
+	  explodeAs           = [[TANK_EXPLOSION]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  highTrajectory      = 2,
@@ -34,7 +34,7 @@
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bvhsa.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNIT]],
+	  selfDestructAs      = [[TANK_EXPLOSION]],
 
 	  sfxtypes            = {
 	    explosiongenerators = {

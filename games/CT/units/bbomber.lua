@@ -28,7 +28,7 @@
 		  nofriendlyfire = true,
 	  },
 	
-	  explodeAs           = [[SMALL_UNIT]],
+	  explodeAs           = [[AIRCRAFT_EXPLOSION]],
 	  fireState           = 0,
 	  floater             = false,
 	  footprintx          = 3,
@@ -42,7 +42,7 @@
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bbombermkii.s3o]],
 	  seismicSignature    = 0,
-	  selfDestructAs      = [[SMALL_UNIT]],
+	  selfDestructAs      = [[AIRCRAFT_EXPLOSION]],
 	  side                = [[NKG]],
 	  sightDistance       = 600,
 	  smoothAnim          = true,

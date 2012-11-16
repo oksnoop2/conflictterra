@@ -27,7 +27,7 @@ local breztank = {
 	reclaimable         = false,
 	
 	energyMake          = 0,
-	explodeAs           = [[SMALL_UNIT]],
+	explodeAs           = [[TANK_EXPLOSION]],
 	footprintx          = 2,
 	footprintZ          = 2,
 	idleAutoHeal        = 0,
@@ -41,7 +41,7 @@ local breztank = {
 	objectName          = "bmetaltruck.s3o",
 	onoffable           = false,
 	seismicSignature    = 4,
-	selfDestructAs      = [[SMALL_UNIT]],
+	selfDestructAs      = [[TANK_EXPLOSION]],
 	side                = [[NKG]],
 	sightDistance       = 400,
 	smoothAnim          = true,

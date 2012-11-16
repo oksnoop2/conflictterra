@@ -21,7 +21,7 @@
 	  corpse              = [[DEAD]],
 	  reclaimable         = false,
 	
-	  explodeAs           = [[MEDIUM_UNIT]],
+	  explodeAs           = [[MECH_EXPLOSION]],
 	  footprintX          = 3,
 	  footprintZ          = 3,
 	  idleAutoHeal        = 0,
@@ -35,7 +35,7 @@
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bbasicmech.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[MEDIUM_UNIT]],
+	  selfDestructAs      = [[MECH_EXPLOSION]],
 
 	  sfxtypes            = {
 	    explosiongenerators = {

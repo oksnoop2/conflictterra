@@ -25,7 +25,7 @@
 	  	RequireTech   = [[Ace Pilot's Presence]],
 	  },
 	
-	  explodeAs           = [[BIG_UNIT]],
+	  explodeAs           = [[MECH_EXPLOSION]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
 	  idleAutoHeal        = 0,
@@ -39,7 +39,7 @@
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
 	  objectName          = [[bassaultmech.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[BIG_UNIT]],
+	  selfDestructAs      = [[MECH_EXPLOSION]],
 
 	  side                = [[NKG]],
 	  sightDistance       = 700,

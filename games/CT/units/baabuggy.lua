@@ -21,7 +21,7 @@
 	  corpse              = [[DEAD]],
 	  reclaimable         = false,
 	
-	  explodeAs           = [[MEDIUM_UNIT]],
+	  explodeAs           = [[TANK_EXPLOSION]],
 	  footprintX          = 3,
 	  footprintZ          = 3,
 	  idleAutoHeal        = 0,
@@ -37,7 +37,7 @@
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
 	  objectName          = [[baabuggy.s3o]],
 	  seismicSignature    = 4,
-	  selfDestructAs      = [[MEDIUM_UNIT]],
+	  selfDestructAs      = [[TANK_EXPLOSION]],
 
 	  sounds			= {
 	      select = {
