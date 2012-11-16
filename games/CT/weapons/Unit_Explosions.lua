@@ -31,7 +31,6 @@ CAMERA_EXPLOSION = {
 	      },
   },
 
-  
 SMALL_BUILDING = {
    name					= "Small building",
    ballistic			= 1,
@@ -61,7 +60,6 @@ SMALL_BUILDING = {
 	      },
   },
 
-  
 MEDIUM_BUILDING = {
    name					= "Medium building",
    ballistic			= 1,
@@ -91,7 +89,6 @@ MEDIUM_BUILDING = {
 	      },
   },
 
-  
 LARGE_BUILDING = {
 
    name					= "Large building",
@@ -105,159 +102,6 @@ LARGE_BUILDING = {
    soundstart			= "golgotha/generic.wav",
    soundhit				= "golgotha/generic.wav",
    explosiongenerator	= "custom:ct_explosion_building_large",
-	      damage                  = {
-		default = 200,  		  
-		Cruiser = 200,
-		Building = 200,
-		Land = 200,
-		Aircraft = 200,
-		Ship = 200,
-		Sub = 200,
-
-		Meteor = 0,
-		Drone = 200,
-		Spare1 = 200,
-		Spare2 = 200,
-		Spare3 = 200,		
-	      },
-  },
-
-  
-VOLATILE_BUILDING = {
-   name					= "Volatile building",
-   ballistic			= 1,
-   turret				= 1,
-   impulseFactor		= 0,
-   range				= 480,
-   reloadtime			= 3.6,
-   weaponvelocity		= 250,
-   areaofeffect			= 420,
-   soundstart			= "golgotha/generic.wav",
-   soundhit				= "golgotha/generic.wav",
-   explosiongenerator	= "custom:ct_explosion_building_large",
-	      damage                  = {
-		default = 1000,  		  
-		Cruiser = 1000,
-		Building = 1000,
-		Land = 1000,
-		Aircraft = 1000,
-		Ship = 1000,
-		Sub = 1000,
-
-		Meteor = 0,
-		Drone = 1000,
-		Spare1 = 1000,
-		Spare2 = 1000,
-		Spare3 = 1000,		
-	      },
-  },
-
-  
-SMALL_UNIT = {
-
-   name					= "Small Unit",
-   ballistic			= 1,
-   turret				= 1,
-   impulseFactor		= 0,
-   range				= 480,
-   reloadtime			= 3.6,
-   weaponvelocity		= 250,
-   areaofeffect			= 75,
-   soundstart			= "golgotha/old_generic.wav",
-   soundhit				= "golgotha/old_generic.wav",
-   explosiongenerator	= "custom:ct_explosion_unit_small",
-	      damage                  = {
-		default = 50,  		  
-		Cruiser = 50,
-		Building = 50,
-		Land = 50,
-		Aircraft = 50,
-		Ship = 50,
-		Sub = 50,
-
-		Meteor = 0,
-		Drone = 50,
-		Spare1 = 50,
-		Spare2 = 50,
-		Spare3 = 50,		
-	      },
-  },
-
-
-MEDIUM_UNIT = {
-
-   name					= "Medium Unit",
-   ballistic			= 1,
-   turret				= 1,
-   impulseFactor		= 0,
-   range				= 480,
-   reloadtime			= 3.6,
-   weaponvelocity		= 250,
-   areaofeffect			= 95,
-   soundstart			= "golgotha/old_generic.wav",
-   soundhit				= "golgotha/old_generic.wav",
-   explosiongenerator	= "custom:ct_explosion_unit_small",
-	      damage                  = {
-		default = 100,  		  
-		Cruiser = 100,
-		Building = 100,
-		Land = 100,
-		Aircraft = 100,
-		Ship = 100,
-		Sub = 100,
-
-		Meteor = 0,
-		Drone = 100,
-		Spare1 = 100,
-		Spare2 = 100,
-		Spare3 = 100,		
-	      },
-  },
-
-
-BIG_UNIT = {
-
-   name					= "Big Unit",
-   ballistic			= 1,
-   turret				= 1,
-   impulseFactor		= 0,
-   range				= 480,
-   reloadtime			= 3.6,
-   weaponvelocity		= 250,
-   areaofeffect			= 110,
-   soundstart			= "golgotha/old_generic.wav",
-   soundhit				= "golgotha/old_generic.wav",
-   explosiongenerator	= "custom:ct_explosion_unit_medium",
-	      damage                  = {
-		default = 150,  		  
-		Cruiser = 150,
-		Building = 150,
-		Land = 150,
-		Aircraft = 150,
-		Ship = 150,
-		Sub = 150,
-
-		Meteor = 0,
-		Drone = 150,
-		Spare1 = 150,
-		Spare2 = 150,
-		Spare3 = 150,		
-	      },
-  },
-  
-LARGE_UNIT = {
-
-   name					= "Large Unit",
-   ballistic			= 1,
-   turret				= 1,
-   impulseFactor		= 0,
-   range				= 480,
-   reloadtime			= 3.6,
-   weaponvelocity		= 250,
-   areaofeffect			= 125,
-   soundstart			= "golgotha/old_generic.wav",
-   soundhit				= "golgotha/old_generic.wav",
-   explosiongenerator	= "custom:ct_explosion_unit_large",
 	      damage                  = {
 		default = 200,  		  
 		Cruiser = 200,
@@ -305,7 +149,6 @@ TANK_EXPLOSION = {
 	      },
   },
 
-
 MECH_EXPLOSION = {
 
    name					= "Mech Explosion",
@@ -335,7 +178,6 @@ MECH_EXPLOSION = {
 		Spare3 = 100,		
 	      },
   },
-
 
 AIRCRAFT_EXPLOSION = {
 
@@ -397,7 +239,6 @@ CRUISER_EXPLOSION = {
 	      },
   },  
 
-  
 ROCK_IMPACT_SMALL = {
 
    name					= "Small Rock Impact",
@@ -429,7 +270,6 @@ ROCK_IMPACT_SMALL = {
 	      },
   },
 
-  
 ROCK_IMPACT_BIG = {
 
    name					= "Large Rock Impact",
@@ -461,7 +301,6 @@ ROCK_IMPACT_BIG = {
 	      },
   },
 
-
 ROCK_MINEDOUT = {
 
    name					= "Rock Mined Out",
@@ -492,8 +331,7 @@ ROCK_MINEDOUT = {
 		Spare3 = 0,		
 	      },
   },
-  
-  
+
 ROCK_MINEDOUT_BIG = {
 
    name					= "Rock Mined Out",
@@ -524,7 +362,7 @@ ROCK_MINEDOUT_BIG = {
 		Spare3 = 0,		
 	      },
   },  
-  
+
   NKG_MINE = {
    name					= "Proximity Mine",
    ballistic			= 1,
@@ -536,7 +374,7 @@ ROCK_MINEDOUT_BIG = {
    areaofeffect			= 256,
    soundstart			= "golgotha/generic.wav",
    soundhit				= "golgotha/generic.wav",
-   explosiongenerator	= "custom:SMALL_UNIT_Expl",
+   explosiongenerator	= "custom:ct_impact_rocket",
 	      damage                  = {
 		default = 200,  		  
 		Cruiser = 200,
@@ -554,7 +392,6 @@ ROCK_MINEDOUT_BIG = {
 	      },
   },
 
-  
 LIGHT_MINE = {
 
    name					= "Small Unit",
@@ -568,7 +405,7 @@ LIGHT_MINE = {
    areaofeffect			= 75,
    soundstart			= "golgotha/old_generic.wav",
    soundhit				= "golgotha/old_generic.wav",
-   explosiongenerator	= "custom:SMALL_UNIT_Expl",
+   explosiongenerator	= "custom:ct_impact_rocket",
 	      damage                  = {
 		default = 100,  		  
 		Cruiser = 100,
@@ -586,7 +423,6 @@ LIGHT_MINE = {
 	      },
   },
 
-  
 DRONE_PETARD = {
 
    name					= "Drone Petard",
@@ -618,7 +454,7 @@ DRONE_PETARD = {
 		Spare3 = 10,		
 	      },
   },
-  
+
 DRONE_AIR_UNIT = {
 
    name					= "Drone Air Unit",
@@ -649,7 +485,6 @@ DRONE_AIR_UNIT = {
 	      },
   },
 
-
 DRONE_GROUND_UNIT = {
 
    name					= "Drone Ground Unit",
@@ -679,7 +514,7 @@ DRONE_GROUND_UNIT = {
 		Spare3 = 100,		
 	      },
   },  
-  
+
 DRONE_BUILDING = {
    name					= "Drone building",
    ballistic			= 1,

@@ -44,7 +44,7 @@ local bengineer = {
         reclaimable         = false,
 		
         energyMake          = 0,
-        explodeAs           = [[SMALL_UNIT]],
+        explodeAs           = [[TANK_EXPLOSION]],
         footprintx          = 3,
         footprintZ          = 3,
         idleAutoHeal        = 0,
@@ -59,7 +59,7 @@ local bengineer = {
         objectName          = "bengineermkii.s3o",
         onoffable           = false,
         seismicSignature    = 4,
-        selfDestructAs      = [[SMALL_UNIT]],
+        selfDestructAs      = [[TANK_EXPLOSION]],
         side                = [[NKG]],
         sightDistance       = 500,
 
