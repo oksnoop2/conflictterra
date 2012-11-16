@@ -67,6 +67,7 @@
             --factory
             --T1
             "bbeacon",
+			"brepairstation",
             "bshipyard",
 
 

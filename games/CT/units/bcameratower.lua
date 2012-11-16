@@ -1,3 +1,6 @@
+--Camera Tower Unit Def by Sanada
+--Notes:  Balanced Version 1 (?)
+
 unitDef = {
 
   unitname                      = [[bcameratower]],
@@ -58,10 +61,6 @@ unitDef = {
 	},
   },
 
-
-
 }
-
-
 
 return lowerkeys({ bcameratower = unitDef })
