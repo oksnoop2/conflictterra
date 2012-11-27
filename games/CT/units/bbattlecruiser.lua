@@ -47,6 +47,7 @@
 	  mass                = 2500,
 	  maxDamage           = 5500,
 	  maxVelocity         = 3,
+	  minAirbasePower     = 1,
 	  verticalSpeed       = 30,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS SUB]],

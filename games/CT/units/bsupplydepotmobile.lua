@@ -48,6 +48,7 @@
 	  mass                = 2000,
 	  maxDamage           = 1150,
 	  maxVelocity         = 3,
+	  minAirbasePower     = 1,
 	  verticalSpeed       = 20,
 	  metalMake           = 0,
 	  noAutoFire          = false,

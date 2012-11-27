@@ -43,6 +43,7 @@
 	  mass                = 1500,
 	  maxDamage           = 2500,
 	  maxVelocity         = 8,
+	  minAirbasePower     = 1,
 	  verticalSpeed       = 40,
 	  noAutoFire          = false,
 	  objectName          = [[btransportcarrier2.s3o]],

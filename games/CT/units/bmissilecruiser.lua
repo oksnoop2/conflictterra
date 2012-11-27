@@ -43,6 +43,7 @@
 	  mass                = 2500,
 	  maxDamage           = 3000,
 	  maxVelocity         = 4,
+	  minAirbasePower     = 1,
 	  verticalSpeed       = 30,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS SUB FIXEDWING GUNSHIP CRUISER]],

@@ -54,6 +54,7 @@
 	  mass                = 2500,
 	  maxDamage           = 6500,
 	  maxVelocity         = 4,
+	  minAirbasePower     = 1,
 	  verticalSpeed       = 30,
 	  metalMake           = 0,
 	  metalStorage        = 0,
