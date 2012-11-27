@@ -20,7 +20,7 @@ local bengineerai = {
 		[[bmechcruiserfactory]],
 		[[btankcruiserfactory]],
 		[[baircruiserfactory]],
-		-- [[brepairstation]],
+		[[brepairstation]],
 		-- [[bshipyard]],
 		[[bradartower]],
 		[[bjammertower]],

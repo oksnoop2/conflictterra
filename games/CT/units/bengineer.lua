@@ -17,7 +17,7 @@ local bengineer = {
 		[[bpowerplant]],
 		[[badvpowerplant]],
 		[[bbeacon]],
-		-- [[brepairstation]],
+		[[brepairstation]],
 		-- [[bshipyard]],
 		[[bradartower]],
 		[[bjammertower]],

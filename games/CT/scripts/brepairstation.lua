@@ -1,27 +1,93 @@
 	--Repair Station animation script by Sanada
-	--Parts concerning different build pads by Knorke
-	--Suggestion on how to have different build animations from Flozi
 
 	--pieces
 	local base = piece "base"
-	local pad = piece "pad"
+	
+	local dishturret = piece "dishturret"
+	local dish = piece "dish"
+	
+	local pad1 = piece "pad1"
+	local fxflare1p1 = piece "fxflare1p1"
+	local fxflare2p1 = piece "fxflare2p1"
+	local fxflare3p1 = piece "fxflare3p1"
+	local fxflare4p1 = piece "fxflare4p1"
 
-	local fxflare1 = piece "fxflare1"
-	local fxflare2 = piece "fxflare2"
-	local fxflare3 = piece "fxflare3"
-	local fxflare4 = piece "fxflare4"
-
+	local pad2 = piece "pad2"
+	local fxflare1p2 = piece "fxflare1p2"
+	local fxflare2p2 = piece "fxflare2p2"
+	local fxflare3p2 = piece "fxflare3p2"
+	local fxflare4p2 = piece "fxflare4p2"
+	
+	local pad3 = piece "pad3"
+	local fxflare1p3 = piece "fxflare1p3"
+	local fxflare2p3 = piece "fxflare2p3"
+	local fxflare3p3 = piece "fxflare3p3"
+	local fxflare4p3 = piece "fxflare4p3"
+	
+	local pad4 = piece "pad4"
+	local fxflare1p4 = piece "fxflare1p4"
+	local fxflare2p4 = piece "fxflare2p4"
+	local fxflare3p4 = piece "fxflare3p4"
+	local fxflare4p4 = piece "fxflare4p4"
+	
 	local fxflare5 = piece "fxflare5"
 	local fxflare6 = piece "fxflare6"
-	local fxflare7 = piece "fxflare7"
-	local fxflare8 = piece "fxflare8"
 
+	
+	--CEGs
+	local ct_buildlight_green = SFX.CEG
+	local ct_buildlight_red = SFX.CEG + 1
+	
+	
+	--local functions
+	local function tower_lights()
+		while (true) do
+			EmitSfx(fxflare5, ct_buildlight_red)
+			Sleep(2000)
+			EmitSfx(fxflare6, ct_buildlight_red)
+			Sleep(2000)
+		end
+	end
+	
+	local function pad_lights()
+		while (true) do
+			EmitSfx(fxflare1p1, ct_buildlight_green)
+			EmitSfx(fxflare2p1, ct_buildlight_green)
+			EmitSfx(fxflare3p1, ct_buildlight_green)
+			EmitSfx(fxflare4p1, ct_buildlight_green)
+			Sleep(2000)
+			
+			EmitSfx(fxflare1p2, ct_buildlight_green)
+			EmitSfx(fxflare2p2, ct_buildlight_green)
+			EmitSfx(fxflare3p2, ct_buildlight_green)
+			EmitSfx(fxflare4p2, ct_buildlight_green)
+			Sleep(2000)
+			
+			EmitSfx(fxflare1p3, ct_buildlight_green)
+			EmitSfx(fxflare2p3, ct_buildlight_green)
+			EmitSfx(fxflare3p3, ct_buildlight_green)
+			EmitSfx(fxflare4p3, ct_buildlight_green)
+			Sleep(2000)
+			
+			EmitSfx(fxflare1p4, ct_buildlight_green)
+			EmitSfx(fxflare2p4, ct_buildlight_green)
+			EmitSfx(fxflare3p4, ct_buildlight_green)
+			EmitSfx(fxflare4p4, ct_buildlight_green)
+			Sleep(2000)
+		end
+	end
+	
 	
 	--script
 	function script.Create(unitID)
+		Spin(dishturret, y_axis, 1)
+		Turn(dish, x_axis, 1)
+		Move(dish, z_axis, -2)
+		
+		StartThread(tower_lights)
+		
+		StartThread(pad_lights)
 	end
-
-	function script.QueryBuildInfo() return pad end
 
 	function script.QueryNanoPiece() return base end
 
@@ -40,31 +106,16 @@
 	end
 
 	function script.StartBuilding()
+
 	end
 
 	function script.StopBuilding()
+
 	end
-
-	--multiple buildspots for certain units
-	local buildSpots = {
-		[UnitDefNames["bmechcruiser"].id] = piece "fxflare8",
-	}
-
-
-	--unitDefID that the factory is currently building
-	bdefID = -1
 	
---[[
 	function script.QueryLandingPads()
-		return buildSpots [bdefID] or normalpad
+		return { pad1, pad2, pad3, pad4 }
 	end
-]]
-	
-
-	function script.QueryLandingPads()
-		return { pad, fxflare1 }
-	end
-
 
 	function script.Killed(recentDamage, maxHealth)
 		return 0
