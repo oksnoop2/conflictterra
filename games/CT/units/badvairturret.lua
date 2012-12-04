@@ -28,7 +28,7 @@
 	  maxWaterDepth       = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
-	  objectName          = [[bairturret.s3o]],
+	  objectName          = [[badvairturret.s3o]],
 	  seismicSignature    = 16,
 	  selfDestructAs      = [[SMALL_BUILDING]],
 
@@ -134,7 +134,7 @@
 	      footprintX       = 4,
 	      footprintZ       = 4,
 	      metal            = 250,
-	      object           = [[wrecks/bairturretwreck.s3o]],
+	      object           = [[wrecks/badvairturretwreck.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 7500,
 	    },

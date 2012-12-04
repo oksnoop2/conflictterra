@@ -67,7 +67,7 @@
 	  transportCapacity   = 10,
 	  transportMass       = 6000,
 	  transportSize       = 1000,
-	  loadingRadius       = 220,
+	  loadingRadius       = 500,
 	  turnRate            = 250,
 	  verticalSpeed       = 30,
 	  transportUnloadMethod = 2,
