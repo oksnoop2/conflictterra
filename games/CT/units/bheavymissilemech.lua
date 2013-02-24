@@ -1,9 +1,9 @@
-	--Shibata Combat Support Mech MkII Unit Def by Sanada
+	--Shibata Combat Mech MkII Unit Def by Sanada
 	--Notes:  Balanced Version 1, Need to make Tackle gadget
 
 	unitDef = {
 	  unitname            = [[bheavymissilemech]],
-	  name                = [[Shibata Combat Support Mech MkII]],
+	  name                = [[Shibata Combat Mech MkII]],
 	  description         = [[Heavy Rocket Mech - Armed to the teeth with rockets.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,

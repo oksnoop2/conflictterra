@@ -1,4 +1,4 @@
-	--Ueda Combat Support Mech animation script by Sanada
+	--Ueda Combat Mech animation script by Sanada
 	--Sprint code by CarRepairer
 	
 	--pieces

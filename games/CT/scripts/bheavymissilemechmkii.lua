@@ -1,4 +1,4 @@
-	--Shibata Combat Support Mech MkII animation script by Sanada
+	--Shibata Combat Mech MkII animation script by Sanada
 	
 	--pieces
         local waist = piece "waist"

@@ -1,4 +1,4 @@
-	--Enkei Combat Support Mech animation script by Sanada
+	--Enkei Combat Mech animation script by Sanada
 	
 	--pieces
 	local waist = piece "waist"

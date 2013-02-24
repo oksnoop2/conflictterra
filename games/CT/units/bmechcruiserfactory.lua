@@ -5,7 +5,7 @@ unitDef = {
 
   unitname                      = [[bmechcruiserfactory]],
   name                          = [[Deployed Saito Class Cruiser]],
-  description                   = [[Produces combat and support mechs. Can mobilize  into the Saito Class Cruiser.]],
+  description                   = [[Produces combat mechs. Can mobilize  into the Saito Class Cruiser.]],
   amphibious                    = false,
   buildCostEnergy               = 300,
   buildCostMetal                = 300,

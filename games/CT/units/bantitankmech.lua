@@ -1,9 +1,9 @@
-	--Enkei Combat Support Mech Unit Def by Sanada
+	--Enkei Combat Mech Unit Def by Sanada
 	--Notes:  Balanced Version 1, Need to remodel to work with mines
 
 	unitDef = {
 	  unitname            = [[bantitankmech]],
-	  name                = [[Enkei Combat Support Mech]],
+	  name                = [[Enkei Combat Mech]],
 	  description         = [[Mine-layer Mech - Able to drop up to 4 mines.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,

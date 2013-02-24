@@ -1,4 +1,4 @@
-	--Saiga Combat Support Mech animation script by Sanada
+	--Saiga Combat Mech animation script by Sanada
 	
 	--pieces
 	local waist = piece "waist"
