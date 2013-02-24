@@ -34,6 +34,7 @@
 	  mass                = 125,
 	  maxDamage           = 500,
 	  maxVelocity         = 5,
+	  minAirbasePower     = 1,
 	  verticalSpeed       = 30,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS LAND SINK HOVER SHIP FLOAT SUB]],
