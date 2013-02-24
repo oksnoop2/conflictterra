@@ -2,7 +2,7 @@
 	--Notes:  Balanced Version 1, Need to remodel to work with mines
 
 	unitDef = {
-	  unitname            = [[bantitankmech]],
+	  unitname            = [[bminemech]],
 	  name                = [[Enkei Combat Mech]],
 	  description         = [[Mine-layer Mech - Able to drop up to 4 mines.]],
 	  acceleration        = 1,
@@ -10,7 +10,7 @@
 	  buildCostEnergy     = 250,
 	  buildCostMetal      = 250,
 	  
-	  buildPic            = [[bantitankmech.png]],
+	  buildPic            = [[bminemech.png]],
 	  buildTime           = 16,
 	  canAttack           = true,
 	  canGuard            = true,
@@ -58,7 +58,7 @@
 	  turnInPlace         = 1,
 	  turnRate            = 1000,
 	  upright             = true,
-	  script              = [[bantitankmech.lua]],
+	  script              = [[bminemech.lua]],
 	
 	  weapons             = {
 	
@@ -121,7 +121,7 @@
 	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Enkei Combat Support Mech]],
+	      description      = [[Wreckage - Enkei Combat Mech]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 400,
@@ -137,7 +137,7 @@
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Enkei Combat Support Mech]],
+	      description      = [[Debris - Enkei Combat Mech]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 200,
@@ -154,4 +154,4 @@
 	
 	}
 	
-	return lowerkeys({ bantitankmech = unitDef })
+	return lowerkeys({ bminemech = unitDef })

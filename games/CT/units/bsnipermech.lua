@@ -136,7 +136,7 @@
 	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Saiga Combat Support Mech]],
+	      description      = [[Wreckage - Saiga Combat Mech]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 312,
@@ -152,7 +152,7 @@
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Saiga Combat Support Mech]],
+	      description      = [[Debris - Saiga Combat Mech]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 156,

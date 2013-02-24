@@ -24,7 +24,7 @@ end
 local CMD_LAYMINES = 35192
 local laidMineCount = {} -- laidMineCount[uId] = nil / #
 local MINELIMIT = 4														--Limit of mines laid per unit
-local minelayer_type = {[UnitDefNames["bantitankmech"].id] = true,}		--Unit(s) which can lay mines
+local minelayer_type = {[UnitDefNames["bminemech"].id] = true,}		--Unit(s) which can lay mines
 local mine_type = "bantitankmine"										--Mine unit name
 local mine_texture = 'unitpics/bantitankmine.png'						--Button texture for "Mines"
 

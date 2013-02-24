@@ -18,7 +18,7 @@ unitDef = {
 	[[bscoutmech]],
 	[[bbasicmech]],
 	[[bmissilemech]],
-	[[bantitankmech]],
+	[[bminemech]],
 	[[bflyingmech]],
 	[[bsnipermech]],
 	[[bacemech]],

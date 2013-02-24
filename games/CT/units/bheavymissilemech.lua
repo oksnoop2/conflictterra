@@ -147,7 +147,7 @@
 	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Shibata Combat Support Mech MkII]],
+	      description      = [[Wreckage - Shibata Combat Mech MkII]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 450,
@@ -163,7 +163,7 @@
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Shibata Combat Support Mech MkII]],
+	      description      = [[Debris - Shibata Combat Mech MkII]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 225,

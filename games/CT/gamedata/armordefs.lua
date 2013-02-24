@@ -91,7 +91,7 @@
             "bscoutmech",
             "bbasicmech",
             "bmissilemech",
-            "bantitankmech",
+            "bminemech",
             "bsnipermech",
             "bacemech",
             

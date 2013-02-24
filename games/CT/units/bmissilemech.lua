@@ -143,7 +143,7 @@
 	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Ueda Combat Support Mech]],
+	      description      = [[Wreckage - Ueda Combat Mech]],
 	      blocking         = true,
 	      category         = [[corpses]],
 	      damage           = 300,
@@ -159,7 +159,7 @@
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Ueda Combat Support Mech]],
+	      description      = [[Debris - Ueda Combat Mech]],
 	      blocking         = false,
 	      category         = [[heaps]],
 	      damage           = 150,
