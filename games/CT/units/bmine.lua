@@ -1,11 +1,11 @@
 	unitDef = {
-	  unitname            = [[bantitankmine]],
+	  unitname            = [[bmine]],
 	  name                = [[Proximity Mine]],
 	  description         = [[Deals extra damage to Units.]],
 	  buildCostEnergy     = 50,
 	  buildCostMetal      = 50,
 	  builder             = false,
-	  buildPic            = [[bantitankmine.png]],
+	  buildPic            = [[bmine.png]],
 	  buildTime           = 2,
 	  canAttack           = true,
 	  canStop             = true,
@@ -32,7 +32,7 @@
 	  minCloakDistance    = 160,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
-	  objectName          = [[kdronemine.s3o]],
+	  objectName          = [[bmine.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[NKG_MINE]],
 	  selfDestructCountdown = 0,
@@ -51,7 +51,7 @@
 	  stealth             = true,
 	  smoothAnim          = true,
 	  yardMap             = [[oo oo]],
-	  script              = [[bantitankmine.lua]],
+	  script              = [[bmine.lua]],
 	}
 	
-	return lowerkeys({ bantitankmine = unitDef })
+	return lowerkeys({ bmine = unitDef })

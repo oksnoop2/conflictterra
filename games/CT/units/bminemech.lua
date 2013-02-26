@@ -1,5 +1,5 @@
 	--Enkei Combat Mech Unit Def by Sanada
-	--Notes:  Balanced Version 1, Need to remodel to work with mines
+	--Notes:  Balanced Version 1
 
 	unitDef = {
 	  unitname            = [[bminemech]],
@@ -33,7 +33,7 @@
 	  moveState           = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS FIXEDWING GUNSHIP CRUISER SUB]],
-	  objectName          = [[bantitankmech.s3o]],
+	  objectName          = [[bminemech.s3o]],
 	  seismicSignature    = 4,
 	  selfDestructAs      = [[MECH_EXPLOSION]],
 
@@ -79,27 +79,25 @@
 	      name                    = [[Armor Piercing Cannon]],
 	      areaOfEffect            = 32,
 		  avoidFeature            = false,
-	      burst                   = 2,
-	      burstrate               = 0.001,
 	      craterMult              = 0.25,
 		  collideFriendly         = false,
 	
 	      damage                  = {
 		--No Bonus
 		--20 dps
-		default = 30,
-		Cruiser = 30,
-		Building = 30,
-		Land = 30,
-		Aircraft = 30,
-		Ship = 30,
-		Sub = 30,
+		default = 60,
+		Cruiser = 60,
+		Building = 60,
+		Land = 60,
+		Aircraft = 60,
+		Ship = 60,
+		Sub = 60,
 
 		Meteor = 0,
-		Drone = 30,
-		Spare1 = 30,
-		Spare2 = 30,
-		Spare3 = 30,
+		Drone = 60,
+		Spare1 = 60,
+		Spare2 = 60,
+		Spare3 = 60,
 	      },
 	
 	      model                   = [[projectiles/bshell.s3o]],
@@ -130,7 +128,7 @@
 	      footprintX       = 4,
 	      footprintZ       = 4,
 	      metal            = 162,
-	      object           = [[wrecks/bantitankmechwreck.s3o]],
+	      object           = [[wrecks/bminemechwreck.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 4800,
 	    },
