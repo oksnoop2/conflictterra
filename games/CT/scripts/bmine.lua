@@ -1,9 +1,7 @@
-	--Anti-Tank Mine animatino script by Oksnoop2 and Sanada
+	--Proximity Mine animation script by Oksnoop2 and Sanada
 	
 	--pieces
-	local body = piece "body"
-	local rod  = piece "rod"
-	local flare= piece "flare"
+	local mine1 = piece "mine1"
 
 	
 	--script
