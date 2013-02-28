@@ -1,8 +1,11 @@
+--Enhanced Energy Station Unit Def by Sanada
+--Notes:  NOT Balanced Version 1
+
 unitDef = {
 
   unitname                      = [[badvpowerplant]],
-  name                          = [[High-Tech Power Plant]],
-  description                   = [[More advanced power station giving a good boost to energy. Adds +15 energy.]],
+  name                          = [[Heavy Duty Energy Station]],
+  description                   = [[Creates +15 energy.]],
   amphibious                    = false,
   activateWhenBuilt             = true,
   buildCostEnergy               = 500,
@@ -15,10 +18,15 @@ unitDef = {
   corpse                        = [[DEAD]],
   reclaimable                   = false,
 
+  collisionVolumeOffsets        = [[0 0 0]],
+  collisionVolumeScales         = [[128 50 128]],
+  collisionVolumeTest           = 1,
+  collisionVolumeType           = [[box]],
+  
   energyUse                     = -15,
   explodeAs                     = [[MEDIUM_BUILDING]],
-  footprintX                    = 4,
-  footprintZ                    = 4,
+  footprintX                    = 8,
+  footprintZ                    = 8,
   idleAutoHeal                  = 0,
   mass                          = 400,
   maxDamage                     = 2750,
@@ -35,6 +43,14 @@ unitDef = {
   sightDistance                 = 250,
   smoothAnim                    = true,
 
+  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:ct_buildlight_blue",
+	    },
+	
+  },  
+  
   sounds			= {
       select = {
 	"ct/generator_chatter",
@@ -45,7 +61,7 @@ unitDef = {
 	},
   },
 
-  yardMap                       = [[oooo oooo oooo oooo]],
+  yardMap                       = [[oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo]],
   script                        = [[badvpowerplant.lua]],
 
 
@@ -53,14 +69,14 @@ unitDef = {
   featureDefs                   = {
 
     DEAD  = {
-      description      = [[Wreckage - High-Tech Power Plant]],
+      description      = [[Wreckage - Heavy Duty Energy Station]],
       blocking         = true,
       category         = [[corpses]],
       damage           = 1375,
       energy           = 0,
       featureDead      = [[DEAD2]],
-      footprintX       = 4,
-      footprintZ       = 4,
+      footprintX       = 8,
+      footprintZ       = 8,
       metal            = 250,
       object           = [[wrecks/badvpowerplantwreck.s3o]],
       reclaimable      = true,
@@ -69,14 +85,14 @@ unitDef = {
 
 
     DEAD2 = {
-      description      = [[Debris - High-Tech Power Plant]],
+      description      = [[Debris - Heavy Duty Energy Station]],
       blocking         = false,
 
       category         = [[heaps]],
       damage           = 687,
       energy           = 0,
-      footprintX       = 4,
-      footprintZ       = 4,
+      footprintX       = 8,
+      footprintZ       = 8,
       metal            = 125,
       object           = [[b4x4heap.s3o]],
       reclaimable      = true,

@@ -1,8 +1,11 @@
+--Energy Station Unit Def by Sanada
+--Notes:  NOT Balanced Version 1
+
 unitDef = {
 
   unitname                      = [[bpowerplant]],
   name                          = [[Energy Station]],
-  description                   = [[Creates +2 energy. Requires no energy to build.]],
+  description                   = [[Creates +3 energy. Requires no energy to build.]],
   amphibious                    = false,
   activateWhenBuilt             = true,
   buildCostEnergy               = 0,
@@ -16,15 +19,15 @@ unitDef = {
   reclaimable                   = false,
 
   collisionVolumeOffsets        = [[0 0 0]],
-  collisionVolumeScales         = [[80 100 128]],
+  collisionVolumeScales         = [[64 50 64]],
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
 
   energyUse                     = -3,
   energyMake                    = 0,
   explodeAs                     = [[MEDIUM_BUILDING]],
-  footprintX                    = 6,
-  footprintZ                    = 9,
+  footprintX                    = 4,
+  footprintZ                    = 4,
   idleAutoHeal                  = 0,
   mass                          = 35,
   maxDamage                     = 1500,
@@ -58,7 +61,7 @@ unitDef = {
 	},
   },
 
-  yardMap                       = [[oooooo oooooo oooooo oooooo oooooo oooooo oooooo oooooo oooooo]],
+  yardMap                       = [[oooo oooo oooo]],
   script                        = [[bpowerplant.lua]],
 
 
@@ -72,10 +75,10 @@ unitDef = {
       damage           = 750,
       energy           = 0,
       featureDead      = [[DEAD2]],
-      footprintX       = 5,
-      footprintZ       = 8,
+      footprintX       = 4,
+      footprintZ       = 4,
       metal            = 62,
-      object           = [[b5x5heap.s3o]],
+      object           = [[wrecks/bpowerplantwreck.s3o]],
       reclaimable      = true,
       reclaimTime      = 1860,
     },
@@ -87,10 +90,10 @@ unitDef = {
       category         = [[heaps]],
       damage           = 375,
       energy           = 0,
-      footprintX       = 5,
-      footprintZ       = 8,
+      footprintX       = 4,
+      footprintZ       = 4,
       metal            = 31,
-      object           = [[b5x5heap.s3o]],
+      object           = [[b4x4heap.s3o]],
       reclaimable      = true,
       reclaimTime      = 930,
     },
