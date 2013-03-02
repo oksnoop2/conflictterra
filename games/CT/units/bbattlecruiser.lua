@@ -1,5 +1,5 @@
 	--Uesugi Class Cruiser Unit Def by Sanada
-	--Notes:  NOT Balanced Version 1, Needs remodeled
+	--Notes:  Balanced Version 1
 
 	unitDef = {
 	  unitname            = [[bbattlecruiser]],
@@ -26,7 +26,7 @@
 	  collide             = true,
 	  
 	  collisionVolumeOffsets = [[0 0 0]],
-	  collisionVolumeScales  = [[112 120 280]],
+	  collisionVolumeScales  = [[128 120 300]],
 	  collisionVolumeTest    = 1,
 	  collisionVolumeType    = [[ellipsoid]],
 	  
@@ -40,8 +40,8 @@
 	
 	  explodeAs           = [[CRUISER_EXPLOSION]],
 	  floater             = true,
-	  footprintx          = 7,
-	  footprintZ          = 7,
+	  footprintx          = 8,
+	  footprintZ          = 8,
 	  hoverAttack         = true,
 	  idleAutoHeal        = 0,
 	  mass                = 2500,
@@ -51,7 +51,7 @@
 	  verticalSpeed       = 30,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS SUB]],
-	  objectName          = [[bbattlecruiser2.s3o]],
+	  objectName          = [[bbattlecruiser.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[CRUISER_EXPLOSION]],
 	  showNanoFrame       = false,
@@ -67,26 +67,62 @@
 		"ct/cruiserengine",
 		},
 	  },
+	  
+	  sfxtypes            = {
+	    explosiongenerators = {
+		"custom:ct_missile_smokecloud",
+	    },
+	  },
 
 	  turnRate            = 250,
 	  upright             = true,
 	  script              = [[bbattlecruiser.lua]],
 	
 	  weapons                = {
+	  
+	    {
+	      def                = [[AA]],
+	      mainDir            = [[0 1 0]],
+	      maxAngleDif        = 220,
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	    },
+		
+	    {
+	      def                = [[AA]],
+	      mainDir            = [[0 1 0]],
+	      maxAngleDif        = 220,
+	      onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+	    },
+		
+	    {
+	      def                = [[Laser]],
+	      badTargetCategory  = [[SINK FLOAT FIXEDWING GUNSHIP LAND SHIP SWIM HOVER]],
+	      mainDir            = [[0 1 0]],
+	      maxAngleDif        = 220,
+	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
+	    },
+		
+	    {
+	      def                = [[Laser]],
+	      badTargetCategory  = [[SINK FLOAT FIXEDWING GUNSHIP LAND SHIP SWIM HOVER]],
+	      mainDir            = [[0 1 0]],
+	      maxAngleDif        = 220,
+	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
+	    },
 	
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
+	      badTargetCategory  = [[SINK FLOAT FIXEDWING GUNSHIP LAND SHIP SWIM HOVER]],
 	      mainDir            = [[0 1 0]],
-	      maxAngleDif        = 200,
+	      maxAngleDif        = 220,
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
 	    },
-
+		
 	    {
 	      def                = [[Laser]],
-	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
-	      mainDir            = [[1 0 0]],
-	      maxAngleDif        = 200,
+	      badTargetCategory  = [[SINK FLOAT FIXEDWING GUNSHIP LAND SHIP SWIM HOVER]],
+	      mainDir            = [[0 1 0]],
+	      maxAngleDif        = 220,
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
 	    },
 
@@ -94,15 +130,31 @@
 	      def                = [[Laser]],
 	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
 	      mainDir            = [[0 -1 0]],
-	      maxAngleDif        = 200,
+	      maxAngleDif        = 220,
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
 	    },
 
 	    {
 	      def                = [[Laser]],
 	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
-	      mainDir            = [[-1 0 0]],
-	      maxAngleDif        = 200,
+	      mainDir            = [[0 -1 0]],
+	      maxAngleDif        = 220,
+	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
+	    },
+
+	    {
+	      def                = [[Laser]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
+	      mainDir            = [[0 -1 0]],
+	      maxAngleDif        = 220,
+	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
+	    },
+		
+	    {
+	      def                = [[Laser]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
+	      mainDir            = [[0 -1 0]],
+	      maxAngleDif        = 220,
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
 	    },
 	
@@ -121,19 +173,20 @@
 	
 	      damage                  = {
 		--No Bonus
-		default = 100,
-		Cruiser = 100,
-		Building = 100,
-		Land = 100,
-		Aircraft = 100,
-		Ship = 100,
-		Sub = 100,
+		--100 dps
+		default = 50,
+		Cruiser = 50,
+		Building = 50,
+		Land = 50,
+		Aircraft = 50,
+		Ship = 50,
+		Sub = 50,
 
 		Meteor = 0,
-		Drone = 100,
-		Spare1 = 100,
-		Spare2 = 100,
-		Spare3 = 100,
+		Drone = 50,
+		Spare1 = 50,
+		Spare2 = 50,
+		Spare3 = 50,
 	      },
 	
 	      duration                = 0.02,
@@ -154,6 +207,59 @@
 	      weaponType              = [[LaserCannon]],
 	      weaponVelocity          = 1500,
 	    },
+		
+	    AA         = {
+	      name                    = [[Homing AA Missile]],
+	      areaOfEffect            = 48,
+		  avoidFeature            = false,
+	      avoidFriendly           = true,
+	      canattackground         = false,
+	      collideFriendly         = false,		  
+	      cegtag                  = [[ct_missiletail_aa]],
+	      cylinderTargeting       = 1,
+	      craterMult              = 0.25,
+	
+	      damage                  = {
+		--Anti-Plane
+		--20 dps
+		--100 dps aircraft
+		default = 20,
+		Cruiser = 20,
+		Building = 20,
+		Land = 20,
+		Aircraft = 100,
+		Ship = 20,
+		Sub = 20,
+
+		Meteor = 0,
+		Drone = 20,
+		Spare1 = 20,
+		Spare2 = 20,
+		Spare3 = 20,
+	      },
+	
+	      explosionGenerator      = [[custom:ct_impact_missile_aa]],
+	      flightTime              = 3,
+	      interceptedByShieldType = 1,
+	      impulseFactor           = 0,
+	      lineOfSight             = true,
+	      model                   = [[projectiles/baamissile.s3o]],
+	      range                   = 750,
+	      reloadtime              = 1,
+	      smokeTrail              = true,
+	      soundHit                = [[argh/Argh_LargeExplosion]],
+	      soundStart              = [[]],
+	      startVelocity           = 200,
+	      tolerance               = 22000,
+	      texture2                = [[ct_smoketrail]],
+	      tracks                  = true,
+	      turret                  = true,
+	      turnRate                = 30000,
+	      weaponAcceleration      = 550,
+	      weaponTimer             = 5,
+	      weaponType              = [[MissileLauncher]],
+	      weaponVelocity          = 900,
+	    },
 	
 	  },
 	
@@ -167,10 +273,10 @@
 	      damage           = 2750,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
-	      footprintX       = 7,
-	      footprintZ       = 7,
+	      footprintX       = 8,
+	      footprintZ       = 8,
 	      metal            = 1000,
-	      object           = [[wrecks/bbattlecruiser2wreck.s3o]],
+	      object           = [[wrecks/bbattlecruiserwreck.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 30000,
 	    },
@@ -182,10 +288,10 @@
 	      category         = [[heaps]],
 	      damage           = 1375,
 	      energy           = 0,
-	      footprintX       = 7,
-	      footprintZ       = 7,
+	      footprintX       = 8,
+	      footprintZ       = 8,
 	      metal            = 500,
-	      object           = [[b7x7heap.s3o]],
+	      object           = [[b8x8heap.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 15000,
 	    },
