@@ -33,24 +33,22 @@ effectUnitDefs = {
         },
 
         bsupplydepotmobile = {
-                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  15, length=35, piece="fxflare1", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  15, length=35, piece="fxflare2", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  15, length=35, piece="fxflare3", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},        width =  15, length=35, piece="fxflare4", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},	width =  15, length=35, piece="fxflare1", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},	width =  15, length=35, piece="fxflare2", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},	width =  15, length=35, piece="fxflare3", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},	width =  15, length=35, piece="fxflare4", onActive=true}},
         },
 
         btransportcruiser = {
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  15, length=75, piece="fxflare1", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  15, length=75, piece="fxflare2", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  15, length=75, piece="fxflare3", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    width =  15, length=75, piece="fxflare4", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},	width =  10, length=55, piece="fxflare1", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},	width =  10, length=55, piece="fxflare2", onActive=true}},
         },
 
         bmechcruiser = {
-                {class='AirJet',        options={color={0,0,0.75,0},    				width =  25, length=50, piece="fxflare1", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},   					width =  25, length=50, piece="fxflare2", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    				width =  25, length=50, piece="fxflare3", onActive=true}},
-                {class='AirJet',        options={color={0,0,0.75,0},    				width =  25, length=50, piece="fxflare4", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},	width =  25, length=50, piece="fxflare1", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},	width =  25, length=50, piece="fxflare2", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},	width =  25, length=50, piece="fxflare3", onActive=true}},
+                {class='AirJet',        options={color={0,0,0.75,0},	width =  25, length=50, piece="fxflare4", onActive=true}},
                 {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},	width =  60, length=35, piece="fxflare5", onActive=true}},
                 {class='AirJet',        options={color={0,0,0.75,0},    emitVector    = {0,1,0},	width =  60, length=35, piece="fxflare6", onActive=true}},
         },
