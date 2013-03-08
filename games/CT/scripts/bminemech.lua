@@ -47,25 +47,25 @@
 	        SetSignalMask( walk_go )
 	        while ( true ) do
 					--Legs move Y axis one step
-					Turn(lfrontthigh, y_axis, 1.3, 2)  --Retract
-					Turn(rfrontthigh, y_axis, -0.3, 2)  --Extend
+					Turn(lfrontthigh, y_axis, 0.9, 1.5)  --Retract
+					Turn(rfrontthigh, y_axis, -0.3, 1.5)  --Extend
 					
-					Turn(lrearthigh, y_axis, -1.3, 2)  --Extend
-					Turn(rrearthigh, y_axis, 0.3, 2)  --Retract
+					Turn(lrearthigh, y_axis, -0.9, 1.5)  --Extend
+					Turn(rrearthigh, y_axis, 0.3, 1.5)  --Retract
 					
 					--Legs move X axis one step
-					Turn(lfrontthigh, x_axis, -0.45, 2)  --Retract
-					Turn(rfrontthigh, x_axis, -0.65, 2)  --Extend
+					Turn(lfrontthigh, x_axis, -0.45, 1.5)  --Retract
+					Turn(rfrontthigh, x_axis, -0.65, 1.5)  --Extend
 					
-					Turn(lrearthigh, x_axis, 0.65, 2)  --Extend
-					Turn(rrearthigh, x_axis, 0.45, 2)  --Retract
+					Turn(lrearthigh, x_axis, 0.65, 1.5)  --Extend
+					Turn(rrearthigh, x_axis, 0.45, 1.5)  --Retract
 					
 					--Shins move X axis one step
-					Turn(lfrontshin, x_axis, 0, 2)  --Retract
-					Turn(rfrontshin, x_axis, -0.45, 2)  --Extend
+					Turn(lfrontshin, x_axis, 0.2, 1.5)  --Retract
+					Turn(rfrontshin, x_axis, -0.45, 1.5)  --Extend
 					
-					Turn(lrearshin, x_axis, 0.45, 2)  --Extend
-					Turn(rrearshin, x_axis, 0, 2)  --Retract
+					Turn(lrearshin, x_axis, 0.45, 1.5)  --Extend
+					Turn(rrearshin, x_axis, 0.2, 1.5)  --Retract
 					
 					--Legs wait Y axis one step
 					WaitForTurn( lfrontthigh, y_axis )
@@ -76,25 +76,25 @@
 					Sleep(1)
 					
 					--Legs move Y axis one more step
-					Turn(lfrontthigh, y_axis, 0.3, 2)  --Extend
-					Turn(rfrontthigh, y_axis, -1.3, 2)  --Retract
+					Turn(lfrontthigh, y_axis, 0.3, 1.5)  --Extend
+					Turn(rfrontthigh, y_axis, -0.9, 1.5)  --Retract
 					
-					Turn(lrearthigh, y_axis, -0.3, 2)  --Retract
-					Turn(rrearthigh, y_axis, 1.3, 2)  --Extend
+					Turn(lrearthigh, y_axis, -0.3, 1.5)  --Retract
+					Turn(rrearthigh, y_axis, 0.9, 1.5)  --Extend
 					
 					--Legs move X axis one more step
-					Turn(lfrontthigh, x_axis, -0.65, 2)  --Extend
-					Turn(rfrontthigh, x_axis, -0.45, 2)  --Retract
+					Turn(lfrontthigh, x_axis, -0.65, 1.5)  --Extend
+					Turn(rfrontthigh, x_axis, -0.45, 1.5)  --Retract
 					
-					Turn(lrearthigh, x_axis, 0.45, 2)  --Retract
-					Turn(rrearthigh, x_axis, 0.65, 2)  --Extend
+					Turn(lrearthigh, x_axis, 0.45, 1.5)  --Retract
+					Turn(rrearthigh, x_axis, 0.65, 1.5)  --Extend
 					
 					--Shins move X axis one more step
-					Turn(lfrontshin, x_axis, -0.45, 2)  --Extend
-					Turn(rfrontshin, x_axis, 0, 2)  --Retract
+					Turn(lfrontshin, x_axis, -0.45, 1.5)  --Extend
+					Turn(rfrontshin, x_axis, 0.2, 1.5)  --Retract
 					
-					Turn(lrearshin, x_axis, 0, 2)  --Retract
-					Turn(rrearshin, x_axis, 0.45, 2)  --Extend
+					Turn(lrearshin, x_axis, 0.2, 1.5)  --Retract
+					Turn(rrearshin, x_axis, 0.45, 1.5)  --Extend
 					
 					--Legs wait Y axis one more step
 					WaitForTurn( lfrontthigh, y_axis )
@@ -108,19 +108,26 @@
 	
 	local function StopWalk()
 	    Signal( walk_go )
-		--Leg angles X axis return to idle
-		Turn(lfrontthigh, x_axis, -0.45, 2)
-		Turn(rfrontthigh, x_axis, -0.45, 2)
+		--Leg angles Y axis
+		Turn(lfrontthigh, y_axis, 0.6, 1.5)
+		Turn(rfrontthigh, y_axis, -0.6, 1.5)
 		
-		Turn(lrearthigh, x_axis, 0.45, 2)
-		Turn(rrearthigh, x_axis, 0.45, 2)
+		Turn(lrearthigh, y_axis, -0.6, 1.5)
+		Turn(rrearthigh, y_axis, 0.6, 1.5)
+		
+		--Leg angles X axis return to idle
+		Turn(lfrontthigh, x_axis, -0.45, 1.5)
+		Turn(rfrontthigh, x_axis, -0.45, 1.5)
+		
+		Turn(lrearthigh, x_axis, 0.45, 1.5)
+		Turn(rrearthigh, x_axis, 0.45, 1.5)
 		
 		--Shin angles X axis return to idle
-		Turn(lfrontshin, x_axis, 0, 2)
-		Turn(rfrontshin, x_axis, 0, 2)
+		Turn(lfrontshin, x_axis, 0, 1.5)
+		Turn(rfrontshin, x_axis, 0, 1.5)
 		
-		Turn(lrearshin, x_axis, 0, 2)
-		Turn(rrearshin, x_axis, 0, 2)
+		Turn(lrearshin, x_axis, 0, 1.5)
+		Turn(rrearshin, x_axis, 0, 1.5)
 	end
 
 	local function RestoreAfterDelay(unitID)
@@ -136,11 +143,11 @@
 		Move(waist, y_axis, 2.25)
 		
 		--Leg angles Y axis
-		Turn(lfrontthigh, y_axis, 0.8)
-		Turn(rfrontthigh, y_axis, -0.8)
+		Turn(lfrontthigh, y_axis, 0.6)
+		Turn(rfrontthigh, y_axis, -0.6)
 		
-		Turn(lrearthigh, y_axis, -0.8)
-		Turn(rrearthigh, y_axis, 0.8)
+		Turn(lrearthigh, y_axis, -0.6)
+		Turn(rrearthigh, y_axis, 0.6)
 		
 		--Leg angles X axis
 		Turn(lfrontthigh, x_axis, -0.45)
