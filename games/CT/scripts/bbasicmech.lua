@@ -233,11 +233,9 @@
 	end
 
 	function jumping()
-
 	end
 
 	function halfJump()
-
 	end
 
 	function endJump()
