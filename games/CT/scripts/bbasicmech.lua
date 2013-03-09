@@ -48,14 +48,14 @@
 		while (true) do
 
 			--left leg backward
-	                Turn( leftthigh, x_axis, 0.5, 2 )
-	                Turn( leftshin, x_axis, 0, 2 )
-	                Turn( leftfoot, x_axis, -0.25, 2 )
+	                Turn( leftthigh, x_axis, 0.7, 2 )
+	                Turn( leftshin, x_axis, 0.1, 2 )
+	                --Turn( leftfoot, x_axis, -0.25, 2 )
 
 			--right leg forward
 	                Turn( rightthigh, x_axis, -1, 2 )
-	                Turn( rightshin, x_axis, 1, 2 )
-	                Turn( rightfoot, x_axis, 0, 2 )
+	                Turn( rightshin, x_axis, 0.5, 2 )
+	                --Turn( rightfoot, x_axis, 0, 2 )
 
 			--left arm forward
 	                Turn( leftarm, x_axis, -0.5, 2 )
@@ -93,13 +93,13 @@
 
 			--left leg forward
 	                Turn( leftthigh, x_axis, -1, 2 )
-	                Turn( leftshin, x_axis, 1, 2 )
-	                Turn( leftfoot, x_axis, 0, 2 )
+	                Turn( leftshin, x_axis, 0.5, 2 )
+	                --Turn( leftfoot, x_axis, 0, 2 )
 
 			--right leg backward
-	                Turn( rightthigh, x_axis, 0.5, 2 )
-	                Turn( rightshin, x_axis, 0, 2 )
-	                Turn( rightfoot, x_axis, -0.25, 2 )
+	                Turn( rightthigh, x_axis, 0.7, 2 )
+	                Turn( rightshin, x_axis, 0.1, 2 )
+	                --Turn( rightfoot, x_axis, -0.25, 2 )
 	               
 			--left arm
 	                Turn( leftarm, x_axis, 0.5, 2 )
