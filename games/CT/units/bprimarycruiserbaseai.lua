@@ -1,5 +1,5 @@
 --Mobile Headquarters (AI) Unit Def by Sanada
---Notes:  Balanced Version 1, except Damage
+--Notes:  Balanced Version 1
 
 unitDef = {
 
@@ -161,6 +161,8 @@ unitDef = {
 	
 	      damage                  = {
 		--Anti-Land
+		--33.3 dps
+		--66.6 dps land
 		default = 100,
 		Cruiser = 100,
 		Building = 100,
@@ -201,6 +203,9 @@ unitDef = {
 	
 	      damage                  = {
 		--Anti-Plane
+		--10 dps
+		--50 dps cruiser
+		--50 dps aircraft
 		default = 5,
 		Cruiser = 25,
 		Building = 5,
@@ -249,7 +254,7 @@ unitDef = {
       metal            = 250,
       object           = [[wrecks/bprimarycruiserbasewreck.s3o]],
       reclaimable      = true,
-      reclaimTime      = 15000,
+      reclaimTime      = 75000,
     },
 
 
@@ -266,7 +271,7 @@ unitDef = {
       metal            = 125,
       object           = [[b17x16heap.s3o]],
       reclaimable      = true,
-      reclaimTime      = 7500,
+      reclaimTime      = 37500,
     },
 
 

@@ -1,5 +1,5 @@
 --Deployed Azai Class Cruiser Unit Def by Sanada
---Notes:  NOT Balanced Version 1
+--Notes:  Balanced Version 1
 
 unitDef = {
 
@@ -86,7 +86,7 @@ unitDef = {
       description      = [[Wreckage - Deployed Azai Class Cruiser]],
       blocking         = true,
       category         = [[corpses]],
-      damage           = 1500,
+      damage           = 5000,
       energy           = 0,
       featureDead      = [[DEAD2]],
       footprintX       = 7,
@@ -103,7 +103,7 @@ unitDef = {
       description      = [[Debris - Deployed Azai Class Cruiser]],
       blocking         = false,
       category         = [[heaps]],
-      damage           = 750,
+      damage           = 2500,
       energy           = 0,
       footprintX       = 7,
       footprintZ       = 7,

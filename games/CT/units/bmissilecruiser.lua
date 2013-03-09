@@ -111,6 +111,8 @@
 	
 	      damage                  = {
 		--Anti-Land
+		--60 dps (both fired)
+		--90 dps land (both fired)
 		default = 60,
 		Cruiser = 60,
 		Building = 60,

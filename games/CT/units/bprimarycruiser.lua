@@ -1,5 +1,5 @@
 	--Oda Class Cruiser Unit Def by Sanada
-	--Notes:  Balanced Version 1, except Damage
+	--Notes:  Balanced Version 1
 
 	unitDef = {
 	  unitname            = [[bprimarycruiser]],
@@ -126,6 +126,8 @@
 	
 	      damage                  = {
 		--Anti-Cruiser
+		--16 dps
+		--64 dps cruiser
 		default = 4,
 		Cruiser = 16,
 		Building = 4,
@@ -175,6 +177,8 @@
 	
 	      damage                  = {
 		--Anti-Plane
+		--13.3 dps
+		--83.3 dps aircraft
 		default = 20,
 		Cruiser = 20,
 		Building = 20,
@@ -231,7 +235,7 @@
 	      metal            = 250,
 	      object           = [[wrecks/bprimarycruiserwreck.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15000,
+	      reclaimTime      = 75000,
 	    },
 	
 	
@@ -247,7 +251,7 @@
 	      mass             = 750,
 	      object           = [[b10x10heap.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 7500,
+	      reclaimTime      = 37500,
 	    },
 	
 	  },

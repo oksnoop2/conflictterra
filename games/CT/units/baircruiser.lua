@@ -1,5 +1,5 @@
 	--Azai Class Cruiser Unit Def by Sanada
-	--Notes:  NOT Balanced Version 1
+	--Notes:  Balanced Version 1
 
 	unitDef = {
 	  unitname            = [[baircruiser]],
@@ -117,6 +117,8 @@
 	
 	      damage                  = {
 		--Anti-Cruiser
+		--16 dps
+		--40 dps cruiser
 		default = 4,
 		Cruiser = 10,
 		Building = 4,
@@ -166,6 +168,8 @@
 	
 	      damage                  = {
 		--Anti-Plane
+		--13.3 dps
+		--53.3 dps aircraft
 		default = 20,
 		Cruiser = 20,
 		Building = 20,
@@ -213,7 +217,7 @@
 	      description      = [[Wreckage - Azai Class Cruiser]],
 	      blocking         = true,
 	      category         = [[corpses]],
-	      damage           = 1500,
+	      damage           = 2500,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
 	      footprintX       = 10,
@@ -230,7 +234,7 @@
 	      description      = [[Debris - Azai Class Cruiser]],
 	      blocking         = false,
 	      category         = [[heaps]],
-	      damage           = 750,
+	      damage           = 1250,
 	      energy           = 0,
 	      footprintX       = 10,
 	      footprintZ       = 10,

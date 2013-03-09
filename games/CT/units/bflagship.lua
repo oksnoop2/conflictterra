@@ -1,5 +1,5 @@
 	--Ieyasu Class Cruiser Unit Def by Sanada
-	--Notes:  NOT Balanced Version 1, Needs remodeled
+	--Notes:  Balanced Version 1 (EXCEPT DAMAGE), Needs remodeled
 
 	unitDef = {
 	  unitname            = [[bflagship]],
@@ -52,7 +52,7 @@
 	  hoverAttack         = true,
 	  idleAutoHeal        = 0,
 	  mass                = 2500,
-	  maxDamage           = 6500,
+	  maxDamage           = 7000,
 	  maxVelocity         = 4,
 	  minAirbasePower     = 1,
 	  verticalSpeed       = 30,
@@ -210,7 +210,7 @@
 	      description      = [[Wreckage - Ieyasu Class Cruiser]],
 	      blocking         = true,
 	      category         = [[corpses]],
-	      damage           = 3250,
+	      damage           = 3500,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
 	      footprintX       = 7,
@@ -226,7 +226,7 @@
 	      description      = [[Debris - Ieyasu Class Cruiser]],
 	      blocking         = false,
 	      category         = [[heaps]],
-	      damage           = 1625,
+	      damage           = 1750,
 	      energy           = 0,
 	      footprintX       = 7,
 	      footprintZ       = 7,
