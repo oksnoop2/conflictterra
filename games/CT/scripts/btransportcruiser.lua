@@ -22,6 +22,10 @@
 	local rrearfoot = piece "rrearfoot"
 
 	local link = piece "link"
+	
+	local fxflaredamage1 = piece "fxflaredamage1"
+	local fxflaredamage2 = piece "fxflaredamage2"
+	local fxflaredamage3 = piece "fxflaredamage3"
 
 	
 	--locals
@@ -29,11 +33,35 @@
 	local DropUnit = Spring.UnitScript.DropUnit
 
 	
-	--signals
+	--CEGs
+	local ct_damage_fire = SFX.CEG
+	
+	
+	--local functions
+	local function DamagedSmoke()
+		while (GetUnitValue(COB.BUILD_PERCENT_LEFT) ~= 0) do
+			Sleep(1000)
+		end
+		while true do
+			local health = GetUnitValue(COB.HEALTH)
+			if (health <= 75) then
+				EmitSfx(fxflaredamage1, ct_damage_fire)
+			end
+			if (health <= 50) then
+				EmitSfx(fxflaredamage2, ct_damage_fire)
+			end
+			if (health <= 25) then
+				EmitSfx(fxflaredamage3, ct_damage_fire)
+			end
+			Sleep(100)
+		end
+	end
 
 
 	--script
 	function script.Create(unitID)
+		StartThread(DamagedSmoke)
+	
 		--Engines down z-axis
 		Turn(lengine, z_axis, 0.6)
 		Turn(rengine, z_axis, -0.6)

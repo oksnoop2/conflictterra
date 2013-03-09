@@ -82,6 +82,7 @@ unitDef = {
 	"custom:ct_buildlight_green",
 	"custom:ct_buildlight_red",
 	"custom:ct_dust_small",
+	"custom:ct_damage_fire",
     },
   },
 

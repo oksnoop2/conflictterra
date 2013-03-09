@@ -28,7 +28,15 @@
 	local lightflare2 = piece "lightflare2"
 	local lightflare3 = piece "lightflare3"
 	local lightflare4 = piece "lightflare4"
+	
+	local fxflaredamage1 = piece "fxflaredamage1"
+	local fxflaredamage2 = piece "fxflaredamage2"
+	local fxflaredamage3 = piece "fxflaredamage3"
 
+	
+	--CEGs
+	local ct_damage_fire = SFX.CEG
+	
 	
 	--local functions
 	local function take_off()
@@ -45,9 +53,29 @@
 		Spin( rbackfan, y_axis, 5, 5 )		
 	end
 	
+	local function DamagedSmoke()
+		while (GetUnitValue(COB.BUILD_PERCENT_LEFT) ~= 0) do
+			Sleep(1000)
+		end
+		while true do
+			local health = GetUnitValue(COB.HEALTH)
+			if (health <= 75) then
+				EmitSfx(fxflaredamage1, ct_damage_fire)
+			end
+			if (health <= 50) then
+				EmitSfx(fxflaredamage2, ct_damage_fire)
+			end
+			if (health <= 25) then
+				EmitSfx(fxflaredamage3, ct_damage_fire)
+			end
+			Sleep(100)
+		end
+	end
+	
 	
 	--script
 	function script.Create()
+		StartThread(DamagedSmoke)
 	end
 	
 	function script.Activate()

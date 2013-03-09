@@ -41,6 +41,10 @@
 	local fxflare4 = piece "fxflare4"
 	local fxflare5 = piece "fxflare5"
 	local fxflare6 = piece "fxflare6"
+	
+	local fxflaredamage1 = piece "fxflaredamage1"
+	local fxflaredamage2 = piece "fxflaredamage2"
+	local fxflaredamage3 = piece "fxflaredamage3"
 
 
 	--signals
@@ -49,8 +53,9 @@
 
 
 	--CEGs
-        local ct_buildlight_green = SFX.CEG
-        local ct_buildlight_red = SFX.CEG + 1
+	local ct_buildlight_green = SFX.CEG
+	local ct_buildlight_red = SFX.CEG + 1
+	local ct_damage_fire = SFX.CEG + 2
 
 
 	--local functions
@@ -93,10 +98,31 @@
 		Move(mainstrut, z_axis, 100, 25)
 		Move(cage, z_axis, -100, 25)
 	end
+	
+	local function DamagedSmoke()
+		while (GetUnitValue(COB.BUILD_PERCENT_LEFT) ~= 0) do
+			Sleep(1000)
+		end
+		while true do
+			local health = GetUnitValue(COB.HEALTH)
+			if (health <= 75) then
+				EmitSfx(fxflaredamage1, ct_damage_fire)
+			end
+			if (health <= 50) then
+				EmitSfx(fxflaredamage2, ct_damage_fire)
+			end
+			if (health <= 25) then
+				EmitSfx(fxflaredamage3, ct_damage_fire)
+			end
+			Sleep(100)
+		end
+	end
 
 
 	--script
 	function script.Create(unitID)
+		StartThread(DamagedSmoke)
+	
 		--front gear extend
 		Turn( lfrontgear, z_axis, -0.5, 1 )
 		Turn( rfrontgear, z_axis, 0.5, 1 )

@@ -76,6 +76,7 @@
 	  sfxtypes            = {
 	    explosiongenerators = {
 		"custom:ct_missile_smokecloud",
+		"custom:ct_damage_fire",
 	    },
 	  },
 

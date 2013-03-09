@@ -54,6 +54,16 @@ unitDef = {
 	"ct/generator_chatter",
 	},
   },
+  
+  sfxtypes            = {
+	
+	    explosiongenerators = {
+		"custom:ct_buildlight_green",
+		"custom:ct_buildlight_red",
+		"custom:ct_damage_fire",
+	    },
+	
+  }, 
 
   smoothAnim                    = true,
 

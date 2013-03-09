@@ -60,6 +60,12 @@
 		"ct/cruiserengine",
 		},
 	  },
+	  
+	  sfxtypes            = {
+	    explosiongenerators = {
+		"custom:ct_damage_fire",
+	    },
+	  },
 
 	  transportCapacity   = 1,
 	  transportMass       = 6000,

@@ -69,6 +69,12 @@
 		"ct/cruiserengine",
 		},
 	  },
+	  
+	  sfxtypes            = {
+	    explosiongenerators = {
+		"custom:ct_damage_fire",
+	    },
+	  },
 
 	  turnRate            = 250,
 	  upright             = true,
