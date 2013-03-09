@@ -47,6 +47,7 @@ unitDef = {
 	
 	    explosiongenerators = {
 		"custom:ct_buildlight_blue",
+		"custom:ct_damage_fire",
 	    },
 	
   },  

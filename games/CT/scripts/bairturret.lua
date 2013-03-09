@@ -16,6 +16,8 @@
 	
 	local laserturret = piece "laserturret"
 	local flare5 = piece "flare5"
+	
+	local fxflaredamage1 = piece "fxflaredamage1"
 
 	
 	--variables
@@ -29,6 +31,7 @@
 	
 	--CEGs
 	local ct_cannon_narrow = SFX.CEG
+	local ct_damage_fire = SFX.CEG + 1
 	
 	
 	--local functions
@@ -66,8 +69,22 @@
 		Move(rbottombarrel, z_axis, 0, 20)
 	end
 	
+	local function DamagedSmoke()
+		while (GetUnitValue(COB.BUILD_PERCENT_LEFT) ~= 0) do
+			Sleep(1000)
+		end
+		while true do
+			local health = GetUnitValue(COB.HEALTH)
+			if (health <= 50) then
+				EmitSfx(fxflaredamage1, ct_damage_fire)
+			end
+			Sleep(100)
+		end
+	end
+	
 	--script
 	function script.Create()
+		StartThread(DamagedSmoke)
 		Turn(laserturret, x_axis, -1)
 	end
 	

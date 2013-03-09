@@ -45,6 +45,7 @@
 	
 	    explosiongenerators = {
 		"custom:ct_cannon_narrow",
+		"custom:ct_damage_fire",
 	    },
 	
 	  },
