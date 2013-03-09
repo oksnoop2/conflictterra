@@ -1,5 +1,5 @@
 	--Takeda Class Cruiser Unit Def by Sanada
-	--Notes:  NOT Balanced 1
+	--Notes:  Balanced 1
 
 	unitDef = {
 	  unitname            = [[btransportcruiser]],
@@ -41,7 +41,7 @@
 	  maxDamage           = 1000,
 	  maxVelocity         = 8,
 	  minAirbasePower     = 1,
-	  verticalSpeed       = 40,
+	  verticalSpeed       = 50,
 	  noAutoFire          = false,
 	  objectName          = [[btransportcruiser.s3o]],
 	  releaseHeld         = true,

@@ -28,7 +28,7 @@
 	  collisionVolumeOffsets = [[0 0 0]],
 	  collisionVolumeScales  = [[128 120 300]],
 	  collisionVolumeTest    = 1,
-	  collisionVolumeType    = [[ellipsoid]],
+	  collisionVolumeType    = [[cylz]],
 	  
 	  corpse              = [[DEAD]],
 	  cruiseAlt           = 300,

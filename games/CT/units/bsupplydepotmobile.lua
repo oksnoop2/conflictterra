@@ -18,7 +18,7 @@
 	  collisionVolumeOffsets = [[0 0 0]],
 	  collisionVolumeScales  = [[76 76 160]],
 	  collisionVolumeTest    = 1,
-	  collisionVolumeType    = [[ellipsoid]],
+	  collisionVolumeType    = [[cylz]],
 
 	  buildPic            = [[bsupplydepotmobile.png]],
 	  buildTime           = 20,
