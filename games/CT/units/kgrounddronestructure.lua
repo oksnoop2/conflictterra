@@ -50,14 +50,20 @@ unitDef = {
   side                          = [[Drone]],
   sightDistance                 = 250,
 
-      sounds            = {
-          select = {
-        "golgotha/vehicle_done_44khz",
-        },
-          ok = {
-        "golgotha/vehicle_done_44khz",
-        },
-      },
+  sounds            = {
+      select = {
+    "golgotha/vehicle_done_44khz",
+    },
+      ok = {
+    "golgotha/vehicle_done_44khz",
+    },
+  },
+	  
+  sfxtypes            = {
+    explosiongenerators = {
+	"custom:ct_drone_damage_fire",
+    },
+  },
 
   smoothAnim                    = true,
   turnRate                      = 0,

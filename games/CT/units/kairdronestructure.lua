@@ -57,6 +57,12 @@ unitDef = {
 	"golgotha/vehicle_done_44khz",
 	},
   },
+  
+  sfxtypes            = {
+    explosiongenerators = {
+	"custom:ct_drone_damage_fire",
+    },
+  },
 
   smoothAnim                    = true,
   workerTime                    = 1,

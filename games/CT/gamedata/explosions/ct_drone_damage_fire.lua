@@ -1,9 +1,9 @@
---ct_damage_fire
---Burning CEG for damaged Cruisers and Buildings
+--ct_drone:damage_fire
+--Burning CEG for damaged Drone buildings
 --by Sanada
 
 return {
-  ["ct_damage_fire"] = {  
+  ["ct_drone_damage_fire"] = {  
 	
     sparks = {
       air                = true,
@@ -17,7 +17,7 @@ return {
 	  properties = {
         alwaysVisible      = false,
 	    airdrag            = 0.8,
-        colormap           = [[1.0 1.0 1.0 0.04   0.9 0.5 0.2 0.01  0.8 0.1 0.1 0.01]],
+        colormap           = [[1.0 1.0 1.0 0.04   0.5 0.9 0.2 0.01  0.1 0.8 0.1 0.01]],
         directional        = 0,
         emitrot            = 45,
         emitrotspread      = 32,
@@ -49,7 +49,7 @@ return {
 	  properties = {
         alwaysVisible      = 0,
 	    airdrag            = 0.9,
-        colormap           = [[1.0 1.0 1.0 0.04   0.9 0.5 0.2 0.01  0.8 0.1 0.1 0.01]],
+        colormap           = [[1.0 1.0 1.0 0.04   0.5 0.9 0.2 0.01  0.1 0.8 0.1 0.01]],
         directional        = 1,
         emitrot            = 45,
         emitrotspread      = 32,

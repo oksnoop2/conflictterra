@@ -16,11 +16,19 @@
 
 	local nano4 = piece "nano4"
 	local flare5 = piece "flare5"
+	
+	local fxflaredamage1 = piece "fxflaredamage1"
+	local fxflaredamage2 = piece "fxflaredamage2"
+	local fxflaredamage3 = piece "fxflaredamage3"
 
 
 	--signals
 	local SIG_OPEN = 1
 	local SIG_CLOSE = 2
+	
+
+	--CEGs
+	local ct_drone_damage_fire = SFX.CEG
 
 
 	--local functions
@@ -79,10 +87,30 @@
 			Sleep(1)
 		end
 	end
+	
+	local function DamagedSmoke()
+		while (GetUnitValue(COB.BUILD_PERCENT_LEFT) ~= 0) do
+			Sleep(1000)
+		end
+		while true do
+			local health = GetUnitValue(COB.HEALTH)
+			if (health <= 75) then
+				EmitSfx(fxflaredamage1, ct_drone_damage_fire)
+			end
+			if (health <= 50) then
+				EmitSfx(fxflaredamage2, ct_drone_damage_fire)
+			end
+			if (health <= 25) then
+				EmitSfx(fxflaredamage3, ct_drone_damage_fire)
+			end
+			Sleep(100)
+		end
+	end
 
 
 	--script
 	function script.Create(unitID)
+		StartThread(DamagedSmoke)
 	end
 
 	function script.QueryBuildInfo() return flare1 end
