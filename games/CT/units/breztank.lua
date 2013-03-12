@@ -7,12 +7,12 @@ local breztank = {
 	acceleration        = 1,
 	brakerate           = 0.1,
 	buildpic            = [[bmetaltruck.png]],
-	buildCostEnergy     = 300,
-	buildCostMetal      = 300,
+	buildCostEnergy     = 500, --300
+	buildCostMetal      = 500, --300
 	buildDistance       = 180,
 	builder             = true,
 
-	buildTime           = 15,
+	buildTime           = 30, --15
 	canAttack           = false,
 	canAssist           = false,
 	canGuard            = true,
@@ -68,7 +68,7 @@ local breztank = {
 	trackWidth          = 24,
 	
 	terraformSpeed      = 300,
-	resurrectSpeed      = 0.75,
+	resurrectSpeed      = 0.5, --0.75
 	reclaimSpeed        = 300,
 	repairSpeed         = 0.5,
 	turnInPlace         = 0,
@@ -89,10 +89,10 @@ local breztank = {
 	      featureDead      = [[DEAD2]],
 	      footprintX       = 2,
 	      footprintZ       = 2,
-	      metal            = 150,
+	      metal            = 250,
 	      object           = [[wrecks/breztruckwreck.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 4500,
+	      reclaimTime      = 7500,
 	    },
 	
 	
@@ -104,10 +104,10 @@ local breztank = {
 	      energy           = 0,
 	      footprintX       = 2,
 	      footprintZ       = 2,
-	      metal            = 75,
+	      metal            = 125,
 	      object           = [[b2x2heap.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 2250,
+	      reclaimTime      = 3750,
 	    },
 
   	  },
