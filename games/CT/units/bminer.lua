@@ -19,8 +19,8 @@ local bminer = {
         reclaimable         = false,
 
         customParams = {
-          is_miner=1,   --used by minig: if the unit can mine is_mineable=1 ressources
-          max_cargo=25, --used by mining: how much metal the unit can carry at once before having to return to a drop off
+          is_miner          = 1, --used by minig: if the unit can mine is_mineable=1 resources
+          max_cargo         = 25, --used by mining: how much metal the unit can carry at once before having to return to a drop off
         },
 
         energyMake          = 0,
@@ -117,7 +117,7 @@ local bminer = {
               impulseFactor           = 0,
               lineOfSight             = true,
               range                   = 100,
-              reloadtime              = 0.2,
+              reloadtime              = 0.5, --0.2
               rgbColor                = [[1 0.95 0.4]],
               separation              = 2,
               size                    = 0.4,
