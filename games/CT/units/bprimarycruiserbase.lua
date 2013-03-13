@@ -15,11 +15,11 @@ unitDef = {
   buildoptions                  = {
 	[[bengineer]],
 	[[bminer]],
-	[[breztank]],
 	[[bsupplydepotmobile]],
 	[[bmechcruiser]],
 	[[btankcruiser]],
 	[[baircruiser]],
+	[[breztruck]],
   },
 
   buildPic                      = [[bprimarycruiserbase.png]],

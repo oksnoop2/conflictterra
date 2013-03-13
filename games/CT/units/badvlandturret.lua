@@ -1,3 +1,6 @@
+	--High-Powered Beam Turret Unit Def by Sanada
+	--Notes:  NOT Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[badvlandturret]],
 	  name                = [[High-Power Beam Turret]],
@@ -115,43 +118,33 @@
 	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Advanced Anti-Land Turret]],
-	      blocking         = false,
+	      description      = [[Wreckage - High-Power Beam Turret]],
+	      blocking         = true,
 	      category         = [[corpses]],
-	      damage           = 8625,
+	      damage           = 2500,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
-	      featurereclamate = [[SMUDGE01]],
-	      footprintX       = 2,
-	      footprintZ       = 2,
-	      height           = [[4]],
-	      hitdensity       = [[100]],
-	      metal            = 400,
-	      object           = [[bgenericwreckage.s3o]],
+	      footprintX       = 4,
+	      footprintZ       = 4,
+	      metal            = 275,
+	      object           = [[wrecks/badvlandturretwreck.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
-	      seqnamereclamate = [[TREE1RECLAMATE]],
-	      world            = [[All Worlds]],
+	      reclaimTime      = 8250,
 	    },
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Advanced Anti-Land Turret]],
+	      description      = [[Debris - High-Power Beam Turret]],
 	      blocking         = false,
 	      category         = [[heaps]],
-	      damage           = 5750,
+	      damage           = 1250,
 	      energy           = 0,
-	      featurereclamate = [[SMUDGE01]],
-	      footprintX       = 5,
-	      footprintZ       = 5,
-	      height           = [[4]],
-	      hitdensity       = [[100]],
-	      metal            = 200,
-	      object           = [[b5x5heap.s3o]],
+	      footprintX       = 4,
+	      footprintZ       = 4,
+	      metal            = 138,
+	      object           = [[b4x4heap.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
-	      seqnamereclamate = [[TREE1RECLAMATE]],
-	      world            = [[All Worlds]],
+	      reclaimTime      = 4125,
 	    },
 	
 	  },

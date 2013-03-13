@@ -1,3 +1,6 @@
+	--Dual Gatling Turret Unit Def by Sanada
+	--Notes:  NOT Balanced Version 1
+
 	unitDef = {
 	  unitname            = [[badvgatlingturret]],
 	  name                = [[Dual Gatling Turret]],
@@ -120,43 +123,33 @@
 	  featureDefs         = {
 	
 	    DEAD  = {
-	      description      = [[Wreckage - Gatling Turret]],
+	      description      = [[Wreckage - Dual Gatling Turret]],
 	      blocking         = false,
 	      category         = [[corpses]],
-	      damage           = 7500,
+	      damage           = 2500,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
-	      featurereclamate = [[SMUDGE01]],
-	      footprintX       = 2,
-	      footprintZ       = 2,
-	      height           = [[4]],
-	      hitdensity       = [[100]],
-	      metal            = 400,
-	      object           = [[bgenericwreckage.s3o]],
+	      footprintX       = 5,
+	      footprintZ       = 5,
+	      metal            = 150,
+	      object           = [[wrecks/badvgatlingturretwreck.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
-	      seqnamereclamate = [[TREE1RECLAMATE]],
-	      world            = [[All Worlds]],
+	      reclaimTime      = 4500,
 	    },
 	
 	
 	    DEAD2 = {
-	      description      = [[Debris - Gatling Turret]],
+	      description      = [[Debris - Dual Gatling Turret]],
 	      blocking         = false,
 	      category         = [[heaps]],
-	      damage           = 5000,
+	      damage           = 1250,
 	      energy           = 0,
-	      featurereclamate = [[SMUDGE01]],
-	      footprintX       = 3,
-	      footprintZ       = 3,
-	      height           = [[4]],
-	      hitdensity       = [[100]],
-	      metal            = 200,
-	      object           = [[b3x3heap.s3o]],
+	      footprintX       = 5,
+	      footprintZ       = 5,
+	      metal            = 75,
+	      object           = [[b5x5heap.s3o]],
 	      reclaimable      = true,
-	      reclaimTime      = 15,
-	      seqnamereclamate = [[TREE1RECLAMATE]],
-	      world            = [[All Worlds]],
+	      reclaimTime      = 2250,
 	    },
 	
 	  },

@@ -1,4 +1,4 @@
-	-- by KR
+	--Dual Gatling Turret animation script by Sanada
 	
 	--pieces
 	local base = piece "base"
@@ -10,24 +10,33 @@
 	local lmag = piece "lmag"
 	local rmag = piece "rmag"
 
+	
+	--variables
 	local currBarrel = 1
 
+	
 	--signals
 	local SIG_AIM = 1
 	local SIG_AIM_SEC = 2
-        local ct_machinegun_big = SFX.CEG
 	
+	
+	--CEGs
+	local ct_machinegun_big = SFX.CEG
+	
+	
+	--local functions
+	local function RestoreAfterDelay(unitID)
+		Sleep(2500)
+		Turn(turret, x_axis, 0, math.rad(160))
+		StopSpin(lmag, z_axis, 5)
+		StopSpin(rmag, z_axis, 5)
+	end
+	
+	--script
 	function script.Create()
 	       
 	end
 	
-	local function RestoreAfterDelay(unitID)
-		Sleep(2500)
-        	Turn(turret, x_axis, 0, math.rad(160))
-		StopSpin(lmag, z_axis, 5)
-		StopSpin(rmag, z_axis, 5)
-	end
-
 	function script.QueryWeapon1()
 		if (currBarrel == 1) then 
 			return flare1
@@ -41,12 +50,12 @@
 	function script.AimWeapon1( heading, pitch )
 		Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
-        	Turn(turret, y_axis, heading, math.rad(300))
-        	Turn(turret, x_axis, -pitch, math.rad(160))
+		Turn(turret, y_axis, heading, math.rad(300))
+		Turn(turret, x_axis, -pitch, math.rad(160))
 		Spin(lmag, z_axis, 5)
 		Spin(rmag, z_axis, 5)
-        	WaitForTurn(turret, y_axis)
-        	WaitForTurn(turret, x_axis)
+		WaitForTurn(turret, y_axis)
+		WaitForTurn(turret, x_axis)
 		StartThread(RestoreAfterDelay)
 		return true
 	end
@@ -64,4 +73,5 @@
 	end
 	
 	function script.Killed(recentDamage, maxHealth)
+		return 0
 	end
