@@ -99,7 +99,7 @@
             "bscoutvehicle",
             "bassaulttank",
             "baabuggy",
-            "breztank",
+            "breztruck",
             "bartillery",
             "bgeneraltank",         
             --T2

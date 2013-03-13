@@ -1,12 +1,12 @@
 --Resurrection Truck Unit Def by Sanada
 --Notes:  Balanced Version 1, Might remodel
 
-local breztank = {
+local breztruck = {
 	name                = [[Resurrection Truck]],
 	description         = [[Unarmed resurrection unit to revive fallen units, friend and foe alike]],
 	acceleration        = 1,
 	brakerate           = 0.1,
-	buildpic            = [[bmetaltruck.png]],
+	buildpic            = [[breztruck.png]],
 	buildCostEnergy     = 500, --300
 	buildCostMetal      = 500, --300
 	buildDistance       = 180,
@@ -76,7 +76,7 @@ local breztank = {
 	turnRate            = 500,
 	showNanospray	    = 0,
 	workerTime          = 1,
-	script              = "breztank.lua",
+	script              = "breztruck.lua",
 
 	  featureDefs         = {
 	
@@ -115,4 +115,4 @@ local breztank = {
 	}
 
 
-return lowerkeys({ ["breztank"] = breztank })
+return lowerkeys({ ["breztruck"] = breztruck })

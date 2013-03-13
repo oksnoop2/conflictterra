@@ -1,4 +1,6 @@
+	--Resurrection Truck animation script by Sanada
 	
+	--pieces
 	local body = piece "body"
 	local backdoor = piece "backdoor"
 	local ldoor = piece "ldoor"
@@ -9,9 +11,13 @@
 	local wheels4 = piece "wheels4"
 	local nano = piece "nano"
 
-	local SIG_AIM = 2
-	local SIG_BUILD = 4
+	
+	--signals
+	local SIG_AIM = 1
+	local SIG_BUILD = 2
 
+	
+	--local functions
 	local function doors_open()
 		Sleep(500)
 		Turn (ldoor, z_axis, 2, 1)
@@ -26,6 +32,8 @@
 		Turn (backdoor, x_axis, 0, 1)
 	end
 
+	
+	--script
 	function script.Create(unitID)
 	end
 
@@ -43,6 +51,10 @@
 	        StopSpin( wheels4, x_axis, 5 )
 	end
 
+	function script.Querybody() return nano end
+	
+	function script.QueryNanoPiece() return nano end
+	
 	function script.StartBuilding(heading, pitch)
 		Signal(SIG_BUILD)
 		SetSignalMask(SIG_BUILD)
@@ -50,10 +62,6 @@
 		SetUnitValue(COB.INBUILDSTANCE, 1)
 		return 1
 	end
-
-	function script.Querybody() return nano end
-
-	function script.AimFromWeapon() return body end
 
 	function script.StopBuilding()
 		Signal(SIG_BUILD)
@@ -63,12 +71,6 @@
 		Sleep(1)
 		return 0
 	end
-
-	function script.AimFromWeapon() return nano end
-
-	function script.QueryWeapon() return nano end
-
-	function script.QueryNanoPiece() return nano end
 
 	function script.Killed(recentDamage, maxHealth)
 		return 0
