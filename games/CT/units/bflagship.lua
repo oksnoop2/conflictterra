@@ -1,12 +1,12 @@
 	--Ieyasu Class Cruiser Unit Def by Sanada
-	--Notes:  Balanced Version 1 (EXCEPT DAMAGE), Needs remodeled
+	--Notes:  Balanced Version 1 (EXCEPT DAMAGE)
 
 	unitDef = {
 	  unitname            = [[bflagship]],
 	  name                = [[Ieyasu Class Cruiser]],
 	  description         = [[Flagship - Centerpiece of the NKG Fleet. Can fire a very powerful Beam Weapon. - Build Limit: 1]],
 	  acceleration        = 0.16,
-	  activateWhenBuilt   = true,
+	  activateWhenBuilt   = false,
 	  airStrafe           = 0,
 	  amphibious          = true,
 	  brakeRate           = 1.88,
@@ -47,8 +47,8 @@
 	  energyUse           = 0,
 	  explodeAs           = [[CRUISER_EXPLOSION]],
 	  floater             = true,
-	  footprintx          = 7,
-	  footprintZ          = 7,
+	  footprintx          = 6,
+	  footprintZ          = 6,
 	  hoverAttack         = true,
 	  idleAutoHeal        = 0,
 	  mass                = 2500,
@@ -60,7 +60,7 @@
 	  metalStorage        = 0,
 	  noAutoFire          = false,
 	  noChaseCategory     = [[MINERALS SUB]],
-	  objectName          = [[bbattleflagship.s3o]],
+	  objectName          = [[bflagship.s3o]],
 	  seismicSignature    = 0,
 	  selfDestructAs      = [[CRUISER_EXPLOSION]],
 	  showNanospray       = 0,
@@ -75,6 +75,12 @@
 	      ok = {
 		"ct/cruiserengine",
 		},
+	  },
+	  
+	  sfxtypes            = {
+	    explosiongenerators = {
+		"custom:ct_damage_fire",
+	    },
 	  },
 
 	  smoothAnim          = true,
@@ -104,6 +110,22 @@
 	      def                = [[Laser]],
 	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
 	      mainDir            = [[1 0 0]],
+	      maxAngleDif        = 200,
+	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
+	    },
+		
+	    {
+	      def                = [[Laser]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
+	      mainDir            = [[-1 0 0]],
+	      maxAngleDif        = 200,
+	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
+	    },
+		
+	    {
+	      def                = [[Laser]],
+	      badTargetCategory  = [[FIXEDWING GUNSHIP CRUISER SINK FLOAT]],
+	      mainDir            = [[-1 0 0]],
 	      maxAngleDif        = 200,
 	      onlyTargetCategory = [[FIXEDWING LAND SINK SHIP SWIM FLOAT GUNSHIP CRUISER HOVER]],
 	    },
@@ -147,12 +169,12 @@
 	      noExplode               = true,
 	      noSelfDamage            = true,
 	      range                   = 500,
-	      reloadtime              = 1,
+	      reloadtime              = 10,
 	      soundStart              = [[ct/dgunfire]],
 	      soundTrigger            = true,
 	      tolerance               = 10000,
 	      turret                  = true,
-	      weaponTimer             = 4.2,
+	      --weaponTimer             = 4.2,
 	      weaponType              = [[DGun]],
 	      weaponVelocity          = 300,
 	    },
@@ -213,10 +235,10 @@
 	      damage           = 3500,
 	      energy           = 0,
 	      featureDead      = [[DEAD2]],
-	      footprintX       = 7,
-	      footprintZ       = 7,
+	      footprintX       = 6,
+	      footprintZ       = 6,
 	      metal            = 1000,
-	      object           = [[wrecks/bbattleflagshipwreck.s3o]],
+	      object           = [[wrecks/bflagshipwreck.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 30000,
 	    },
@@ -228,10 +250,10 @@
 	      category         = [[heaps]],
 	      damage           = 1750,
 	      energy           = 0,
-	      footprintX       = 7,
-	      footprintZ       = 7,
+	      footprintX       = 6,
+	      footprintZ       = 6,
 	      metal            = 500,
-	      object           = [[b7x7heap.s3o]],
+	      object           = [[b6x6heap.s3o]],
 	      reclaimable      = true,
 	      reclaimTime      = 15000,
 	    },
