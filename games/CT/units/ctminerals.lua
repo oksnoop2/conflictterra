@@ -41,16 +41,6 @@ unitDef = {
   side                          = [[NKG]],
   sightDistance                 = 0,
 
-
-  sounds			= {
-	      select = {
-		"ct/mexthump",
-		},
-	      ok = {
-		"ct/mexthump",
-		},
-  },
-
   smoothAnim                    = true,
   turnRate                      = 0,
 
