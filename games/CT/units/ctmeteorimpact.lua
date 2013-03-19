@@ -1,5 +1,5 @@
 unitDef = {
-	  unitname                      = [[bmeteorimpact]],
+	  unitname                      = [[ctmeteorimpact]],
 	  name                          = [[Meteorite]],
 	  description                   = [[Contains valuable metal used to construct units. Use a mining unit to extract the metal.]],
 	  activateWhenBuilt             = true,
@@ -13,6 +13,11 @@ unitDef = {
 	  canattack                     = [[false]],
 	  category                      = [[MINERALS]],
 	  --corpse                        = [[DEAD]],
+	  
+	  customParams = {
+		is_mineable                 = 1,  --used by minig: if the unit is a mineable resource
+	  },
+	  
 	  reclaimable                   = false,
 	  resurrectable                 = false,
 	  repairable                    = false,
@@ -29,7 +34,7 @@ unitDef = {
 	  maxSlope                      = 255,
 	  maxWaterDepth                 = 0,
 	  noAutoFire                    = false,
-	  objectName                    = [[bmeteor_impact.s3o]],
+	  objectName                    = [[ctmeteor_impact.s3o]],
 
 	  onoffable                     = true,
 	  seismicSignature              = 4,
@@ -43,56 +48,7 @@ unitDef = {
 	  waterline                     = 1,
 	  workerTime                    = 0,
 	  yardMap                       = [[ooo ooo ooo]],
-	  script                        = [[bmeteorimpact.lua]],
-	  customParams = {
-		is_mineable=1,		--used by minig: if the unit is a mineable resource
-	  },
-
-
-	  featureDefs                   = {
-
-        DEAD  = {
-		  description      = [[this mineral is mined out.]],
-		  blocking         = false,
-		  category         = [[heaps]],
-		  damage           = 10,
-		  energy           = 0,
-		  featureDead      = [[DEAD2]],
-		  featurereclamate = [[SMUDGE01]],
-		  footprintX       = 2,
-		  footprintZ       = 2,
-		  height           = [[40]],
-		  hitdensity       = [[100]],
-		  metal            = 30,
-		  object           = [[b3x3heap.s3o]],
-		  reclaimable      = true,
-		  reclaimTime      = 275,
-		  seqnamereclamate = [[TREE1RECLAMATE]],
-		  world            = [[All Worlds]],
-        },
-
-
-        DEAD2 = {
-		  description      = [[this mined mineral is totally crushed dude!]],
-		  blocking         = false,
-		  category         = [[heaps]],
-		  damage           = 2250,
-		  energy           = 0,
-		  featurereclamate = [[SMUDGE01]],
-		  footprintX       = 3,
-		  footprintZ       = 3,
-		  height           = [[4]],
-		  hitdensity       = [[100]],
-		  metal            = 15,
-		  object           = [[b3x3heap.s3o]],
-		  reclaimable      = true,
-		  reclaimTime      = 275,
-		  seqnamereclamate = [[TREE1RECLAMATE]],
-		  world            = [[All Worlds]],
-		},
-
-	  },
-
+	  script                        = [[ctmeteorimpact.lua]],
 	}
 
-	return lowerkeys({ bmeteorimpact = unitDef })
+	return lowerkeys({ ctmeteorimpact = unitDef })

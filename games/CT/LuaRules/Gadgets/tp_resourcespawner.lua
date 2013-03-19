@@ -15,7 +15,7 @@ if not gadgetHandler:IsSyncedCode() then
 end
 
 ---config---
-local resource_name = "bminerals"					--starting resource to be found on the map
+local resource_name = "ctminerals"					--starting resource to be found on the map
 local mapconfig_fn = Game.mapName .. "_res.lua"		--name of map config files
 local metalmapstep = 50							--step size in "mapunits" (tooltip coordinates) when scanning map to place resources on metalspots
 ------------

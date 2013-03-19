@@ -1,27 +1,31 @@
 unitDef = {
 
-  unitname                      = [[bmeteor_big]],
-  name                          = [[Big Meteor]],
-  description                   = [[Big Meteor]],
+  unitname                      = [[ctminerals]],
+  name                          = [[Meteorite]],
+  description                   = [[Contains valuable metal used to construct units. Use a mining unit to extract the metal.]],
   activateWhenBuilt             = true,
   buildCostEnergy               = 1,
   buildCostMetal                = 1,
   builder                       = false,
-
-  iconType                      = "meteor",
+  iconType                      = "resource",
   buildPic                      = [[bmex.png]],
   buildTime                     = 1,
   canattack                     = [[false]],
   category                      = [[MINERALS]],
 
+  customParams = {
+    is_mineable                 = 1,  --used by minig: if the unit is a mineable resource
+  },
+  
   reclaimable                   = false,
   repairable                    = false,
   energyUse                     = 0,
-  explodeAs                     = [[ROCK_IMPACT_BIG]],
+  explodeAs                     = [[ROCK_MINEDOUT]],
   extractsMetal                 = 0.000,
   floater                       = false,
-  footprintX                    = 9,
-  footprintZ                    = 9,
+  footprintX                    = 3,
+  footprintZ                    = 3,
+--  hideDamage                    = true,
   idleAutoHeal                  = 0,
   levelGround                   = false,
   mass                          = 37.5,
@@ -29,28 +33,34 @@ unitDef = {
   maxSlope                      = 255,
   maxWaterDepth                 = 0,
   noAutoFire                    = false,
-  objectName                    = [[bmeteor_big.s3o]],
+  objectName                    = [[ctmeteor_impact.s3o]],
 
   onoffable                     = true,
   seismicSignature              = 4,
-  selfDestructAs                = [[ROCK_IMPACTT_BIG]],
+  selfDestructAs                = [[ROCK_MINEDOUT]],
   side                          = [[NKG]],
-  sightDistance                 = 250,
+  sightDistance                 = 0,
+
+
+  sounds			= {
+	      select = {
+		"ct/mexthump",
+		},
+	      ok = {
+		"ct/mexthump",
+		},
+  },
 
   smoothAnim                    = true,
   turnRate                      = 0,
 
   waterline                     = 1,
   workerTime                    = 0,
-  yardMap                       = [[ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo]],
-  script                        = [[bmeteor_big.lua]],
-  customParams = {
-  	impactunitname="bmeteorimpact_big",		--used by spacerocks: what the unit will be replaced with on impact
-	lolfactor=100,							--how funny this is
-	},
+  yardMap                       = [[ooo ooo ooo]],
+  script                        = [[ctminerals.lua]],
 
 }
 
 
 
-return lowerkeys({ bmeteor_big = unitDef })
+return lowerkeys({ ctminerals = unitDef })

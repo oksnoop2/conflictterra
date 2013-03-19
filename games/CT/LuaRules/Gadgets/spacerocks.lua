@@ -23,7 +23,7 @@ local LAND_WATER = 3
 ------------------------
 
 ----- Settings -----------------------------------------------------------------
-local meteorDefName  = {} --{"bmeteor_big", "bmeteor"} --meteor unit name in flight -> add impactunitname="unitname" tag to a unitdef to make i spawn as a meteor
+local meteorDefName  = {} --{"ctmeteor_big", "ctmeteor"} --meteor unit name in flight -> add impactunitname="unitname" tag to a unitdef to make i spawn as a meteor
 local meteorInterval = 120	--2000 	-- time between the arrival of meteor storms, in seconds
 local meteorFirstTime = 300 --delay in seconds until the first meteor storm
 local meteorNumber = 5		--how many meteors per meteor storm

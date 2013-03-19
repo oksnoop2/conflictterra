@@ -1,5 +1,5 @@
 unitDef = {
-  unitname                      = [[bmeteor]],
+  unitname                      = [[ctmeteor]],
   name                          = [[Meteor]],
   description                   = [[Meteor]],
   activateWhenBuilt             = true,
@@ -12,6 +12,11 @@ unitDef = {
   canattack                     = [[false]],
   category                      = [[MINERALS]],
 
+  customParams = {
+  	impactunitname              = "ctmeteorimpact",  --used by spacerocks: what the unit will be replaced with on impact
+	lolfactor                   = 100,  --how funny this is
+  },
+  
   reclaimable                   = false,
   repairable                    = false,
   energyUse                     = 0,
@@ -27,7 +32,7 @@ unitDef = {
   maxSlope                      = 255,
   maxWaterDepth                 = 0,
   noAutoFire                    = false,
-  objectName                    = [[bmeteor.s3o]],
+  objectName                    = [[ctmeteor.s3o]],
 
   onoffable                     = true,
   seismicSignature              = 4,
@@ -41,13 +46,10 @@ unitDef = {
   waterline                     = 1,
   workerTime                    = 0,
   yardMap                       = [[ooo ooo ooo]],
-  script                        = [[bmeteor.lua]],
-  customParams = {
-  	impactunitname="bmeteorimpact",		--used by spacerocks: what the unit will be replaced with on impact
-	lolfactor=100,							--how funny this is
-	},
+  script                        = [[ctmeteor.lua]],
+
 }
 
 
 
-return lowerkeys({ bmeteor = unitDef })
+return lowerkeys({ ctmeteor = unitDef })

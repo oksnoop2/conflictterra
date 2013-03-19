@@ -123,6 +123,12 @@
             "klightdrone",
             "kdroneroller",
             "ktridroneroller",
+			
+			
+			--PNF--
+			
+			
+			"pncommander",
         },
 
         Aircraft = {
@@ -189,9 +195,9 @@
         },
 
         Meteor = {
-            "bmeteorimpact",
-            "bmeteorimpact_big",
-            "bminerals",
+            "ctmeteorimpact",
+            "ctmeteorimpact_big",
+            "ctminerals",
         },
 
 

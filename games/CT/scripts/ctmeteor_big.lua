@@ -1,8 +1,10 @@
-	-- by KR
+	--Big Meteor Animation Script by Sanada
 	
 	--pieces
-	local meteor = piece "bmeteor"
+	local meteor = piece "meteor"
 	
+	
+	--script
 	function script.Create()
 		Spin(meteor, x_axis, 10)
 		Spin(meteor, y_axis, 1)
