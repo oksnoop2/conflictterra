@@ -62,7 +62,7 @@ unitDef = {
 	},
   },
 
-  yardMap                       = [[oooo oooo oooo]],
+  yardMap                       = [[oooo oooo oooo oooo]],
   script                        = [[bpowerplant.lua]],
 
 

@@ -67,7 +67,7 @@ unitDef = {
 
   smoothAnim                    = true,
   workerTime                    = 0.5,
-  yardMap                       = [[oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo oooooooooo]],
+  yardMap                       = [[ooooooooooo ooooooooooo ooooooooooo ooooooooooo ooooooooooo ooooooooooo ooooooooooo ooooooooooo ooooooooooo]],
   script                        = [[brepairstation.lua]],
 
 

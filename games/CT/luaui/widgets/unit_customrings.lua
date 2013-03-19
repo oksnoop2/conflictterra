@@ -31,7 +31,7 @@ local ringsDefs = {
 	[UnitDefNames.bengineer.id] = {
         { color = {1, 1, 0, 0.5}, lineWidth = 3, radius = 220 },
     },
-	[UnitDefNames.breztank.id] = {
+	[UnitDefNames.breztruck.id] = {
         { color = {0, 1, 0, 0.5}, lineWidth = 3, radius = 180 },
     },
 }

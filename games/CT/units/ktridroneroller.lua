@@ -79,7 +79,7 @@
               exteriorShield          = true,
               impulseFactor           = 0,
               interceptedByShieldType = 1,
-              isShield                = true,
+              --isShield                = true,
               shieldAlpha             = 1,
               shieldBadColor          = [[1 0 0]],
               shieldGoodColor         = [[0 0 1]],
