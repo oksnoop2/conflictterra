@@ -21,7 +21,7 @@ unitDef = {
   collisionVolumeTest           = 1,
   collisionVolumeType           = [[box]],
 
-  useBuildingGroundDecal        = true,
+  useBuildingGroundDecal        = false,
   buildingGroundDecalType       = "grounddecals/resourcedropzone.png",
   buildingGroundDecalSizeX      = 20,
   buildingGroundDecalSizeY      = 20,

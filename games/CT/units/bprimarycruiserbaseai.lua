@@ -24,7 +24,7 @@ unitDef = {
   buildPic                      = [[bprimarycruiserbase.png]],
   buildTime                     = 30,
 
-  useBuildingGroundDecal        = true,
+  useBuildingGroundDecal        = false,
   buildingGroundDecalType       = "grounddecals/resourcedropzone.png",
   buildingGroundDecalSizeX      = 36,
   buildingGroundDecalSizeY      = 36,

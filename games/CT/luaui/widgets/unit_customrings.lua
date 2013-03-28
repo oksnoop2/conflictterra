@@ -25,14 +25,38 @@ end
 ]]--
 
 local ringsDefs = {
-    [UnitDefNames.bgeneraltank.id] = {
-        { color = {1, 0, 0, 0.5}, lineWidth = 3, radius = 500 },
+
+	--NKG--
+	
+    [UnitDefNames.bprimarycruiserbase.id] = {
+        { color = {0, 0.8, 0, 1}, lineWidth = 3, radius = 284 },
+    },
+    [UnitDefNames.bprimarycruiserbaseai.id] = {
+        { color = {0, 0.8, 0, 1}, lineWidth = 3, radius = 284 },
+    },
+    [UnitDefNames.bsupplydepot.id] = {
+        { color = {0, 0.8, 0, 1}, lineWidth = 3, radius = 139 },
+    },
+    [UnitDefNames.bsupplydepotai.id] = {
+        { color = {0, 0.8, 0, 1}, lineWidth = 3, radius = 139 },
     },
 	[UnitDefNames.bengineer.id] = {
         { color = {1, 1, 0, 0.5}, lineWidth = 3, radius = 220 },
     },
 	[UnitDefNames.breztruck.id] = {
-        { color = {0, 1, 0, 0.5}, lineWidth = 3, radius = 180 },
+        { color = {0, 1, 0.5, 0.5}, lineWidth = 3, radius = 180 },
+    },
+    [UnitDefNames.bgeneraltank.id] = {
+        { color = {1, 0, 0, 0.5}, lineWidth = 3, radius = 500 },
+    },
+	
+	--PNF--
+	
+	[UnitDefNames.pnengineer.id] = {
+        { color = {1, 1, 0, 0.5}, lineWidth = 3, radius = 220 },
+    },
+	[UnitDefNames.pndropoff.id] = {
+        { color = {0, 0.8, 0, 1}, lineWidth = 3, radius = 140 },
     },
 }
 

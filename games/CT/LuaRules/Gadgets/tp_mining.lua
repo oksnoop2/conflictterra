@@ -21,7 +21,7 @@ local debug = false
 -----config-----
 local miner_name = {"bminer", "kdroneminingtower", "pnminer"}      --the unit used for mining
 local resource_name = {}--{"ctminerals","ctmeteorimpact","ctmeteorimpact_big"}     --the stuff that gets mined
-local dropoff_name = {"bsupplydepot", "bsupplydepotai", "bprimarycruiserbase", "bprimarycruiserbaseai", "kdroneminingtower", "pnradarvan"} --where the miners bring the resources to
+local dropoff_name = {"bsupplydepot", "bsupplydepotai", "bprimarycruiserbase", "bprimarycruiserbaseai", "kdroneminingtower", "pndropoff"} --where the miners bring the resources to
 local dropoff_distance = 100 --how near do miners have to get to a dropoff to drop their cargo? (this value is added to unitRadius)
 local maxcargo = 25         --how much a miner can carry before having to return to a drop off
 local resreturneffect = "resdropoff_singleparticle" --ceg effect played at miners location when a miner returns its cargo
@@ -386,7 +386,7 @@ function gadget:DrawWorldPreUnit()
                         --cargo status
                         --gl.Color(1, 0, 0, 1)
                         --gl.DrawGroundCircle (x,y,z, 30, 3)
-                        gl.Color(1, 1, 0, 1)
+                        gl.Color(0, 0.8, 0, 1)
                         gl.DrawGroundCircle (x,y,z, SYNCED.miners[i].cargo, 3)  --growing triangle shows cargo status
                         --mark last_mined minerals
                         if (Spring.ValidUnitID  (SYNCED.miners[i].last_mined_id)) then
