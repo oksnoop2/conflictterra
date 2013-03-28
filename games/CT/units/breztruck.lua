@@ -31,6 +31,7 @@ local breztruck = {
 	footprintx          = 2,
 	footprintZ          = 2,
 	idleAutoHeal        = 0,
+	leaveTracks         = true,
 	mass                = 50,
 	maxDamage           = 450,
 	maxSlope            = 18,
@@ -61,7 +62,7 @@ local breztruck = {
 	    },
 	  },
 
-	trackOffset         = 3,
+	trackOffset         = 10,
 	trackStrength       = 6,
 	trackStretch        = 1,
 	trackType           = [[StdTank]],

@@ -54,7 +54,7 @@
 	  smoothAnim          = true,
 	  radarDistance       = 500,
 	  
-	  trackOffset         = 3,
+	  trackOffset         = 10,
 	  trackStrength       = 6,
 	  trackStretch        = 2,
 	  trackType           = [[StdTank]],

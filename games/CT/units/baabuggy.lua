@@ -60,7 +60,7 @@
 	  sightDistance       = 700,
 	  smoothAnim          = true,
 	  
-	  trackOffset         = 3,
+	  trackOffset         = 10,
 	  trackStrength       = 6,
 	  trackStretch        = 1,
 	  trackType           = [[StdTank]],
