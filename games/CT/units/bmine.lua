@@ -11,7 +11,6 @@
 	  canStop             = true,
 	  category            = [[SINK]],
 	  collide             = false,
-	  corpse              = [[DEAD]],
 	  reclaimable         = false,
 
 	  cloakCost           = 0,
