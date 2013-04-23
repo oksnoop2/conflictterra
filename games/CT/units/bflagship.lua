@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bflagship]],
-	  name                = [[Ieyasu Class Cruiser]],
+	  name                = [[MK-002 Ieyasu Class Cruiser]],
 	  description         = [[Flagship - Centerpiece of the NKG Fleet. Can fire a very powerful Beam Weapon. - Build Limit: 1]],
 	  acceleration        = 0.16,
 	  activateWhenBuilt   = false,

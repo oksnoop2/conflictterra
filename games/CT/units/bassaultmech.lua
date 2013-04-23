@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bassaultmech]],
-	  name                = [[Honda Combat Mech MkII]],
+	  name                = [[GSM-006b Honda Combat Mech MkII]],
 	  description         = [[Assault Mech - Improved Anti-Unit SM armed with dual rapid fire beam cannons. Can Jump.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,

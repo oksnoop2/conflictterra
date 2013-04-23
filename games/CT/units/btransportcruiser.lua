@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[btransportcruiser]],
-	  name                = [[Takeda Class Cruiser]],
+	  name                = [[JK-001 Takeda Class Cruiser]],
 	  description         = [[Transport Cruiser - Ferries units through the air. Set to Repeat to establish ferry routes.]],
 	  acceleration        = 0.16,
 	  airStrafe           = 0,

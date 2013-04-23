@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bgeneraltank]],
-	  name                = [[Taisho Type Tank]],
+	  name                = [[RS-005 Taisho Type Tank]],
 	  description         = [[General's Tank - Heals surrounding units. Unlocks stronger units. - Build Limit: 1]],
 	  acceleration        = 0.5,
 	  brakeRate           = 0.1,

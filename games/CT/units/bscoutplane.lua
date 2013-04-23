@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bscoutplane]],
-	  name                = [[Suzume Type Plane]],
+	  name                = [[TH-001 Suzume Type Plane]],
 	  description         = [[Scout Plane - Unmanned and unarmed scouting aircraft. Very fast, and equipped with radar.]],
 	  amphibious          = false,
 	  buildCostEnergy     = 100,

@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bbattlecruiser]],
-	  name                = [[Uesugi Class Cruiser]],
+	  name                = [[SK-002 Uesugi Class Cruiser]],
 	  description         = [[Battle Cruiser - Pride of the NKG, the battle cruiser is able to punch through even the hardiest of lines.]],
 	  acceleration        = 0.15,
 	  activateWhenBuilt   = true,

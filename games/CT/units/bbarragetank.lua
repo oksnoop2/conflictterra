@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bbarragetank]],
-	  name                = [[Okuma Type Tank]],
+	  name                = [[RS-007 Okuma Type Tank]],
 	  description         = [[Barrage Tank - Fires a barrage of Anti-Unit rockets.]],
 	  acceleration        = 0.5,
 	  brakeRate           = 0.1,

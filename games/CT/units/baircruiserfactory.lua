@@ -4,7 +4,7 @@
 unitDef = {
 
   unitname                      = [[baircruiserfactory]],
-  name                          = [[Deployed Azai Class Cruiser]],
+  name                          = [[Deployed TK-KG-001 Azai Class Cruiser]],
   description                   = [[Produces aircraft. Can mobilize into the Azai Class Cruiser.]],
   amphibious                    = false,
   buildCostEnergy               = 300,

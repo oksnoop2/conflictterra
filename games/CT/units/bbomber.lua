@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bbomber]],
-	  name                = [[Fukurou Type Bomber MkII]],
+	  name                = [[SB-002b Fukurou Type Bomber MkII]],
 	  description         = [[Bomber - Deals high damage to Buildings but much less to Units.]],
 	  amphibious          = false,
 	  buildCostEnergy     = 250,

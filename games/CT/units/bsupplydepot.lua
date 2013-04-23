@@ -4,7 +4,7 @@
 unitDef = {
 
   unitname                      = [[bsupplydepot]],
-  name                          = [[Resource Drop Zone]],
+  name                          = [[JK-002 Resource Drop Zone]],
   description                   = [[Drop-off point for mined metal from meteorites. Can Mobilize into a mobile form to Deploy elsewhere.]],
   activateWhenBuilt             = true,
   buildCostEnergy               = 200,

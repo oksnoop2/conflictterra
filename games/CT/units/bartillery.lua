@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bartillery]],
-	  name                = [[Uma Type Vehicle]],
+	  name                = [[RK-005 Uma Type Vehicle]],
 	  description         = [[Artillery Vehicle - Long range, anti-building truck.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,

@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bminemech]],
-	  name                = [[Enkei Combat Mech]],
+	  name                = [[YSM-002 Enkei Combat Mech]],
 	  description         = [[Mine-layer Mech - Able to drop up to 4 mines.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,

@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bacemech]],
-	  name                = [[Maeda Combat Mech]],
+	  name                = [[GSM-007 Maeda Combat Mech]],
 	  description         = [[Ace Mech - High powered and well armed Anti-Unit SM. Unlocks stronger units. - Build Limit: 3]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,

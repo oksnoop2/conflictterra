@@ -4,7 +4,7 @@
 unitDef = {
 
   unitname                      = [[bsupplydepotai]],
-  name                          = [[Resource Drop Zone (AI)]],
+  name                          = [[JK-002 Resource Drop Zone (AI)]],
   description                   = [[Drop-off point for mined metal from meteorites.]],
   activateWhenBuilt             = true,
   buildCostEnergy               = 200,

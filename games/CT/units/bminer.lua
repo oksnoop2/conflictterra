@@ -1,5 +1,5 @@
 local bminer = {
-        name                = [[Mining Truck]],
+        name                = [[JS-001 Mining Truck]],
         description         = [[Mining vehicle whose single role is to mine metal from meteorites.]],
         acceleration        = 1,
         brakerate           = 0.1,

@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[btankcruiser]],
-	  name                = [[Mori Class Cruiser]],
+	  name                = [[TK-SS-001 Mori Class Cruiser]],
 	  description         = [[Cruiser that is able to contruct tanks and vehicles. Must Deploy into the Deployed Mori Class Cruiser in order to build tanks.]],
 	  acceleration        = 0.15,
 	  activateWhenBuilt   = true,

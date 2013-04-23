@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bmissilemech]],
-	  name                = [[Ueda Combat Mech]],
+	  name                = [[UHSM-003 Ueda Combat Mech]],
 	  description         = [[Rocket Mech - Fast SM that fires two bursts of rockets.]],
 	  acceleration        = 1,  --1 while normal, 2 while fast
 	  brakeRate           = 0.1,  --0.1 while normal, 0.2 while fast

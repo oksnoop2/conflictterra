@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bmissilecruiser]],
-	  name                = [[Sanada Class Cruiser]],
+	  name                = [[SK-001 Sanada Class Cruiser]],
 	  description         = [[Bombardment Cruiser - Offensive Anti-Unit cruiser which attacks the ground with a flurry of rockets.]],
 	  acceleration        = 0.15,
 	  activateWhenBuilt   = true,

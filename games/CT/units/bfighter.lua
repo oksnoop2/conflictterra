@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bfighter]],
-	  name                = [[Hayabusa Type Fighter MkII]],
+	  name                = [[SS-002b Hayabusa Type Fighter MkII]],
 	  description         = [[Light Fighter - Fires two rapid fire air cannons to destroy enemy aircraft. Not as strong against Cruisers.]],
 	  amphibious          = false,
 	  buildCostEnergy     = 150,

@@ -2,7 +2,7 @@
 --Notes:  Balanced Version 1
 
 local bengineerai = {
-        name                = [[Construction Mech (AI)]],
+        name                = [[JM-002 Construction Mech (AI)]],
         description         = [[Utilitarian half-mech able to build structures. Unarmed.]],
         acceleration        = 1,
         brakerate           = 0.1,

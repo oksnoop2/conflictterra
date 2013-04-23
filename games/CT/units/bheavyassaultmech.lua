@@ -1,6 +1,6 @@
 	unitDef = {
 	  unitname            = [[bheavyassaultmech]],
-	  name                = [[Izanagi Assault Mech]],
+	  name                = [[UHSM-007 Izanagi Assault Mech]],
 	  description         = [[Heavy Assault Mech - Prototype SM capable of dealing high damage to Buildings and Units alike. - Build Limit: 3]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,

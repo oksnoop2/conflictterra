@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[brocketplane]],
-	  name                = [[Tonbo Type Warplane MkIII]],
+	  name                = [[JS-002c Tonbo Type Warplane MkIII]],
 	  description         = [[Rocket Warplane - Versatile Anti-Unit aircraft. Fires four rockets that do little damage to buildings.]],
 	  amphibious          = false,
 	  buildCostEnergy     = 175,

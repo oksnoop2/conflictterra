@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bbasicmech]],
-	  name                = [[Hojo Combat Mech]],
+	  name                = [[GSM-003 Hojo Combat Mech]],
 	  description         = [[Front-Line Mech - Anti-Unit rapid fire SM. Can Jump.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,

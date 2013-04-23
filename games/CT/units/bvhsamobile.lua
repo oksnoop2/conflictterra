@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bvhsamobile]],
-	  name                = [[Sekai Type Tank]],
+	  name                = [[RS-010 Sekai Type Tank]],
 	  description         = [[Heavy Siege Artillery - Long range Anti-Building artillery. Must Deploy to fire.]],
 	  acceleration        = 0.5,
 	  brakeRate           = 0.1,

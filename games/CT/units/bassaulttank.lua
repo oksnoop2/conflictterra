@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bassaulttank]],
-	  name                = [[Oukami Type Tank]],
+	  name                = [[RS-001 Oukami Type Tank]],
 	  description         = [[Light Tank - Inexpensive, basic tank. Fires light shells.]],
 	  acceleration        = 0.5,
 	  brakeRate           = 0.1,

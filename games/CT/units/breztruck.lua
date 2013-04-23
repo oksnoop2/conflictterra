@@ -2,7 +2,7 @@
 --Notes:  Balanced Version 1, Might remodel
 
 local breztruck = {
-	name                = [[Resurrection Truck]],
+	name                = [[JS-002 Resurrection Truck]],
 	description         = [[Unarmed resurrection unit to revive fallen units, friend and foe alike]],
 	acceleration        = 1,
 	brakerate           = 0.1,

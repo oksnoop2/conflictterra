@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bprimarycruiser]],
-	  name                = [[Oda Class Cruiser]],
+	  name                = [[MK-001 Oda Class Cruiser]],
 	  description         = [[Expeditionary Cruiser - First NKG vessel on the scene. Able to Deploy into the Mobile Headquarters. - Build Limit: 1]],
 	  acceleration        = 0.16,
 	  activateWhenBuilt   = true,

@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bsupplydepotmobile]],
-	  name                = [[Mobilized Resource Ship]],
+	  name                = [[JK-002 Mobilized Resource Ship]],
 	  description         = [[Able to Deploy into the Resource Drop Zone, which is vital to accumulating metal.]],
 	  acceleration        = 0.16,
 	  activateWhenBuilt   = false,

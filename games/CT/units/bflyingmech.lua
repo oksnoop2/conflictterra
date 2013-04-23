@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bflyingmech]],
-	  name                = [[Fuma Aerial Combat Mech]],
+	  name                = [[KSM-001 Fuma Aerial Combat Mech]],
 	  description         = [[Cruiser Destroyer Mech - Airborne half-mech armed with Cruiser destroying beam cannons and two AA missiles.]],
 	  acceleration        = 0.15,
 	  amphibious          = false,

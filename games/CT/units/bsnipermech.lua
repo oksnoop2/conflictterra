@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bsnipermech]],
-	  name                = [[Saiga Combat Mech]],
+	  name                = [[UHSM-004 Saiga Combat Mech]],
 	  description         = [[Sniper Mech - Long range SM that does heavy damage to Units. Invisible to radar and able to cloak.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,

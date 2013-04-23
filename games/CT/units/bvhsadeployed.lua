@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bvhsadeployed]],
-	  name                = [[Deployed Sekai Type Tank]],
+	  name                = [[Deployed RS-010 Sekai Type Tank]],
 	  description         = [[Heavy Siege Artillery - Long range Anti-Building artillery. Must Mobilize to move.]],
 	  buildCostEnergy     = 700,
 	  buildCostMetal      = 700,

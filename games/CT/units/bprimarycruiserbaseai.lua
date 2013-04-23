@@ -5,7 +5,7 @@ unitDef = {
 
   unitname                      = [[bprimarycruiserbaseai]],
   name                          = [[Mobile Headquarters (AI)]],
-  description                   = [[Deployed Oda Class Cruiser. Builds the essentials to establishing a base.]],
+  description                   = [[Deployed MK-001 Oda Class Cruiser. Builds the essentials to establishing a base.]],
   amphibious                    = false,
   buildCostEnergy               = 500,
   buildCostMetal                = 500,

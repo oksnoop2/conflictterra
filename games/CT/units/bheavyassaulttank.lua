@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bheavyassaulttank]],
-	  name                = [[Ogami Type Tank]],
+	  name                = [[RS-004 Ogami Type Tank]],
 	  description         = [[Heavy Tank - Fires inaccurate, explosive shells. Damages a wide area.]],
 	  acceleration        = 0.5,
 	  brakeRate           = 0.1,

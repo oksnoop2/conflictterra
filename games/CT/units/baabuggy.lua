@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[baabuggy]],
-	  name                = [[Yumi Type Vehicle]],
+	  name                = [[RK-004 Yumi Type Vehicle]],
 	  description         = [[Anti-Air Vehicle - Fires two homing AA missiles and an anti-Cruiser Beam.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,

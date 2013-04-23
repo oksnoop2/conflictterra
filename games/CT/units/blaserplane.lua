@@ -4,7 +4,7 @@
 
 	unitDef = {
 	  unitname            = [[blaserplane]],
-	  name                = [[Suzaku Type Fighter MkIII]],
+	  name                = [[SS-003c Suzaku Type Fighter MkIII]],
 	  description         = [[Anti-Cruiser Fighter - New fighter model armed with anti-Cruiser beam weaponry. Only attacks Cruisers.]],
 	  amphibious          = false,
 	  buildCostEnergy     = 150,

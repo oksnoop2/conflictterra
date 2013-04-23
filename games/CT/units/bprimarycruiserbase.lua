@@ -5,7 +5,7 @@ unitDef = {
 
   unitname                      = [[bprimarycruiserbase]],
   name                          = [[Mobile Headquarters]],
-  description                   = [[Deployed Oda Class Cruiser. Builds the essentials to establishing a base. Can Mobilize into the Oda Class Cruiser. - Build Limit: 1]],
+  description                   = [[Deployed MK-001 Oda Class Cruiser. Builds the essentials to establishing a base. Can Mobilize into the Oda Class Cruiser. - Build Limit: 1]],
   amphibious                    = false,
   buildCostEnergy               = 500,
   buildCostMetal                = 500,

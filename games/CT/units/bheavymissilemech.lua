@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bheavymissilemech]],
-	  name                = [[Shibata Combat Mech MkII]],
+	  name                = [[GSM-008b Shibata Combat Mech MkII]],
 	  description         = [[Heavy Rocket Mech - Armed to the teeth with rockets.]],
 	  acceleration        = 1,
 	  brakeRate           = 0.1,

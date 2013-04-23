@@ -4,7 +4,7 @@
 unitDef = {
 
   unitname                      = [[btankcruiserfactory]],
-  name                          = [[Deployed Mori Class Cruiser]],
+  name                          = [[Deployed TK-SS-001 Mori Class Cruiser]],
   description                   = [[Produces tanks and vehicles. Can Mobilize into the Mori Class Cruiser.]],
   amphibious                    = false,
   buildCostEnergy               = 300,
