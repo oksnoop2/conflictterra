@@ -1,6 +1,6 @@
 unitDef = {
   unitname                      = [[bjammertower]],
-  name                          = [[Radar Jamming Outpost]],
+  name                          = [[IJ-004 Radar Jamming Outpost]],
   description                   = [[Short range radar jammer. Uses 10 energy per second to function.]],
   amphibious                    = false,
   activateWhenBuilt             = true,

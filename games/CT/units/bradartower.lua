@@ -4,7 +4,7 @@
 	unitDef = {
 
 	  unitname                      = [[bradartower]],
-	  name                          = [[Radar Outpost]],
+	  name                          = [[IJ-002 Radar Outpost]],
 	  description                   = [[Detects units, even cloaked enemies. Uses 10 energy per second to operate.]],
 	  amphibious                    = false,
 	  activateWhenBuilt             = true,

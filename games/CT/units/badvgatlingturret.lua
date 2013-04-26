@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[badvgatlingturret]],
-	  name                = [[Dual Gatling Turret]],
+	  name                = [[BJ-006 Dual Gatling Turret]],
 	  description         = [[Pair of Anti-Unit rapid fire cannons.]],
 	  buildCostEnergy     = 300,
 	  buildCostMetal      = 300,

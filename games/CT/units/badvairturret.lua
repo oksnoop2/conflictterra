@@ -1,6 +1,6 @@
 	unitDef = {
 	  unitname            = [[badvairturret]],
-	  name                = [[Anti-Air Missile Turret]],
+	  name                = [[BJ-005 Anti-Air Missile Turret]],
 	  description         = [[Fires a salvo of three powerful Anti-Air Missiles. Seeks and destroys enemies.]],
 	  buildCostEnergy     = 500,
 	  buildCostMetal      = 500,

@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[blandturret]],
-	  name                = [[Dual Cannon Turret]],
+	  name                = [[BJ-001 Dual Cannon Turret]],
 	  description         = [[Anti-Unit pair of cannons to defend your base.]],
 	  buildCostEnergy     = 275,
 	  buildCostMetal      = 275,

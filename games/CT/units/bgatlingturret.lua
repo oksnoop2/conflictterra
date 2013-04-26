@@ -1,6 +1,6 @@
 	unitDef = {
 	  unitname            = [[bgatlingturret]],
-	  name                = [[Gatling Turret]],
+	  name                = [[BJ-003 Gatling Turret]],
 	  description         = [[Rapid fire cannon ideal for taking out several Units.]],
 	  buildCostEnergy     = 150,
 	  buildCostMetal      = 150,

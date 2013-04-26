@@ -4,7 +4,7 @@
 unitDef = {
 
   unitname                      = [[badvpowerplant]],
-  name                          = [[Heavy Duty Energy Station]],
+  name                          = [[IH-003 Heavy Duty Energy Station]],
   description                   = [[Creates +15 energy.]],
   amphibious                    = false,
   activateWhenBuilt             = true,

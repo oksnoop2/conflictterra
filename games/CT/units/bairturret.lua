@@ -3,7 +3,7 @@
 
 	unitDef = {
 	  unitname            = [[bairturret]],
-	  name                = [[Anti-Air Turret]],
+	  name                = [[BJ-002 Anti-Air Turret]],
 	  description         = [[Fires explosive flak at aircraft, and an Anti-Cruiser beam.]],
 	  buildCostEnergy     = 250,
 	  buildCostMetal      = 250,

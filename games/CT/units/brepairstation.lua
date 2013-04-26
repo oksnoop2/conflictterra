@@ -4,7 +4,7 @@
 unitDef = {
 
   unitname                      = [[brepairstation]],
-  name                          = [[Aircraft Repair Station]],
+  name                          = [[GK-003 Aircraft Repair Station]],
   description                   = [[Repairs damaged Aircraft. Too small for to repair Cruisers.]],
   amphibious                    = false,
   buildCostEnergy               = 450,

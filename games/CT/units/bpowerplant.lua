@@ -4,7 +4,7 @@
 unitDef = {
 
   unitname                      = [[bpowerplant]],
-  name                          = [[Energy Station]],
+  name                          = [[IH-002 Energy Station]],
   description                   = [[Creates +3 energy. Requires no energy to build.]],
   amphibious                    = false,
   activateWhenBuilt             = true,
