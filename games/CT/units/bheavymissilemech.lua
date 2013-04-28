@@ -25,7 +25,6 @@
 	  	RequireTech   = [[Ace Pilot's Presence]],
 	  },
 	
-	  defaultmissiontype  = [[Standby]],
 	  explodeAs           = [[MECH_EXPLOSION]],
 	  footprintX          = 4,
 	  footprintZ          = 4,
